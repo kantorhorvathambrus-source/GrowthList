@@ -201,29 +201,60 @@ in `categories.json`-derived output with a computed creator `count`.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 0 — plan & scaffold, in progress.
+- **Current phase**: Phase 1 complete. Phase 2 (creator research) not
+  started.
 - **Repo**: `kantorhorvathambrus-source/GrowthList` (new, dedicated repo;
   not to be confused with `kantorhorvathambrus-source/mancsterapia`, an
   unrelated existing project). Working directly on `main`.
-- **Done**: `PLAN.md`, this `CLAUDE.md`, repo scaffold (this commit).
-- **Not started**: Phase 1 (taxonomy), Phase 2 (creators, 0/700),
+- **Done**: `PLAN.md`, this `CLAUDE.md`, repo scaffold, and
+  `data/categories.json` — exactly 200 categories across 16 domains,
+  every `plan` present but empty (filled in Phase 3).
+- **Not started**: Phase 2 (creators, 0/700, 0/28 batches),
   Phase 3 (build/validate/plans), Phase 4 (interface), Phase 5 (form),
   Phase 6 (polish).
-- **Domain list**: not yet finalized — will be fixed in Phase 1 and
-  recorded here (12–16 domains covering at minimum: mindset &
-  psychology, physical fitness, health & nutrition, communication &
-  social skills, career & professional skills, money & investing,
-  entrepreneurship & business, marketing & sales, technology & AI,
-  programming & technical skills, creativity & creative crafts, learning
-  & study skills, productivity & systems, relationships, practical life
-  skills, philosophy & meaning).
-- **Next action**: write `data/categories.json` (Phase 1), then stop for
-  review per the brief.
+- **Next action**: Phase 2, batch 01 — research and verify 25 creators,
+  write `data/creators/batch-01.json`, update this section, commit.
+
+### Domain list (final — 16 domains, 200 categories)
+
+Slug → count. These slugs are the only legal values of a category's
+`domain` field, and the domain boundary is what the scope rule's
+"more than two top-level domains" test is measured against.
+
+`mindset` 13 · `fitness` 14 · `health` 14 · `communication` 13 ·
+`career` 13 · `money` 13 · `business` 13 · `marketing` 13 · `tech` 11 ·
+`programming` 14 · `creativity` 14 · `learning` 12 · `productivity` 12 ·
+`relationships` 12 · `practical` 12 · `philosophy` 7
+
+### Phase 1 notes / decisions
+
+- Some aliases deliberately collide across categories (`saying no` →
+  both `prioritization` and `setting-boundaries`; `logic` → both
+  `critical-thinking` and `debate-and-argumentation`). Search is expected
+  to return several matches for a genuinely ambiguous word — this is not
+  a bug, and the validator must not treat cross-category alias overlap
+  as an error.
+- Deliberately kept as separate, non-duplicate pairs, each with distinct
+  blurbs and level text: `note-taking` (capture from a live source) vs
+  `personal-knowledge-management` (linking/synthesis system);
+  `negotiation` (general) vs `salary-negotiation` (a specific,
+  high-search career case); `difficult-conversations` (general/work) vs
+  `couples-communication` (partner-specific repair);
+  `strength-training` (getting strong) vs `hypertrophy-training`
+  (training for size); `deep-work-and-focus` (attention capacity) vs
+  `digital-minimalism` (relationship with technology).
+- `data/categories.json` is ~240 KB. That fits the <500 KB first-load
+  budget on its own but leaves little room, so Phase 3's build step must
+  emit a slimmer home-page index (id, name, domain, blurb, aliases,
+  creator count) and the full record — `levels` and `plan` — should be
+  read only in the category view. Recorded here because it changes
+  `build-data.mjs`'s outputs from what `PLAN.md` originally listed.
 
 ### Definition-of-done tracker
 
-- [ ] 200 categories, no near-duplicates, each with 5+ creators, three
-      levels, a critic, and a four-week plan
+- [~] 200 categories, no near-duplicates, each with 5+ creators, three
+      levels, a critic, and a four-week plan — *taxonomy + levels done
+      (Phase 1); creator coverage and plans pending Phases 2–3*
 - [ ] 700 verified unique creators with `notFor`, taste profile, signals,
       verified entry video per category mapping
 - [ ] Expertise scope rule respected
