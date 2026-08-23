@@ -252,13 +252,66 @@ Awaiting the owner's decision as of this update.
   rather than fail so the validator is usable during Phase 2).
   Scripts accept an optional root dir argument, which is how the
   fixtures were tested: `node scripts/validate.mjs /path/to/fixture`.
+- **Also done (Phase 4, interface)**: the complete front end — app shell,
+  router, home, category, creator, and stack views, click-to-load
+  embeds, theme toggle, search. Built and browser-tested against both
+  the real (empty) dataset and a throwaway synthetic one. See
+  "Phase 4 notes" below.
 - **Not started**: Phase 2 (creators, 0/700, 0/28 batches — BLOCKED),
   Phase 3 remainder (filling the 200 four-week plans, which needs
-  creators), Phase 4 (interface), Phase 5 (form), Phase 6 (polish).
-- **Next action**: unblock Phase 2 (see above). Phase 4 (interface) is
-  buildable before Phase 2 if desired — it can be developed against the
-  real 200-category taxonomy with an empty creator set, since the build
-  script already emits valid empty `creators.json` / `index.json`.
+  creators), Phase 5 (form), Phase 6 (polish).
+- **Next action**: unblock Phase 2 (see above), or build Phase 5 (the
+  Netlify form), which does not depend on creator data.
+
+### Phase 4 notes
+
+**Testing without committing fake data.** The UI was verified in
+headless Chromium by copying the site to `/tmp/gl-test`, generating a
+synthetic creator set there, and driving it with Playwright. The
+synthetic data never enters this repo — `data/creators.json` is `[]`
+and `grep -rl "test-creator" data/` must stay empty. Re-create the
+fixture the same way rather than committing one.
+
+Chromium lives at `/opt/pw-browsers/chromium-1194/chrome-linux/chrome`
+(pass it as `executablePath`; the unversioned path in the environment
+docs does not exist).
+
+**Verified behaviour** (all passing, zero console errors):
+
+- No third-party request of any kind before a click. After clicking
+  play, the only external host contacted is `www.youtube-nocookie.com`,
+  and the iframe src is
+  `https://www.youtube-nocookie.com/embed/<id>?autoplay=1&rel=0`.
+- Search matches aliases: typing "stage fright" returns Public
+  speaking. Arrow keys move the active option, Enter navigates, Escape
+  clears.
+- Level tabs and all four filters write to the query string via
+  `replaceQuery`, so the back button steps between *views*, not between
+  every filter change.
+- Stack round-trips: three picks encode to
+  `#/stack?ids=cHVibGljLXNwZWFraW5nLHNlbyxzdG9yeXRlbGxpbmc`, and
+  reloading that URL restores the three chips.
+- Empty states are honest everywhere — home, category, plan, and stack
+  each say the data is not published yet rather than showing filler.
+- No horizontal overflow at 390px. Dark theme verified by screenshot.
+
+**Deliberate design decisions:**
+
+1. **Thumbnails are never fetched.** YouTube serves thumbnails from
+   `i.ytimg.com`, not from the nocookie domain, so loading one before
+   the click would leak the visit exactly as an autoloaded iframe
+   would. The placeholder is local CSS, and the real network request
+   happens only on click. This is why `assets/placeholder-thumb.svg`
+   from `PLAN.md` was never needed.
+2. **Level tab counts exclude critics**, because critics render in the
+   separate "other side" block. Counting them made the tab promise more
+   creators than the list showed.
+3. **`statePage()` vs `stateBlock()`** — a page that is nothing but an
+   error uses `statePage`, which carries an `<h1>`, so every route has
+   exactly one top-level heading.
+4. **`js/components/theme-toggle.js` does not exist**; theme lives in
+   `js/theme.js` (it is global chrome, not a view component). `PLAN.md`
+   listed it under components.
 
 ### Build outputs and the first-load budget
 
