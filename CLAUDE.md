@@ -201,19 +201,81 @@ in `categories.json`-derived output with a computed creator `count`.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 1 complete. Phase 2 (creator research) not
-  started.
+- **Current phase**: Phase 1 complete. **Phase 2 is BLOCKED — see
+  "Phase 2 blocker" below.** Phase 3 tooling (both scripts) is done
+  ahead of schedule because it did not depend on the blocked work.
+
+### Phase 2 blocker (read this first)
+
+`youtube.com` is **blocked by this environment's network egress
+policy**, along with `en.wikipedia.org`, `socialblade.com`,
+`noembed.com`, and Invidious mirrors. The allowlist is tight enough
+that `WebFetch` is unusable for creator research. The `WebSearch` tool
+still works, because it runs server-side rather than through the
+session's egress proxy.
+
+Consequence: a creator's *existence and handle* can be corroborated
+from search results, but an `entryVideo.videoId` **cannot be verified
+as belonging to a given channel**. Search result titles do not name the
+uploader, and searching a raw video id returns nothing. Verified
+example of the trap: a search for Veritasium's Collatz video returned
+`XcQat_ADbb0` ("The Hidden Logic of the 3x+1 Problem From Veritasium")
+and `Lr6qc_9M0Ks` ("How accurate is Veritasium about…") — both *other
+channels'* videos about it.
+
+Writing entry videos on that basis would violate project rule 3 (the
+brief's most important rule). Do **not** proceed with Phase 2 until one
+of these is true:
+
+1. `youtube.com` is added to the environment's egress allowlist
+   (network policy is chosen at environment creation —
+   https://code.claude.com/docs/en/claude-code-on-the-web); or
+2. an oEmbed/API host is allowed (`noembed.com`, or `googleapis.com`
+   plus a YouTube Data API key used **at research time only** — the
+   "no API keys" rule governs the shipped site, which still ships as
+   static JSON); or
+3. the project owner explicitly relaxes the verification bar and
+   accepts a documented change to the definition of done.
+
+Awaiting the owner's decision as of this update.
 - **Repo**: `kantorhorvathambrus-source/GrowthList` (new, dedicated repo;
   not to be confused with `kantorhorvathambrus-source/mancsterapia`, an
   unrelated existing project). Working directly on `main`.
 - **Done**: `PLAN.md`, this `CLAUDE.md`, repo scaffold, and
   `data/categories.json` — exactly 200 categories across 16 domains,
   every `plan` present but empty (filled in Phase 3).
-- **Not started**: Phase 2 (creators, 0/700, 0/28 batches),
-  Phase 3 (build/validate/plans), Phase 4 (interface), Phase 5 (form),
-  Phase 6 (polish).
-- **Next action**: Phase 2, batch 01 — research and verify 25 creators,
-  write `data/creators/batch-01.json`, update this section, commit.
+- **Also done (Phase 3, tooling half)**: `scripts/validate.mjs` and
+  `scripts/build-data.mjs`. Both run on plain `node`, zero deps, and
+  both are tested — every FAIL rule was exercised against deliberately
+  broken fixtures and fires correctly. `node scripts/validate.mjs`
+  currently exits 0 (200 categories, no creators yet, empty plans warn
+  rather than fail so the validator is usable during Phase 2).
+  Scripts accept an optional root dir argument, which is how the
+  fixtures were tested: `node scripts/validate.mjs /path/to/fixture`.
+- **Not started**: Phase 2 (creators, 0/700, 0/28 batches — BLOCKED),
+  Phase 3 remainder (filling the 200 four-week plans, which needs
+  creators), Phase 4 (interface), Phase 5 (form), Phase 6 (polish).
+- **Next action**: unblock Phase 2 (see above). Phase 4 (interface) is
+  buildable before Phase 2 if desired — it can be developed against the
+  real 200-category taxonomy with an empty creator set, since the build
+  script already emits valid empty `creators.json` / `index.json`.
+
+### Build outputs and the first-load budget
+
+`node scripts/build-data.mjs` writes four files. Measured with 200
+categories and 0 creators:
+
+| file | purpose | size |
+|---|---|---|
+| `categories-index.json` | home page: id, name, domain, blurb, aliases, count | 54 KB |
+| `search-index.json` | search: categories + creators | 31 KB |
+| `creators.json` | full records, lazy-loaded | grows with Phase 2 |
+| `index.json` | light creator cards, lazy-loaded | grows with Phase 2 |
+
+First load is **85 KB** against the ~500 KB budget, because the home
+page never fetches the 240 KB `categories.json` (levels and plans are
+read only in the category view). The build script prints this budget
+and warns above 400 KB.
 
 ### Domain list (final — 16 domains, 200 categories)
 
