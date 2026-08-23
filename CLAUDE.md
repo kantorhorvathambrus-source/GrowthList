@@ -252,11 +252,37 @@ Awaiting the owner's decision as of this update.
   rather than fail so the validator is usable during Phase 2).
   Scripts accept an optional root dir argument, which is how the
   fixtures were tested: `node scripts/validate.mjs /path/to/fixture`.
-- **Also done (Phase 4, interface)**: the complete front end — app shell,
-  router, home, category, creator, and stack views, click-to-load
-  embeds, theme toggle, search. Built and browser-tested against both
-  the real (empty) dataset and a throwaway synthetic one. See
-  "Phase 4 notes" below.
+- **Also done (Phase 4, structure)**: the complete front end — app
+  shell, router, home, category, creator, and stack views,
+  click-to-load embeds, theme toggle, search. Built and browser-tested
+  against both the real (empty) dataset and a throwaway synthetic one.
+  See "Phase 4 notes" below.
+
+### VISUAL LAYER IS ON HOLD — do not write CSS
+
+The project owner is designing the look separately and will supply a
+design spec. Until that spec arrives:
+
+- `css/style.css` is a **structural baseline only**. It contains no
+  colour, background, `font-family`, shadow, gradient, or decorative
+  declaration. Verified by:
+  `grep -nE '(^|[^-])color\s*:|background|font-family|box-shadow|#[0-9a-fA-F]{3,6}|rgba?\(|accent-color|linear-gradient' css/style.css`
+  which must match only the file's own header comment.
+- **Do not add styling of any kind**, including "just a small fix to
+  make it readable". Layout, spacing, overflow control, and the
+  accessibility affordances (skip link, `visually-hidden`,
+  `:focus-visible` via `currentColor`, reduced motion) are in scope;
+  anything visual is not.
+- `MARKUP.md` is the contract handed to the designer: every component's
+  DOM, its class hooks, which elements repeat per item, which states
+  need styling, and where content length varies. **Keep it in sync** —
+  if a view's markup changes, update `MARKUP.md` in the same commit.
+- The full pre-hold stylesheet is recoverable at commit `b2caba9`
+  (`css/style.css`) if any of it proves worth keeping.
+- Structural CSS may still gain rules that fix genuine layout bugs —
+  e.g. `.cat-head__related a { margin-right: .5rem }` was restored
+  because without it the related-skill links render as one run-on word.
+  Spacing that carries meaning is structure, not decoration.
 - **Not started**: Phase 2 (creators, 0/700, 0/28 batches — BLOCKED),
   Phase 3 remainder (filling the 200 four-week plans, which needs
   creators), Phase 5 (form), Phase 6 (polish).
