@@ -1,3 +1,9 @@
+# Secrets — never commit. The research scripts read YOUTUBE_API_KEY from .env;
+# the shipped site never references it and ships as static JSON only.
+.env
+.env.*
+!.env.example
+
 .DS_Store
 Thumbs.db
 *.log
