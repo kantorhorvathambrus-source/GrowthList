@@ -1,7 +1,8 @@
 /**
  * YouTube Data API v3 client for Phase 2 research. Zero dependencies.
  *
- * SECRETS: the key is read from .env (gitignored) and never printed. Every
+ * SECRETS: the key comes from process.env.YOUTUBE_API_KEY (a configured
+ * environment variable, not a file) and is never printed. Every
  * function that logs or throws routes its text through redact() first, because
  * API keys travel in the query string — an unredacted URL in an error message
  * is a leaked credential.
@@ -41,8 +42,13 @@ export function loadKey() {
   }
 
   throw new Error(
-    'YOUTUBE_API_KEY is not set. Copy .env.example to .env and add the key. ' +
-    '.env is gitignored and must never be committed.'
+    'YOUTUBE_API_KEY is not set.\n' +
+    'It is expected as a CONFIGURED ENVIRONMENT VARIABLE on the Claude Code ' +
+    'environment, not as a .env file — see CLAUDE.md, "The YouTube API key".\n' +
+    'Note that environment-variable changes require a fresh session; a key ' +
+    'set mid-session will not appear in an already-running process.\n' +
+    'Do NOT proceed with unverified research and do NOT ask for the key in ' +
+    'chat — a key in a transcript must be rotated.'
   );
 }
 
