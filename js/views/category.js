@@ -1,10 +1,12 @@
-// Category view: level tabs, filters, the creators for that level, the critic
-// in a distinct block, and the four-week plan as a checklist.
+// Category view: an ink header band, level tabs, filters, the creator list,
+// the critic in a visually distinct ink band, and the four-week plan as a
+// numbered sequence with a connecting line.
 
 import { getCategory, getCreatorsForCategory, getCategoryIndex } from '../data.js';
 import { esc, stateBlock, statePage, setTitle, LEVELS, SIZE_BUCKETS, domainLabel } from '../utils.js';
 import { creatorCard } from '../components/creator-card.js';
 import { replaceQuery, parseHash } from '../router.js';
+import { ornamentFor } from '../components/ornament.js';
 
 const PLAN_STORAGE = 'growthlist:plan:';
 
@@ -26,9 +28,8 @@ function applyFilters(entries, filters) {
   });
 }
 
-// Counts come from the non-critic entries, because critics are shown in their
-// own block rather than in the level list — counting them here would promise
-// more creators than the tab actually reveals.
+// Counts come from the non-critic entries, because critics render in their own
+// band — counting them here would promise more than the tab reveals.
 function tabsMarkup(entries, active) {
   return `<div class="tabs" role="tablist" aria-label="Experience level">
     ${LEVELS.map((level) => {
@@ -81,16 +82,17 @@ function planMarkup(category, creatorsById) {
   const filled = weeks.filter((w) => (plan[w]?.watch?.length ?? 0) > 0 || plan[w]?.do);
 
   if (filled.length === 0) {
-    return `<section class="plan" aria-labelledby="plan-heading">
-      <h2 id="plan-heading">The four-week plan</h2>
+    return `<div class="sec-head">
+        <span class="num">04</span>
+        <h2 id="plan-heading">The four-week plan</h2>
+      </div>
       ${stateBlock(
         'empty',
         'The plan for this skill is not written yet.',
         `Plans are built from the creators mapped to a skill, so this one is
          waiting on the creator research. It will be four weeks, each with one
          or two videos and a single exercise you can do in under thirty minutes.`
-      )}
-    </section>`;
+      )}`;
   }
 
   const items = weeks
@@ -106,24 +108,27 @@ function planMarkup(category, creatorsById) {
         .join('');
       const key = `${category.id}:${week}`;
       return `<li class="plan__week">
-        <h3>Week ${i + 1}</h3>
-        ${watch ? `<ul class="plan__watch">Watch: ${watch}</ul>` : ''}
-        <label class="plan__check">
-          <input type="checkbox" data-plan-key="${esc(key)}">
-          <span>${esc(w.do ?? '')}</span>
-        </label>
+        <span class="plan__marker"><span>${String(i + 1).padStart(2, '0')}</span></span>
+        <div class="plan__body">
+          ${watch ? `<ul class="plan__watch"><span class="micro" style="color:var(--warm-500)">Watch</span> ${watch}</ul>` : ''}
+          <label class="plan__check">
+            <input type="checkbox" data-plan-key="${esc(key)}">
+            <span>${esc(w.do ?? '')}</span>
+          </label>
+        </div>
       </li>`;
     })
     .join('');
 
-  return `<section class="plan" aria-labelledby="plan-heading">
-    <h2 id="plan-heading">The four-week plan</h2>
+  return `<div class="sec-head">
+      <span class="num">04</span>
+      <h2 id="plan-heading">The four-week plan</h2>
+    </div>
     <p class="plan__intro">
       One exercise a week, each doable in under thirty minutes. Ticking these
       off is saved in your browser only — nothing is sent anywhere.
     </p>
-    <ul class="plan__weeks">${items}</ul>
-  </section>`;
+    <ul class="plan__weeks">${items}</ul>`;
 }
 
 function restorePlanState(app, categoryId) {
@@ -148,7 +153,7 @@ function restorePlanState(app, categoryId) {
 
 export async function renderCategory(app, { params, query }) {
   app.setAttribute('aria-busy', 'true');
-  app.innerHTML = stateBlock('loading', 'Loading skill…', '');
+  app.innerHTML = `<div class="wrap" style="padding-block: var(--sp-12)">${stateBlock('loading', 'Loading skill…', '')}</div>`;
 
   let category;
   let entries;
@@ -161,20 +166,20 @@ export async function renderCategory(app, { params, query }) {
     ]);
   } catch (err) {
     app.setAttribute('aria-busy', 'false');
-    app.innerHTML = statePage('error', 'Skill unavailable', 'This skill could not be loaded.', esc(err.message));
+    app.innerHTML = `<div class="wrap" style="padding-block: var(--sp-12)">${statePage('error', 'Skill unavailable', 'This skill could not be loaded.', esc(err.message))}</div>`;
     return;
   }
 
   if (!category) {
     app.setAttribute('aria-busy', 'false');
     setTitle('Skill not found');
-    app.innerHTML = statePage(
+    app.innerHTML = `<div class="wrap" style="padding-block: var(--sp-12)">${statePage(
       'error',
       'Skill not found',
       'No such skill.',
       `There is no skill with the id <code>${esc(params.id)}</code>.
        <a href="#/">Back to all skills</a>.`
-    );
+    )}</div>`;
     return;
   }
 
@@ -184,6 +189,7 @@ export async function renderCategory(app, { params, query }) {
   const creatorsById = new Map(entries.map(({ creator }) => [creator.id, creator]));
   const critics = entries.filter(({ creator }) => creator.role === 'critic');
   const nonCritics = entries.filter(({ creator }) => creator.role !== 'critic');
+  const filters = readFilters(query);
 
   const related = (category.relatedCategories ?? [])
     .filter((id) => nameById.has(id))
@@ -191,46 +197,63 @@ export async function renderCategory(app, { params, query }) {
     .join('');
 
   app.innerHTML = `
-    <p class="crumb"><a href="#/">All skills</a> › ${esc(domainLabel(category.domain))}</p>
+    <section class="band band--ink hero__band">
+      <div class="rail rail--ink"><span>${esc(domainLabel(category.domain))}</span></div>
+      <div class="band-body">
+        <p class="crumb"><a href="#/">All skills</a> › ${esc(domainLabel(category.domain))}</p>
+        <h1>${esc(category.name)}</h1>
+        <p class="lead">${esc(category.blurb)}</p>
+        ${related ? `<p class="cat-head__related">Related: ${related}</p>` : ''}
+        <div class="hero__orn" aria-hidden="true">${ornamentFor(category.id, { size: 180 })}</div>
+      </div>
+    </section>
 
-    <div class="cat-head">
-      <h1>${esc(category.name)}</h1>
-      <p class="cat-head__blurb">${esc(category.blurb)}</p>
-      ${related ? `<p class="cat-head__related">Related: ${related}</p>` : ''}
-    </div>
+    <section class="band band--paper">
+      <div class="rail"><span>Creators</span></div>
+      <div class="band-body">
+        ${entries.length === 0
+          ? `<div style="margin-bottom: var(--sp-8)">${stateBlock(
+              'empty',
+              'No creators are listed for this skill yet.',
+              `The guidance below still applies, but we would rather show you nothing
+               than a list we have not verified. <a href="#/">Browse other skills</a>.`
+            )}</div>`
+          : ''}
 
-    ${entries.length === 0
-      ? stateBlock(
-          'empty',
-          'No creators are listed for this skill yet.',
-          `The guidance below still applies, but we would rather show you nothing
-           than a list we have not verified. <a href="#/">Browse other skills</a>.`
-        )
-      : ''}
-
-    ${tabsMarkup(nonCritics, readFilters(query).level)}
-    <div id="panel-levels" role="tabpanel" aria-labelledby="tab-${readFilters(query).level}" tabindex="0">
-      <div id="level-guidance"></div>
-      ${nonCritics.length ? filtersMarkup(nonCritics, readFilters(query)) : ''}
-      <ul class="creator-list" id="creator-list"></ul>
-    </div>
+        ${tabsMarkup(nonCritics, filters.level)}
+        <div id="panel-levels" role="tabpanel" aria-labelledby="tab-${filters.level}" tabindex="0">
+          <div id="level-guidance"></div>
+          ${nonCritics.length ? filtersMarkup(nonCritics, filters) : ''}
+          <ul class="creator-list creator-list--grid" id="creator-list"></ul>
+        </div>
+      </div>
+    </section>
 
     ${critics.length
-      ? `<section class="other-side" aria-labelledby="other-side-heading">
-          <div class="other-side__head">
-            <h2 id="other-side-heading">The other side</h2>
+      ? `<section class="band band--ink other-side" aria-labelledby="other-side-heading">
+          <div class="rail rail--ink"><span>The other side</span></div>
+          <div class="band-body">
+            <div class="sec-head">
+              <span class="num" style="color:var(--wine-200)">03</span>
+              <h2 id="other-side-heading">The other side</h2>
+            </div>
+            <p class="other-side__note">
+              Someone who criticises this field rather than selling it. Worth
+              watching before you commit time or money to anything above.
+            </p>
+            <ul class="creator-list">
+              ${critics.map(({ creator, mapping }) => creatorCard(creator, mapping)).join('')}
+            </ul>
           </div>
-          <p class="other-side__note">
-            Someone who criticises this field rather than selling it. Worth
-            watching before you commit time or money to anything above.
-          </p>
-          <ul class="creator-list">
-            ${critics.map(({ creator, mapping }) => creatorCard(creator, mapping)).join('')}
-          </ul>
         </section>`
       : ''}
 
-    ${planMarkup(category, creatorsById)}
+    <section class="band band--alt plan" aria-labelledby="plan-heading">
+      <div class="rail"><span>Practice</span></div>
+      <div class="band-body">
+        ${planMarkup(category, creatorsById)}
+      </div>
+    </section>
   `;
   app.setAttribute('aria-busy', 'false');
 
@@ -241,21 +264,21 @@ export async function renderCategory(app, { params, query }) {
   const summaryEl = app.querySelector('#filters-summary');
 
   function paint() {
-    const filters = readFilters(parseHash().query);
+    const current = readFilters(parseHash().query);
 
     guidanceEl.innerHTML = `<div class="level-guidance">
-      <p><strong>${filters.level[0].toUpperCase() + filters.level.slice(1)}:</strong>
-      ${esc(category.levels?.[filters.level] ?? '')}</p>
+      <p class="micro claim__label">${esc(current.level)}</p>
+      <p>${esc(category.levels?.[current.level] ?? '')}</p>
     </div>`;
 
     for (const tab of app.querySelectorAll('.tab')) {
-      const selected = tab.dataset.level === filters.level;
+      const selected = tab.dataset.level === current.level;
       tab.setAttribute('aria-selected', String(selected));
       tab.tabIndex = selected ? 0 : -1;
     }
-    app.querySelector('#panel-levels')?.setAttribute('aria-labelledby', `tab-${filters.level}`);
+    app.querySelector('#panel-levels')?.setAttribute('aria-labelledby', `tab-${current.level}`);
 
-    const visible = applyFilters(nonCritics, filters);
+    const visible = applyFilters(nonCritics, current);
 
     if (!entries.length) {
       listEl.innerHTML = '';
@@ -283,7 +306,6 @@ export async function renderCategory(app, { params, query }) {
     paint();
   }
 
-  // Tabs, including roving-focus arrow keys.
   const tabs = [...app.querySelectorAll('.tab')];
   tabs.forEach((tab, i) => {
     tab.addEventListener('click', () => update({ level: tab.dataset.level }));

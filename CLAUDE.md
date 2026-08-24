@@ -49,10 +49,12 @@ this file has the rules, schema, and current state.
   exactly).
 - **JS files**: one default export per view/component module, lowercase
   kebab-case filenames, `.js` (ES modules, `type="module"`).
-- **CSS**: one stylesheet (`css/style.css`), custom properties for theme
-  tokens (`--color-*`, `--space-*`), BEM-ish class names
-  (`.creator-card`, `.creator-card__title`) — no CSS framework, no
-  preprocessor.
+- **CSS**: two stylesheets — `css/tokens.css` (the design handoff: palette,
+  type scale, spacing, edges, focus, dark-theme extension) and
+  `css/style.css` (the component layer). Class names follow the design
+  handoff's own naming (`.cc`, `.claim`, `.band`, `.rail`, `.tags`,
+  `.badge`) rather than a BEM scheme invented here. No framework, no
+  preprocessor. See `MARKUP.md` for the full DOM contract.
 
 ## Data schema
 
@@ -126,7 +128,8 @@ Phase 1 output) — kept in this file's state section once finalized.
       "entryVideo": {
         "title": "Verified video title",
         "videoId": "VERIFIED_ID",
-        "whyThisOne": "What you'll know after watching."
+        "whyThisOne": "What you'll know after watching.",
+        "durationMin": 18
       }
     }
   ],
@@ -156,6 +159,10 @@ Phase 1 output) — kept in this file's state section once finalized.
 - `entryVideo.videoId` must be a real, verified YouTube video id (11
   chars, from the actual channel). Embeds always use
   `https://www.youtube-nocookie.com/embed/{videoId}`.
+- `entryVideo.durationMin` — **optional** integer, whole minutes. The design
+  calls for a "START HERE · 18 MIN" eyebrow; with the field absent the
+  eyebrow degrades to "START HERE" rather than inventing a runtime. Only
+  populate it from a verified source.
 
 ## Validator rules (`scripts/validate.mjs`)
 
@@ -204,6 +211,88 @@ this section first to know exactly where to resume.)*
 - **Current phase**: Phase 1 complete. **Phase 2 is BLOCKED — see
   "Phase 2 blocker" below.** Phase 3 tooling (both scripts) is done
   ahead of schedule because it did not depend on the blocked work.
+
+### Phase 2 blocker (read this first)
+
+`youtube.com` is **blocked by this environment's network egress
+policy**, along with `en.wikipedia.org`, `socialblade.com`,
+`noembed.com`, and Invidious mirrors. The allowlist is tight enough
+that `WebFetch` is unusable for creator research. The `WebSearch` tool
+still works, because it runs server-side rather than through the
+session's egress proxy.
+
+Consequence: a creator's *existence and handle* can be corroborated
+from search results, but an `entryVideo.videoId` **cannot be verified
+as belonging to a given channel**. Search result titles do not name the
+uploader, and searching a raw video id returns nothing. Verified
+example of the trap: a search for Veritasium's Collatz video returned
+`XcQat_ADbb0` ("The Hidden Logic of the 3x+1 Problem From Veritasium")
+and `Lr6qc_9M0Ks` ("How accurate is Veritasium about…") — both *other
+channels'* videos about it.
+
+Writing entry videos on that basis would violate project rule 3 (the
+brief's most important rule). Do **not** proceed with Phase 2 until one
+of these is true:
+
+1. `youtube.com` is added to the environment's egress allowlist
+   (network policy is chosen at environment creation —
+   https://code.claude.com/docs/en/claude-code-on-the-web); or
+2. an oEmbed/API host is allowed (`noembed.com`, or `googleapis.com`
+   plus a YouTube Data API key used **at research time only** — the
+   "no API keys" rule governs the shipped site, which still ships as
+   static JSON); or
+3. the project owner explicitly relaxes the verification bar and
+   accepts a documented change to the definition of done.
+
+Awaiting the owner's decision as of this update.
+- **Repo**: `kantorhorvathambrus-source/GrowthList` (new, dedicated repo;
+  not to be confused with `kantorhorvathambrus-source/mancsterapia`, an
+  unrelated existing project). Working directly on `main`.
+- **Done**: `PLAN.md`, this `CLAUDE.md`, repo scaffold, and
+  `data/categories.json` — exactly 200 categories across 16 domains,
+  every `plan` present but empty (filled in Phase 3).
+- **Also done (Phase 3, tooling half)**: `scripts/validate.mjs` and
+  `scripts/build-data.mjs`. Both run on plain `node`, zero deps, and
+  both are tested — every FAIL rule was exercised against deliberately
+  broken fixtures and fires correctly. `node scripts/validate.mjs`
+  currently exits 0 (200 categories, no creators yet, empty plans warn
+  rather than fail so the validator is usable during Phase 2).
+  Scripts accept an optional root dir argument, which is how the
+  fixtures were tested: `node scripts/validate.mjs /path/to/fixture`.
+- **Also done (Phase 4, structure)**: the complete front end — app
+  shell, router, home, category, creator, and stack views,
+  click-to-load embeds, theme toggle, search. Built and browser-tested
+  against both the real (empty) dataset and a throwaway synthetic one.
+  See "Phase 4 notes" below.
+
+### Design system (landed)
+
+The visual layer is **no longer on hold**. The project owner supplied a design
+handoff (token sheet + creator card at three densities); it is implemented.
+
+- `css/tokens.css` — the handoff verbatim, with two changes, both marked in
+  the file: the two `@font-face` rules are commented out (the woff2 subsets
+  don't exist yet and would 404 twice per load), and a **dark-theme extension**
+  is appended. DESIGN.md specifies a light base only; the brief requires both,
+  so the extension remaps semantic aliases onto tokens the scale already
+  provides for dark surfaces. **It needs design sign-off.**
+- `css/style.css` — the component layer. Two hard rules:
+  1. **No literal colour, font stack, or type size.** Verify with
+     `grep -nE '#[0-9a-fA-F]{3,6}|rgba?\(' css/style.css` → no matches.
+  2. **Never reference a raw scale step for text** (`--warm-700`,
+     `--wine-600`). Use the semantic aliases: `--text-body`, `--text-muted`,
+     `--accent-ink`, `--chip-ink`, `--chip-border`, `--badge-ink`,
+     `--marker-fit`, `--marker-caveat`, `--band-ink-bg`, `--rule`. Raw steps
+     silently break dark mode — this happened once and every card became
+     unreadable at ~1.5:1.
+- `js/components/ornament.js` — the geometric set (rings, orbit, starburst,
+  crosshair, half-fill, play, badge marks) as inline SVG using
+  `stroke: currentColor`. Never place ornament inside a repeating card.
+- `MARKUP.md` is the DOM contract and is current. **Keep it in sync** — if a
+  view's markup changes, update `MARKUP.md` in the same commit.
+
+Contrast is verified by script, not by eye: 22 text/background pairings across
+both themes, all passing AA. Re-run after any palette change.
 
 ### Phase 2 blocker (read this first)
 

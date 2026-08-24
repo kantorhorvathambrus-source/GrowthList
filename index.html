@@ -1,11 +1,12 @@
 <!doctype html>
-<html lang="en" prefix="og: https://ogp.me/ns#">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>GrowthList — curated YouTube creators, by skill</title>
 <meta name="description" content="Pick a skill you want to improve at and get a short, honest list of YouTube creators worth watching for it, with one entry-point video each and a four-week plan.">
 <meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="css/tokens.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 </head>
@@ -16,30 +17,42 @@
 <header class="site-header">
   <div class="wrap site-header__inner">
     <a class="brand" href="#/">
-      <span class="brand__mark" aria-hidden="true"></span>
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" focusable="false">
+          <circle cx="32" cy="32" r="29"/>
+          <circle cx="32" cy="32" r="15"/>
+          <circle cx="32" cy="32" r="4" fill="currentColor" stroke="none"/>
+        </svg>
+      </span>
       <span class="brand__name">GrowthList</span>
     </a>
     <nav class="site-nav" aria-label="Main">
       <a href="#/">Skills</a>
       <a href="#/stack">Build your stack</a>
       <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Switch theme">
-        <span class="theme-toggle__icon" aria-hidden="true"></span>
+        <span class="theme-toggle__icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="6" focusable="false">
+            <circle cx="32" cy="32" r="26"/>
+            <path d="M32 6a26 26 0 0 1 0 52z" fill="currentColor" stroke="none"/>
+          </svg>
+        </span>
         <span class="theme-toggle__label">Theme</span>
       </button>
     </nav>
   </div>
 </header>
 
-<main id="main" class="wrap" tabindex="-1">
+<main id="main" tabindex="-1">
   <div id="app" aria-live="polite" aria-busy="true">
-    <div class="state state--loading">
-      <p>Loading…</p>
+    <div class="wrap" style="padding-block: var(--sp-12)">
+      <div class="state state--loading"><p class="state__title">Loading…</p></div>
     </div>
   </div>
 </main>
 
 <footer class="site-footer">
   <div class="wrap">
+    <p class="eyebrow">Independent &amp; unaffiliated</p>
     <p class="site-footer__lead">
       GrowthList is an independent, unaffiliated list. Inclusion is not an
       endorsement, and no creator has paid for or approved their entry.
@@ -54,7 +67,7 @@
       Channel data snapshot: <strong id="footer-snapshot">—</strong>.
       Subscriber figures are shown as broad ranges only and drift constantly.
     </p>
-    <p class="site-footer__meta">
+    <p>
       Videos play from YouTube and load only after you click. We set no
       cookies and run no analytics.
     </p>
@@ -63,13 +76,15 @@
 
 <script type="module" src="js/main.js"></script>
 <noscript>
-  <div class="wrap">
-    <p class="state state--error">
-      GrowthList needs JavaScript to browse skills and creators, because
-      everything is rendered in your browser from static data files. No
-      tracking is involved — you can read the data directly at
-      <code>/data/categories.json</code>.
-    </p>
+  <div class="wrap" style="padding-block: var(--sp-12)">
+    <div class="state state--error">
+      <p class="state__title">GrowthList needs JavaScript.</p>
+      <p>
+        Everything is rendered in your browser from static data files — no
+        tracking is involved. You can read the data directly at
+        <code>/data/categories.json</code>.
+      </p>
+    </div>
   </div>
 </noscript>
 

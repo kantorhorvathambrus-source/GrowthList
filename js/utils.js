@@ -88,9 +88,51 @@ export const PROFILE_AXES = [
 /** Render one of the shared page states. */
 export function stateBlock(kind, title, body) {
   return `<div class="state state--${kind}">
-    ${title ? `<p><strong>${esc(title)}</strong></p>` : ''}
+    ${title ? `<p class="state__title">${esc(title)}</p>` : ''}
     ${body ? `<p>${body}</p>` : ''}
   </div>`;
+}
+
+/**
+ * Subscriber size as a range label. Never an exact count — the dataset stores
+ * buckets deliberately, and a precise number would be wrong within a week.
+ */
+const SIZE_LABELS = {
+  '<100k': 'Under 100K subs',
+  '100k-500k': '100K–500K subs',
+  '500k-1M': '500K–1M subs',
+  '1M-5M': '1M–5M subs',
+  '5M-20M': '5M–20M subs',
+  '>20M': 'Over 20M subs',
+};
+
+/** The second half of the card meta row: a plain-language size class. */
+const SIZE_CLASSES = {
+  '<100k': 'Niche',
+  '100k-500k': 'Small',
+  '500k-1M': 'Mid-size',
+  '1M-5M': 'Large',
+  '5M-20M': 'Very large',
+  '>20M': 'Huge',
+};
+
+export const sizeLabel = (bucket) => SIZE_LABELS[bucket] ?? bucket ?? '';
+export const sizeClass = (bucket) => SIZE_CLASSES[bucket] ?? '';
+
+/**
+ * Initials for the monogram avatar fallback. The design assumes ~5% of
+ * creators lack an avatar; until avatar images exist in the dataset this is
+ * the path every card takes.
+ */
+export function monogram(name) {
+  const parts = String(name ?? '')
+    .replace(/[^\p{L}\p{N} ]/gu, ' ')
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean);
+  if (!parts.length) return '?';
+  if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();
+  return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
 }
 
 /**

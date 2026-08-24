@@ -4,7 +4,8 @@
 // end only if one genuinely covers several of the picks.
 
 import { getCategoryIndex, getCreators } from '../data.js';
-import { esc, stateBlock, statePage, setTitle, domainLabel, sortDomains } from '../utils.js';
+import { esc, stateBlock, statePage, setTitle, domainLabel, sortDomains, sizeLabel } from '../utils.js';
+import { crosshair } from '../components/ornament.js';
 import { encodeStack, decodeStack } from '../stack-encode.js';
 import { creatorMini } from '../components/creator-card.js';
 import { embedMarkup } from '../components/video-embed.js';
@@ -52,7 +53,7 @@ function pickGeneralist(ids, creators) {
 export async function renderStack(app, { query }) {
   setTitle('Build your stack');
   app.setAttribute('aria-busy', 'true');
-  app.innerHTML = stateBlock('loading', 'Loading…', '');
+  app.innerHTML = `<div class="wrap" style="padding-block: var(--sp-12)">${stateBlock('loading', 'Loading…', '')}</div>`;
 
   let categories;
   let creators;
@@ -60,7 +61,7 @@ export async function renderStack(app, { query }) {
     [categories, creators] = await Promise.all([getCategoryIndex(), getCreators()]);
   } catch (err) {
     app.setAttribute('aria-busy', 'false');
-    app.innerHTML = statePage('error', 'Build your stack', 'The stack builder could not load.', esc(err.message));
+    app.innerHTML = `<div class="wrap" style="padding-block: var(--sp-12)">${statePage('error', 'Build your stack', 'The stack builder could not load.', esc(err.message))}</div>`;
     return;
   }
 
@@ -84,27 +85,37 @@ export async function renderStack(app, { query }) {
     .join('');
 
   app.innerHTML = `
-    <p class="crumb"><a href="#/">All skills</a> › Build your stack</p>
-    <h1>Build your stack</h1>
-    <p class="hero__lead">
-      Pick up to ${MAX_PICKS} skills. You get one recommended specialist for each
-      — not one person who claims to cover them all — plus a combined plan and a
-      link you can share.
-    </p>
-
-    <form class="stack__picker" id="stack-form">
-      <div class="filters__group">
-        <label for="stack-add">Add a skill</label>
-        <select id="stack-add">
-          <option value="">Choose a skill…</option>
-          ${options}
-        </select>
+    <section class="band band--ink hero__band">
+      <div class="rail rail--ink"><span>Stack</span></div>
+      <div class="band-body">
+        <p class="crumb"><a href="#/">All skills</a> › Build your stack</p>
+        <h1>Build your stack</h1>
+        <p class="lead">
+          Pick up to ${MAX_PICKS} skills. You get one recommended specialist for each
+          — not one person who claims to cover them all — plus a link you can share.
+        </p>
+        <div class="hero__orn" aria-hidden="true">${crosshair({ size: 180 })}</div>
       </div>
-      <p class="filters__summary" id="stack-count" role="status" aria-live="polite"></p>
-      <ul class="stack__chosen" id="stack-chosen"></ul>
-    </form>
+    </section>
 
-    <div id="stack-result"></div>
+    <section class="band band--paper">
+      <div class="rail"><span>Your picks</span></div>
+      <div class="band-body">
+        <form class="stack__picker" id="stack-form">
+          <div class="filters__group">
+            <label for="stack-add">Add a skill</label>
+            <select id="stack-add">
+              <option value="">Choose a skill…</option>
+              ${options}
+            </select>
+          </div>
+          <p class="filters__summary" id="stack-count" role="status" aria-live="polite"></p>
+          <ul class="stack__chosen" id="stack-chosen"></ul>
+        </form>
+
+        <div id="stack-result"></div>
+      </div>
+    </section>
   `;
   app.setAttribute('aria-busy', 'false');
 
@@ -158,7 +169,7 @@ export async function renderStack(app, { query }) {
         <span class="filters__summary" id="copy-status" role="status" aria-live="polite"></span>
       </div>
 
-      <h2>Your stack</h2>
+      <div class="sec-head"><span class="num">01</span><h2>Your stack</h2></div>
       ${missing.length === rows.length
         ? stateBlock(
             'empty',
@@ -167,30 +178,35 @@ export async function renderStack(app, { query }) {
           )
         : ''}
 
-      <ul class="creator-list stack__result">
+      <ul class="creator-list creator-list--grid stack__result">
         ${rows
-          .map(({ id, category, best }) => {
+          .map(({ id, category, best }, i) => {
             if (!best) {
-              return `<li><article class="creator-card">
-                <div class="creator-card__head">
-                  <h3 class="creator-card__name"><a href="#/category/${esc(id)}">${esc(category.name)}</a></h3>
+              return `<li><article class="cc">
+                <div class="stack__row-head">
+                  <span class="num">${String(i + 1).padStart(2, '0')}</span>
+                  <h3 class="cc-name"><a href="#/category/${esc(id)}">${esc(category.name)}</a></h3>
                 </div>
-                <p class="creator-card__why">No specialist is listed for this skill yet.</p>
+                <p class="claim"><i aria-hidden="true"></i></p>
+                <p style="font-size:var(--fs-small);color:var(--warm-500)">No specialist is listed for this skill yet.</p>
               </article></li>`;
             }
             const { creator, mapping } = best;
-            return `<li><article class="creator-card">
-              <div class="creator-card__head">
-                <h3 class="creator-card__name">
-                  <a href="#/category/${esc(id)}">${esc(category.name)}</a>
-                </h3>
-                <span class="pill pill--size">${esc(creator.sizeBucket)}</span>
+            return `<li><article class="cc cc--accent">
+              <div class="stack__row-head">
+                <span class="num">${String(i + 1).padStart(2, '0')}</span>
+                <h3 class="cc-name"><a href="#/category/${esc(id)}">${esc(category.name)}</a></h3>
               </div>
-              <p class="creator-card__why">
-                <strong><a href="#/creator/${esc(creator.id)}">${esc(creator.name)}</a></strong>
-                — ${esc(mapping.why)}
+              <p class="cc-meta">
+                <span class="micro"><a href="#/creator/${esc(creator.id)}">${esc(creator.name)}</a></span>
+                <span class="dot" aria-hidden="true"></span>
+                <span class="micro">${esc(sizeLabel(creator.sizeBucket))}</span>
               </p>
-              <p class="creator-card__notfor"><strong>Not for:</strong> ${esc(creator.notFor)}</p>
+              <div class="hair"></div>
+              <div class="claim"><i aria-hidden="true"></i><div>
+                <p class="micro claim__label">Why here</p><p>${esc(mapping.why)}</p></div></div>
+              <div class="claim claim--caveat"><i aria-hidden="true"></i><div>
+                <p class="micro claim__label">Not for</p><p>${esc(creator.notFor)}</p></div></div>
               ${mapping.entryVideo ? embedMarkup(mapping.entryVideo, { creatorName: creator.name }) : ''}
             </article></li>`;
           })
@@ -198,8 +214,8 @@ export async function renderStack(app, { query }) {
       </ul>
 
       ${generalist
-        ? `<section class="similar">
-            <h2>One generalist, if you'd rather have fewer voices</h2>
+        ? `<section class="similar" style="margin-top: var(--sp-12)">
+            <div class="sec-head"><span class="num">02</span><h2>One generalist, if you'd rather have fewer voices</h2></div>
             <p class="similar__note">
               Covers ${generalist.covered.length} of your picks. A generalist is
               a reasonable single starting point, but expect less depth than the

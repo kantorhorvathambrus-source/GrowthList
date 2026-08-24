@@ -1,38 +1,80 @@
 # MARKUP.md — the DOM contract
 
-Written for the design spec. `css/style.css` is currently a **structural
-baseline only**: no colour, background, `font-family`, or shadow declarations
-anywhere, so the spec has nothing to conflict with. Borders are declared
-width-and-style only (inheriting `currentColor`) purely so component edges are
-discernible while unstyled — the spec decides whether they survive.
+**Status: the design system has landed.** `css/tokens.css` is the handoff
+(palette, type scale, spacing, edges, focus, plus a dark-theme extension) and
+`css/style.css` is the component layer built on it.
 
-Everything below is what the JavaScript actually emits. Class names and DOM
-nesting are stable; if the spec needs a different hook, say so and the markup
-will change rather than the spec working around it.
+Two rules keep it maintainable:
 
-For each component: **DOM**, **repeats** (what must stay cheap), **states**
-(what needs styling beyond the resting appearance), and **variable content**
-(where text length swings).
+1. **No literal colour, font stack, or type size in `style.css`.** Everything
+   references a custom property, so retuning the palette is a `tokens.css`
+   change and nothing else. Verify:
+   `grep -nE '#[0-9a-fA-F]{3,6}|rgba?\(' css/style.css` → no matches.
+2. **Components reference semantic aliases, never raw scale steps.** Use
+   `--text-body`, `--text-muted`, `--accent-ink`, `--chip-ink`,
+   `--chip-border`, `--badge-ink`, `--marker-fit`, `--marker-caveat`,
+   `--band-ink-bg`, `--rule`. Writing `--warm-700` for text silently breaks
+   dark mode — that happened once already and every card became unreadable.
+
+Everything below is what the JavaScript actually emits. For each component:
+**DOM**, **repeats** (what must stay cheap), **states**, and **variable
+content** (where text length swings).
 
 ---
 
 ## Global constraints
 
-These are fixed by the brief and are not negotiable in the spec:
+- **No external fonts, no CDN.** `tokens.css` declares two self-hosted
+  subsetted woff2 families. **The font files do not exist yet** — DESIGN.md
+  lists font selection as an open item — so both `@font-face` rules are
+  commented out rather than firing two 404s on every page load. The fallback
+  stacks (Iowan/Palatino/Georgia, Arial Narrow) are the intended near-matches,
+  so the site renders as designed today. To enable: drop the woff2 files into
+  `/fonts/` and uncomment. Nothing else changes.
+- **The display serif is headings only, never below 20px, never inside a card
+  that repeats.** Card copy is `--font-body` / `--font-cond` only.
+- **Light and dark** are both handled by remapping semantic aliases in
+  `tokens.css` (`@media (prefers-color-scheme: dark)` guarded as
+  `:root:not([data-theme="light"])`, plus `:root[data-theme="dark"]`).
+  Component CSS carries no theme-specific rules.
+- **Mobile-first, no horizontal overflow at 390px.** Verified.
+- **Focus is never removed.** `--focus-ring` (3px wine-600, 2px offset), or
+  `--focus-ring-dark` (wine-200) on ink, wine, and header/footer surfaces.
+- **No shadow on any repeating card.** `--shadow-overlay` is for the search
+  dropdown only.
+- **Selection is never colour alone** — tabs use fill + 2px ink underline +
+  `aria-selected`.
+- First load is ~85 KB of data against a ~500 KB budget.
 
-- **No external fonts, no CDN.** System font stack only. The current CSS
-  declares no `font-family` at all, so the spec sets it.
-- **Light and dark are both required.** The visitor's system preference is the
-  default; an explicit choice stamps `data-theme="light"` or `data-theme="dark"`
-  on `<html>` and is remembered in `localStorage`. So every colour needs
-  defining under three conditions: bare `:root`, `@media (prefers-color-scheme:
-  dark)` guarded as `:root:not([data-theme="light"])`, and `:root[data-theme="dark"]`.
-- **Mobile-first, no horizontal overflow at 390px.** Currently verified clean.
-- **Real focus styles.** `:focus-visible` currently has a `3px solid` outline
-  using `currentColor`. Replace it, don't remove it.
-- **`prefers-reduced-motion`** must be honoured by any animation the spec adds.
-- First load is budgeted under ~500 KB total (currently 85 KB of data), so
-  large decorative assets need to be weighed against that.
+---
+
+## Layout primitives
+
+Every view is composed of full-bleed **bands** with hard transitions.
+
+```html
+<section class="band band--ink|--paper|--alt|--accent">
+  <div class="rail rail--ink"><span>Rotated label</span></div>
+  <div class="band-body"> …content… </div>
+</section>
+```
+
+- `.rail` is a fixed `--rail-w: 64px` solid bar with a `writing-mode:
+  vertical-rl` label. **Below 720px the band switches to `flex-direction:
+  column` and the rail becomes a 44px horizontal label row.**
+- `.band--ink` uses `--band-ink-bg`: `--ink` in light, `--wine-900` in dark
+  (an ink band on an ink page would have no visible edge).
+- Numbered sequences (`.num`, `01`/`02`/`03`) are the recurring organising
+  device: domain heads, section heads, plan weeks, profile mappings.
+- Other primitives: `.eyebrow`, `.micro`, `.hair` (1px rule), `.dot`
+  (3px separator), `.orn` (ornament wrapper).
+
+**Ornament** lives in `js/components/ornament.js`: `rings`, `orbit`,
+`starburst`, `crosshair`, `halfFill`, plus `play` and `badgeMark` for card
+marks. All inline SVG, `stroke: currentColor`, 1px hairlines. `ornamentFor(key)`
+picks deterministically from the id so a band always gets the same mark.
+**Never used inside a repeating card** — only band ornament (`.hero__orn`) and
+the small `badgeMark`/`play` glyphs.
 
 ---
 
@@ -41,58 +83,53 @@ These are fixed by the brief and are not negotiable in the spec:
 ```html
 <a class="skip-link" href="#main">Skip to content</a>
 
-<header class="site-header">
+<header class="site-header">          <!-- ink, 4px wine bottom border -->
   <div class="wrap site-header__inner">
     <a class="brand" href="#/">
-      <span class="brand__mark" aria-hidden="true"></span>
+      <span class="brand__mark" aria-hidden="true"><svg>…concentric rings…</svg></span>
       <span class="brand__name">GrowthList</span>
     </a>
     <nav class="site-nav" aria-label="Main">
       <a href="#/">Skills</a>
       <a href="#/stack">Build your stack</a>
       <button id="theme-toggle" class="theme-toggle">
-        <span class="theme-toggle__icon" aria-hidden="true"></span>
+        <span class="theme-toggle__icon" aria-hidden="true"><svg>…half-fill…</svg></span>
         <span class="theme-toggle__label">Theme</span>
       </button>
     </nav>
   </div>
 </header>
 
-<main id="main" class="wrap" tabindex="-1">
-  <div id="app" aria-live="polite" aria-busy="true"> … view renders here … </div>
+<main id="main" tabindex="-1">
+  <div id="app" aria-live="polite" aria-busy="true"> …bands render here… </div>
 </main>
 
-<footer class="site-footer"> <div class="wrap"> …4 <p> … </div> </footer>
+<footer class="site-footer">          <!-- wine-900 -->
+  <div class="wrap"> <p class="eyebrow">…</p> …4 <p>… </div>
+</footer>
 ```
 
-- **Repeats:** none. One header, one footer, per page load.
-- **States:**
-  - `.skip-link` — invisible until `:focus`, then must be visible and legible
-    over whatever sits behind it.
-  - `.site-header` is `position: sticky; top: 0` in the old design; the spec
-    decides whether it stays sticky (structural CSS no longer sets this).
-  - `.theme-toggle` — hover, focus. Its `aria-label` and `title` change between
-    "Switch to dark theme" / "Switch to light theme"; there is no pressed state.
-  - `#app[aria-busy="true"]` is set during every view load — available as a
-    hook if the spec wants a loading treatment on the whole region.
-- **Variable content:** `#footer-snapshot` is one of `2026-08` (a `YYYY-MM`
-  string) or the longer `no creator data published yet`. `.brand__mark` is an
-  empty 1.1rem square — currently blank, intended as a logo slot.
-- **Note:** `<main>` has `tabindex="-1"` and is focused on every route change,
-  so keyboard focus lands there rather than resetting to the top of the
-  document. Don't add a focus ring to `main` itself (`main:focus { outline:
-  none }` is deliberate).
+- **Repeats:** none.
+- **States:** `.skip-link` hidden until `:focus`; `.theme-toggle` hover/focus,
+  its `aria-label` and `title` swap between "Switch to dark/light theme";
+  `#app[aria-busy="true"]` during every view load.
+- **Note:** `<main>` is **not** `.wrap` — bands are full-bleed and each
+  `.band-body` handles its own gutter. `<main>` has `tabindex="-1"` and is
+  focused on every route change; `main:focus { outline: none }` is deliberate.
+- **Variable content:** `#footer-snapshot` is `2026-08` or the longer
+  `no creator data published yet`.
+- **Footer eyebrow gotcha:** `--accent-ink` is wine-600 on paper, which is
+  nearly invisible on wine-900. Every dark surface promotes eyebrows to
+  wine-200 via the `.site-footer .eyebrow` / `.band--ink .eyebrow` rule. If a
+  new dark surface is added, add it to that selector list.
 
 ---
 
 ## 2. Page states — `stateBlock()` / `statePage()` (`js/utils.js`)
 
-Used by every view for loading, empty, and error conditions.
-
 ```html
-<!-- stateBlock: inline, inside a populated page -->
 <div class="state state--loading|empty|error">
-  <p><strong>Short title.</strong></p>
+  <p class="state__title">Short title.</p>
   <p>Longer explanation, may contain <code>…</code> and <a>…</a>.</p>
 </div>
 
@@ -101,35 +138,34 @@ Used by every view for loading, empty, and error conditions.
 <div class="state state--error"> …same… </div>
 ```
 
-- **Repeats:** at most one or two per page, except `.state--empty` inside a
-  list item (`<li>` wrapper) when filters match nothing.
-- **States:** three variants via modifier class — `--loading`, `--empty`,
-  `--error`. These are the primary hooks. The old design used a dashed border
-  for empty/loading and a solid critic-coloured border for error.
-  - `--loading` previously had a sweeping 2px animated bar via `::after`. That
-    animation is removed; if the spec restores it, it must respect
-    `prefers-reduced-motion`.
-- **Variable content:** the body ranges from ~40 to ~220 characters and can
-  wrap to 4 lines on mobile. Empty-state copy is deliberately long (it explains
-  *why* something is missing), so don't design for one line.
+- **Repeats:** one or two per page; also inside an `<li>` when filters match
+  nothing.
+- **States:** `--loading` / `--empty` / `--error` differ by left border colour
+  (`--rule`, `--marker-caveat`, `--wine-600`). `.band--ink .state` inverts to
+  a `--warm-800` fill.
+- **Variable content:** body runs ~40–220 chars. Empty-state copy is
+  deliberately long because it explains *why* something is missing.
 
 ---
 
 ## 3. Home (`js/views/home.js`)
 
-### 3a. Hero + search
+Three bands: **ink hero** → **paper catalogue** → **ink explainer**.
+
+### 3a. Hero + search (ink band, rail "GrowthList")
 
 ```html
-<div class="hero">
+<div class="hero__inner">
+  <p class="eyebrow">200 skills · 16 domains</p>
   <h1>Pick a skill. Get a short, honest list.</h1>
-  <p class="hero__lead">…~180 chars, contains <em>…</em>…</p>
+  <p class="lead">…~190 chars, contains <em>…</em>…</p>
 
   <div class="search" role="search">
-    <label class="visually-hidden" for="search-input">Search skills</label>
     <div class="search__field">
+      <span class="search__icon"><svg>…magnifier…</svg></span>
       <input id="search-input" type="search" role="combobox"
              aria-expanded="false" aria-controls="search-results"
-             aria-autocomplete="list" placeholder="Try “stage fright”, …">
+             aria-autocomplete="list" placeholder="Try “stage fright”…">
     </div>
     <ul id="search-results" class="search__results" role="listbox">
       <li id="search-result-N" class="search__result" role="option"
@@ -141,44 +177,43 @@ Used by every view for loading, empty, and error conditions.
   </div>
   <p class="search__hint">…</p>
   <p class="visually-hidden" id="search-status" role="status"></p>
-
-  <p><button class="surprise" id="surprise">Surprise me →</button></p>
+  <div class="hero__actions"><button class="surprise" id="surprise">Surprise me →</button></div>
 </div>
+<div class="hero__orn" aria-hidden="true">…rings SVG…</div>
 ```
 
-- **Repeats:** `.search__result` — **max 8**, rebuilt on every keystroke
-  (debounced 140ms). Keep it cheap: no shadows or transitions that cost on
-  rapid re-render.
-- **States — this component has the most:**
-  - `.search__field:focus-within` — the visible focus treatment lives on the
-    wrapper, because the `<input>` itself has `outline: none`.
-  - `.search__result[aria-selected="true"]` — the **keyboard-active** option,
-    moved by ↑/↓. Must be visually distinct and must not rely on `:hover`.
-  - `.search__result:hover` — pointer highlight, separate from the above.
-  - `mark` inside the result name — highlights the matched substring. Needs a
-    treatment that is not the browser default yellow.
-  - `.search__results:empty { display: none }` is structural — keep it.
-  - `#search-input` is `type="search"`; browsers add a clear button that may
-    need normalising.
-- **Variable content:**
-  - Result name: **5–32 chars** (longest: "Privacy and operational security").
-  - `.search__result-meta`: empty when the category name itself matched,
-    otherwise `matched “<alias>”` where the alias is **2–30 chars**. Design for
-    it being absent about half the time.
+- **Repeats:** `.search__result` — **max 8**, rebuilt per keystroke (debounced
+  140ms). No shadows or transitions here.
+- **States:**
+  - `.search__field:focus-within` carries the focus ring; the `<input>` has
+    `outline: none`.
+  - `.search__result[aria-selected="true"]` — keyboard-active option (↑/↓),
+    fill **plus** a 4px wine left border, so it is not colour-only.
+  - `.search__result:hover` — separate from the above.
+  - `mark` — matched substring, wine + underline, not browser yellow.
+  - `.search__results:empty { display: none }` is structural.
+  - **`.surprise` on a dark band**: `--text` is near-black, so
+    `.band--ink .surprise` overrides to `--paper`. Any new button placed on a
+    dark band needs the same treatment (this shipped broken once — the label
+    was invisible).
+- **Variable content:** result name **5–32 chars**;
+  `.search__result-meta` is absent about half the time (only shown when an
+  alias matched), alias **2–30 chars**.
+- `.hero__orn` is `position: absolute`, hidden below 900px.
 
-### 3b. Domain sections and the category grid — **the heaviest repeat on the site**
+### 3b. Domain groups and the category grid — **the heaviest repeat**
 
 ```html
-<section class="domain" aria-labelledby="domain-mindset">
+<section class="domain">
   <div class="domain__head">
-    <h2 id="domain-mindset">Mindset &amp; psychology</h2>
+    <span class="domain__title"><span class="num">01</span><h2>Mindset &amp; psychology</h2></span>
     <span class="domain__count">13 skills</span>
   </div>
   <ul class="cat-grid">
     <li>
       <a class="cat-card" href="#/category/self-discipline">
         <span class="cat-card__name">Self-discipline</span>
-        <p class="cat-card__blurb">…</p>
+        <span class="cat-card__blurb">…</span>
         <span class="cat-card__count">7 creators</span>
       </a>
     </li>
@@ -186,397 +221,280 @@ Used by every view for loading, empty, and error conditions.
 </section>
 ```
 
-- **Repeats: 16 `.domain` sections containing 200 `.cat-card`s, all rendered
-  in one pass on first paint.** This is the single thing to keep cheap.
-  Per-card `box-shadow`, `filter`, `backdrop-filter`, or transitions on
-  `box-shadow` will be felt; borders and background colours will not.
-  Cards per domain: **7 min / 13 median / 14 max**.
-- **States:**
-  - `.cat-card:hover` and `:focus-visible` — the whole card is one `<a>`, so
-    the focus ring goes around the card.
-  - `.cat-card__count--zero` — an additional class when the count is 0, text
-    reads "no creators listed yet" instead of "N creators". Currently the only
-    semantic colour distinction on the home page. **Every card carries this
-    class until Phase 2 data lands**, so its unstyled/plain appearance matters.
-- **Variable content:**
-  - `.cat-card__name`: **5–32 chars**, median 17. Wraps to 2 lines at the
-    narrowest column.
-  - `.cat-card__blurb`: **75–119 chars**, median 97 — reliably 2–3 lines. The
-    grid is `1fr` / 2-col at 34rem / 3-col at 56rem, so cards in a row have
-    uneven text height. Cards use `height: 100%` to equalise.
-  - `.domain__count`: always short, `"N skills"`.
+- **Repeats: 16 domains × 200 filled tiles, one paint.** Tiles are
+  `--bg-alt` fills separated by a `--gutter-tile` (2px) hairline of paper, so
+  they read as one block. **No shadow, no transform, no transition beyond
+  colour** — this is the screen where cost shows. Cards per domain: 7/13/14
+  (min/median/max).
+- **States:** `.cat-card:hover` inverts to a wine fill with paper text (blurb
+  and count switch to wine-200); `:focus-visible` rings the whole tile since
+  the card is one `<a>`. `.cat-card__count--zero` reads "None listed yet" in
+  muted text — **every tile carries it until Phase 2 data lands**.
+- **Variable content:** name **5–32 chars** (longest: "Privacy and operational
+  security"); blurb **75–119 chars**, reliably 2–3 lines. Tiles are
+  `display: flex; flex-direction: column` with the blurb `flex: 1`, so counts
+  align to the bottom regardless of blurb length.
+- Grid: 1 col → 2 at 34rem → 3 at 62rem.
 
-### 3c. Explainer (below the fold)
+### 3c. Explainer (ink band)
 
-```html
-<section class="explainer">
-  <h2>How to actually use this</h2>
-  <div class="explainer__grid">
-    <div><h3>…</h3><p>…~200 chars…</p></div>   <!-- ×3 -->
-  </div>
-</section>
-```
-
-- **Repeats:** exactly 3 columns (1 column below 46rem).
-- **States:** none — static text.
-- **Variable content:** fixed copy, ~160–210 chars per paragraph.
+Three `.explainer__item`s, each an `.eyebrow` + `h3` + `p`. Static copy,
+~160–210 chars per paragraph. 1 column below 46rem.
 
 ---
 
 ## 4. Category view (`js/views/category.js`)
 
+Four bands: **ink header** → **paper creators** → **ink "the other side"** →
+**alt plan**.
+
 ```html
+<!-- band 1: ink, rail = domain name -->
 <p class="crumb"><a href="#/">All skills</a> › Communication &amp; social skills</p>
+<h1>Public speaking</h1>
+<p class="lead">…75–119 chars…</p>
+<p class="cat-head__related">Related: <a>…</a><a>…</a><a>…</a></p>
+<div class="hero__orn">…deterministic ornament…</div>
 
-<div class="cat-head">
-  <h1>Public speaking</h1>
-  <p class="cat-head__blurb">…75–119 chars…</p>
-  <p class="cat-head__related">Related: <a>…</a><a>…</a><a>…</a></p>
-</div>
-
+<!-- band 2: paper, rail "Creators" -->
 <div class="tabs" role="tablist">
-  <button class="tab" role="tab" id="tab-beginner"
-          aria-selected="true" tabindex="0" data-level="beginner">
-    Beginner <span class="tab__count">(4)</span>
-  </button>  <!-- ×3 -->
+  <button class="tab" role="tab" id="tab-beginner" aria-selected="true"
+          tabindex="0" data-level="beginner">Beginner <span class="tab__count">(4)</span></button>
 </div>
-
 <div id="panel-levels" role="tabpanel" aria-labelledby="tab-beginner" tabindex="0">
   <div id="level-guidance">
-    <div class="level-guidance"><p><strong>Beginner:</strong> …</p></div>
+    <div class="level-guidance"><p class="micro claim__label">beginner</p><p>…</p></div>
   </div>
-
-  <form class="filters" id="filters">…see below…</form>
-  <ul class="creator-list" id="creator-list">…creator cards…</ul>
+  <form class="filters" id="filters">…</form>
+  <ul class="creator-list creator-list--grid" id="creator-list">…cards…</ul>
 </div>
-
-<section class="other-side">…critic block, see 4c…</section>
-<section class="plan">…see 4d…</section>
 ```
 
 ### 4a. Tabs
 
-- **Repeats:** exactly 3.
-- **States:** `.tab[aria-selected="true"]` is the selected tab — **this is the
-  hook, not a `.is-active` class**. Also `:hover` and `:focus-visible`. Roving
-  tabindex: the unselected tabs have `tabindex="-1"`, so only one is in the tab
-  order; ←/→ move between them.
-- **Variable content:** label is one of three fixed words plus `(N)`.
+- Exactly 3. **`[aria-selected="true"]` is the hook** — fill + 2px ink
+  underline + wine text, never colour alone. Roving tabindex: unselected tabs
+  are `tabindex="-1"`; ←/→ move between them.
+- Counts exclude critics, because critics render in their own band.
 
 ### 4b. Filters
 
-```html
-<form class="filters" id="filters" aria-label="Filter creators">
-  <div class="filters__row">
-    <div class="filters__group">
-      <label for="filter-size">Channel size</label>
-      <select id="filter-size">…7 options…</select>
-    </div>
-    <div class="filters__group">
-      <label for="filter-format">Format</label>
-      <select id="filter-format">…variable options…</select>
-    </div>
-    <div class="filters__group">
-      <label for="filter-promo">Max self-promotion: <strong id="promo-value">4</strong>/4</label>
-      <input id="filter-promo" type="range" min="0" max="4" step="1" value="4">
-    </div>
-    <button class="filters__reset" id="filters-reset">Reset filters</button>
-  </div>
-  <p class="filters__summary" id="filters-summary" role="status">Showing 4 of 11 creators.</p>
-</form>
-```
+`.filters` is an `--bg-alt` block with a 2px ink top border. Two `<select>`s,
+a range input (`accent-color: --wine-600`), a text reset button, and a
+`role="status"` summary. Wraps at narrow widths.
 
-- **Repeats:** one filter bar per category page.
-- **States:** native `<select>` and `<input type="range"]` need styling in both
-  themes — the range previously used `accent-color`. `.filters__reset` is a
-  text button (hover/focus). The row wraps at narrow widths.
 - **Variable content:** `#filters-summary` swaps between "Showing N of M
-  creators." and "No creators match. M available at other settings." The label
-  text changes as the slider moves.
+  creators." and "No creators match. M available at other settings."
 
-### 4c. Critic block — "the other side"
+### 4c. The critic — "the other side" (ink band, rail "The other side")
 
-```html
-<section class="other-side">
-  <div class="other-side__head"><h2>The other side</h2></div>
-  <p class="other-side__note">…~140 chars…</p>
-  <ul class="creator-list">…creator cards…</ul>
-</section>
-```
+The credibility device of the site, so it gets its own full band rather than a
+nested box. Contains a `.sec-head` (`03` + h2), a note, and a `.creator-list`.
 
-- **Repeats:** one block per category, usually containing **1** creator card
-  (occasionally 2–3).
-- **States:** none of its own; it is a container.
-- **Design intent (from the brief):** this must be *visually distinct* and not
-  buried — it is the credibility device of the whole site. The previous design
-  used a warm accent border and tinted background to separate it from the main
-  list. The nested `.creator-card` inherits the section's treatment.
-- Rendered **only** when a critic exists; absent entirely otherwise.
+**Cards invert inside it**: `--wine-800` fill (the token documented as "card
+fill on dark"), wine-400 left border, wine-200 text, wine-900 badges, and the
+video affordance flips to a wine-400 fill with wine-900 text. All of that is
+handled by `.other-side .cc …` rules — the card markup is identical.
 
-### 4d. Four-week plan
+Rendered only when a critic exists; absent entirely otherwise.
+
+### 4d. Four-week plan (alt band, rail "Practice")
 
 ```html
-<section class="plan">
-  <h2>The four-week plan</h2>
-  <p class="plan__intro">…</p>
-  <ul class="plan__weeks">
-    <li class="plan__week">
-      <h3>Week 1</h3>
-      <ul class="plan__watch">Watch: <li><a href="#/creator/…">Name</a></li></ul>
+<ul class="plan__weeks">
+  <li class="plan__week">
+    <span class="plan__marker"><span>01</span></span>
+    <div class="plan__body">
+      <ul class="plan__watch"><span class="micro">Watch</span> <li><a>Name</a></li></ul>
       <label class="plan__check">
         <input type="checkbox" data-plan-key="category-id:week1">
         <span>Record yourself for two minutes and watch it back.</span>
       </label>
-    </li>
-  </ul>
-</section>
+    </div>
+  </li>
+</ul>
 ```
 
-- **Repeats:** exactly 4 `.plan__week` (2×2 grid above 46rem, stacked below).
-- **States:**
-  - `.plan__check input:checked + span` — the completed treatment. Currently
-    line-through; the spec owns this. Checked state persists in `localStorage`
-    per category.
-  - Checkbox `:focus-visible` — the `<label>` wraps the input, so clicking the
-    text toggles it.
-  - Empty variant: when no plan exists the whole `<ul>` is replaced by a
-    `.state--empty` block.
-- **Variable content:** the exercise text runs **~50–130 chars**, 1–3 lines.
-  `.plan__watch` holds 1–2 creator links, names up to ~30 chars.
+- **Repeats:** exactly 4, single column, joined by a **connecting line** — a
+  1px `::before` running down the marker column, clipped at the first and last
+  markers so it starts and ends on the numbers. The `.plan__marker` has a
+  `--bg` fill so the line passes behind it cleanly.
+- **States:** `.plan__check input:checked + span` strikes through and mutes;
+  state persists per category in `localStorage`. The `<label>` wraps the input
+  and is `min-height: var(--tap-min)`.
+- **Variable content:** exercise text ~50–130 chars; 1–2 creator links.
+- Empty variant replaces the whole list with a `.state--empty`.
 
 ---
 
-## 5. Creator card (`js/components/creator-card.js`)
+## 5. Creator card (`js/components/creator-card.js`) — the core repeating component
 
-Two variants. **`creatorCard()`** — full, used in category lists and the stack:
+Slot order is fixed and identical at every density, so a density switch is a
+class change, never different markup:
+
+**avatar → name → size label → format tags → why here → not for → badges → video**
 
 ```html
 <li>
-  <article class="creator-card">
-    <div class="creator-card__head">
-      <h3 class="creator-card__name"><a href="#/creator/…">Display Name</a></h3>
-      <span class="creator-card__handle">@handle</span>
-      <span class="pill pill--size">1M-5M</span>
-      <span class="pill pill--critic">critic</span>      <!-- role-dependent -->
-      <span class="pill">generalist</span>                <!-- role-dependent -->
-      <span class="pill pill--archive">archive</span>     <!-- status-dependent -->
+  <article class="cc cc--accent">
+    <div class="cc-head">
+      <span class="avatar avatar--monogram" role="img" aria-label="Name">MD</span>
+      <div class="cc-head__body">
+        <h3 class="cc-name"><a href="#/creator/…">Display Name</a></h3>
+        <p class="cc-meta">
+          <span class="micro">1M–5M subs</span>
+          <span class="dot"></span><span class="micro">Large</span>
+          <span class="dot"></span><span class="micro">Critic</span>
+        </p>
+        <ul class="tags"><li>long-form</li><li class="tags__more">+2</li></ul>
+      </div>
     </div>
 
-    <ul class="tag-row">
-      <li class="tag">long-form</li>              <!-- format tags -->
-      <li class="tag tag--signal">cites research</li>  <!-- signals -->
-    </ul>
+    <div class="hair"></div>
 
-    <p class="creator-card__why">…category-specific reason…</p>
-    <p class="creator-card__notfor"><strong>Not for:</strong> …</p>
-    <p class="creator-card__caveat">…optional, often absent…</p>
+    <div class="claim">
+      <i></i><div><p class="micro claim__label">Why here</p><p>…</p></div>
+    </div>
+    <div class="claim claim--caveat">
+      <i></i><div><p class="micro claim__label">Not for</p><p>…</p></div>
+    </div>
 
-    <div class="embed">…see section 6…</div>
+    <ul class="badges"><li class="badge"><svg/>Cites research</li></ul>
+
+    <div class="embed">…see §6…</div>
   </article>
 </li>
 ```
 
-**`creatorMini()`** — same head and `notFor`, no tags and no embed, used for
-similar-creators and the stack generalist. Its optional note reuses
-`.creator-card__caveat`.
+`creatorMini()` emits `.cc.cc--compact` — same slots, no tags, no badges, no
+embed. Used for similar-creators and the stack generalist.
 
-- **Repeats:** up to **~15 per category page**, each containing a full embed
-  block. Realistic target is 8–15. On the creator page, up to 4 minis.
-- **States:**
-  - `.creator-card__name a` — hover, focus.
-  - Pills are static, but there are **four distinct kinds**: `.pill--size`
-    (always present), `.pill--critic`, `.pill--archive`, and bare `.pill`
-    (generalist, plus `strength` and country on the profile page). They need to
-    read as different categories of information, not one uniform chip.
-  - `.tag` vs `.tag--signal` — format tags versus the fixed signal vocabulary.
-    Signals are **neutral labels, not verdicts**: `sells-course` and
-    `contested-claims` must not be styled as warnings.
-  - `.creator-card__notfor` — the honest downside line. Previously a left rule
-    in the critic colour. Present on **every** card, never absent.
-- **Variable content:**
-  - Name: 3–30 chars. Handle: 3–30 chars, and the two sit on one baseline row
-    that wraps with the pills.
-  - `.creator-card__why`: **20–200 chars**, 1–3 lines.
-  - `.creator-card__notfor`: one sentence, ~40–120 chars.
-  - `.creator-card__caveat`: absent most of the time; when present, one
-    sentence.
-  - `.tag-row`: **1–5 format tags plus 0–7 signals**, so anywhere from 1 to 12
-    chips — this row wraps hard on mobile. Signal labels are up to 24 chars
-    ("strong ideological frame").
+- **Repeats:** up to ~15 per category page, each with an embed; 4 minis on a
+  profile. `box-shadow: var(--shadow-none)` is explicit here.
+- **Layout:** `.creator-list--grid` is `repeat(auto-fill, minmax(360px, 1fr))`.
+  Cards are flex columns and `.creator-list .embed { margin-top: auto }`, so
+  the video affordance pins to the bottom and sits on one baseline across a
+  row regardless of sentence length.
+- **States:** `.cc-name a` hover/focus. The two `.claim` markers differ by
+  colour **and** label ("Why here" / "Not for"), so they don't rely on colour
+  alone.
+- **Avatars:** the dataset has **no avatar field yet**, so every card renders
+  `.avatar--monogram` (initials, wine fill). `.avatar--alt` (warm-200 fill,
+  warm-800 text) alternates by a hash of the creator id — stable per creator
+  and independent of list position, so filtering never restyles a card. When
+  `creator.avatar` exists it renders an `<img>` with `width`/`height` set, so
+  the box never reflows.
+- **Overflow caps:** the design shows 1–3 tags and 0–3 badges; the data allows
+  5 and 7. Surplus collapses into a `+N` chip (with the full list in `title`)
+  rather than wrapping to a fourth row. The profile page shows all of them.
+- **Variable content:** name 3–30; `why` **20–200 chars**; `notFor` one
+  sentence ~40–120; `caveats` usually absent.
 
 ---
 
-## 6. Video embed (`js/components/video-embed.js`)
+## 6. Video affordance (`js/components/video-embed.js`)
 
-**Privacy-critical. Read before restyling.** Nothing may be requested from any
-third party before the visitor clicks — that includes thumbnails, which is why
-there is no image here at all. The spec must not introduce a background image,
-font, or icon loaded from a remote host.
+**Privacy-critical.** Nothing is requested from any third party before the
+click — including thumbnails, which YouTube serves from `i.ytimg.com`, not
+the nocookie domain. Never introduce a remote image, font, or icon here.
 
-Before click:
+Per the design, the wine block **is** the affordance, not a grey placeholder.
 
 ```html
 <div class="embed">
   <div class="embed__frame" data-video="VIDEOID" data-title="…">
     <button class="embed__button" aria-label="Play “…” from Name">
-      <span class="embed__play" aria-hidden="true"></span>
-      <span class="embed__title">Verified video title</span>
+      <span class="embed__ring"><svg>▶</svg></span>
+      <span class="embed__text">
+        <span class="embed__eyebrow">Start here · 18 min</span>
+        <span class="embed__title">Verified video title</span>
+      </span>
     </button>
   </div>
-  <p class="embed__why">What you'll know after watching.</p>
+  <p class="embed__why">…</p>
   <p class="embed__notice">Playing loads the video from YouTube, and YouTube may set cookies.</p>
 </div>
 ```
 
-After click, `.embed__button` is **replaced** by `<iframe>` inside the same
-`.embed__frame`, and a `<p class="embed__fallback">` with a plain link is
-inserted immediately after the frame.
+After click: `.embed__button` is replaced by an `<iframe>`, the frame gains
+`.embed__frame--playing` (which applies `aspect-ratio: 16/9`), and a
+`.embed__fallback` link is inserted after it.
 
-- **Repeats:** one per creator card — so up to ~15 per category page and up to
-  6 per creator profile.
-- **States:**
-  - `.embed__button:hover` / `:focus-visible` — it is a real button filling the
-    whole 16:9 area.
-  - `.embed__play` is an empty 3rem circle; the play triangle was previously
-    drawn with CSS borders on `::after`. **It must stay CSS/inline-SVG, not a
-    remote asset.**
-  - `.embed__fallback` appears only after a click, for embed-disabled videos.
-  - `.embed__frame` is `aspect-ratio: 16/9` with `overflow: hidden` —
-    structural, keep.
-- **Variable content:** `.embed__title` is a real YouTube title, **up to ~100
-  chars**, and is the most likely thing to overflow. `.embed__notice` is fixed
-  copy and must remain legible — it is a legal/privacy requirement, not
-  decoration, so it can be small but not hidden.
-- `.embed` is capped at `max-width: 30rem` so the placeholder doesn't dwarf the
-  text explaining why to watch it. The spec may change the cap.
+- **Repeats:** one per card — up to ~15 per category page, 6 per profile.
+- **States:** `.embed__button` hover (wine-700) and focus (`--focus-ring-dark`,
+  because it sits on a wine fill). `.embed__fallback` appears only after a
+  click, for embed-disabled videos.
+- **`durationMin` is optional.** With it the eyebrow reads "Start here · 18
+  min"; without, just "Start here" — a runtime is never invented. The field is
+  not yet in the dataset; adding it is a schema addition in `CLAUDE.md`.
+- **Variable content:** `.embed__title` is a real YouTube title up to ~100
+  chars and is `white-space: nowrap; text-overflow: ellipsis` — it truncates by
+  design so the block keeps a fixed height across a row.
+- `.embed__notice` is a legal/privacy requirement, not decoration. It may be
+  small; it may not be removed.
 
 ---
 
 ## 7. Creator profile (`js/views/creator.js`)
 
-```html
-<div class="profile__head">
-  <h1>Display Name</h1>
-  <div class="profile__meta">
-    <span class="creator-card__handle">@handle</span>
-    <span class="pill pill--size">1M-5M subscribers</span>
-    <span class="pill pill--critic">critic</span>
-    <span class="pill">US</span>
-  </div>
-  <p class="profile__desc">…longDescription, 200+ chars…</p>
-  <p class="creator-card__notfor">…</p>
-  <p class="creator-card__caveat">…optional…</p>
-  <p><a class="button" href="https://www.youtube.com/@handle">Open channel on YouTube</a></p>
-</div>
+Three bands: **ink header** (avatar, name, meta, description, channel button)
+→ **paper profile** → **alt similar**.
 
-<h2>Taste profile</h2>
-<p class="similar__note">…</p>
+```html
 <ul class="axes">
   <li class="axis">
-    <span>Evidence-based</span>
+    <span class="axis__label">Evidence-based</span>
     <span class="axis__bar"><span class="axis__fill" style="width:75%"></span></span>
     <span class="axis__value">3/4</span>
   </li>  <!-- ×5 -->
 </ul>
 
-<h2>Where they're worth watching</h2>
 <article class="mapping">
   <div class="mapping__head">
+    <span class="num">01</span>
     <h3><a href="#/category/…">Public speaking</a></h3>
-    <span class="pill">primary</span>
-    <span class="creator-card__handle">Communication &amp; social skills</span>
+    <span class="micro">primary</span>
+    <span class="micro">Communication &amp; social skills</span>
   </div>
-  <p>…why, 20–200 chars…</p>
+  <p>…why…</p>
   <p class="mapping__evidence"><strong>Why them:</strong> …</p>
   <div class="embed">…</div>
 </article>  <!-- ×2–6 -->
-
-<section class="similar">
-  <h2>Similar creators</h2>
-  <p class="similar__note">…</p>
-  <ul class="creator-list">…creatorMini ×4…</ul>
-</section>
 ```
 
-- **Repeats:** exactly **5** `.axis` rows; **2–6** `.mapping` blocks (hard max
-  6), each with an embed; up to **4** similar creators.
-- **States:**
-  - `.axis__fill` width is set inline by JS as a percentage of 4. The bar needs
-    a track (`.axis__bar`) and fill treatment that works at **0%** — a zero
-    value renders an invisible fill, so the track must carry the meaning.
-  - `.button` — the outbound channel link. Hover, focus, and a `[disabled]`
-    variant exists in CSS though unused here.
-  - `.pill` with `strength` values `primary` / `secondary` — worth
-    distinguishing.
-  - A `.state--empty` "Not fully verified" block appears when
-    `verified: false`, plus an optional `scopeNote` paragraph.
-- **Variable content:**
-  - `.profile__desc`: **200–600 chars**, the longest prose block on the site.
-  - `.axis` label column is a fixed `8.5rem` grid track; labels are 5–14 chars
-    ("Self-promotion" is the longest).
-  - `.mapping__head` mixes a link, a pill, and a domain label on one baseline —
-    wraps on mobile.
+- **Repeats:** exactly 5 axes; 2–6 mappings (hard max 6), each with an embed;
+  up to 4 similar creators.
+- **States:** `.axis__fill` width is set inline as a percentage of 4. **A zero
+  value renders an invisible fill**, so `.axis__bar` carries a `--rule` track
+  that holds the meaning. Below 30rem the label moves to its own row.
+- **Variable content:** `longDescription` **200–600 chars** — the longest prose
+  on the site. The axis label column is a fixed `9.5rem` track; longest label
+  is "Self-promotion".
+- The "not for", "caveats", and "scopeNote" all render as `.claim` blocks so
+  they read consistently with the cards.
 
 ---
 
 ## 8. Stack builder (`js/views/stack.js`)
 
-```html
-<form class="stack__picker" id="stack-form">
-  <div class="filters__group">
-    <label for="stack-add">Add a skill</label>
-    <select id="stack-add">
-      <optgroup label="Mindset &amp; psychology">
-        <option value="self-discipline">Self-discipline</option>  <!-- 200 total -->
-      </optgroup>  <!-- ×16 -->
-    </select>
-  </div>
-  <p class="filters__summary" id="stack-count" role="status">2 of 5 chosen.</p>
-  <ul class="stack__chosen" id="stack-chosen">
-    <li class="chip">Public speaking <button data-remove="…" aria-label="Remove …">×</button></li>
-  </ul>
-</form>
+Two bands: **ink header** → **paper picker + result**.
 
-<div id="stack-result">
-  <div class="stack__share">
-    <label class="visually-hidden" for="stack-url">Shareable link</label>
-    <input id="stack-url" type="text" readonly value="https://…#/stack?ids=…">
-    <button class="button button--quiet" id="copy-url">Copy link</button>
-    <span class="filters__summary" id="copy-status" role="status"></span>
-  </div>
-
-  <h2>Your stack</h2>
-  <ul class="creator-list stack__result">
-    <li><article class="creator-card">…one per pick…</article></li>
-  </ul>
-
-  <section class="similar">   <!-- only if a generalist covers 2+ picks -->
-    <h2>One generalist, if you'd rather have fewer voices</h2>
-    <ul class="creator-list">…creatorMini…</ul>
-  </section>
-</div>
-```
-
-- **Repeats:** the `<select>` holds **200 `<option>`s in 16 `<optgroup>`s** —
-  native control, minimal styling surface. Up to **5** `.chip` and **5** result
-  cards.
-- **States:**
-  - `#stack-add[disabled]` — the whole select is disabled at 5 picks.
-  - Individual `<option>[disabled]` — already-picked skills are disabled rather
-    than removed, so the list doesn't reflow.
-  - `.chip button` — the remove control, hover/focus. It is a real button
-    inside the chip, so the chip has two focusable-adjacent areas.
-  - `.button--quiet` — the secondary button variant, used for "Copy link".
-  - `#stack-url` is `readonly`, not disabled — it must still look selectable.
-  - `#copy-status` fills in with "Link copied." or "Press Ctrl+C to copy."
-- **Variable content:** the share URL is long and monospaced-by-default and
-  will overflow its input; category names in chips are 5–32 chars.
+- `<select id="stack-add">` holds **200 `<option>`s in 16 `<optgroup>`s**.
+  Already-picked options are `disabled` rather than removed, so the list never
+  reflows. The whole select is `disabled` at 5 picks.
+- `.chip` × up to 5, each with a remove `<button>` (min 24px).
+- `.stack__share` is an `--bg-alt` block with a 4px wine left border holding a
+  `readonly` URL input, a `.button--quiet` copy button, and a `role="status"`.
+- Result rows are `.cc.cc--accent` with a `.stack__row-head` carrying the
+  `01`–`05` numeral, then the standard `.claim` pair and the video affordance.
+- **Variable content:** the share URL is long and monospaced and will overflow
+  its input; chip labels are 5–32 chars.
 
 ---
 
-## Class-hook summary
+## State-hook summary
 
-State hooks that are **attributes, not classes** — the spec must target these:
+Hooks that are **attributes, not classes**:
 
 | Hook | Where | Meaning |
 |---|---|---|
@@ -587,26 +505,40 @@ State hooks that are **attributes, not classes** — the spec must target these:
 | `:checked` | `.plan__check input` | exercise completed |
 | `[data-theme]` | `<html>` | explicit light/dark override |
 
-Modifier classes: `.state--loading|empty|error`, `.pill--size|critic|archive`,
-`.tag--signal`, `.cat-card__count--zero`, `.button--quiet`,
-`.stack__generalist`.
+Modifier classes: `.state--loading|empty|error`, `.cc--accent`, `.cc--compact`,
+`.band--paper|alt|ink|accent`, `.rail--ink`, `.avatar--monogram`,
+`.avatar--alt`, `.claim--caveat`, `.tags__more`, `.cat-card__count--zero`,
+`.button--quiet`, `.embed__frame--playing`.
 
 ---
 
-## What is deliberately unstyled right now
+## Dark theme — an extension, not part of the handoff
 
-Removed with the visual layer, listed so nothing is lost:
+DESIGN.md specifies a light base only. The brief requires light **and** dark,
+so `tokens.css` carries a clearly-marked extension block that remaps the
+semantic aliases onto tokens the scale already provides for dark surfaces
+(`--wine-800` "card fill on dark", `--wine-200` "eyebrows and secondary text
+on dark"). **Needs design sign-off.** If dark is unwanted, delete that block
+and the toggle in `js/theme.js` — no component CSS references it directly.
 
-- All colour tokens (the old palette used CSS custom properties named
-  `--bg`, `--bg-raised`, `--bg-sunken`, `--border`, `--border-strong`,
-  `--text`, `--text-muted`, `--text-faint`, `--accent`, `--accent-text`,
-  `--accent-bg`, `--accent-ink`, `--critic`, `--critic-bg`, `--focus`,
-  `--shadow` — reuse or replace freely).
-- `font-family`, all type scale and weight, letter-spacing.
-- The sticky header, all shadows, the loading sweep animation, the play-button
-  triangle, the brand gradient mark, `accent-color` on form controls.
-- Spacing scale tokens (`--space-1` … `--space-7`) — the structural CSS now
-  uses literal `rem` values, which the spec can replace with tokens.
+All 22 measured text/background pairings pass WCAG AA in **both** themes
+(most are AAA). The measurement script lives in the session notes; re-run it
+after any palette change.
 
-The previous full stylesheet is recoverable from git at commit `b2caba9`
-(`css/style.css`) if any of it is worth keeping.
+---
+
+## Known gaps against the design
+
+1. **No avatar images.** The dataset has no avatar field and the design assumes
+   96px local files with a ~5% monogram fallback. Today it is 100% monograms.
+   `creator.avatar` is already supported when the data exists.
+2. **No video durations.** "START HERE · 18 MIN" degrades to "START HERE"
+   until `entryVideo.durationMin` exists.
+3. **Subscriber labels are ranges, not counts.** The design mock shows
+   "340K SUBS"; the brief forbids exact counts, so cards show
+   "1M–5M subs · Large" from the bucket instead.
+4. **Fonts not chosen** — see Global constraints.
+5. **Remaining screens** in the design prompt (home/category/profile/stack
+   compositions) were built from the two approved foundations rather than from
+   rendered mocks, so composition choices above the component level are open
+   to correction.

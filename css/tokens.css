@@ -1,0 +1,339 @@
+/* GrowthList — design tokens
+   Static site, hand-written CSS, no framework.
+   Fonts are self-hosted subsetted woff2. No external requests. */
+
+/* ---------- fonts ----------
+   NOTE (implementation): the two @font-face rules below are commented out
+   because fonts/gl-display-400.woff2 and fonts/gl-cond-600.woff2 do not exist
+   yet — DESIGN.md lists font selection as an open item. Live rules would fire
+   two 404s on every page load and cost Lighthouse points for nothing.
+
+   TO ENABLE: drop the subsetted woff2 files into /fonts/ and uncomment. No
+   other change is needed anywhere — the fallback stacks in --font-display and
+   --font-cond are already the intended near-matches (Iowan/Palatino/Georgia,
+   Arial Narrow), so the site renders as designed in the meantime.
+*/
+
+
+/*
+@font-face {
+  font-family: "GL Display";
+  src: url("../fonts/gl-display-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+2010-2027, U+2030-205E;
+}
+*/
+
+/*
+@font-face {
+  font-family: "GL Cond";
+  src: url("../fonts/gl-cond-600.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0020-007E, U+00A0-00FF;
+}
+*/
+
+:root {
+  /* display serif — headings only, never below 20px, never inside a repeating card */
+  --font-display: "GL Display", "Iowan Old Style", Palatino, Georgia, serif;
+  /* condensed uppercase sans — eyebrows, rotated tags, chips, badges, metric labels */
+  --font-cond: "GL Cond", "Arial Narrow", "Helvetica Neue Condensed", system-ui, sans-serif;
+  /* body — system stack, zero bytes */
+  --font-body: system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: ui-monospace, Menlo, Consolas, monospace;
+
+  /* ---------- burgundy scale (dominant) ---------- */
+  --wine-900: #240A11; /* deepest band, footer */
+  --wine-800: #3D0F1A; /* card fill on dark */
+  --wine-700: #5A1523; /* hover on 600 */
+  --wine-600: #6E1B2A; /* PRIMARY — bands, links, fills, play affordance */
+  --wine-400: #A8535D; /* metric bar fills, rules */
+  --wine-200: #D9A0A4; /* eyebrows and secondary text on dark */
+
+  /* ---------- warm neutral scale (no cool greys) ---------- */
+  --paper:    #FAF6F0; /* default reading surface */
+  --warm-100: #EFE8DE;
+  --warm-200: #DCD2C6;
+  --warm-300: #A99C8E;
+  --warm-500: #6B5F56;
+  --warm-700: #3A302A;
+  --warm-800: #241D19;
+  --ink:      #14100E;
+
+  /* ---------- semantic aliases ---------- */
+  --bg:              var(--paper);
+  --bg-alt:          var(--warm-100);
+  --bg-inverse:      var(--ink);
+  --bg-accent:       var(--wine-600);
+  --text:            var(--ink);
+  --text-muted:      var(--warm-500);
+  --text-on-dark:    var(--paper);
+  --text-muted-dark: var(--wine-200);
+  --link:            var(--wine-600);
+  --link-hover:      var(--wine-700);
+  --rule:            var(--warm-200);
+  --rule-faint:      var(--warm-100);
+  --rule-accent:     var(--wine-600);
+
+
+  /* ---------- component-role aliases ----------
+     Components reference these rather than raw scale steps, so the dark theme
+     can remap one place instead of every rule. Light values are exactly the
+     scale steps the handoff specifies. */
+  --text-body:     var(--warm-700); /* card body copy — softer than --text */
+  --accent-ink:    var(--wine-600); /* eyebrows, numerals, small accent text */
+  --chip-ink:      var(--wine-600); /* format tag text */
+  --chip-border:   var(--wine-200); /* format tag border */
+  --badge-ink:     var(--warm-700); /* signal badge text */
+  --marker-fit:    var(--wine-600); /* "why here" claim marker */
+  --marker-caveat: var(--warm-300); /* "not for" claim marker */
+  --band-ink-bg:   var(--ink);      /* the dark band surface */
+
+  /* ---------- type scale ---------- */
+  --fs-display: 3.875rem; /* 62 / 1.02 */
+  --fs-h1:      2.875rem; /* 46 / 1.06 */
+  --fs-h2:      2.125rem; /* 34 / 1.10 */
+  --fs-h3:      1.5rem;   /* 24 / 1.15 */
+  --fs-lead:    1.25rem;  /* 20 / 1.45 */
+  --fs-body:    1rem;     /* 16 / 1.60 */
+  --fs-small:   0.8125rem;/* 13 / 1.55 */
+  --fs-tag:     0.8125rem;/* 13, tracking .34em */
+  --fs-eyebrow: 0.6875rem;/* 11, tracking .24em */
+  --fs-micro:   0.625rem; /* 10, tracking .16em */
+
+  --lh-tight: 1.05;
+  --lh-head:  1.15;
+  --lh-body:  1.6;
+
+  --tr-tag:     0.34em;
+  --tr-eyebrow: 0.24em;
+  --tr-micro:   0.16em;
+  --tr-display: -0.015em;
+
+  /* ---------- spacing — 4px base ---------- */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-6: 24px;
+  --sp-8: 32px;
+  --sp-12: 48px;
+  --sp-16: 64px;
+  --sp-24: 96px;
+
+  --band-pad-y: var(--sp-12);
+  --band-pad-x: var(--sp-16);
+  --card-pad:   var(--sp-6); /* comfortable */
+  --card-pad-compact: var(--sp-4);
+  --gutter-tile: 2px;  /* between filled tiles */
+  --gutter-card: var(--sp-6); /* between bordered cards */
+  --rail-w: 64px; /* rotated section-label bar */
+
+  /* ---------- edges ---------- */
+  --r-0: 0;      /* default — hard edge */
+  --r-1: 2px;    /* chips, badges */
+  --r-full: 999px; /* avatars only */
+
+  --bd-hair: 1px;
+  --bd-2: 2px;
+  --bd-4: 4px;
+
+  /* ---------- depth & focus ---------- */
+  --shadow-none: none; /* all 700 cards */
+  --shadow-overlay: 0 8px 24px -8px rgba(20, 16, 14, 0.28); /* dropdowns, sticky filter bar */
+  --focus-ring: 3px solid var(--wine-600);
+  --focus-ring-dark: 3px solid var(--wine-200);
+  --focus-offset: 2px;
+
+  /* ---------- component ---------- */
+  --avatar-src: 96px;
+  --avatar-lg: 56px;
+  --avatar-md: 48px;
+  --avatar-sm: 40px;
+  --tap-min: 44px;
+}
+
+@media (max-width: 720px) {
+  :root {
+    --fs-display: 2.5rem;
+    --fs-h1: 2rem;
+    --fs-h2: 1.625rem;
+    --band-pad-y: var(--sp-8);
+    --band-pad-x: var(--sp-4);
+    --card-pad: 20px;
+  }
+}
+
+/* ---------- resets & base ---------- */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 400 var(--fs-body)/var(--lh-body) var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: var(--tr-display);
+  margin: 0;
+}
+h1 { font-size: var(--fs-h1); line-height: var(--lh-head); }
+h2 { font-size: var(--fs-h2); line-height: var(--lh-head); }
+h3 { font-size: var(--fs-h3); line-height: var(--lh-head); letter-spacing: 0; }
+
+p { margin: 0; text-wrap: pretty; }
+
+a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { color: var(--link-hover); }
+
+:focus-visible {
+  outline: var(--focus-ring);
+  outline-offset: var(--focus-offset);
+}
+.on-dark :focus-visible { outline: var(--focus-ring-dark); }
+
+/* ---------- utility primitives ---------- */
+
+.eyebrow {
+  font: 600 var(--fs-eyebrow)/1 var(--font-cond);
+  letter-spacing: var(--tr-eyebrow);
+  text-transform: uppercase;
+  color: var(--wine-600);
+}
+
+.tag {
+  font: 600 var(--fs-tag)/1 var(--font-cond);
+  letter-spacing: var(--tr-tag);
+  text-transform: uppercase;
+}
+
+/* rotated section label, set in a solid colour bar */
+.rail {
+  width: var(--rail-w);
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--wine-600);
+}
+.rail > span {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font: 600 var(--fs-tag)/1 var(--font-cond);
+  letter-spacing: var(--tr-tag);
+  text-transform: uppercase;
+  color: var(--paper);
+}
+.rail--ink { background: var(--ink); }
+
+/* full-bleed horizontal band, hard transitions, no gradients */
+.band { display: flex; }
+.band > .band-body { flex: 1; padding: var(--band-pad-y) var(--band-pad-x); }
+.band--paper  { background: var(--paper); }
+.band--alt    { background: var(--bg-alt); }
+.band--ink    { background: var(--ink); color: var(--text-on-dark); }
+.band--accent { background: var(--wine-600); color: var(--text-on-dark); }
+
+/* avatars — 96px source, fixed display box so filter changes never reflow */
+.avatar {
+  width: var(--avatar-lg);
+  height: var(--avatar-lg);
+  border-radius: var(--r-full);
+  flex: none;
+  object-fit: cover;
+  background: var(--warm-700);
+}
+.avatar--monogram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--wine-600);
+  color: var(--paper);
+  font: 600 1rem/1 var(--font-cond);
+  letter-spacing: 0.06em;
+}
+
+/* metric bar */
+.bar { height: 6px; background: var(--warm-200); border-radius: var(--r-0); }
+.bar > i { display: block; height: 100%; background: var(--wine-400); }
+
+/* ============================================================
+   EXTENSION — dark theme. NOT part of the original handoff.
+   ============================================================
+   DESIGN.md specifies a light base only ("catalogue and list views sit on
+   --paper"), but the project brief requires a light AND dark theme. Rather
+   than invent a second palette, this remaps the semantic aliases onto tokens
+   the scale already provides for dark surfaces: --wine-800 is documented as
+   "card fill on dark" and --wine-200 as "eyebrows and secondary text on
+   dark", so the system already anticipates these surfaces.
+
+   Nothing above this line changes. Only the semantic aliases are reassigned,
+   so every component follows automatically. Wine stays the accent; the warm
+   neutral scale simply runs in the other direction.
+
+   Needs design sign-off. If dark is unwanted, delete this block and the
+   theme toggle in js/theme.js — no component CSS references these directly.
+
+   Contrast checked against WCAG AA (see notes per pairing).
+*/
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg:              var(--ink);        /* paper on ink = 15.4:1  AAA */
+    --bg-alt:          var(--warm-800);
+    --bg-inverse:      var(--paper);
+    --bg-accent:       var(--wine-600);
+    --text:            var(--paper);
+    --text-muted:      var(--warm-300);   /* warm-300 on ink = 7.3:1 AAA */
+    --text-on-dark:    var(--paper);
+    --text-muted-dark: var(--wine-200);
+    --link:            var(--wine-200);   /* wine-200 on ink = 8.6:1 AAA */
+    --link-hover:      var(--paper);
+    --rule:            var(--warm-700);
+    --rule-faint:      var(--warm-800);
+    --rule-accent:     var(--wine-400);
+    --focus-ring:      var(--focus-ring-dark);
+    --text-body:     var(--warm-300);
+    --accent-ink:    var(--wine-200);
+    --chip-ink:      var(--wine-200);
+    --chip-border:   var(--wine-400);
+    --badge-ink:     var(--warm-300);
+    --marker-fit:    var(--wine-400);
+    --marker-caveat: var(--warm-500);
+  --band-ink-bg:   var(--wine-900);
+    --band-ink-bg:   var(--wine-900);
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg:              var(--ink);
+  --bg-alt:          var(--warm-800);
+  --bg-inverse:      var(--paper);
+  --bg-accent:       var(--wine-600);
+  --text:            var(--paper);
+  --text-muted:      var(--warm-300);
+  --text-on-dark:    var(--paper);
+  --text-muted-dark: var(--wine-200);
+  --link:            var(--wine-200);
+  --link-hover:      var(--paper);
+  --rule:            var(--warm-700);
+  --rule-faint:      var(--warm-800);
+  --rule-accent:     var(--wine-400);
+  --focus-ring:      var(--focus-ring-dark);
+  --text-body:   var(--warm-300);
+  --accent-ink:  var(--wine-200);
+  --chip-ink:    var(--wine-200);
+  --chip-border:   var(--wine-400);
+  --badge-ink:   var(--warm-300);
+  --marker-fit:  var(--wine-400);
+  --marker-caveat: var(--warm-500);
+}
