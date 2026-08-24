@@ -8,6 +8,7 @@ import { renderCategory } from './views/category.js';
 import { renderCreator } from './views/creator.js';
 import { renderStack } from './views/stack.js';
 import { getSnapshot } from './data.js';
+import { initHowDidYouHear, recordCategoryView, maybeShowPrompt } from './components/how-did-you-hear.js';
 import { stateBlock, statePage, setTitle, esc } from './utils.js';
 
 const app = document.getElementById('app');
@@ -38,7 +39,13 @@ function wrap(render) {
 }
 
 route('/', wrap(renderHome));
-route('/category/:id', wrap(renderCategory));
+route('/category/:id', wrap(async (app, ctx) => {
+  await renderCategory(app, ctx);
+  // The prompt is gated on actually having used the site: three distinct
+  // categories viewed in this session.
+  recordCategoryView(ctx.params.id);
+  maybeShowPrompt();
+}));
 route('/creator/:id', wrap(renderCreator));
 route('/stack', wrap(renderStack));
 
@@ -57,6 +64,7 @@ setNotFound(async ({ path }) => {
 initTheme();
 bindEmbeds(document);
 start();
+initHowDidYouHear();
 
 // The footer states when the channel data was captured. Read from the data
 // itself rather than hardcoded, so it cannot drift from what is shown.

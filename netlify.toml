@@ -7,3 +7,20 @@
   [headers.values]
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Forms
+#
+# The "how-did-you-hear" form needs no configuration here: Netlify's build bot
+# scans deployed HTML and registers any form carrying data-netlify="true" plus
+# a matching hidden form-name input. Both live in index.html — see the comment
+# above that markup.
+#
+# Requirements that must hold for submissions to arrive:
+#   - The form stays in STATIC index.html. A JavaScript-injected form is never
+#     detected, and its submissions go nowhere.
+#   - netlify-honeypot="bot-field" matches the hidden bot-field input.
+#   - Submissions appear under Forms in the Netlify site dashboard.
+#
+# The site sends nothing else anywhere. No analytics, no third-party scripts,
+# and no request of any kind to a non-Netlify host before a visitor clicks a
+# video.

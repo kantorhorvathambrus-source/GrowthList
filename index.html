@@ -50,6 +50,92 @@
   </div>
 </main>
 
+<!--
+  "How did you hear about us" — the canonical copy of the form.
+
+  This must stay STATIC HTML. Netlify's build bot scans deployed HTML files to
+  register a form; a form injected by JavaScript is never detected and its
+  submissions go nowhere. It is also the copy that works with JavaScript
+  disabled, as a plain form POST.
+
+  js/components/how-did-you-hear.js renders a second copy inside the inline
+  prompt using formMarkup(). The two must keep the same name attributes:
+  form-name, bot-field, source, note. Ids differ by prefix so labels stay
+  correctly associated.
+
+  If this is not a Netlify deploy, the script removes this section rather than
+  letting it POST into a 404.
+-->
+<section class="band band--alt hdyh" id="hdyh-footer" aria-labelledby="hdyh-footer-heading">
+  <div class="rail"><span>One question</span></div>
+  <div class="band-body">
+    <div class="hdyh__head">
+      <div>
+        <p class="eyebrow">Optional</p>
+        <h2 id="hdyh-footer-heading" class="hdyh__heading">How did you find GrowthList?</h2>
+      </div>
+    </div>
+
+    <form name="how-did-you-hear" method="POST" data-netlify="true"
+          netlify-honeypot="bot-field" class="hdyh__form" novalidate>
+      <input type="hidden" name="form-name" value="how-did-you-hear">
+      <p class="hdyh__hp" aria-hidden="true">
+        <label>Leave this field empty <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+      </p>
+
+      <fieldset class="hdyh__fieldset">
+        <legend class="hdyh__legend">How did you hear about GrowthList?</legend>
+        <div class="hdyh__options">
+          <label class="hdyh__opt" for="hdyh-footer-source-0">
+            <input type="radio" id="hdyh-footer-source-0" name="source" value="A search engine" required>
+            <span>A search engine</span>
+          </label>
+          <label class="hdyh__opt" for="hdyh-footer-source-1">
+            <input type="radio" id="hdyh-footer-source-1" name="source" value="Reddit">
+            <span>Reddit</span>
+          </label>
+          <label class="hdyh__opt" for="hdyh-footer-source-2">
+            <input type="radio" id="hdyh-footer-source-2" name="source" value="X / Twitter">
+            <span>X / Twitter</span>
+          </label>
+          <label class="hdyh__opt" for="hdyh-footer-source-3">
+            <input type="radio" id="hdyh-footer-source-3" name="source" value="A YouTube comment">
+            <span>A YouTube comment</span>
+          </label>
+          <label class="hdyh__opt" for="hdyh-footer-source-4">
+            <input type="radio" id="hdyh-footer-source-4" name="source" value="A newsletter or blog">
+            <span>A newsletter or blog</span>
+          </label>
+          <label class="hdyh__opt" for="hdyh-footer-source-5">
+            <input type="radio" id="hdyh-footer-source-5" name="source" value="A friend">
+            <span>A friend</span>
+          </label>
+          <label class="hdyh__opt" for="hdyh-footer-source-6">
+            <input type="radio" id="hdyh-footer-source-6" name="source" value="Somewhere else">
+            <span>Somewhere else</span>
+          </label>
+        </div>
+      </fieldset>
+
+      <div class="hdyh__note">
+        <label for="hdyh-footer-note">Anything else? (optional)</label>
+        <input type="text" id="hdyh-footer-note" name="note" maxlength="200"
+               autocomplete="off" placeholder="Up to 200 characters">
+      </div>
+
+      <div class="hdyh__actions">
+        <button type="submit" class="button">Send</button>
+        <span class="hdyh__status" role="status" aria-live="polite"></span>
+      </div>
+
+      <p class="hdyh__privacy">
+        That is everything we collect — no email, no identifier, no analytics,
+        and no logging of our own.
+      </p>
+    </form>
+  </div>
+</section>
+
 <footer class="site-footer">
   <div class="wrap">
     <p class="eyebrow">Independent &amp; unaffiliated</p>

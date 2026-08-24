@@ -883,3 +883,87 @@ ul, ol { margin: 0; padding: 0; }
 .sec-head h2 { font-size: var(--fs-h2); }
 
 pre, table { overflow-x: auto; max-width: 100%; }
+
+/* ------------------------------------------------------------ how did you hear
+   Unobtrusive by design: an ordinary band in the document flow. Never fixed,
+   never an overlay, never blocking content. */
+
+.hdyh__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--sp-4);
+  flex-wrap: wrap;
+  margin-bottom: var(--sp-6);
+}
+.hdyh__heading { font-size: var(--fs-h3); }
+
+.hdyh__dismiss {
+  background: none;
+  border: var(--bd-hair) solid var(--rule);
+  color: var(--text-muted);
+  font: 600 var(--fs-micro)/1 var(--font-cond);
+  letter-spacing: var(--tr-micro);
+  text-transform: uppercase;
+  padding: var(--sp-2) var(--sp-4);
+  min-height: var(--tap-min);
+  cursor: pointer;
+}
+.hdyh__dismiss:hover { border-color: var(--accent-ink); color: var(--accent-ink); }
+
+.hdyh__fieldset { border: 0; padding: 0; margin: 0 0 var(--sp-4); }
+.hdyh__legend { padding: 0; margin-bottom: var(--sp-3); font-size: var(--fs-small); color: var(--text-muted); }
+
+.hdyh__options { display: flex; flex-wrap: wrap; gap: var(--sp-2); }
+
+/* Tappable chips built on real radios, so keyboard and screen readers get the
+   native group behaviour for free. */
+.hdyh__opt {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  border: var(--bd-hair) solid var(--rule);
+  background: var(--bg);
+  border-radius: var(--r-1);
+  padding: var(--sp-2) var(--sp-4);
+  min-height: var(--tap-min);
+  cursor: pointer;
+  font: 600 var(--fs-micro)/1 var(--font-cond);
+  letter-spacing: var(--tr-micro);
+  text-transform: uppercase;
+  color: var(--text-body);
+}
+.hdyh__opt:hover { border-color: var(--chip-ink); }
+.hdyh__opt input { accent-color: var(--wine-600); margin: 0; }
+/* Selection is fill plus the checked radio itself, never colour alone. */
+.hdyh__opt:has(input:checked) {
+  background: var(--wine-600);
+  border-color: var(--wine-600);
+  color: var(--paper);
+}
+.hdyh__opt:has(input:focus-visible) { outline: var(--focus-ring); outline-offset: var(--focus-offset); }
+
+.hdyh__note { display: flex; flex-direction: column; gap: var(--sp-2); margin-bottom: var(--sp-4); max-width: 32rem; }
+.hdyh__note label { font-size: var(--fs-small); color: var(--text-muted); }
+.hdyh__note input {
+  font: 400 var(--fs-body)/1.4 var(--font-body);
+  color: var(--text);
+  background: var(--bg);
+  border: var(--bd-hair) solid var(--rule);
+  padding: var(--sp-3);
+  min-height: var(--tap-min);
+}
+
+.hdyh__actions { display: flex; align-items: center; gap: var(--sp-4); flex-wrap: wrap; }
+.hdyh__status { font-size: var(--fs-small); color: var(--text-muted); }
+.hdyh__privacy { font-size: var(--fs-small); color: var(--text-muted); margin-top: var(--sp-4); max-width: 62ch; }
+.hdyh__thanks { font-size: var(--fs-lead); color: var(--accent-ink); }
+
+/* Honeypot — off-screen rather than display:none, which some bots skip. */
+.hdyh__hp {
+  position: absolute;
+  width: 1px; height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
