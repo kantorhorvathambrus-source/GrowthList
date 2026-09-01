@@ -234,42 +234,47 @@ in `categories.json`-derived output with a computed creator `count`.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research). **Batch 01 is written
-  and committed, and the project is STOPPED pending the owner's eye
-  review of it.** Phases 0, 1, 3-tooling, 4 and 5 are done. Phase 6 is
-  deliberately not started: the owner's call is that Phase 2 is the
-  product and everything else is packaging, so no README and no
-  Lighthouse run until real data exists.
+- **Current phase**: Phase 2 (creator research). **Batches 01 and 02 are
+  written, gated, validated and committed.** Phases 0, 1, 3-tooling, 4
+  and 5 are done. Phase 6 is deliberately not started: the owner's call
+  is that Phase 2 is the product and everything else is packaging, so no
+  README and no Lighthouse run until real data exists.
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, working on `main`.
   Not to be confused with `kantorhorvathambrus-source/mancsterapia`, an
   unrelated project.
-- **Creator count: 16 of 700**, all in `data/creators/batch-01.json`.
-  Every one resolved through the Data API; every one of the 32 entry
-  videos passed the attribution gate. Nothing has ever been written
-  from memory and nothing ever should be.
-- **Batch 01 is 16 records, not 25 — deliberately.** Only creators with
-  API-verified evidence were written. Two researched candidates were
-  excluded (`@inbornvoice` is Italian-language; `@vvanedwards` has no
-  long-form video that could serve as an entry point) and are logged in
-  `UNVERIFIED.md` with the handle traps found while probing. Padding to
-  25 would have meant inventing, which rule 1 forbids.
-- **Domains touched so far**: communication 13, creativity 6, learning
-  3, mindset 1. 187 of 200 categories still have no creators.
+- **Creator count: 30 of 700.** Batch 01 = 16, batch 02 = 14. Every one
+  resolved through the Data API; all 60 entry videos passed the
+  attribution gate. Nothing has ever been written from memory and
+  nothing ever should be.
+- **Batches run short on purpose.** Only creators with API-verified
+  evidence get written; the rest are logged in `UNVERIFIED.md` with the
+  reason. See "Batch sizes are a ceiling, not a quota" below.
+- **Domain state**: communication is close to done — 13 of 13 categories
+  now have creators, though most are still under the five-creator
+  minimum and only two have a critic. 183 of 200 categories still have
+  none at all.
+- **The binding constraint is critics, not creators.** Every category
+  needs one `role: "critic"`. They exist for body-language,
+  conversation-skills and critical-thinking; the other ten communication
+  categories have none, and a genuine critic cannot be manufactured.
+  Expect coverage warnings to persist for a long time.
 
 ### Immediate next actions
 
-1. **WAIT.** The owner asked to see all of batch 01 before batches
-   02–28 start. Do not begin batch 02 until they have said so.
-2. After approval: batches 02–28, checking in with the owner every 5–6
-   batches — but updating **this section after every single batch**.
-3. Per batch: write `data/creators/batch-NN.json` → `node
-   scripts/gate-check.mjs data/creators/batch-NN.json` (must be 0
-   failures) → `node scripts/validate.mjs` → `node
-   scripts/build-data.mjs` → commit → update this section.
-4. Fill `UNVERIFIED.md` as you go, in the same commit as the batch.
-5. **Rotate the API key when Phase 2 finishes** — the owner stated this
+1. Batch 03 onward. Check in with the owner every 5–6 batches, but
+   update **this section after every single batch** regardless.
+2. Per batch: probe candidate handles with `scripts/check-handles.mjs`
+   → gather evidence with `scripts/evidence.mjs` → write
+   `data/creators/batch-NN.json` → `node scripts/gate-check.mjs
+   data/creators/batch-NN.json` (must be 0 failures) → `node
+   scripts/validate.mjs` → `node scripts/build-data.mjs` → update
+   `UNVERIFIED.md` and this section → commit → push.
+3. Domain order so far: communication (01–02), then creativity,
+   learning, mindset. Deliberately deferred candidates are named in
+   `UNVERIFIED.md` — check it before researching, to avoid re-probing.
+4. **Rotate the API key when Phase 2 finishes** — the owner stated this
    intent, and the key passed through the chat transcript to get here.
-6. Phase 3's remaining work (200 four-week plans) needs creators to
+5. Phase 3's remaining work (200 four-week plans) needs creators to
    point at, so it comes after the dataset, not before.
 
 ### The YouTube API key — `.env` in this container
@@ -353,6 +358,13 @@ several probed handles turned out to be empty channels or different
 people entirely. Write what the evidence supports, log the rest in
 `UNVERIFIED.md`, and say the number plainly. Rule 1 outranks the
 target.
+
+**Titles drift; re-gate before release.** Between two `gate-check` runs
+a few days apart, Charisma on Command renamed video `-pkR_NCptqg` from
+"The Only Video You Need On Small Talk" to "How to Not Suck At Small
+Talk". Same id, different title. The gate caught it. Run
+`gate-check.mjs` over **every** batch file before any release, not only
+when a batch is first written.
 
 **What the API can and cannot establish.** It gives identity
 (`channelId`, handle, title), `sizeBucket` (from `subscriberCount`, or

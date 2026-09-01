@@ -138,7 +138,7 @@
         "why": "Unusually concrete on the opening seconds of a conversation, where most advice stays abstract about being interested rather than interesting.",
         "evidence": "Repeated dedicated long-form videos on small talk, group entry and conversational exits, separate from the charisma analysis.",
         "entryVideo": {
-          "title": "The Only Video You Need On Small Talk",
+          "title": "How to Not Suck At Small Talk",
           "videoId": "-pkR_NCptqg",
           "whyThisOne": "Covers openings, sustaining and exits in one pass, so you get the whole shape of a conversation rather than a single trick.",
           "durationMin": 8
@@ -818,6 +818,18 @@
           "videoId": "xE2JIaNnStw",
           "whyThisOne": "Takes apart the exact kind of self-improvement content most people encounter first, so the sceptical method has something familiar to bite on.",
           "durationMin": 62
+        }
+      },
+      {
+        "id": "conversation-skills",
+        "strength": "secondary",
+        "why": "Follows the pickup and social-skills coaching industry into its own funnel, which is a useful corrective before you buy anything that promises to make you charming.",
+        "evidence": "A sixty-five-minute investigation of a TikTok pick-up artist's sales funnel, plus a longer debunk of the manosphere advice ecosystem that surrounds it.",
+        "entryVideo": {
+          "title": "Diving Down the Sales Funnel of a TikTok Pick-Up Artist",
+          "videoId": "7jgFsMcf_Kk",
+          "whyThisOne": "Shows what is actually being sold behind free social-skills advice, using one specific coach rather than a general warning.",
+          "durationMin": 65
         }
       }
     ],
