@@ -186,6 +186,42 @@ export async function getChannelByHandle(handle) {
   };
 }
 
+/**
+ * Resolve by channel id (UC…). Web search frequently surfaces the id rather
+ * than the handle, and the id is the more stable identifier of the two.
+ * Returns the same shape as getChannelByHandle, with the handle taken from
+ * the API's own customUrl rather than guessed.
+ */
+export async function getChannelById(channelId) {
+  const data = await api('channels', {
+    part: 'snippet,statistics,contentDetails',
+    id: channelId,
+  });
+
+  const item = data.items?.[0];
+  if (!item) return null;
+
+  const custom = item.snippet?.customUrl ?? null; // e.g. "@scienceofpeople"
+  const handle = custom?.startsWith('@') ? custom : null;
+
+  return {
+    channelId: item.id,
+    title: item.snippet?.title ?? null,
+    handle,
+    channelUrl: handle
+      ? `https://www.youtube.com/${handle}`
+      : `https://www.youtube.com/channel/${item.id}`,
+    country: item.snippet?.country ?? null,
+    publishedAt: item.snippet?.publishedAt ?? null,
+    description: item.snippet?.description ?? '',
+    subscriberCount: item.statistics?.subscriberCount ?? null,
+    hiddenSubscriberCount: Boolean(item.statistics?.hiddenSubscriberCount),
+    sizeBucket: subsToBucket(item.statistics?.subscriberCount),
+    videoCount: Number(item.statistics?.videoCount ?? 0),
+    uploadsPlaylist: item.contentDetails?.relatedPlaylists?.uploads ?? null,
+  };
+}
+
 /** Recent uploads, newest first. 1 quota unit per 50. */
 export async function getUploads(playlistId, { max = 50 } = {}) {
   if (!playlistId) return [];
@@ -230,6 +266,7 @@ export async function getVideos(ids) {
         title: item.snippet?.title ?? null,
         channelId: item.snippet?.channelId ?? null,
         channelTitle: item.snippet?.channelTitle ?? null,
+        description: item.snippet?.description ?? '',
         publishedAt: item.snippet?.publishedAt ?? null,
         defaultAudioLanguage: item.snippet?.defaultAudioLanguage ?? item.snippet?.defaultLanguage ?? null,
         durationMin: durationToMinutes(item.contentDetails?.duration),

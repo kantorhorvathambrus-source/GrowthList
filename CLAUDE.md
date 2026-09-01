@@ -177,17 +177,34 @@ Phase 1 output) — kept in this file's state section once finalized.
 
 **Fails the build on:**
 duplicate category/creator ids or handles; a creator referencing a
-nonexistent category id; a category with <5 creators; a category missing
-a `role:"critic"`; a category missing any of beginner/intermediate/advanced
-representation; missing required fields (`notFor` included); malformed
-`channelUrl`; missing/unverified `entryVideo` on a `verified:true` creator;
-a `why` under 20 characters; duplicate `why` strings within one creator;
-`longDescription` under 200 characters; a `profile` axis outside 0–4;
-a `signals` entry outside the fixed vocabulary; any `language` ≠ `"en"`;
-placeholder text (`TBD`, `lorem`, `example`, case-insensitive).
+nonexistent category id; missing required fields (`notFor` included);
+malformed `channelUrl`; missing/unverified `entryVideo` on a
+`verified:true` creator; a `why` under 20 characters; duplicate `why`
+strings within one creator; `longDescription` under 200 characters; a
+`profile` axis outside 0–4; a `signals` entry outside the fixed
+vocabulary; any `language` ≠ `"en"`; placeholder text.
+
+`country` is **optional** — the API genuinely returns none for some
+channels (Toastmasters, ReasonIO). `null` is the honest value; never a
+guess.
+
+**Placeholder detection** is two regexes, not one. Uppercase markers
+(`TBD`, `TODO`, `FIXME`, `XXX`, `WIP`) are matched case-sensitively,
+because "todo list" is a real category alias. Phrases (`lorem`,
+`placeholder`, `example.com`, "example creator", "your … here") are
+matched case-insensitively. A bare lowercase `example` is **not** a
+placeholder — it is a word people legitimately write in a description.
+
+**Coverage** (≥5 creators per category, a `critic`, all three levels) is
+a property of the *finished* dataset. While batches are landing it
+reports as **warnings**, and categories no batch has reached yet are
+counted in one line rather than enumerated. Run
+`node scripts/validate.mjs --final` to make coverage fail again — that
+is the definition-of-done check, not the per-batch one.
 
 **Warns on:** a creator spanning >2 top-level domains without
-`scopeNote`; a creator `primary` in >4 categories.
+`scopeNote`; a creator `primary` in >4 categories; every coverage gap
+(see above).
 
 **Reports:** creators per domain/category, thinnest 20 categories, role
 distribution, size-bucket distribution.
@@ -217,47 +234,68 @@ in `categories.json`-derived output with a computed creator `count`.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research) — **about to start**.
-  Phases 0, 1, 3-tooling, 4 and 5 are done. Phase 6 is deliberately not
-  started: the owner's call is that Phase 2 is the product and
-  everything else is packaging, so no README and no Lighthouse run
-  until real data exists.
+- **Current phase**: Phase 2 (creator research). **Batch 01 is written
+  and committed, and the project is STOPPED pending the owner's eye
+  review of it.** Phases 0, 1, 3-tooling, 4 and 5 are done. Phase 6 is
+  deliberately not started: the owner's call is that Phase 2 is the
+  product and everything else is packaging, so no README and no
+  Lighthouse run until real data exists.
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, working on `main`.
   Not to be confused with `kantorhorvathambrus-source/mancsterapia`, an
   unrelated project.
-- **Creator count: 0 of 700.** `data/creators.json` is `[]`. Nothing has
-  ever been written from memory and nothing ever should be.
+- **Creator count: 16 of 700**, all in `data/creators/batch-01.json`.
+  Every one resolved through the Data API; every one of the 32 entry
+  videos passed the attribution gate. Nothing has ever been written
+  from memory and nothing ever should be.
+- **Batch 01 is 16 records, not 25 — deliberately.** Only creators with
+  API-verified evidence were written. Two researched candidates were
+  excluded (`@inbornvoice` is Italian-language; `@vvanedwards` has no
+  long-form video that could serve as an entry point) and are logged in
+  `UNVERIFIED.md` with the handle traps found while probing. Padding to
+  25 would have meant inventing, which rule 1 forbids.
+- **Domains touched so far**: communication 13, creativity 6, learning
+  3, mindset 1. 187 of 200 categories still have no creators.
 
 ### Immediate next actions
 
-1. Confirm `process.env.YOUTUBE_API_KEY` is readable (see below).
-2. **Single-channel smoke test** — build one full record end to end and
-   show the owner every field including nulls, so an honest gap is
-   visible before scale.
-3. **Batch 01 only (25 creators), then STOP** and show all 25 records
-   for the owner's quality review. Do not start batches 02–28 until
-   they have looked at batch 01 by eye.
-4. After each batch: write the file, run `node scripts/validate.mjs`,
-   commit, print a progress summary, and update this section.
+1. **WAIT.** The owner asked to see all of batch 01 before batches
+   02–28 start. Do not begin batch 02 until they have said so.
+2. After approval: batches 02–28, checking in with the owner every 5–6
+   batches — but updating **this section after every single batch**.
+3. Per batch: write `data/creators/batch-NN.json` → `node
+   scripts/gate-check.mjs data/creators/batch-NN.json` (must be 0
+   failures) → `node scripts/validate.mjs` → `node
+   scripts/build-data.mjs` → commit → update this section.
+4. Fill `UNVERIFIED.md` as you go, in the same commit as the batch.
+5. **Rotate the API key when Phase 2 finishes** — the owner stated this
+   intent, and the key passed through the chat transcript to get here.
+6. Phase 3's remaining work (200 four-week plans) needs creators to
+   point at, so it comes after the dataset, not before.
 
-### The YouTube API key — read from the ENVIRONMENT, not a file
+### The YouTube API key — `.env` in this container
 
-**There is no `.env` file in this container and there never will be.**
-`YOUTUBE_API_KEY` is set as a configured environment variable on the
-Claude Code environment itself, so it arrives in `process.env`. Do not
-go looking for `.env`, do not create one, and do not ask for the key to
-be pasted into chat — a key in a transcript is a key that must be
-rotated.
+`YOUTUBE_API_KEY` lives in **`/home/user/growthlist/.env`**, which is
+gitignored. The original plan was a configured environment variable,
+but it never reached `process.env` across two container restarts, so
+the owner fell back to writing the file. `.env.example` carries the key
+*name* only.
+
+**The key currently in that file has passed through a chat transcript
+and must be rotated once Phase 2 is done.** The owner has said they
+will; if Phase 2 finishes and it has not happened, remind them.
 
 - `scripts/lib/youtube.mjs` → `loadKey()` reads
-  `process.env.YOUTUBE_API_KEY` first and only falls back to a `.env`
-  file if one happens to exist. That fallback is for use outside this
-  container; here the environment variable is the whole story.
+  `process.env.YOUTUBE_API_KEY` first and falls back to the `.env`
+  file. In this container the file is the live source.
 - If the key is missing, **stop and say so.** Do not proceed with
   unverified research and do not substitute web search — search cannot
   verify video attribution (see "How Phase 2 verification works").
 - Environment-variable changes need a fresh session or container
-  restart. A key set mid-session will not appear in a running process.
+  restart. A key set mid-session will not appear in a running process —
+  which is exactly how the env-var route failed here.
+- **Never ask for a key in chat again.** It was unavoidable once; it
+  should not be repeated. A key in a transcript is a key that must be
+  rotated.
 - The key is never printed. Every error in the client routes through
   `redact()` first, because API keys travel in the query string and an
   unredacted URL in a stack trace is a leaked credential.
@@ -295,6 +333,26 @@ with no entry video. `pickEntryVideo()` draws only from the channel's
 own uploads playlist and returns `null` when nothing qualifies. A
 creator with no attributable video keeps the mapping and omits the
 video rather than inventing one.
+
+**Run the gate over the finished file, not just while picking.**
+`node scripts/gate-check.mjs data/creators/batch-NN.json` re-resolves
+every handle, re-fetches every `entryVideo`, and re-runs
+`attributeVideo` against the creator's real `channelId`. It also
+re-checks `title`, `durationMin`, `country` and `channelUrl` against
+the API, because those are the fields that drift when a record is
+typed by hand. **It earns its keep:** on batch 01 it caught three
+titles that had been transcribed rather than copied — two straight
+apostrophes where the real titles use `’`, and one truncated at
+"…Speaking Career" when the API says "…Speaking Career with Josh
+Shipp". Zero failures is the bar for committing a batch.
+
+**Batch sizes are a ceiling, not a quota.** Batch 01 is 16 records
+rather than 25 because only 16 candidates survived research. Two were
+excluded outright (non-English; no usable long-form entry video) and
+several probed handles turned out to be empty channels or different
+people entirely. Write what the evidence supports, log the rest in
+`UNVERIFIED.md`, and say the number plainly. Rule 1 outranks the
+target.
 
 **What the API can and cannot establish.** It gives identity
 (`channelId`, handle, title), `sizeBucket` (from `subscriberCount`, or

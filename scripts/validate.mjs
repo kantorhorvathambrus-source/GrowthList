@@ -40,7 +40,14 @@ const KNOWN_FORMAT_TAGS = [
   'long-form', 'interview', 'tutorial', 'video-essay', 'shorts',
   'lecture', 'documentary', 'q-and-a', 'vlog', 'livestream', 'course',
 ];
-const PLACEHOLDER = /\b(TBD|lorem|ipsum|example|placeholder|FIXME|XXX)\b/i;
+// Catches stub text, not ordinary English. A bare "example" is a word people
+// legitimately write in a description ("the clearest example of the method"),
+// so the guard looks for the shapes a placeholder actually takes.
+// Uppercase-only, because "todo list" is a real alias and "TODO" is not.
+const PLACEHOLDER_MARKER = /\b(TBD|TODO|FIXME|XXX|WIP)\b/;
+const PLACEHOLDER_PHRASE =
+  /\b(lorem|ipsum|placeholder)\b|example\.(com|org)|\bexample (creator|channel|video|title|name)\b|\byour (?:[\w'-]+ ){0,3}here\b/i;
+const isPlaceholder = (text) => PLACEHOLDER_MARKER.test(text) || PLACEHOLDER_PHRASE.test(text);
 
 const fails = [];
 const warns = [];
@@ -105,7 +112,7 @@ for (const cat of categories) {
       fail(where, `missing levels.${lvl} guidance`);
     }
   }
-  if (PLACEHOLDER.test(JSON.stringify(cat))) fail(where, 'contains placeholder text');
+  if (isPlaceholder(JSON.stringify(cat))) fail(where, 'contains placeholder text');
 }
 
 if (categories.length !== 200) {
@@ -139,7 +146,7 @@ for (const c of creators) {
 
   // required scalar fields — notFor is required, not optional
   for (const f of [
-    'name', 'handle', 'channelUrl', 'country', 'language', 'sizeBucket',
+    'name', 'handle', 'channelUrl', 'language', 'sizeBucket',
     'status', 'dataAsOf', 'shortDescription', 'longDescription', 'notFor', 'role',
   ]) {
     if (typeof c[f] !== 'string' || !c[f].trim()) fail(where, `missing required field "${f}"`);
@@ -160,7 +167,11 @@ for (const c of creators) {
     }
   }
   if (c.language && c.language !== 'en') fail(where, `language must be "en", found "${c.language}"`);
-  if (c.country && !/^[A-Z]{2}$/.test(c.country)) fail(where, `country must be a 2-letter code, found "${c.country}"`);
+  // country is OPTIONAL: the API genuinely returns none for some channels
+  // (Toastmasters, ReasonIO). null is the honest value — never a guess.
+  if (c.country != null && !/^[A-Z]{2}$/.test(c.country)) {
+    fail(where, `country must be a 2-letter code or null, found "${c.country}"`);
+  }
   if (c.dataAsOf && !/^\d{4}-\d{2}$/.test(c.dataAsOf)) fail(where, `dataAsOf must be YYYY-MM, found "${c.dataAsOf}"`);
   if (c.sizeBucket && !SIZE_BUCKETS.includes(c.sizeBucket)) fail(where, `invalid sizeBucket "${c.sizeBucket}"`);
   if (c.status && !STATUSES.includes(c.status)) fail(where, `invalid status "${c.status}"`);
@@ -168,7 +179,7 @@ for (const c of creators) {
   if (typeof c.longDescription === 'string' && c.longDescription.length < 200) {
     fail(where, `longDescription is ${c.longDescription.length} chars, minimum 200`);
   }
-  if (PLACEHOLDER.test(JSON.stringify(c))) fail(where, 'contains placeholder text');
+  if (isPlaceholder(JSON.stringify(c))) fail(where, 'contains placeholder text');
   if (Object.prototype.hasOwnProperty.call(c, 'caveats') && !String(c.caveats ?? '').trim()) {
     fail(where, 'caveats present but empty — omit the field entirely instead');
   }
@@ -275,19 +286,29 @@ for (const c of creators) {
 
 // ---------------------------------------------------------------- coverage
 
-const CHECK_COVERAGE = creators.length > 0;
+// Coverage is a property of the FINISHED dataset, not of a half-built one.
+// While batches are landing, a category with three creators is a category
+// still being filled, so these report as warnings. Run with --final (the
+// definition-of-done check) to make them failures again.
+const FINAL = process.argv.includes('--final');
+const cover = FINAL ? fail : warn;
 
-if (CHECK_COVERAGE) {
+if (creators.length > 0) {
+  let untouched = 0;
   for (const [catId, list] of byCategory) {
     const where = `category ${catId}`;
-    if (list.length < 5) fail(where, `only ${list.length} creators, minimum 5`);
-    if (!list.some((c) => c.role === 'critic')) fail(where, 'no creator with role "critic"');
+    // A category no batch has reached yet is not a coverage problem, it is
+    // work not done. Counted, not enumerated, unless this is the final check.
+    if (list.length === 0 && !FINAL) { untouched++; continue; }
+    if (list.length < 5) cover(where, `only ${list.length} creators, minimum 5`);
+    if (!list.some((c) => c.role === 'critic')) cover(where, 'no creator with role "critic"');
     for (const lvl of LEVELS) {
       if (!list.some((c) => Array.isArray(c.level) && c.level.includes(lvl))) {
-        fail(where, `no creator flagged "${lvl}"`);
+        cover(where, `no creator flagged "${lvl}"`);
       }
     }
   }
+  if (untouched) warn('coverage', `${untouched} of ${categories.length} categories have no creators yet`);
 }
 
 // ---------------------------------------------------------------- plans
@@ -364,7 +385,7 @@ console.log(`categories : ${categories.length} across ${domains.size} domains`);
 console.log(`creators   : ${creators.length} from ${batchFiles.length} batch file(s)`);
 console.log(`plans      : ${plansFilled} filled, ${plansEmpty} empty`);
 
-if (CHECK_COVERAGE) {
+if (creators.length > 0) {
   console.log('\nCreators per domain');
   const perDomain = new Map();
   for (const [catId, list] of byCategory) {
