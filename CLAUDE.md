@@ -371,6 +371,42 @@ people entirely. Write what the evidence supports, log the rest in
 `UNVERIFIED.md`, and say the number plainly. Rule 1 outranks the
 target.
 
+**A failed handle is not an exclusion.** When a well-known person's
+obvious handle does not resolve, or resolves to something that clearly
+is not them (wrong content type, wildly wrong upload count, a bio that
+never mentions them), run the second path before giving up:
+
+```
+node scripts/resolve-creator.mjs "Full Name" \
+  --handle @obvious --handle @alsoTried \
+  --affiliation "Their Firm" --affiliation "Their Book Title" \
+  --record
+```
+
+Path 1 tries the handles at 1 unit each. Only when they all fail does
+path 2 run — `search.list` for the name paired with each affiliation, at
+**100 units per query**, which is why it must stay a fallback and why
+`--affiliation` is mandatory rather than optional.
+
+**The gate does not move on either path.** `identityMatch()` passes a
+channel only when an affiliation term appears in its own description, or
+recurs across at least two of its upload titles. A matching channel
+*title* explicitly fails and is reported as "a name match is not an
+identity match" — that is the exact trap that put a 10,150-upload book
+podcast called "Chris Voss" in front of a search for the FBI negotiator.
+This buys one more attempt at finding someone; it does not lower the
+standard for keeping them.
+
+The tool also checks whether the resolved channel is **already in the
+dataset** under another handle, and says so. That check exists because
+the batch-02 notes logged Chris Voss as "no channel found" while his
+channel was already in batch 01 as `negotiationmastery`. An exclusion
+note that contradicts your own data is worse than no note.
+
+Every rescue — every case where path 2 found what path 1 missed — is
+appended to `data/handle-rescues.json` with `--record`, so the miss rate
+of the cheap path is measurable rather than assumed.
+
 **Titles drift; re-gate before release.** Between two `gate-check` runs
 a few days apart, Charisma on Command renamed video `-pkR_NCptqg` from
 "The Only Video You Need On Small Talk" to "How to Not Suck At Small

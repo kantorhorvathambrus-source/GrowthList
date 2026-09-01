@@ -38,7 +38,7 @@ where the name implied:
 
 | Handle | What the API returned | Why it was excluded |
 | --- | --- | --- |
-| `@chrisvoss` | **The Chris Voss Show** — a US interview/book podcast with **10,150 uploads** | Not the FBI negotiator of the same name. Every recent upload is titled "The Chris Voss Show Podcast – <guest>". A name match is not an identity match; no channel for the negotiator was found. |
+| `@chrisvoss` | **The Chris Voss Show** — a US interview/book podcast with **10,150 uploads** | Not the FBI negotiator of the same name. Every recent upload is titled "The Chris Voss Show Podcast – <guest>". A name match is not an identity match. **Correction:** this entry originally added "no channel for the negotiator was found", which was false — his channel was already in the dataset as `negotiationmastery` (`@NegotiationMastery`, "Chris Voss & The Black Swan Group") from batch 01. The wrong-channel finding stands; the claim that nothing existed for him does not. See `data/handle-rescues.json`. |
 | `@JordanHarbingerShow` | The Jordan Harbinger Show, 725 uploads, median 81 min | Real, and large, but the visible catalogue is a general-interest interview show — cancer doctors, geopolitics, declassified history. Nothing in it supports a *networking* mapping, whatever the host is known for elsewhere. Halo effect avoided. |
 | `@TED` | TED, 5,789 uploads | A corpus of talks *about ideas*, not a channel about speaking. Mapping TED to public-speaking on the strength of two or three talks that happen to be on the subject is exactly the halo the scope rule forbids. |
 | `@crashcourse` | CrashCourse, 1,707 uploads across 60+ courses | Deferred, not rejected. The 200 most recent uploads are all Geology; confirming the Media Literacy and Statistics series needs a deeper scan, and it belongs in a learning-domain batch. |
@@ -53,7 +53,27 @@ entity** — recorded so nobody spends the quota twice:
 | `@duarte` | A different channel with 1 video. |
 | `@negotiations` | "Isoc Iq" — unrelated, 7 videos. |
 | `@SpeakUpWithLaura`, `@Nudge`, `@behaviouralscience`, `@themothstories`, `@JordanTheresa`, `@socialskillscoach`, `@negotiationexperts`, `@theblackswangroup`, `@cambridgeunion`, `@NegotiationMasterclass`, `@thecommunicationcoach`, `@TheDecisionLab`, `@thoughtemporium`, `@dailystoicofficial` | All resolve, all have **0 videos**. |
-| `@ScienceOfPeople`, `@ChrisVossOfficial`, `@BlackSwanLtd`, `@jordanharbinger`, `@robertcialdini`, `@influenceatwork`, `@intelligencesquared`, `@CambridgeUnionSociety`, `@manager-tools`, `@RyanHoliday`, `@ShaneAParrish`, `@MattAbrahams` | Do not exist. Where a real channel was found under a different handle it is in the dataset; otherwise the candidate was dropped rather than guessed at. |
+| `@ScienceOfPeople`, `@ChrisVossOfficial`, `@BlackSwanLtd`, `@jordanharbinger`, `@robertcialdini`, `@influenceatwork`, `@intelligencesquared`, `@CambridgeUnionSociety`, `@manager-tools`, `@RyanHoliday`, `@ShaneAParrish`, `@MattAbrahams` | These handles do not exist. **That is not the same as the person having no channel** — see the correction below. |
+
+**Correction — the "does not exist" list above was doing too much work.**
+Four of those people were re-checked with the affiliation-search fallback
+(`scripts/resolve-creator.mjs`) and all four have real channels under
+handles that bear no resemblance to their names:
+
+| Person | Handle that failed | Real channel, found via | Status |
+| --- | --- | --- | --- |
+| Chris Voss | `@chrisvoss` (wrong person), `@ChrisVossOfficial` | "Chris Voss Black Swan Group" → `@NegotiationMastery` | **Already in batch 01.** No creator was missing; the note claiming otherwise was wrong. |
+| Robert Cialdini | `@robertcialdini`, `@influenceatwork`, `@Cialdini` | "Robert Cialdini Influence at Work" → `@teamcialdini` | Genuine find. For a persuasion top-up. |
+| Shane Parrish | `@ShaneAParrish`, `@Farnamstreet` | "Shane Parrish Farnam Street" → `@farnamstreet3661` | Genuine find. For a learning batch. |
+| Ryan Holiday | `@RyanHoliday` | "Ryan Holiday Daily Stoic" → `@dailystoic` | Genuine find. For a philosophy/mindset batch. |
+
+Vanessa Van Edwards was also re-found this way, but she was never an
+identity problem — `@vvanedwards` was located by handle probing in batch
+01 and excluded for having no usable entry video. That exclusion stands.
+
+**Every one of the four attempted rescues succeeded.** On this sample the
+handle-only path missed three real channels it should have found. Full
+records in `data/handle-rescues.json`.
 
 ### Batch 03 — the creativity domain
 
@@ -79,6 +99,23 @@ entity**:
 
 _(none yet — every creator in the dataset so far resolved cleanly, and
 every entry video passed the attribution gate.)_
+
+## When the obvious handle fails: the fallback search path
+
+A person's obvious handle failing is **not** grounds to drop them. Before
+an exclusion is logged, `scripts/resolve-creator.mjs` must have run the
+second path: search the person's name paired with each thing uniquely
+associated with them — a book title, the firm they founded, their
+organisation, "official channel".
+
+The gate does not move. A channel merely *named* after the person fails;
+its own description or its recurring upload titles have to tie it to
+them. Only after both paths fail does the exclusion stand.
+
+Every case where the fallback was the path that found the real channel is
+recorded in **`data/handle-rescues.json`**, so the rate at which the
+first attempt alone would have missed someone is visible rather than
+guessed at.
 
 ## Live-data drift
 

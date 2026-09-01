@@ -1,0 +1,101 @@
+{
+  "_comment": "Cases where the obvious handle failed and the affiliation-search fallback found the real channel. Each one is a creator the first attempt alone would have dropped.",
+  "rescues": [
+    {
+      "name": "Chris Voss",
+      "resolvedHandle": "@negotiationmastery",
+      "channelId": "UCk7jHqdlFFDBhC1QIFqi54w",
+      "handlesTried": [
+        "@chrisvoss",
+        "@ChrisVossOfficial",
+        "@BlackSwanLtd"
+      ],
+      "winningQuery": "Chris Voss Black Swan Group",
+      "gateEvidence": [
+        "affiliation in channel description/title: Black Swan Group, Never Split the Difference"
+      ],
+      "failedBecause": [
+        "handle @chrisvoss: name matches but nothing ties this channel to the person — a name match is not an identity match",
+        "handle @ChrisVossOfficial: handle does not resolve",
+        "handle @BlackSwanLtd: handle does not resolve"
+      ],
+      "note": "The batch-02 exclusion this whole change came from. Outcome: the fallback found the right channel (@NegotiationMastery), which was ALREADY in batch 01 as `negotiationmastery`. So no creator was actually missing — but the batch-02 UNVERIFIED note claiming 'no channel for the negotiator was found' was wrong, and has been corrected. The mechanism is proven: the gate rejected the 10,150-upload podcast channel named 'Chris Voss' and the affiliation search found the real one.",
+      "recordedAt": "2026-09-01",
+      "alreadyInDataset": [
+        "negotiationmastery (batch-01.json)"
+      ]
+    },
+    {
+      "name": "Robert Cialdini",
+      "resolvedHandle": "@teamcialdini",
+      "channelId": "UC8IMseLCZx2BZe3thxHXnog",
+      "handlesTried": [
+        "@robertcialdini",
+        "@influenceatwork",
+        "@Cialdini"
+      ],
+      "winningQuery": "Robert Cialdini Influence at Work",
+      "gateEvidence": [
+        "affiliation in channel description/title: Influence at Work"
+      ],
+      "failedBecause": [
+        "handle @robertcialdini: handle does not resolve",
+        "handle @influenceatwork: handle does not resolve",
+        "handle @Cialdini: handle does not resolve"
+      ],
+      "recordedAt": "2026-09-01",
+      "note": "Genuine find. Logged in batch 02 as 'does not exist'; persuasion had only 2 creators."
+    },
+    {
+      "name": "Vanessa Van Edwards",
+      "resolvedHandle": "@vvanedwards",
+      "channelId": "UCj9QBB4bNTv29f4oFIreNmw",
+      "handlesTried": [
+        "@ScienceOfPeople"
+      ],
+      "winningQuery": "Vanessa Van Edwards Science of People",
+      "gateEvidence": [
+        "affiliation in channel description/title: Captivate"
+      ],
+      "failedBecause": [
+        "handle @ScienceOfPeople: handle does not resolve"
+      ],
+      "recordedAt": "2026-09-01",
+      "note": "Not a new find: @vvanedwards was already located in batch 01 by handle probing and excluded for having no usable entry video (196 of 200 uploads under two minutes). Recorded because the fallback path did reach her independently, but the exclusion reason was never about identity."
+    },
+    {
+      "name": "Shane Parrish",
+      "resolvedHandle": "@farnamstreet3661",
+      "channelId": "UCq11K8nOjPFqavdEu5-6YwQ",
+      "handlesTried": [
+        "@ShaneAParrish"
+      ],
+      "winningQuery": "Shane Parrish Farnam Street",
+      "gateEvidence": [
+        "affiliation in channel description/title: Farnam Street"
+      ],
+      "failedBecause": [
+        "handle @ShaneAParrish: handle does not resolve"
+      ],
+      "recordedAt": "2026-09-01",
+      "note": "Genuine find, for a later learning-domain batch. Logged in batch 02 as 'does not exist'."
+    },
+    {
+      "name": "Ryan Holiday",
+      "resolvedHandle": "@dailystoic",
+      "channelId": "UCkUaT0T03TJvafYkfATM2Ag",
+      "handlesTried": [
+        "@RyanHoliday"
+      ],
+      "winningQuery": "Ryan Holiday Daily Stoic",
+      "gateEvidence": [
+        "affiliation in channel description/title: Daily Stoic"
+      ],
+      "failedBecause": [
+        "handle @RyanHoliday: handle does not resolve"
+      ],
+      "recordedAt": "2026-09-01",
+      "note": "Genuine find, for a later philosophy/mindset batch. Logged in batch 02 as 'does not exist'."
+    }
+  ]
+}

@@ -350,3 +350,169 @@ export async function pickEntryVideo(channel, { prefer = [], poolSize = 50, minM
   }
   return null;
 }
+
+// ------------------------------------------------- the identity gate
+
+/**
+ * Does this channel substantively support being the person we are looking for?
+ *
+ * A matching channel TITLE is explicitly not enough. That is precisely the trap
+ * that put "The Chris Voss Show" — a book-interview podcast with 10,000 uploads
+ * — in front of a search for Chris Voss the FBI negotiator. Names are not
+ * unique; affiliations are much closer to it.
+ *
+ * Evidence that counts, in descending order:
+ *   1. an affiliation term (book, firm, role, organisation) in the channel's
+ *      own description — the strongest signal, since it is self-asserted
+ *   2. an affiliation term recurring across at least two upload titles
+ *   3. the person's full name in the description AND at least one affiliation
+ *      hit anywhere
+ *
+ * Everything else is recorded and reported, but does not pass.
+ */
+export function identityMatch(channel, { name, affiliations = [], uploadTitles = [] } = {}) {
+  const found = [];
+  const notes = [];
+  if (!channel) return { ok: false, found, notes: ['no channel'], reason: 'no channel supplied' };
+  if (!affiliations.length) {
+    return {
+      ok: false, found, notes,
+      reason: 'no affiliations supplied — the gate cannot confirm identity from a name alone',
+    };
+  }
+
+  const desc = String(channel.description ?? '').toLowerCase();
+  const title = String(channel.title ?? '').toLowerCase();
+  const lowerName = String(name ?? '').toLowerCase();
+  const titles = uploadTitles.map((t) => String(t ?? '').toLowerCase());
+
+  const descHits = [];
+  const uploadHits = [];
+  for (const raw of affiliations) {
+    const term = String(raw).toLowerCase().trim();
+    if (!term) continue;
+    if (desc.includes(term) || title.includes(term)) descHits.push(raw);
+    const n = titles.filter((t) => t.includes(term)).length;
+    if (n >= 2) uploadHits.push(`${raw} (${n} uploads)`);
+  }
+
+  const nameInDesc = Boolean(lowerName && desc.includes(lowerName));
+  const nameInTitle = Boolean(lowerName && title.includes(lowerName));
+  if (nameInTitle) notes.push('channel title matches the name — NOT sufficient on its own');
+  if (nameInDesc) notes.push('name appears in the channel description');
+
+  if (descHits.length) {
+    found.push(`affiliation in channel description/title: ${descHits.join(', ')}`);
+    return { ok: true, found, notes, reason: 'affiliation self-asserted by the channel' };
+  }
+  if (uploadHits.length) {
+    found.push(`affiliation recurring in uploads: ${uploadHits.join(', ')}`);
+    return { ok: true, found, notes, reason: 'affiliation recurring across the channel\'s own uploads' };
+  }
+  return {
+    ok: false, found, notes,
+    reason: nameInTitle || nameInDesc
+      ? 'name matches but nothing ties this channel to the person — a name match is not an identity match'
+      : 'no name or affiliation evidence found',
+  };
+}
+
+/** search.list for channels. 100 quota units — a fallback, never the first move. */
+export async function searchChannels(query, { max = 5 } = {}) {
+  const data = await api('search', { part: 'snippet', type: 'channel', q: query, maxResults: Math.min(max, 25) });
+  return (data.items ?? []).map((item) => ({
+    channelId: item.snippet?.channelId ?? item.id?.channelId ?? null,
+    title: item.snippet?.channelTitle ?? item.snippet?.title ?? null,
+    description: item.snippet?.description ?? '',
+  })).filter((r) => r.channelId);
+}
+
+/**
+ * Resolve a person to their real channel, with one extra search path before
+ * giving up.
+ *
+ * Path 1 — handles (1 unit each). Try the obvious ones. Each candidate that
+ * resolves still has to clear identityMatch; a channel called "Chris Voss" does
+ * not become the right Chris Voss by being called that.
+ *
+ * Path 2 — affiliation search (100 units per query), ONLY once path 1 has
+ * failed. Searches the person's name paired with each thing uniquely
+ * associated with them: a book title, the firm they founded, their
+ * organisation, "official channel". This is the path that would have found
+ * Chris Voss under "Black Swan Group" instead of dropping him.
+ *
+ * The gate is identical on both paths. This buys one more real attempt at
+ * finding someone; it does not lower the standard for keeping them.
+ *
+ * Returns { channel, path, query, gate, attempts, rescued } — `rescued` is
+ * true when path 2 found what path 1 missed, which is the case worth logging.
+ */
+export async function resolveCreator({ name, handles = [], affiliations = [], sampleUploads = 12 } = {}) {
+  const attempts = [];
+
+  const check = async (channel, how) => {
+    let uploadTitles = [];
+    // Only spend the extra call when the description alone will not settle it.
+    const descSettles = identityMatch(channel, { name, affiliations });
+    if (!descSettles.ok && channel.uploadsPlaylist && sampleUploads > 0) {
+      const ups = await getUploads(channel.uploadsPlaylist, { max: sampleUploads });
+      uploadTitles = ups.map((u) => u.title);
+    }
+    const gate = uploadTitles.length
+      ? identityMatch(channel, { name, affiliations, uploadTitles })
+      : descSettles;
+    attempts.push({
+      how,
+      handle: channel.handle ?? null,
+      channelId: channel.channelId,
+      title: channel.title,
+      videoCount: channel.videoCount,
+      ok: gate.ok,
+      reason: gate.reason,
+      notes: gate.notes,
+    });
+    return gate;
+  };
+
+  for (const handle of handles) {
+    let channel = null;
+    try {
+      channel = await getChannelByHandle(handle);
+    } catch (err) {
+      attempts.push({ how: `handle ${handle}`, ok: false, reason: redact(err.message).slice(0, 120) });
+      continue;
+    }
+    if (!channel) {
+      attempts.push({ how: `handle ${handle}`, ok: false, reason: 'handle does not resolve' });
+      continue;
+    }
+    const gate = await check(channel, `handle ${handle}`);
+    if (gate.ok) return { channel, path: 'handle', query: handle, gate, attempts, rescued: false };
+  }
+
+  // Path 2. Everything above failed or failed the gate.
+  const queries = [
+    ...affiliations.map((a) => `${name} ${a}`),
+    `${name} official channel`,
+  ];
+  const seen = new Set();
+  for (const query of queries) {
+    let results = [];
+    try {
+      results = await searchChannels(query, { max: 5 });
+    } catch (err) {
+      attempts.push({ how: `search "${query}"`, ok: false, reason: redact(err.message).slice(0, 120) });
+      continue;
+    }
+    for (const hit of results) {
+      if (seen.has(hit.channelId)) continue;
+      seen.add(hit.channelId);
+      const channel = await getChannelById(hit.channelId);
+      if (!channel) continue;
+      const gate = await check(channel, `search "${query}"`);
+      if (gate.ok) return { channel, path: 'affiliation-search', query, gate, attempts, rescued: true };
+    }
+  }
+
+  return { channel: null, path: null, query: null, gate: null, attempts, rescued: false };
+}
