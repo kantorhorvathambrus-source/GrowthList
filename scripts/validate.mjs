@@ -293,6 +293,23 @@ for (const c of creators) {
 const FINAL = process.argv.includes('--final');
 const cover = FINAL ? fail : warn;
 
+// Categories that will ship without a critic, on purpose. Project rule 11:
+// a weak or bad-faith critic is worse than none, so a documented gap is
+// reported rather than failed. An UNdocumented one still fails under --final.
+let criticGaps = {};
+const gapsPath = join(DATA, 'critic-gaps.json');
+if (existsSync(gapsPath)) {
+  const raw = readJson(gapsPath);
+  criticGaps = raw?.gaps ?? {};
+  for (const [catId, reason] of Object.entries(criticGaps)) {
+    if (!categoryIds.has(catId)) fail('critic-gaps.json', `"${catId}" is not a real category id`);
+    if (typeof reason !== 'string' || reason.trim().length < 40) {
+      fail('critic-gaps.json', `"${catId}" needs a reason of at least 40 characters saying what was looked for`);
+    }
+  }
+}
+const acceptedCriticGaps = [];
+
 if (creators.length > 0) {
   let untouched = 0;
   for (const [catId, list] of byCategory) {
@@ -301,7 +318,10 @@ if (creators.length > 0) {
     // work not done. Counted, not enumerated, unless this is the final check.
     if (list.length === 0 && !FINAL) { untouched++; continue; }
     if (list.length < 5) cover(where, `only ${list.length} creators, minimum 5`);
-    if (!list.some((c) => c.role === 'critic')) cover(where, 'no creator with role "critic"');
+    if (!list.some((c) => c.role === 'critic')) {
+      if (criticGaps[catId]) acceptedCriticGaps.push(catId);
+      else cover(where, 'no creator with role "critic"');
+    }
     for (const lvl of LEVELS) {
       if (!list.some((c) => Array.isArray(c.level) && c.level.includes(lvl))) {
         cover(where, `no creator flagged "${lvl}"`);
@@ -309,6 +329,12 @@ if (creators.length > 0) {
     }
   }
   if (untouched) warn('coverage', `${untouched} of ${categories.length} categories have no creators yet`);
+  // A category with a critic does not need an excuse for not having one.
+  for (const catId of Object.keys(criticGaps)) {
+    if ((byCategory.get(catId) ?? []).some((c) => c.role === 'critic')) {
+      warn('critic-gaps.json', `"${catId}" is listed as a critic gap but now has a critic — remove the entry`);
+    }
+  }
 }
 
 // ---------------------------------------------------------------- plans
@@ -401,6 +427,13 @@ if (creators.length > 0) {
   console.log('\nThinnest 20 categories');
   for (const [catId, list] of thinnest) {
     console.log(`  ${pad(catId, 34)} ${list.length}`);
+  }
+
+  if (acceptedCriticGaps.length) {
+    console.log(`\nShipping without a critic, on purpose (${acceptedCriticGaps.length})`);
+    for (const catId of acceptedCriticGaps.sort()) {
+      console.log(`  ${pad(catId, 34)} ${criticGaps[catId]}`);
+    }
   }
 
   console.log('\nRole distribution');

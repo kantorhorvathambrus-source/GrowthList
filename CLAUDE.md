@@ -43,6 +43,18 @@ this file has the rules, schema, and current state.
     `.env` and removed it with `rm -f .env`, which would have destroyed
     a real key file had one been present. It didn't, but only by luck.
     The same applies to `data/` — synthetic fixtures live in `/tmp`.
+11. **Never fill a critic slot with a weak or bad-faith critic.** Every
+    category is supposed to have one `role: "critic"`. Where no
+    credible one exists after the research is done, the category ships
+    **without** one and the gap is stated explicitly in the coverage
+    report. The owner's ruling, verbatim in substance: a weak or
+    bad-faith critic is worse than none. A "critic" is someone whose
+    own body of work argues against the category's popular claims from
+    a defensible position — not a rival seller, not a contrarian, and
+    not someone whose only qualification is disagreeing loudly.
+    Document each accepted gap in `data/critic-gaps.json` with the
+    reason; `validate.mjs --final` treats a documented gap as reported,
+    not as a failure, and an undocumented one still fails.
 
 ## Naming conventions
 
@@ -234,7 +246,7 @@ in `categories.json`-derived output with a computed creator `count`.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research). **Batches 01 and 02 are
+- **Current phase**: Phase 2 (creator research). **Batches 01–03 are
   written, gated, validated and committed.** Phases 0, 1, 3-tooling, 4
   and 5 are done. Phase 6 is deliberately not started: the owner's call
   is that Phase 2 is the product and everything else is packaging, so no
@@ -242,22 +254,22 @@ this section first to know exactly where to resume.)*
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, working on `main`.
   Not to be confused with `kantorhorvathambrus-source/mancsterapia`, an
   unrelated project.
-- **Creator count: 30 of 700.** Batch 01 = 16, batch 02 = 14. Every one
-  resolved through the Data API; all 60 entry videos passed the
-  attribution gate. Nothing has ever been written from memory and
-  nothing ever should be.
-- **Batches run short on purpose.** Only creators with API-verified
-  evidence get written; the rest are logged in `UNVERIFIED.md` with the
-  reason. See "Batch sizes are a ceiling, not a quota" below.
-- **Domain state**: communication is close to done — 13 of 13 categories
-  now have creators, though most are still under the five-creator
-  minimum and only two have a critic. 183 of 200 categories still have
-  none at all.
-- **The binding constraint is critics, not creators.** Every category
-  needs one `role: "critic"`. They exist for body-language,
-  conversation-skills and critical-thinking; the other ten communication
-  categories have none, and a genuine critic cannot be manufactured.
-  Expect coverage warnings to persist for a long time.
+- **Creator count: 51 of 700.** Batch 01 = 16 (communication), batch 02
+  = 14 (rest of communication), batch 03 = 21 (creativity). Every one
+  resolved through the Data API; all 82 entry videos passed the
+  attribution gate. Nothing has ever been written from memory.
+- **Domains complete on a first pass**: communication (13/13 categories
+  populated) and creativity (14/14). 171 of 200 categories still have no
+  creators. Next: learning, then mindset.
+- **Critics are the binding constraint** and the owner has ruled on it
+  (project rule 11): where none credible exists, the category ships
+  without one and the gap is stated in the coverage report. Do not lower
+  the bar to fill a slot. Documented gaps go in `data/critic-gaps.json`;
+  `validate.mjs --final` reports those and still fails on undocumented
+  ones. **Flag the critic position at every owner check-in.**
+- **Critic status: 3 of 29 populated categories have one** —
+  body-language, conversation-skills, critical-thinking. The entire
+  creativity domain has none yet.
 
 ### Immediate next actions
 

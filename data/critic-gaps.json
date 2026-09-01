@@ -1,0 +1,4 @@
+{
+  "_comment": "Categories that will ship WITHOUT a role:'critic' creator, because no credible one exists. Per project rule 11: a weak or bad-faith critic is worse than none. Each entry needs a reason describing what was looked for and why nothing qualified. validate.mjs --final reports these instead of failing on them; a category with no critic and no entry here still fails. Fill this at the END of Phase 2, not as a way to duck the search.",
+  "gaps": {}
+}

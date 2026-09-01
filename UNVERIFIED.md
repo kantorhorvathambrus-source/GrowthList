@@ -55,6 +55,26 @@ entity** — recorded so nobody spends the quota twice:
 | `@SpeakUpWithLaura`, `@Nudge`, `@behaviouralscience`, `@themothstories`, `@JordanTheresa`, `@socialskillscoach`, `@negotiationexperts`, `@theblackswangroup`, `@cambridgeunion`, `@NegotiationMasterclass`, `@thecommunicationcoach`, `@TheDecisionLab`, `@thoughtemporium`, `@dailystoicofficial` | All resolve, all have **0 videos**. |
 | `@ScienceOfPeople`, `@ChrisVossOfficial`, `@BlackSwanLtd`, `@jordanharbinger`, `@robertcialdini`, `@influenceatwork`, `@intelligencesquared`, `@CambridgeUnionSociety`, `@manager-tools`, `@RyanHoliday`, `@ShaneAParrish`, `@MattAbrahams` | Do not exist. Where a real channel was found under a different handle it is in the dataset; otherwise the candidate was dropped rather than guessed at. |
 
+### Batch 03 — the creativity domain
+
+| Handle | What the API returned | Why it was excluded |
+| --- | --- | --- |
+| `@TheFutur` | The Futur, 2,270 uploads, 1M–5M | Its own description is "business strategy, personal branding, and how to scale your creative services" — pricing, selling, positioning. That is a business channel for designers, not a graphic-design channel. Belongs in a business/freelancing batch, not this one. |
+| `@DesignCourse` | DesignCourse (Gary Simon), 1,495 uploads | Real UI/UX history, but the recent 200 uploads are dominated by AI-tooling commentary and demos rather than interface craft. Mapping it to `ui-ux-design` on the strength of the back catalogue would misdescribe what a viewer finds today. Revisit if the output shifts back. |
+| `@Mizko` | Mizko, 204 uploads, AU | Same problem: a UX background, but the current catalogue is founder/career/AI content. Not enough interface-craft output to support the mapping. |
+| `@PatFlynn` | Pat Flynn, 1,003 uploads | Known for podcasting, but the catalogue is online-business and passive-income content. Halo effect avoided. |
+
+Handles probed in batch 03 that resolve but are **empty or the wrong
+entity**:
+
+| Handle tried | What the API actually returned |
+| --- | --- |
+| `@FlyingSaucer` | "Flying Saucer Draught Emporium" — a bar. Nothing to do with design. |
+| `@SeanTucker` | "Sean Tucker-Loves-a-Vid" — not the photographer of that name; dropped rather than assumed. |
+| `@tomheaton` | A 1-video channel. The photographer is `@ThomasHeatonPhoto`. |
+| `@RogerLove` | 1 video. `@Vocalist` is a 6-video Polish channel. |
+| `@drawabox`, `@youmustlisten`, `@TheDesignTribe`, `@LoganKenesis`, `@howtodrawcomics`, `@BobbyDuke` | All resolve, all have **0 videos**. |
+
 ## Unverified
 
 _(none yet — every creator in the dataset so far resolved cleanly, and

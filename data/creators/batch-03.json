@@ -1,0 +1,1085 @@
+[
+  {
+    "id": "thisguyedits",
+    "name": "This Guy Edits (Sven Pape)",
+    "handle": "@ThisGuyEdits",
+    "channelUrl": "https://www.youtube.com/@ThisGuyEdits",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "500k-1M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A working feature-film editor who teaches mainly by recutting other people's footage on camera and explaining every decision.",
+    "longDescription": "The channel's own description identifies its host as an ACE member who has cut for James Cameron, Joseph Gordon-Levitt and the Sundance filmmaker Mark Webber — a professional credential rather than a self-taught enthusiast's. The format that makes it worth watching is the critique: someone submits a short film, and he takes it apart on screen, moves the cuts, and says why each change works. Eighty-seven of the last two hundred uploads run past twenty minutes and seventy-three sit between three and nineteen, with a median of sixteen, so this is a channel of substantial pieces rather than tips. There are also long editing challenges and industry commentary about how the work is changing, which is less useful if you are trying to learn the craft.",
+    "notFor": "Anyone wanting software tutorials — this is about where the cut goes, not which button makes it happen, and it assumes you can already operate an editor.",
+    "formatTags": [
+      "long-form",
+      "tutorial",
+      "video-essay"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 4
+    },
+    "signals": [
+      "credentialed",
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "video-editing",
+        "strength": "primary",
+        "why": "Shows the same footage cut badly and cut well, which is the only way most people ever learn to see a bad cut in their own work.",
+        "evidence": "A professional feature editor whose recurring format is recutting submitted short films and indie features on camera, explaining each decision as he makes it.",
+        "entryVideo": {
+          "title": "Pro Editor Fixes A High School Short Film",
+          "videoId": "AbgrmvVPBUs",
+          "whyThisOne": "Deliberately amateur source material, so the improvements are large and visible rather than subtle taste calls.",
+          "durationMin": 17
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Runs a paid editing community that the videos route toward. A growing share of recent uploads is industry commentary rather than craft."
+  },
+  {
+    "id": "premiumbeat",
+    "name": "PremiumBeat by Shutterstock",
+    "handle": "@PremiumBeat",
+    "channelUrl": "https://www.youtube.com/@PremiumBeat",
+    "country": "CA",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "archive",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A stock-music company's back catalogue of After Effects and post-production tutorials, dormant since 2025 but still a solid technique library.",
+    "longDescription": "PremiumBeat sells royalty-free music, and the channel was built as content marketing around it — which turned out to produce a genuinely useful archive. A hundred and fifty of the last two hundred uploads run between three and nineteen minutes with a median of seven, and the subject matter is concrete post-production technique: recreating a Mini DV look in After Effects, giving still images motion, building 3D terrain in Cinema 4D. Nothing has been uploaded since April 2025. Because the videos are technique-first rather than news-first, most of them have aged reasonably well, though anything touching a specific software version has not.",
+    "notFor": "Anyone who wants editing judgement rather than effects technique, or who is not working in the Adobe and Maxon ecosystem the tutorials assume.",
+    "formatTags": [
+      "tutorial",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 0,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 2
+    },
+    "signals": [
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "video-editing",
+        "strength": "primary",
+        "why": "Step-by-step, reproducible technique with a finished result at the end, which is what actually builds software fluency early on.",
+        "evidence": "A large archive of specific post-production tutorials — motion for stills, film-look emulation, 3D terrain — published in a consistent short tutorial format.",
+        "entryVideo": {
+          "title": "How to Make Still Images Look More Dynamic in After Effects | PremiumBeat.com",
+          "videoId": "gCrfA4Kw4PA",
+          "whyThisOne": "A single self-contained technique you can finish in one sitting and immediately reuse, which is the right size for a first tutorial.",
+          "durationMin": 14
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Dormant since April 2025 and originally made to sell music licences. Software-specific steps will drift out of date even though the ideas do not."
+  },
+  {
+    "id": "studiobinder",
+    "name": "StudioBinder",
+    "handle": "@StudioBinder",
+    "channelUrl": "https://www.youtube.com/@StudioBinder",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Well-produced video essays on how specific directors and films work, made by a production-management software company.",
+    "longDescription": "StudioBinder sells production-management software — call sheets, shot lists, schedules — and the channel is the marketing arm of that, which is worth knowing before you watch. What it produces, though, is a large and consistent library of film-analysis essays: how a named director stages and covers a scene, how endings are constructed, how a national cinema developed its visual grammar. A hundred and nineteen of the last two hundred uploads run three to nineteen minutes with a median of ten, and the production values are high — clips, annotated frames, clear narration. The commercial angle mostly shows up as a soft pitch at the end rather than distorting the analysis.",
+    "notFor": "Anyone who wants to be walked through doing it rather than shown how someone else did; this is analysis, and the pipeline from watching to making is yours to build.",
+    "formatTags": [
+      "video-essay",
+      "tutorial",
+      "shorts"
+    ],
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 2,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "filmmaking",
+        "strength": "primary",
+        "why": "Breaks a director's actual choices down shot by shot, which turns watching films from consumption into study without requiring any equipment.",
+        "evidence": "A sustained series analysing how individual directors stage, cover and cut scenes, built from annotated clips of their released work.",
+        "entryVideo": {
+          "title": "How Ridley Scott Directs a Movie",
+          "videoId": "z9l8snZR8Gs",
+          "whyThisOne": "Nine minutes on one director's specific, nameable habits — a small enough unit to then go and look for in anything else you watch.",
+          "durationMin": 9
+        }
+      },
+      {
+        "id": "storytelling",
+        "strength": "secondary",
+        "why": "Its work on how endings land is really about structure and payoff, which transfers to anything you have to bring to a close.",
+        "evidence": "Dedicated essays on constructing endings and on why particular endings stay with an audience, analysed structurally rather than as opinion.",
+        "entryVideo": {
+          "title": "9 Ways to End a Film",
+          "videoId": "zhhJIkpnvsE",
+          "whyThisOne": "Nine named structures side by side, which is more useful than one exemplar because you can see what the choice actually costs.",
+          "durationMin": 19
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Content marketing for a software product; every video routes back to it eventually. Analysis rather than instruction — nobody here teaches you to shoot."
+  },
+  {
+    "id": "indepthcine",
+    "name": "In Depth Cine",
+    "handle": "@InDepthCine",
+    "channelUrl": "https://www.youtube.com/@InDepthCine",
+    "country": "ZA",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Technical cinematography explained for people about to walk onto a set for the first time, with the trade-offs stated rather than hidden.",
+    "longDescription": "The channel's stated aim is to balance creative thinking with technical filmmaking concepts — the things its maker wished he had known before his first day on a set. That framing describes the output well. A hundred and seventy-nine of the last two hundred uploads sit between three and nineteen minutes, none run past twenty, and the median is thirteen, so the format is consistently a focused explanation of one topic. Subjects are the practical decisions of production: whether to shoot handheld and what it costs you, which grip gear is genuinely necessary on an indie budget versus an industry one, what a new camera or film stock actually changes. The register is technical without being gatekeeping, and gear coverage is a meaningful share of it.",
+    "notFor": "Anyone wanting story, directing or performance; this is the camera-and-lighting half of filmmaking, and it is unapologetically about equipment much of the time.",
+    "formatTags": [
+      "tutorial",
+      "video-essay"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 1,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "filmmaking",
+        "strength": "primary",
+        "why": "Gives the trade-off rather than the rule — what handheld buys you and what it costs — which is how these decisions actually get made on a set.",
+        "evidence": "A consistent catalogue of technical production explainers on camera movement, grip and lighting gear, and format choices, framed around indie versus industry constraints.",
+        "entryVideo": {
+          "title": "The Pros & Cons Of Shooting Handheld",
+          "videoId": "qCzMqwP7_ZU",
+          "whyThisOne": "A choice you will face on your first shoot, argued both ways, which is a fair sample of how the channel treats every topic.",
+          "durationMin": 13
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "A substantial share of uploads is new-gear coverage, which dates quickly and is not the same thing as learning to shoot."
+  },
+  {
+    "id": "filmriot",
+    "name": "Film Riot",
+    "handle": "@FilmRiot",
+    "channelUrl": "https://www.youtube.com/@FilmRiot",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A long-running, deliberately energetic filmmaking how-to show, strongest on practical effects and on getting a scene shot at all.",
+    "longDescription": "Film Riot has been running for well over a decade and has the archive to show for it — nearly thirteen hundred videos, with a hundred and eighty of the last two hundred sitting between three and nineteen minutes and a median of eleven. The channel's own description promises a how-to trip through filmmaking, and the emphasis has always been on doing rather than analysing: how to shoot a scene from camera settings through to coverage, how a zero-gravity effect was achieved, how classic films pulled off effects before digital tools existed. The tone is high-energy and comedic, which is either the appeal or the obstacle depending on you. Because the catalogue spans so many years, older episodes reference workflows and hardware that no longer exist.",
+    "notFor": "Anyone who finds sketch-comedy framing distracting, or who wants film theory; this is a practical show about making things on small budgets.",
+    "formatTags": [
+      "tutorial",
+      "long-form",
+      "video-essay"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 0,
+      "practical": 4,
+      "energy": 4,
+      "selfPromotion": 2,
+      "depth": 2
+    },
+    "signals": [
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "filmmaking",
+        "strength": "primary",
+        "why": "Covers the unglamorous mechanics of getting a scene in the can — settings, coverage, order of shots — which is where most first films actually fall apart.",
+        "evidence": "A thirteen-hundred-video how-to archive centred on production technique, including a numbered series on shooting a scene and long-running practical-effects breakdowns.",
+        "entryVideo": {
+          "title": "How to Film a Scene 101: Camera Settings to Coverage",
+          "videoId": "PY0z37sKOmg",
+          "whyThisOne": "End-to-end on one scene rather than one isolated skill, which is the shape of the problem when you actually turn up to shoot.",
+          "durationMin": 15
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "The archive spans many years, so older episodes reference dead software and hardware. The comedic style is heavy and not to everyone's taste."
+  },
+  {
+    "id": "thomasheatonphoto",
+    "name": "Thomas Heaton",
+    "handle": "@ThomasHeatonPhoto",
+    "channelUrl": "https://www.youtube.com/@ThomasHeatonPhoto",
+    "country": null,
+    "language": "en",
+    "sizeBucket": "500k-1M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Landscape photography taught mostly through field vlogs — you watch him decide what to shoot and why, including when it does not work.",
+    "longDescription": "Thomas Heaton photographs landscapes, largely in the UK and often from a camper van or a tent, and the channel is built around going out and doing it rather than around lessons. A hundred and thirty-three of the last two hundred uploads run three to nineteen minutes and sixty-five run past twenty, with a median of seventeen and almost no short-form at all. The teaching is embedded: he talks through why he chose a composition, why he waited, why he walked away. Interspersed are more conventional lesson videos, gear assessments, and a strand of commentary on photography as a practice — including on people misrepresenting how their images were made. He works in both film and digital, which is unusual and useful.",
+    "notFor": "Anyone who wants structured lessons; the ratio of vlog to instruction is high, and you have to be willing to learn by watching someone work.",
+    "formatTags": [
+      "vlog",
+      "long-form",
+      "tutorial"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 0,
+      "practical": 3,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "photography",
+        "strength": "primary",
+        "why": "Shows the decisions before the shutter — where to stand, what to wait for, when to give up — which is the part no settings tutorial covers.",
+        "evidence": "Hundreds of field videos in which composition and timing decisions are talked through on location, alongside explicit lesson videos on fundamentals.",
+        "entryVideo": {
+          "title": "10 Things Every Photographer Should Learn",
+          "videoId": "2fMG2JpYynQ",
+          "whyThisOne": "The most lesson-shaped video on a channel that is mostly vlog, so it gives you the framework before you watch him apply it in the field.",
+          "durationMin": 20
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Heavily vlog-format, and a real share of uploads is gear coverage. Landscape-specific — little here transfers directly to portraits or events."
+  },
+  {
+    "id": "nigeldanson",
+    "name": "Nigel Danson",
+    "handle": "@NigelDanson",
+    "channelUrl": "https://www.youtube.com/@NigelDanson",
+    "country": "GB",
+    "language": "en",
+    "sizeBucket": "500k-1M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Landscape photography with an unusual emphasis on composition and on small changes that measurably improve an image.",
+    "longDescription": "Nigel Danson shoots landscapes in the UK and the US and teaches from that practice. The channel's shape is notable: only one of the last two hundred uploads runs two minutes or less, a hundred and seven run past twenty, and the median is a full twenty minutes. That length is used on genuinely instructional material rather than on padding — tips organised as numbered lessons, before-and-after treatments of the small adjustments that transform a photograph, and location work where the reasoning is spoken aloud. He is a useful counterweight to Thomas Heaton on the same subject: less vlog, more explicit teaching, and more attention to composition as a set of decisions you can name.",
+    "notFor": "Anyone shooting anything other than landscape and nature — the examples do not leave that world — or wanting quick answers.",
+    "formatTags": [
+      "long-form",
+      "tutorial",
+      "vlog"
+    ],
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 0,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "photography",
+        "strength": "primary",
+        "why": "Isolates the small compositional changes that separate an adequate photo from a good one, and shows both versions side by side.",
+        "evidence": "A catalogue with a twenty-minute median built around structured lesson videos on composition and on incremental improvements to specific images.",
+        "entryVideo": {
+          "title": "5 Photography Tips that will Make you a Better Photographer",
+          "videoId": "705NvTkibto",
+          "whyThisOne": "Five nameable things to change, each demonstrated, which gives you a checklist rather than an aesthetic to absorb.",
+          "durationMin": 22
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Landscape-only, and some uploads are gear or trip content rather than teaching."
+  },
+  {
+    "id": "nngroup",
+    "name": "Nielsen Norman Group",
+    "handle": "@NNgroup",
+    "channelUrl": "https://www.youtube.com/@NNgroup",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "The research consultancy that largely defined usability as a discipline, publishing short evidence-based explainers plus a longer interview series.",
+    "longDescription": "Nielsen Norman Group describes itself as a source of research-based UX guidance with over twenty-five years behind it, and the channel is unusual in this field for being grounded in actual studies rather than in taste. The format is barbelled: a hundred and seven of the last two hundred uploads run three to nineteen minutes with a median of four — short, tightly scoped explainers on things like when to use post-task versus post-test questionnaires, or what changes when usability testing moves back in person — while a smaller set of forty-plus-minute episodes are conversations with practitioners and researchers. The short videos are the reason to be here. They are dry, specific, and almost never make a claim without pointing at where it came from.",
+    "notFor": "Anyone looking for visual design, aesthetics or tooling; this is usability and research methodology, and it is deliberately unglamorous.",
+    "formatTags": [
+      "tutorial",
+      "interview",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 4,
+      "practical": 3,
+      "energy": 1,
+      "selfPromotion": 2,
+      "depth": 3
+    },
+    "signals": [
+      "credentialed",
+      "cites-research",
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "ui-ux-design",
+        "strength": "primary",
+        "why": "Grounds interface decisions in usability research instead of in preference, which is the distinction the whole field keeps collapsing.",
+        "evidence": "A twenty-five-year research consultancy publishing method-level guidance on usability testing and interface patterns, with claims routinely tied to their own studies.",
+        "entryVideo": {
+          "title": "Designing Filters: A 4-Step Framework | NN/G LIVE",
+          "videoId": "BfVWcomfzLs",
+          "whyThisOne": "One concrete interface problem worked end to end, which shows the research-first method doing real work rather than being asserted.",
+          "durationMin": 54
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Sells training and certification, and the tone is corporate. Little coverage of visual craft — pair it with something that teaches the making."
+  },
+  {
+    "id": "proko",
+    "name": "Proko (Stan Prokopenko)",
+    "handle": "@ProkoTV",
+    "channelUrl": "https://www.youtube.com/@ProkoTV",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Structured figure-drawing and anatomy instruction from an artist-teacher, in long lessons that build in a deliberate order.",
+    "longDescription": "Stan Prokopenko describes himself as an artist and teacher, and Proko is organised the way a course is rather than the way a feed is. Ninety-two of the last two hundred uploads run past twenty minutes with a median of seventeen, and the material progresses: gesture before structure, structure before anatomy, anatomy before rendering. Individual lessons are narrow and thorough — how the eye actually sits in the skull including the fat pads around it, how drapery and silhouette make a character readable, how to build complex forms from simple ones. There are also guest lessons from other professional artists and a good deal of lighter content. The teaching is demonstrably sequenced, which is rare and is the main reason to start here rather than anywhere else.",
+    "notFor": "Anyone wanting quick stylised results; the approach is academic, starts with the boring fundamentals, and expects you to draw a great deal.",
+    "formatTags": [
+      "tutorial",
+      "long-form",
+      "course"
+    ],
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 4,
+      "energy": 3,
+      "selfPromotion": 3,
+      "depth": 4
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "drawing-and-illustration",
+        "strength": "primary",
+        "why": "Teaches in a deliberate order with anatomical reasoning behind each step, so you understand why a form looks wrong rather than only that it does.",
+        "evidence": "A sequenced instructional catalogue moving from gesture through structure to anatomy and rendering, taught by a working artist who runs it as a course.",
+        "entryVideo": {
+          "title": "How to Draw Eyes - Anatomy and Fat Pads",
+          "videoId": "Sj95H_VqGdU",
+          "whyThisOne": "A single feature taught from the underlying anatomy up, which is exactly the method the rest of the channel applies to everything else.",
+          "durationMin": 24
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "A large paid course business sits behind the free videos and is promoted throughout. The academic approach is slow by design."
+  },
+  {
+    "id": "marcobucci",
+    "name": "Marco Bucci",
+    "handle": "@marcobucci",
+    "channelUrl": "https://www.youtube.com/@marcobucci",
+    "country": "CA",
+    "language": "en",
+    "sizeBucket": "500k-1M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A professional concept artist teaching colour, light and material — the painting half of the craft that figure-drawing channels leave out.",
+    "longDescription": "Marco Bucci's own account is more than fifteen years as a professional artist across film, television, games and print, largely as a concept artist. The channel is small and dense: a hundred and thirty-three videos, eighty-four of them between three and nineteen minutes, with a median of eleven. Where most drawing instruction stops at line and form, his focus is what happens after — how light behaves on metal and every other material, how to paint something as unforgiving as grass, how to stop figures reading as stiff. He also talks candidly about the working-artist side, including getting noticed, which is honest but is a different subject. The demonstrations are done live at painting speed, so you see the mistakes and corrections rather than a finished result.",
+    "notFor": "Absolute beginners who cannot yet draw a convincing form; this assumes drawing ability and works on what you put on top of it.",
+    "formatTags": [
+      "tutorial",
+      "long-form"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "drawing-and-illustration",
+        "strength": "primary",
+        "why": "Covers light, colour and material behaviour, which is where most self-taught artists stall after their drawing has become competent.",
+        "evidence": "A working concept artist of fifteen-plus years across film, games and print, whose catalogue is built on live painting demonstrations of material, light and figure work.",
+        "entryVideo": {
+          "title": "Stop Drawing Stiff Figures",
+          "videoId": "BjORDexWNlg",
+          "whyThisOne": "Names a specific failure almost everyone has in their own work and fixes it on screen, so you can check your sketchbook against it immediately.",
+          "durationMin": 15
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Sells courses and brushes. Some uploads are about the art business rather than the craft — useful, but not what you came for."
+  },
+  {
+    "id": "andrewhuang",
+    "name": "Andrew Huang",
+    "handle": "@AndrewHuang",
+    "channelUrl": "https://www.youtube.com/@AndrewHuang",
+    "country": "CA",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A working multi-genre musician whose channel mixes real production technique with a great deal of entertainment and experiment.",
+    "longDescription": "Andrew Huang describes himself as a partially deaf musician from Toronto working across many genres and instruments, and lists a plugin developed with Baby Audio, a sampler app, a book and an online production class. The channel matches that range and is not primarily a teaching channel: a hundred and thirty of the last two hundred uploads run two minutes or less and the median is one minute. What sits behind the short-form is a mixture of genuine technique videos, collaborations where several producers work the same brief, and studio experiments that are closer to entertainment than instruction. The value for a learner is exposure — hearing many approaches to the same problem from someone fluent in all of them — with the caveat that you will have to sift.",
+    "notFor": "Anyone wanting a structured production curriculum. The signal-to-entertainment ratio is low and nothing here is sequenced.",
+    "formatTags": [
+      "shorts",
+      "tutorial",
+      "long-form",
+      "documentary"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 3,
+      "energy": 4,
+      "selfPromotion": 3,
+      "depth": 2
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "music-production",
+        "strength": "primary",
+        "why": "Shows many valid routes to the same musical result, which breaks the beginner assumption that there is one correct way to make a sound.",
+        "evidence": "A working musician and plugin developer whose catalogue includes sound-design tutorials alongside multi-producer collaborations on shared briefs.",
+        "entryVideo": {
+          "title": "How to make HUGE 808s!",
+          "videoId": "Z07NWhI2oQQ",
+          "whyThisOne": "One of the plainly instructional videos on a channel that is often not, and the technique is reusable in any DAW.",
+          "durationMin": 8
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Mostly short-form and often entertainment rather than teaching. Sells a production class, a book, an app and a plugin, all promoted on the channel."
+  },
+  {
+    "id": "inthemix",
+    "name": "In The Mix (Michael Wynne)",
+    "handle": "@InTheMix",
+    "channelUrl": "https://www.youtube.com/@InTheMix",
+    "country": "GB",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A Scottish audio engineer teaching mixing and mastering in short, concrete lessons — while also selling his own plugins in a growing share of them.",
+    "longDescription": "Michael Wynne introduces himself as a Scottish audio engineer who makes audio plugins and free videos to simplify production, mixing and mastering. The teaching half is genuinely good and unusually condensed: a hundred and forty-six of the last two hundred uploads run three to nineteen minutes with a median of ten, and the recurring format is a compressed distillation — years of mixing advice in as many minutes, a masterclass on choosing the right compressor, specific fixes for specific problems. The other half is product content: demonstrations of plugins he sells and of new features in the DAW he specialises in. Both halves are competent; you just need to know which one you are watching.",
+    "notFor": "Anyone not working in a DAW already, or who wants to avoid product placement — a meaningful share of uploads exists to sell his own software.",
+    "formatTags": [
+      "tutorial",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 4,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "music-production",
+        "strength": "primary",
+        "why": "Compresses mixing experience into checkable rules of thumb, and is specific about what each one is for rather than offering general principles.",
+        "evidence": "A working audio engineer publishing condensed mixing-advice videos and technique masterclasses on compression, reverb and mastering.",
+        "entryVideo": {
+          "title": "11 Years of Mixing Advice in 11 Minutes",
+          "videoId": "HxoP95XGT74",
+          "whyThisOne": "The highest density of usable advice on the channel, and short enough that you can act on it the same evening.",
+          "durationMin": 12
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Sells plugins and promotes them heavily in his own videos. Much of the catalogue is specific to one DAW."
+  },
+  {
+    "id": "justinguitar",
+    "name": "JustinGuitar (Justin Sandercoe)",
+    "handle": "@JustinGuitar",
+    "channelUrl": "https://www.youtube.com/@JustinGuitar",
+    "country": "GB",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "The long-standing free guitar curriculum — a structured beginner-to-advanced course that happens to live on YouTube and a website.",
+    "longDescription": "The channel's description sets out the position plainly: Justin Sandercoe was an early figure in online guitar tuition and built a website hosting over thirteen hundred free lessons, deliberately given away rather than sold. That structure is the whole point. Where most instrument channels are a feed of disconnected tips, this is an ordered course with stages, and the YouTube channel is one surface onto it. The catalogue has followed the platform — ninety-seven of the last two hundred uploads run two minutes or less, with a median of three — but fifty-six run past twenty minutes, and those are the substantial pieces: practice methodology, fretboard systems, extended blues classes. His material on how to practise is stronger than most channels' material on what to practise.",
+    "notFor": "Anyone who wants to skip fundamentals and learn a specific song fast; the structure is the value and it asks for patience.",
+    "formatTags": [
+      "course",
+      "tutorial",
+      "shorts",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "guitar",
+        "strength": "primary",
+        "why": "An actual sequenced curriculum rather than a pile of lessons, and it takes practice design as seriously as it takes technique.",
+        "evidence": "A structured free course of over thirteen hundred lessons organised into stages, plus long-form videos specifically on practice method and fretboard systems.",
+        "entryVideo": {
+          "title": "I Practiced Wrong for 40 Years?",
+          "videoId": "Gse5EuM_HWU",
+          "whyThisOne": "About how to practise rather than what to play, which is the thing that determines whether the next year of effort goes anywhere.",
+          "durationMin": 11
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "The YouTube channel is a shop window; the course structure lives on his website, so following it here alone is disorienting. Recent uploads lean heavily to short-form."
+  },
+  {
+    "id": "pianoteofficial",
+    "name": "Pianote",
+    "handle": "@PianoteOfficial",
+    "channelUrl": "https://www.youtube.com/@PianoteOfficial",
+    "country": "CA",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A subscription piano school's channel — competent adult-beginner teaching, wrapped tightly around a free-trial pitch.",
+    "longDescription": "Pianote is the YouTube presence of a paid piano-learning subscription, and the channel description is a trial offer rather than a mission statement, which tells you the arrangement. The teaching itself is aimed squarely at adults returning to or starting the instrument, and it is reasonable: warm-ups designed for people with limited time, arguments against the belief that starting late is disqualifying, methods for learning songs faster, left-hand patterns that make simple playing sound fuller. The format has gone heavily short — a hundred and forty-two of the last two hundred uploads are under two minutes, with a median of one — and only five run past twenty, so the substantial teaching is a small proportion of a large output.",
+    "notFor": "Anyone wanting classical technique or sight-reading depth, or who does not want a subscription pitch attached to every lesson.",
+    "formatTags": [
+      "shorts",
+      "tutorial",
+      "course"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 3,
+      "energy": 3,
+      "selfPromotion": 4,
+      "depth": 2
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "piano",
+        "strength": "primary",
+        "why": "Pitched at adults with limited practice time and no childhood grounding, which is who is actually starting piano and who most instruction ignores.",
+        "evidence": "A teaching catalogue built around adult beginners — time-limited warm-ups, song-learning method, left-hand patterns — produced by a paid piano school.",
+        "entryVideo": {
+          "title": "The Fastest Way To Learn Songs On The Piano",
+          "videoId": "kqxIMDEwFUY",
+          "whyThisOne": "Addresses the thing adult learners actually want — playing a real song soon — with a method rather than a shortcut.",
+          "durationMin": 11
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "A funnel for a paid subscription; the free videos are deliberately partial. Overwhelmingly short-form, so the teaching is thin per upload."
+  },
+  {
+    "id": "newyorkvocalcoaching",
+    "name": "New York Vocal Coaching (Justin Stoney)",
+    "handle": "@newyorkvocalcoaching",
+    "channelUrl": "https://www.youtube.com/@newyorkvocalcoaching",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A voice teacher answering singers' technical questions in a long-running numbered episode series, plus vocal analyses of well-known performers.",
+    "longDescription": "The channel is built around Voice Lessons To The World, a series in which Justin Stoney — a voice teacher and the founder of a New York studio — answers technique questions emailed in by singers. The episode numbering runs well past a hundred, and the format keeps the material narrow: one question, one mechanism, one set of exercises. A hundred and fifty-seven of the last two hundred uploads sit between three and nineteen minutes with a median of eight, so it is browsable in a way most vocal instruction is not. A second strand analyses named singers' technique, which is a useful bridge between abstract mechanics and something you have actually heard. A third — voice impressions — is entertainment.",
+    "notFor": "Anyone wanting a course; this is a question-and-answer archive, so you have to know roughly what your problem is before it can help.",
+    "formatTags": [
+      "tutorial",
+      "q-and-a",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 3,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "credentialed",
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "singing",
+        "strength": "primary",
+        "why": "Treats the voice mechanically — what is physically happening and which exercise changes it — instead of relying on imagery and feel.",
+        "evidence": "A numbered question-and-answer series past episode 128 from a studio-founding voice teacher, plus a separate series analysing named singers' technique.",
+        "entryVideo": {
+          "title": "Ep. 128 \"How To Sing Low Notes\" - Voice Lessons To The World",
+          "videoId": "vIZSVTmyQIY",
+          "whyThisOne": "A narrow, common problem handled in the channel's standard format, so you can judge the method on something specific.",
+          "durationMin": 16
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Promotes the studio's paid lessons and courses. The voice-impression videos are a large and entirely non-instructional part of the catalogue."
+  },
+  {
+    "id": "alanbeckertutorials",
+    "name": "Alan Becker Tutorials",
+    "handle": "@AlanBeckerTutorials",
+    "channelUrl": "https://www.youtube.com/@AlanBeckerTutorials",
+    "country": null,
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "archive",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A closed archive whose main asset is a complete, well-made series on the twelve principles of animation.",
+    "longDescription": "Alan Becker's tutorial channel is a small companion to his animation work, and it has been dormant since November 2019. Sixty-seven videos, fifty of them between three and nineteen minutes, with a median of eight. Much of it teaches a specific piece of software — Adobe Flash and its successor Animate — which is exactly the kind of material that ages badly, and it has. What has not aged is the series on the twelve principles of animation, published complete in one twenty-four-minute video, which explains squash and stretch, anticipation, timing, arcs and the rest with animated demonstrations of each. Those principles predate the software by decades and outlive it. There are also behind-the-scenes commentaries on his own animations with the working process visible.",
+    "notFor": "Anyone looking for current tooling. The software tutorials are for a version of an application that has moved on, and nothing new is coming.",
+    "formatTags": [
+      "tutorial",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 3,
+      "energy": 2,
+      "selfPromotion": 1,
+      "depth": 2
+    },
+    "signals": [
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "animation",
+        "strength": "primary",
+        "why": "The twelve principles are the one part of animation that no software change invalidates, and this is a clear, complete, demonstrated version of them.",
+        "evidence": "A full series on the twelve principles of animation published as a single complete video with animated demonstrations, alongside process commentaries on his own work.",
+        "entryVideo": {
+          "title": "12 Principles of Animation (Official Full Series)",
+          "videoId": "uDqjIdI4bF4",
+          "whyThisOne": "The whole foundation in twenty-four minutes, and the only thing on this channel that is as useful now as when it was made.",
+          "durationMin": 24
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Dormant since November 2019, and most of the catalogue teaches a superseded version of one application. Treat it as one excellent series plus an archive."
+  },
+  {
+    "id": "rexkrueger",
+    "name": "Rex Krueger",
+    "handle": "@RexKrueger",
+    "channelUrl": "https://www.youtube.com/@RexKrueger",
+    "country": null,
+    "language": "en",
+    "sizeBucket": "500k-1M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Hand-tool woodworking for people without a workshop or a budget, built around getting you to make something rather than buy something.",
+    "longDescription": "Rex Krueger's series is called Woodwork for Humans, and the framing is deliberate: hand tools, cheap or salvaged, projects a beginner can finish. His own description puts the run at over five years and a collection of beginner-friendly projects. The channel has gone heavily short-form — a hundred and sixty-seven of the last two hundred uploads run two minutes or less, with a median of one — but the long videos remain the substance, including full project builds of an hour or under and a persistent thread on sharpening, which is the skill that silently determines whether hand-tool work is pleasant or miserable. The recurring argument is against the assumption that woodworking requires an expensive machine-filled shop.",
+    "notFor": "Anyone with a machine shop and no interest in hand tools, or who wants furniture-grade finish work; this starts much further back than that.",
+    "formatTags": [
+      "tutorial",
+      "shorts",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "woodworking",
+        "strength": "primary",
+        "why": "Removes the two things that stop people starting — the tool budget and the workshop — and gives you a project you can finish this weekend.",
+        "evidence": "A multi-year beginner series built on hand tools and low-cost setups, including complete one-day project builds and an extended thread on sharpening.",
+        "entryVideo": {
+          "title": "Stop Planning. Start Woodworking. Build This.",
+          "videoId": "rBWNwxu7iNY",
+          "whyThisOne": "Aimed at the specific failure of researching tools forever instead of making anything, which is where most beginners actually get stuck.",
+          "durationMin": 17
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Now overwhelmingly short-form, so the teaching videos take finding. Sells plans and courses."
+  },
+  {
+    "id": "stumpynubs",
+    "name": "Stumpy Nubs (James Hamilton)",
+    "handle": "@StumpyNubs",
+    "channelUrl": "https://www.youtube.com/@StumpyNubs",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Practical shop technique and blunt tool assessments, focused on the problems that ruin work rather than on showpiece projects.",
+    "longDescription": "James Hamilton's channel is a large working archive — over a thousand videos, with a hundred and forty-eight of the last two hundred running three to nineteen minutes and a median of six. The subject matter is the unromantic middle of woodworking: why wood warps and what to do about it, how to make a thickness planer work properly, how to produce raised panels without buying dedicated tooling, which sanders and jointers to avoid. He is also willing to be openly critical of tools and of marketing claims, which is unusual in a field where most channels depend on manufacturer relationships. Where Rex Krueger is about starting with nothing, this is about the problems you hit once you have started.",
+    "notFor": "Complete beginners with no tools at all, and anyone wanting project inspiration; this is troubleshooting and technique, and it assumes a shop.",
+    "formatTags": [
+      "tutorial",
+      "shorts",
+      "long-form"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "woodworking",
+        "strength": "primary",
+        "why": "Concentrates on the failures that quietly wreck a project — wood movement, a machine set up wrong — rather than on things that photograph well.",
+        "evidence": "A thousand-video archive of shop technique and tool troubleshooting, including direct criticism of specific tool categories and marketing claims.",
+        "entryVideo": {
+          "title": "How to stop wood from warping ",
+          "videoId": "zHCaE5A3q7E",
+          "whyThisOne": "Wood movement ruins more beginner projects than bad joinery does, and almost nobody explains it before you have already lost a piece to it.",
+          "durationMin": 6
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Assumes access to machinery, so it pairs badly with a hand-tool-only setup. Tool coverage is a large share of the catalogue."
+  },
+  {
+    "id": "buzzsprout",
+    "name": "Buzzsprout",
+    "handle": "@Buzzsprout",
+    "channelUrl": "https://www.youtube.com/@Buzzsprout",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A podcast-hosting company's channel: practical launch-and-growth guidance plus long interviews with people who make podcasts well.",
+    "longDescription": "Buzzsprout hosts podcasts, and the channel exists to help its customers make them, which shapes everything about it. The output is mostly short — a hundred and forty-five of the last two hundred uploads run two minutes or less, with a median of one — and the mid-length material skews practical and occasionally dated, covering distribution, equipment, promotion and episode planning. The strongest content is the long-form interviews, in which a working podcaster walks through how their show is actually made; these run past an hour and are craft rather than logistics. This is the only substantial podcasting channel in the dataset so far, and it is a company channel, so read it as competent vendor education rather than as independent teaching.",
+    "notFor": "Anyone wanting audio-production depth or independent tool comparisons; the host platform's own product is never going to lose a comparison here.",
+    "formatTags": [
+      "tutorial",
+      "interview",
+      "shorts",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 0,
+      "practical": 3,
+      "energy": 2,
+      "selfPromotion": 4,
+      "depth": 2
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "podcasting",
+        "strength": "primary",
+        "why": "Covers the whole unglamorous pipeline from recording to distribution, and the interviews show how a well-made show is actually assembled.",
+        "evidence": "A podcast host's education channel combining launch, equipment and promotion guidance with hour-plus interviews taking apart the production process of established shows.",
+        "entryVideo": {
+          "title": "How Jack Rhysider Creates Darknet Diaries",
+          "videoId": "TMH6VMIf06I",
+          "whyThisOne": "A full walkthrough of how one genuinely well-made show gets built, which is worth more than any amount of general launch advice.",
+          "durationMin": 72
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Vendor education for a hosting platform — treat any tool or platform recommendation accordingly. Much of the mid-length catalogue dates from 2022–23 and shows it."
+  },
+  {
+    "id": "garethdavidstudio",
+    "name": "Gareth David Studio",
+    "handle": "@GarethDavidStudio",
+    "channelUrl": "https://www.youtube.com/@GarethDavidStudio",
+    "country": "GB",
+    "language": "en",
+    "sizeBucket": "500k-1M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A working creative director teaching graphic design as a commercial discipline with constraints, not as self-expression.",
+    "longDescription": "Gareth David describes himself as a creative director with over fifteen years in the industry, making design content alongside the job. The channel's most useful trait is its insistence on framing: one of its recurring arguments is that graphic design is strategy rather than art, and the material follows from that — what the successful pieces have in common, how the different design jobs actually differ from each other, how to judge your own work against a brief instead of against taste. Output has shifted short, with ninety-one of the last two hundred uploads under two minutes and a median of three, but eighty-four sit in the three-to-nineteen band and twenty-five run longer, which is where the teaching lives. There is also a strand of reassurance-style career content that is pleasant but not instructional.",
+    "notFor": "Anyone wanting software tutorials or a fine-art approach; this treats design as a job with a client at the end of it.",
+    "formatTags": [
+      "tutorial",
+      "shorts",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 3,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 2
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "graphic-design",
+        "strength": "primary",
+        "why": "Insists design is judged against a brief rather than against personal taste, which is the reframe most self-taught designers need earliest.",
+        "evidence": "A creative director of fifteen-plus years whose catalogue argues design-as-strategy explicitly and analyses what effective pieces have in common.",
+        "entryVideo": {
+          "title": "10 Things EVERY Great Graphic Design Has in Common",
+          "videoId": "KB8PcN9vf6c",
+          "whyThisOne": "Ten checkable properties rather than an aesthetic to absorb, which gives you something to test your own work against tonight.",
+          "durationMin": 13
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Sells design and software courses, promoted throughout. A meaningful share of recent uploads is career reassurance rather than craft."
+  },
+  {
+    "id": "satorigraphics",
+    "name": "Satori Graphics",
+    "handle": "@SatoriGraphics",
+    "channelUrl": "https://www.youtube.com/@SatoriGraphics",
+    "country": "GB",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A large graphic-design catalogue covering theory as well as tools, with a recent and heavy pivot toward AI content.",
+    "longDescription": "Satori Graphics is one of the bigger graphic-design channels, with nearly thirteen hundred videos and a hundred and forty-seven of the last two hundred running three to nineteen minutes at a median of nine. Its stated interest is the core of what design is — the psychology of design and visual theory — and the catalogue does contain solid consolidated pieces on things like colour theory taught as a system rather than as a palette generator. The important caveat is directional: a large and growing share of recent output is about AI tools, including a branded partnership visible in the channel's own description, and much of it is framed around whether designers can survive AI. Both strands are on the same feed, and only one of them teaches design.",
+    "notFor": "Anyone who wants the AI discourse left out, or who distrusts channels running tool partnerships; both are unavoidable here.",
+    "formatTags": [
+      "tutorial",
+      "long-form",
+      "shorts"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 3,
+      "energy": 3,
+      "selfPromotion": 3,
+      "depth": 2
+    },
+    "signals": [
+      "practitioner",
+      "sells-course",
+      "sponsor-heavy"
+    ],
+    "categories": [
+      {
+        "id": "graphic-design",
+        "strength": "primary",
+        "why": "Teaches the underlying theory — colour relationships, visual hierarchy — as a system you can reason with rather than as presets to copy.",
+        "evidence": "Consolidated theory videos including a single-video treatment of colour theory techniques, within a thirteen-hundred-video design catalogue.",
+        "entryVideo": {
+          "title": "Learn EVERY Colour Theory Technique in ONE Video!",
+          "videoId": "OB-XwRg1qTc",
+          "whyThisOne": "One sitting for the whole of colour theory, which is the fastest route out of picking colours by feel.",
+          "durationMin": 11
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "The channel carries a named AI-tool partnership in its own description, and AI content now dominates recent uploads. Sells courses."
+  }
+]
