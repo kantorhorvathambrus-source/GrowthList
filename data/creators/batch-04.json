@@ -1,0 +1,599 @@
+[
+  {
+    "id": "nelsondellis",
+    "name": "Nelson Dellis",
+    "handle": "@nelsondellis",
+    "channelUrl": "https://www.youtube.com/@nelsondellis",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A six-time US memory champion teaching the actual competitive techniques, and unusually clear that they are trainable rather than innate.",
+    "longDescription": "Nelson Dellis competes at memory sport and has won the US championship six times, and the channel teaches the methods that make that possible — memory palaces, encoding systems, the specific tricks for numbers, cards and names. The framing he keeps returning to is that this is not talent: one of his own titles argues explicitly that winning six championships was not a matter of skill in the innate sense. A hundred and twenty-eight of the last two hundred uploads run between three and nineteen minutes with a median of nine, so the material is browsable, and thirty-two run past twenty for the deeper systems. Some of the catalogue is memory-sport culture and magic-adjacent curiosity rather than instruction.",
+    "notFor": "Anyone who wants better memory for understanding rather than for recall; these are storage techniques, and they do not make you comprehend anything faster.",
+    "formatTags": [
+      "tutorial",
+      "long-form",
+      "shorts"
+    ],
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 3,
+      "selfPromotion": 2,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "memory-techniques",
+        "strength": "primary",
+        "why": "Teaches the competitive methods from someone who actually wins with them, and insists they are trained rather than gifted — which is the belief that stops most people starting.",
+        "evidence": "A six-time US Memory Championship winner whose catalogue is built on memory-palace construction, encoding systems and event-specific technique.",
+        "entryVideo": {
+          "title": "How I Won The US Memory Championship 6x (it isn’t skill)",
+          "videoId": "YyRRWDYd_gk",
+          "whyThisOne": "Sets out the whole premise — that this is a trained system, not a knack — before teaching any of the individual techniques.",
+          "durationMin": 18
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "A share of the channel is memory-sport culture and puzzle content rather than teaching. Promotes his books and courses."
+  },
+  {
+    "id": "benjaminkeep",
+    "name": "Benjamin Keep",
+    "handle": "@BenjaminKeep",
+    "channelUrl": "https://www.youtube.com/@BenjaminKeep",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A cognitive scientist who spends much of his time explaining why popular learning advice — including the advice everyone repeats — does not survive the research.",
+    "longDescription": "Benjamin Keep describes himself as a cognitive scientist specialising in learning and instruction, and the channel's distinguishing feature is how often it argues against things. Deliberate practice, memory-athlete techniques, the study habits circulating on this very corner of YouTube — each gets a video examining what the evidence actually supports and where the popular version overreaches. He is not a contrarian: the videos are careful, specific about which claim is failing, and willing to say when the popular version is broadly right. The format is consistent and short by learning-channel standards, with a hundred and seven of a hundred and fifteen videos running three to nineteen minutes and a median of eight. Nothing new since April 2026.",
+    "notFor": "Anyone wanting a study system handed to them. He is more likely to complicate the technique you arrived with than to replace it.",
+    "formatTags": [
+      "video-essay",
+      "tutorial"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 4,
+      "practical": 2,
+      "energy": 1,
+      "selfPromotion": 1,
+      "depth": 4
+    },
+    "signals": [
+      "credentialed",
+      "cites-research"
+    ],
+    "categories": [
+      {
+        "id": "deliberate-practice",
+        "strength": "primary",
+        "why": "Takes apart the popularised version of deliberate practice specifically, and says which parts the research supports and which were added in translation.",
+        "evidence": "Multiple videos examining deliberate practice as a construct, including one on what people get wrong about it and one questioning it outright, from a cognitive scientist specialising in learning.",
+        "entryVideo": {
+          "title": "What People Get Wrong About Deliberate Practice",
+          "videoId": "WbUOY9ioIqw",
+          "whyThisOne": "Nine minutes that will change how you read every other practice-related recommendation on this site.",
+          "durationMin": 9
+        }
+      },
+      {
+        "id": "memory-techniques",
+        "strength": "primary",
+        "why": "The direct counterweight to memory-sport instruction — argues that copying competitors is the wrong move for most people, and explains what to do instead.",
+        "evidence": "A video arguing specifically against copying memory athletes, alongside research-led pieces on what makes material memorable in the first place.",
+        "entryVideo": {
+          "title": "Two Reasons NOT to Copy Memory Athletes",
+          "videoId": "HlcsNs2kpTc",
+          "whyThisOne": "Watch it next to Nelson Dellis and you have the argument from both sides, which is the honest way to approach this category.",
+          "durationMin": 13
+        }
+      },
+      {
+        "id": "reading-habit",
+        "strength": "secondary",
+        "why": "Treats reading difficulty as a solvable technical problem rather than a stamina failure, which is more useful than any advice about reading more.",
+        "evidence": "Dedicated videos on reading with precision and on what to do when reading gets hard, grounded in his instructional-science background.",
+        "entryVideo": {
+          "title": "A short guide to reading with extreme precision",
+          "videoId": "gUifpRmd1dQ",
+          "whyThisOne": "A concrete method for hard text, which is the situation where general reading advice stops helping.",
+          "durationMin": 13
+        }
+      }
+    ],
+    "role": "critic",
+    "caveats": "Dormant since April 2026. The register is academic and he rarely tells you what to do — the value is in dismantling bad advice, not replacing it."
+  },
+  {
+    "id": "justinsung",
+    "name": "Justin Sung",
+    "handle": "@justinsung",
+    "channelUrl": "https://www.youtube.com/@justinsung",
+    "country": "NZ",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A former doctor turned learning coach teaching a research-flavoured system for reading, note-taking and retention — inside a large paid-coaching business.",
+    "longDescription": "Justin Sung describes himself as a learning coach and former medical doctor with over a decade teaching people how to learn, and the channel is the front end of a substantial coaching operation. The teaching is systematic rather than tip-based: a named framework for reading so that material is retained the first time, protocols for note-taking presented as research-derived, technique for spaced-repetition software, and long lectures on retention. Sixty-eight of the last two hundred uploads run past twenty minutes and ninety-three are short-form clips, so the depth is real but unevenly distributed. He invokes research frequently; the citations are gestured at more often than shown, so treat the evidence-based framing as a claim rather than a demonstration.",
+    "notFor": "Anyone who wants to avoid a sales funnel, or who wants the underlying studies rather than a coach's synthesis of them.",
+    "formatTags": [
+      "tutorial",
+      "long-form",
+      "shorts",
+      "lecture"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 3,
+      "selfPromotion": 4,
+      "depth": 3
+    },
+    "signals": [
+      "credentialed",
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "reading-habit",
+        "strength": "primary",
+        "why": "Attacks retention at the point of reading rather than afterwards, which is the difference between reading a lot and remembering any of it.",
+        "evidence": "A named reading framework taught across several videos and live lectures specifically on reading for retention.",
+        "entryVideo": {
+          "title": "How to Read Once and Remember Forever - The Memory Ladder framework",
+          "videoId": "ldaCYNWUW5M",
+          "whyThisOne": "The framework laid out in full rather than teased, so you can judge the system before deciding whether to buy into the rest.",
+          "durationMin": 23
+        }
+      },
+      {
+        "id": "note-taking",
+        "strength": "primary",
+        "why": "Argues that most note-taking is transcription with extra steps, and gives protocols meant to force processing instead of copying.",
+        "evidence": "Videos presenting note-taking protocols as research-derived, including material on learning deeply when writing notes is not possible.",
+        "entryVideo": {
+          "title": "6 Protocols to UPGRADE iPad Note-Taking (according to research)",
+          "videoId": "HU7oP5VeXoM",
+          "whyThisOne": "Six specific, checkable changes rather than a philosophy of notes, and they transfer off the iPad easily.",
+          "durationMin": 14
+        }
+      },
+      {
+        "id": "spaced-repetition",
+        "strength": "secondary",
+        "why": "Treats flashcard software as something to be configured deliberately rather than installed and hoped at, which is where most people lose the benefit.",
+        "evidence": "A dedicated long-form tutorial on using spaced-repetition software properly, framed around the errors that make people abandon it.",
+        "entryVideo": {
+          "title": "How to use Anki like a PRO (by a Learning Expert)",
+          "videoId": "eauQac_23R0",
+          "whyThisOne": "The configuration and card-design decisions matter more than the tool, and this is where he is most concrete.",
+          "durationMin": 21
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "A large coaching business sits behind this and the videos route toward it persistently. Research is invoked more often than it is cited — pair him with Benjamin Keep."
+  },
+  {
+    "id": "linkingyourthinking",
+    "name": "Linking Your Thinking (Nick Milo)",
+    "handle": "@linkingyourthinking",
+    "channelUrl": "https://www.youtube.com/@linkingyourthinking",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Personal knowledge management in Obsidian — strong on what notes are for, increasingly preoccupied with AI tooling.",
+    "longDescription": "Nick Milo's stated aim is helping people get more out of their digital notes, and his contribution to the note-taking conversation is conceptual rather than procedural: the argument that a note system should surface ideas you had forgotten rather than merely store them. Eighty-eight of the last two hundred uploads run three to nineteen minutes and forty-five run past twenty, with a median of eleven, so there is real depth. The significant caveat is drift. A large share of recent output is about AI assistants and note-adjacent tooling rather than about thinking with notes, and much of the rest assumes Obsidian specifically. The underlying ideas survive the tool; the videos mostly do not separate them from it.",
+    "notFor": "Anyone not using Obsidian, or looking for simple note-taking for study; this is a system-building hobby as much as a method.",
+    "formatTags": [
+      "tutorial",
+      "long-form",
+      "shorts"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 3,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "note-taking",
+        "strength": "primary",
+        "why": "Focuses on getting old notes back in front of you, which is the failure that makes most note systems quietly worthless after a year.",
+        "evidence": "A personal-knowledge-management catalogue built around linking and resurfacing ideas rather than capture, including case-study videos applying it to specific bodies of work.",
+        "entryVideo": {
+          "title": "Give Your Forgotten Ideas New Life, By Changing THIS (Kate Bush Case Study)",
+          "videoId": "L1brXDAm7Lg",
+          "whyThisOne": "A worked case rather than a tour of an app, so the idea is visible independently of the software.",
+          "durationMin": 9
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Heavily Obsidian-specific, sells a course, and recent uploads lean strongly toward AI tooling rather than note-taking itself."
+  },
+  {
+    "id": "lucalampariello",
+    "name": "Luca Lampariello",
+    "handle": "@LucaLampariello",
+    "channelUrl": "https://www.youtube.com/@LucaLampariello",
+    "country": "IT",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Twenty years of language learning distilled into method rather than polyglot spectacle, taught in English about learning any language.",
+    "longDescription": "Luca Lampariello's own summary is that he has studied languages for about twenty years and concluded that languages cannot be taught, only learned — a position that shapes everything on the channel. The content is method-level and language-agnostic: how acquisition actually proceeds, why a language feels hard when it is really just distant from the ones you know, what patterns recur across the problems learners hit. Seventy-nine of the last two hundred uploads run past twenty minutes and seventy-five sit in the three-to-nineteen band. He speaks several languages and some videos are in them, but the instructional material is delivered in English, which is what makes it usable here regardless of your target language.",
+    "notFor": "Anyone looking for lessons in a specific language. This is about how to run your own learning, and it will not teach you any vocabulary.",
+    "formatTags": [
+      "long-form",
+      "tutorial",
+      "interview"
+    ],
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 3,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "language-learning",
+        "strength": "primary",
+        "why": "Language-agnostic method from someone two decades in, including the useful reframe that difficulty is mostly distance from what you already speak.",
+        "evidence": "A long-running catalogue on acquisition method and learner strategy, delivered in English and applicable across target languages rather than tied to one.",
+        "entryVideo": {
+          "title": "How Your Brain Actually Learns a Language",
+          "videoId": "TRFzWcK9gn8",
+          "whyThisOne": "The mechanism first, which determines whether every technique you try afterwards makes sense or not.",
+          "durationMin": 12
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Promotes his own courses and coaching. Some uploads are in languages other than English, though the method content is not."
+  },
+  {
+    "id": "refold",
+    "name": "Refold",
+    "handle": "@refold",
+    "channelUrl": "https://www.youtube.com/@refold",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A single opinionated immersion method for learning any language, taught in English, with unusually concrete flashcard technique attached.",
+    "longDescription": "Refold publishes a step-by-step roadmap for learning a language from scratch through immersion in native material, combined with strategic study. It is a method channel rather than a language channel, and it is doctrinaire about it — the description claims the approach is faster than any other, which is a marketing claim rather than a finding. What makes it useful anyway is the specificity: not one of the last two hundred uploads runs under two minutes, a hundred and forty-six sit between three and nineteen, and the flashcard material in particular gets into the detail almost nobody covers, including how to build cards from sentences you actually met in the wild. There are also long community check-in streams that are not instruction.",
+    "notFor": "Anyone sceptical of single-method evangelism, or who needs structured classes; this asks you to consume enormous amounts of native material and trust the process.",
+    "formatTags": [
+      "tutorial",
+      "long-form",
+      "livestream"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course",
+      "strong-ideological-frame"
+    ],
+    "categories": [
+      {
+        "id": "language-learning",
+        "strength": "primary",
+        "why": "One complete method, stated end to end, which is more actionable than a survey of approaches even if you end up disagreeing with parts of it.",
+        "evidence": "A published step-by-step roadmap for learning any language through immersion, taught across a dedicated instructional catalogue.",
+        "entryVideo": {
+          "title": "How to Actually Learn a Language - The Refold Method Explained",
+          "videoId": "Jo4ds4mxuhU",
+          "whyThisOne": "The whole method in eleven minutes, which is enough to decide whether you want to commit to it before investing months.",
+          "durationMin": 11
+        }
+      },
+      {
+        "id": "spaced-repetition",
+        "strength": "primary",
+        "why": "Goes into card design at a level almost nobody does — where the material comes from and why a card built from your own reading beats a downloaded deck.",
+        "evidence": "Multiple long tutorials on building flashcards from encountered sentences and on sustaining a review streak, rather than on installing the software.",
+        "entryVideo": {
+          "title": "The ULTIMATE Sentence Mining Tutorial - How to make your own Anki cards",
+          "videoId": "KxLRp1yd8Ro",
+          "whyThisOne": "Card quality decides whether spaced repetition works at all, and this is the most thorough treatment of it here.",
+          "durationMin": 27
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Evangelical about one method and sells courses and tools around it. The 'faster than any other method in the world' claim in their own description is marketing, not evidence."
+  },
+  {
+    "id": "3blue1brown",
+    "name": "3Blue1Brown (Grant Sanderson)",
+    "handle": "@3blue1brown",
+    "channelUrl": "https://www.youtube.com/@3blue1brown",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "5M-20M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Mathematics rebuilt visually, so the ideas arrive as pictures with reasons attached rather than as procedures to memorise.",
+    "longDescription": "Grant Sanderson's stated goal is to use animation to elucidate and motivate topics that are otherwise tricky, and the channel is the clearest demonstration on YouTube of what that means. The recurring form is a question — what a convolution actually is, why the central limit theorem holds, what a Laplace transform does — answered by building the idea up geometrically until the formula becomes obvious rather than given. Sixty-five of the last two hundred uploads run past twenty minutes and fifty-eight sit between three and nineteen. This is not a course and there are no exercises; the value for a self-teacher is that it repairs intuition for topics you may have passed exams in without ever understanding.",
+    "notFor": "Anyone needing practice problems, exam technique, or coverage of a syllabus. Watching this is not the same as being able to do the mathematics.",
+    "formatTags": [
+      "video-essay",
+      "long-form",
+      "tutorial"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 1,
+      "energy": 2,
+      "selfPromotion": 1,
+      "depth": 4
+    },
+    "signals": [
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "self-teaching-math",
+        "strength": "primary",
+        "why": "Rebuilds the intuition underneath a formula, which is exactly what is missing when someone can compute an answer but has no idea what they computed.",
+        "evidence": "A catalogue built on visual derivations of core mathematical objects — convolution, entropy, the central limit theorem, Laplace transforms — from an author whose stated method is animation-led explanation.",
+        "entryVideo": {
+          "title": "But what is a convolution?",
+          "videoId": "KuXjwB4LzSA",
+          "whyThisOne": "A concept most people first meet as an intimidating integral, made visual and obvious — a fair sample of what the channel does to everything.",
+          "durationMin": 23
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "No exercises, no sequence, no syllabus coverage. It repairs understanding; it does not build the ability to solve problems on its own."
+  },
+  {
+    "id": "misterwootube",
+    "name": "Eddie Woo",
+    "handle": "@misterwootube",
+    "channelUrl": "https://www.youtube.com/@misterwootube",
+    "country": "AU",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A working high-school maths teacher publishing his actual lessons — five thousand of them — filmed in the classroom.",
+    "longDescription": "Eddie Woo teaches mathematics at a public high school in Sydney and has filmed his lessons for years, producing an archive of more than five thousand videos. A hundred and eighty-nine of the last two hundred run between three and nineteen minutes at a median of ten, which is a lesson-sized unit rather than an essay. The material is ordinary secondary syllabus content — annuities, fractions, series — and the reason to watch is not novelty but pedagogy: he consistently answers why a rule works rather than stating it, so 'keep, change, flip' gets a reason rather than a mnemonic. He is also an author and has reflected on camera about why lessons this plain have found an audience.",
+    "notFor": "Anyone past secondary-level mathematics, or wanting production values; these are real classroom recordings with the sound and framing that implies.",
+    "formatTags": [
+      "lecture",
+      "tutorial",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 3,
+      "selfPromotion": 1,
+      "depth": 3
+    },
+    "signals": [
+      "credentialed",
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "self-teaching-math",
+        "strength": "primary",
+        "why": "Covers the actual secondary syllabus in lesson-sized pieces, and explains why each rule works instead of handing over the mnemonic.",
+        "evidence": "Over five thousand filmed lessons from a practising high-school mathematics teacher, sequenced by topic across the standard curriculum.",
+        "entryVideo": {
+          "title": "Dividing fractions: why do we \"keep change flip\"?",
+          "videoId": "_jFWu_whDjI",
+          "whyThisOne": "A rule almost everyone was taught without a reason, given its reason in six minutes — which is the whole approach in miniature.",
+          "durationMin": 6
+        }
+      },
+      {
+        "id": "teaching-and-explaining",
+        "strength": "secondary",
+        "why": "A large body of real teaching you can study as teaching, from someone who has also reflected publicly on why his plainest explanations work.",
+        "evidence": "A professional classroom teacher and author whose archive is his own lessons, alongside videos reflecting explicitly on why simple lesson videos reach people.",
+        "entryVideo": {
+          "title": "Why have such simple lesson videos gotten so much traction?",
+          "videoId": "ptbMFsa8B7w",
+          "whyThisOne": "The one place he steps outside the lesson to talk about what makes an explanation land, which is the point of this category.",
+          "durationMin": 11
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Classroom audio and framing throughout. The archive is enormous and organised by syllabus, so browsing it without a target topic is unrewarding."
+  },
+  {
+    "id": "themathsorcerer",
+    "name": "The Math Sorcerer",
+    "handle": "@TheMathSorcerer",
+    "channelUrl": "https://www.youtube.com/@TheMathSorcerer",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Ten thousand short videos on self-studying mathematics, heavy on which books to use and on the encouragement to keep going.",
+    "longDescription": "The Math Sorcerer has published over ten thousand videos, and the shape of the catalogue matters more than its size: a hundred and five of the last two hundred run two minutes or less and the median is two minutes. Much of it is book reviews and recommendations — which textbook to work through for a given subject and why — plus a persistent thread of encouragement aimed at people teaching themselves mathematics alone. There are also genuine roadmap videos that lay out a route through a subject. Take the ratio seriously: this is closer to a librarian and a coach for self-study than to a teacher, and the mathematical content itself is mostly in the books he points at rather than in the videos.",
+    "notFor": "Anyone who wants to be taught the mathematics. The instruction is largely outsourced to the textbooks, and the motivational content is a large share of the feed.",
+    "formatTags": [
+      "shorts",
+      "tutorial",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 0,
+      "practical": 3,
+      "energy": 3,
+      "selfPromotion": 3,
+      "depth": 1
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "self-teaching-math",
+        "strength": "secondary",
+        "why": "Solves the problem that stops most self-studiers before any mathematics happens — which book to open, in what order, and whether it is normal to find it hard.",
+        "evidence": "A very large catalogue of textbook reviews and subject roadmaps aimed specifically at people studying mathematics outside a course.",
+        "entryVideo": {
+          "title": "How to Learn Topology || A Complete Guide",
+          "videoId": "ZS01Y7YBNdU",
+          "whyThisOne": "A route through one subject with named resources, which is the format worth coming here for — not the motivational clips.",
+          "durationMin": 9
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Overwhelmingly short-form and heavily motivational. Sells books and courses, and links to textbooks through affiliate storefronts."
+  },
+  {
+    "id": "drandystapleton",
+    "name": "Andy Stapleton",
+    "handle": "@drandystapleton",
+    "channelUrl": "https://www.youtube.com/@drandystapleton",
+    "country": "AU",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Academic-career and research-workflow advice from a former academic, now heavily focused on AI tools — including their failure modes.",
+    "longDescription": "Andy Stapleton's channel is about navigating academia: publishing, supervision, the parts of the process nobody explains to a new postgraduate. A hundred and forty-three of the last two hundred uploads run between three and nineteen minutes with a median of eleven, and the current centre of gravity is unmistakably AI tooling for research — comparisons of assistants, prompting technique for literature work, and, usefully, videos on where those tools produce something that looks like scholarship but is not. That last strand is what earns him a place here rather than disqualifying him: he is specific about how an AI-generated literature review fails. Anyone wanting timeless writing craft rather than current tooling will find the ratio frustrating.",
+    "notFor": "Anyone outside academia, or looking for durable writing instruction; a large share of this is about tools that will look dated within a year.",
+    "formatTags": [
+      "tutorial",
+      "long-form",
+      "shorts"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 4,
+      "energy": 3,
+      "selfPromotion": 3,
+      "depth": 2
+    },
+    "signals": [
+      "credentialed",
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "research-skills",
+        "strength": "primary",
+        "why": "Deals with the research process as it is actually done now, including how to use the current tools without letting them do your thinking.",
+        "evidence": "A former academic publishing workflow guidance on searching, prompting and assessing sources for research, alongside supervision and publishing advice.",
+        "entryVideo": {
+          "title": "You SUCK at Prompting AI For Research (Do This instead)",
+          "videoId": "HxrOOPPdbD4",
+          "whyThisOne": "Concrete technique for a tool most researchers are now using badly, with the failure modes named rather than glossed.",
+          "durationMin": 12
+        }
+      },
+      {
+        "id": "academic-writing",
+        "strength": "secondary",
+        "why": "Its most useful contribution to writing is negative — showing what an automated literature review actually produces and why it will not pass.",
+        "evidence": "Videos examining AI-produced literature reviews and their specific deficiencies, within a catalogue on publishing and thesis work.",
+        "entryVideo": {
+          "title": "This Free AI Wrote My Entire Literature Review in Minutes (Why That's a Problem)",
+          "videoId": "1PSMmwQkqME",
+          "whyThisOne": "Demonstrates the shortcut and then dismantles it, which is more persuasive than being told not to take it.",
+          "durationMin": 15
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Heavily AI-tool focused and will date quickly. Sells coaching and courses, and the channel found here is @drandystapleton — @AndyStapleton is a near-empty 2-video channel."
+  }
+]

@@ -96,6 +96,38 @@
       ],
       "recordedAt": "2026-09-01",
       "note": "Genuine find, for a later philosophy/mindset batch. Logged in batch 02 as 'does not exist'."
+    },
+    {
+      "name": "Andy Stapleton",
+      "resolvedHandle": "@drandystapleton",
+      "channelId": "UCFqXmQ56-Gp1rIKa-GoAJvQ",
+      "handlesTried": [
+        "@AndyStapleton"
+      ],
+      "winningQuery": "Andy Stapleton PhD",
+      "gateEvidence": [
+        "affiliation in channel description/title: PhD, academia"
+      ],
+      "failedBecause": [
+        "handle @AndyStapleton: name matches but nothing ties this channel to the person — a name match is not an identity match"
+      ],
+      "recordedAt": "2026-09-01"
+    },
+    {
+      "name": "Eddie Woo",
+      "resolvedHandle": "@misterwootube",
+      "channelId": "UCq0EGvLTyy-LLT1oUSO_0FQ",
+      "handlesTried": [
+        "@eddiewoo"
+      ],
+      "winningQuery": "Eddie Woo Wootube",
+      "gateEvidence": [
+        "affiliation in channel description/title: Wootube, Misterwootube"
+      ],
+      "failedBecause": [
+        "handle @eddiewoo: name matches but nothing ties this channel to the person — a name match is not an identity match"
+      ],
+      "recordedAt": "2026-09-01"
     }
   ]
 }

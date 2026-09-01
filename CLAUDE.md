@@ -246,30 +246,34 @@ in `categories.json`-derived output with a computed creator `count`.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research). **Batches 01–03 are
+- **Current phase**: Phase 2 (creator research). **Batches 01–04 are
   written, gated, validated and committed.** Phases 0, 1, 3-tooling, 4
-  and 5 are done. Phase 6 is deliberately not started: the owner's call
-  is that Phase 2 is the product and everything else is packaging, so no
-  README and no Lighthouse run until real data exists.
+  and 5 are done. Phase 6 is deliberately not started.
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, working on `main`.
-  Not to be confused with `kantorhorvathambrus-source/mancsterapia`, an
-  unrelated project.
-- **Creator count: 51 of 700.** Batch 01 = 16 (communication), batch 02
-  = 14 (rest of communication), batch 03 = 21 (creativity). Every one
-  resolved through the Data API; all 82 entry videos passed the
-  attribution gate. Nothing has ever been written from memory.
-- **Domains complete on a first pass**: communication (13/13 categories
-  populated) and creativity (14/14). 171 of 200 categories still have no
-  creators. Next: learning, then mindset.
-- **Critics are the binding constraint** and the owner has ruled on it
-  (project rule 11): where none credible exists, the category ships
-  without one and the gap is stated in the coverage report. Do not lower
-  the bar to fill a slot. Documented gaps go in `data/critic-gaps.json`;
-  `validate.mjs --final` reports those and still fails on undocumented
-  ones. **Flag the critic position at every owner check-in.**
-- **Critic status: 3 of 29 populated categories have one** —
-  body-language, conversation-skills, critical-thinking. The entire
-  creativity domain has none yet.
+  Not to be confused with `kantorhorvathambrus-source/mancsterapia`.
+- **Creator count: 61 of 700.** 01 = 16 (communication), 02 = 14
+  (communication), 03 = 21 (creativity), 04 = 10 (learning). All 99
+  entry videos passed the attribution gate.
+- **Domains populated on a first pass**: communication 13/13, creativity
+  14/14, learning 11/12. The single gap is `exam-preparation` — no
+  researched candidate supports it; target it in batch 05. 160 of 200
+  categories still have no creators. Next: mindset, then the rest.
+- **Critics: 6 of 40 populated categories have one.** Benjamin Keep (a
+  cognitive scientist who argues against popular learning claims) added
+  three in batch 04 — memory-techniques, deliberate-practice,
+  reading-habit. Rule 11 governs the rest: where none credible exists,
+  the category ships without one and the gap is documented in
+  `data/critic-gaps.json`. **Flag the critic position at every check-in.**
+- **The affiliation-search fallback is now part of the flow** and has
+  rescued 7 people so far (`data/handle-rescues.json`), 2 of them during
+  batch 04's normal research: Andy Stapleton (`@AndyStapleton` has 2
+  videos; the real channel is `@drandystapleton` with 774) and Eddie Woo
+  (`@eddiewoo` has 4; `@misterwootube` has 5,042).
+- **Open question for the owner** (raised in `UNVERIFIED.md`): rule 5's
+  English-only requirement excludes immersion channels that teach a
+  language *in* that language, such as Dreaming Spanish. For
+  `language-learning` specifically this may cut out the strongest
+  resources. Applied as written; flagged for a decision.
 
 ### Immediate next actions
 
@@ -288,6 +292,12 @@ this section first to know exactly where to resume.)*
    intent, and the key passed through the chat transcript to get here.
 5. Phase 3's remaining work (200 four-week plans) needs creators to
    point at, so it comes after the dataset, not before.
+
+**At the batch-06 check-in the owner wants two things, explicitly:**
+(a) the critic-coverage report — which populated categories have a
+critic, which will ship without one and why; and (b) the current
+contents of `data/handle-rescues.json`, shown in full so the rescue list
+is visible at a glance.
 
 ### The YouTube API key — `.env` in this container
 

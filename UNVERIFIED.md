@@ -100,6 +100,20 @@ entity**:
 _(none yet — every creator in the dataset so far resolved cleanly, and
 every entry video passed the attribution gate.)_
 
+### Batch 04 — the learning domain
+
+| Handle | What the API returned | Why it was excluded |
+| --- | --- | --- |
+| `@DreamingSpanish` | Dreaming Spanish, 804 uploads, 500k–1M | **Declared audio language is `es`.** The channel teaches Spanish *in Spanish* by comprehensible input, which is the method working as intended — and which fails project rule 5 (English-language only, judged on primary upload language). Excluded on the rule as written. **This is worth the owner's attention:** for `language-learning`, the strongest resources are frequently in the target language, so the English-only rule may systematically exclude the best of them. Flagged, not worked around. |
+| `@Langfocus` | Langfocus, 486 uploads, 1M–5M | Comparative linguistics — whether Arabic speakers can read Persian, how Modern Hebrew differs from Biblical. Fascinating, and not about learning a language. Mapping it to `language-learning` would be a halo. |
+| `@MedSchoolInsiders` | 485 uploads, 196 of 200 in the 3–19 min band | Well made, but the catalogue is medical-specialty and career strategy, not exam technique. Nothing found to support an `exam-preparation` mapping. |
+| `@StudyWithJess` | Study With Jess, 675 uploads | Was a study-skills channel; has pivoted. 195 of the last 200 uploads are under two minutes and the bio now describes keynote work on resilience and career purpose. No current exam-preparation content. |
+| `@AnthonyMetivier` | Resolves, 0 videos | Ran through `resolve-creator.mjs` with affiliations "Magnetic Memory Method", "memory palace". Nothing passed the identity gate. The exclusion stands. |
+
+**`exam-preparation` is the one learning category still empty** after this
+batch. Not padded — no candidate researched so far has a body of work that
+supports it. Targeted for batch 05.
+
 ## When the obvious handle fails: the fallback search path
 
 A person's obvious handle failing is **not** grounds to drop them. Before
