@@ -78,6 +78,19 @@ if (existsSync(batchDir)) {
   }
 }
 
+if (result.candidates?.length > 1) {
+  console.log(`\n${result.candidates.length} channels passed the gate — ranked:`);
+  for (const cand of result.candidates) {
+    console.log(`  score ${String(cand.score).padStart(2)}  ${String(cand.handle ?? cand.channelId).padEnd(30)} ${String(cand.title).slice(0, 32).padEnd(33)} ${cand.videoCount} vids`);
+    for (const e of cand.evidence) console.log(`            ${e}`);
+  }
+}
+if (result.ambiguous) {
+  console.log('\n  AMBIGUOUS: the top two are within one point, so the evidence does not');
+  console.log('  actually distinguish them. Do NOT write a record from this alone —');
+  console.log('  add a more distinctive --affiliation and re-run, or verify by hand.');
+}
+
 console.log(`\nRESOLVED via ${result.path}${result.rescued ? '  ** RESCUED BY THE FALLBACK PATH **' : ''}`);
 if (already.length) {
   console.log(`  ALREADY IN THE DATASET as ${already.join(', ')} — do not add a duplicate,`);
@@ -89,7 +102,7 @@ console.log(`  ${c.channelId} | ${c.hiddenSubscriberCount ? 'hidden' : c.sizeBuc
 console.log(`  gate: ${result.gate.reason}`);
 for (const f of result.gate.found) console.log(`        ${f}`);
 
-if (result.rescued && record) {
+if (result.rescued && record && !result.ambiguous) {
   const log = existsSync(LOG)
     ? JSON.parse(readFileSync(LOG, 'utf8'))
     : { _comment: 'Cases where the obvious handle failed and the affiliation-search fallback found the real channel. Each one is a creator the first attempt alone would have dropped.', rescues: [] };
@@ -103,6 +116,9 @@ if (result.rescued && record) {
     failedBecause: result.attempts.filter((a) => !a.ok).map((a) => `${a.how}: ${a.reason}`),
     note: note || undefined,
     alreadyInDataset: already.length ? already : undefined,
+    otherCandidatesConsidered: (result.candidates ?? []).length > 1
+      ? result.candidates.slice(1).map((c) => `${c.handle} (${c.title}, score ${c.score})`)
+      : undefined,
     recordedAt: new Date().toISOString().slice(0, 10),
   });
   writeFileSync(LOG, JSON.stringify(log, null, 2) + '\n');

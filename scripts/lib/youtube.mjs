@@ -401,19 +401,36 @@ export function identityMatch(channel, { name, affiliations = [], uploadTitles =
   if (nameInTitle) notes.push('channel title matches the name — NOT sufficient on its own');
   if (nameInDesc) notes.push('name appears in the channel description');
 
+  // Score, don't just pass/fail. Two channels can both clear the bar — the
+  // person's own channel and their podcast, say — and picking the first one
+  // that passes is how "Ramani Durvasula" resolved to her podcast feed while
+  // her 2,262-video main channel sat one result further down the list.
+  let score = 0;
   if (descHits.length) {
     found.push(`affiliation in channel description/title: ${descHits.join(', ')}`);
-    return { ok: true, found, notes, reason: 'affiliation self-asserted by the channel' };
+    score += 3 + (descHits.length - 1);
   }
   if (uploadHits.length) {
     found.push(`affiliation recurring in uploads: ${uploadHits.join(', ')}`);
-    return { ok: true, found, notes, reason: 'affiliation recurring across the channel\'s own uploads' };
+    score += 1 + (uploadHits.length - 1);
   }
+  if (nameInTitle) score += 2;
+  if (nameInDesc) score += 2;
+
+  const ok = descHits.length > 0 || uploadHits.length > 0;
   return {
-    ok: false, found, notes,
-    reason: nameInTitle || nameInDesc
-      ? 'name matches but nothing ties this channel to the person — a name match is not an identity match'
-      : 'no name or affiliation evidence found',
+    ok,
+    score,
+    strong: descHits.length > 0,
+    found,
+    notes,
+    reason: !ok
+      ? (nameInTitle || nameInDesc
+          ? 'name matches but nothing ties this channel to the person — a name match is not an identity match'
+          : 'no name or affiliation evidence found')
+      : descHits.length
+        ? 'affiliation self-asserted by the channel'
+        : 'affiliation recurring across the channel\'s own uploads',
   };
 }
 
@@ -491,6 +508,7 @@ export async function resolveCreator({ name, handles = [], affiliations = [], sa
   }
 
   // Path 2. Everything above failed or failed the gate.
+  const passing = [];
   const queries = [
     ...affiliations.map((a) => `${name} ${a}`),
     `${name} official channel`,
@@ -510,9 +528,46 @@ export async function resolveCreator({ name, handles = [], affiliations = [], sa
       const channel = await getChannelById(hit.channelId);
       if (!channel) continue;
       const gate = await check(channel, `search "${query}"`);
-      if (gate.ok) return { channel, path: 'affiliation-search', query, gate, attempts, rescued: true };
+      if (gate.ok) passing.push({ channel, gate, query });
     }
   }
 
-  return { channel: null, path: null, query: null, gate: null, attempts, rescued: false };
+  if (!passing.length) {
+    return { channel: null, path: null, query: null, gate: null, attempts, candidates: [], rescued: false };
+  }
+
+  // Rank rather than take the first hit. A generic affiliation term — a job
+  // title like "clinical psychologist", a bare topic like "narcissism" — will
+  // match several channels, so the winner is the one with the most evidence,
+  // with upload count as a last-resort tiebreak between a main channel and a
+  // spin-off feed.
+  passing.sort((a, b) =>
+    b.gate.score - a.gate.score ||
+    Number(b.gate.strong) - Number(a.gate.strong) ||
+    (b.channel.videoCount ?? 0) - (a.channel.videoCount ?? 0));
+
+  const [best, runnerUp] = passing;
+  // Close scores mean the evidence does not actually distinguish them. Say so
+  // rather than pretending the top of a coin-flip is an answer.
+  const ambiguous = Boolean(runnerUp) && (best.gate.score - runnerUp.gate.score) <= 1;
+
+  return {
+    channel: best.channel,
+    path: 'affiliation-search',
+    query: best.query,
+    gate: best.gate,
+    attempts,
+    candidates: passing.map((p) => ({
+      handle: p.channel.handle,
+      title: p.channel.title,
+      channelId: p.channel.channelId,
+      videoCount: p.channel.videoCount,
+      score: p.gate.score,
+      strong: p.gate.strong,
+      evidence: p.gate.found,
+      query: p.query,
+    })),
+    ambiguous,
+    rescued: true,
+  };
 }

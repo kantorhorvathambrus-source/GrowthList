@@ -1,0 +1,296 @@
+[
+  {
+    "id": "therapyinanutshell",
+    "name": "Therapy in a Nutshell (Emma McAdam)",
+    "handle": "@TherapyinaNutshell",
+    "channelUrl": "https://www.youtube.com/@TherapyinaNutshell",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A licensed therapist teaching the specific skills used inside therapy, organised as numbered courses rather than as general reassurance.",
+    "longDescription": "Emma McAdam is a Licensed Marriage and Family Therapist whose stated aim is to condense therapy skills and psychological research into usable pieces, on the observation that most people have no idea what those skills actually are. The distinctive thing is the structure: rather than a feed of advice, several strands are numbered courses — emotion regulation as a thirty-part sequence, for example — so a viewer works through a curriculum instead of grazing. Output has gone heavily short, with a hundred and forty-nine of the last two hundred uploads under two minutes, but the substantial teaching sits in the thirty-seven mid-length and fourteen long uploads. She is also willing to be a case study herself, including on her own performance anxiety, which is unusual for a clinician on camera.",
+    "notFor": "Anyone in crisis or wanting a substitute for treatment — she says so repeatedly herself — or anyone who wants the underlying research rather than a clinician's distillation of it.",
+    "formatTags": ["tutorial", "course", "shorts", "long-form"],
+    "level": ["beginner", "intermediate"],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": ["credentialed", "cites-research", "practitioner", "sells-course"],
+    "categories": [
+      {
+        "id": "emotional-regulation",
+        "strength": "primary",
+        "why": "Treats regulation as a set of learnable skills taught in order, rather than as advice to feel differently — and names the specific thinking patterns that make things worse.",
+        "evidence": "A numbered thirty-part emotion-regulation course from a licensed marriage and family therapist, covering named cognitive patterns and concrete habits.",
+        "entryVideo": {
+          "title": "4 Essential Habits for Emotional Regulation",
+          "videoId": "AyP4wujnb0g",
+          "whyThisOne": "The four foundations before the thirty-part sequence, so you can judge the approach without committing to a course.",
+          "durationMin": 18
+        }
+      },
+      {
+        "id": "anxiety-management",
+        "strength": "primary",
+        "why": "Comes at anxiety through what to do when you are already overwhelmed, which is more useful than prevention advice you cannot act on in the moment.",
+        "evidence": "A body of anxiety-specific teaching including videos on acting while paralysed by overwhelm and a first-person account of managing her own performance anxiety.",
+        "entryVideo": {
+          "title": "How to make yourself do stuff when you're paralyzed with overwhelm",
+          "videoId": "TOdmVMepGkA",
+          "whyThisOne": "Aimed at the state you are actually in when you go looking, rather than at a calmer version of you who plans ahead.",
+          "durationMin": 20
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Sells courses and the free videos route toward them. Overwhelmingly short-form now, so the course material takes finding."
+  },
+  {
+    "id": "healthygamergg",
+    "name": "HealthyGamerGG (Dr. Alok Kanojia)",
+    "handle": "@HealthyGamerGG",
+    "channelUrl": "https://www.youtube.com/@HealthyGamerGG",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A psychiatrist explaining the mechanisms under motivation, avoidance and burnout — and frequently arguing that the popular self-improvement framing has them backwards.",
+    "longDescription": "The channel is built around a psychiatrist working with an audience that skews young, online and male, and its recurring move is to replace a moral explanation with a mechanical one: discipline gets less credit than people give it, sensitivity is examined as a trait rather than a weakness, and the idea that you can simply rewire your brain is taken apart rather than sold. Output is enormous and heavily clipped — three thousand videos, with a hundred and sixty-nine of the last two hundred under two minutes and a median of one — because much of the channel is cut from long streams and coaching conversations. The twenty-one long-form uploads in that window are where the actual reasoning is. Some content analyses named individuals and public cases, which is a different and more contestable activity than teaching.",
+    "notFor": "Anyone wanting a system to follow. He is more likely to explain why the system you tried did not work than to hand you another, and the clip-heavy feed makes coherent study hard.",
+    "formatTags": ["long-form", "shorts", "interview", "livestream"],
+    "level": ["intermediate", "advanced"],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 2,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": ["credentialed", "cites-research", "practitioner", "sells-course"],
+    "categories": [
+      {
+        "id": "self-discipline",
+        "strength": "primary",
+        "why": "Argues directly against the discipline framing this whole category attracts, and proposes a mechanism instead of an exhortation.",
+        "evidence": "A psychiatrist-led catalogue including a dedicated video arguing discipline is over-credited, alongside long-form material on motivation and avoidance mechanisms.",
+        "entryVideo": {
+          "title": "We Give Discipline Too Much Credit, Here’s What Actually Works",
+          "videoId": "hQRjSn7_BKY",
+          "whyThisOne": "The clearest statement of the channel's central disagreement with mainstream self-improvement, in twenty minutes.",
+          "durationMin": 20
+        }
+      },
+      {
+        "id": "burnout-recovery",
+        "strength": "secondary",
+        "why": "Frames exhaustion as something with identifiable causes in how you are living rather than as a failure of willpower to be pushed through.",
+        "evidence": "Long-form clinical explanations of overload, sensitivity and depletion, from a practising psychiatrist working with a burned-out online audience.",
+        "entryVideo": {
+          "title": "Why You Can't Just \"Rewire\" Your Brain",
+          "videoId": "OfPOtN51MpM",
+          "whyThisOne": "Dismantles the fix-yourself-faster premise that sends most people into burnout in the first place.",
+          "durationMin": 18
+        }
+      }
+    ],
+    "role": "critic",
+    "caveats": "Sells coaching and a paid programme. The feed is dominated by short clips cut from streams, and some videos analyse named public figures and cases, which is speculation rather than clinical assessment."
+  },
+  {
+    "id": "howtoadhd",
+    "name": "How to ADHD (Jessica McCabe)",
+    "handle": "@HowtoADHD",
+    "channelUrl": "https://www.youtube.com/@HowtoADHD",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Strategies for getting started on things, built by someone with ADHD and useful well beyond it — including the best available name for task paralysis.",
+    "longDescription": "Jessica McCabe describes the channel as her ADHD toolbox: the strategies she has collected for living with an ADHD brain, published weekly. Its wider value is that the problems it addresses — a task that has become so aversive you cannot begin it, planning that never survives contact with the day, the gap between knowing what to do and doing it — are not exclusive to ADHD, and this is where they are named most precisely. The Wall of Awful is her framing for the emotional barrier in front of a task, and it is more actionable than most vocabulary for procrastination. Output splits between a hundred and five short clips and ninety-five substantial videos in the last two hundred uploads.",
+    "notFor": "Anyone wanting clinical or diagnostic material; this is lived-experience strategy with research woven in, and it is explicit that it is not a substitute for assessment.",
+    "formatTags": ["tutorial", "shorts", "long-form"],
+    "level": ["beginner", "intermediate"],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 3,
+      "selfPromotion": 2,
+      "depth": 2
+    },
+    "signals": ["practitioner", "cites-research"],
+    "categories": [
+      {
+        "id": "procrastination",
+        "strength": "primary",
+        "why": "Names the emotional barrier in front of a task rather than treating delay as laziness, which is the reframe that makes the problem workable.",
+        "evidence": "A sustained body of work on task initiation, including her Wall of Awful framing and videos on making planning survive the day.",
+        "entryVideo": {
+          "title": "How I Finally Faced My Biggest Wall of Awful",
+          "videoId": "nxGAPc7GihQ",
+          "whyThisOne": "The framework applied to her own worst case rather than a hypothetical, which is where it is most convincing.",
+          "durationMin": 21
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Built around ADHD specifically, so some framing will not fit you. Sells a book and merchandise."
+  },
+  {
+    "id": "betterideas",
+    "name": "Better Ideas (Joey Schweitzer)",
+    "handle": "@BetterIdeas",
+    "channelUrl": "https://www.youtube.com/@BetterIdeas",
+    "country": "CA",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Self-improvement essays that keep circling back to why the previous advice failed, including his own.",
+    "longDescription": "Joey Schweitzer's channel is small and consistent — a hundred and thirty videos, a hundred and nineteen of them between three and nineteen minutes, median ten — and it occupies an unusual position in the genre. The subject matter is standard enough on paper: habits, procrastination, routines, the mechanics of changing behaviour. What distinguishes it is a persistent reflexivity, including a video reacting to the worst advice he has previously given on his own channel. That willingness to revisit is rare in a field where old videos are quietly left up. The register is casual and essayistic rather than instructional, so you get an argument to think with rather than a protocol.",
+    "notFor": "Anyone wanting a system or a checklist. This is one person reasoning out loud about behaviour change, and it is deliberately unsystematic.",
+    "formatTags": ["video-essay", "long-form"],
+    "level": ["beginner", "intermediate"],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 3,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 2
+    },
+    "signals": ["practitioner"],
+    "categories": [
+      {
+        "id": "habit-formation",
+        "strength": "primary",
+        "why": "Focuses on the single mistake that makes most habit attempts collapse, rather than on stacking more habits onto a life that is already failing to hold them.",
+        "evidence": "A run of videos on habit construction and its failure modes, including a dedicated piece on the biggest habit-building mistake and one on habits that quietly degrade a life.",
+        "entryVideo": {
+          "title": "The biggest habit building mistake",
+          "videoId": "B-d79DtMTiE",
+          "whyThisOne": "Diagnoses the failure before offering a method, which is the right order and the one most habit content skips.",
+          "durationMin": 12
+        }
+      },
+      {
+        "id": "procrastination",
+        "strength": "secondary",
+        "why": "Willing to say that the answer people want to hear is not the answer, which is a useful counterweight to trick-based procrastination advice.",
+        "evidence": "Multiple videos on procrastination, including one explicitly framed as the cure viewers do not want to hear and one revisiting his own earlier bad advice.",
+        "entryVideo": {
+          "title": "The procrastination cure you don't want to hear",
+          "videoId": "iow5V3Qlvwo",
+          "whyThisOne": "Short, unflattering, and a fair test of whether you want this channel's register at all.",
+          "durationMin": 10
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Entirely one person's experience with no research behind it, and the essay format means you extract the actionable part yourself."
+  },
+  {
+    "id": "patrickteahan",
+    "name": "Patrick Teahan",
+    "handle": "@PatrickTeahanOfficial",
+    "channelUrl": "https://www.youtube.com/@PatrickTeahanOfficial",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "500k-1M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A therapist using role-play to show what dysfunctional family dynamics actually sound like — and, unusually, what good therapy looks like.",
+    "longDescription": "Patrick Teahan works on childhood trauma and the channel's signature format is role-play: he acts out the conversations, playing the family members, so a dynamic that is hard to describe becomes recognisable. That is a genuinely different teaching method from explaining a concept, and it is why the channel is worth including alongside more conventional clinical material. He also does something rarer: a video showing what therapy looks like when it is going well, which gives a viewer a standard to judge their own against. Output has gone heavily short — a hundred and fifty-four of the last two hundred uploads are under two minutes — with the role-plays and longer sessions in the remainder. The disclaimer that this is education rather than treatment is stated on the channel itself.",
+    "notFor": "Anyone who finds dramatised family conflict distressing to watch; the role-plays are effective precisely because they are uncomfortable.",
+    "formatTags": ["long-form", "shorts", "tutorial"],
+    "level": ["beginner", "intermediate"],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 3,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": ["credentialed", "practitioner", "sells-course"],
+    "categories": [
+      {
+        "id": "therapy-literacy",
+        "strength": "primary",
+        "why": "Shows what competent therapy actually looks and sounds like, which is the only way to judge whether what you are getting is any good.",
+        "evidence": "A therapist publishing role-played sessions and family dynamics, including a dedicated video on what good therapy looks like in practice.",
+        "entryVideo": {
+          "title": "When therapy is actually GOOD",
+          "videoId": "xzGG9F3FMfw",
+          "whyThisOne": "Gives you a benchmark before you spend money on a therapist, which is more useful than any list of questions to ask one.",
+          "durationMin": 31
+        }
+      },
+      {
+        "id": "self-awareness",
+        "strength": "secondary",
+        "why": "The role-plays make a dynamic recognisable from the outside, which is how people usually notice a pattern they have been inside their whole life.",
+        "evidence": "A large catalogue of acted family scenarios covering named dynamics such as guilt as a control mechanism, from a childhood-trauma specialist.",
+        "entryVideo": {
+          "title": "How Dysfunctional Families Use Guilt (Role Play)",
+          "videoId": "JaGktZHKs0w",
+          "whyThisOne": "One specific mechanism, performed rather than described — you will know within five minutes whether it is familiar.",
+          "durationMin": 25
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Sells courses and workshops heavily. Focused on childhood trauma specifically, and states itself that it is education rather than treatment."
+  },
+  {
+    "id": "drtraceymarks",
+    "name": "Dr. Tracey Marks",
+    "handle": "@DrTraceyMarks",
+    "channelUrl": "https://www.youtube.com/@DrTraceyMarks",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A board-certified psychiatrist translating neuroscience into short, plain explanations — heavily short-form, so treat it as reference rather than curriculum.",
+    "longDescription": "Dr. Tracey Marks describes herself as a board-certified psychiatrist with more than twenty years of experience, translating neuroscience and psychiatry into practical tools for attention, emotional regulation and recovery under pressure. The channel is very large and very short: a hundred and seventy-four of the last two hundred uploads run two minutes or less, twenty-six sit in the three-to-nineteen band, and none in that window exceed twenty minutes. That format suits the material, which is mostly explanatory — what a symptom is, whether a difficulty is one thing or another, how a mechanism works — rather than instructional. Its best use is looking something up, not working through anything.",
+    "notFor": "Anyone wanting depth or a course. Nothing here runs long, and the format rewards specific questions rather than sustained study.",
+    "formatTags": ["shorts", "tutorial"],
+    "level": ["beginner", "intermediate"],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 3,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 2
+    },
+    "signals": ["credentialed", "cites-research", "practitioner"],
+    "categories": [
+      {
+        "id": "anxiety-management",
+        "strength": "secondary",
+        "why": "Explains what is mechanically happening rather than what to do about it, which is what you want when you are trying to work out whether something is worth seeing someone about.",
+        "evidence": "A psychiatrist of twenty-plus years publishing explanatory videos distinguishing stress, attention problems and clinical presentations from one another.",
+        "entryVideo": {
+          "title": "Why You Can't Focus: Is It ADHD or Just Stress?",
+          "videoId": "SnAO3XCtQsE",
+          "whyThisOne": "A distinction people get wrong constantly, drawn by someone qualified to draw it.",
+          "durationMin": 12
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Almost entirely short-form, so nothing here is a substitute for depth. Explanatory rather than practical — it names the problem, it does not treat it."
+  }
+]
