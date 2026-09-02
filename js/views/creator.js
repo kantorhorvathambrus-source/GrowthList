@@ -141,6 +141,10 @@ export async function renderCreator(app, { params }) {
             <p>${esc(creator.notFor)}</p>
           </div>
         </div>
+        ${creator.languageNote ? `<div class="claim claim--caveat" style="margin-bottom: var(--sp-6)">
+          <i aria-hidden="true"></i>
+          <div><p class="micro claim__label">Language</p><p>${esc(creator.languageNote)}</p></div>
+        </div>` : ''}
         ${creator.caveats ? `<div class="claim claim--caveat" style="margin-bottom: var(--sp-6)">
           <i aria-hidden="true"></i>
           <div><p class="micro claim__label">Note</p><p>${esc(creator.caveats)}</p></div>

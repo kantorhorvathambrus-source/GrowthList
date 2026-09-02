@@ -595,5 +595,58 @@
     ],
     "role": "specialist",
     "caveats": "Heavily AI-tool focused and will date quickly. Sells coaching and courses, and the channel found here is @drandystapleton — @AndyStapleton is a near-empty 2-video channel."
+  },
+  {
+    "id": "dreamingspanish",
+    "name": "Dreaming Spanish",
+    "handle": "@DreamingSpanish",
+    "channelUrl": "https://www.youtube.com/@DreamingSpanish",
+    "country": "US",
+    "language": "es",
+    "languageNote": "The uploads are in Spanish, not English — deliberately. This is a comprehensible-input channel, where hearing the target language you can almost follow IS the teaching method, so an English version of these videos would not be the same resource. Included under the named exemption in project rule 5. No prior Spanish is assumed: the beginner videos are built to be understood from context, gesture and drawing alone.",
+    "sizeBucket": "500k-1M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Spanish taught entirely in Spanish, pitched so that a total beginner can follow from context — the comprehensible-input method done at scale.",
+    "longDescription": "Dreaming Spanish teaches by immersion: you watch content at a level you can just about understand and work upward, which its own description frames as learning the way you learned your first language. In practice that means a speaker on camera telling a simple story, drawing on a whiteboard, gesturing, and staying inside a controlled vocabulary — no English, no grammar tables, no translation. The catalogue is graded by difficulty from superbeginner upward, and there is a lot of it: eight hundred videos, with a hundred and one of the last two hundred running three to nineteen minutes and eighty past twenty, at a fifteen-minute median. The method asks for patience and volume rather than study, and it is genuinely uncomfortable at the start, which is the part most learners are not warned about.",
+    "notFor": "Anyone who wants grammar explained, translations given, or fast visible progress; the first weeks feel like watching something you do not understand, because that is what you are doing.",
+    "formatTags": [
+      "long-form",
+      "tutorial",
+      "documentary"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course",
+      "strong-ideological-frame"
+    ],
+    "categories": [
+      {
+        "id": "language-learning",
+        "strength": "primary",
+        "why": "The largest well-graded body of comprehensible input in one place, which turns the immersion method from a theory you read about into something you can actually do tonight.",
+        "evidence": "Eight hundred uploads graded by difficulty from superbeginner upward, delivered entirely in the target language using controlled vocabulary, drawing and gesture, per the channel's own stated method.",
+        "entryVideo": {
+          "title": "Spanish Story for Beginners | \"The Angry Artist\" | Level: Easy",
+          "videoId": "6HXYi_VEfvI",
+          "whyThisOne": "Eight minutes at the easiest level — the honest test of whether you can follow a language you do not yet speak, which is the whole premise.",
+          "durationMin": 8
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Committed to one method and dismissive of alternatives; sells an app and a subscription. Spanish only — the approach generalises, this channel does not."
   }
 ]

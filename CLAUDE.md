@@ -23,8 +23,38 @@ this file has the rules, schema, and current state.
    `strength: "primary"`. Spanning >2 top-level domains requires
    `scopeNote`.
 5. **English-language only**, everywhere: creators, UI copy, data.
-   `language` is always `"en"`. Country/accent do not matter and must not
-   be used as an exclusion signal — only primary upload language does.
+   `language` is normally `"en"`. Country/accent do not matter and must
+   not be used as an exclusion signal — only primary upload language does.
+
+   **Named exception — language-acquisition categories.** A creator may
+   have a non-English `language` if, and only if, every category it maps
+   to is in `LANGUAGE_EXEMPT_CATEGORIES` (`scripts/validate.mjs`;
+   currently `language-learning` alone). The reasoning, and it is not a
+   loophole: in comprehensible-input and immersion teaching, **the target
+   language IS the pedagogy**. Dreaming Spanish teaches Spanish in
+   Spanish because hearing language you can almost follow is the method;
+   an English-narrated version would be a different and worse resource.
+   Excluding those channels would not enforce a language standard, it
+   would remove the strongest material in the category. This is the
+   owner's explicit decision, taken after the exclusion was flagged
+   rather than worked around — **do not read a non-English record in
+   `language-learning` as a rule violation.**
+
+   The exemption is deliberately narrow and enforced, not honour-system:
+   - a non-English creator mapping to **any** category outside the exempt
+     list fails validation, so a Spanish channel cannot ride the
+     exemption into `public-speaking`;
+   - a non-English creator **must** carry a `languageNote` explaining
+     that the target language is the method, or it fails;
+   - `languageNote` renders on the creator card and detail page, so a
+     visitor is told before they click, not after;
+   - `gate-check.mjs` still warns on a language mismatch — it just
+     compares against the record's declared `language` rather than
+     assuming English.
+
+   Extend `LANGUAGE_EXEMPT_CATEGORIES` only for another genuine
+   language-acquisition category. It does not mean "foreign-language
+   content is fine here"; everywhere else rule 5 stands as written.
 6. **Video embeds**: click-to-load only, `youtube-nocookie.com/embed/`
    only, never on page load, never proxied/downloaded/re-hosted.
 7. **Tone**: factual, neutral, descriptive, no superlative marketing

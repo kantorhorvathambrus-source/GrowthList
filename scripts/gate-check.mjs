@@ -78,8 +78,16 @@ for (const c of creators) {
     if (claim.durationMin != null && video.durationMin !== claim.durationMin) {
       fails.push(`${where}: durationMin ${claim.durationMin} but API says ${video.durationMin}`);
     }
-    if (video.defaultAudioLanguage && !/^en/i.test(video.defaultAudioLanguage)) {
+    // A non-English entry video is only a problem when the RECORD claims
+    // English. A creator carrying the rule-5 exemption has already declared
+    // its language, and warning about it every run would train us to ignore
+    // the warning that matters.
+    const claimsEnglish = !c.language || c.language === 'en';
+    if (claimsEnglish && video.defaultAudioLanguage && !/^en/i.test(video.defaultAudioLanguage)) {
       warns.push(`${where}: declared audio language "${video.defaultAudioLanguage}" is not English`);
+    }
+    if (!claimsEnglish && video.defaultAudioLanguage && !video.defaultAudioLanguage.toLowerCase().startsWith(c.language.toLowerCase())) {
+      warns.push(`${where}: record says language "${c.language}" but this video declares "${video.defaultAudioLanguage}"`);
     }
   }
 }

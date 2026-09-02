@@ -22,6 +22,9 @@ const DATA = join(ROOT, 'data');
 
 const SIZE_BUCKETS = ['<100k', '100k-500k', '500k-1M', '1M-5M', '5M-20M', '>20M'];
 const STATUSES = ['active', 'archive'];
+// The rule-5 exemption. Extend this list if another language-acquisition
+// category is ever added; do NOT widen it to mean "foreign-language content".
+const LANGUAGE_EXEMPT_CATEGORIES = ['language-learning'];
 const ROLES = ['specialist', 'generalist', 'critic'];
 const STRENGTHS = ['primary', 'secondary'];
 const LEVELS = ['beginner', 'intermediate', 'advanced'];
@@ -166,7 +169,24 @@ for (const c of creators) {
       fail(where, `channelUrl does not match handle (${c.channelUrl} vs ${c.handle})`);
     }
   }
-  if (c.language && c.language !== 'en') fail(where, `language must be "en", found "${c.language}"`);
+  // Rule 5 is English-only — with ONE named exception, the owner's decision.
+  // For language-acquisition categories, the target language IS the pedagogy:
+  // an immersion channel teaching Spanish in Spanish is not a language
+  // mismatch, it is the method working. The exemption is deliberately narrow:
+  // a non-English creator must map ONLY to exempt categories, and must carry a
+  // languageNote so the record says out loud what a reader is walking into.
+  if (c.language && c.language !== 'en') {
+    const mapped = (c.categories ?? []).map((m) => m.id);
+    const outside = mapped.filter((id) => !LANGUAGE_EXEMPT_CATEGORIES.includes(id));
+    if (!mapped.length || outside.length) {
+      fail(where, `language "${c.language}" is only permitted for creators mapped solely to ` +
+                  `language-acquisition categories (${LANGUAGE_EXEMPT_CATEGORIES.join(', ')}); ` +
+                  `this one also maps to ${outside.join(', ') || '(nothing)'}`);
+    } else if (!String(c.languageNote ?? '').trim()) {
+      fail(where, `language "${c.language}" requires a "languageNote" explaining that the target ` +
+                  'language is the teaching method, so the record is self-explanatory');
+    }
+  }
   // country is OPTIONAL: the API genuinely returns none for some channels
   // (Toastmasters, ReasonIO). null is the honest value — never a guess.
   if (c.country != null && !/^[A-Z]{2}$/.test(c.country)) {
