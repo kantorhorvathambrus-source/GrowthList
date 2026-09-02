@@ -551,6 +551,17 @@ export async function resolveCreator({ name, handles = [], affiliations = [], sa
   // rather than pretending the top of a coin-flip is an answer.
   const ambiguous = Boolean(runnerUp) && (best.gate.score - runnerUp.gate.score) <= 1;
 
+  // Scale mismatch. A searching-for-"Net Ninja" run once ranked an 18-video
+  // bass-fishing channel above the real 2,812-video web-development one,
+  // because a short brand name matches anything. When something further down
+  // the list is an order of magnitude larger, that is worth saying out loud
+  // rather than leaving buried in the ranking.
+  const bestCount = best.channel.videoCount ?? 0;
+  const outscaled = passing
+    .slice(1)
+    .filter((p) => (p.channel.videoCount ?? 0) >= Math.max(10, bestCount * 10))
+    .map((p) => `${p.channel.handle ?? p.channel.channelId} (${p.channel.videoCount} uploads vs the winner's ${bestCount})`);
+
   return {
     channel: best.channel,
     path: 'affiliation-search',
@@ -568,6 +579,7 @@ export async function resolveCreator({ name, handles = [], affiliations = [], sa
       query: p.query,
     })),
     ambiguous,
+    outscaled,
     rescued: true,
   };
 }

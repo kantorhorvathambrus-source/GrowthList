@@ -276,26 +276,27 @@ in `categories.json`-derived output with a computed creator `count`.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research). **Batches 01–06 are
+- **Current phase**: Phase 2 (creator research). **Batches 01–07 are
   written, gated, validated and committed.** Phases 0, 1, 3-tooling, 4
   and 5 are done. Phase 6 is deliberately not started.
-- **Repo**: `kantorhorvathambrus-source/GrowthList`, working on `main`.
-- **Creator count: 72 of 700.** 01=16, 02=14, 03=21, 04=11, 05=6, 06=4.
-  All entry videos passed the attribution gate. Nothing written from
-  memory.
-- **51 of 200 categories populated.** Communication 13/13, creativity
-  14/14, learning 12/12, mindset 12/13 (cognitive-biases still thin).
-  Remaining domains untouched: fitness, health, career, money, business,
-  marketing, tech, programming, productivity, relationships, practical,
-  philosophy.
-- **`node scripts/coverage-report.mjs`** prints the critic-coverage
-  table and the full rescue list. Run it before every owner check-in
-  rather than counting by hand.
-- **Critics: 8 of 51 populated categories.** 43 still open — meaning
-  unfinished, not decided. Rule 11's documented-gap route applies only
-  once the search is actually done.
-- **Affiliation fallback: 7 rescues recorded.** It has also produced
-  false positives (see below), so ambiguous results are never recorded.
+- **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
+- **Creator count: 84 of 700.** 01=16, 02=14, 03=21, 04=11, 05=6, 06=4,
+  07=12. Every entry video passed the attribution gate.
+- **61 of 200 categories populated.** Complete on a first pass:
+  communication 13/13, creativity 14/14, learning 12/12, mindset 12/13,
+  programming 13/14. `git-and-version-control` is deliberately empty —
+  the only verified candidate was a tool vendor. Untouched domains:
+  fitness, health, career, money, business, marketing, tech,
+  productivity, relationships, practical, philosophy.
+- **`node scripts/coverage-report.mjs`** prints critic coverage and the
+  rescue list. Run it before every check-in instead of counting by hand.
+- **Critics: 9 of 61 populated categories** (Dave Farley added
+  testing-and-quality in batch 07). The rest are unfinished, not
+  documented gaps — rule 11 applies only after the search is done.
+- **Affiliation fallback: 7 recorded rescues**, and it has now been
+  wrong three times (Julie Smith, Ramani Durvasula, Net Ninja). All
+  three were caught by the ranking and ambiguity guards before anything
+  was written. Never record an ambiguous or scale-mismatched result.
 
 ### Immediate next actions
 

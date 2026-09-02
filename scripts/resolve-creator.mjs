@@ -85,6 +85,11 @@ if (result.candidates?.length > 1) {
     for (const e of cand.evidence) console.log(`            ${e}`);
   }
 }
+if (result.outscaled?.length) {
+  console.log('\n  SCALE MISMATCH: a lower-ranked candidate is far larger than the winner —');
+  for (const o of result.outscaled) console.log(`    ${o}`);
+  console.log('  A short or generic brand name matches anything. Check the larger one by hand.');
+}
 if (result.ambiguous) {
   console.log('\n  AMBIGUOUS: the top two are within one point, so the evidence does not');
   console.log('  actually distinguish them. Do NOT write a record from this alone —');
@@ -102,7 +107,7 @@ console.log(`  ${c.channelId} | ${c.hiddenSubscriberCount ? 'hidden' : c.sizeBuc
 console.log(`  gate: ${result.gate.reason}`);
 for (const f of result.gate.found) console.log(`        ${f}`);
 
-if (result.rescued && record && !result.ambiguous) {
+if (result.rescued && record && !result.ambiguous && !result.outscaled?.length) {
   const log = existsSync(LOG)
     ? JSON.parse(readFileSync(LOG, 'utf8'))
     : { _comment: 'Cases where the obvious handle failed and the affiliation-search fallback found the real channel. Each one is a creator the first attempt alone would have dropped.', rescues: [] };

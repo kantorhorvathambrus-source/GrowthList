@@ -1,0 +1,668 @@
+[
+  {
+    "id": "coreyms",
+    "name": "Corey Schafer",
+    "handle": "@coreyms",
+    "channelUrl": "https://www.youtube.com/@coreyms",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Long, unhurried Python tutorials that explain the language properly rather than racing to a finished app — the closest thing here to a textbook on video.",
+    "longDescription": "Corey Schafer's channel is built on a format almost nobody else sustains: a hundred and twenty-six of the last two hundred uploads run past twenty minutes, with a median of twenty-four, and several past an hour. The subject matter is Python taught in depth — iterators, classes, the standard library, the parts of the language people work around for years rather than learning. Alongside that sits a long multi-part FastAPI series that builds a full application end to end across sixteen episodes, which is where the backend material lives. The pace is deliberate and the presentation is plain: a screen, a voice, and an explanation that does not skip the part you were about to be confused by.",
+    "notFor": "Anyone in a hurry or wanting current-framework coverage; uploads are infrequent, and depth is prioritised over keeping up with what is new.",
+    "formatTags": [
+      "tutorial",
+      "long-form",
+      "course"
+    ],
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 4,
+      "energy": 1,
+      "selfPromotion": 1,
+      "depth": 4
+    },
+    "signals": [
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "python",
+        "strength": "primary",
+        "why": "Teaches the language itself rather than a stack built on it, and gives each concept the running time to actually land.",
+        "evidence": "A long-running Python tutorial catalogue covering language fundamentals, classes and standard-library modules in dedicated episodes, with a twenty-four-minute median length.",
+        "entryVideo": {
+          "title": "Python Tutorial: Itertools Module - Iterator Functions for Efficient Looping",
+          "videoId": "Qu3dThVy6KQ",
+          "whyThisOne": "A standard-library module most self-taught developers never open, taught in full — a fair sample of the depth on offer.",
+          "durationMin": 46
+        }
+      },
+      {
+        "id": "backend-development",
+        "strength": "secondary",
+        "why": "Builds one real API across a long series instead of a toy, so authentication, migrations and deployment appear where they actually do in a project.",
+        "evidence": "A sixteen-part FastAPI series covering routing, authentication, PostgreSQL migrations, pagination and cloud file storage as sequential episodes.",
+        "entryVideo": {
+          "title": "Python FastAPI Tutorial (Part 15): PostgreSQL and Alembic - Database Migrations for Production",
+          "videoId": "e8NnDz8uT7o",
+          "whyThisOne": "Migrations are the part every tutorial skips and every real project needs — this is where the series proves it is not a toy.",
+          "durationMin": 48
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Infrequent uploads and some older material references dated library versions. Almost no coverage of the current framework churn."
+  },
+  {
+    "id": "webdevsimplified",
+    "name": "Web Dev Simplified (Kyle Cook)",
+    "handle": "@WebDevSimplified",
+    "channelUrl": "https://www.youtube.com/@WebDevSimplified",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Broad, steady web-development teaching aimed at getting a beginner to full stack — mixed in with a lot of opinion pieces about the industry.",
+    "longDescription": "The channel's stated aim is teaching web development efficiently and practically, taking someone from no stack to full stack. The catalogue is large and reasonably balanced for the genre: eighty-three of the last two hundred uploads run three to nineteen minutes and sixty-two run past twenty, with a median of twelve. The teaching covers JavaScript language features, browser APIs, framework work and the surrounding tooling, generally as self-contained explanations rather than as a course. The caveat is the other half of the feed, which is commentary — whether a technology is dying, whether now is a good time to learn, what he thinks of a new release. Those are engaging and they are not lessons.",
+    "notFor": "Anyone wanting a structured path. There is a lot here and very little ordering, so you need to know what you are looking for.",
+    "formatTags": [
+      "tutorial",
+      "long-form",
+      "shorts",
+      "video-essay"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 4,
+      "energy": 3,
+      "selfPromotion": 3,
+      "depth": 2
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "javascript",
+        "strength": "primary",
+        "why": "Explains the language features and browser behaviour that trip people up, in units small enough to actually finish.",
+        "evidence": "A large catalogue of self-contained JavaScript and browser-API explanations aimed at taking beginners through to full-stack work, per the channel's own stated remit.",
+        "entryVideo": {
+          "title": "10 Hidden Browser Features Your AI Doesn’t Know About",
+          "videoId": "QMG5F64b454",
+          "whyThisOne": "Platform capabilities most developers reach for a library to replicate — useful immediately, and a good test of the teaching style.",
+          "durationMin": 15
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Sells courses, promoted throughout. A large share of uploads is industry opinion and framework commentary rather than teaching."
+  },
+  {
+    "id": "kevinpowell",
+    "name": "Kevin Powell",
+    "handle": "@KevinPowell",
+    "channelUrl": "https://www.youtube.com/@KevinPowell",
+    "country": "CA",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A CSS specialist — one language, taught for years, by someone who thinks it is genuinely interesting rather than an obstacle.",
+    "longDescription": "Kevin Powell's channel is unusually narrow and better for it: over eleven hundred videos almost entirely about CSS, from a stated position that CSS is wonderful rather than something to be escaped with a framework. Eighty-three of the last two hundred uploads run three to nineteen minutes and forty run longer, with a median of six, so the format is short demonstrations plus occasional deep dives. The material covers layout properly — grid, flexbox, the newer layout and animation primitives — and consistently shows what the platform can do natively before reaching for a tool. That focus makes it the reference for frontend styling, and it also means it will not teach you JavaScript, accessibility auditing, or how to build an application.",
+    "notFor": "Anyone wanting full frontend coverage. This is styling only, and it assumes you have somewhere to put the markup.",
+    "formatTags": [
+      "tutorial",
+      "shorts",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 4,
+      "energy": 3,
+      "selfPromotion": 2,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "web-frontend",
+        "strength": "primary",
+        "why": "Shows what the browser already does before you install anything, which is the fastest way to stop reaching for a framework to solve a layout problem.",
+        "evidence": "Over eleven hundred videos focused almost entirely on CSS layout, animation and modern platform features, from a channel explicitly built around the language.",
+        "entryVideo": {
+          "title": "Nobody told me CSS could do this",
+          "videoId": "onraoQExbHw",
+          "whyThisOne": "Nine minutes of native capabilities most people are still writing JavaScript to achieve.",
+          "durationMin": 9
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "CSS only — no JavaScript, no application architecture. Sells courses, and a share of uploads is tooling news."
+  },
+  {
+    "id": "hnasr",
+    "name": "Hussein Nasser",
+    "handle": "@hnasr",
+    "channelUrl": "https://www.youtube.com/@hnasr",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "500k-1M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Backend internals explained one layer down — how a database or a protocol actually behaves, not how to call it.",
+    "longDescription": "Hussein Nasser's channel is about the backend at the level most tutorials skip: what Postgres is doing when you run a query, why a query optimisation produced the infinite-scroll pattern, how HTTP/2 changes connection use, why an async implementation took years to arrive. A thousand videos, with sixty of the last two hundred running past twenty minutes and sixty in the mid-length band at an eight-minute median. The value is that he consistently goes one layer below the abstraction you are using, which is what turns a working developer into someone who can diagnose a problem. Delivery is conversational and often unedited, so there is repetition, and some videos are reactions to news rather than explanation.",
+    "notFor": "Anyone who wants to build something today. Almost nothing here is a walkthrough — it is explanation of systems you are already using.",
+    "formatTags": [
+      "long-form",
+      "video-essay",
+      "tutorial"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 2,
+      "energy": 3,
+      "selfPromotion": 3,
+      "depth": 4
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "databases-sql",
+        "strength": "primary",
+        "why": "Explains what the database does with your query rather than how to write one, which is where slow systems actually get diagnosed.",
+        "evidence": "A sustained body of work on database internals — Postgres query execution, indexing behaviour, optimisation and its consequences — across long-form explanations.",
+        "entryVideo": {
+          "title": "you won't forget how postgres works after this",
+          "videoId": "q9jixKv4h2I",
+          "whyThisOne": "Twenty-seven minutes on the engine underneath the SQL you already write, which changes how you read every slow query afterwards.",
+          "durationMin": 27
+        }
+      },
+      {
+        "id": "backend-development",
+        "strength": "primary",
+        "why": "Covers the protocol and connection layer that backend work sits on, so network behaviour stops being something you guess about.",
+        "evidence": "Long-form explanations of HTTP versions, connection handling and networking behaviour, from a channel whose stated focus is backend engineering.",
+        "entryVideo": {
+          "title": "How HTTP/2 frees connections",
+          "videoId": "ImaSgNgxu00",
+          "whyThisOne": "A concrete, self-contained protocol change with visible consequences for anything you deploy.",
+          "durationMin": 12
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Sells courses heavily and mentions them often. Unedited, repetitive delivery, and a share of uploads is reaction to industry news."
+  },
+  {
+    "id": "databasestar",
+    "name": "Database Star (Ben Brumm)",
+    "handle": "@DatabaseStar",
+    "channelUrl": "https://www.youtube.com/@DatabaseStar",
+    "country": "AU",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Practical SQL for people who already write it — performance rules, real query post-mortems, and the business calculations nobody teaches.",
+    "longDescription": "Database Star is a small, focused channel about writing SQL well rather than about learning what SELECT does. Three hundred and forty-three videos, most in the short-to-mid range, and the recurring formats are useful ones: named rules for high-performance queries, worked post-mortems of a specific query that was quietly costing something, and calculations people actually need at work such as revenue and churn metrics expressed in SQL. That last category is rare — most SQL teaching stops at syntax and never shows what a real analytical question looks like written out. Production values are modest and the channel is small, which is not the same as being wrong.",
+    "notFor": "Absolute beginners who have never written a query, and anyone needing database administration rather than SQL itself.",
+    "formatTags": [
+      "tutorial",
+      "long-form"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 4,
+      "energy": 1,
+      "selfPromotion": 2,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "databases-sql",
+        "strength": "primary",
+        "why": "Focuses on making queries fast and correct in production, with worked examples of real queries that were quietly wrong or expensive.",
+        "evidence": "A SQL-focused catalogue including named performance rules, post-mortems of specific costly queries, and analytical calculations written out in full.",
+        "entryVideo": {
+          "title": "The 7 Rules for Writing High-Performance SQL",
+          "videoId": "LHgUes2genI",
+          "whyThisOne": "Seven checkable rules you can apply to a query you already have, which makes it immediately testable.",
+          "durationMin": 8
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Small channel with basic production. Sells courses, and the coverage assumes a relational database rather than anything newer."
+  },
+  {
+    "id": "techworldwithnana",
+    "name": "TechWorld with Nana",
+    "handle": "@TechWorldwithNana",
+    "channelUrl": "https://www.youtube.com/@TechWorldwithNana",
+    "country": "AT",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Long, structured DevOps and cloud tutorials — full crash courses rather than tips, from a practitioner with vendor credentials.",
+    "longDescription": "Nana's channel is one of the few in this area that publishes courses rather than fragments: eighty-eight of a hundred and eighty videos run past twenty minutes, with a median of nineteen, and several are multi-hour crash courses on a single technology. The channel description lists vendor recognitions including Docker Captain and AWS container status, which is the kind of credential that is checkable rather than self-awarded. The subject matter is the DevOps toolchain and the cloud platforms under it, taught from first principles with the reasoning included — comparisons of pipeline strategies rather than a walkthrough of one. A meaningful share of recent output is career-path content and interviews, and there is a persistent push toward paid masterclasses.",
+    "notFor": "Anyone wanting short answers or vendor-neutral depth on a single platform; the format is long, and the framing assumes you want the whole toolchain.",
+    "formatTags": [
+      "course",
+      "long-form",
+      "tutorial",
+      "interview"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 4,
+      "depth": 3
+    },
+    "signals": [
+      "credentialed",
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "devops-and-ci",
+        "strength": "primary",
+        "why": "Compares the pipeline approaches against each other rather than teaching one tool, which is what you need when choosing rather than following.",
+        "evidence": "Long-form DevOps courses and a dedicated comparison of major CI/CD strategies, from a practitioner holding Docker Captain and AWS container recognitions.",
+        "entryVideo": {
+          "title": "I Compared Every Major CI/CD Strategy So You Don't Have To",
+          "videoId": "A3pmg8_zPgg",
+          "whyThisOne": "A comparison rather than a tutorial, so you finish it able to make a decision instead of able to follow one set of steps.",
+          "durationMin": 22
+        }
+      },
+      {
+        "id": "cloud-computing",
+        "strength": "secondary",
+        "why": "Teaches the platform concepts underneath the buttons, which is what transfers when your employer uses a different cloud from the one you learned.",
+        "evidence": "Cloud and container tutorials forming a large share of the catalogue, taught as multi-hour courses rather than feature walkthroughs.",
+        "entryVideo": {
+          "title": "What is MCP? MCP Explained Simply",
+          "videoId": "oblaHqULUHk",
+          "whyThisOne": "A current protocol explained from first principles, which shows how she handles something new rather than something settled.",
+          "durationMin": 30
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Heavy promotion of paid masterclasses, and a growing share of uploads is career-path interviews rather than technical teaching."
+  },
+  {
+    "id": "bytebytego",
+    "name": "ByteByteGo",
+    "handle": "@ByteByteGo",
+    "channelUrl": "https://www.youtube.com/@ByteByteGo",
+    "country": null,
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Animated system-design explainers from the authors of the System Design Interview books — clear, consistent, and shaped by the interview format.",
+    "longDescription": "ByteByteGo is run by Alex Xu and Sahn Lam, the authors of the System Design Interview book series, and the channel is the video expression of that work. The format is tight and consistent: a hundred and thirty-nine of its hundred and sixty-nine videos run three to nineteen minutes with a five-minute median, each taking one component or one design problem and working through it with animated diagrams. Coverage spans the standard vocabulary — caching, rate limiting, message queues, chat and feed architectures. Its strength and its limit are the same thing: the material is organised around what gets asked in interviews, which is a real and useful subset of system design rather than the whole discipline.",
+    "notFor": "Anyone designing a system rather than being asked about one. The framing is interview-shaped, and real trade-offs are compressed for time.",
+    "formatTags": [
+      "video-essay",
+      "tutorial",
+      "shorts"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 3,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 2
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "system-design",
+        "strength": "primary",
+        "why": "Gives you the shared vocabulary — what a rate limiter is, why a queue is there — which is the prerequisite for any design conversation.",
+        "evidence": "An animated catalogue covering standard distributed-system components and design problems, from the authors of the System Design Interview book series.",
+        "entryVideo": {
+          "title": "Rate Limiter System Design: Token Bucket, Leaky Bucket, Scaling",
+          "videoId": "YXkOdWBwqaA",
+          "whyThisOne": "One component, several named algorithms, and the trade-off between them — the clearest small example of the channel's method.",
+          "durationMin": 8
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Interview-oriented, so depth is sacrificed for coverage. Sells books and a newsletter, and nearly every video routes to them."
+  },
+  {
+    "id": "neetcode",
+    "name": "NeetCode",
+    "handle": "@NeetCode",
+    "channelUrl": "https://www.youtube.com/@NeetCode",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Worked algorithm-problem solutions explained as reasoning rather than as answers — plus, increasingly, industry commentary that is not that.",
+    "longDescription": "NeetCode's core is a large archive of individual algorithm problems worked through on camera: the problem, the reasoning toward an approach, then the implementation, typically in Python and typically in ten to twenty minutes. That thinking-aloud format is the value, because the difficulty in these problems is choosing an approach rather than writing the code once you have one. Eighty-five of the last two hundred uploads sit in the three-to-nineteen-minute band. The channel has also drifted: a significant share of recent uploads is commentary on AI models, the job market and industry news, which is a different product sharing the same feed. He is candid about the grind involved, including about his own experience of it.",
+    "notFor": "Anyone learning algorithms for their own sake rather than for interviews; the selection is driven by what gets asked, not by what is foundational.",
+    "formatTags": [
+      "tutorial",
+      "long-form",
+      "shorts",
+      "video-essay"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "algorithms-and-data-structures",
+        "strength": "primary",
+        "why": "Shows the reasoning that leads to an approach, not just the finished solution — which is the part you actually have to reproduce under pressure.",
+        "evidence": "A large archive of individually worked algorithm problems explained approach-first, alongside reflection on the volume of practice involved.",
+        "entryVideo": {
+          "title": "My Brain after 569 Leetcode Problems",
+          "videoId": "8wysIxzqgPI",
+          "whyThisOne": "An honest account of what this practice does and does not give you, which is the right thing to watch before committing months to it.",
+          "durationMin": 8
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Sells a paid platform the channel funnels toward. A growing share of uploads is AI and job-market commentary rather than algorithm teaching."
+  },
+  {
+    "id": "modernsoftwareengineering",
+    "name": "Modern Software Engineering (Dave Farley)",
+    "handle": "@modernsoftwareengineeringyt",
+    "channelUrl": "https://www.youtube.com/@modernsoftwareengineeringyt",
+    "country": "GB",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Argued positions on how software should be built and tested, from a practitioner who is happy to tell you the common practice is wrong.",
+    "longDescription": "The channel is hosted by Dave Farley, named in its own description, and its stated purpose is helping good developers become great by teaching techniques from experienced practitioners. What distinguishes it in this domain is that it argues rather than demonstrates: that a hundred percent test coverage is a misleading target, that a list of widely repeated testing beliefs are myths, that architecture should be judged by whether it can be tested and reproduced. Two hundred videos scanned show eighty-eight in the three-to-nineteen-minute band and twenty-two longer, at an eight-minute median. This is opinion grounded in decades of delivery experience rather than in cited research, and it is presented as such — you are being persuaded, and you should engage with it that way.",
+    "notFor": "Anyone wanting tool tutorials or neutral survey. Every video takes a position, and some of those positions are contested within the industry.",
+    "formatTags": [
+      "video-essay",
+      "tutorial",
+      "long-form"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 3,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "testing-and-quality",
+        "strength": "primary",
+        "why": "Attacks the metrics teams optimise for instead of the outcomes they want, which is the most common and most expensive testing mistake.",
+        "evidence": "Dedicated videos arguing against full test coverage as a target and enumerating widely held testing beliefs as myths, hosted by a named long-time delivery practitioner.",
+        "entryVideo": {
+          "title": "100% Test Coverage is a LIE, Here’s Why...",
+          "videoId": "p1xZ-Ni2t8Q",
+          "whyThisOne": "Ten minutes against a target many teams are formally measured on, which makes it immediately useful and immediately arguable.",
+          "durationMin": 10
+        }
+      },
+      {
+        "id": "system-design",
+        "strength": "secondary",
+        "why": "Judges an architecture by whether it can be tested and reproduced rather than by how it looks on a diagram, which is a rarer and more practical criterion.",
+        "evidence": "Videos on making architecture testable and reproducible, and on building teams that improve their own practice, within a delivery-focused catalogue.",
+        "entryVideo": {
+          "title": "The Simplest Way to Make Your Architecture Testable and Reproducible (Works Every Time)",
+          "videoId": "uHatwKrYY_c",
+          "whyThisOne": "A design criterion you can apply to a system you already have, which is more useful than another reference architecture.",
+          "durationMin": 8
+        }
+      }
+    ],
+    "role": "critic",
+    "caveats": "Opinion from experience rather than evidence, and some positions are actively disputed in the industry. Sells courses and consulting."
+  },
+  {
+    "id": "philipplackner",
+    "name": "Philipp Lackner",
+    "handle": "@PhilippLackner",
+    "channelUrl": "https://www.youtube.com/@PhilippLackner",
+    "country": "DE",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Android and Kotlin taught with the reasoning attached — explicitly aimed at developers who want to know why, not just make it compile.",
+    "longDescription": "The channel's own framing is precise about its audience: native Android, Kotlin Multiplatform and Kotlin backend developers who want to understand the why behind each line rather than assemble something that happens to work. The catalogue backs that up — over eleven hundred videos, with a hundred and twenty-four of the last two hundred running three to nineteen minutes and sixty-nine past twenty, at a sixteen-minute median. Coverage runs from architecture and clean-code practice through performance optimisation to build pipelines for mobile projects, and he is willing to publish reversals, including on a cross-platform technology he had previously advocated. Some uploads are monthly ecosystem news, which dates fast.",
+    "notFor": "Anyone outside the Android and Kotlin world. Nothing here covers iOS-native or the JavaScript cross-platform stacks in any depth.",
+    "formatTags": [
+      "tutorial",
+      "long-form",
+      "course"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "mobile-development",
+        "strength": "primary",
+        "why": "Covers the parts of shipping a mobile app that tutorials skip — performance, architecture, build automation — rather than another screen-building walkthrough.",
+        "evidence": "An Android and Kotlin catalogue spanning app performance, clean architecture and CI pipelines for mobile, from a channel explicitly built around explaining why.",
+        "entryVideo": {
+          "title": "The EASIEST Way to Optimize Your Android App's Performance",
+          "videoId": "uumygHn6B7c",
+          "whyThisOne": "A concrete problem every real app eventually has, handled with the reasoning shown rather than a checklist.",
+          "durationMin": 15
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Android and Kotlin only. Sells courses, promoted persistently, and the monthly news videos age quickly."
+  },
+  {
+    "id": "gmtk",
+    "name": "Game Maker's Toolkit (Mark Brown)",
+    "handle": "@GMTK",
+    "channelUrl": "https://www.youtube.com/@GMTK",
+    "country": "GB",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Design analysis of released games — why a mechanic works, what difficulty is for — from someone who also runs one of the largest game jams and ships his own work.",
+    "longDescription": "Game Maker's Toolkit is described by its own channel as a deep dive into game design, level design and production, hosted by Mark Brown. The analytical videos are the substance: a hundred and fifty-four of the last two hundred uploads run three to nineteen minutes, with a median of fourteen, and each takes a design question — what hard games are actually for, how destruction is implemented and why it feels the way it does — and answers it from released titles. What lifts it above commentary is that he also runs a very large annual game jam and has developed his own game publicly, so the production and scoping content comes from having done it rather than from having watched. A meaningful share of recent uploads is jam retrospectives, which are interesting but not instructional.",
+    "notFor": "Anyone wanting engine tutorials or code. There is no implementation here — it is design thinking, and you supply the making.",
+    "formatTags": [
+      "video-essay",
+      "long-form",
+      "documentary"
+    ],
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 2,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "game-development",
+        "strength": "primary",
+        "why": "Teaches design judgement from finished games, which is the half of game development that no engine tutorial will ever cover.",
+        "evidence": "A design and level-design analysis catalogue built on released titles, from a host who also runs a large annual game jam and has publicly developed his own game.",
+        "entryVideo": {
+          "title": "What's The Point Of Hard Games, Anyway?",
+          "videoId": "Ip5pYl-MuYs",
+          "whyThisOne": "A design question with no obvious answer, argued from examples — which is what this channel is for and what a tutorial cannot give you.",
+          "durationMin": 12
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "No code or engine work at all. A large share of recent uploads is game-jam retrospective rather than design teaching."
+  },
+  {
+    "id": "statquest",
+    "name": "StatQuest with Josh Starmer",
+    "handle": "@statquest",
+    "channelUrl": "https://www.youtube.com/@statquest",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Statistics and machine learning decomposed into small steps and worked through in full — including the matrix algebra most explanations skip.",
+    "longDescription": "Josh Starmer's stated method is to break intimidating methodologies into their component steps without dumbing them down, and the catalogue holds to that unusually well. A hundred and eight of the last two hundred uploads run three to nineteen minutes and seventy-three run past twenty, at a sixteen-minute median, and the longer ones are where he does the thing that distinguishes the channel: working the actual mathematics on screen rather than gesturing at it. There are paired videos on several topics — the essential concepts, then the mathematical details — so you choose your depth. Coverage runs from foundational statistics through to transformer internals. The house style is relentlessly cheerful, with jingles, which people either find disarming or unbearable.",
+    "notFor": "Anyone wanting deployment, tooling or MLOps. This is the understanding underneath models, not the engineering that puts one in production.",
+    "formatTags": [
+      "tutorial",
+      "long-form",
+      "course"
+    ],
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 2,
+      "energy": 3,
+      "selfPromotion": 2,
+      "depth": 4
+    },
+    "signals": [
+      "credentialed",
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "machine-learning-engineering",
+        "strength": "primary",
+        "why": "Gives you the mathematics under the model rather than the library call, which is what separates tuning something from understanding why it failed.",
+        "evidence": "Paired concepts-then-mathematics videos across statistics and machine learning, including step-by-step matrix derivations of neural network and transformer internals.",
+        "entryVideo": {
+          "title": "The matrix math behind transformer neural networks, one step at a time!!!",
+          "videoId": "KphmOJnLAdI",
+          "whyThisOne": "The architecture everything currently rests on, worked through in full rather than described — and a fair test of whether the style suits you.",
+          "durationMin": 24
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Concepts and mathematics only — nothing on deployment, serving or MLOps. Sells books and a paid tier, and the jingle-heavy style is divisive."
+  }
+]

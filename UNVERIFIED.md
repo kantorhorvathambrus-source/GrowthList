@@ -114,6 +114,23 @@ every entry video passed the attribution gate.)_
 batch. Not padded — no candidate researched so far has a body of work that
 supports it. Targeted for batch 05.
 
+### Batch 07 — the programming domain
+
+| Handle | What the API returned | Why it was excluded |
+| --- | --- | --- |
+| `@n3t_n1nj4` | "NET NINJA", 18 uploads | **A bass fishing channel.** It outranked the real Net Ninja (2,812 uploads, web development) in the affiliation search, because a two-word brand name matches anything. Caught by the ambiguity flag before anything was written, and the resolver now also warns on scale mismatch. |
+| `@GitKraken` | GitKraken, 779 uploads, <100k | Vendor channel for a Git client. It does contain real Git-command content, but 112 of the last 200 uploads are under two minutes and the long-form is product webinars. Making a tool vendor the *only* creator in `git-and-version-control` would misrepresent the category. |
+
+**`git-and-version-control` ships empty from this batch**, on the same
+principle that left `exam-preparation` empty in batch 04 until a proper
+candidate appeared in batch 06. A vendor funnel is not a teacher.
+
+Handle traps found and resolved by the fallback in this batch:
+`@ContinuousDelivery` and `@TheNetNinja` do not exist; the real channels
+are `@modernsoftwareengineeringyt` (identity confirmed — its own
+description names Dave Farley as host) and `@netninja`. Both required
+hand-verification because the search returned ambiguous rankings.
+
 ## When the obvious handle fails: the fallback search path
 
 A person's obvious handle failing is **not** grounds to drop them. Before
