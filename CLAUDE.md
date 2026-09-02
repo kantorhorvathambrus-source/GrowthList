@@ -276,27 +276,27 @@ in `categories.json`-derived output with a computed creator `count`.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research). **Batches 01–07 are
+- **Current phase**: Phase 2 (creator research). **Batches 01–08 are
   written, gated, validated and committed.** Phases 0, 1, 3-tooling, 4
   and 5 are done. Phase 6 is deliberately not started.
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
-- **Creator count: 84 of 700.** 01=16, 02=14, 03=21, 04=11, 05=6, 06=4,
-  07=12. Every entry video passed the attribution gate.
-- **61 of 200 categories populated.** Complete on a first pass:
+- **Creator count: 91 of 700.** 01=16, 02=14, 03=21, 04=11, 05=6, 06=4,
+  07=12, 08=7. Every entry video passed the attribution gate.
+- **69 of 200 categories populated.** First pass complete:
   communication 13/13, creativity 14/14, learning 12/12, mindset 12/13,
-  programming 13/14. `git-and-version-control` is deliberately empty —
-  the only verified candidate was a tool vendor. Untouched domains:
-  fitness, health, career, money, business, marketing, tech,
-  productivity, relationships, practical, philosophy.
+  programming 13/14, productivity 10/12.
+- **Deliberately empty categories** (candidate existed, was rejected):
+  `git-and-version-control` and `workflow-automation` — vendor channels
+  only; `goal-setting` — nothing researched supports it yet. These are
+  not oversights; see `UNVERIFIED.md`.
+- **Untouched domains**: fitness, health, career, money, business,
+  marketing, tech, relationships, practical, philosophy.
 - **`node scripts/coverage-report.mjs`** prints critic coverage and the
-  rescue list. Run it before every check-in instead of counting by hand.
-- **Critics: 9 of 61 populated categories** (Dave Farley added
-  testing-and-quality in batch 07). The rest are unfinished, not
-  documented gaps — rule 11 applies only after the search is done.
-- **Affiliation fallback: 7 recorded rescues**, and it has now been
-  wrong three times (Julie Smith, Ramani Durvasula, Net Ninja). All
-  three were caught by the ranking and ambiguity guards before anything
-  was written. Never record an ambiguous or scale-mismatched result.
+  rescue list. Run it before every check-in.
+- **Critics: 10 of 69 populated categories** (Matt D'Avella added
+  digital-minimalism). The rest are unfinished, not documented gaps.
+- **Affiliation fallback ledger: 8 rescues, 3 wrong answers, 0 wrong
+  answers written.** Never record an ambiguous or scale-mismatched hit.
 
 ### Immediate next actions
 

@@ -131,6 +131,18 @@ are `@modernsoftwareengineeringyt` (identity confirmed — its own
 description names Dave Farley as host) and `@netninja`. Both required
 hand-verification because the search returned ambiguous rankings.
 
+### Batch 08 — the productivity domain
+
+| Handle | What the API returned | Why it was excluded |
+| --- | --- | --- |
+| `@zapier` | Zapier, 3,864 uploads | Vendor channel for an automation product. Same call as GitKraken in batch 07: real content exists, but a tool vendor cannot be the sole creator in `workflow-automation` without misrepresenting the category. |
+| `@chandootalks` | "Chandoo Talks", 1,414 uploads, IN | A lifestyle vlogger — home organisation, cooking, product reviews. Larger than the real `@chandoo_` (603 uploads, Excel and analytics), which is a useful reminder that **upload count is a warning signal, never a decider**. |
+| `@CarlPullein` | "Mikel Arteta", 1 upload | Name trap. The real channel is `@carl_pullein` with 1,354 uploads — found by the affiliation fallback on "Time Sector System", his own published method. Rescue #8. |
+
+**`workflow-automation` and `goal-setting` ship empty from this batch**,
+alongside `git-and-version-control` from batch 07. Vendor channels and
+adjacent-but-not-quite creators were both available; neither was taken.
+
 ## When the obvious handle fails: the fallback search path
 
 A person's obvious handle failing is **not** grounds to drop them. Before

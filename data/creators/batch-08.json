@@ -1,0 +1,445 @@
+[
+  {
+    "id": "carlpullein",
+    "name": "Carl Pullein",
+    "handle": "@carl_pullein",
+    "channelUrl": "https://www.youtube.com/@carl_pullein",
+    "country": "KR",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A time-management author with a named system, weekly output, and an unusual insistence that your calendar tells the truth and your to-do list does not.",
+    "longDescription": "Carl Pullein's channel description sets out his credentials plainly: author of Your Time Your Way, creator of the Time Sector System and the Collect–Organise–Do method, and founder of his own training practice. He has published weekly for years, accumulating over thirteen hundred videos. The recurring argument is a useful corrective to task-management culture — that a to-do list conceals how much time you actually have, that most people are overcommitted without having noticed, and that the fix is a decision about what not to do rather than a better app. Output has gone short, with a hundred and seven of the last two hundred uploads under two minutes and a median of two, but eighty-eight remain in the mid-length band where the reasoning is.",
+    "notFor": "Anyone looking for the newest app. He teaches one system and is fairly insistent about it, and the presentation is plain to the point of dry.",
+    "formatTags": [
+      "tutorial",
+      "shorts",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "task-management-systems",
+        "strength": "primary",
+        "why": "Organises commitments by when they must be done rather than by project or context, which is a genuinely different answer from the usual advice.",
+        "evidence": "Author of a published time-management book and creator of two named systems, taught across a thirteen-hundred-video catalogue including full setups in specific task managers.",
+        "entryVideo": {
+          "title": "The Ultimate Todoist Setup: Filters, Labels, and Time Sectors",
+          "videoId": "1aXKbT8nvrE",
+          "whyThisOne": "The system implemented concretely in a real tool, so you can judge whether it survives contact with your actual work.",
+          "durationMin": 22
+        }
+      },
+      {
+        "id": "prioritization",
+        "strength": "primary",
+        "why": "Argues that the shortage is time rather than organisation, so the only real move is deciding what not to do — and he is specific about how.",
+        "evidence": "Repeated videos on overcommitment and on the gap between a to-do list and available time, consistent with the time-sector approach he authored.",
+        "entryVideo": {
+          "title": "Your To-Do List Is Hiding the Truth About Your Time",
+          "videoId": "I5KMsQdOft0",
+          "whyThisOne": "Twelve minutes on the specific way a task list flatters you, which is the diagnosis before any prioritisation method makes sense.",
+          "durationMin": 12
+        }
+      },
+      {
+        "id": "weekly-review",
+        "strength": "secondary",
+        "why": "Treats the review as the mechanism that keeps a system trustworthy, rather than as an optional extra you drop when busy.",
+        "evidence": "Recurring material on periodic review and on recovering control when commitments have outgrown available time, within his published system.",
+        "entryVideo": {
+          "title": "Are You Overcommitted Without Realising It?",
+          "videoId": "suIaK1_-C4U",
+          "whyThisOne": "The question a review is supposed to answer, asked directly — useful even if you adopt none of his system.",
+          "durationMin": 13
+        }
+      },
+      {
+        "id": "inbox-and-email-systems",
+        "strength": "secondary",
+        "why": "Gives a concrete repeatable routine for emptying an inbox, which pairs usefully with the structural critique rather than replacing it.",
+        "evidence": "Dedicated videos on clearing an inbox to zero as a timed routine, within his published time-management system.",
+        "entryVideo": {
+          "title": "How to Clear Your Entire Inbox in Under 6 Minutes",
+          "videoId": "-RwA6rvRhog",
+          "whyThisOne": "A mechanical routine you can run today, as the practical counterpart to Cal Newport's argument that the problem is structural.",
+          "durationMin": 14
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Sells courses and coaching around his own named systems, and the channel exists partly to do that. Heavily short-form now."
+  },
+  {
+    "id": "calnewport",
+    "name": "Cal Newport",
+    "handle": "@CalNewportMedia",
+    "channelUrl": "https://www.youtube.com/@CalNewportMedia",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "The academic who named deep work, in very long podcast form — arguments about attention and work culture rather than tactics.",
+    "longDescription": "Cal Newport is a computer science professor at Georgetown and the author of Deep Work, Digital Minimalism and A World Without Email, which is unusual grounding for this genre: the ideas most productivity channels repeat second-hand originate here. The channel is his podcast, and the format is demanding — a hundred and seventy-four of the last two hundred uploads run past twenty minutes, with a median of sixty-nine and many past an hour. Nothing is short. The content is argument and listener questions rather than instruction: why attention is structured the way it is, why email became the organising medium of knowledge work, what a deliberately constructed life looks like. You are being reasoned with at length, not given a checklist.",
+    "notFor": "Anyone with less than an hour, or who wants tactics. The ideas are strong; the delivery is a professor talking, and it does not compress.",
+    "formatTags": [
+      "long-form",
+      "q-and-a",
+      "video-essay"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 2,
+      "energy": 1,
+      "selfPromotion": 3,
+      "depth": 4
+    },
+    "signals": [
+      "credentialed",
+      "cites-research",
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "deep-work-and-focus",
+        "strength": "primary",
+        "why": "This is the primary source for the concept everything else in the category is quoting, argued by the person who defined it.",
+        "evidence": "A Georgetown computer science professor and author of Deep Work, publishing extended treatments of concentration and scheduling on his own podcast.",
+        "entryVideo": {
+          "title": "Rules For Deep Work — Updated for 2026 | Cal Newport",
+          "videoId": "nPzFhkTe2Uw",
+          "whyThisOne": "His own framework restated and revised years on, which is more useful than the original because he says what he got wrong.",
+          "durationMin": 64
+        }
+      },
+      {
+        "id": "digital-minimalism",
+        "strength": "primary",
+        "why": "Frames technology use as a set of deliberate decisions about what earns access to your attention, rather than as abstinence.",
+        "evidence": "Author of Digital Minimalism, with sustained podcast material on attention, technology and constructing a deliberate life.",
+        "entryVideo": {
+          "title": "Cultivate A Deep Life: One Idea To Change How You Think About Life In 2025 | Cal Newport",
+          "videoId": "3dad6I146kw",
+          "whyThisOne": "The philosophical case underneath the practical advice, which is what makes any of the tactics stick.",
+          "durationMin": 74
+        }
+      },
+      {
+        "id": "energy-management",
+        "strength": "secondary",
+        "why": "Treats seasonal and weekly rhythm as a design problem, which is a more realistic model than trying to run at one intensity all year.",
+        "evidence": "Episodes on schedule resets and burnout avoidance built around matching demanding work to sustainable rhythms.",
+        "entryVideo": {
+          "title": "The Summer Schedule Reset To Save You From Burnout & Unlock Deep Work",
+          "videoId": "IvgOAUI3sls",
+          "whyThisOne": "A concrete application of the rhythm argument to a real calendar, rather than the theory alone.",
+          "durationMin": 75
+        }
+      },
+      {
+        "id": "time-blocking",
+        "strength": "secondary",
+        "why": "Defends assigning work to specific hours while taking the obvious objection seriously — that a fully blocked calendar can feel like a cage.",
+        "evidence": "A full-length episode arguing the case for time blocking against the charge that it is oppressive, from the author who popularised the practice.",
+        "entryVideo": {
+          "title": "Is Time Blocking Oppressive? - Manage Your Time & Productivity In An Overloaded World | Cal Newport",
+          "videoId": "0FaIW-U2fvE",
+          "whyThisOne": "Argues the method against its strongest criticism rather than selling it, which is the right way to decide whether to adopt it.",
+          "durationMin": 79
+        }
+      },
+      {
+        "id": "inbox-and-email-systems",
+        "strength": "secondary",
+        "why": "Treats email as a structural problem in how knowledge work is organised, not as a personal failure to process messages faster.",
+        "evidence": "Author of A World Without Email, with multiple full episodes on inbox overload and process-centric alternatives to ad-hoc messaging.",
+        "entryVideo": {
+          "title": "The Real Reason You Hate Your Inbox | Deep Questions with Cal Newport",
+          "videoId": "ZyvvKhSeYHQ",
+          "whyThisOne": "Nine minutes — rare on this channel — stating the structural diagnosis before the long-form arguments.",
+          "durationMin": 9
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Extremely long episodes with a lot of listener questions between the ideas. Promotes his books persistently, and his positions on technology are contested."
+  },
+  {
+    "id": "tiagoforte",
+    "name": "Tiago Forte",
+    "handle": "@TiagoForte",
+    "channelUrl": "https://www.youtube.com/@TiagoForte",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "The Second Brain method for organising notes and information, from the person who named it — now heavily oriented toward AI tooling.",
+    "longDescription": "Tiago Forte's stated position is systems over tricks, and his diagnosis is one most people recognise: articles saved and never read, notes taken and never found again, a pile that keeps growing. He has taught his organising method since 2015 and the channel is its main free surface, covering capture, organisation and the discipline of actually retrieving what you saved. Sixty-six of the last two hundred uploads run three to nineteen minutes and thirty-eight run longer, with ninety-six shorts. The important caveat is directional: a large share of recent output is about using language models over a notes archive, which is a genuine development of the idea but means the feed is now substantially about tooling rather than method.",
+    "notFor": "Anyone wanting a lightweight approach. This is a system with named components, and setting it up is itself a project — plus you will be sold the course.",
+    "formatTags": [
+      "tutorial",
+      "long-form",
+      "shorts",
+      "livestream"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 3,
+      "energy": 2,
+      "selfPromotion": 4,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "personal-knowledge-management",
+        "strength": "primary",
+        "why": "Names the actual failure — you save things and never retrieve them — and builds the system around retrieval rather than around capture.",
+        "evidence": "Originator of the Second Brain method, teaching it since 2015, with concrete setups published for specific note applications.",
+        "entryVideo": {
+          "title": "The OFFICIAL Notion Second Brain Setup",
+          "videoId": "9QDu6wpR59o",
+          "whyThisOne": "The method made concrete in a real tool, which is the fastest way to see whether the structure suits how you actually think.",
+          "durationMin": 20
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "A large course business sits behind this and is promoted constantly. Recent uploads lean heavily toward AI tooling rather than the underlying method."
+  },
+  {
+    "id": "mattdavella",
+    "name": "Matt D'Avella",
+    "handle": "@MattDAvella",
+    "channelUrl": "https://www.youtube.com/@MattDAvella",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A filmmaker who helped popularise minimalism and now spends much of his time examining what the movement turned into, including his own part in it.",
+    "longDescription": "Matt D'Avella directed the Netflix documentary Minimalism and built a large channel on the back of it, which makes his current position unusual and useful: a significant share of his recent work interrogates the movement rather than promoting it. Videos ask where the minimalists went, how the idea was absorbed and discarded by wealthy people, and whether he still holds the position after fourteen years — that last one answered honestly rather than rhetorically. A hundred and fifty-eight of the last two hundred uploads run three to nineteen minutes with an eleven-minute median, and the production is genuinely good, which is what you would expect from a filmmaker. The self-experiment format he popularised is still present and is entertainment as much as method.",
+    "notFor": "Anyone wanting a decluttering method. He is more interested in why the idea appealed and what it cost than in telling you what to throw away.",
+    "formatTags": [
+      "video-essay",
+      "documentary",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 2,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "digital-minimalism",
+        "strength": "primary",
+        "why": "Turns the sceptical question on a movement he helped build, which is a far more useful place to start than another list of things to delete.",
+        "evidence": "Director of a widely seen minimalism documentary whose recent catalogue examines what happened to the movement, how it was commercialised, and whether he still holds the position after fourteen years.",
+        "entryVideo": {
+          "title": "Where did all the minimalists go?",
+          "videoId": "gvgZfrIBT4s",
+          "whyThisOne": "Someone who profited from the trend asking what was actually wrong with it — the honest entry point to this category.",
+          "durationMin": 22
+        }
+      }
+    ],
+    "role": "critic",
+    "caveats": "Sells courses on filmmaking and habits. The self-experiment videos are entertainment, and there is little practical method here."
+  },
+  {
+    "id": "leilagharani",
+    "name": "Leila Gharani",
+    "handle": "@LeilaGharani",
+    "channelUrl": "https://www.youtube.com/@LeilaGharani",
+    "country": "AT",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Excel and the Microsoft data stack taught by someone whose stated objection is that this is all made harder than it needs to be.",
+    "longDescription": "Leila Gharani's framing is a complaint that doubles as a method: things get taught more elaborately than they need to be, and her videos try to undo that. Coverage runs across Excel, Power Query, Power BI and Python in Excel, with an increasing amount on how AI tooling changes analytical work. Ninety-six of the last two hundred uploads run three to nineteen minutes and ninety-nine are shorts, with a median of three, so most items are one technique demonstrated cleanly rather than a course. Her strongest material is about correctness rather than tricks — checks an analyst should run before trusting a report, which is the part of spreadsheet work that actually costs money when skipped.",
+    "notFor": "Anyone outside the Microsoft ecosystem, or wanting statistical or database depth; this is spreadsheets and the tools immediately around them.",
+    "formatTags": [
+      "tutorial",
+      "shorts",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 4,
+      "energy": 3,
+      "selfPromotion": 3,
+      "depth": 2
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "spreadsheet-skills",
+        "strength": "primary",
+        "why": "Covers checking your work as well as building it, which is the difference between a spreadsheet that looks right and one that is.",
+        "evidence": "A large Excel and Power Query catalogue including validation routines analysts should run on their own reports, taught in short self-contained demonstrations.",
+        "entryVideo": {
+          "title": "Every Analyst Should Run This Check on Their Excel Report",
+          "videoId": "v85SsD3HMMk",
+          "whyThisOne": "Nine minutes on catching your own errors, which is more valuable than any formula and almost never taught.",
+          "durationMin": 9
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Sells courses and promotes them throughout. Microsoft-only, and a growing share of uploads is AI tooling rather than spreadsheet craft."
+  },
+  {
+    "id": "chandoo",
+    "name": "Chandoo",
+    "handle": "@chandoo_",
+    "channelUrl": "https://www.youtube.com/@chandoo_",
+    "country": "NZ",
+    "language": "en",
+    "sizeBucket": "500k-1M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Long-running Excel and analytics teaching aimed at making you effective at work, including comparisons that admit when the spreadsheet is the wrong tool.",
+    "longDescription": "Chandoo has taught Excel and analytics for well over a decade, and the channel's stated purpose is straightforwardly practical: making you good at your job with Excel, Power BI, SQL and Python. Six hundred videos, and the format sits in a useful middle range — dashboard construction, pivot tables taught in a single sitting, and specific function deep dives. What distinguishes it from the tips genre is a willingness to compare tools against each other and concede the limits of spreadsheets, including head-to-head comparisons of Power Query against Python on the same task. That honesty is rare in a field where the teacher's whole business depends on the tool.",
+    "notFor": "Anyone wanting a structured beginner course; this is a large archive organised by topic, and browsing it without a specific problem is unrewarding.",
+    "formatTags": [
+      "tutorial",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 4,
+      "energy": 3,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "spreadsheet-skills",
+        "strength": "primary",
+        "why": "Teaches spreadsheets as one tool among several and shows where they stop being the right one, which most Excel channels never concede.",
+        "evidence": "A decade-plus Excel and analytics catalogue including direct comparisons of spreadsheet tooling against Python on the same data-cleaning task.",
+        "entryVideo": {
+          "title": "Excel Pivot Tables in 10mins (free workbook)",
+          "videoId": "bERwIzJZ-KA",
+          "whyThisOne": "The single highest-leverage Excel feature, taught in one sitting with a workbook to practise on.",
+          "durationMin": 11
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Sells courses and a membership. Note the name is heavily collided on YouTube — this is `@chandoo_`; `@chandootalks` is a lifestyle vlogger with more uploads."
+  },
+  {
+    "id": "simpletivity",
+    "name": "Simpletivity (Scott Friesen)",
+    "handle": "@Simpletivity",
+    "channelUrl": "https://www.youtube.com/@Simpletivity",
+    "country": "CA",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Tool-by-tool walkthroughs for people drowning in apps, with a consistent argument for consolidating rather than adding.",
+    "longDescription": "Scott Friesen's stated diagnosis is that most people are overwhelmed because their tools are scattered across too many apps, and his aim is consolidation into one system. In practice the channel is a large library of application tutorials — task managers, schedulers, note tools, the productivity software people actually use at work — with a hundred and twelve of the last two hundred uploads running three to nineteen minutes at a five-minute median. It is genuinely useful for evaluating whether a tool will fit before you commit a team to it. The limitation is inherent to the format: this teaches software, not the judgement about what belongs in a system, and app tutorials date as fast as the apps change.",
+    "notFor": "Anyone wanting method rather than tooling. Almost every video is about an application, and the underlying thinking is thin by comparison.",
+    "formatTags": [
+      "tutorial",
+      "shorts"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 0,
+      "practical": 4,
+      "energy": 3,
+      "selfPromotion": 3,
+      "depth": 1
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "task-management-systems",
+        "strength": "secondary",
+        "why": "Shows what a tool actually feels like to use before you migrate your commitments into it, which is the expensive mistake in this category.",
+        "evidence": "A large library of walkthroughs for task, scheduling and note applications, framed around consolidating scattered tools into a single system.",
+        "entryVideo": {
+          "title": "Acuity Scheduling Beginner Guide - Online Booking Tutorial",
+          "videoId": "jnCHSw2JHBw",
+          "whyThisOne": "A representative full walkthrough — watch it to judge the format, not because this is the tool you need.",
+          "durationMin": 21
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Tool tutorials date quickly and many are affiliate-adjacent. Sells courses, and there is little method here beyond the software."
+  }
+]

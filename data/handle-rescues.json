@@ -128,6 +128,29 @@
         "handle @eddiewoo: name matches but nothing ties this channel to the person — a name match is not an identity match"
       ],
       "recordedAt": "2026-09-01"
+    },
+    {
+      "name": "Carl Pullein",
+      "resolvedHandle": "@carl_pullein",
+      "channelId": "UCE_lTvaMHuco_Oh3-69LkCA",
+      "handlesTried": [
+        "@CarlPullein"
+      ],
+      "winningQuery": "Carl Pullein Time Sector System",
+      "gateEvidence": [
+        "affiliation in channel description/title: Time Sector System, Pullein"
+      ],
+      "failedBecause": [
+        "handle @CarlPullein: no name or affiliation evidence found",
+        "search \"Carl Pullein Pullein\": no name or affiliation evidence found",
+        "search \"Carl Pullein official channel\": no name or affiliation evidence found"
+      ],
+      "otherCandidatesConsidered": [
+        "@perfectboy1445 (Carl Pullein, score 5)",
+        "@acrdigital4483 (ACR Digital, score 1)",
+        "@fatpoke (FATPOKE, score 1)"
+      ],
+      "recordedAt": "2026-09-02"
     }
   ]
 }
