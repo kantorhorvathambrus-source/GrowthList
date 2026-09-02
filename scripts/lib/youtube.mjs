@@ -434,6 +434,14 @@ export function identityMatch(channel, { name, affiliations = [], uploadTitles =
   };
 }
 
+/**
+ * Below this many uploads, a channel is not somebody's working presence — it
+ * is a placeholder, a squatted handle, or an abandoned second account. Real
+ * cases hit in this project: @SeanNalewanyj (2), @AndyStapleton (2),
+ * @eddiewoo (4), @CarlPullein (1), @JamesClear (5).
+ */
+const MIN_CREDIBLE_UPLOADS = 10;
+
 /** search.list for channels. 100 quota units — a fallback, never the first move. */
 export async function searchChannels(query, { max = 5 } = {}) {
   const data = await api('search', { part: 'snippet', type: 'channel', q: query, maxResults: Math.min(max, 25) });
@@ -466,6 +474,9 @@ export async function searchChannels(query, { max = 5 } = {}) {
  */
 export async function resolveCreator({ name, handles = [], affiliations = [], sampleUploads = 12 } = {}) {
   const attempts = [];
+  // Handle-path matches too small to be someone's working channel. Kept as
+  // candidates so they are ranked against whatever the search turns up.
+  const thin = [];
 
   const check = async (channel, how) => {
     let uploadTitles = [];
@@ -504,11 +515,29 @@ export async function resolveCreator({ name, handles = [], affiliations = [], sa
       continue;
     }
     const gate = await check(channel, `handle ${handle}`);
-    if (gate.ok) return { channel, path: 'handle', query: handle, gate, attempts, rescued: false };
+    if (!gate.ok) continue;
+
+    // A passing handle with almost no uploads is not an answer. Handle
+    // squatters and abandoned placeholders clear the gate on name and
+    // affiliation while the person's real channel sits elsewhere: the obvious
+    // @SeanNalewanyj has two videos, @AndyStapleton has two, @eddiewoo has
+    // four. Treat a near-empty match as a candidate and keep looking, rather
+    // than returning early and never running the search at all.
+    if ((channel.videoCount ?? 0) < MIN_CREDIBLE_UPLOADS) {
+      attempts.push({
+        how: `handle ${handle}`,
+        ok: false,
+        reason: `passed the identity gate but has only ${channel.videoCount} uploads — ` +
+                'too few to be a working channel, so the search continues',
+      });
+      thin.push({ channel, gate, query: handle });
+      continue;
+    }
+    return { channel, path: 'handle', query: handle, gate, attempts, rescued: false };
   }
 
-  // Path 2. Everything above failed or failed the gate.
-  const passing = [];
+  // Path 2. Everything above failed, failed the gate, or was too thin to trust.
+  const passing = [...thin];
   const queries = [
     ...affiliations.map((a) => `${name} ${a}`),
     `${name} official channel`,

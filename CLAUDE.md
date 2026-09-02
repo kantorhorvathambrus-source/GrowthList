@@ -276,27 +276,28 @@ in `categories.json`-derived output with a computed creator `count`.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research). **Batches 01–08 are
+- **Current phase**: Phase 2 (creator research). **Batches 01–09 are
   written, gated, validated and committed.** Phases 0, 1, 3-tooling, 4
   and 5 are done. Phase 6 is deliberately not started.
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
-- **Creator count: 91 of 700.** 01=16, 02=14, 03=21, 04=11, 05=6, 06=4,
-  07=12, 08=7. Every entry video passed the attribution gate.
-- **69 of 200 categories populated.** First pass complete:
+- **Creator count: 99 of 700.** 01=16, 02=14, 03=21, 04=11, 05=6, 06=4,
+  07=12, 08=7, 09=8. Every entry video passed the attribution gate.
+- **83 of 200 categories populated.** First pass complete:
   communication 13/13, creativity 14/14, learning 12/12, mindset 12/13,
-  programming 13/14, productivity 10/12.
-- **Deliberately empty categories** (candidate existed, was rejected):
-  `git-and-version-control` and `workflow-automation` — vendor channels
-  only; `goal-setting` — nothing researched supports it yet. These are
-  not oversights; see `UNVERIFIED.md`.
-- **Untouched domains**: fitness, health, career, money, business,
-  marketing, tech, relationships, practical, philosophy.
-- **`node scripts/coverage-report.mjs`** prints critic coverage and the
-  rescue list. Run it before every check-in.
-- **Critics: 10 of 69 populated categories** (Matt D'Avella added
-  digital-minimalism). The rest are unfinished, not documented gaps.
-- **Affiliation fallback ledger: 8 rescues, 3 wrong answers, 0 wrong
-  answers written.** Never record an ambiguous or scale-mismatched hit.
+  programming 13/14, productivity 10/12. **Fitness is 8/14 — not
+  finished**: powerlifting, running, mobility-and-flexibility, yoga,
+  boxing-and-striking and home-workouts still have nobody.
+- **Deliberately empty** (candidate found, rejected on principle):
+  `git-and-version-control`, `workflow-automation` (vendor channels
+  only), `goal-setting`. See `UNVERIFIED.md`.
+- **Untouched domains**: health, career, money, business, marketing,
+  tech, relationships, practical, philosophy.
+- **Critics: 13 of 83 populated categories.** Barbell Medicine added
+  strength-training and hypertrophy-training in batch 09 — physicians
+  whose output is largely named myth correction. The remaining 70 are
+  unfinished, not documented gaps.
+- **Affiliation fallback ledger: 9 rescues, 3 wrong answers, 0 wrong
+  answers written.**
 
 ### Immediate next actions
 
@@ -439,6 +440,17 @@ note that contradicts your own data is worse than no note.
 Every rescue — every case where path 2 found what path 1 missed — is
 appended to `data/handle-rescues.json` with `--record`, so the miss rate
 of the cheap path is measurable rather than assumed.
+
+**A near-empty channel that passes the gate is not an answer.**
+`resolveCreator` treats any handle-path match with fewer than
+`MIN_CREDIBLE_UPLOADS` (10) uploads as a candidate rather than a result,
+and keeps searching. This was found the hard way: `@SeanNalewanyj` has
+**two** uploads, cleared the identity gate on name and affiliation, and
+was returned as a confident match while his real 672-upload channel sat
+at `@sean_nalewanyj`. The same shape recurs constantly — `@AndyStapleton`
+(2), `@eddiewoo` (4), `@CarlPullein` (1), `@JamesClear` (5). Handle
+squatters and abandoned accounts pass identity checks precisely because
+they are named after the person.
 
 **Affiliation terms must be distinctive proper nouns.** A book title, a
 firm, a surname — not a topic word and not a job title. This is not

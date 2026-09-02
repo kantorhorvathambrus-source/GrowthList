@@ -143,6 +143,37 @@ hand-verification because the search returned ambiguous rankings.
 alongside `git-and-version-control` from batch 07. Vendor channels and
 adjacent-but-not-quite creators were both available; neither was taken.
 
+### Batch 09 — fitness (first pass, 8 of 14 categories)
+
+Handle traps found this batch, all with near-empty channels standing in
+front of the real ones:
+
+| Handle tried | What it actually is | Real channel |
+| --- | --- | --- |
+| `@SeanNalewanyj` | 2 uploads | `@sean_nalewanyj`, 672 uploads |
+| `@TonyJeffries` | 3 uploads | `@tony_jeffries`, 1,212 uploads |
+| `@DrIdz` | "Mvnko", 0 uploads | not resolved — exclusion stands |
+| `@precisionstriking` | 0 uploads | not resolved |
+| `@KeenanOnline` | 13 uploads | not resolved |
+
+Two results the resolver refused to hand over, correctly:
+
+- **Tony Jeffries** — `@tony_jeffries` (1,212 uploads, English) tied with
+  `@tonyjeffrieshindi` (277 uploads, Hindi). Flagged ambiguous rather
+  than picked. The Hindi channel would fail rule 5 regardless.
+- **Magnus Midtbø** — the affiliation search ranked his real channel
+  `@magmidt` (481 uploads) **last**, below unrelated climbing channels,
+  because the affiliations supplied were topic words. A live
+  demonstration of the affiliation-quality rule in CLAUDE.md: "climbing"
+  is not an identifier. Not recorded; needs a re-run with a distinctive
+  term.
+
+**Fitness is 8 of 14 categories, not complete.** Still empty:
+`powerlifting`, `running`, `mobility-and-flexibility`, `yoga`,
+`boxing-and-striking`, `home-workouts`. Candidates exist and were
+probed; they simply were not researched in this batch. That is
+unfinished work, not a documented gap.
+
 ## When the obvious handle fails: the fallback search path
 
 A person's obvious handle failing is **not** grounds to drop them. Before

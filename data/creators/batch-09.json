@@ -1,0 +1,460 @@
+[
+  {
+    "id": "jeffnippard",
+    "name": "Jeff Nippard",
+    "handle": "@JeffNippard",
+    "channelUrl": "https://www.youtube.com/@JeffNippard",
+    "country": "CA",
+    "language": "en",
+    "sizeBucket": "5M-20M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "The largest of the science-referencing lifting channels — a competing lifter with a biochemistry degree who now also publishes on the limits of that framing.",
+    "longDescription": "Jeff Nippard describes himself as a natural bodybuilder and powerlifter with a biochemistry degree and twenty years of training, and the channel is built on translating training research into programming decisions: which exercises for a given muscle, how to structure a gaining phase, what the literature does and does not support. Output is now dominated by short clips, with a hundred and thirty-six of the last two hundred uploads under two minutes and a median of one, so the substantive material is a minority of the feed. The most interesting recent development is self-directed: a video conceding problems with the science-based lifting genre he helped popularise, which is a rarer move than another study review.",
+    "notFor": "Anyone wanting a beginner's starting point rather than optimisation. Much of this concerns marginal gains that matter only once the basics are consistent.",
+    "formatTags": [
+      "shorts",
+      "tutorial",
+      "long-form",
+      "video-essay"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 4,
+      "depth": 3
+    },
+    "signals": [
+      "credentialed",
+      "cites-research",
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "hypertrophy-training",
+        "strength": "primary",
+        "why": "Turns training research into specific exercise and programming choices rather than leaving it as interesting findings.",
+        "evidence": "A competing natural bodybuilder with a biochemistry degree, publishing exercise-selection and programming videos that cite training literature, plus a self-critical piece on the science-based genre.",
+        "entryVideo": {
+          "title": "The Best & Worst Glute Exercises (According To Science)",
+          "videoId": "3ryh7PNhz3E",
+          "whyThisOne": "The channel's standard format on one muscle group — enough to judge how he handles evidence before trusting the rest.",
+          "durationMin": 14
+        }
+      },
+      {
+        "id": "strength-training",
+        "strength": "secondary",
+        "why": "Covers the gaining and loading decisions around a strength programme, from someone who competes in powerlifting as well as bodybuilding.",
+        "evidence": "Programming videos on structuring gaining phases and load progression, from a lifter who competes in both powerlifting and natural bodybuilding.",
+        "entryVideo": {
+          "title": "How To Bulk Like A Pro (Using Science)",
+          "videoId": "OqRvmJ2eyBA",
+          "whyThisOne": "The decisions that surround the training rather than the training itself, which is where most people actually go wrong.",
+          "durationMin": 13
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Sells training programmes and promotes an app persistently. Now overwhelmingly short-form, and the optimisation framing can imply precision that the underlying research does not support."
+  },
+  {
+    "id": "barbellmedicine",
+    "name": "Barbell Medicine",
+    "handle": "@barbellmedicine",
+    "channelUrl": "https://www.youtube.com/@barbellmedicine",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Physicians who lift, spending much of their time dismantling the claims the rest of the fitness industry repeats.",
+    "longDescription": "Barbell Medicine describes itself as the integration of medicine, lifestyle modification and strength training, and its distinguishing habit is going after specific popular claims rather than offering an alternative programme. Recent output includes named takedowns — the set-point myth in weight regulation, the cortisol myth in menopause — alongside plain-language explanations of large training studies and of what detraining actually costs you. A hundred of the last two hundred uploads are shorts and thirty-seven run past twenty minutes, where the argument lives. The register is clinical and unexcited, which is the point: this is the corrective to a field where confident claims travel faster than the evidence behind them.",
+    "notFor": "Anyone wanting a programme handed over, or motivation. They will more often tell you a question is unsettled than give you a number.",
+    "formatTags": [
+      "video-essay",
+      "long-form",
+      "shorts",
+      "interview"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 4,
+      "practical": 3,
+      "energy": 1,
+      "selfPromotion": 3,
+      "depth": 4
+    },
+    "signals": [
+      "credentialed",
+      "cites-research",
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "strength-training",
+        "strength": "primary",
+        "why": "Reads the actual training literature and reports what it supports, including when the answer is less certain than the industry implies.",
+        "evidence": "Physicians publishing explanations of large resistance-training studies and of detraining effects, alongside named myth corrections in adjacent health topics.",
+        "entryVideo": {
+          "title": "The Biggest Resistance-Training Study in 17 Years, Explained",
+          "videoId": "WHbJS4gBdQI",
+          "whyThisOne": "One major study explained properly, which shows how they handle evidence better than any summary of their views could.",
+          "durationMin": 11
+        }
+      },
+      {
+        "id": "hypertrophy-training",
+        "strength": "secondary",
+        "why": "Corrects the confident numbers that circulate about muscle gain and loss, which is the most common source of wasted training decisions.",
+        "evidence": "Videos on detraining and muscle memory, and on what actually determines bodyweight, framed explicitly against widely repeated myths.",
+        "entryVideo": {
+          "title": "How Fast Do You Lose Muscle? Detraining and Muscle Memory",
+          "videoId": "hAEk1l5jEPY",
+          "whyThisOne": "Answers a question almost everyone has been given a wrong confident answer to, and shows the working.",
+          "durationMin": 12
+        }
+      }
+    ],
+    "role": "critic",
+    "caveats": "Sells coaching, programming and seminars. Small channel, dry delivery, and heavily short-form — the long-form material takes finding."
+  },
+  {
+    "id": "fitnessfaqs",
+    "name": "FitnessFAQs (Daniel Vadnal)",
+    "handle": "@FitnessFAQs",
+    "channelUrl": "https://www.youtube.com/@FitnessFAQs",
+    "country": "AU",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Calisthenics taught by a physiotherapist, with an unusual willingness to say a popular skill is a bad idea for most people.",
+    "longDescription": "The channel's own description is four words of substance — hybrid calisthenics with a physiotherapist — and that combination is the reason to watch. Bodyweight training online is dominated by skill demonstrations; here the framing is progression and joint safety, including videos arguing that a widely chased skill like the one-arm pull-up carries risk that most people training toward it have not considered. Coverage runs through pull-up variations, alternatives when a movement is not available, and the shoulder work that makes the rest possible. Output has gone heavily short — a hundred and sixty-four of the last two hundred uploads are under two minutes — so the teaching sits in a minority of the feed.",
+    "notFor": "Anyone wanting barbell strength work, or wanting to be told that any skill is achievable if you just train hard enough.",
+    "formatTags": [
+      "shorts",
+      "tutorial",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "credentialed",
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "calisthenics",
+        "strength": "primary",
+        "why": "Treats bodyweight skills as a progression with a joint cost, rather than as feats to attempt — which is the difference between training for years and getting injured in months.",
+        "evidence": "A physiotherapist publishing calisthenics progressions, movement alternatives and explicit cautions about the risks of commonly chased skills.",
+        "entryVideo": {
+          "title": "The Problem With One Arm Pull-Ups Is Dangerous",
+          "videoId": "oHqAwhhnUxg",
+          "whyThisOne": "Argues against the goal most calisthenics content sells you, from someone qualified to assess the risk.",
+          "durationMin": 9
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Overwhelmingly short-form now. Sells programmes, and the physiotherapy framing is used commercially as well as clinically."
+  },
+  {
+    "id": "e3rehab",
+    "name": "E3 Rehab",
+    "handle": "@E3Rehab",
+    "channelUrl": "https://www.youtube.com/@E3Rehab",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Physical therapists publishing structured rehabilitation protocols and correcting the myths that keep people afraid to load an injury.",
+    "longDescription": "E3 Rehab is run by Doctors of Physical Therapy whose stated approach is evidence-based education about rehabilitation, pain and injury risk. The long-form material is genuinely protocol-shaped rather than tip-shaped: full rehabilitation sequences for a region, criteria for returning to sport after specific injuries, and myth correction on conditions people are routinely frightened about. That last part matters, because fear of movement after an injury does more lasting damage than most of the injuries. A hundred and twenty-two of the last two hundred uploads are shorts and thirty-one run past twenty minutes. Nothing here replaces assessment by someone who can see you.",
+    "notFor": "Anyone with an undiagnosed or acute injury. This is education about categories of problem, not advice about yours, and they say so.",
+    "formatTags": [
+      "tutorial",
+      "long-form",
+      "shorts"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 4,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "credentialed",
+      "cites-research",
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "injury-rehab",
+        "strength": "primary",
+        "why": "Gives return-to-activity criteria rather than a timeline, which is what actually determines whether you re-injure yourself.",
+        "evidence": "Doctors of Physical Therapy publishing full rehabilitation protocols and named criteria for returning to sport after specific injuries.",
+        "entryVideo": {
+          "title": "How To Return Back To Sport After An Injury (ACL, Meniscus, MCL, Ankle Sprain)",
+          "videoId": "sKZcTjlxk-Q",
+          "whyThisOne": "The decision everyone gets wrong by guessing, handled with criteria instead of a number of weeks.",
+          "durationMin": 20
+        }
+      },
+      {
+        "id": "back-pain-management",
+        "strength": "primary",
+        "why": "Treats back pain with graded loading and education rather than protection, and dismantles the imaging-and-fragility story most people arrive with.",
+        "evidence": "A dedicated long-form lower-back rehabilitation video covering exercises, education, myths and prevention, from practising physical therapists.",
+        "entryVideo": {
+          "title": "Lower Back Pain Rehab (Exercises | Education | Myths | Prevention)",
+          "videoId": "x71Y5ijW4DU",
+          "whyThisOne": "The whole picture in one place — what to do, what to stop believing, and why loading is the treatment rather than the risk.",
+          "durationMin": 21
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Sells programmes and consultations. Heavily short-form, and general education can never substitute for an assessment of your specific injury."
+  },
+  {
+    "id": "dylanjohnsoncycling",
+    "name": "Dylan Johnson",
+    "handle": "@DylanJohnsonCycling",
+    "channelUrl": "https://www.youtube.com/@DylanJohnsonCycling",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Endurance training explained from the research by a racing cyclist and coach, including what he has changed his mind about.",
+    "longDescription": "Dylan Johnson races and coaches, and the channel's method is consistent: take a training question, go to the exercise-physiology literature, and report what it supports. A hundred and fifty-seven of the last two hundred uploads run three to nineteen minutes with a thirteen-minute median, so the format is a focused argument rather than a vlog. Subjects include the training distribution debates, what the Norwegian endurance programme actually does differently, and whether hard training carries a long-term health cost. He also publishes reviews of his own previous training decisions and what went wrong, which is a useful antidote to a genre that mostly reports successes.",
+    "notFor": "Anyone wanting bike handling, mechanics or gear reviews as the main event; this is training physiology, and it assumes you already ride.",
+    "formatTags": [
+      "video-essay",
+      "tutorial",
+      "long-form"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "cites-research",
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "cycling",
+        "strength": "primary",
+        "why": "Answers training questions from the physiology literature rather than from what fast riders happen to do, and says when the evidence is thin.",
+        "evidence": "A racing cyclist and coach publishing research-led analyses of training distribution, national training methods and long-term training effects.",
+        "entryVideo": {
+          "title": "Why Does Norway Have So Many of the World's Best Endurance Athletes? The Norwegian Training Method",
+          "videoId": "bY9KzphtnSA",
+          "whyThisOne": "A concrete case where the method is unusual and well documented, which makes the reasoning easy to follow and to test.",
+          "durationMin": 18
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Sells coaching and training plans. The research framing can imply more certainty than endurance science actually offers, and gear content is creeping in."
+  },
+  {
+    "id": "effortlessswimming",
+    "name": "Effortless Swimming (Brenton Ford)",
+    "handle": "@EffortlessSwimming",
+    "channelUrl": "https://www.youtube.com/@EffortlessSwimming",
+    "country": "AU",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Freestyle technique analysed on video with real swimmers, from a coaching operation that has worked with thousands of them.",
+    "longDescription": "The channel's stated basis is what they have learned coaching hundreds of athletes online and thousands more at clinics, and that shows in the format: technique explained against footage of actual swimmers, including the errors, rather than a demonstration by someone already excellent. The focus is freestyle mechanics — catch, arm recovery, body position, breathing — which is the stroke almost everyone needs and the one where small changes produce large efficiency gains. A hundred and sixty-four of the last two hundred uploads are under two minutes with a median of one, so the substantive coaching is a small share of the feed and includes long technical conversations with specialist coaches.",
+    "notFor": "Anyone wanting a beginner's learn-to-swim course, or coverage of strokes other than freestyle in any depth.",
+    "formatTags": [
+      "shorts",
+      "tutorial",
+      "long-form",
+      "interview"
+    ],
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "swimming-technique",
+        "strength": "primary",
+        "why": "Analyses real swimmers on video rather than demonstrating a perfect stroke, so you can see the errors you are likely making.",
+        "evidence": "A coaching operation publishing freestyle mechanics breakdowns from clinic and online-coaching work with large numbers of swimmers, including technical sessions with specialist coaches.",
+        "entryVideo": {
+          "title": "How To Swim Freestyle With (Almost) Zero Effort",
+          "videoId": "LeWgL5rHldo",
+          "whyThisOne": "The efficiency argument stated whole, which is the frame the rest of the technique work only makes sense inside.",
+          "durationMin": 14
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Sells clinics, camps and online coaching, which most videos route toward. Now heavily short-form, and freestyle-dominated."
+  },
+  {
+    "id": "chewjitsu",
+    "name": "Chewjitsu (Nick Albin)",
+    "handle": "@Chewjitsu",
+    "channelUrl": "https://www.youtube.com/@Chewjitsu",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Brazilian jiu-jitsu technique and, unusually, the training culture around it — including how to survive being a beginner.",
+    "longDescription": "Chewjitsu covers grappling technique and the lifestyle around training, and its distinguishing feature is how much attention goes to the non-technical problems: what to do about training partners who go too hard, the ego traps coaches fall into, how to keep training as you get older. A hundred and fifty-six of the last two hundred uploads run three to nineteen minutes at a seven-minute median, so the format is a focused answer rather than a full seminar. Technical content is organised around what a beginner actually needs — escapes before submissions, positions before flashy sequences — which is the correct order and not the order most jiu-jitsu content follows.",
+    "notFor": "Anyone wanting competition-level systems or a structured curriculum; this is a large archive of individual answers, not a syllabus.",
+    "formatTags": [
+      "tutorial",
+      "long-form",
+      "shorts"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 0,
+      "practical": 4,
+      "energy": 3,
+      "selfPromotion": 3,
+      "depth": 2
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "brazilian-jiu-jitsu",
+        "strength": "primary",
+        "why": "Teaches escapes and survival before submissions, and takes the social side of a gym seriously — both of which decide whether a beginner keeps training.",
+        "evidence": "A large grappling catalogue ordered around beginner needs, including escape sequences, guard strategy for older trainees, and material on training-partner and coaching culture.",
+        "entryVideo": {
+          "title": "The First 5 Mount Escapes You Need to Know in BJJ",
+          "videoId": "Kcn78sJtPpo",
+          "whyThisOne": "The single position beginners spend the most time stuck under, with the escapes in the order you will need them.",
+          "durationMin": 10
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Sells instructional courses and a membership. Nothing here is evidence-based in any formal sense — it is one experienced coach's judgement."
+  },
+  {
+    "id": "hoopersbeta",
+    "name": "Hooper's Beta",
+    "handle": "@HoopersBeta",
+    "channelUrl": "https://www.youtube.com/@HoopersBeta",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Climbing training and injury rehabilitation, with a habit of actually testing the equipment claims rather than repeating them.",
+    "longDescription": "The channel's stated aim is a free library of training and injury-rehabilitation videos for climbers, and it delivers on the rehabilitation half more seriously than most sport channels manage — finger and tendon injuries are the defining problem of climbing, and they are treated clinically here. The training material has an unusual empirical streak: rather than reviewing a device on receipt, they have published results from testing finger-training equipment over months and reported where their opinions changed. Eighty-nine of the last two hundred uploads run three to nineteen minutes and thirty-five run past twenty, with a median of nine. Nothing new since May 2026.",
+    "notFor": "Non-climbers, and anyone wanting movement coaching on rock; the emphasis is training load and injury rather than technique outdoors.",
+    "formatTags": [
+      "tutorial",
+      "long-form",
+      "video-essay"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 3
+    },
+    "signals": [
+      "credentialed",
+      "cites-research",
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "rock-climbing",
+        "strength": "primary",
+        "why": "Tests the training claims over months and reports when the results changed their minds, in a sport where equipment marketing usually goes unchallenged.",
+        "evidence": "A climbing training and rehabilitation library including multi-month testing of finger-training devices and comparative assessment of training boards.",
+        "entryVideo": {
+          "title": "180 Days Testing Changed Our Opinions on Finger Training Devices",
+          "videoId": "THWbPtbh3lY",
+          "whyThisOne": "A conclusion reached by testing and then revised, which tells you more about how to trust the channel than any single training tip.",
+          "durationMin": 9
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Nothing new since May 2026. Climbing-specific, and the injury content is education rather than a substitute for assessment."
+  }
+]
