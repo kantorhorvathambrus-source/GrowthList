@@ -276,34 +276,26 @@ in `categories.json`-derived output with a computed creator `count`.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research). **Batches 01–04 are
+- **Current phase**: Phase 2 (creator research). **Batches 01–06 are
   written, gated, validated and committed.** Phases 0, 1, 3-tooling, 4
   and 5 are done. Phase 6 is deliberately not started.
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, working on `main`.
-  Not to be confused with `kantorhorvathambrus-source/mancsterapia`.
-- **Creator count: 61 of 700.** 01 = 16 (communication), 02 = 14
-  (communication), 03 = 21 (creativity), 04 = 10 (learning). All 99
-  entry videos passed the attribution gate.
-- **Domains populated on a first pass**: communication 13/13, creativity
-  14/14, learning 11/12. The single gap is `exam-preparation` — no
-  researched candidate supports it; target it in batch 05. 160 of 200
-  categories still have no creators. Next: mindset, then the rest.
-- **Critics: 6 of 40 populated categories have one.** Benjamin Keep (a
-  cognitive scientist who argues against popular learning claims) added
-  three in batch 04 — memory-techniques, deliberate-practice,
-  reading-habit. Rule 11 governs the rest: where none credible exists,
-  the category ships without one and the gap is documented in
-  `data/critic-gaps.json`. **Flag the critic position at every check-in.**
-- **The affiliation-search fallback is now part of the flow** and has
-  rescued 7 people so far (`data/handle-rescues.json`), 2 of them during
-  batch 04's normal research: Andy Stapleton (`@AndyStapleton` has 2
-  videos; the real channel is `@drandystapleton` with 774) and Eddie Woo
-  (`@eddiewoo` has 4; `@misterwootube` has 5,042).
-- **Open question for the owner** (raised in `UNVERIFIED.md`): rule 5's
-  English-only requirement excludes immersion channels that teach a
-  language *in* that language, such as Dreaming Spanish. For
-  `language-learning` specifically this may cut out the strongest
-  resources. Applied as written; flagged for a decision.
+- **Creator count: 72 of 700.** 01=16, 02=14, 03=21, 04=11, 05=6, 06=4.
+  All entry videos passed the attribution gate. Nothing written from
+  memory.
+- **51 of 200 categories populated.** Communication 13/13, creativity
+  14/14, learning 12/12, mindset 12/13 (cognitive-biases still thin).
+  Remaining domains untouched: fitness, health, career, money, business,
+  marketing, tech, programming, productivity, relationships, practical,
+  philosophy.
+- **`node scripts/coverage-report.mjs`** prints the critic-coverage
+  table and the full rescue list. Run it before every owner check-in
+  rather than counting by hand.
+- **Critics: 8 of 51 populated categories.** 43 still open — meaning
+  unfinished, not decided. Rule 11's documented-gap route applies only
+  once the search is actually done.
+- **Affiliation fallback: 7 rescues recorded.** It has also produced
+  false positives (see below), so ambiguous results are never recorded.
 
 ### Immediate next actions
 
@@ -446,6 +438,18 @@ note that contradicts your own data is worse than no note.
 Every rescue — every case where path 2 found what path 1 missed — is
 appended to `data/handle-rescues.json` with `--record`, so the miss rate
 of the cheap path is measurable rather than assumed.
+
+**Affiliation terms must be distinctive proper nouns.** A book title, a
+firm, a surname — not a topic word and not a job title. This is not
+style advice; generic terms break the fallback in both directions at
+once. "clinical psychologist" matched two upload titles on an unrelated
+channel and resolved "Julie Smith" to the wrong person. "narcissism"
+matched eleven channels, most of them clip farms reuploading the real
+creator's content, while her own channel says "narcissistic
+relationships" and so failed the substring entirely. Both were caught
+before anything was written, and the resolver now ranks candidates and
+refuses to record an ambiguous winner — but a bad affiliation still
+wastes 100 quota units per query and produces a list you cannot use.
 
 **Titles drift; re-gate before release.** Between two `gate-check` runs
 a few days apart, Charisma on Command renamed video `-pkR_NCptqg` from

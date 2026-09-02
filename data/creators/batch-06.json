@@ -1,0 +1,178 @@
+[
+  {
+    "id": "refugeingrief",
+    "name": "Megan Devine",
+    "handle": "@refugeingrief",
+    "channelUrl": "https://www.youtube.com/@refugeingrief",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A therapist and author on grief who rejects the stages-and-recovery framing outright, and talks about the parts nobody warns you about.",
+    "longDescription": "Megan Devine is a therapist and best-selling author whose position on grief is a corrective to almost everything else in the genre: that grief is not a problem to be solved and that most support fails because it treats it as one. The channel follows from that. Rather than stages or timelines, the videos handle specific and often unspoken experiences — the guilt and regret that arrive with loss, anger as an ordinary part of it, emotional numbness treated as something other than denial, how to grieve someone you barely knew, whether to grieve publicly online. A hundred and three of a hundred and seventy-five videos run three to nineteen minutes with a median of four. The register is direct and unsentimental, which is unusual and, for many people, the point.",
+    "notFor": "Anyone looking for a process to move through, a timeline, or reassurance that this ends. She argues explicitly against that framing.",
+    "formatTags": ["tutorial", "shorts", "long-form"],
+    "level": ["beginner", "intermediate"],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 3,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 3
+    },
+    "signals": ["credentialed", "practitioner", "sells-course"],
+    "categories": [
+      {
+        "id": "grief-and-loss",
+        "strength": "primary",
+        "why": "Names the specific experiences people are most ashamed of — anger, numbness, relief, grieving someone barely known — rather than offering a sequence to complete.",
+        "evidence": "A therapist and published author on grief whose catalogue addresses named aspects of loss individually, from a stated position against the stages-and-recovery model.",
+        "entryVideo": {
+          "title": "Grief's Dirty Little Secret: Anger",
+          "videoId": "IJ2tqUEKHIQ",
+          "whyThisOne": "Anger is the part people most often think means something is wrong with them, and this is the clearest correction of that.",
+          "durationMin": 14
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Sells books, courses and training. Small channel with a slow upload rate — the latest video here is from late 2025."
+  },
+  {
+    "id": "examstudyexpert",
+    "name": "Exam Study Expert (William Wadsworth)",
+    "handle": "@ExamStudyExpert",
+    "channelUrl": "https://www.youtube.com/@ExamStudyExpert",
+    "country": "GB",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Exam technique built on learning science rather than study aesthetics — the rare channel here that treats sitting an exam as its own distinct skill.",
+    "longDescription": "The channel's stated basis is the science of learning and memory applied to exams specifically: retrieval practice, spacing, and the psychology of performing on the day rather than merely knowing the material. That distinction is what makes it worth including — most study content teaches learning and assumes the exam takes care of itself. Eighty-five of the last two hundred uploads run past twenty minutes, largely podcast episodes including interviews with people whose work is high-pressure performance, and twenty-eight sit in the mid-length band. It is a small channel with a modest production budget, and the podcast format means a fair amount of conversation around each idea rather than a tight lesson.",
+    "notFor": "Anyone not sitting exams. The material is genuinely exam-specific, and outside that context most of it does not transfer.",
+    "formatTags": ["long-form", "interview", "tutorial", "shorts"],
+    "level": ["beginner", "intermediate", "advanced"],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": ["credentialed", "cites-research", "sells-course"],
+    "categories": [
+      {
+        "id": "exam-preparation",
+        "strength": "primary",
+        "why": "Treats performing under exam conditions as a separate skill from knowing the material, which is the gap that catches out people who revised properly and still underperformed.",
+        "evidence": "A catalogue explicitly grounded in learning and memory research applied to exam technique, including dedicated material on exam pressure and psychological preparation.",
+        "entryVideo": {
+          "title": "5 Mindset Shifts That Make Exams Less Stressful (A Psychologist Explains)",
+          "videoId": "YyxHwTeD_vI",
+          "whyThisOne": "Ten minutes on the performance half of the problem, which is the part revision timetables never address.",
+          "durationMin": 10
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Sells coaching and courses. Small channel, podcast-heavy, so ideas arrive wrapped in a lot of conversation."
+  },
+  {
+    "id": "perfectionismproject",
+    "name": "Sam Laura Brown",
+    "handle": "@perfectionismproject",
+    "channelUrl": "https://www.youtube.com/@perfectionismproject",
+    "country": "AU",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A long-running podcast on perfectionism specifically, strongest on why standard productivity advice fails perfectionists — now aimed largely at business owners.",
+    "longDescription": "Sam Laura Brown describes herself as a mindset coach for perfectionists, and the channel is the video arm of a podcast that has run to more than six hundred episodes. Its useful contribution is precision about a failure mode: the stop-start cycle, expecting results without the work, and — the sharpest of them — why the standard procrastination tips do not work when the underlying problem is perfectionism rather than laziness. That is a genuinely different diagnosis, and almost nothing else in this dataset makes it. A hundred and twenty-four of the last two hundred uploads run three to nineteen minutes and seventy-one run longer. The framing has drifted toward business owners and her coaching programme, so a fair share of recent episodes assume you are running a company.",
+    "notFor": "Anyone who wants research rather than a coach's framework, or who is not a business owner — recent episodes increasingly assume you are.",
+    "formatTags": ["long-form", "interview", "tutorial"],
+    "level": ["beginner", "intermediate"],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 3,
+      "energy": 2,
+      "selfPromotion": 4,
+      "depth": 2
+    },
+    "signals": ["practitioner", "sells-course"],
+    "categories": [
+      {
+        "id": "perfectionism",
+        "strength": "primary",
+        "why": "Diagnoses the stop-start cycle as perfectionism rather than as a discipline problem, which changes what you should do about it entirely.",
+        "evidence": "A six-hundred-episode podcast dedicated to perfectionism, including episodes on the stop-start cycle and on why standard procrastination advice fails perfectionists.",
+        "entryVideo": {
+          "title": "Ep 599: Procrastination Tips That Don't Work For Perfectionists // The Perfectionism Project Podcast",
+          "videoId": "-LT4v4LFN5c",
+          "whyThisOne": "Directly contradicts the procrastination advice elsewhere on this site, for a specific reason — worth watching against it.",
+          "durationMin": 34
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "A coaching business drives the channel and recent episodes lean heavily toward entrepreneurs. No research behind the framework — it is one coach's model."
+  },
+  {
+    "id": "theschooloflife",
+    "name": "The School of Life",
+    "handle": "@TheSchoolofLifeTV",
+    "channelUrl": "https://www.youtube.com/@TheSchoolofLifeTV",
+    "country": null,
+    "language": "en",
+    "sizeBucket": "5M-20M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Short, calm animated essays applying philosophy and psychotherapy to ordinary emotional life — insight-shaped rather than instruction-shaped.",
+    "longDescription": "The School of Life publishes on self-understanding, calm and emotional maturity, drawing on philosophy and psychotherapeutic ideas and delivering them as short narrated films with a consistent house style and voice. The characteristic form is a question — why we keep loving people who hurt us, why being heard matters so much, what ancient philosophy offers a burnt-out modern life — answered in six to ten minutes without exercises or steps. A hundred and twenty-two of the last two hundred uploads are under two minutes and seventy-seven sit in the mid-length band, with essentially nothing long. It is best treated as a source of framings that make your own situation legible, not as a method. The organisation also sells therapy, books and courses, and the videos are the front of that.",
+    "notFor": "Anyone wanting evidence, technique, or anything to do. The tone is authoritative but nothing is sourced, and no video ends with an action.",
+    "formatTags": ["video-essay", "shorts", "tutorial"],
+    "level": ["beginner", "intermediate"],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 1,
+      "energy": 1,
+      "selfPromotion": 3,
+      "depth": 2
+    },
+    "signals": ["practitioner", "sells-course"],
+    "categories": [
+      {
+        "id": "self-awareness",
+        "strength": "primary",
+        "why": "Supplies language for feelings people have but cannot name, which is usually the step before anything can be done about them.",
+        "evidence": "A large catalogue of short essays on emotional self-understanding drawn from philosophy and psychotherapeutic ideas, published on a fixed weekly schedule.",
+        "entryVideo": {
+          "title": "Why We Need to Feel Heard",
+          "videoId": "hnQwaVnv-FA",
+          "whyThisOne": "Six minutes, one ordinary need examined properly — a fair sample of both the strength and the limits of this format.",
+          "durationMin": 6
+        }
+      },
+      {
+        "id": "burnout-recovery",
+        "strength": "secondary",
+        "why": "Offers a philosophical reframe of exhaustion rather than a recovery protocol, which suits people who have already tried the protocols.",
+        "evidence": "Dedicated essays applying philosophical traditions to modern overwork and burnout, consistent with the channel's stated remit of calm and emotional maturity.",
+        "entryVideo": {
+          "title": "5 Philosophical Lessons to Cure Modern Burnout",
+          "videoId": "O8xqi5tpD7I",
+          "whyThisOne": "Ten minutes that reframe the problem rather than adding another recovery task to your list.",
+          "durationMin": 10
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Nothing is sourced despite a confident tone, and the organisation sells therapy, books and courses behind it. Almost entirely short-form now."
+  }
+]
