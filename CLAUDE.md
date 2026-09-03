@@ -298,6 +298,21 @@ this section first to know exactly where to resume.)*
   unfinished, not documented gaps.
 - **Affiliation fallback ledger: 9 rescues, 3 wrong answers, 0 wrong
   answers written.**
+- **Target revised to 400 creators** (owner's decision), with 200
+  categories, the scope rule and the quality bar all unchanged. The
+  consequence is arithmetic and was accepted knowingly: 400 creators at
+  the observed 1.58 mappings each gives ~630 mappings against the 1,000
+  needed for 5-per-category, so **~74 categories will ship carrying a
+  documented gap**. The 5-minimum is now a target, not a validator
+  failure — but every category below it needs a written reason, to the
+  same standard as `data/critic-gaps.json`.
+- **`REBALANCE.md` holds a merge proposal awaiting decision.** Seven
+  merges, all supply-driven, concentrated in productivity and
+  communication. It frees 7 slots and costs 8 mappings — near-zero net
+  effect on coverage. Its real value is reachability: it converts
+  categories that *cannot* reach 5 into ones that can. **Do not apply it
+  without the owner's go-ahead**, and do not fill the freed slots until
+  the untouched domains have been researched.
 
 ### Immediate next actions
 
@@ -440,6 +455,26 @@ note that contradicts your own data is worse than no note.
 Every rescue — every case where path 2 found what path 1 missed — is
 appended to `data/handle-rescues.json` with `--record`, so the miss rate
 of the cheap path is measurable rather than assumed.
+
+**Research efficiency rules** (the owner's call, none of them touch the
+gate — the gate and the identity checks are unchanged):
+
+- **Adaptive upload scanning.** `evidence.mjs` scans 50 uploads and
+  escalates to 200 only when the first 50 hold fewer than 10 videos of
+  8 minutes or more. Most channels declare their duration mix
+  immediately; the 200-upload standard existed for shorts-heavy ones,
+  and now applies only to them. `--deep` forces 200, `--quick` refuses
+  to escalate.
+- **Evidence in batches of 8–10 handles per call**, not 4.
+- **No full scan on a candidate you will not write up.** Probe with
+  `check-handles.mjs` (1 unit) to establish a channel exists and is the
+  right entity; only run `evidence.mjs` once the creator has a category
+  slot you actually intend to fill. Use `--quick` for triage.
+
+The bottleneck was never quota — a batch costs 150–250 units of a
+10,000 daily allowance. It is the volume of evidence output that has to
+be read and the editorial prose that has to be written against it (79%
+of every record is hand-written prose). These rules cut the reading.
 
 **A near-empty channel that passes the gate is not an answer.**
 `resolveCreator` treats any handle-path match with fewer than
