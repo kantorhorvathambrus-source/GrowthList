@@ -276,54 +276,30 @@ in `categories.json`-derived output with a computed creator `count`.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research). **Batches 01–09 are
+- **Current phase**: Phase 2 (creator research). **Batches 01–10 are
   written, gated, validated and committed.** Phases 0, 1, 3-tooling, 4
   and 5 are done. Phase 6 is deliberately not started.
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
-- **Creator count: 99 of 700.** 01=16, 02=14, 03=21, 04=11, 05=6, 06=4,
-  07=12, 08=7, 09=8. Every entry video passed the attribution gate.
-- **83 of 200 categories populated.** First pass complete:
-  communication 13/13, creativity 14/14, learning 12/12, mindset 12/13,
-  programming 13/14, productivity 10/12. **Fitness is 8/14 — not
-  finished**: powerlifting, running, mobility-and-flexibility, yoga,
-  boxing-and-striking and home-workouts still have nobody.
-- **Deliberately empty** (candidate found, rejected on principle):
+- **Creator count: 106 of 400** (target revised down from 700 by the
+  owner). 01=16, 02=14, 03=21, 04=11, 05=6, 06=4, 07=12, 08=7, 09=8,
+  10=7. Every entry video passed the attribution gate.
+- **Taxonomy is 195** after migration 001. Five freed slots HELD.
+- **84 of 195 categories populated. Seven domains now have every
+  category filled**: communication, creativity, learning, mindset,
+  fitness (completed in batch 10), and programming and productivity
+  except their principled empties.
+- **Untouched domains (9)**: health, career, money, business, marketing,
+  tech, relationships, practical, philosophy. 111 categories with
+  nobody.
+- **Deliberately empty** (candidate found, rejected): 
   `git-and-version-control`, `workflow-automation` (vendor channels
-  only), `goal-setting`. See `UNVERIFIED.md`.
-- **Untouched domains**: health, career, money, business, marketing,
-  tech, relationships, practical, philosophy.
-- **Critics: 13 of 83 populated categories.** Barbell Medicine added
-  strength-training and hypertrophy-training in batch 09 — physicians
-  whose output is largely named myth correction. The remaining 70 are
-  unfinished, not documented gaps.
-- **Affiliation fallback ledger: 9 rescues, 3 wrong answers, 0 wrong
+  only), `goal-setting`, plus `resilience` in mindset.
+- **Critics: 13 of 84 populated categories.**
+- **Affiliation fallback ledger: 10 rescues, 3 wrong answers, 0 wrong
   answers written.**
-- **Target revised to 400 creators** (owner's decision), with 200
-  categories, the scope rule and the quality bar all unchanged. The
-  consequence is arithmetic and was accepted knowingly: 400 creators at
-  the observed 1.58 mappings each gives ~630 mappings against the 1,000
-  needed for 5-per-category, so **~74 categories will ship carrying a
-  documented gap**. The 5-minimum is now a target, not a validator
-  failure — but every category below it needs a written reason, to the
-  same standard as `data/critic-gaps.json`.
-- **Migration 001 is applied.** The owner approved merges 1-4 in
-  `REBALANCE.md` and declined 5 and 6 (`active-listening`,
-  `giving-feedback` — each frees one slot but costs two mappings, so they
-  make coverage worse). Taxonomy is **195**, not 200: four approved
-  merges absorbed five categories, because `deep-work-and-focus` took
-  both `time-blocking` and `energy-management`. **The five freed slots
-  are HELD** until the unresearched domains have had a pass — allocating
-  them now would be speculation about supply. Re-run
-  `scripts/migrations/001-merge-categories.mjs` (dry by default) to see
-  exactly what it did.
-- **The running thin-category list is `node scripts/coverage-report.mjs`.**
-  The owner asked to watch it grow rather than discover it at batch 40.
-  It distinguishes three states, and the distinction is load-bearing: a
-  category under 5 is **unfinished** by default; it becomes a
-  **documented gap** only when someone has finished searching for that
-  specific category and written the reason into `data/thin-gaps.json`.
-  **A domain having had one pass proves nothing about any category in
-  it** — do not mark gaps wholesale.
+- **The trade the owner accepted knowingly**: 200-category target,
+  400 creators, scope rule untouched → ~73 categories ship carrying a
+  documented gap. Never close a gap by loosening scope.
 
 ### Immediate next actions
 
