@@ -174,6 +174,22 @@ Two results the resolver refused to hand over, correctly:
 probed; they simply were not researched in this batch. That is
 unfinished work, not a documented gap.
 
+### Batch 11 — health (first pass, 10 of 14 categories)
+
+| Handle | What the API returned | Why it was excluded |
+| --- | --- | --- |
+| `@DrEricBerg` | "Dr. Berg - официальный русскоязычный", 2,731 uploads, 5M–20M | **A Russian-language channel.** The handle most people would try leads to his Russian-language presence, which fails rule 5. His English channel was not pursued: his catalogue is heavily contested-claims territory and there are better-credentialed candidates in every category he touches. |
+| `@examinecom` | Examine.com, 8 uploads | Real and highly regarded as a text resource, but eight videos is not a channel. Nothing to map. |
+| `@AlcoholMastery` | 1 upload | Empty. `addiction-recovery` remains unfilled rather than filled with this. |
+| `@dietitian`, `@ThomasDeLauer` | 3 and 0 uploads | Empty or near-empty handles. |
+| `@DrJenGunter` | 32 uploads, <100k | Real, well-credentialed, but too thin a catalogue to support a mapping in any of the health categories. |
+
+**Health is 10 of 14.** Still empty: `fat-loss`, `sports-nutrition`,
+`gut-health`, `addiction-recovery`. `@abbeysharp` did not resolve on the
+obvious handle and is the priority target for the first three — the
+affiliation fallback has not been run on her yet. Unfinished, not
+decided.
+
 ## When the obvious handle fails: the fallback search path
 
 A person's obvious handle failing is **not** grounds to drop them. Before

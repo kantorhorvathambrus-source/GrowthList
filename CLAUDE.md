@@ -276,30 +276,27 @@ in `categories.json`-derived output with a computed creator `count`.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research). **Batches 01–10 are
-  written, gated, validated and committed.** Phases 0, 1, 3-tooling, 4
-  and 5 are done. Phase 6 is deliberately not started.
+- **Current phase**: Phase 2 (creator research). **Batches 01–11 are
+  written, gated, validated and committed.**
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
-- **Creator count: 106 of 400** (target revised down from 700 by the
-  owner). 01=16, 02=14, 03=21, 04=11, 05=6, 06=4, 07=12, 08=7, 09=8,
-  10=7. Every entry video passed the attribution gate.
-- **Taxonomy is 195** after migration 001. Five freed slots HELD.
-- **84 of 195 categories populated. Seven domains now have every
-  category filled**: communication, creativity, learning, mindset,
-  fitness (completed in batch 10), and programming and productivity
-  except their principled empties.
-- **Untouched domains (9)**: health, career, money, business, marketing,
-  tech, relationships, practical, philosophy. 111 categories with
-  nobody.
-- **Deliberately empty** (candidate found, rejected): 
-  `git-and-version-control`, `workflow-automation` (vendor channels
-  only), `goal-setting`, plus `resilience` in mindset.
-- **Critics: 13 of 84 populated categories.**
+- **Creator count: 115 of 400.** 01=16, 02=14, 03=21, 04=11, 05=6, 06=4,
+  07=12, 08=7, 09=8, 10=7, 11=9. Every entry video passed the gate.
+- **Taxonomy 195** after migration 001. Five freed slots HELD.
+- **93 of 195 categories populated.** Health reached 10/14 in batch 11;
+  still empty there are `fat-loss`, `sports-nutrition`, `gut-health`,
+  `addiction-recovery` — run the affiliation fallback on `@abbeysharp`
+  first, it did not resolve on the obvious handle.
+- **Untouched domains (8)**: career, money, business, marketing, tech,
+  relationships, practical, philosophy. ~97 categories with nobody.
+- **Critics: 17 of 93 populated categories.** Health turned out to be
+  the richest domain for them yet — Nutrition Made Simple, Physionic and
+  Lab Muffin are all credentialed people whose output is largely
+  correcting claims in their own field.
 - **Affiliation fallback ledger: 10 rescues, 3 wrong answers, 0 wrong
   answers written.**
-- **The trade the owner accepted knowingly**: 200-category target,
-  400 creators, scope rule untouched → ~73 categories ship carrying a
-  documented gap. Never close a gap by loosening scope.
+- **The accepted trade**: 200-category target, 400 creators, scope rule
+  untouched → ~73 categories ship carrying a documented gap. Never close
+  a gap by loosening scope.
 
 ### Immediate next actions
 

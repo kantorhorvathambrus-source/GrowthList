@@ -1,0 +1,509 @@
+[
+  {
+    "id": "nutritionmadesimple",
+    "name": "Nutrition Made Simple! (Dr. Gil Carvalho)",
+    "handle": "@NutritionMadeSimple",
+    "channelUrl": "https://www.youtube.com/@NutritionMadeSimple",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A physician reading the nutrition literature and reporting what it says, including when that means correcting a claim you probably believe.",
+    "longDescription": "The channel's own description names myth-busting and fact-checking as the method, and lists the dietary patterns it refuses to take sides between — Mediterranean, omnivore, pescatarian, vegetarian, vegan, keto, low or high carbohydrate. That neutrality is the reason to watch, in a field where almost every channel is defending a diet. The format is one question at a time answered from studies: whether creatine causes hair loss, what the evidence on vitamin K2 and arterial calcification actually shows, which of the widely repeated food-and-cancer claims survive scrutiny. Thirty-four of fifty recent uploads are short clips, so the substantial work is a minority of the feed but is consistently well sourced.",
+    "notFor": "Anyone wanting a meal plan or a diet to follow. He will more often tell you the evidence is weaker than you were told than hand you a rule.",
+    "formatTags": [
+      "video-essay",
+      "shorts",
+      "tutorial"
+    ],
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 4,
+      "practical": 2,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 3
+    },
+    "signals": [
+      "credentialed",
+      "cites-research"
+    ],
+    "categories": [
+      {
+        "id": "nutrition-fundamentals",
+        "strength": "primary",
+        "why": "Declines to defend any single diet and instead checks individual claims against the literature, which is the only defensible starting point in this field.",
+        "evidence": "A physician-run channel whose stated method is myth-busting and fact-checking across all dietary patterns, with individual videos tracing named claims to the studies behind them.",
+        "entryVideo": {
+          "title": "Food & Cancer | 8 Myths Debunked",
+          "videoId": "k_WqysSAZnY",
+          "whyThisOne": "Eight widely believed claims examined in one sitting, which shows both the method and how often the popular version fails.",
+          "durationMin": 16
+        }
+      },
+      {
+        "id": "supplements-literacy",
+        "strength": "secondary",
+        "why": "Handles specific supplement questions by dose and evidence quality rather than by whether the compound sounds beneficial.",
+        "evidence": "Videos examining named supplements against the research — creatine and hair loss, vitamin K2 and arterial calcification — with the study limitations stated.",
+        "entryVideo": {
+          "title": "Does Creatine cause Hair Loss?!? A Look at the Science",
+          "videoId": "VNKCtkRDDws",
+          "whyThisOne": "A single much-repeated claim traced to its actual evidence base, which is a fair sample of how he handles every supplement question.",
+          "durationMin": 9
+        }
+      }
+    ],
+    "role": "critic",
+    "caveats": "Mostly short-form now, so the sourced long-form takes finding. Deliberately unwilling to give simple prescriptions, which some viewers will find unhelpful."
+  },
+  {
+    "id": "physionic",
+    "name": "Physionic (Nicolas Verhoeven)",
+    "handle": "@Physionic",
+    "channelUrl": "https://www.youtube.com/@Physionic",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Multi-study analyses of health claims from a molecular medicine PhD — closer to a journal club than to health content.",
+    "longDescription": "The channel lists its credentials in its own description: a PhD in molecular medicine with a focus on cell physiology, a master's in exercise physiology, and a decade of laboratory experience. The method follows from that — rather than reporting one study, he pulls several on a question and works through where they agree, where they conflict, and what mechanism would have to be true for the result to hold. Forty-five of fifty recent uploads sit between three and nineteen minutes with a nine-minute median, so the format is consistent and finishable. Subjects are the alarming headlines: whether creatine drives cancer metastasis, whether glucosamine raises mortality, what a new vitamin K2 paper actually found. He is usually the person telling you the headline overreached.",
+    "notFor": "Anyone who wants a recommendation. The output is frequently that the evidence is too weak to act on, which is honest and unsatisfying.",
+    "formatTags": [
+      "video-essay",
+      "tutorial"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 4,
+      "practical": 2,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 4
+    },
+    "signals": [
+      "credentialed",
+      "cites-research"
+    ],
+    "categories": [
+      {
+        "id": "supplements-literacy",
+        "strength": "primary",
+        "why": "Judges a supplement by dose and study quality across several papers, which is what separates a real effect from a headline.",
+        "evidence": "A molecular medicine PhD publishing multi-study analyses of named supplements and their claimed harms, including creatine, glucosamine and vitamin K2.",
+        "entryVideo": {
+          "title": "Glucosamine: More Death, More Alzheimer’s Disease - New Study!",
+          "videoId": "MqZku0O93k8",
+          "whyThisOne": "A frightening title used to teach how to read the study behind one, which is the transferable skill here.",
+          "durationMin": 9
+        }
+      },
+      {
+        "id": "longevity",
+        "strength": "secondary",
+        "why": "Applies the same multi-study scepticism to lifespan claims, which is the corner of health content most prone to overreach.",
+        "evidence": "Analyses of mortality and disease-risk findings across multiple papers, from a physiologist whose stated remit is mechanism rather than recommendation.",
+        "entryVideo": {
+          "title": "'Creatine directly causes Cancer Metastasis' - Multiple Studies",
+          "videoId": "tcMgHncZVIw",
+          "whyThisOne": "Takes an alarming claim about a very common supplement and shows how many studies it takes to answer properly.",
+          "durationMin": 14
+        }
+      }
+    ],
+    "role": "critic",
+    "caveats": "Sells a paid analysis tier and promotes it. The register is technical, and he rarely converts an analysis into advice."
+  },
+  {
+    "id": "labmuffin",
+    "name": "Lab Muffin Beauty Science (Michelle Wong)",
+    "handle": "@LabMuffinBeautyScience",
+    "channelUrl": "https://www.youtube.com/@LabMuffinBeautyScience",
+    "country": "AU",
+    "language": "en",
+    "sizeBucket": "500k-1M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A chemistry PhD explaining what skincare ingredients actually do — and publicly correcting herself when she has got something wrong.",
+    "longDescription": "Michelle Wong describes herself as a science educator with a chemistry PhD, and states the channel's purpose plainly: working out which beauty products are worth buying and which are not. The most valuable strand is corrective. She takes apart specific misinformation, including a named toxicologist's claims about sunscreen, and she publishes videos revising her own earlier positions when the evidence moved — a video titled straightforwardly around having been wrong about sunscreen sticks. That willingness is rare enough in any field to be the main reason to trust the rest. Thirty-eight of fifty recent uploads are short clips; the substantial explanations run fifteen to thirty minutes. Some videos are disclosed brand collaborations.",
+    "notFor": "Anyone wanting a routine prescribed. The approach is to make you able to read a label, which is slower than being told what to buy.",
+    "formatTags": [
+      "video-essay",
+      "shorts",
+      "tutorial"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 4,
+      "practical": 3,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "credentialed",
+      "cites-research",
+      "sponsor-heavy"
+    ],
+    "categories": [
+      {
+        "id": "skincare",
+        "strength": "primary",
+        "why": "Teaches ingredient chemistry so you can evaluate a product yourself, and models what it looks like to update a position in public.",
+        "evidence": "A chemistry PhD whose catalogue includes named debunks of specific sunscreen misinformation and videos explicitly revising her own earlier conclusions.",
+        "entryVideo": {
+          "title": "I was wrong about sunscreen sticks",
+          "videoId": "NyWP_a0rICQ",
+          "whyThisOne": "A public self-correction with the reasoning shown — the single best evidence of whether a science communicator is worth trusting.",
+          "durationMin": 20
+        }
+      }
+    ],
+    "role": "critic",
+    "caveats": "Some videos are disclosed brand collaborations, so read product praise in that light. Heavily short-form now, and the depth is in a minority of uploads."
+  },
+  {
+    "id": "thesleepdoctor",
+    "name": "Sleep Doctor (Dr. Michael Breus)",
+    "handle": "@TheSleepDoctor",
+    "channelUrl": "https://www.youtube.com/@TheSleepDoctor",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "500k-1M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A double board-certified clinical psychologist on sleep, strongest on matching your schedule to your actual biology rather than to advice.",
+    "longDescription": "Dr. Michael Breus is described on his own channel as a double board-certified clinical psychologist and sleep specialist, and the channel is the media arm of his practice. The distinctive angle is individual variation: rather than a universal bedtime, the recurring argument is that people differ in when they can sleep and that fighting your own chronotype is the problem. Alongside that sit behavioural approaches to insomnia — including a full case walkthrough of anxiety-driven sleeplessness — and age-specific material for sleep that changes in later life. Thirty-seven of fifty recent uploads are short clips, with the substantial work in five longer videos running forty minutes or more.",
+    "notFor": "Anyone wanting the underlying sleep research rather than a clinician's synthesis, or hoping to avoid product recommendations.",
+    "formatTags": [
+      "shorts",
+      "long-form",
+      "interview",
+      "tutorial"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 4,
+      "depth": 3
+    },
+    "signals": [
+      "credentialed",
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "sleep-quality",
+        "strength": "primary",
+        "why": "Starts from the fact that people's sleep timing genuinely differs, which is why generic sleep-hygiene advice fails so many of them.",
+        "evidence": "A double board-certified clinical psychologist and sleep specialist publishing chronotype-based scheduling guidance and behavioural approaches to insomnia, including full case walkthroughs.",
+        "entryVideo": {
+          "title": "Stop Fighting Your Biology! Find Your PERFECT Sleep-Wake Schedule",
+          "videoId": "liQBPxiMXz0",
+          "whyThisOne": "Forty minutes on the one variable most sleep advice ignores, and the thing that determines whether any of the rest applies to you.",
+          "durationMin": 40
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "A commercial sleep practice sits behind the channel and product recommendations are frequent. Overwhelmingly short-form."
+  },
+  {
+    "id": "oxygenadvantage",
+    "name": "Oxygen Advantage (Patrick McKeown)",
+    "handle": "@OxygenAdvantage",
+    "channelUrl": "https://www.youtube.com/@OxygenAdvantage",
+    "country": "IE",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "One named breathing method taught by its author for over two decades — nasal breathing and carbon-dioxide tolerance, applied to sport and to focus.",
+    "longDescription": "Patrick McKeown has taught this method for twenty-four years by his own account, and the channel is its main free surface. The content is narrower than most breathwork material and better for it: the emphasis is nasal breathing, carbon-dioxide tolerance and breath-hold work, applied to athletic performance, workplace concentration and sleep rather than to spiritual practice. Forty-nine of two hundred recent uploads run past twenty minutes — long interviews and workshops — while a hundred and twenty-six are clips, so the median upload is a minute. He works with professional athletes and publishes those sessions, which is useful evidence that the method is used seriously. It is also a single commercial system, presented as revolutionary in its own description.",
+    "notFor": "Anyone looking for meditation or relaxation practice. This is mechanical breathing training toward performance, and it is sold as certification and courses.",
+    "formatTags": [
+      "shorts",
+      "long-form",
+      "interview",
+      "tutorial"
+    ],
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 4,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course",
+      "strong-ideological-frame"
+    ],
+    "categories": [
+      {
+        "id": "breathwork",
+        "strength": "primary",
+        "why": "Teaches breathing as a trainable mechanical capacity — nasal route, carbon-dioxide tolerance — rather than as a relaxation exercise, and states what each drill is for.",
+        "evidence": "The author of a named breathing method with twenty-four years teaching it, publishing applied sessions for workplace focus and for professional athletes including a UFC fighter's coach.",
+        "entryVideo": {
+          "title": "Breathing for the Workplace: Focus, Flow and Mental Clarity with Patrick McKeown",
+          "videoId": "oSAzGXxoOBg",
+          "whyThisOne": "The most broadly applicable session on the channel — no sport required — and long enough to actually practise along with.",
+          "durationMin": 27
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "A single commercial system sold through courses and instructor certification, described in its own marketing as revolutionary. Treat the framing as a claim."
+  },
+  {
+    "id": "uprighthealth",
+    "name": "Upright Health",
+    "handle": "@UprightHealth",
+    "channelUrl": "https://www.youtube.com/@UprightHealth",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Self-directed strength and mobility work for chronic pain, built on the argument that imaging findings explain less than people are told.",
+    "longDescription": "Upright Health's stated mission is teaching people to fix their own pain without relying on health professionals, and that framing is both its value and its risk. The valuable part is real: a large catalogue arguing that structural diagnoses are routinely over-interpreted — that a stage-four arthritis label does not by itself explain someone's hip pain, that pain called irreversible often responds to a loading programme — with recovery cases followed over weeks. A hundred and fifteen of two hundred recent uploads run three to nineteen minutes at a seven-minute median, so it is browsable and practical. The risk is the same sentence: a channel whose premise is that you do not need a clinician will occasionally be wrong about someone who does.",
+    "notFor": "Anyone with undiagnosed or acute pain, or anything with red-flag symptoms. The anti-professional framing is a genuine hazard, not just a tone.",
+    "formatTags": [
+      "tutorial",
+      "long-form",
+      "shorts"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course",
+      "strong-ideological-frame"
+    ],
+    "categories": [
+      {
+        "id": "posture-and-ergonomics",
+        "strength": "primary",
+        "why": "Treats posture as a strength and mobility problem you can train rather than a position to hold, which is the more defensible of the two views.",
+        "evidence": "A large catalogue of self-directed strength and range programmes for hip, shoulder and spine complaints, framed around loading rather than positioning.",
+        "entryVideo": {
+          "title": "Why “Stage 4 Arthritis” Doesn’t Explain Hip Pain",
+          "videoId": "xZ0NqFRBCFA",
+          "whyThisOne": "The channel's central argument in eight minutes — that a scan finding is not a verdict — which you should weigh before adopting anything else here.",
+          "durationMin": 8
+        }
+      },
+      {
+        "id": "back-pain-management",
+        "strength": "secondary",
+        "why": "Documents recovery from pain that had been called permanent, which is a useful counterweight to being told to protect the area indefinitely.",
+        "evidence": "Case-based recovery videos following multi-week loading programmes for pain previously described as irreversible.",
+        "entryVideo": {
+          "title": "The \"Irreversible\" Hip Pain Myth: A 10-Week Recovery Story",
+          "videoId": "04doZo-ZtrQ",
+          "whyThisOne": "One documented case over ten weeks, which is more informative than a general claim in either direction.",
+          "durationMin": 11
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Explicitly positions itself against health professionals, which is the main reason to pair it with E3 Rehab rather than take it alone. Sells programmes."
+  },
+  {
+    "id": "drmaryclaire",
+    "name": "Dr. Mary Claire Haver",
+    "handle": "@drmaryclaire",
+    "channelUrl": "https://www.youtube.com/@drmaryclaire",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "500k-1M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A board-certified OB-GYN on menopause and perimenopause, filling a gap she says clinical practice was leaving open.",
+    "longDescription": "Dr. Mary Claire Haver describes herself as a board-certified OB-GYN with over twenty years in clinical practice, and states the channel's reason for existing directly: too many women were not getting clear answers elsewhere. The subject is menopause and perimenopause specifically — symptoms, treatment options, and the interactions people are rarely told about, such as how menopause intersects with ADHD. Format is barbelled: thirty-nine of fifty recent uploads are clips of under two minutes, while ten run past twenty and are substantial interviews with other specialists. That structure means the depth is real but concentrated. This is one clinician's synthesis rather than a survey of the literature, and it is squarely aimed at one population.",
+    "notFor": "Anyone outside the menopause and perimenopause question, and anyone wanting the underlying research rather than a specialist's reading of it.",
+    "formatTags": [
+      "shorts",
+      "interview",
+      "long-form",
+      "q-and-a"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "credentialed",
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "hormonal-health",
+        "strength": "primary",
+        "why": "Covers a hormonal transition most people get no usable information about, from a clinician who specialises in it rather than mentions it.",
+        "evidence": "A board-certified OB-GYN of twenty-plus years' practice publishing menopause and perimenopause education, including long specialist interviews on symptoms and treatment.",
+        "entryVideo": {
+          "title": "Top Menopause & Perimenopause Questions Answered",
+          "videoId": "bJqikVPm6Bc",
+          "whyThisOne": "Twenty minutes covering the questions people actually arrive with, which is the right orientation before the specialist interviews.",
+          "durationMin": 20
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Sells books and a supplement-adjacent product line, so weigh product mentions accordingly. Almost entirely short-form, and narrow by design."
+  },
+  {
+    "id": "tarabrach",
+    "name": "Tara Brach",
+    "handle": "@tarabrach",
+    "channelUrl": "https://www.youtube.com/@tarabrach",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A long archive of guided meditations and Buddhist talks — the practice itself rather than content about practising.",
+    "longDescription": "Tara Brach is described on her own channel as a leading western teacher of Buddhist meditation, and the archive reflects decades of that work: over seventeen hundred videos comprising a weekly livestreamed talk, a large library of guided meditations, and interviews. Crucially the shape is right for actually meditating — only three of fifty recent uploads run under two minutes, twenty-four sit between three and nineteen minutes and twenty-three run longer, with a nineteen-minute median. A guided meditation you follow is a different product from a video explaining meditation, and most channels in this space sell the second while calling it the first. The framing is explicitly Buddhist and includes emotional healing and spiritual language, which will suit some people and not others.",
+    "notFor": "Anyone wanting secular, technique-only instruction. The framing is Buddhist and therapeutic, and the talks assume you are interested in that.",
+    "formatTags": [
+      "long-form",
+      "lecture",
+      "livestream"
+    ],
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 4,
+      "energy": 1,
+      "selfPromotion": 1,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "meditation",
+        "strength": "primary",
+        "why": "Provides sittings to actually do, at real lengths, rather than videos about the benefits of doing them — which is what builds a practice.",
+        "evidence": "A decades-long teaching archive of over 1,700 videos combining guided meditations at 15–20 minutes with a weekly talk, from an established meditation teacher.",
+        "entryVideo": {
+          "title": "Guided Meditation: Basic Body Scan | Tara Brach",
+          "videoId": "yZAwNyG1R34",
+          "whyThisOne": "The plainest, least doctrinal practice on the channel, and the standard first technique in almost any tradition.",
+          "durationMin": 19
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Explicitly Buddhist and spiritual in register, with emotional-healing framing throughout. Very little instruction on technique as such — you learn by following."
+  },
+  {
+    "id": "peterattiamd",
+    "name": "Peter Attia MD",
+    "handle": "@PeterAttiaMD",
+    "channelUrl": "https://www.youtube.com/@PeterAttiaMD",
+    "country": null,
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A physician running a longevity-focused practice, publishing detailed clinical discussion of what actually extends healthy lifespan.",
+    "longDescription": "Peter Attia is described on his own channel as the founder of a medical practice applying what he calls Medicine 3.0, with the stated goal of extending both lifespan and healthspan, and as host of a long-running health podcast. The channel is largely excerpts from that podcast, and it is unusually technical for the genre — cardiorespiratory training prescriptions by fitness level, apolipoprotein B management, diagnostic screening strategy, environmental exposures. Fourteen of fifty recent uploads run past twenty minutes with twenty-nine as clips. The honest caveat is the business model: this is the free edge of a subscription practice serving people who can afford extensive private testing, and some recommendations assume access most viewers do not have.",
+    "notFor": "Anyone without the budget for private diagnostics, or wanting simple advice. The register is clinical and the assumed resources are considerable.",
+    "formatTags": [
+      "long-form",
+      "interview",
+      "shorts",
+      "q-and-a"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 3,
+      "energy": 1,
+      "selfPromotion": 4,
+      "depth": 4
+    },
+    "signals": [
+      "credentialed",
+      "cites-research",
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "longevity",
+        "strength": "primary",
+        "why": "Puts specific numbers on the interventions with the strongest evidence — cardiorespiratory fitness above all — rather than listing habits.",
+        "evidence": "A physician running a longevity-focused practice, publishing training prescriptions by fitness level and detailed discussion of screening and lipid management.",
+        "entryVideo": {
+          "title": "A guide to cardiorespiratory training at any fitness level to improve longevity (AMA 79 sneak peek)",
+          "videoId": "yisfGtcV5xk",
+          "whyThisOne": "The single intervention with the best evidence behind it, prescribed concretely rather than recommended vaguely.",
+          "durationMin": 38
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "The free content is the edge of a paid subscription and a private practice; several recommendations assume access to expensive testing. Excerpt-heavy, so episodes arrive out of context."
+  }
+]
