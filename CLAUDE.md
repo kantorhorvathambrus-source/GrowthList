@@ -306,13 +306,24 @@ this section first to know exactly where to resume.)*
   documented gap**. The 5-minimum is now a target, not a validator
   failure — but every category below it needs a written reason, to the
   same standard as `data/critic-gaps.json`.
-- **`REBALANCE.md` holds a merge proposal awaiting decision.** Seven
-  merges, all supply-driven, concentrated in productivity and
-  communication. It frees 7 slots and costs 8 mappings — near-zero net
-  effect on coverage. Its real value is reachability: it converts
-  categories that *cannot* reach 5 into ones that can. **Do not apply it
-  without the owner's go-ahead**, and do not fill the freed slots until
-  the untouched domains have been researched.
+- **Migration 001 is applied.** The owner approved merges 1-4 in
+  `REBALANCE.md` and declined 5 and 6 (`active-listening`,
+  `giving-feedback` — each frees one slot but costs two mappings, so they
+  make coverage worse). Taxonomy is **195**, not 200: four approved
+  merges absorbed five categories, because `deep-work-and-focus` took
+  both `time-blocking` and `energy-management`. **The five freed slots
+  are HELD** until the unresearched domains have had a pass — allocating
+  them now would be speculation about supply. Re-run
+  `scripts/migrations/001-merge-categories.mjs` (dry by default) to see
+  exactly what it did.
+- **The running thin-category list is `node scripts/coverage-report.mjs`.**
+  The owner asked to watch it grow rather than discover it at batch 40.
+  It distinguishes three states, and the distinction is load-bearing: a
+  category under 5 is **unfinished** by default; it becomes a
+  **documented gap** only when someone has finished searching for that
+  specific category and written the reason into `data/thin-gaps.json`.
+  **A domain having had one pass proves nothing about any category in
+  it** — do not mark gaps wholesale.
 
 ### Immediate next actions
 

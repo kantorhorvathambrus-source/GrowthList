@@ -1,0 +1,4 @@
+{
+  "_comment": "Categories that will ship BELOW the 5-creator target because the search is finished and this is what exists. Only add an entry once you have actually stopped looking for that specific category — a domain having had one pass proves nothing. Each reason says what was searched and what was found, to the same standard as critic-gaps.json. The 5-minimum is a target the owner knowingly traded away rather than loosen the scope rule; this file is where that trade is made visible. Empty is correct until a category's search is genuinely done.",
+  "gaps": {}
+}

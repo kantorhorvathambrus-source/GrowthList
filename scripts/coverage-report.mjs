@@ -56,6 +56,60 @@ for (const [id, list] of undocumented.sort()) {
   console.log(`  ${pad(id, 26)} ${list.length} creator${list.length === 1 ? '' : 's'}`);
 }
 
+// -------------------------------------------------- thin categories
+// The owner's standing request: keep this list growing in the open rather
+// than discovering it at batch 40.
+//
+// Three states, and the distinction matters. A category below 5 is UNFINISHED
+// by default — one domain pass of a dozen creators is not an exhaustive
+// search, and it would be dishonest to call it a decided gap. It becomes a
+// DOCUMENTED GAP only when someone has actually finished looking and written
+// down what exists, in data/thin-gaps.json. Nothing is inferred: a domain
+// having had a first pass proves nothing about any single category in it.
+let thinGaps = {};
+const thinPath = join(ROOT, 'data/thin-gaps.json');
+if (existsSync(thinPath)) thinGaps = read('data/thin-gaps.json').gaps ?? {};
+
+const under = cats
+  .map((c) => ({ id: c.id, domain: c.domain, n: (byCat.get(c.id) ?? []).length }))
+  .filter((r) => r.n < 5)
+  .sort((a, b) => a.n - b.n || a.domain.localeCompare(b.domain) || a.id.localeCompare(b.id));
+
+const thinDocumented = under.filter((r) => thinGaps[r.id]);
+const openWork = under.filter((r) => !thinGaps[r.id]);
+
+console.log('\n\nBELOW THE 5-CREATOR TARGET  (running list)');
+console.log('='.repeat(72));
+console.log(`${under.length} of ${cats.length} categories are under 5 creators.`);
+console.log(`  searched and documented ... ${thinDocumented.length}  (a reason is on file)`);
+console.log(`  still open ................ ${openWork.length}  (unfinished research, no claim made)`);
+console.log('\nThe 5-minimum is a target, not a validator failure — the owner accepted');
+console.log('~74 gaps knowingly. But a gap only counts as decided once someone has');
+console.log('finished looking and written why. Until then it is just work not done.');
+
+if (thinDocumented.length) {
+  console.log(`\nSearched and documented (${thinDocumented.length})`);
+  for (const r of thinDocumented) console.log(`  ${r.n} creator${r.n === 1 ? ' ' : 's'}  ${pad(r.id, 30)} ${pad(r.domain, 14)} ${thinGaps[r.id]}`);
+}
+
+console.log(`\nStill open, by domain (${openWork.length})`);
+const byDom = new Map();
+for (const r of openWork) {
+  if (!byDom.has(r.domain)) byDom.set(r.domain, []);
+  byDom.get(r.domain).push(r);
+}
+for (const [d, rows] of [...byDom].sort((a, b) => b[1].length - a[1].length)) {
+  const zero = rows.filter((r) => r.n === 0).length;
+  console.log(`  ${pad(d, 15)} ${String(rows.length).padStart(2)} categories  (${zero} with nobody, ${rows.length - zero} partly filled)`);
+  const partial = rows.filter((r) => r.n > 0);
+  if (partial.length) console.log(`      ${partial.map((r) => `${r.id}:${r.n}`).join('  ')}`);
+}
+
+const have = creators.reduce((a, c) => a + (c.categories?.length ?? 0), 0);
+const ratio = have / creators.length;
+console.log(`\nmappings ${have} of ${cats.length * 5} needed for 5 everywhere  (ratio ${ratio.toFixed(2)}/creator)`);
+console.log(`projection at 400 creators: ~${Math.round(400 * ratio)} mappings => ~${Math.round(400 * ratio / 5)} categories at full depth, ~${cats.length - Math.round(400 * ratio / 5)} carrying a gap`);
+
 // ---------------------------------------------------------------- rescues
 console.log('\n\nHANDLE RESCUES  (data/handle-rescues.json)');
 console.log('='.repeat(72));

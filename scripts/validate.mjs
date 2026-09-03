@@ -118,8 +118,11 @@ for (const cat of categories) {
   if (isPlaceholder(JSON.stringify(cat))) fail(where, 'contains placeholder text');
 }
 
-if (categories.length !== 200) {
-  warn('categories.json', `expected 200 categories, found ${categories.length}`);
+// 195 after migration 001: four approved merges absorbed FIVE categories, because
+// deep-work-and-focus absorbed two. The five freed slots are HELD until the
+// unresearched domains have had a pass — see REBALANCE.md. Target is still 200.
+if (categories.length !== 195) {
+  warn('categories.json', `expected 195 categories (200 target minus 5 slots held after migration 001), found ${categories.length}`);
 }
 
 // relatedCategories must resolve (checked after all ids known)

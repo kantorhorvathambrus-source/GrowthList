@@ -37,7 +37,7 @@
       {
         "id": "task-management-systems",
         "strength": "primary",
-        "why": "Organises commitments by when they must be done rather than by project or context, which is a genuinely different answer from the usual advice.",
+        "why": "Organises commitments by when they must be done rather than by project or context, and treats the recurring review as the thing that keeps the system trustworthy.",
         "evidence": "Author of a published time-management book and creator of two named systems, taught across a thirteen-hundred-video catalogue including full setups in specific task managers.",
         "entryVideo": {
           "title": "The Ultimate Todoist Setup: Filters, Labels, and Time Sectors",
@@ -56,18 +56,6 @@
           "videoId": "I5KMsQdOft0",
           "whyThisOne": "Twelve minutes on the specific way a task list flatters you, which is the diagnosis before any prioritisation method makes sense.",
           "durationMin": 12
-        }
-      },
-      {
-        "id": "weekly-review",
-        "strength": "secondary",
-        "why": "Treats the review as the mechanism that keeps a system trustworthy, rather than as an optional extra you drop when busy.",
-        "evidence": "Recurring material on periodic review and on recovering control when commitments have outgrown available time, within his published system.",
-        "entryVideo": {
-          "title": "Are You Overcommitted Without Realising It?",
-          "videoId": "suIaK1_-C4U",
-          "whyThisOne": "The question a review is supposed to answer, asked directly — useful even if you adopt none of his system.",
-          "durationMin": 13
         }
       },
       {
@@ -125,7 +113,7 @@
       {
         "id": "deep-work-and-focus",
         "strength": "primary",
-        "why": "This is the primary source for the concept everything else in the category is quoting, argued by the person who defined it.",
+        "why": "This is the primary source for the concept everything else in the category is quoting, argued by the person who defined it — including how to put the work in the hours you can actually do it.",
         "evidence": "A Georgetown computer science professor and author of Deep Work, publishing extended treatments of concentration and scheduling on his own podcast.",
         "entryVideo": {
           "title": "Rules For Deep Work — Updated for 2026 | Cal Newport",
@@ -144,30 +132,6 @@
           "videoId": "3dad6I146kw",
           "whyThisOne": "The philosophical case underneath the practical advice, which is what makes any of the tactics stick.",
           "durationMin": 74
-        }
-      },
-      {
-        "id": "energy-management",
-        "strength": "secondary",
-        "why": "Treats seasonal and weekly rhythm as a design problem, which is a more realistic model than trying to run at one intensity all year.",
-        "evidence": "Episodes on schedule resets and burnout avoidance built around matching demanding work to sustainable rhythms.",
-        "entryVideo": {
-          "title": "The Summer Schedule Reset To Save You From Burnout & Unlock Deep Work",
-          "videoId": "IvgOAUI3sls",
-          "whyThisOne": "A concrete application of the rhythm argument to a real calendar, rather than the theory alone.",
-          "durationMin": 75
-        }
-      },
-      {
-        "id": "time-blocking",
-        "strength": "secondary",
-        "why": "Defends assigning work to specific hours while taking the obvious objection seriously — that a fully blocked calendar can feel like a cage.",
-        "evidence": "A full-length episode arguing the case for time blocking against the charge that it is oppressive, from the author who popularised the practice.",
-        "entryVideo": {
-          "title": "Is Time Blocking Oppressive? - Manage Your Time & Productivity In An Overloaded World | Cal Newport",
-          "videoId": "0FaIW-U2fvE",
-          "whyThisOne": "Argues the method against its strongest criticism rather than selling it, which is the right way to decide whether to adopt it.",
-          "durationMin": 79
         }
       },
       {

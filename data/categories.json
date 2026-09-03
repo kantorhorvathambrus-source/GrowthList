@@ -260,7 +260,7 @@
     "relatedCategories": [
       "self-discipline",
       "goal-setting",
-      "energy-management"
+      "deep-work-and-focus"
     ],
     "levels": {
       "beginner": "Attach a very small behaviour to an existing cue and repeat it in a stable context. Consistency of context matters more than size or intensity at this stage.",
@@ -340,7 +340,7 @@
       "work stress"
     ],
     "relatedCategories": [
-      "energy-management",
+      "deep-work-and-focus",
       "sleep-quality",
       "workplace-politics"
     ],
@@ -1120,7 +1120,7 @@
     ],
     "relatedCategories": [
       "burnout-recovery",
-      "energy-management",
+      "deep-work-and-focus",
       "anxiety-management"
     ],
     "levels": {
@@ -1684,23 +1684,27 @@
     "id": "public-speaking",
     "name": "Public speaking",
     "domain": "communication",
-    "blurb": "Delivering a talk that holds attention and lands its point, without the fear running the room.",
+    "blurb": "Delivering a talk that holds attention and lands its point, including the voice that carries it.",
     "aliases": [
       "presenting",
       "speech",
       "stage fright",
       "talks",
-      "keynote"
+      "keynote",
+      "voice training",
+      "speaking voice",
+      "diction",
+      "articulation",
+      "vocal delivery"
     ],
     "relatedCategories": [
       "storytelling",
-      "vocal-delivery",
       "charisma-and-presence"
     ],
     "levels": {
-      "beginner": "Get reps in low-stakes settings and learn basic structure. Most beginner nerves come from under-prepared openings and unclear purpose, not from an inherent lack of talent.",
+      "beginner": "Get reps in low-stakes settings and learn basic structure. Work on breath support and articulation, and listen back to your own recorded voice enough times to stop flinching at it.",
       "intermediate": "Work on structure that earns attention, deliberate use of pause and pace, and handling questions and disruption without losing the thread.",
-      "advanced": "Develop range across formats and room sizes, adapt live to an audience that isn't responding as expected, and build material that stands up without slides."
+      "advanced": "Develop range across formats and room sizes, adapt live to an audience that is not responding as expected, and build the vocal stamina to hold a large room without a microphone."
     },
     "plan": {
       "week1": {
@@ -1742,47 +1746,6 @@
       "beginner": "Learn basic story shape — situation, complication, turn — and practise cutting the setup that feels necessary to you but bores the listener.",
       "intermediate": "Work on specificity, stakes, and scene versus summary, and learn to find the actual story inside a rambling real experience.",
       "advanced": "Develop your own voice and structural instincts, handle complex or ethically delicate material, and shape stories for different media and lengths."
-    },
-    "plan": {
-      "week1": {
-        "watch": [],
-        "do": ""
-      },
-      "week2": {
-        "watch": [],
-        "do": ""
-      },
-      "week3": {
-        "watch": [],
-        "do": ""
-      },
-      "week4": {
-        "watch": [],
-        "do": ""
-      }
-    }
-  },
-  {
-    "id": "vocal-delivery",
-    "name": "Vocal delivery",
-    "domain": "communication",
-    "blurb": "Using pitch, pace, volume, and pause deliberately so your voice supports what you're saying.",
-    "aliases": [
-      "voice training",
-      "speaking voice",
-      "diction",
-      "tone of voice",
-      "articulation"
-    ],
-    "relatedCategories": [
-      "public-speaking",
-      "singing",
-      "charisma-and-presence"
-    ],
-    "levels": {
-      "beginner": "Learn breath support and basic articulation, and hear your own recorded voice enough times to stop flinching at it.",
-      "intermediate": "Practise deliberate variation — pace changes, dynamic range, and the pause — and work on the habits that undercut you, such as upspeak or trailing off.",
-      "advanced": "Develop vocal stamina and range across contexts, from a microphone to a large room, and refine tone for different intents without sounding performed."
     },
     "plan": {
       "week1": {
@@ -2105,7 +2068,7 @@
     "relatedCategories": [
       "confidence-building",
       "body-language",
-      "vocal-delivery"
+      "public-speaking"
     ],
     "levels": {
       "beginner": "Work on the basics of presence: attention on the other person, a settled body, and not rushing your speech to fill space.",
@@ -5752,7 +5715,7 @@
       "singing technique"
     ],
     "relatedCategories": [
-      "vocal-delivery",
+      "public-speaking",
       "music-production",
       "breathwork"
     ],
@@ -5948,23 +5911,28 @@
     "id": "memory-techniques",
     "name": "Memory techniques",
     "domain": "learning",
-    "blurb": "Using structured mnemonic methods to reliably remember material you'd otherwise forget.",
+    "blurb": "Making material stick — mnemonic structure for what you must recall, and scheduled retrieval for what you must retain.",
     "aliases": [
       "memorisation",
       "memory palace",
       "mnemonics",
       "remembering names",
-      "recall"
+      "recall",
+      "anki",
+      "flashcards",
+      "active recall",
+      "srs",
+      "retrieval practice",
+      "spaced repetition"
     ],
     "relatedCategories": [
-      "spaced-repetition",
       "exam-preparation",
       "language-learning"
     ],
     "levels": {
-      "beginner": "Learn the method of loci and basic association techniques on something small, like a shopping list or a set of names.",
+      "beginner": "Learn the method of loci on something small, and understand why testing yourself beats rereading. Start a small deck with atomic cards rather than importing someone else's.",
       "intermediate": "Apply memory systems to real material — vocabulary, anatomy, numbers — and combine them with review rather than treating them as a substitute for it.",
-      "advanced": "Build large, reusable memory systems and understand where mnemonics genuinely help versus where understanding is what you actually lack."
+      "advanced": "Build large reusable memory systems, tune scheduling and deck design for long-term collections, and recognise the material where neither mnemonics nor repetition substitutes for understanding."
     },
     "plan": {
       "week1": {
@@ -6068,47 +6036,6 @@
     }
   },
   {
-    "id": "spaced-repetition",
-    "name": "Spaced repetition",
-    "domain": "learning",
-    "blurb": "Using scheduled review and active recall so learning sticks, with cards worth reviewing.",
-    "aliases": [
-      "anki",
-      "flashcards",
-      "active recall",
-      "srs",
-      "retrieval practice"
-    ],
-    "relatedCategories": [
-      "memory-techniques",
-      "exam-preparation",
-      "language-learning"
-    ],
-    "levels": {
-      "beginner": "Understand why testing yourself beats rereading, and start a small deck with atomic cards rather than importing thousands.",
-      "intermediate": "Write better cards, handle the daily review load sustainably, and integrate the system with understanding rather than memorising blind.",
-      "advanced": "Tune scheduling and deck design for large long-term collections, and recognise the material where spaced repetition isn't the right tool."
-    },
-    "plan": {
-      "week1": {
-        "watch": [],
-        "do": ""
-      },
-      "week2": {
-        "watch": [],
-        "do": ""
-      },
-      "week3": {
-        "watch": [],
-        "do": ""
-      },
-      "week4": {
-        "watch": [],
-        "do": ""
-      }
-    }
-  },
-  {
     "id": "language-learning",
     "name": "Language learning",
     "domain": "learning",
@@ -6121,7 +6048,6 @@
       "second language"
     ],
     "relatedCategories": [
-      "spaced-repetition",
       "memory-techniques",
       "deliberate-practice"
     ],
@@ -6162,7 +6088,6 @@
       "study plan"
     ],
     "relatedCategories": [
-      "spaced-repetition",
       "memory-techniques",
       "anxiety-management"
     ],
@@ -6437,67 +6362,29 @@
     }
   },
   {
-    "id": "time-blocking",
-    "name": "Time blocking",
-    "domain": "productivity",
-    "blurb": "Assigning work to specific hours so your calendar reflects your intentions, not just your meetings.",
-    "aliases": [
-      "calendar blocking",
-      "scheduling",
-      "day planning",
-      "timeboxing",
-      "calendar management"
-    ],
-    "relatedCategories": [
-      "prioritization",
-      "deep-work-and-focus",
-      "task-management-systems"
-    ],
-    "levels": {
-      "beginner": "Block time for your most important work before the day fills up, and start with two blocks a day rather than a fully planned calendar.",
-      "intermediate": "Estimate durations realistically, protect blocks against meeting creep, and build a weekly shape rather than replanning daily.",
-      "advanced": "Design a calendar around energy and collaboration patterns, and adapt the system for roles with high interruption and low control."
-    },
-    "plan": {
-      "week1": {
-        "watch": [],
-        "do": ""
-      },
-      "week2": {
-        "watch": [],
-        "do": ""
-      },
-      "week3": {
-        "watch": [],
-        "do": ""
-      },
-      "week4": {
-        "watch": [],
-        "do": ""
-      }
-    }
-  },
-  {
     "id": "task-management-systems",
     "name": "Task management systems",
     "domain": "productivity",
-    "blurb": "Running a trusted system for commitments so you stop holding them in your head.",
+    "blurb": "Running a trusted system for commitments, and reviewing it often enough to keep trusting it.",
     "aliases": [
       "todo list",
       "gtd",
       "task manager",
       "productivity system",
-      "capturing tasks"
+      "capturing tasks",
+      "weekly review",
+      "review ritual",
+      "planning session",
+      "retrospective"
     ],
     "relatedCategories": [
-      "weekly-review",
       "prioritization",
-      "time-blocking"
+      "deep-work-and-focus"
     ],
     "levels": {
-      "beginner": "Get everything out of your head into one list, define next actions physically, and process the inbox regularly.",
+      "beginner": "Get everything out of your head into one list, define next actions physically, and book a short recurring slot to clear inboxes and choose what must happen next.",
       "intermediate": "Organise by project and context, use a review cadence that keeps the system trustworthy, and resist tool-hopping as procrastination.",
-      "advanced": "Run a system across work and personal domains at high volume, and simplify ruthlessly when maintenance starts exceeding value."
+      "advanced": "Run a system across work and personal domains at high volume, review at multiple horizons — weekly, quarterly, annual — and simplify ruthlessly when maintenance starts exceeding value."
     },
     "plan": {
       "week1": {
@@ -6522,23 +6409,28 @@
     "id": "deep-work-and-focus",
     "name": "Deep work and focus",
     "domain": "productivity",
-    "blurb": "Building the capacity for sustained concentration on demanding work in a distracting environment.",
+    "blurb": "Building the capacity for sustained concentration on demanding work, and putting it in the hours you can actually do it.",
     "aliases": [
       "concentration",
       "focus",
       "distraction",
       "flow",
-      "attention span"
+      "attention span",
+      "calendar blocking",
+      "timeboxing",
+      "day planning",
+      "managing energy",
+      "recovery",
+      "chronotype"
     ],
     "relatedCategories": [
       "digital-minimalism",
-      "time-blocking",
       "procrastination"
     ],
     "levels": {
-      "beginner": "Remove the obvious interrupters and practise short focused sessions, building duration gradually rather than attempting four-hour blocks.",
+      "beginner": "Remove the obvious interrupters and practise short focused sessions. Block time for your hardest work before the day fills up, and notice when in the day you are actually sharp.",
       "intermediate": "Design an environment and schedule that make focus the default, and handle the internal distractions that survive turning off notifications.",
-      "advanced": "Sustain demanding cognitive work over long periods, structure a role around it where possible, and recover properly between bouts."
+      "advanced": "Sustain demanding cognitive work over long periods, design a calendar around energy and collaboration patterns rather than around meetings, and plan load and recovery across months rather than days."
     },
     "plan": {
       "week1": {
@@ -6695,7 +6587,7 @@
       "targets"
     ],
     "relatedCategories": [
-      "weekly-review",
+      "task-management-systems",
       "habit-formation",
       "prioritization"
     ],
@@ -6703,47 +6595,6 @@
       "beginner": "Convert vague ambitions into specific outcomes with a defined next action, and set fewer goals than feels satisfying.",
       "intermediate": "Distinguish outcome, performance, and process goals, tie goals to weekly action, and review and revise rather than restarting each January.",
       "advanced": "Set goals under uncertainty where the right target changes, and understand where goal-setting research is weaker than it's presented."
-    },
-    "plan": {
-      "week1": {
-        "watch": [],
-        "do": ""
-      },
-      "week2": {
-        "watch": [],
-        "do": ""
-      },
-      "week3": {
-        "watch": [],
-        "do": ""
-      },
-      "week4": {
-        "watch": [],
-        "do": ""
-      }
-    }
-  },
-  {
-    "id": "weekly-review",
-    "name": "Weekly review",
-    "domain": "productivity",
-    "blurb": "A recurring session to clear the decks, look at the whole picture, and plan the week deliberately.",
-    "aliases": [
-      "review ritual",
-      "planning session",
-      "reflection",
-      "sunday planning",
-      "retrospective"
-    ],
-    "relatedCategories": [
-      "task-management-systems",
-      "goal-setting",
-      "time-blocking"
-    ],
-    "levels": {
-      "beginner": "Book a short recurring slot, clear inboxes and lists, and choose the two or three things that must happen next week.",
-      "intermediate": "Add reflection on what actually happened versus what you planned, and adjust the system rather than only the plan.",
-      "advanced": "Run reviews at multiple horizons — weekly, quarterly, annual — and use them to change direction rather than only to reorganise tasks."
     },
     "plan": {
       "week1": {
@@ -6778,8 +6629,7 @@
     ],
     "relatedCategories": [
       "deep-work-and-focus",
-      "privacy-and-opsec",
-      "energy-management"
+      "privacy-and-opsec"
     ],
     "levels": {
       "beginner": "Audit where your screen time actually goes, then remove or add friction to the two worst offenders rather than everything at once.",
@@ -6820,7 +6670,7 @@
     "relatedCategories": [
       "goal-setting",
       "delegation",
-      "time-blocking"
+      "deep-work-and-focus"
     ],
     "levels": {
       "beginner": "Separate urgent from important in practice, and pick a single most-important task each day before opening anything else.",
@@ -6867,47 +6717,6 @@
       "beginner": "Learn core formulas, lookups, and clean data layout — one fact per cell, no merged cells in data ranges.",
       "intermediate": "Build pivot tables, conditional logic, and charts, and structure workbooks so inputs, calculations, and outputs are separate.",
       "advanced": "Build auditable models with sensitivity analysis, use scripting or advanced functions, and know when the job needs a database instead."
-    },
-    "plan": {
-      "week1": {
-        "watch": [],
-        "do": ""
-      },
-      "week2": {
-        "watch": [],
-        "do": ""
-      },
-      "week3": {
-        "watch": [],
-        "do": ""
-      },
-      "week4": {
-        "watch": [],
-        "do": ""
-      }
-    }
-  },
-  {
-    "id": "energy-management",
-    "name": "Energy management",
-    "domain": "productivity",
-    "blurb": "Matching demanding work to when you can actually do it, and treating recovery as part of the system.",
-    "aliases": [
-      "managing energy",
-      "chronotype",
-      "rest",
-      "recovery",
-      "ultradian rhythms"
-    ],
-    "relatedCategories": [
-      "sleep-quality",
-      "burnout-recovery",
-      "deep-work-and-focus"
-    ],
-    "levels": {
-      "beginner": "Track when you're actually sharp for a fortnight, then move your hardest work into those hours and stop scheduling it at your worst.",
-      "intermediate": "Build deliberate recovery into the day and week, and manage the inputs — sleep, movement, food, breaks — that determine capacity.",
-      "advanced": "Sustain high output over years by planning load and recovery across months, and recognise when the fix is workload rather than optimisation."
     },
     "plan": {
       "week1": {

@@ -186,7 +186,7 @@
         }
       },
       {
-        "id": "spaced-repetition",
+        "id": "memory-techniques",
         "strength": "secondary",
         "why": "Treats flashcard software as something to be configured deliberately rather than installed and hoped at, which is where most people lose the benefit.",
         "evidence": "A dedicated long-form tutorial on using spaced-repetition software properly, framed around the errors that make people abandon it.",
@@ -352,7 +352,7 @@
         }
       },
       {
-        "id": "spaced-repetition",
+        "id": "memory-techniques",
         "strength": "primary",
         "why": "Goes into card design at a level almost nobody does — where the material comes from and why a card built from your own reading beats a downloaded deck.",
         "evidence": "Multiple long tutorials on building flashcards from encountered sentences and on sustaining a review streak, rather than on installing the software.",

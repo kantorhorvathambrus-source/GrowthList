@@ -37,25 +37,13 @@
       {
         "id": "public-speaking",
         "strength": "primary",
-        "why": "Drills the mechanics of speaking while people are watching you — pace, pauses, and what to do with the nerves rather than how to suppress them.",
+        "why": "Drills the mechanics of speaking while people are watching you — pace, pauses, the voice itself, and what to do with the nerves rather than how to suppress them.",
         "evidence": "Works as a professional speaking coach and has built the channel's long-form catalogue around delivery under attention, including frameworks on speaking habits and first impressions.",
         "entryVideo": {
           "title": "How to Speak When All Eyes Are On You...",
           "videoId": "HYNXzKU92Qs",
           "whyThisOne": "The longest and most structured thing on the channel about performing under attention, so you can judge the teaching style before committing to anything else.",
           "durationMin": 24
-        }
-      },
-      {
-        "id": "vocal-delivery",
-        "strength": "primary",
-        "why": "The strongest part of the channel: concrete daily exercises for clarity, articulation and range, rather than vague advice to project more.",
-        "evidence": "Vocal technique is the recurring subject of his long-form videos and the skill his coaching practice is built on; several videos are exercise routines rather than commentary.",
-        "entryVideo": {
-          "title": "Speak 10X Clearer: Do These 3 Vocal Exercises Daily!",
-          "videoId": "hIFCxzdSGfU",
-          "whyThisOne": "Three exercises you can start the same day, which is the fastest way to find out whether this approach suits you.",
-          "durationMin": 10
         }
       },
       {
@@ -138,7 +126,7 @@
         "why": "Unusually concrete on the opening seconds of a conversation, where most advice stays abstract about being interested rather than interesting.",
         "evidence": "Repeated dedicated long-form videos on small talk, group entry and conversational exits, separate from the charisma analysis.",
         "entryVideo": {
-          "title": "How to Not Suck At Small Talk",
+          "title": "Give Me 7 Minutes and I’ll Make You Dangerously Good at Small Talk",
           "videoId": "-pkR_NCptqg",
           "whyThisOne": "Covers openings, sustaining and exits in one pass, so you get the whole shape of a conversation rather than a single trick.",
           "durationMin": 8
@@ -150,7 +138,7 @@
         "why": "Separates looking confident from being confident, and argues the performance is the weaker of the two — a useful corrective in this genre.",
         "evidence": "Several long-form videos specifically about performed versus actual confidence, including material arguing against the channel's own earlier framing.",
         "entryVideo": {
-          "title": "Stop Trying to Look Confident, Do This Instead",
+          "title": "Identity Protection Is Killing Your Confidence, Do This Instead",
           "videoId": "AcTYrpe__Y0",
           "whyThisOne": "The clearest statement of their position that confidence signalling backfires, which is worth hearing before you copy any technique.",
           "durationMin": 11
