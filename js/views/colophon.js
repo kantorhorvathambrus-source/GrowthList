@@ -51,11 +51,14 @@ function floorTable(entries, dataAsOf) {
     .filter((e) => e.placement === 'build-page' && e.measured)
     .sort((a, b) => b.measured.n / b.measured.of - a.measured.n / a.measured.of);
   if (!rows.length) return '';
-  const signals = [...new Set(rows.map((e) => e.signal))]
-    .map((s) => SIGNAL_LABELS[s] ?? s).join(', ');
+  const names = [...new Set(rows.map((e) => e.signal))].map((s) => SIGNAL_LABELS[s] ?? s);
+  // Reads as a sentence whether one badge saturates or five do.
+  const signals = names.length > 1
+    ? `${names.slice(0, -1).join(', ')} and ${names[names.length - 1]} badges`
+    : `${names[0]} badge`;
   return `<div class="table-scroll">
     <table class="colophon-table">
-      <caption>Share of creators carrying the ${esc(signals)} badge, by domain${dataAsOf ? `, as of ${esc(dataAsOf)}` : ''}.</caption>
+      <caption>Share of creators carrying the ${esc(signals)}, by domain${dataAsOf ? `, as of ${esc(dataAsOf)}` : ''}.</caption>
       <thead><tr><th scope="col">Domain</th><th scope="col">Badge</th><th scope="col">Share</th></tr></thead>
       <tbody>
         ${rows.map((e) => `<tr>
