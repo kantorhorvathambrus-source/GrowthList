@@ -57,8 +57,12 @@ for (const c of creators) {
   if (bucket && bucket !== c.sizeBucket) {
     warns.push(`${c.id}: sizeBucket "${c.sizeBucket}" but API now says "${bucket}"`);
   }
-  if (channel.country !== c.country) {
-    fails.push(`${c.id}: country ${JSON.stringify(c.country)} but API says ${JSON.stringify(channel.country)}`);
+  // `country` is optional in the schema and the API returns null for a channel
+  // that does not declare one, so an absent field and a null API value are the
+  // same fact. Comparing them raw made every legitimately country-less creator
+  // fail the gate.
+  if ((channel.country ?? null) !== (c.country ?? null)) {
+    fails.push(`${c.id}: country ${JSON.stringify(c.country ?? null)} but API says ${JSON.stringify(channel.country ?? null)}`);
   }
 
   for (const m of c.categories ?? []) {

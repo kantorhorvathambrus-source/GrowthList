@@ -1,0 +1,639 @@
+[
+  {
+    "id": "gottmaninstitute",
+    "name": "The Gottman Institute",
+    "handle": "@TheGottmanInstitute",
+    "channelUrl": "https://www.youtube.com/@TheGottmanInstitute",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "The couples-research lab that built its advice from decades of observed conflict, explaining the specific moves that separate marriages that last from ones that do not.",
+    "longDescription": "John and Julie Gottman's institute publishes from a body of longitudinal observational research on couples — the work behind the four horsemen, repair attempts, and bids for connection. The channel's own description states the approach relies on intensive, long-term scientific study of why marriages succeed or fail, and the videos are mostly the two of them working through a specific mechanic rather than giving general encouragement. The best material is demonstrative: in one twenty-two-minute piece they act out a fight and then process it in front of you, which is far more useful than a list of rules. The catalogue is heavily weighted to clips — of two hundred uploads scanned, a hundred and fifty were under two minutes and only eleven ran twenty minutes or more — so finding the substantial pieces takes some digging. The institute also trains therapists and sells workshops and card decks, which is how the research is funded.",
+    "notFor": "Anyone in a relationship with abuse in it — the Gottman method assumes two people who both want the relationship to work and can be safely honest inside it. Also not for someone wanting a single reassuring answer; the material is a set of specific skills to practise.",
+    "formatTags": [
+      "tutorial",
+      "interview",
+      "shorts"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 4,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 3
+    },
+    "signals": [
+      "credentialed",
+      "cites-research",
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "couples-communication",
+        "strength": "primary",
+        "why": "The specific mechanics of a hard conversation — what escalates it, what repairs it, and how to process a fight after the fact rather than pretending it did not happen.",
+        "evidence": "A twenty-two-minute video in which the Gottmans act out a fight and then work through the repair on camera, plus a twenty-four-minute session on conflict myths and what to do when a friend dislikes your partner.",
+        "entryVideo": {
+          "title": "How to Heal and Process a Fight - The Gottmans Act it out",
+          "videoId": "1xBCYkvoMAg",
+          "whyThisOne": "It shows the repair rather than describing it, so you can see what the move actually sounds like before trying it on someone you live with.",
+          "durationMin": 22
+        }
+      },
+      {
+        "id": "long-term-partnership",
+        "strength": "primary",
+        "why": "Their research question is literally which long relationships survive and why, so the advice is about the ordinary maintenance rather than the crisis.",
+        "evidence": "A thirty-three-minute conversation between John and Julie Gottman on what builds a relationship that lasts, drawn from the longitudinal work the institute is built on.",
+        "entryVideo": {
+          "title": "How to Build a Love That Lasts | John & Julie Gottman",
+          "videoId": "kSLPMZ4Dd9E",
+          "whyThisOne": "The clearest single statement of what their decades of observation actually found, before you go looking for the individual techniques.",
+          "durationMin": 33
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "The institute sells workshops, therapist certification and consumer products built on this research, so the channel is also a funnel. The research itself is well known but not uncontested — the widely repeated prediction accuracy figures come from small samples and have been criticised for being fitted rather than predictive."
+  },
+  {
+    "id": "estherperel",
+    "name": "Esther Perel",
+    "handle": "@EstherPerel",
+    "channelUrl": "https://www.youtube.com/@EstherPerel",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "500k-1M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Recorded one-off therapy sessions with real couples, published in full, where you hear what the conversation actually sounds like rather than being told about it.",
+    "longDescription": "Perel is a practising psychotherapist in New York, and the channel's long-form is her podcast Where Should We Begin? — single anonymous sessions with real couples, run forty to fifty minutes, released whole. This is an unusual and valuable format: you are not being taught a technique, you are listening to a skilled therapist work, including the parts where she gets it wrong and adjusts. Her recurring subjects are desire inside long relationships, infidelity and its aftermath, and the difference between the story a couple tells about a problem and the problem. Several sessions deal directly with affairs — one couple twenty-five years after, another where both partners cheated — which is territory most relationship content refuses. The rest of the channel is short clips cut from those sessions.",
+    "notFor": "Anyone who wants steps. Nothing here is a procedure, and a session that resolves for that couple may not tell you anything actionable about yours. Also not a substitute for therapy — these are single sessions with strangers, not treatment.",
+    "formatTags": [
+      "long-form",
+      "documentary",
+      "interview"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 2,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 4
+    },
+    "signals": [
+      "credentialed",
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "rebuilding-trust",
+        "strength": "primary",
+        "why": "Infidelity and its aftermath is the subject she is best known for thinking about carefully, and the sessions include couples who stayed and couples who did not.",
+        "evidence": "Multiple full sessions on betrayal — a couple confronting an affair twenty-five years later, another where both partners had cheated, and one where the affair is entangled with a manic episode.",
+        "entryVideo": {
+          "title": "Could You Stay Married After a 25 Year Affair? Where Should We Begin? with Esther Perel",
+          "videoId": "nK_SVh1zW1Q",
+          "whyThisOne": "It is the hardest version of the question, so it shows the reasoning rather than a tidy case, and it does not assume the answer is to stay.",
+          "durationMin": 52
+        }
+      },
+      {
+        "id": "long-term-partnership",
+        "strength": "primary",
+        "why": "The running theme across sessions is what happens to two people over years — the accumulated resentments, the roles that harden, the question of what is 'I' and what is 'we'.",
+        "evidence": "Sessions running forty to fifty minutes on family burdens carried into a marriage, on the boundary between individual and couple identity, and a revisit of her own twenty-year-old argument about desire in domesticity.",
+        "entryVideo": {
+          "title": "In This Relationship What Is \"I\" and What is \"We\"? | Where Should We Begin? with Esther Perel",
+          "videoId": "ZJscn8Zl_ag",
+          "whyThisOne": "The question underneath most long-relationship complaints, worked through with one couple rather than answered in the abstract.",
+          "durationMin": 43
+        }
+      },
+      {
+        "id": "intimacy-and-sexual-health",
+        "strength": "secondary",
+        "why": "Desire inside a committed relationship is her original argument and it recurs through the sessions, though as clinical conversation rather than as information.",
+        "evidence": "A thirty-nine-minute episode revisiting her Mating in Captivity argument two decades on, plus sessions where the presenting problem is the erosion of sex within the relationship.",
+        "entryVideo": {
+          "title": "20 Years Later, Esther Perel Revisits Mating in Captivity I Where Should We Begin?",
+          "videoId": "nvWh-APvw8M",
+          "whyThisOne": "She is examining her own earlier position rather than restating it, which is the most useful way to hear an argument you may have already absorbed second-hand.",
+          "durationMin": 39
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Her framework is clinical and literary rather than empirical — she is not citing trial data, and where she conflicts with the research-based end of couples work she does not usually say so. She sells courses, books and a card game, and runs a large media business around the podcast."
+  },
+  {
+    "id": "goodinside",
+    "name": "Good Inside (Dr. Becky Kennedy)",
+    "handle": "@goodinside",
+    "channelUrl": "https://www.youtube.com/@goodinside",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A clinical psychologist working through specific parenting situations — the tantrum, the lie, the refusal — with scripts you can actually say out loud.",
+    "longDescription": "Becky Kennedy is a clinical psychologist and the channel is the video arm of Good Inside, her parenting platform. The organising idea is that a child's behaviour is a signal rather than a verdict, and that the parent's job in the moment is to hold a boundary without withdrawing warmth. What makes it usable rather than merely reassuring is that most videos land on specific wording — what to say when a kid calls themselves ugly, what to do with homework battles, how to respond to 'everyone else is allowed'. A meaningful share of the long-form is conversation with other specialists rather than Dr. Becky alone, including a session with the economist Emily Oster on sleep training and screen-time claims, and a strand on teenagers hosted with Dr. Sheryl Ziegler. Of the fifty most recent uploads, thirty-six were under two minutes, so the substance sits in a minority of the catalogue.",
+    "notFor": "Parents looking for compliance techniques, and anyone who finds warm-therapeutic register hard to take. It also assumes a household where the parent has the bandwidth to slow a moment down, which is not every household on every day.",
+    "formatTags": [
+      "tutorial",
+      "interview",
+      "shorts"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 3,
+      "selfPromotion": 3,
+      "depth": 2
+    },
+    "signals": [
+      "credentialed",
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "parenting-young-children",
+        "strength": "primary",
+        "why": "The core catalogue is early-childhood situations handled one at a time, with the actual sentence to use rather than a principle to derive it from.",
+        "evidence": "Long-form on the return to work after a baby, on why leaving a safe baby feels frightening, and a session with Emily Oster testing sleep-training and screen-time claims against the data.",
+        "entryVideo": {
+          "title": "Sleep Training, Screen Time & Parenting Myths | Dr. Becky & Dr. Emily Oster",
+          "videoId": "pVcdYFQlzuM",
+          "whyThisOne": "It is the one where the claims get checked against evidence rather than asserted, which is the right way to calibrate everything else on the channel.",
+          "durationMin": 37
+        }
+      },
+      {
+        "id": "parenting-teenagers",
+        "strength": "secondary",
+        "why": "A distinct and smaller strand, co-hosted with a clinician who works with adolescents, covering the negotiations that only start once a child can argue back.",
+        "evidence": "The Teens & Screens series with Dr. Sheryl Ziegler, plus long-form on college drop-off and on ADHD through the teenage years with Dr. Alex Reed.",
+        "entryVideo": {
+          "title": "What to do when teens say \"everyone else is allowed\" | Teens & Screens with Dr. Becky and Dr. Sheryl",
+          "videoId": "lZHeaplTGvI",
+          "whyThisOne": "The most common negotiation with a teenager, handled as a negotiation rather than as a discipline problem.",
+          "durationMin": 8
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Good Inside is a paid membership platform and the channel is its front door, so the free videos are consistently shaped to end at a subscription. Dr. Becky's clinical credentials are real; the specific framework is hers rather than a research consensus."
+  },
+  {
+    "id": "sarahockwellsmith",
+    "name": "Sarah Ockwell-Smith",
+    "handle": "@sarahockwellsmith",
+    "channelUrl": "https://www.youtube.com/@sarahockwellsmith",
+    "country": "GB",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Hour-long British sessions on child development — what a brain at that age can and cannot do — used to explain why the usual advice often fails.",
+    "longDescription": "Ockwell-Smith is a British parenting author, the person most associated with the phrase gentle parenting in the UK, and the channel's best material is a set of long recorded talks running fifty to seventy minutes: the tween brain, fussy and picky eating in early childhood, preparing a child to start school. Those sessions are developmental rather than behavioural — the argument is that a lot of standard advice asks a child for self-regulation their nervous system cannot yet produce, so the advice fails and the parent concludes they are failing. She is explicitly and repeatedly against mainstream sleep training, which is a contested position she states as settled. She is an author of sixteen books rather than a clinician, and her background is in psychology and antenatal education rather than paediatrics.",
+    "notFor": "Anyone who wants a sleep-training protocol, or a quick answer — the useful videos are an hour long and there are only a handful of them. Also not for a parent who needs an approach that works under severe time pressure.",
+    "formatTags": [
+      "long-form",
+      "lecture",
+      "tutorial"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 3,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "strong-ideological-frame",
+      "contested-claims"
+    ],
+    "categories": [
+      {
+        "id": "parenting-young-children",
+        "strength": "primary",
+        "why": "The developmental case — matching expectations to what a young child can actually do — is the whole content of the long sessions, and it is the piece most parenting advice skips.",
+        "evidence": "Hour-long recorded sessions on newborn sleep, on fussy and picky eating in early childhood, and on preparing a child to start school, plus shorter pieces on how empathy develops and on managing transitions.",
+        "entryVideo": {
+          "title": "Understanding Fussy and Picky Eating in Early Childhood",
+          "videoId": "jffokwXQjn0",
+          "whyThisOne": "A sixty-two-minute treatment of the problem parents are most often given useless advice about, and a fair sample of how she reasons.",
+          "durationMin": 62
+        }
+      },
+      {
+        "id": "parenting-teenagers",
+        "strength": "secondary",
+        "why": "One substantial session on the eight-to-thirteen brain, which is the transition most parenting material leaves out entirely.",
+        "evidence": "A fifty-four-minute session on the tween brain and why children in that band behave as they do, plus a piece on the parental transition that comes with raising teenagers.",
+        "entryVideo": {
+          "title": "Understanding the Tween Brain (aka: why 8-13yr olds behave the way they do!)",
+          "videoId": "qo6I1njNdLw",
+          "whyThisOne": "It covers the years before the teenage advice usually starts, which is when the pattern you will be dealing with is set.",
+          "durationMin": 54
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Gentle parenting is a position in a live argument, not a settled finding, and she presents her side of the sleep-training debate as though it were settled. She sells books and courses. Her credentials are in psychology and antenatal work rather than clinical child psychology."
+  },
+  {
+    "id": "dementiacareblazers",
+    "name": "Dementia Careblazers (Dr. Natali Edmonds)",
+    "handle": "@DementiaCareblazers",
+    "channelUrl": "https://www.youtube.com/@DementiaCareblazers",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A board-certified geropsychologist answering the specific, unglamorous questions of caring for a parent with dementia at home.",
+    "longDescription": "Natali Edmonds is a board-certified geropsychologist and the channel is built for family caregivers rather than professionals. What distinguishes it is how concrete and how narrow each video is: why someone with dementia keeps asking the same question, why they follow you from room to room, why agitation worsens in the evening, what to do when the person knows they are struggling. Roughly half the recent uploads run eight minutes or more and the answers are mechanistic — she explains what the disease is doing before saying what to try, so the technique is not just a rule to memorise. She is equally willing to say a thing does not work: one video argues that three widely repeated pieces of dementia-care advice are backwards, and another asks plainly whether Alzheimer's drugs do what people hope. There is also material on the caregiver rather than the patient, including the loss of identity that comes with the role.",
+    "notFor": "Anyone looking for treatment or diagnostic guidance — this is care technique, not medicine — and anyone who needs country-specific advice on funding, benefits or legal arrangements, which is largely US-shaped here.",
+    "formatTags": [
+      "tutorial",
+      "q-and-a",
+      "shorts"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 4,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 3
+    },
+    "signals": [
+      "credentialed",
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "caring-for-aging-parents",
+        "strength": "primary",
+        "why": "The daily mechanics of the hardest common version of this — a parent with dementia — handled one specific behaviour at a time, including the caregiver's own limits.",
+        "evidence": "Dozens of eight-to-twenty-minute videos on individual behaviours (repeated questions, shadowing, evening agitation), on decision-making under uncertainty, and on what happens to caregivers themselves after placement in memory care.",
+        "entryVideo": {
+          "title": "5 Dementia Caregiving Truths I Wish Every Caregiver Knew",
+          "videoId": "FuL1cG3jVfA",
+          "whyThisOne": "It sets the expectations the rest of the channel assumes, including which things are not going to get better, before you go looking for a technique.",
+          "durationMin": 11
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "She sells a paid caregiver training program and the videos route to it. The practical, financial and legal content assumes the US system and does not transfer."
+  },
+  {
+    "id": "heidipriebe",
+    "name": "Heidi Priebe",
+    "handle": "@HeidiPriebe1",
+    "channelUrl": "https://www.youtube.com/@HeidiPriebe1",
+    "language": "en",
+    "sizeBucket": "500k-1M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Half-hour lectures on attachment theory that treat the styles as changeable patterns to work on rather than as a personality type to identify with.",
+    "longDescription": "Priebe's channel is unusual for its shape: forty-three of the fifty most recent uploads run over twenty minutes and the median is twenty-seven, so this is a lecture series rather than a clip channel. The subject is attachment — anxious, avoidant, fearful-avoidant — but the treatment is the opposite of the quiz-and-label genre. Videos target mechanics: what deactivation actually feels like from inside an avoidant response, why 'just date someone secure' fails when safety reads as threat, what the five specific blind spots are for each style inside a stuck conflict cycle. She is explicit in her channel description that much of the advice comes from her own path from fearful-avoidant toward secure, which is worth knowing: this is a well-read person working systematically through a framework, not a clinician reporting from practice. The framework itself is used consistently and she does not stretch it to explain everything.",
+    "notFor": "Anyone who wants a short answer or a diagnosis. These are long, and they assume you are willing to sit with a pattern of your own rather than identify someone else's.",
+    "formatTags": [
+      "long-form",
+      "lecture"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 3,
+      "energy": 2,
+      "selfPromotion": 1,
+      "depth": 4
+    },
+    "signals": [
+      "cites-research"
+    ],
+    "categories": [
+      {
+        "id": "attachment-styles",
+        "strength": "primary",
+        "why": "This is the whole channel, handled as a set of patterns you can work on rather than as a label to sort people with — which is exactly the distinction this skill turns on.",
+        "evidence": "Eighteen long-form videos in the scanned window on individual mechanics: avoidant deactivation triggers, fearful-avoidant shame and guilt, blind spots per style inside conflict cycles, and how attunement is built.",
+        "entryVideo": {
+          "title": "Attachment & Nervous System Wiring 101: How Childhood Shapes Your Thinking and Self-Regulation",
+          "videoId": "sapNZnr9KYk",
+          "whyThisOne": "The foundations video, so you get the mechanism before any of the style-specific material, which is the order that stops the labels turning into a personality test.",
+          "durationMin": 42
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "She is not a licensed clinician and says so; the authority here is reading and personal work, not practice. Attachment theory is well evidenced in developmental research but its extension to adult romantic style is more contested than this genre generally admits."
+  },
+  {
+    "id": "terricole",
+    "name": "Terri Cole",
+    "handle": "@terri_cole",
+    "channelUrl": "https://www.youtube.com/@terri_cole",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A licensed psychotherapist on boundaries specifically — why saying no is hard, what a boundary is not, and how over-giving gets mistaken for kindness.",
+    "longDescription": "Cole is a licensed psychotherapist with a twenty-five-year practice, and boundaries are the subject she has narrowed to. The channel's useful distinction is between a boundary and the things people substitute for one: one video takes apart five behaviours regularly mistaken for healthy boundaries, another separates self-soothing from self-numbing. She works from a codependency frame — the recurring subject is the person who over-gives, cannot say no, and reads their own compliance as generosity — and traces it back to family origin, which is where the material gets both its depth and its repetitiveness. Most uploads are clips; the substantial pieces are the fifteen-to-ninety-minute ones, including a full-length session on knowing what you need before you can decline anything. Her framing throughout is addressed to women, which is stated in her own channel description rather than inferred.",
+    "notFor": "Someone who wants scripts for a specific confrontation — the work here is upstream of the sentence. Also not for anyone put off by an explicit therapy-culture register or by the consistent focus on family-of-origin causes.",
+    "formatTags": [
+      "tutorial",
+      "interview",
+      "shorts"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 3,
+      "energy": 3,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "credentialed",
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "setting-boundaries",
+        "strength": "primary",
+        "why": "The single subject of the channel, and it covers the part most boundary advice skips — knowing what you actually want before trying to state it.",
+        "evidence": "Long-form on why high-functioning codependents cannot set boundaries, on five behaviours mistaken for healthy boundaries, and an eighty-seven-minute session on needing to know what you need before you can say no.",
+        "entryVideo": {
+          "title": "5 Toxic Behaviors People Mistake for Healthy Boundaries - Terri Cole",
+          "videoId": "uiADfj6Kc4Y",
+          "whyThisOne": "Start by ruling out what you may already be doing under the name of boundaries; the rest of the channel is easier to use afterwards.",
+          "durationMin": 19
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "She sells books and courses and the videos route to them fairly hard. The content is framed for a female audience throughout, and the codependency lens is applied to most problems whether or not it is the best fit."
+  },
+  {
+    "id": "thematthewhussey",
+    "name": "Matthew Hussey",
+    "handle": "@TheMatthewHussey",
+    "channelUrl": "https://www.youtube.com/@TheMatthewHussey",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A dating coach whose material is unusually concrete about the mechanics — what to say, when to stop investing, how to handle rejection without contorting yourself.",
+    "longDescription": "Hussey has been making dating content for well over a decade and the catalogue is large and specific: how to flirt without exposure to humiliation, what question actually reveals something early, when a coffee date is the wrong format, how to stop obsessing over someone who has gone quiet. The register is warm and performative, and there is a consistent underlying position — that you should hold your standards and stop optimising yourself for someone's approval — which is a defensible frame but a frame. About half the recent uploads run over ten minutes and the long ones are Q&A rather than lecture. He also has a substantial strand on heartbreak and getting over a relationship, which is where his material is at its least tactical and most useful. The channel description is, at the time of writing, a pitch for a retreat with a booking link, which is a fair indication of how the operation works.",
+    "notFor": "Anyone wanting evidence rather than experience — there is no research here, and none is claimed. Also not for someone looking for advice that does not assume a broadly heterosexual dating market.",
+    "formatTags": [
+      "tutorial",
+      "q-and-a",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 4,
+      "energy": 4,
+      "selfPromotion": 4,
+      "depth": 2
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "dating-skills",
+        "strength": "primary",
+        "why": "The mechanics of meeting people and going on dates that reveal something, treated as a set of learnable moves rather than as charisma you either have or do not.",
+        "evidence": "Fourteen long-form videos in the scanned window on flirting without exposure to rejection, the question worth asking early, making dating apps work, and refusing disrespect in early dating.",
+        "entryVideo": {
+          "title": "How To Make Modern Dating Feel Easier",
+          "videoId": "MKPChyqiDmQ",
+          "whyThisOne": "It sets the posture the tactical videos assume, which is the part people skip and then wonder why the tactics feel like performance.",
+          "durationMin": 18
+        }
+      },
+      {
+        "id": "breakups-and-divorce",
+        "strength": "secondary",
+        "why": "A distinct strand on heartbreak that is about recovery rather than about getting someone back, which is rarer in this genre than it should be.",
+        "evidence": "Long-form on getting over the worst heartbreak, on the different types of heartbreak and what each needs, and on factors to weigh before ending a relationship.",
+        "entryVideo": {
+          "title": "Get Over ANY Heartbreak (Once You Know the Type)",
+          "videoId": "8_ziUa4AG0A",
+          "whyThisOne": "It separates kinds of loss that need different things, instead of offering one recovery script for all of them.",
+          "durationMin": 22
+        }
+      }
+    ],
+    "role": "generalist",
+    "caveats": "A commercial coaching business — retreats, programmes and a large media operation — and the free videos are the top of that funnel. Everything is experience-derived; there is no research base, and the advice assumes a conventional heterosexual dating context throughout."
+  },
+  {
+    "id": "sexplanations",
+    "name": "Sexplanations (Dr. Lindsey Doe)",
+    "handle": "@sexplanations",
+    "channelUrl": "https://www.youtube.com/@sexplanations",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A clinical sexologist answering factual questions about bodies, contraception and sex plainly, with the awkwardness removed rather than winked at.",
+    "longDescription": "Lindsey Doe holds a doctorate in human sexuality and works as a clinical sexologist, and the channel has been running long enough to have covered most of the ground twice. The strength is accuracy on questions people are embarrassed to ask: what each day of a menstrual cycle actually looks like, whether IUDs are safe, how anatomy works when you look directly at it. The format is short — of two hundred uploads scanned the median was around eight minutes and very little runs longer — so this is a reference channel rather than a course. The register is deliberately unembarrassed and sometimes explicit, including demonstrations and product discussion, which is the point but will not suit every viewer or every setting. Uploads have slowed considerably; the most recent in the scanned window is from March 2026.",
+    "notFor": "Anyone looking for help talking to a partner — this is information about bodies and practices, not relationship conversation. Also unsuitable to watch anywhere you would not want explicit content on screen.",
+    "formatTags": [
+      "tutorial",
+      "q-and-a"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 4,
+      "practical": 3,
+      "energy": 3,
+      "selfPromotion": 2,
+      "depth": 2
+    },
+    "signals": [
+      "credentialed",
+      "practitioner",
+      "cites-research"
+    ],
+    "categories": [
+      {
+        "id": "intimacy-and-sexual-health",
+        "strength": "primary",
+        "why": "The accurate-information half of this skill, from someone qualified to give it, on the questions that otherwise get answered by folklore.",
+        "evidence": "Explainers on the full menstrual cycle day by day, on IUD safety, on anatomy shown directly, and a long-running letters series answering viewer questions on drive, pregnancy and practice.",
+        "entryVideo": {
+          "title": "Ask Lindsey - Rough Sex, Pregnancy, and Sex Drive",
+          "videoId": "KfU-F3Dfd3s",
+          "whyThisOne": "A fair sample of both the range of questions and the flat, non-euphemistic way they get answered.",
+          "durationMin": 14
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Explicit in both language and visuals. The channel has slowed sharply, so some contraception and health specifics may lag current guidance — check anything clinical against a current source. Sponsorships and product reviews appear in the catalogue."
+  },
+  {
+    "id": "doctorramani",
+    "name": "Dr. Ramani Durvasula",
+    "handle": "@DoctorRamani",
+    "channelUrl": "https://www.youtube.com/@DoctorRamani",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A clinical psychologist on recovering from a relationship with a narcissistic person — a single narrow subject, covered in unusual depth.",
+    "longDescription": "Durvasula is a licensed clinical psychologist and an academic who has published on narcissistic personality, and the channel does one thing: the experience of being in, and getting out of, a relationship with someone highly narcissistic. Within that boundary the material is substantial — the median video runs eighteen minutes and many pass forty — and it is largely about the recovering person rather than about the diagnosis: what recovery consists of, why grief after leaving is confusing, where boundaries help and where they backfire. She states directly in her channel description that the content is educational and not a substitute for clinical care. The limitation is the frame itself. Every problem on this channel is a narcissism problem, and a viewer arriving after a painful breakup will find a ready explanation for it, which is not always the right one.",
+    "notFor": "Anyone trying to understand a relationship that is merely difficult. The narcissism lens is powerful and it fits fewer situations than the volume of content implies, and self-applying it to an ex is easy and rarely useful.",
+    "formatTags": [
+      "long-form",
+      "tutorial",
+      "interview"
+    ],
+    "level": [
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 3,
+      "energy": 3,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "credentialed",
+      "practitioner",
+      "sells-course",
+      "strong-ideological-frame"
+    ],
+    "categories": [
+      {
+        "id": "breakups-and-divorce",
+        "strength": "secondary",
+        "why": "The rebuilding-afterwards half of this skill, for the specific case where the relationship was with someone abusive or coercive — narrow, but covered better here than anywhere comparable.",
+        "evidence": "Long-form on the seven areas of recovery after a narcissistic relationship, on the particular grief that follows leaving one, and on where boundaries with such a person help and where they make things worse.",
+        "entryVideo": {
+          "title": "7 CRITICAL areas of recovery after a narcissistic relationship",
+          "videoId": "g143D2ys2fM",
+          "whyThisOne": "It is about the recovery rather than about the diagnosis, which is the part worth your time and the part her catalogue is thinnest on elsewhere.",
+          "durationMin": 59
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "A single explanatory frame applied to everything, on a channel large enough to make that frame feel like the default reading of any painful relationship. She sells programmes and a membership. Her clinical and academic credentials are real; 'narcissist' as used across this catalogue is broader than the clinical diagnosis."
+  },
+  {
+    "id": "psychologyinseattle",
+    "name": "Psychology In Seattle (Dr. Kirk Honda)",
+    "handle": "@PsychologyInSeattle",
+    "channelUrl": "https://www.youtube.com/@PsychologyInSeattle",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A practising therapist and professor talking at length about what therapy is, how it fails, and what the inside of the profession actually looks like.",
+    "longDescription": "Kirk Honda is a PsyD and a licensed marriage and family therapist who has taught for decades, and the channel is enormous — nearly six thousand uploads, median length around twenty-nine minutes. Most of it is media commentary: he watches reality television and couples-therapy documentary and reacts as a clinician. That format is genuinely informative about how a therapist thinks, but it is commentary, and anyone arriving expecting instruction should know that first. The material that makes him worth listing is the other strand: long, careful sessions on the profession itself — what happens when therapists leave, harm or fail their clients, how dissociation is handled and mishandled, what different modalities are actually for. He talks about the limits of his own field without defensiveness, which is rare from inside it.",
+    "notFor": "Anyone looking for a short answer, and anyone who does not want reality-television commentary in the mix — it is most of the catalogue. Not treatment, and not a substitute for finding a therapist.",
+    "formatTags": [
+      "long-form",
+      "video-essay",
+      "interview"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 2,
+      "energy": 2,
+      "selfPromotion": 1,
+      "depth": 4
+    },
+    "signals": [
+      "credentialed",
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "therapy-literacy",
+        "strength": "primary",
+        "why": "He explains the profession from inside it, including the failure modes — which is the part you need before choosing a therapist and the part the profession rarely publishes.",
+        "evidence": "A sixty-nine-minute session on therapists who leave, harm or fail their clients, a sixty-seven-minute one on dissociation and clinician panic, and a long-running commentary strand on a couples-therapy documentary series.",
+        "entryVideo": {
+          "title": "When Therapists Leave, Harm, or Fail",
+          "videoId": "OqRwW_ohXyQ",
+          "whyThisOne": "Knowing how therapy goes wrong is what lets you tell a bad fit from a bad therapist, and it is the honest place to start rather than a sales pitch for the profession.",
+          "durationMin": 69
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "The great majority of the catalogue is reality-television commentary rather than teaching, so the ratio of entertainment to instruction is high. Opinions on public figures and public cases are given freely and are opinions."
+  }
+]

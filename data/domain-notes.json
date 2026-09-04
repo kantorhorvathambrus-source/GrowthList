@@ -1,9 +1,12 @@
 {
   "purpose": "A signal badge carried by nearly every creator in a domain has stopped describing the creator and started describing the field. Rule 17 states it once instead of repeating it on every card.",
   "placementRule": "Where the saturation is caused by the field, the note belongs on the category page — it tells a visitor something true about the domain they are entering. Where it is caused by our own inclusion rules, it is meta-commentary about how the list was built, and belongs on /how-this-list-was-built instead. Cause decides placement; the validator enforces the pairing.",
-  "thresholds": { "saturated": 0.7, "minCreators": 4 },
+  "thresholds": {
+    "saturated": 0.7,
+    "minCreators": 4
+  },
   "dataAsOf": "2026-09",
-  "measuredAtCreators": 143,
+  "measuredAtCreators": 154,
   "entries": [
     {
       "domain": "marketing",
@@ -21,7 +24,10 @@
       "signal": "sells-course",
       "cause": "field",
       "basis": "measured",
-      "measured": { "n": 14, "of": 15 },
+      "measured": {
+        "n": 14,
+        "of": 15
+      },
       "placement": "category-page",
       "note": "Nearly every fitness creator listed here sells coaching or a training program. That is how the credible end of this field is funded, so a paid program is the norm here rather than a mark against anyone. What still varies is whether the free videos stand on their own without the purchase, and the note on each card says which."
     },
@@ -30,7 +36,10 @@
       "signal": "sells-course",
       "cause": "field",
       "basis": "measured",
-      "measured": { "n": 10, "of": 12 },
+      "measured": {
+        "n": 10,
+        "of": 12
+      },
       "placement": "category-page",
       "note": "Most programming creators listed here sell a course or a paid track. That is close to universal among independent programming educators now, so read it as the default rather than as a warning. The question worth asking is whether the free videos are complete enough to learn from without buying anything, which the note on each card addresses."
     },
@@ -39,27 +48,144 @@
       "signal": "sells-course",
       "cause": "field",
       "basis": "measured",
-      "measured": { "n": 6, "of": 7 },
+      "measured": {
+        "n": 6,
+        "of": 7
+      },
       "placement": "category-page",
       "note": "Almost every productivity creator listed here sells a course, an app or a book built on the method they teach. This field is unusually self-referential that way: the product often is the method, so the incentive to present one system as more general than it really is comes built in. The note on each card names what the person sells and how hard they push it."
     },
-
-    { "domain": "fitness", "signal": "practitioner", "cause": "selection", "basis": "measured", "measured": { "n": 15, "of": 15 }, "placement": "build-page" },
-    { "domain": "programming", "signal": "practitioner", "cause": "selection", "basis": "measured", "measured": { "n": 12, "of": 12 }, "placement": "build-page" },
-    { "domain": "productivity", "signal": "practitioner", "cause": "selection", "basis": "measured", "measured": { "n": 7, "of": 7 }, "placement": "build-page" },
-    { "domain": "creativity", "signal": "practitioner", "cause": "selection", "basis": "measured", "measured": { "n": 25, "of": 27 }, "placement": "build-page" },
-    { "domain": "tech", "signal": "practitioner", "cause": "selection", "basis": "measured", "measured": { "n": 7, "of": 8 }, "placement": "build-page" },
-    { "domain": "career", "signal": "practitioner", "cause": "selection", "basis": "measured", "measured": { "n": 6, "of": 7 }, "placement": "build-page" },
-    { "domain": "money", "signal": "practitioner", "cause": "selection", "basis": "measured", "measured": { "n": 6, "of": 7 }, "placement": "build-page" },
-    { "domain": "mindset", "signal": "practitioner", "cause": "selection", "basis": "measured", "measured": { "n": 10, "of": 12 }, "placement": "build-page" }
+    {
+      "domain": "relationships",
+      "signal": "sells-course",
+      "cause": "field",
+      "basis": "measured",
+      "measured": {
+        "n": 7,
+        "of": 10
+      },
+      "placement": "category-page",
+      "note": "Most relationship creators listed here sell something built on the method — a course, a membership, a book, a retreat. In this field the people who have done the work to be worth listening to have generally turned it into a business, so a paid product is the norm rather than a signal about quality. Read the note on each card for what the specific product is and how hard the free videos push toward it."
+    },
+    {
+      "domain": "fitness",
+      "signal": "practitioner",
+      "cause": "selection",
+      "basis": "measured",
+      "measured": {
+        "n": 15,
+        "of": 15
+      },
+      "placement": "build-page"
+    },
+    {
+      "domain": "programming",
+      "signal": "practitioner",
+      "cause": "selection",
+      "basis": "measured",
+      "measured": {
+        "n": 12,
+        "of": 12
+      },
+      "placement": "build-page"
+    },
+    {
+      "domain": "productivity",
+      "signal": "practitioner",
+      "cause": "selection",
+      "basis": "measured",
+      "measured": {
+        "n": 7,
+        "of": 7
+      },
+      "placement": "build-page"
+    },
+    {
+      "domain": "creativity",
+      "signal": "practitioner",
+      "cause": "selection",
+      "basis": "measured",
+      "measured": {
+        "n": 25,
+        "of": 27
+      },
+      "placement": "build-page"
+    },
+    {
+      "domain": "tech",
+      "signal": "practitioner",
+      "cause": "selection",
+      "basis": "measured",
+      "measured": {
+        "n": 7,
+        "of": 8
+      },
+      "placement": "build-page"
+    },
+    {
+      "domain": "career",
+      "signal": "practitioner",
+      "cause": "selection",
+      "basis": "measured",
+      "measured": {
+        "n": 6,
+        "of": 7
+      },
+      "placement": "build-page"
+    },
+    {
+      "domain": "money",
+      "signal": "practitioner",
+      "cause": "selection",
+      "basis": "measured",
+      "measured": {
+        "n": 6,
+        "of": 7
+      },
+      "placement": "build-page"
+    },
+    {
+      "domain": "mindset",
+      "signal": "practitioner",
+      "cause": "selection",
+      "basis": "measured",
+      "measured": {
+        "n": 11,
+        "of": 13
+      },
+      "placement": "build-page"
+    },
+    {
+      "domain": "relationships",
+      "signal": "practitioner",
+      "cause": "selection",
+      "basis": "measured",
+      "measured": {
+        "n": 9,
+        "of": 10
+      },
+      "placement": "build-page"
+    },
+    {
+      "domain": "relationships",
+      "signal": "credentialed",
+      "cause": "selection",
+      "basis": "measured",
+      "measured": {
+        "n": 7,
+        "of": 10
+      },
+      "placement": "build-page"
+    }
   ],
   "buildPage": {
     "selectionFloor": {
-      "title": "Why one badge is on almost every card",
+      "title": "Why some badges are on almost every card",
       "paras": [
         "The “practitioner” badge appears on nearly every creator in several domains — on every single one in fitness, programming and productivity. That is not a discovery about those fields. It is our own inclusion rule showing up in the data: we do not list someone who explains a skill they have never practised, so by the time a creator reaches a category page they have already cleared that bar.",
-        "The badge therefore separates these creators from the wider internet rather than from each other. It is worth knowing when you are deciding whether to trust the list at all, which is why it is written down here. It is not worth repeating on a page about learning a skill, which is why you will not find it there.",
-        "Where a badge is near-universal because of the field rather than because of us — paid courses in fitness, programming and productivity, commercial interest in marketing — the explanation stays on the category page, because that one does tell you something about the domain you are entering."
+        "The “credentialed” badge does the same thing in relationships, where seven of ten carry it. Relationship advice on YouTube is not mostly given by licensed clinicians — we simply chose them, because the subject sits close enough to clinical territory that we would rather over-weight a qualification than under-weight one. That is a defensible editorial choice and it is still a choice, so it belongs here rather than being presented as a fact about the field.",
+        "Badges like these separate the creators on this site from the wider internet rather than from each other. That is worth knowing when you are deciding whether to trust the list at all, which is why it is written down here. It is not worth repeating on a page about learning a skill, which is why you will not find it there.",
+        "Where a badge is near-universal because of the field rather than because of us — paid courses in fitness, programming, productivity and relationships, commercial interest in marketing — the explanation stays on the category page, because that one does tell you something about the domain you are entering."
       ]
     }
   },

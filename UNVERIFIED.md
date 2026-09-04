@@ -364,3 +364,57 @@ never changed and the gate caught the mismatch. **Re-run
 `scripts/gate-check.mjs` over every batch before any release** — a
 stale title in the dataset is a small lie, and it is the kind that
 compounds.
+
+## Batch 17 — relationships: excluded, with reasons
+
+**Excluded on content, not on conflict.** Each of these resolved to a real
+channel that is genuinely the person, and was then read.
+
+- **Jimmy on Relationships** (`@jimmyonrelationships`, 1M–5M, 774 uploads).
+  Large, and the long-form is substantial — nineteen videos over twenty
+  minutes in the scanned two hundred. Excluded because the framing is the
+  thing `attachment-styles` is defined against: the recurring titles sort
+  people into narcissists, trauma bonds and avoidants as fixed types
+  ("I kept Attracting Narcissists until I did THIS", "How to Detach from a
+  Trauma Bond"). The category blurb asks for the labels *not* to be used as
+  a personality test, and this catalogue is built on using them that way.
+  No credential; the channel's own description gives the origin as his own
+  affair and its aftermath.
+- **Dr. Kim Sage** (`@DrKimSage`, 100k–500k, 718 uploads). A licensed
+  clinical psychologist in California, so the credential is real. Excluded
+  on the shape of the catalogue: it is a self-diagnosis funnel — "10 signs
+  you have 'traumatic intelligence'", "6 signs you're a high-masking
+  autistic woman with ADHD", "10 signs you're too alert". Inviting a
+  viewer to self-identify with clinical categories from a list of signs is
+  the failure mode `therapy-literacy` exists to guard against, and a
+  credential does not offset it.
+- **Janet Lansbury** (`@janetlansbury`, 45 uploads). The RIE parenting work
+  is well regarded and it is almost entirely *not on YouTube*: of 45
+  uploads only one runs eight minutes or more, and the median is two. Her
+  actual body of work is a podcast. This is the same finding as the
+  marketing pass — where a practitioner publishes outside video, the
+  honest answer is to say so rather than list a channel that does not
+  carry the work.
+
+**Handle traps caught by probing.** Each of these resolved to *something*,
+which is exactly why the handle is never trusted on its name alone:
+
+- `@thecoachlee` → "Bald History", 0 uploads. A name collision.
+- `@PositiveParentingSolutions` → a British creator, not Amy McCready's US
+  organisation. A name match is not an identity match.
+- `@TheSecureRelationship` → Julie Menanno, but 6 uploads — below the
+  ten-upload floor for a working presence, so not her real channel or not
+  yet one.
+- `@matthewhussey` (1 upload), `@drbeckyatgoodinside` (1), `@LisaDamour`
+  (3), `@gettheguy` (a different person entirely), `@alanrobarge` (0),
+  `@PositiveApproachtoCare` (0), `@LovingBravely` (0). The real channels
+  for Hussey and Kennedy were found at `@TheMatthewHussey` and
+  `@goodinside` and are listed; the others were not found.
+
+**No channel found** for Terri Cole's obvious handles (the real one is
+`@terri_cole` and she is listed), Nedra Tawwab, Lisa Damour, John Delony,
+Mark Manson, Julie Smith, Teepa Snow and Cinema Therapy.
+
+**Not researched to a decision this batch**, and still open:
+`@TheHolisticPsychologist` and `@CrappyChildhoodFairy` — both large, both
+carrying contested-claims risk that needs reading rather than a guess.
