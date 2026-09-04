@@ -227,6 +227,60 @@ const ratio = have / creators.length;
 console.log(`\nmappings ${have} of ${cats.length * 5} needed for 5 everywhere  (ratio ${ratio.toFixed(2)}/creator)`);
 console.log(`projection at 400 creators: ~${Math.round(400 * ratio)} mappings => ~${Math.round(400 * ratio / 5)} categories at full depth, ~${cats.length - Math.round(400 * ratio / 5)} carrying a gap`);
 
+// ------------------------------------------------ signal saturation
+// A badge everybody has is noise. The owner's rule after the marketing pass:
+// once a signal is near-universal within a domain, say it once on the
+// category page and let the per-creator badge keep doing the narrower job it
+// can still do. This section is the evidence for those notes — and the check
+// that a note has not gone stale or been written without one.
+const { measureSaturation, saturatedRows, nearRows, SATURATED, MIN_N } =
+  await import('./lib/saturation.mjs');
+const { rows: satRows, perDomain } = measureSaturation(cats, creators);
+let domainNotes = { notes: {}, open: [] };
+const dnPath = join(ROOT, 'data/domain-notes.json');
+if (existsSync(dnPath)) domainNotes = read('data/domain-notes.json');
+const noted = domainNotes.notes ?? {};
+
+console.log('\n\nSIGNAL SATURATION BY DOMAIN');
+console.log('='.repeat(72));
+console.log(`A signal at ${Math.round(SATURATED * 100)}% or more of a domain's creators has stopped`);
+console.log('describing the creator and started describing the field. Domains under');
+console.log(`${MIN_N} creators are not measured at all — the percentage would be arithmetic.\n`);
+
+const sat = saturatedRows(satRows);
+const covered = (r) => (noted[r.domain]?.signals ?? []).includes(r.signal);
+console.log(`  ${pad('domain', 15)} ${pad('signal', 22)} share    standing note`);
+for (const r of sat) {
+  const state = covered(r) ? 'yes' : 'MISSING — rule 17';
+  console.log(`  ${pad(r.domain, 15)} ${pad(r.signal, 22)} ${String(r.n).padStart(2)}/${String(r.of).padEnd(3)} ${String(Math.round(100 * r.pct)).padStart(3)}%  ${state}`);
+}
+const uncovered = sat.filter((r) => !covered(r));
+console.log(`\n  ${sat.length} saturated signal${sat.length === 1 ? '' : 's'}, ${uncovered.length} without a standing note.`);
+
+const near = nearRows(satRows);
+if (near.length) {
+  console.log('\n  On the way up (50-69%) — watch, do not write a note yet:');
+  for (const r of near) console.log(`    ${pad(r.domain, 15)} ${pad(r.signal, 22)} ${r.n}/${r.of}  ${Math.round(100 * r.pct)}%`);
+}
+
+const unmeasured = [...perDomain].filter(([, rec]) => rec.n < MIN_N);
+if (unmeasured.length) {
+  console.log(`\n  Not measurable yet (under ${MIN_N} creators):`);
+  for (const [d, rec] of unmeasured.sort()) console.log(`    ${pad(d, 15)} ${rec.n} creator${rec.n === 1 ? '' : 's'}`);
+}
+
+// A note written from judgement rather than from a count is legitimate, but it
+// has to say so, and it has to come back for measurement.
+const editorial = Object.entries(noted).filter(([, v]) => v.basis !== 'measured');
+if (editorial.length) {
+  console.log('\n  Standing notes not backed by a measurement:');
+  for (const [d, v] of editorial) console.log(`    ${pad(d, 15)} ${v.signals.join(', ')} — ${v.basis}; re-check when ${v.reviewWhen}`);
+}
+for (const q of domainNotes.open ?? []) {
+  console.log(`\n  OPEN QUESTION — ${q.domain} / ${q.signal}: ${q.status}`);
+  console.log(`    ${q.blockedBy}`);
+}
+
 // ---------------------------------------------------------------- rescues
 console.log('\n\nHANDLE RESCUES  (data/handle-rescues.json)');
 console.log('='.repeat(72));

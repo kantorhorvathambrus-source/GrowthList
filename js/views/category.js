@@ -2,7 +2,7 @@
 // the critic in a visually distinct ink band, and the four-week plan as a
 // numbered sequence with a connecting line.
 
-import { getCategory, getCreatorsForCategory, getCategoryIndex } from '../data.js';
+import { getCategory, getCreatorsForCategory, getCategoryIndex, getDomainNotes } from '../data.js';
 import { esc, stateBlock, statePage, setTitle, LEVELS, SIZE_BUCKETS, domainLabel } from '../utils.js';
 
 // Named rather than coded, because "No AU creator" reads as a database error
@@ -101,6 +101,22 @@ function filtersMarkup(entries, filters) {
   </form>`;
 }
 
+// A signal carried by nearly every creator in a domain is a fact about the
+// field, not about the creator. Stated once here, so the badge on each card
+// keeps meaning the narrower thing it can still mean. Only rendered where the
+// category actually has creators — a note about "everyone listed here" over an
+// empty list is a claim about nobody.
+function domainNoteMarkup(domain, domainNotes, hasCreators) {
+  const note = domainNotes?.notes?.[domain];
+  if (!note?.note || !hasCreators) return '';
+  const signals = (note.signals ?? []).map((s) => `<code>${esc(s)}</code>`).join(', ');
+  return `<aside class="standing-note" aria-labelledby="standing-note-heading">
+    <h2 id="standing-note-heading" class="standing-note__head">About ${esc(domainLabel(domain))} on this site</h2>
+    <p>${esc(note.note)}</p>
+    ${signals ? `<p class="standing-note__meta">Applies to the ${signals} badge${(note.signals ?? []).length === 1 ? '' : 's'} below.</p>` : ''}
+  </aside>`;
+}
+
 function planMarkup(category, creatorsById) {
   const plan = category.plan ?? {};
   const weeks = ['week1', 'week2', 'week3', 'week4'];
@@ -183,11 +199,13 @@ export async function renderCategory(app, { params, query }) {
   let category;
   let entries;
   let index;
+  let domainNotes;
   try {
-    [category, entries, index] = await Promise.all([
+    [category, entries, index, domainNotes] = await Promise.all([
       getCategory(params.id),
       getCreatorsForCategory(params.id),
       getCategoryIndex(),
+      getDomainNotes(),
     ]);
   } catch (err) {
     app.setAttribute('aria-busy', 'false');
@@ -244,6 +262,8 @@ export async function renderCategory(app, { params, query }) {
                than a list we have not verified. <a href="#/">Browse other skills</a>.`
             )}</div>`
           : ''}
+
+        ${domainNoteMarkup(category.domain, domainNotes, entries.length > 0)}
 
         ${tabsMarkup(nonCritics, filters.level)}
         <div id="panel-levels" role="tabpanel" aria-labelledby="tab-${filters.level}" tabindex="0">

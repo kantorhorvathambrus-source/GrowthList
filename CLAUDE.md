@@ -122,6 +122,35 @@ this file has the rules, schema, and current state.
     conflict, the owner challenged it, and re-examination showed the
     real disqualifier was that its long-form output is patient
     testimonials and admissions marketing. Right outcome, wrong reason.
+17. **A badge everyone in a domain carries is a fact about the field,
+    not about the creator — state it once at the category level.**
+    `data/domain-notes.json` holds a standing note per domain, rendered
+    above the creator list on every category page in it. Two thresholds,
+    both deliberately conservative: a signal is **saturated** at 70% of
+    a domain's creators, and a domain under **4 creators is not measured
+    at all** — 1 of 2 is 50% and means nothing.
+    Each note records `basis` (`measured` | `editorial`), the counts it
+    was written from, and `cause` (`field` | `selection` | `mixed`).
+    That last one matters and is easy to skip: `practitioner` is at 100%
+    in fitness, programming and productivity **because it is our own
+    inclusion rule**, not because the field is unusual. A note that
+    presents our filter as a finding about the world is the same class
+    of error as rule 14. An `editorial` note — written from a domain
+    pass rather than a count, because the domain is still under 4
+    creators — must carry `reviewWhen` and comes back for measurement.
+    `validate.mjs` fails a saturated signal with no note under `--final`,
+    and warns whenever a note's stored counts have drifted from the live
+    data, so a note cannot quietly start lying as batches land.
+    Unmeasurable questions are recorded in `open[]` rather than guessed.
+    This rule exists because the owner's point about marketing
+    generalises: the per-creator badge should keep doing the narrower
+    job it can still do — who discloses, who is selling the specific
+    thing they are advising on, who is merely hosting.
+    **Current state: 11 saturated signals across 8 domains, all noted;
+    marketing's `commercial-conflict` note is `editorial` (n=2); whether
+    `sells-course` saturates in business is unanswerable at n=2 and is
+    logged as an open question.**
+
 16. **Jurisdiction is metadata, not a reason to raise the minimum.**
     `data/jurisdiction.json` names the categories where tax, law or
     regulation makes advice non-transferable, and any creator mapping to
@@ -367,13 +396,16 @@ this section first to know exactly where to resume.)*
 - **Current phase**: Phase 2 (creator research). **Batches 01–16 are
   written, gated, validated and committed.**
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
-- **Creator count: 142 of 400.** Taxonomy 197, three slots held.
-- **126 of 197 categories populated.** Money 10/12, business 3/13,
+- **Creator count: 143 of 400.** Taxonomy 197, three slots held.
+- **127 of 197 categories populated.** Money 10/12, business 3/13,
   marketing 1/13.
 - **Untouched domains (3)**: relationships, practical, philosophy.
 - **Jurisdiction metadata is live** (rule 16). AU is unserved in 11 of
   12 flagged categories, UK in 9, CA in 8, US in 7.
-- **Critics: 25 of 126 populated categories.**
+- **Domain standing notes are live** (rule 17). 11 saturated signals
+  across 8 domains, all noted; marketing's is `editorial` at n=2;
+  `sells-course` in business is unanswerable at n=2 and logged open.
+- **Critics: 25 of 127 populated categories.**
 - **Documented thin gaps: 1** (`addiction-recovery`).
 - **Affiliation fallback ledger: 11 rescues, 3 wrong, 0 written.**
 

@@ -409,6 +409,60 @@ if (creators.length > 0) {
   }
 }
 
+// ------------------------------------------------------ domain notes
+// Rule 17. Two failure modes worth catching mechanically, because both are
+// invisible by inspection: a saturated signal with no standing note (the
+// badge is still pretending to distinguish creators), and a standing note
+// whose stored counts no longer match the data (the note is asserting a
+// measurement that has moved).
+if (existsSync(join(DATA, 'domain-notes.json'))) {
+  const dn = JSON.parse(readFileSync(join(DATA, 'domain-notes.json'), 'utf8'));
+  const { measureSaturation, saturatedRows, MIN_N } = await import('./lib/saturation.mjs');
+  const { rows: satRows, perDomain } = measureSaturation(categories, creators);
+  const notes = dn.notes ?? {};
+  const domains = new Set(categories.map((c) => c.domain));
+
+  for (const [domain, note] of Object.entries(notes)) {
+    const where = `domain-notes.json ${domain}`;
+    if (!domains.has(domain)) fail(where, 'no category uses this domain');
+    if (!Array.isArray(note.signals) || note.signals.length === 0) fail(where, 'signals must be a non-empty array');
+    for (const sig of note.signals ?? []) {
+      if (!SIGNALS.includes(sig)) fail(where, `unknown signal "${sig}"`);
+    }
+    if (!['measured', 'editorial'].includes(note.basis)) fail(where, 'basis must be "measured" or "editorial"');
+    if (!note.note || String(note.note).trim().length < 80) fail(where, 'note text is missing or too short to be a standing note');
+    if (note.basis === 'editorial' && !note.reviewWhen) {
+      fail(where, 'an editorial note must say when it comes back for measurement');
+    }
+    if (note.basis === 'measured') {
+      if (!Array.isArray(note.measured)) { fail(where, 'a measured note must carry its counts'); continue; }
+      for (const m of note.measured) {
+        const live = satRows.find((r) => r.domain === domain && r.signal === m.signal);
+        const n = live?.n ?? 0;
+        const of = perDomain.get(domain)?.n ?? 0;
+        if (n !== m.n || of !== m.of) {
+          // Not a fail: the dataset grows every batch and drift is expected.
+          // It has to be visible, though, or the note quietly starts lying.
+          warn(where, `stored ${m.signal} ${m.n}/${m.of} but the data now says ${n}/${of} — restate the note`);
+        }
+      }
+    }
+  }
+
+  for (const r of saturatedRows(satRows)) {
+    if (!(notes[r.domain]?.signals ?? []).includes(r.signal)) {
+      cover(`domain-notes.json`, `${r.domain}/${r.signal} is at ${Math.round(100 * r.pct)}% (${r.n}/${r.of}) with no standing note — rule 17`);
+    }
+  }
+
+  for (const q of dn.open ?? []) {
+    const rec = perDomain.get(q.domain);
+    if (rec && rec.n >= MIN_N && q.status === 'unanswerable') {
+      warn('domain-notes.json', `open question ${q.domain}/${q.signal} is marked unanswerable but ${q.domain} now has ${rec.n} creators — measure it`);
+    }
+  }
+}
+
 // ---------------------------------------------------------------- plans
 
 let plansFilled = 0;

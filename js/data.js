@@ -32,6 +32,14 @@ export const getCategories = () => load('categories.json');
 /** Full creator records. Lazy — only fetched once a view actually needs it. */
 export const getCreators = () => load('creators.json');
 
+/**
+ * Standing notes for signals that are near-universal within a domain.
+ * Optional file — an empty object is the correct answer before any signal
+ * has saturated, so a missing file is not an error.
+ */
+export const getDomainNotes = () =>
+  load('domain-notes.json').catch(() => ({ notes: {} }));
+
 /** Search index: categories (name + aliases) and creators (name + handle). */
 export const getSearchIndex = () => load('search-index.json');
 

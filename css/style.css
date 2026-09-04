@@ -967,3 +967,32 @@ pre, table { overflow-x: auto; max-width: 100%; }
   clip: rect(0 0 0 0);
   white-space: nowrap;
 }
+
+/* ---------------------------------------------------- domain standing note */
+/* Rule 17. A field-level fact that would otherwise be repeated as a badge on
+   every card. Set apart from the creator list by a left rule rather than a
+   box, so it reads as an aside to the list and not as a warning about it. */
+.standing-note {
+  border-left: var(--bd-4) solid var(--rule-accent);
+  padding: var(--sp-1) 0 var(--sp-1) var(--sp-4);
+  margin-bottom: var(--sp-8);
+  max-width: 66ch;
+}
+.standing-note__head {
+  font-family: var(--font-cond);
+  font-size: var(--fs-small);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-ink);
+  margin: 0 0 var(--sp-2);
+}
+.standing-note p { font-size: var(--fs-small); margin: 0 0 var(--sp-2); }
+.standing-note p:last-child { margin-bottom: 0; }
+.standing-note__meta { color: var(--text-muted); }
+.standing-note code {
+  font-size: 0.95em;
+  color: var(--chip-ink);
+  border: 1px solid var(--chip-border);
+  border-radius: var(--r-1, 3px);
+  padding: 0 4px;
+}
