@@ -64,6 +64,7 @@ export const SIGNAL_MARKS = {
   'cites-research': 'doc',
   practitioner: 'person',
   'sells-course': 'tag',
+  'commercial-conflict': 'tag',
   'sponsor-heavy': 'tag',
   'contested-claims': 'alert',
   'strong-ideological-frame': 'alert',

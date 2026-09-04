@@ -1,82 +1,66 @@
 {
-  "purpose": "A signal badge that nearly every creator in a domain carries has stopped describing the creator and started describing the field. Rule 17: handle it once, on the category page, and leave the per-creator badge to do the work it can still do — who discloses, who is selling the specific thing they are advising on, and who is merely hosting.",
+  "purpose": "A signal badge carried by nearly every creator in a domain has stopped describing the creator and started describing the field. Rule 17 states it once instead of repeating it on every card.",
+  "placementRule": "Where the saturation is caused by the field, the note belongs on the category page — it tells a visitor something true about the domain they are entering. Where it is caused by our own inclusion rules, it is meta-commentary about how the list was built, and belongs on /how-this-list-was-built instead. Cause decides placement; the validator enforces the pairing.",
   "thresholds": { "saturated": 0.7, "minCreators": 4 },
   "dataAsOf": "2026-09",
   "measuredAtCreators": 143,
-  "notes": {
-    "marketing": {
-      "signals": ["commercial-conflict"],
+  "entries": [
+    {
+      "domain": "marketing",
+      "signal": "commercial-conflict",
+      "cause": "field",
       "basis": "editorial",
       "measured": null,
-      "cause": "field",
+      "placement": "category-page",
       "reviewWhen": "marketing reaches 4 creators and the signal can be measured",
-      "note": "Almost every marketing creator listed here has a commercial interest in the field they are explaining. That is the shape of the supply rather than a run of bad apples: the independent practitioners in this field publish in newsletters and blogs, and most of the video that exists is hosted by companies selling the tools. Read the commercial-interest badge for what it can still separate — who discloses the conflict, who is selling the specific thing they are advising you to do, and who is only hosting an outside practitioner's thinking on their own platform.",
-      "provenance": "Stated from the marketing domain pass, not from a measurement: with 2 creators the percentage would be arithmetic, not evidence. Flagged here so it is re-checked rather than assumed."
+      "provenance": "Stated from the marketing domain pass, not from a count: at 2 creators the percentage would be arithmetic rather than evidence. Recorded as editorial so it is re-checked rather than assumed.",
+      "note": "Almost every marketing creator listed here has a commercial interest in the field they are explaining. That is the shape of the supply rather than a run of bad apples: the independent practitioners in this field publish in newsletters and blogs, and most of the video that exists is hosted by companies selling the tools. The badge still separates what it should — who discloses the conflict, who is selling the specific thing they are advising you to do, and who is only hosting an outside practitioner's thinking on their own platform."
     },
-    "fitness": {
-      "signals": ["practitioner", "sells-course"],
+    {
+      "domain": "fitness",
+      "signal": "sells-course",
+      "cause": "field",
       "basis": "measured",
-      "measured": [
-        { "signal": "practitioner", "n": 15, "of": 15 },
-        { "signal": "sells-course", "n": 14, "of": 15 }
-      ],
-      "cause": "mixed",
-      "note": "Nearly everyone listed here coaches people and sells a program. The first is our own inclusion rule — we do not list fitness explainers who have never trained anyone — so it separates these creators from the wider internet, not from each other. The second is the field: paid coaching and programming is how most credible fitness educators are funded, so selling one is not in itself a mark against a creator. What still varies is whether the free material stands on its own without the purchase, and the per-creator notes say so."
+      "measured": { "n": 14, "of": 15 },
+      "placement": "category-page",
+      "note": "Nearly every fitness creator listed here sells coaching or a training program. That is how the credible end of this field is funded, so a paid program is the norm here rather than a mark against anyone. What still varies is whether the free videos stand on their own without the purchase, and the note on each card says which."
     },
-    "programming": {
-      "signals": ["practitioner", "sells-course"],
+    {
+      "domain": "programming",
+      "signal": "sells-course",
+      "cause": "field",
       "basis": "measured",
-      "measured": [
-        { "signal": "practitioner", "n": 12, "of": 12 },
-        { "signal": "sells-course", "n": 10, "of": 12 }
-      ],
-      "cause": "mixed",
-      "note": "Everyone listed here writes code outside of teaching it, and most sell a course or a paid track. The first is our own inclusion rule and distinguishes nobody within the domain. The second is close to universal among independent programming educators, so treat it as the default rather than as a warning. The question worth asking is whether the free videos are complete enough to learn from without buying anything, which is what the per-creator notes address."
+      "measured": { "n": 10, "of": 12 },
+      "placement": "category-page",
+      "note": "Most programming creators listed here sell a course or a paid track. That is close to universal among independent programming educators now, so read it as the default rather than as a warning. The question worth asking is whether the free videos are complete enough to learn from without buying anything, which the note on each card addresses."
     },
-    "productivity": {
-      "signals": ["practitioner", "sells-course"],
+    {
+      "domain": "productivity",
+      "signal": "sells-course",
+      "cause": "field",
       "basis": "measured",
-      "measured": [
-        { "signal": "practitioner", "n": 7, "of": 7 },
-        { "signal": "sells-course", "n": 6, "of": 7 }
-      ],
-      "cause": "mixed",
-      "note": "Everyone listed here runs the system they teach, and most sell a course, an app or a book built on it. Productivity is unusually self-referential this way: the product often is the method, so the incentive to present one method as more general than it is comes built into the domain. The badge is therefore the norm here; the per-creator notes name what each person sells and how hard they push it."
+      "measured": { "n": 6, "of": 7 },
+      "placement": "category-page",
+      "note": "Almost every productivity creator listed here sells a course, an app or a book built on the method they teach. This field is unusually self-referential that way: the product often is the method, so the incentive to present one system as more general than it really is comes built in. The note on each card names what the person sells and how hard they push it."
     },
-    "creativity": {
-      "signals": ["practitioner"],
-      "basis": "measured",
-      "measured": [{ "signal": "practitioner", "n": 25, "of": 27 }],
-      "cause": "selection",
-      "note": "Almost everyone listed here makes the work they teach, because that is what we required in order to list them at all. The badge marks our floor rather than anything that sets these creators apart. Course selling, by contrast, is split roughly down the middle in this domain, so that badge still tells you something."
-    },
-    "tech": {
-      "signals": ["practitioner"],
-      "basis": "measured",
-      "measured": [{ "signal": "practitioner", "n": 7, "of": 8 }],
-      "cause": "selection",
-      "note": "Almost everyone listed here works in the field they cover — our own inclusion rule, so it does not separate these creators from each other. The badges that still vary in this domain are sponsorship and commercial interest, and those are worth reading on the individual cards."
-    },
-    "money": {
-      "signals": ["practitioner"],
-      "basis": "measured",
-      "measured": [{ "signal": "practitioner", "n": 6, "of": 7 }],
-      "cause": "selection",
-      "note": "Almost everyone listed here works in finance rather than only commenting on it, because that is what we required to list them. The badge marks our floor. In this domain the badges that actually distinguish creators are formal credentials, whether claims are contested, and whether the creator's firm sells the products being discussed."
-    },
-    "career": {
-      "signals": ["practitioner"],
-      "basis": "measured",
-      "measured": [{ "signal": "practitioner", "n": 6, "of": 7 }],
-      "cause": "selection",
-      "note": "Almost everyone listed here has hired, managed or recruited rather than only writing about it — our inclusion rule, not a distinction between them. Course selling is the badge that still varies here, and roughly half of these creators carry it."
-    },
-    "mindset": {
-      "signals": ["practitioner"],
-      "basis": "measured",
-      "measured": [{ "signal": "practitioner", "n": 10, "of": 12 }],
-      "cause": "selection",
-      "note": "Most creators listed here practise what they teach, which is our own inclusion rule rather than a difference between them. In this domain the badge that matters most is whether someone holds a clinical credential — about half do — and that one is on the individual cards."
+
+    { "domain": "fitness", "signal": "practitioner", "cause": "selection", "basis": "measured", "measured": { "n": 15, "of": 15 }, "placement": "build-page" },
+    { "domain": "programming", "signal": "practitioner", "cause": "selection", "basis": "measured", "measured": { "n": 12, "of": 12 }, "placement": "build-page" },
+    { "domain": "productivity", "signal": "practitioner", "cause": "selection", "basis": "measured", "measured": { "n": 7, "of": 7 }, "placement": "build-page" },
+    { "domain": "creativity", "signal": "practitioner", "cause": "selection", "basis": "measured", "measured": { "n": 25, "of": 27 }, "placement": "build-page" },
+    { "domain": "tech", "signal": "practitioner", "cause": "selection", "basis": "measured", "measured": { "n": 7, "of": 8 }, "placement": "build-page" },
+    { "domain": "career", "signal": "practitioner", "cause": "selection", "basis": "measured", "measured": { "n": 6, "of": 7 }, "placement": "build-page" },
+    { "domain": "money", "signal": "practitioner", "cause": "selection", "basis": "measured", "measured": { "n": 6, "of": 7 }, "placement": "build-page" },
+    { "domain": "mindset", "signal": "practitioner", "cause": "selection", "basis": "measured", "measured": { "n": 10, "of": 12 }, "placement": "build-page" }
+  ],
+  "buildPage": {
+    "selectionFloor": {
+      "title": "Why one badge is on almost every card",
+      "paras": [
+        "The “practitioner” badge appears on nearly every creator in several domains — on every single one in fitness, programming and productivity. That is not a discovery about those fields. It is our own inclusion rule showing up in the data: we do not list someone who explains a skill they have never practised, so by the time a creator reaches a category page they have already cleared that bar.",
+        "The badge therefore separates these creators from the wider internet rather than from each other. It is worth knowing when you are deciding whether to trust the list at all, which is why it is written down here. It is not worth repeating on a page about learning a skill, which is why you will not find it there.",
+        "Where a badge is near-universal because of the field rather than because of us — paid courses in fitness, programming and productivity, commercial interest in marketing — the explanation stays on the category page, because that one does tell you something about the domain you are entering."
+      ]
     }
   },
   "open": [

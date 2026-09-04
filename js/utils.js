@@ -72,6 +72,10 @@ export const SIGNAL_LABELS = {
   'cites-research': 'cites research',
   practitioner: 'practitioner',
   'sells-course': 'sells a course',
+  // Distinct from selling a course: profits from the decision being advised
+  // on, not from teaching about it. Added with rule 13 and missed here at the
+  // time, so cards were rendering the raw slug.
+  'commercial-conflict': 'commercial interest',
   'sponsor-heavy': 'sponsor heavy',
   'contested-claims': 'contested claims',
   'strong-ideological-frame': 'strong ideological frame',

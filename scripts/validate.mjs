@@ -410,48 +410,72 @@ if (creators.length > 0) {
 }
 
 // ------------------------------------------------------ domain notes
-// Rule 17. Two failure modes worth catching mechanically, because both are
-// invisible by inspection: a saturated signal with no standing note (the
-// badge is still pretending to distinguish creators), and a standing note
-// whose stored counts no longer match the data (the note is asserting a
-// measurement that has moved).
+// Rule 17. Three failure modes worth catching mechanically, because none is
+// visible by inspection: a saturated signal with no note at all (the badge is
+// still pretending to distinguish creators), a note whose stored counts have
+// drifted from the data (it has started asserting a measurement that moved),
+// and a note whose placement contradicts its cause — a note about our own
+// inclusion rules sitting on a page about learning a skill, or a fact about
+// the field buried on the colophon where nobody reading the list will see it.
 if (existsSync(join(DATA, 'domain-notes.json'))) {
   const dn = JSON.parse(readFileSync(join(DATA, 'domain-notes.json'), 'utf8'));
   const { measureSaturation, saturatedRows, MIN_N } = await import('./lib/saturation.mjs');
   const { rows: satRows, perDomain } = measureSaturation(categories, creators);
-  const notes = dn.notes ?? {};
+  const entries = dn.entries ?? [];
   const domains = new Set(categories.map((c) => c.domain));
+  const CAUSES = ['field', 'selection', 'mixed'];
+  const PLACEMENTS = ['category-page', 'build-page'];
 
-  for (const [domain, note] of Object.entries(notes)) {
-    const where = `domain-notes.json ${domain}`;
-    if (!domains.has(domain)) fail(where, 'no category uses this domain');
-    if (!Array.isArray(note.signals) || note.signals.length === 0) fail(where, 'signals must be a non-empty array');
-    for (const sig of note.signals ?? []) {
-      if (!SIGNALS.includes(sig)) fail(where, `unknown signal "${sig}"`);
+  const seen = new Set();
+  for (const e of entries) {
+    const where = `domain-notes.json ${e.domain}/${e.signal}`;
+    const key = `${e.domain}/${e.signal}`;
+    if (seen.has(key)) fail(where, 'duplicate entry');
+    seen.add(key);
+    if (!domains.has(e.domain)) fail(where, 'no category uses this domain');
+    if (!SIGNALS.includes(e.signal)) fail(where, `unknown signal "${e.signal}"`);
+    if (!CAUSES.includes(e.cause)) fail(where, 'cause must be field, selection or mixed');
+    if (!PLACEMENTS.includes(e.placement)) fail(where, 'placement must be category-page or build-page');
+    if (!['measured', 'editorial'].includes(e.basis)) fail(where, 'basis must be "measured" or "editorial"');
+
+    // The pairing is the whole point of the split, so it is a failure rather
+    // than a warning. A selection-caused note is a statement about our
+    // editorial rules; it belongs where the rules are explained.
+    if (e.cause === 'selection' && e.placement !== 'build-page') {
+      fail(where, 'a selection-caused note explains our inclusion rules, not the skill — placement must be build-page');
     }
-    if (!['measured', 'editorial'].includes(note.basis)) fail(where, 'basis must be "measured" or "editorial"');
-    if (!note.note || String(note.note).trim().length < 80) fail(where, 'note text is missing or too short to be a standing note');
-    if (note.basis === 'editorial' && !note.reviewWhen) {
+    if (e.cause !== 'selection' && e.placement !== 'category-page') {
+      fail(where, 'a field-caused note tells the visitor about the domain — placement must be category-page');
+    }
+    if (e.placement === 'category-page' && (!e.note || String(e.note).trim().length < 80)) {
+      fail(where, 'a category-page note needs its own text, and this one is missing or too short');
+    }
+    if (e.placement === 'build-page' && e.note) {
+      warn(where, 'note text on a build-page entry is never rendered — the build page states it once');
+    }
+    if (e.basis === 'editorial' && !e.reviewWhen) {
       fail(where, 'an editorial note must say when it comes back for measurement');
     }
-    if (note.basis === 'measured') {
-      if (!Array.isArray(note.measured)) { fail(where, 'a measured note must carry its counts'); continue; }
-      for (const m of note.measured) {
-        const live = satRows.find((r) => r.domain === domain && r.signal === m.signal);
-        const n = live?.n ?? 0;
-        const of = perDomain.get(domain)?.n ?? 0;
-        if (n !== m.n || of !== m.of) {
-          // Not a fail: the dataset grows every batch and drift is expected.
-          // It has to be visible, though, or the note quietly starts lying.
-          warn(where, `stored ${m.signal} ${m.n}/${m.of} but the data now says ${n}/${of} — restate the note`);
-        }
+    if (e.basis === 'measured') {
+      const live = satRows.find((r) => r.domain === e.domain && r.signal === e.signal);
+      const n = live?.n ?? 0;
+      const of = perDomain.get(e.domain)?.n ?? 0;
+      if (!e.measured) fail(where, 'a measured note must carry its counts');
+      else if (n !== e.measured.n || of !== e.measured.of) {
+        // Not a failure: the dataset grows every batch and drift is expected.
+        // It has to be visible, though, or the note quietly starts lying.
+        warn(where, `stored ${e.measured.n}/${e.measured.of} but the data now says ${n}/${of} — restate it`);
       }
     }
   }
 
+  if (entries.some((e) => e.placement === 'build-page') && !dn.buildPage?.selectionFloor?.paras?.length) {
+    fail('domain-notes.json', 'entries are placed on the build page but buildPage.selectionFloor has no text');
+  }
+
   for (const r of saturatedRows(satRows)) {
-    if (!(notes[r.domain]?.signals ?? []).includes(r.signal)) {
-      cover(`domain-notes.json`, `${r.domain}/${r.signal} is at ${Math.round(100 * r.pct)}% (${r.n}/${r.of}) with no standing note — rule 17`);
+    if (!seen.has(`${r.domain}/${r.signal}`)) {
+      cover('domain-notes.json', `${r.domain}/${r.signal} is at ${Math.round(100 * r.pct)}% (${r.n}/${r.of}) with no standing note — rule 17`);
     }
   }
 

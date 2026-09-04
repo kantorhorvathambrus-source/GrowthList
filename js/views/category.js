@@ -101,19 +101,25 @@ function filtersMarkup(entries, filters) {
   </form>`;
 }
 
-// A signal carried by nearly every creator in a domain is a fact about the
-// field, not about the creator. Stated once here, so the badge on each card
-// keeps meaning the narrower thing it can still mean. Only rendered where the
-// category actually has creators — a note about "everyone listed here" over an
-// empty list is a claim about nobody.
+// A signal carried by nearly every creator in a domain says something, but not
+// always something about the domain. Where the saturation is the field's doing
+// — paid courses in fitness, commercial interest in marketing — it belongs
+// here, because it tells a visitor what they are walking into. Where it is our
+// own inclusion rule showing up in the data, it is meta-commentary about how
+// the list was built and lives on the colophon instead. rule 17; the split is
+// enforced in the validator, so this renders only what is placed here.
+//
+// Suppressed on an empty category: a note saying "everyone listed here" above
+// a list of nobody is a claim about nobody.
 function domainNoteMarkup(domain, domainNotes, hasCreators) {
-  const note = domainNotes?.notes?.[domain];
-  if (!note?.note || !hasCreators) return '';
-  const signals = (note.signals ?? []).map((s) => `<code>${esc(s)}</code>`).join(', ');
+  if (!hasCreators) return '';
+  const here = (domainNotes?.entries ?? [])
+    .filter((e) => e.domain === domain && e.placement === 'category-page' && e.note);
+  if (!here.length) return '';
   return `<aside class="standing-note" aria-labelledby="standing-note-heading">
-    <h2 id="standing-note-heading" class="standing-note__head">About ${esc(domainLabel(domain))} on this site</h2>
-    <p>${esc(note.note)}</p>
-    ${signals ? `<p class="standing-note__meta">Applies to the ${signals} badge${(note.signals ?? []).length === 1 ? '' : 's'} below.</p>` : ''}
+    <h2 id="standing-note-heading" class="standing-note__head">Worth knowing about ${esc(domainLabel(domain))}</h2>
+    ${here.map((e) => `<p>${esc(e.note)}</p>`).join('')}
+    <p class="standing-note__meta"><a href="#/how-this-list-was-built">How this list was built</a></p>
   </aside>`;
 }
 

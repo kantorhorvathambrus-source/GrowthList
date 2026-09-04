@@ -7,6 +7,7 @@ import { renderHome } from './views/home.js';
 import { renderCategory } from './views/category.js';
 import { renderCreator } from './views/creator.js';
 import { renderStack } from './views/stack.js';
+import { renderColophon } from './views/colophon.js';
 import { getSnapshot } from './data.js';
 import { initHowDidYouHear, recordCategoryView, maybeShowPrompt } from './components/how-did-you-hear.js';
 import { stateBlock, statePage, setTitle, esc } from './utils.js';
@@ -48,6 +49,7 @@ route('/category/:id', wrap(async (app, ctx) => {
 }));
 route('/creator/:id', wrap(renderCreator));
 route('/stack', wrap(renderStack));
+route('/how-this-list-was-built', wrap(renderColophon));
 
 setNotFound(async ({ path }) => {
   setTitle('Page not found');
