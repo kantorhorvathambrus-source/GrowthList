@@ -451,3 +451,42 @@ tools, and This Old House is a commercial television brand. Both carry
 the conflict on the card. Applying the test — would this be included if
 a non-profit ran it? — the answer for both is plainly yes, because the
 instruction is sound and the conflict is visible in the video itself.
+
+## Batch 19 — philosophy: the instructive exclusion
+
+**Hans-Georg Moeller / Carefree Wandering** (`@carefreewandering`, 86
+uploads, median 23 minutes) is a professor of philosophy at the
+University of Macau and one of the better-known Western scholars of
+Daoism. On credentials alone he would be the obvious first pick for
+`eastern-philosophy`.
+
+He is not listed, because his channel is not about that. A keyword scan
+of **all 86 uploads** for Daoism, Taoism, Zhuangzi, Laozi, Confucian and
+Chinese returned **zero long-form hits**. The channel is contemporary
+social philosophy — identity, profilicity, AI, German politics. His
+Daoism work exists in books and university lectures, not here.
+
+This is rule 4 doing the job it exists for. Mapping him to
+`eastern-philosophy` would have been a mapping made from a CV rather than
+from a body of work, and it is exactly the shape the halo effect takes
+when the credential is real.
+
+**Handle traps:** `@philosophyoverdose` resolves to a 2-upload channel
+called "IKEBANA CHRONICLES"; `@Einzelgangermusic` to a 10-upload channel
+under a different name (the real one is `@Einzelganger`);
+`@unsolicitedadvice`, `@DougSmith`, `@closertotruth`,
+`@HistoryofPhilosophy` and `@absurdbeing` all resolve to channels with
+0–1 uploads. Seven traps in one domain.
+
+**Read and set aside:** `@thelivingphilosophy` (100k–500k, IE) has real
+long-form but the recent catalogue drifts steadily into Jungian and
+esoteric territory — metashamanic Nietzsche, menstrual futurism — which
+is a different thing from the philosophy this domain's categories
+describe. `@academyofideas` and `@DailyStoic` are both large and both
+carry a strong frame that needs reading before a judgement, not a guess.
+
+**Critic gap:** philosophy has no critic, and the obvious shape of one —
+somebody taking apart commercialised Stoicism, which the `stoicism`
+blurb explicitly warns about — has not turned up. Weltgeist's "Self-help
+is dead. Read this instead." is the nearest thing and it is one video,
+not a body of work. Left empty under rule 11.

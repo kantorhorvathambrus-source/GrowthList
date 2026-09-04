@@ -1,0 +1,409 @@
+[
+  {
+    "id": "weltgeist",
+    "name": "Weltgeist",
+    "handle": "@weltgeistYT",
+    "channelUrl": "https://www.youtube.com/@weltgeistYT",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Long video essays on Nietzsche and Schopenhauer that stay with the texts rather than converting them into life advice.",
+    "longDescription": "Eighteen of the fifty most recent uploads run over twenty minutes and several pass an hour, which for a channel about nineteenth-century German philosophy is what it takes. The subject is overwhelmingly Nietzsche, with Schopenhauer and Goethe as the recurring neighbours, and the treatment is textual: what the argument actually is, where it came from, what Nietzsche was reading. A sixty-one-minute video works through Schopenhauer at seven increasing levels of difficulty, which is an honest way to admit that a philosophy has depths a summary cannot reach. There is an explicit and useful hostility to the self-help reading of these thinkers — one video is titled simply that self-help is dead and you should read this instead — which matters, because Nietzsche in particular is more commonly encountered on YouTube as motivational content than as philosophy.",
+    "notFor": "Anyone looking for a takeaway. The reward here is understanding an argument, not acquiring a rule, and the coverage is narrow — this is essentially a Nietzsche channel.",
+    "formatTags": [
+      "video-essay",
+      "long-form",
+      "lecture"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 1,
+      "energy": 2,
+      "selfPromotion": 1,
+      "depth": 4
+    },
+    "signals": [
+      "cites-research"
+    ],
+    "categories": [
+      {
+        "id": "existentialism",
+        "strength": "primary",
+        "why": "Nietzsche is where the existentialist problems start, and this is the channel that treats him as a philosopher to be understood rather than a source of slogans about strength.",
+        "evidence": "Forty-minute essays on the will to power and on evil, a sixty-minute reading of Nietzsche against the Bible, and a seven-level treatment of Schopenhauer as the position Nietzsche was responding to.",
+        "entryVideo": {
+          "title": "Schopenhauer's Philosophy Explained in 7 Levels",
+          "videoId": "ObrMMQk4GUM",
+          "whyThisOne": "The seven levels make plain how much a one-paragraph summary of a philosophy leaves out, which is the right thing to learn before anything else here.",
+          "durationMin": 61
+        }
+      },
+      {
+        "id": "meaning-and-purpose",
+        "strength": "secondary",
+        "why": "The question these thinkers are actually asking, kept in its own terms rather than converted into advice about finding your passion.",
+        "evidence": "A thirteen-minute argument against the self-help reading of philosophy, plus essays on power, love and value that treat meaning as a problem rather than a goal to be set.",
+        "entryVideo": {
+          "title": "Self-help is dead. Read this instead.",
+          "videoId": "f5xnkjU5cOU",
+          "whyThisOne": "It draws the line between philosophy and the self-improvement genre explicitly, which is the distinction this whole category depends on.",
+          "durationMin": 13
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Very narrow — close to a single-author channel. No credentials are stated and none are claimed; judge it on the reading rather than on authority."
+  },
+  {
+    "id": "cosmicskeptic",
+    "name": "Alex O'Connor (CosmicSkeptic)",
+    "handle": "@CosmicSkeptic",
+    "channelUrl": "https://www.youtube.com/@CosmicSkeptic",
+    "country": "GB",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Two-hour interviews with working philosophers, where the interviewer has read the book and pushes back.",
+    "longDescription": "The median recent upload is eighty-five minutes and thirty-nine of the last fifty run over twenty, so this is a podcast in video form. What makes it useful rather than merely long is the guest list and the preparation: Keith Frankish on illusionism, Galen Strawson, Annaka Harris, Peter Godfrey-Smith on animal minds, Simon Blackburn on whether ethics is emotion. O'Connor read philosophy at Oxford and argues rather than hosts — he states his own position, gets corrected, and leaves the correction in. The consciousness strand is the deepest thing on the channel: a hundred-and-forty-minute survey of every major theory sits alongside individual interviews with the people who hold them. There is also a large religion-and-atheism strand that is more debate than philosophy, and it is a substantial share of the catalogue.",
+    "notFor": "Anyone who wants a summary. Nothing here is short, and the format assumes you are willing to follow an argument across two hours without a conclusion being handed to you.",
+    "formatTags": [
+      "interview",
+      "long-form",
+      "video-essay"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 1,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 4
+    },
+    "signals": [
+      "credentialed",
+      "cites-research",
+      "sponsor-heavy"
+    ],
+    "categories": [
+      {
+        "id": "philosophy-of-mind",
+        "strength": "primary",
+        "why": "The consciousness material is a genuine survey of the live positions, argued with the people who hold them rather than summarised from outside.",
+        "evidence": "A 141-minute survey of every major theory of consciousness, plus long interviews with Keith Frankish on illusionism, Galen Strawson, Annaka Harris and Peter Godfrey-Smith on animal minds.",
+        "entryVideo": {
+          "title": "Every Theory of Consciousness",
+          "videoId": "xHeT466-hxY",
+          "whyThisOne": "It maps the territory before you commit to any position in it, which is the only sensible order for a field this contested.",
+          "durationMin": 141
+        }
+      },
+      {
+        "id": "ethics",
+        "strength": "secondary",
+        "why": "Moral philosophy argued with people who work in it, including on the metaethical question of what moral claims even are.",
+        "evidence": "An eighty-minute conversation with Simon Blackburn on whether ethics reduces to emotion, a hundred-minute debate on morality with several philosophers, and applied work on the ethics of AI systems.",
+        "entryVideo": {
+          "title": "Are Ethics Just Emotions? - Simon Blackburn",
+          "videoId": "Gs7fBx-zURw",
+          "whyThisOne": "The question underneath all the applied ones, put to someone who has spent a career on it.",
+          "durationMin": 80
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "A large share of the catalogue is religion-and-atheism debate rather than philosophy proper, and the channel grew out of that. Heavily sponsored. He is an interviewer and arguer rather than an academic researcher."
+  },
+  {
+    "id": "kaneb",
+    "name": "Kane B",
+    "handle": "@KaneB",
+    "channelUrl": "https://www.youtube.com/@KaneB",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Analytic philosophy done at seminar length and seminar difficulty, on a small channel with no production values and no concessions.",
+    "longDescription": "Forty-one of the fifty most recent uploads run over twenty minutes and the median is forty-two. The subjects are the actual working problems of contemporary analytic philosophy — threshold deontology, moral cluelessness, the Frege-Geach problem, whether there is evidence against solipsism, a new formulation of the problem of other minds — presented as arguments with premises rather than as positions to be admired. He states his own views and then attacks them. There is no attempt to make any of this feel relevant, which is precisely its value: everything else in this domain is arranging philosophy for an audience, and this is the shape philosophy actually has when practitioners do it. The channel is under a hundred thousand subscribers and appears to be one person with a microphone.",
+    "notFor": "Beginners, and anyone who needs a reason to care stated up front. The vocabulary is not explained and the arguments assume you can hold a distinction across forty minutes.",
+    "formatTags": [
+      "lecture",
+      "long-form"
+    ],
+    "level": [
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 4,
+      "practical": 1,
+      "energy": 1,
+      "selfPromotion": 1,
+      "depth": 4
+    },
+    "signals": [
+      "cites-research"
+    ],
+    "categories": [
+      {
+        "id": "ethics",
+        "strength": "primary",
+        "why": "The frameworks are handled as live arguments with known problems, including the cases they cannot resolve — which is what reasoning about right action actually involves.",
+        "evidence": "Hour-long treatments of threshold deontology, moral contradictions, demandingness objections, moral cluelessness, and the Frege-Geach problem in metaethics.",
+        "entryVideo": {
+          "title": "Threshold Deontology",
+          "videoId": "jOqymknUa_k",
+          "whyThisOne": "It takes the intuition that rules have breaking points and shows exactly how hard that is to make coherent — the best possible cure for confidence in a framework.",
+          "durationMin": 74
+        }
+      },
+      {
+        "id": "philosophy-of-mind",
+        "strength": "primary",
+        "why": "The epistemological core of the field — how you could know anything about another mind, or your own — worked through at length rather than gestured at.",
+        "evidence": "Long-form on a new problem of other minds, on whether there is evidence against solipsism, on whether we can know our own minds, and on mindlessness.",
+        "entryVideo": {
+          "title": "A New Problem of Other Minds",
+          "videoId": "c_8h1JVWw0k",
+          "whyThisOne": "The classic problem restated in a form that resists the usual replies, so you see why it has not simply been solved.",
+          "durationMin": 54
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "No stated credentials and no institutional affiliation given; the work stands or falls on the arguments. Production is minimal and there is no on-ramp for a beginner."
+  },
+  {
+    "id": "partiallyexaminedlife",
+    "name": "The Partially Examined Life",
+    "handle": "@ThePartiallyExaminedLife",
+    "channelUrl": "https://www.youtube.com/@ThePartiallyExaminedLife",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Four people who studied philosophy at graduate level reading a primary text together, line by line, and disagreeing about it.",
+    "longDescription": "Forty-nine of the fifty most recent uploads run over twenty minutes and the median is fifty-five. The long-running format takes one text — Kant's ethics lectures, Kierkegaard on subjective knowledge, Aquinas on the soul, Aristotle on final causes — and works through it across two or more episodes, with the hosts arguing about what it means. The Closereads strand goes slower still, staying on the actual sentences. This is the closest thing available to sitting in on a good graduate seminar, including the parts where the participants admit they are not sure. Because the format is conversation rather than exposition, you get the reasoning process rather than a settled reading, which is the point and also the reason it is not a first stop.",
+    "notFor": "Anyone new to the material. There is no introductory scaffolding, and a fifty-minute discussion of a text you have not read will not stick.",
+    "formatTags": [
+      "long-form",
+      "interview",
+      "lecture"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 4,
+      "practical": 1,
+      "energy": 2,
+      "selfPromotion": 1,
+      "depth": 4
+    },
+    "signals": [
+      "credentialed",
+      "cites-research"
+    ],
+    "categories": [
+      {
+        "id": "ethics",
+        "strength": "secondary",
+        "why": "The major frameworks read in their own texts rather than in summary, which is where the difficulties that summaries smooth over actually live.",
+        "evidence": "Multi-part episodes on Kant's ethics lectures and on Aquinas on ethical psychology, plus close readings of Aristotle.",
+        "entryVideo": {
+          "title": "Partially Examined Life #372: Kant's Ethics Lectures (Part Two)",
+          "videoId": "-U30Mzj0-qM",
+          "whyThisOne": "Kant is the framework most often summarised into something he did not say; hearing four readers argue about the actual lectures fixes that quickly.",
+          "durationMin": 47
+        }
+      },
+      {
+        "id": "existentialism",
+        "strength": "secondary",
+        "why": "Kierkegaard read closely is the honest starting point for the tradition, and the close-reading format suits a writer who resists paraphrase more than most.",
+        "evidence": "A sixty-one-minute Closereads episode on Kierkegaard on subjective knowledge, alongside multi-part work on Kant and Hegel as the background the existentialists were writing against.",
+        "entryVideo": {
+          "title": "Closereads: Kierkegaard on Subjective Knowledge",
+          "videoId": "zvGAW7y2wSk",
+          "whyThisOne": "Existentialism starts here, and this is a slow reading rather than a summary — which is the only way Kierkegaard survives being explained.",
+          "durationMin": 61
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Hosts are graduate-trained rather than currently academic, and the format is deliberately unresolved — you get an argument, not a conclusion. There is a paid membership tier."
+  },
+  {
+    "id": "askamortician",
+    "name": "Caitlin Doughty (Ask a Mortician)",
+    "handle": "@AskAMortician",
+    "channelUrl": "https://www.youtube.com/@AskAMortician",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A working mortician and funeral-industry reformer talking about death as an ordinary fact with an industry attached to it.",
+    "longDescription": "Doughty is a licensed mortician and founded the Order of the Good Death, and the channel's argument is that Western death practice has been outsourced to an industry in a way that costs both money and meaning. The most directly useful videos are about that industry: why funerals are expensive, how the corpse became a product, what happened when funeral homes met reality television, Harvard selling body parts. Thirty-four of the fifty most recent uploads run over twenty minutes. A large share of the catalogue is historical death cases — disasters, exhumations, coroners' failures — which is genuinely researched but is closer to history than to preparation, and you should know that is most of what you will find. She advocates green burial and consumer rights in funeral purchasing, and states both positions plainly rather than presenting them as neutral.",
+    "notFor": "Anyone recently bereaved. The register is comic and forensic, the historical material is graphic, and this is about death rather than about grief.",
+    "formatTags": [
+      "video-essay",
+      "documentary",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 3,
+      "energy": 3,
+      "selfPromotion": 2,
+      "depth": 3
+    },
+    "signals": [
+      "credentialed",
+      "practitioner",
+      "cites-research",
+      "strong-ideological-frame"
+    ],
+    "categories": [
+      {
+        "id": "mortality-and-death",
+        "strength": "primary",
+        "why": "It makes the subject discussable before it is urgent, and it covers the practical and commercial parts almost nobody explains until you are buying them.",
+        "evidence": "Long-form on funeral pricing, on the commodification of the body, on the funeral industry's regulatory failures, and on institutional misuse of donated remains.",
+        "entryVideo": {
+          "title": "Why Are Funerals So Expensive?",
+          "videoId": "i-tqbnswPpo",
+          "whyThisOne": "The most concrete entry point — a decision almost everyone eventually makes badly, explained by someone who has stood on the other side of the counter.",
+          "durationMin": 13
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "An advocate for green burial and funeral reform, not a neutral guide, and she says so. Most of the catalogue is historical death cases rather than anything you can act on. Graphic throughout."
+  },
+  {
+    "id": "einzelganger",
+    "name": "Einzelgänger",
+    "handle": "@Einzelganger",
+    "channelUrl": "https://www.youtube.com/@Einzelganger",
+    "country": "NL",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Video essays applying Stoic and Taoist ideas to specific modern situations, without pretending the ancient text answers the modern question directly.",
+    "longDescription": "A Dutch essayist working mostly in the fifteen-to-twenty-five-minute range, drawing on Epictetus, Marcus Aurelius, Zhuangzi and Buddhist sources. The better videos pick a concrete contemporary problem — the looksmaxxing subculture, the pressure to have children, chronic resistance to circumstances you cannot change — and bring one tradition to it, rather than starting from a quote and hunting for an application. He is explicit in his channel description that this is not a clinical or mental-health service, and the channel is registered with the Dutch media regulator, which is a more accountable position than most of this genre occupies. The weakness is the genre itself: several uploads are two-hour compilations with titles about inner peace and tranquillity, which is the ambient-Stoicism format the serious material is otherwise better than.",
+    "notFor": "Anyone who wants the primary texts. These are essays built from the traditions, not readings of them, and the sourcing is loose by academic standards.",
+    "formatTags": [
+      "video-essay",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 3,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 3
+    },
+    "signals": [
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "stoicism",
+        "strength": "primary",
+        "why": "The Stoic material is applied to real modern situations rather than to enduring a bad job, which is the specific failure mode this skill is defined against.",
+        "evidence": "Essays taking Epictetus to habit change and to sunk-cost decisions, and a twenty-four-minute piece bringing Stoic and related thought to the looksmaxxing subculture as a live case.",
+        "entryVideo": {
+          "title": "Epictetus' Secret to Breaking Bad Habits",
+          "videoId": "vU4x3T_tWv4",
+          "whyThisOne": "A short, concrete application that shows the method working on something small, which is a fairer test of the philosophy than a grand claim about adversity.",
+          "durationMin": 10
+        }
+      },
+      {
+        "id": "eastern-philosophy",
+        "strength": "secondary",
+        "why": "A real Taoist and Buddhist strand handled as philosophy about action and resistance, not as a wellness aesthetic.",
+        "evidence": "Essays on the Taoist art of non-resistance, on a Taoist response to mental crowding, on a Buddhist reading of repeated setbacks, and on the Zen problem of seeking.",
+        "entryVideo": {
+          "title": "The More You Resist, The Worse It Gets | The Taoist Art of Non-Resistance",
+          "videoId": "2I2eLXENAhc",
+          "whyThisOne": "Wu wei is the idea most often mistranslated into passivity; this version keeps it as a claim about how action works.",
+          "durationMin": 19
+        }
+      }
+    ],
+    "role": "generalist",
+    "caveats": "Popular philosophy rather than scholarship — sources are named but not closely worked. The long compilation uploads are ambient content and are not representative of the better essays. He sells books and courses."
+  },
+  {
+    "id": "sisyphus55",
+    "name": "Sisyphus 55",
+    "handle": "@Sisyphus55",
+    "channelUrl": "https://www.youtube.com/@Sisyphus55",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Short, personal essays that use philosophy to sit with a question about how to live rather than to close it.",
+    "longDescription": "This is the accessible end of the domain and it is honest about being that. Videos run around ten minutes — the median recent upload is two, so the substantial ones are a minority — and the register is first-person and unresolved: the fear of enjoying your life, why changing your life is hard, whether there is a right way to live at all. He is willing to say he changed his mind on camera, including about religion. The one genuinely long piece is a fifty-eight-minute conversation with Dr. Tatjana Schnell, who researches meaning empirically, and it is markedly better than the rest because the claims get tested against something. Treat the channel as a way in rather than a destination; it names the questions well and does not pretend to answer them.",
+    "notFor": "Anyone who wants rigour or primary sources. The philosophy is a frame for personal essay, not the other way round, and most uploads are short-form.",
+    "formatTags": [
+      "video-essay",
+      "shorts",
+      "interview"
+    ],
+    "level": [
+      "beginner"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 2,
+      "energy": 2,
+      "selfPromotion": 1,
+      "depth": 2
+    },
+    "signals": [],
+    "categories": [
+      {
+        "id": "meaning-and-purpose",
+        "strength": "primary",
+        "why": "It treats meaning as a question worth staying inside rather than as a problem to be solved by finding your passion, which is what this skill asks for.",
+        "evidence": "A fifty-eight-minute conversation with a researcher who studies meaning empirically, alongside essays on there being no right way to live, on the fear of enjoyment, and on why change is hard.",
+        "entryVideo": {
+          "title": "Why Is There A Crisis Of Meaning? And How Can We Get Out of It? (with Dr. Tatjana Schnell)",
+          "videoId": "-YozLIQQmNo",
+          "whyThisOne": "The one place on the channel where the claims meet research, which makes it both the most substantial video and the best calibration for the rest.",
+          "durationMin": 58
+        }
+      }
+    ],
+    "role": "generalist",
+    "caveats": "Mostly short-form, and the philosophy is used illustratively rather than argued. No credentials claimed. Sponsorship inquiries are the first line of the channel description."
+  }
+]

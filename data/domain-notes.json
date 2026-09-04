@@ -6,7 +6,7 @@
     "minCreators": 4
   },
   "dataAsOf": "2026-09",
-  "measuredAtCreators": 167,
+  "measuredAtCreators": 174,
   "entries": [
     {
       "domain": "marketing",
@@ -187,6 +187,17 @@
         "of": 13
       },
       "placement": "build-page"
+    },
+    {
+      "domain": "philosophy",
+      "signal": "cites-research",
+      "cause": "selection",
+      "basis": "measured",
+      "measured": {
+        "n": 5,
+        "of": 7
+      },
+      "placement": "build-page"
     }
   ],
   "buildPage": {
@@ -195,6 +206,7 @@
       "paras": [
         "The “practitioner” badge appears on nearly every creator in several domains — on every single one in fitness, programming and productivity, and on twelve of thirteen in practical skills. That is not a discovery about those fields. It is our own inclusion rule showing up in the data: we do not list someone who explains a skill they have never practised, so by the time a creator reaches a category page they have already cleared that bar.",
         "The “credentialed” badge does the same thing in relationships, where seven of ten carry it. Relationship advice on YouTube is not mostly given by licensed clinicians — we simply chose them, because the subject sits close enough to clinical territory that we would rather over-weight a qualification than under-weight one. That is a defensible editorial choice and it is still a choice, so it belongs here rather than being presented as a fact about the field.",
+        "In philosophy the same thing shows up as “cites research”, on five of seven. Philosophy on YouTube is not mostly textual — a great deal of it is motivational content with a Roman name attached — and we preferred the channels that work from sources. Again: our choice, stated here rather than presented as a description of the field.",
         "Badges like these separate the creators on this site from the wider internet rather than from each other. That is worth knowing when you are deciding whether to trust the list at all, which is why it is written down here. It is not worth repeating on a page about learning a skill, which is why you will not find it there.",
         "Where a badge is near-universal because of the field rather than because of us — paid courses in fitness, programming, productivity and relationships, commercial interest in marketing — the explanation stays on the category page, because that one does tell you something about the domain you are entering."
       ]

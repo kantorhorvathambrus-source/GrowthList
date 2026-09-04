@@ -396,13 +396,14 @@ in `categories.json`-derived output with a computed creator `count`.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research). **Batches 01–18 are
+- **Current phase**: Phase 2 (creator research). **Batches 01–19 are
   written, gated, validated and committed.**
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
-- **Creator count: 167 of 400.** Taxonomy 197, three slots held.
-- **147 of 197 categories populated.** Money 10/12, business 3/13,
-  marketing 1/13, relationships 11/12, practical 9/13.
-- **Untouched domains (1)**: philosophy.
+- **Creator count: 174 of 400.** Taxonomy 197, three slots held.
+- **154 of 197 categories populated.** **Every domain now has creators.**
+  Full: fitness, communication, creativity, learning, philosophy.
+  Thinnest: marketing 1/13, business 3/13, productivity 7/9.
+- **Untouched domains: none.**
 - **Practical still empty (4)**: `first-aid`, `travel-planning`,
   `camping-and-outdoor-skills`, `personal-style-and-grooming`.
 - **Relationships has no critic anywhere** (rule 11 — flagged, not
@@ -411,15 +412,16 @@ this section first to know exactly where to resume.)*
 - **Jurisdiction metadata is live** (rule 16). AU is unserved in 11 of
   12 flagged categories, UK in 9, CA in 8, US in 7.
 - **Domain standing notes are live** (rule 17), split by cause: 4
-  field-caused notes on category pages, 11 selection-caused ones on the
+  field-caused notes on category pages, 13 selection-caused ones on the
   new `#/how-this-list-was-built` colophon. Marketing's is `editorial`
   at n=2; `sells-course` in business is unanswerable at n=2, logged open.
   Batches 17–18 exercised the mechanism for real: relationships surfaced
   three saturated signals on its first pass, practical one, and mindset's
   stored counts drifted — all caught by the validator, none by noticing.
-- **Critics: 29 of 147 populated categories.** Batch 18 added four —
+- **Critics: 29 of 154 populated categories.** Batch 18 added four —
   Ann Reardon on cooking and baking, Project Farm on car maintenance and
-  home repair. Relationships still has none anywhere.
+  home repair. **Relationships and philosophy have none anywhere** — both
+  flagged under rule 11, neither filled.
 - **Documented thin gaps: 1** (`addiction-recovery`).
 - **Affiliation fallback ledger: 11 rescues, 3 wrong, 0 written.**
 
