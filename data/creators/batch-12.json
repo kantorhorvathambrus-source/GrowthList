@@ -1,0 +1,336 @@
+[
+  {
+    "id": "addictionpolicyforum",
+    "name": "Addiction Policy Forum",
+    "handle": "@AddictionPolicyForum",
+    "channelUrl": "https://www.youtube.com/@AddictionPolicyForum",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A non-profit interviewing addiction researchers and clinicians — education about dependence with nothing being sold at the end of it.",
+    "longDescription": "Addiction Policy Forum describes itself as a nationwide non-profit working to eliminate addiction as a major health problem, headquartered in Washington DC. The format is interviews with named academics and clinicians rather than personal testimony or treatment marketing: the mechanisms and models of recovery with a researcher who studies them, measured stigma in the general population, emerging treatment approaches, what a specific use disorder is and who is at risk. Twenty-two of fifty recent uploads run past twenty minutes and twenty-five sit in the mid-length band, with a fourteen-minute median, so this is substantial material rather than clips. It also carries short practical explainers, including on naloxone. The absence of a commercial interest is the point: nobody here profits from your treatment decision.",
+    "notFor": "Anyone in crisis or needing help now — this is education about a field, not a route into care, and it cannot assess your situation. It is also US-centric in its policy framing.",
+    "formatTags": [
+      "interview",
+      "long-form",
+      "documentary"
+    ],
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 4,
+      "practical": 2,
+      "energy": 1,
+      "selfPromotion": 0,
+      "depth": 3
+    },
+    "signals": [
+      "credentialed",
+      "cites-research"
+    ],
+    "categories": [
+      {
+        "id": "addiction-recovery",
+        "strength": "primary",
+        "why": "Explains dependence and recovery through the people who research them, with no treatment programme to sell — which is rare enough in this field to be the deciding factor.",
+        "evidence": "A registered non-profit publishing interviews with named addiction researchers and clinicians on recovery mechanisms, stigma measurement and treatment approaches, alongside practical explainers such as naloxone use.",
+        "entryVideo": {
+          "title": "Addiction Recovery: Processes, Mechanisms, and Models with Dr. John Kelly",
+          "videoId": "14qA3gvP2TQ",
+          "whyThisOne": "A researcher explaining what recovery actually consists of, which is the frame worth having before encountering anyone selling a route through it.",
+          "durationMin": 23
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Education, never assessment or treatment. If you or someone else is in danger, this is not the resource — alcohol and some other withdrawals can be medically serious and need supervision. US policy focus throughout."
+  },
+  {
+    "id": "soberpowered",
+    "name": "Sober Powered (Gill Tietz)",
+    "handle": "@SoberPowered",
+    "channelUrl": "https://www.youtube.com/@SoberPowered",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Alcohol specifically, explained through its effects on the brain by someone who stopped drinking herself — a coach rather than a clinician, and clear about it.",
+    "longDescription": "Gill Tietz describes herself as a sober and anger-management coach who spent five years trying to moderate her drinking before accepting she could not, and the channel explains how alcohol affects the brain alongside practical strategies for stopping. The useful and unusual material is the unglamorous part: post-acute withdrawal syndrome and how to cope with it, the Surgeon General's alcohol and cancer warning explained, handling social situations without drinking. Thirty-five of fifty recent uploads run three to nineteen minutes with a six-minute median, so it is browsable. She is not a clinician and does not claim to be; what she offers is lived experience plus accessible neuroscience framing, which is a real thing but a different thing from clinical guidance.",
+    "notFor": "Anyone needing medical support to stop drinking, or anyone wanting clinical authority. Coaching and personal experience are the basis here, not a licence.",
+    "formatTags": [
+      "tutorial",
+      "long-form",
+      "video-essay"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 2
+    },
+    "signals": [
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "addiction-recovery",
+        "strength": "secondary",
+        "why": "Covers the parts people are least warned about — the months after stopping, when the acute phase is over and it still feels wrong.",
+        "evidence": "Alcohol-specific material including a dedicated treatment of post-acute withdrawal syndrome, the Surgeon General cancer warning, and social strategies for not drinking, from a coach who stopped drinking herself.",
+        "entryVideo": {
+          "title": "Post-Acute Withdrawal Syndrome (PAWS) After Quitting Drinking: 8 Tips to Cope",
+          "videoId": "3ZNEvyUCzMM",
+          "whyThisOne": "The stage most people are unprepared for and most likely to relapse in, addressed directly and practically.",
+          "durationMin": 21
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "A coach, not a clinician — the record says so because the distinction matters here. Alcohol withdrawal can be medically dangerous and needs medical supervision; nothing on this channel substitutes for that. Sells coaching."
+  },
+  {
+    "id": "abbeysharp",
+    "name": "Abbey Sharp",
+    "handle": "@abbeysharprd",
+    "channelUrl": "https://www.youtube.com/@abbeysharprd",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "500k-1M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A registered dietitian whose main subject is why diets fail and what the industry selling them is actually doing.",
+    "longDescription": "Abbey Sharp is a registered dietitian and the founder of a food media company, and while the channel carries recipes and kitchen content, its substantial work is critical: why restrictive dieting produces the reward cycle that makes it feel effective, why willpower framing keeps failing people, how diet culture has been reconstituted as algorithmic feed conditioning. She also reacts to specific health claims circulating online, including the ones that attribute ordinary symptoms to a fashionable diagnosis. That orientation is what makes her the right creator for a category adjacent to disordered eating: the qualification here is a professional one, and the message is mostly that the thing being sold to you does not work.",
+    "notFor": "Anyone wanting a weight-loss protocol. The argument runs the other way, and if you want a deficit calculator this will frustrate you.",
+    "formatTags": [
+      "video-essay",
+      "shorts",
+      "long-form",
+      "interview"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 2,
+      "energy": 3,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "credentialed",
+      "cites-research",
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "fat-loss",
+        "strength": "primary",
+        "why": "Comes at the subject from why restriction fails rather than how to restrict harder, which is the only responsible starting point in a category this close to disordered eating.",
+        "evidence": "A registered dietitian publishing sustained analysis of dieting psychology, the reward mechanics of restrictive diets, and the marketing of diet culture, alongside reactions to specific circulating health claims.",
+        "entryVideo": {
+          "title": "The Psychology of Dieting: Why Willpower Keeps Failing You",
+          "videoId": "u1DE6uipFEk",
+          "whyThisOne": "Reframes repeated failure as a predictable result of the method rather than a personal defect, which is the reframe most people in this category need first.",
+          "durationMin": 15
+        }
+      },
+      {
+        "id": "nutrition-fundamentals",
+        "strength": "secondary",
+        "why": "Checks specific viral nutrition claims against professional knowledge, including the ones that pin ordinary symptoms on a fashionable cause.",
+        "evidence": "A recurring format reacting to circulating health and nutrition claims as a dietitian, including on attributing common symptoms to thyroid dysfunction.",
+        "entryVideo": {
+          "title": "Fatigue, Hair Loss, Brain Fog and Weight Gain: Is Your Thyroid Actually to Blame? (Dietitian Reacts)",
+          "videoId": "ZVbwsP0CxLQ",
+          "whyThisOne": "A very common set of symptoms and a very common online explanation for them, examined by someone qualified to weigh it.",
+          "durationMin": 31
+        }
+      }
+    ],
+    "role": "critic",
+    "caveats": "Runs a food media business and takes brand work, so read product content accordingly. Much of the channel is recipes rather than the critical material this entry is about. Education, not treatment — disordered eating needs a clinician."
+  },
+  {
+    "id": "careervidz",
+    "name": "CareerVidz (Richard McMunn)",
+    "handle": "@CareerVidz",
+    "channelUrl": "https://www.youtube.com/@CareerVidz",
+    "country": null,
+    "language": "en",
+    "sizeBucket": "5M-20M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Two decades of interview coaching turned into a very large library of questions, model answers and role-specific preparation.",
+    "longDescription": "Richard McMunn founded the channel in 2011 and its stated basis is two decades of his own careers and interview expertise. The catalogue is nearly three thousand videos and is organised the way a candidate actually searches: by question, by role, by employer type. Sixteen of fifty recent uploads run three to nineteen minutes and fourteen run past twenty, with a nine-minute median, so items are substantial enough to work through. The model-answer format is the strength and the weakness together — it gives you a shape to adapt when you have never seen one, and it will make you sound like everyone else if you recite it. The role-specific material goes unusually deep into particular jobs rather than staying generic.",
+    "notFor": "Anyone wanting to develop their own answers from first principles, or working in a field where scripted responses are penalised.",
+    "formatTags": [
+      "tutorial",
+      "long-form",
+      "course"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 0,
+      "practical": 4,
+      "energy": 3,
+      "selfPromotion": 3,
+      "depth": 2
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "job-interviewing",
+        "strength": "primary",
+        "why": "Gives you the shape of a competent answer to questions you will actually be asked, which is what most people lack the first few times.",
+        "evidence": "A nearly three-thousand-video interview library founded on two decades of stated careers and interview coaching, organised by question and by role.",
+        "entryVideo": {
+          "title": "11 INTERVIEW QUESTIONS YOU MUST PREPARE FOR! (Best Answers Included!)",
+          "videoId": "RgBSQi4WLLM",
+          "whyThisOne": "The eleven questions that recur across almost every interview, with worked answers to adapt rather than recite.",
+          "durationMin": 23
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Sells guides and courses throughout. Model answers are widely watched, so reciting them verbatim is a real risk — adapt rather than memorise."
+  },
+  {
+    "id": "salarytransparentstreet",
+    "name": "Salary Transparent Street",
+    "handle": "@salarytransparentstreet",
+    "channelUrl": "https://www.youtube.com/@salarytransparentstreet",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Strangers on the street stating their job and their pay — market information rather than negotiation advice, and useful precisely because it is raw.",
+    "longDescription": "Hannah Williams started the channel in 2022 after discovering she was underpaid, and the format has not changed: approach strangers, ask what they do and what they earn, publish the answer. That is not teaching, and it should not be mistaken for it. What it provides is the input negotiation actually depends on and that most people cannot get — real figures attached to real job titles in named cities, in volume. A hundred and seventy-two of two hundred recent uploads are short clips, with thirteen running past twenty minutes, mostly longer conversations about pay in a particular field. The data is self-reported, unverified and skewed toward people willing to be filmed, which limits what any single figure is worth.",
+    "notFor": "Anyone wanting to be taught how to negotiate. There is no method here — it is a corpus of what people say they are paid, and you supply the rest.",
+    "formatTags": [
+      "shorts",
+      "documentary",
+      "interview",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 3,
+      "energy": 3,
+      "selfPromotion": 2,
+      "depth": 1
+    },
+    "signals": [
+      "practitioner",
+      "strong-ideological-frame"
+    ],
+    "categories": [
+      {
+        "id": "salary-negotiation",
+        "strength": "primary",
+        "why": "Supplies the market information that determines whether you have any leverage at all, which no amount of negotiation technique substitutes for.",
+        "evidence": "A large archive of street interviews recording stated job titles and pay across cities and industries, created explicitly to normalise pay transparency.",
+        "entryVideo": {
+          "title": "I Asked People in New York City How Much They Make",
+          "videoId": "4s3cJR4asyU",
+          "whyThisOne": "A representative sample of the format in one place — watch it to judge how much a single self-reported figure is worth before relying on any of them.",
+          "durationMin": 8
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Self-reported and unverified figures, skewed toward people willing to be filmed and heavily US-centric. Advocacy for pay transparency is the explicit mission, which shapes what gets published."
+  },
+  {
+    "id": "thefutur",
+    "name": "The Futur",
+    "handle": "@thefutur",
+    "channelUrl": "https://www.youtube.com/@thefutur",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "The business side of creative work — pricing, positioning and finding clients — from a training company built specifically for that gap.",
+    "longDescription": "The Futur describes itself as a training platform for creative entrepreneurs covering business strategy, personal branding, and how to price, sell and scale creative services. That is a precise description and it is why this record exists in the career domain rather than the creativity one: the channel was assessed for graphic-design in an earlier batch and excluded, because teaching designers to run a business is not teaching design. Here it is the right fit. The recurring subjects are niching to escape competing on price, what to publish if the goal is inbound client work, and how pricing conversations actually go. Thirty-five of fifty recent uploads are clips; nine run past twenty minutes and carry the substance.",
+    "notFor": "Anyone wanting craft instruction, or working outside creative services — the examples assume design, branding or a similar practice.",
+    "formatTags": [
+      "long-form",
+      "interview",
+      "shorts",
+      "course"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 0,
+      "practical": 4,
+      "energy": 3,
+      "selfPromotion": 4,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "freelancing",
+        "strength": "primary",
+        "why": "Addresses the part that actually decides whether solo work is viable — what you charge and who you charge it to — rather than how to do the work.",
+        "evidence": "A training company whose stated curriculum is pricing, selling and scaling creative services, with a catalogue of client-acquisition and positioning material.",
+        "entryVideo": {
+          "title": "Stop Struggling for Clients, Here's a Niche That Pays!",
+          "videoId": "nTthfof409U",
+          "whyThisOne": "Niching is the decision that most changes a freelancer's income, and this states the argument in ten minutes.",
+          "durationMin": 10
+        }
+      },
+      {
+        "id": "consulting",
+        "strength": "secondary",
+        "why": "Treats getting hired as a positioning problem rather than a sales problem, which is the distinction that separates consulting from contracting.",
+        "evidence": "Long-form interviews on how clients find a practice and on building inbound demand, within a catalogue explicitly about selling expertise.",
+        "entryVideo": {
+          "title": "How the Right Clients Find YOU (It's not what you think) w/ @Jodie_Cook | The Futur Podcast Ep 357",
+          "videoId": "IG0mgfkRz1Q",
+          "whyThisOne": "Forty-four minutes on inbound positioning, which is the mechanism this channel is most credible about.",
+          "durationMin": 44
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "A training business that sells courses hard, and the free content is the funnel. Excluded from graphic-design in batch 03 for exactly the reason it belongs here: it teaches the business, not the craft."
+  }
+]

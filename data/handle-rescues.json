@@ -151,6 +151,53 @@
         "@fatpoke (FATPOKE, score 1)"
       ],
       "recordedAt": "2026-09-02"
+    },
+    {
+      "name": "Abbey Sharp",
+      "resolvedHandle": "@abbeysharprd",
+      "channelId": "UCKLz-9xkpPNjK26PqbjHn7Q",
+      "handlesTried": [
+        "@abbeysharp"
+      ],
+      "winningQuery": "Abbey Sharp Abbey's Kitchen",
+      "gateEvidence": [
+        "affiliation in channel description/title: Abbey's Kitchen, registered dietitian, Sharp"
+      ],
+      "failedBecause": [
+        "handle @abbeysharp: handle does not resolve",
+        "search \"Abbey Sharp official channel\": no name or affiliation evidence found"
+      ],
+      "otherCandidatesConsidered": [
+        "@bitebackwithabbeysharp (Bite Back with Abbey Sharp, score 9)",
+        "@xosimplypink (Abbey Sharp, score 5)",
+        "@abbeysharp707 (Abbey Sharp, score 5)",
+        "@abbeysharp8388 (Abbey Sharp, score 5)",
+        "@abbysharp9871 (Abby Sharp, score 3)",
+        "@abbysharp-c4c (Abby Sharp, score 3)"
+      ],
+      "recordedAt": "2026-09-03"
+    },
+    {
+      "name": "Abbey Sharp",
+      "resolvedHandle": "@abbeysharprd",
+      "channelId": "UCKLz-9xkpPNjK26PqbjHn7Q",
+      "handlesTried": [
+        "@abbeysharp"
+      ],
+      "winningQuery": "Abbey Sharp Abbey's Kitchen",
+      "gateEvidence": [
+        "affiliation in channel description/title: Abbey's Kitchen, registered dietitian"
+      ],
+      "failedBecause": [
+        "handle @abbeysharp: handle does not resolve",
+        "search \"Abbey Sharp official channel\": no name or affiliation evidence found",
+        "search \"Abbey Sharp official channel\": no name or affiliation evidence found",
+        "search \"Abbey Sharp official channel\": name matches but nothing ties this channel to the person — a name match is not an identity match"
+      ],
+      "otherCandidatesConsidered": [
+        "@bitebackwithabbeysharp (Bite Back with Abbey Sharp, score 8)"
+      ],
+      "recordedAt": "2026-09-04"
     }
   ]
 }

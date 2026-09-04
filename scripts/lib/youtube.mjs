@@ -229,12 +229,23 @@ export async function getUploads(playlistId, { max = 50 } = {}) {
   let pageToken;
 
   while (out.length < max) {
-    const data = await api('playlistItems', {
-      part: 'snippet,contentDetails',
-      playlistId,
-      maxResults: String(Math.min(50, max - out.length)),
-      ...(pageToken ? { pageToken } : {}),
-    });
+    let data;
+    try {
+      data = await api('playlistItems', {
+        part: 'snippet,contentDetails',
+        playlistId,
+        maxResults: String(Math.min(50, max - out.length)),
+        ...(pageToken ? { pageToken } : {}),
+      });
+    } catch (err) {
+      // A channel that has never uploaded still advertises an uploads
+      // playlist id, and the API then reports that playlist as not found.
+      // "No uploads" is the correct answer, not a crash — and it must not be
+      // one, because resolveCreator inspects every search candidate and one
+      // empty channel would otherwise abort the whole resolution.
+      if (/playlist.*cannot be found|playlistNotFound/i.test(err.message)) return out;
+      throw err;
+    }
     for (const item of data.items ?? []) {
       out.push({
         videoId: item.contentDetails?.videoId,
@@ -570,15 +581,24 @@ export async function resolveCreator({ name, handles = [], affiliations = [], sa
   // match several channels, so the winner is the one with the most evidence,
   // with upload count as a last-resort tiebreak between a main channel and a
   // spin-off feed.
+  // A near-empty channel cannot win or tie, whatever it scores. The
+  // handle-path guard already covered this; the search path did not, and
+  // searching "Abbey Sharp" tied her real 1,508-upload channel against an
+  // empty one of hers with a near-identical name. Sub-threshold candidates
+  // stay in the reported list — they are useful to see — but they sort last
+  // and are excluded from the ambiguity comparison.
+  const credible = (c) => (c.channel.videoCount ?? 0) >= MIN_CREDIBLE_UPLOADS;
   passing.sort((a, b) =>
+    Number(credible(b)) - Number(credible(a)) ||
     b.gate.score - a.gate.score ||
     Number(b.gate.strong) - Number(a.gate.strong) ||
     (b.channel.videoCount ?? 0) - (a.channel.videoCount ?? 0));
 
-  const [best, runnerUp] = passing;
+  const ranked = passing.filter(credible);
+  const [best, runnerUp] = ranked.length ? ranked : passing;
   // Close scores mean the evidence does not actually distinguish them. Say so
   // rather than pretending the top of a coin-flip is an answer.
-  const ambiguous = Boolean(runnerUp) && (best.gate.score - runnerUp.gate.score) <= 1;
+  const ambiguous = Boolean(runnerUp) && credible(runnerUp) && (best.gate.score - runnerUp.gate.score) <= 1;
 
   // Scale mismatch. A searching-for-"Net Ninja" run once ranked an 18-video
   // bass-fishing channel above the real 2,812-video web-development one,

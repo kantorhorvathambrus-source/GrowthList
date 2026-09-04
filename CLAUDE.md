@@ -85,6 +85,20 @@ this file has the rules, schema, and current state.
     Document each accepted gap in `data/critic-gaps.json` with the
     reason; `validate.mjs --final` treats a documented gap as reported,
     not as a failure, and an undocumented one still fails.
+12. **Some categories are higher-stakes, and there an empty category
+    beats a mediocre one.** `data/high-stakes.json` names them —
+    addiction-recovery, therapy-literacy, injury-rehab, fat-loss,
+    grief-and-loss and the rest — on the principle that a bad
+    recommendation there costs more than an absent one. In those
+    categories: prefer a documented gap to an adjacent creator; expect
+    the `credentialed` signal or say plainly why the creator is
+    trustworthy without it; state in `notFor` and `caveats` that this is
+    education rather than assessment; and if a creator's framing
+    discourages professional help, name that rather than soften it.
+    Adding a category to that file raises the standard and never lowers
+    one. The owner's ruling, made about `addiction-recovery` and
+    generalised deliberately so it is applied consistently rather than
+    remembered.
 
 ## Naming conventions
 
@@ -276,27 +290,23 @@ in `categories.json`-derived output with a computed creator `count`.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research). **Batches 01–11 are
+- **Current phase**: Phase 2 (creator research). **Batches 01–12 are
   written, gated, validated and committed.**
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
-- **Creator count: 115 of 400.** 01=16, 02=14, 03=21, 04=11, 05=6, 06=4,
-  07=12, 08=7, 09=8, 10=7, 11=9. Every entry video passed the gate.
+- **Creator count: 121 of 400.** Every entry video passed the gate.
 - **Taxonomy 195** after migration 001. Five freed slots HELD.
-- **93 of 195 categories populated.** Health reached 10/14 in batch 11;
-  still empty there are `fat-loss`, `sports-nutrition`, `gut-health`,
-  `addiction-recovery` — run the affiliation fallback on `@abbeysharp`
-  first, it did not resolve on the obvious handle.
-- **Untouched domains (8)**: career, money, business, marketing, tech,
-  relationships, practical, philosophy. ~97 categories with nobody.
-- **Critics: 17 of 93 populated categories.** Health turned out to be
-  the richest domain for them yet — Nutrition Made Simple, Physionic and
-  Lab Muffin are all credentialed people whose output is largely
-  correcting claims in their own field.
-- **Affiliation fallback ledger: 10 rescues, 3 wrong answers, 0 wrong
+- **99 of 195 categories populated.** Health 12/14 (still open:
+  `sports-nutrition`, `gut-health`). Career opened at 4/13.
+- **First documented thin gap written**: `addiction-recovery` ships at 2
+  under rule 12, with the reasoning in `data/thin-gaps.json`. That file
+  is the model for every gap that follows — say what was searched, what
+  was rejected and why.
+- **Untouched domains (7)**: money, business, marketing, tech,
+  relationships, practical, philosophy.
+- **Critics: 18 of 99 populated categories** (Abbey Sharp added
+  fat-loss).
+- **Affiliation fallback ledger: 11 rescues, 3 wrong answers, 0 wrong
   answers written.**
-- **The accepted trade**: 200-category target, 400 creators, scope rule
-  untouched → ~73 categories ship carrying a documented gap. Never close
-  a gap by loosening scope.
 
 ### Immediate next actions
 

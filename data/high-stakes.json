@@ -1,0 +1,21 @@
+{
+  "_comment": "Categories where acting on bad advice can cause physical harm, delay treatment someone needs, or worsen a crisis. The bar is higher here and an empty category is explicitly preferred to an adjacent one: a bad recommendation costs more than an absent one. Owner's ruling, made about addiction-recovery and generalised. Adding a category here raises the standard; it never lowers one.",
+  "categories": {
+    "addiction-recovery": "Dependence, withdrawal and relapse. Wrong or moralising advice can keep someone from treatment, and some withdrawal is medically dangerous.",
+    "therapy-literacy": "How to find and judge therapy. Bad guidance here can send someone to the wrong modality or away from help entirely.",
+    "anxiety-management": "Overlaps with clinical anxiety disorders. Technique content presented as treatment can delay real care.",
+    "emotional-regulation": "Frequently reached for in genuine distress rather than for self-improvement.",
+    "grief-and-loss": "People arrive acutely bereaved. Prescriptive stage models and timelines do measurable harm.",
+    "injury-rehab": "Loading an injury wrongly causes further injury. Anything here is education, never assessment.",
+    "back-pain-management": "The category most likely to attract confident structural claims that frighten people out of moving.",
+    "hormonal-health": "Testing and treatment decisions with real medical consequences, and a heavy supplement-marketing presence.",
+    "fat-loss": "Adjacent to disordered eating. Aggressive deficit and body-composition content can be actively harmful.",
+    "supplements-literacy": "Dose and interaction errors have physical consequences, and the field is almost entirely commercial."
+  },
+  "standard": [
+    "Prefer a documented empty category to an adjacent or under-credentialed creator.",
+    "A creator here should normally carry the `credentialed` signal, or the record must say plainly why they are trustworthy without it.",
+    "`notFor` and `caveats` must state the limit explicitly — that this is education and not assessment or treatment.",
+    "A creator whose framing discourages professional help needs that named in their record, not softened."
+  ]
+}

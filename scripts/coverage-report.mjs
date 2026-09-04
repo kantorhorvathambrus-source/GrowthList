@@ -92,6 +92,21 @@ if (thinDocumented.length) {
   for (const r of thinDocumented) console.log(`  ${r.n} creator${r.n === 1 ? ' ' : 's'}  ${pad(r.id, 30)} ${pad(r.domain, 14)} ${thinGaps[r.id]}`);
 }
 
+// High-stakes categories get called out by name: an empty one there is a
+// deliberate outcome under rule 12, not an oversight to be tidied away later.
+let highStakes = {};
+const hsPath = join(ROOT, 'data/high-stakes.json');
+if (existsSync(hsPath)) highStakes = read('data/high-stakes.json').categories ?? {};
+const hsRows = under.filter((r) => highStakes[r.id]);
+if (hsRows.length) {
+  console.log(`\nHIGHER-STAKES categories below target (${hsRows.length}) — rule 12`);
+  console.log('  An empty category here is preferred to an adjacent creator.');
+  for (const r of hsRows) {
+    const state = thinGaps[r.id] ? 'documented' : 'open';
+    console.log(`  ${r.n} creator${r.n === 1 ? ' ' : 's'}  ${pad(r.id, 26)} ${pad(state, 11)} ${highStakes[r.id].slice(0, 70)}`);
+  }
+}
+
 console.log(`\nStill open, by domain (${openWork.length})`);
 const byDom = new Map();
 for (const r of openWork) {

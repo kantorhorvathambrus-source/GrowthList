@@ -190,6 +190,32 @@ obvious handle and is the priority target for the first three — the
 affiliation fallback has not been run on her yet. Unfinished, not
 decided.
 
+### Batch 12 — addiction-recovery under rule 12, and the career domain opened
+
+`addiction-recovery` is the project's **first documented thin gap**
+(`data/thin-gaps.json`). It ships at 2 creators, not 5, deliberately.
+
+Rejected on **conflict of interest rather than quality**:
+
+| Handle | What it is | Why rejected |
+| --- | --- | --- |
+| `@TheRecoveryVillage` | A physician-led rehab chain, 760 uploads | The credential is real, but a company that profits from admissions publishing guidance about seeking treatment is the textbook conflict rule 12 exists for. |
+| `@AllenCarrsEasyway` | Commercial cessation method, 719 uploads | 172 of 200 uploads under two minutes, no clinical credential, and its own description claims 50 million users — marketing, not evidence. |
+| `@NIDAnews` | An unrelated Arabic-language news channel | Handle trap. |
+| `@AlcoholMastery` | 1 upload | Empty. |
+
+Other batch-12 exclusions:
+
+| Handle | Why |
+| --- | --- |
+| `@BigInterview` | 196 of 200 uploads under two minutes — a training-product funnel with almost no substantive video. Same call as GitKraken and Zapier. |
+| `@DrGraceLee` | 1,049 uploads, describes herself as "neuroscientist and executive mentor". Career-influence advice framed on a neuroscience credential, with no evidence the advice derives from that research. Credential-borrowing, so left out pending a closer look. |
+
+**The Futur returns.** Excluded from `graphic-design` in batch 03 as "a
+business channel for designers, not a graphic-design channel" — and it
+is now the right creator for `freelancing` and `consulting`, exactly
+where that note predicted it belonged.
+
 ## When the obvious handle fails: the fallback search path
 
 A person's obvious handle failing is **not** grounds to drop them. Before
