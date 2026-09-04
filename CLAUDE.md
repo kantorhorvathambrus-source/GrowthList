@@ -108,11 +108,12 @@ this file has the rules, schema, and current state.
     Document each accepted gap in `data/critic-gaps.json` with the
     reason; `validate.mjs --final` treats a documented gap as reported,
     not as a failure, and an undocumented one still fails.
-12. **Seven categories are higher-stakes, and there an empty category
+12. **Eight categories are higher-stakes, and there an empty category
     beats a mediocre one.** `data/high-stakes.json`, **owner-confirmed
     and in force**: `addiction-recovery`, `injury-rehab`,
     `back-pain-management`, `grief-and-loss`, `supplements-literacy`,
-    `therapy-literacy`, `first-aid`. In these: prefer a documented gap to an adjacent
+    `therapy-literacy`, `first-aid`, `camping-and-outdoor-skills`.
+    In these: prefer a documented gap to an adjacent
     creator; expect `credentialed` or say plainly why the creator is
     trustworthy without it; state in `notFor` and `caveats` that this is
     education rather than assessment; and if a creator's framing
@@ -121,6 +122,26 @@ this file has the rules, schema, and current state.
     category exists to teach someone to judge supplement claims, so a
     creator who sells supplements works against its purpose and is
     disqualified rather than merely flagged.
+    **Three distinct rationales now sit in this file and they are not
+    interchangeable.** Six categories are here because bad advice is
+    costly over time; `first-aid` and `camping-and-outdoor-skills` are
+    here for reasons of their own, both narrower, and neither
+    generalises to the other.
+
+    `camping-and-outdoor-skills` (batch 21) is **verification
+    structurally unavailable** — and the owner was precise that this,
+    not stress, is the load-bearing part. **Checking is impossible at
+    the moment of use:** no signal, no second source, nobody to ask, and
+    the consequence lands before reconsideration is possible. That is a
+    tighter test than stress, and it is exactly why
+    **`car-maintenance` and `home-repair-diy` were proposed and
+    rejected** — those are bench-side, pausable and checkable, so the
+    viewer keeps the ability to verify. The owner's ruling on that:
+    *physical harm alone was always too loose a test — if it qualified,
+    rule 12 would cover half the taxonomy.* Within the category, it is
+    navigation and judgement about conditions that carry the risk; gear
+    reviews and trail guides do not.
+
     `first-aid` was added in batch 19, owner-confirmed, and its
     rationale is **deliberately narrower than the other six and must not
     be generalised**. It is not that bad advice here is costly over
@@ -133,6 +154,13 @@ this file has the rules, schema, and current state.
     reasoning again is not "does the subject sound serious" — it is
     **"is this acted on under stress, from memory, with evaluation
     impossible?"**
+
+    **Neither of these two tests is "could someone get hurt."** Ask what
+    the viewer's situation takes away: `first-aid` takes away attention,
+    `camping-and-outdoor-skills` takes away access to any check at all.
+    A category where the viewer can pause, re-read and ask somebody does
+    not qualify however dangerous its subject.
+
     I originally proposed ten categories; the owner cut four
     (`fat-loss`, `anxiety-management`, `emotional-regulation`,
     `hormonal-health`) because applying it there would have bought my
@@ -482,8 +510,11 @@ this section first to know exactly where to resume.)*
   Harry Dry has 4 uploads, Seth Godin 7, and copyhackers/backlinko/CXL
   do not resolve. The discipline's practitioners chose not to work in
   video. See UNVERIFIED.md batch 20.
-- **Rule 12 now covers seven categories**; `first-aid` was added on the
-  owner's acute-recall rationale and is expected to ship empty.
+- **Rule 12 now covers eight categories**, under three distinct and
+  non-interchangeable rationales: six for cost-over-time, `first-aid`
+  for acute recall, `camping-and-outdoor-skills` for verification being
+  structurally unavailable. `car-maintenance` and `home-repair-diy`
+  were proposed and rejected — bench-side work is checkable.
 - **Affiliation fallback ledger: 11 rescues, 3 wrong, 0 written.**
 
 ### Immediate next actions

@@ -12,7 +12,7 @@
     "dataAsOf": "2026-09",
     "shortDescription": "A triple-crown thru-hiker answering the beginner questions about being outdoors that people are too embarrassed to ask.",
     "longDescription": "Dixie has walked the Appalachian, Pacific Crest and Continental Divide trails, plus the Camino and Kilimanjaro, and the channel is the accumulated practical knowledge of doing so. Fifty-four of the two hundred most recent uploads run over eight minutes and twenty pass twenty. The most useful thing here is a format she returns to: multi-hour question sessions covering over a hundred beginner questions explicitly framed as the ones people are too embarrassed to ask — how you go to the toilet, what you do when it rains for four days, what actually goes wrong. That is the layer of outdoor knowledge normally transmitted in person and almost never written down. There is a strand on judgement rather than gear too: what she would do differently across the three trails, and what the most important things you learn out there actually are.",
-    "notFor": "Anyone wanting technical mountaineering, winter travel or wilderness navigation to a professional standard — this is long-distance trail hiking. Also US-trail-shaped in its examples, permits and resupply logistics.",
+    "notFor": "Anyone wanting technical mountaineering, winter travel or wilderness navigation to a professional standard — this is long-distance trail hiking. Also US-trail-shaped in its permits and resupply logistics. And read the caveat before relying on any of it in the field: this is education from experience, not training, and it is not assessment of whether you or your route are ready.",
     "formatTags": [
       "q-and-a",
       "long-form",
@@ -48,7 +48,7 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Gear sponsorship is frequent and gear recommendation is a large share of the catalogue. Experience-derived rather than instructor-trained: this is not a substitute for wilderness first aid or navigation training, and nothing here covers conditions where a mistake is not recoverable."
+    "caveats": "Gear sponsorship is frequent and gear recommendation is a large share of the catalogue. **No instructor credential, and none is claimed** — the authority here is roughly ten thousand miles of walking on the Appalachian, Pacific Crest and Continental Divide trails plus the Camino and Kilimanjaro, which is real experience of exactly this activity rather than of the wilderness generally. Take the specific limit seriously: outdoors you cannot check what you were told. There is no signal, no second source and nobody to ask, and a wrong call lands before you can reconsider it. Get navigation and wilderness first aid from training that assesses you, and use this for the logistics and expectations around them."
   },
   {
     "id": "hikingguy",
@@ -63,7 +63,7 @@
     "dataAsOf": "2026-09",
     "shortDescription": "Trail-tested navigation and safety equipment reviewed sceptically, wrapped around a ten-essentials framework.",
     "longDescription": "The channel's stated remit is safer planning, trail guides and real-world gear testing, and the honest summary of what is actually published is that the third dominates. Of two hundred and fifty uploads scanned, the substantial ones are largely Garmin GPS units, satellite messengers and emergency beacons, tested over months rather than unboxed. That narrowness is worth something specific: navigation and emergency communication are the parts of outdoor safety where equipment genuinely matters, and he is willing to return a thousand-dollar device on camera and say why, then buy it again and say why. The two long ten-essentials videos are the framework the rest hangs on. Trail guides for specific American peaks make up the remainder.",
-    "notFor": "Anyone looking for skills rather than equipment — shelter, weather judgement and campcraft are barely covered. The trail guides are US-specific and the gear is expensive.",
+    "notFor": "Anyone looking for skills rather than equipment — shelter, weather judgement and route decisions are barely covered, and those are the parts of this category that actually carry risk. The trail guides are US-specific and the gear is expensive.",
     "formatTags": [
       "tutorial",
       "documentary",
@@ -88,7 +88,7 @@
       {
         "id": "camping-and-outdoor-skills",
         "strength": "secondary",
-        "why": "The navigation and emergency-communication half of this skill, which is the part where the equipment choice is a real decision rather than a preference.",
+        "why": "The navigation and emergency-communication equipment half of this skill — which is deliberately the part of the category where verification IS still available, because you are choosing a device at home with time to check, not making a judgement call in the field where you cannot.",
         "evidence": "Long-form ten-essentials treatments, months-long tests of satellite messengers and GPS units including a returned device explained on camera, and work on offline mapping and beacon alternatives.",
         "entryVideo": {
           "title": "Best Hiking Gear - The HikingGuy 10 Essentials",
@@ -99,7 +99,7 @@
       }
     ],
     "role": "generalist",
-    "caveats": "Predominantly a gear-review channel with affiliate incentives on expensive equipment, despite the safety framing. Judgement about conditions — the part that keeps people alive — is largely absent, so do not treat this as outdoor-skills education on its own."
+    "caveats": "Predominantly a gear-review channel with affiliate incentives on expensive equipment, despite the safety framing. **No instructor or guiding credential** — the basis is years of trail testing, which supports equipment claims and does not support anything else. Judgement about conditions is largely absent, so **do not treat this as outdoor-skills education**: it is education about kit, and it is not assessment of your route, your fitness or your plan. The decisions it helps with are the ones you make before you leave."
   },
   {
     "id": "gentlemansgazette",
