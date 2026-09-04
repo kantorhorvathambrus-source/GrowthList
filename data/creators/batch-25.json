@@ -1,0 +1,37 @@
+[
+  {
+    "id": "brandmasteracademy",
+    "name": "Brand Master Academy",
+    "handle": "@brandmasteracademy",
+    "channelUrl": "https://www.youtube.com/@brandmasteracademy",
+    "country": "FR",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Long interviews with the people who actually do brand positioning for a living, on the process rather than the aesthetics.",
+    "longDescription": "The substantial material here is a set of thirty-nine to sixty-three minute conversations with practitioners whose work is positioning rather than visual identity — April Dunford on why most business-to-business positioning fails, Bobby Moesta on how buyers actually change their minds, Blair Enns on selling expertise, Laura Ries on why a brand needs an opponent. That roster is the reason for the listing: these are people with a method and a track record rather than commentators. A repositioning case study on milk is the clearest demonstration of what the discipline consists of when it is done properly. The channel's own material — three-pillar frameworks, positioning triggers — is thinner and more formulaic than the interviews. Note the shape: forty-two of the fifty most recent uploads are under two minutes, so the interviews are a small fraction of what you will first see.",
+    "notFor": "Anyone looking for logo, identity or visual design work — this is positioning and strategy, and the visual layer is barely touched. It also assumes you are advising clients or running a business, not building a personal brand.",
+    "formatTags": ["interview", "long-form", "shorts"],
+    "level": ["intermediate", "advanced"],
+    "profile": { "evidenceBased": 2, "practical": 4, "energy": 2, "selfPromotion": 4, "depth": 3 },
+    "signals": ["practitioner", "sells-course"],
+    "categories": [
+      {
+        "id": "brand-strategy",
+        "strength": "primary",
+        "why": "Deciding what to stand for in a customer's mind, treated as a process with steps and named practitioners rather than as taste — and with the failure modes discussed as often as the successes.",
+        "evidence": "Forty-six minutes with April Dunford on why business-to-business positioning fails, fifty-three with Bobby Moesta on how buyers change their minds, a thirty-six-minute repositioning case study on milk, and fifty minutes on agency strategy processes with Bill Kenney.",
+        "entryVideo": {
+          "title": "Why Most B2B Positioning Fails with April Dunford",
+          "videoId": "D7pSU4udo8g",
+          "whyThisOne": "Starts from the failure rather than the framework, with the practitioner most associated with getting positioning right — which makes the frameworks elsewhere on the channel easier to judge.",
+          "durationMin": 46
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "A course business with heavy funnelling — the channel exists to sell a brand-strategy programme and the short-form content is built for that. The interviews are the substance; the in-house framework videos are the pitch. Guests are frequently promoting their own books."
+  }
+]

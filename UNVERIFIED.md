@@ -631,3 +631,70 @@ scope errors of the same shape, both caught. One finding tested and
 survived.** The rule's value is not that it produces new creators — it is
 that a finding nobody tried to break is indistinguishable from a search
 that stopped early.
+
+## Batch 25 — the full rule 18 sweep, and the critic claims tested
+
+The owner's instruction was to run rule 18 against **every** standing
+structural claim, not only the flagged ones, and to treat an untested
+gap as unfinished. Both are now enforced mechanically:
+`data/thin-gaps.json` entries carry
+`rule18: { testedAt, subAreas[], probed[], outcome, whatWasTried }`, and
+`validate.mjs` fails a gap whose `probed` does not cover its own
+`subAreas`.
+
+### Claims tested this batch
+
+**`brand-strategy` — FALSIFIED, category now filled.** The batch-23
+claim that no candidate existed came from probing brand *consultancies*
+and *individual strategists*, most of which do not resolve. The
+never-searched end was training businesses that interview practitioners.
+Brand Master Academy is there: 39–63 minute conversations with April
+Dunford, Bobby Moesta, Blair Enns and Laura Ries, plus a repositioning
+case study. Listed.
+
+**`conversion-optimization` — SURVIVED, and written the right way round.**
+This is the first gap documented *after* the two corrections, so all
+four sub-areas were probed before the claim was made rather than after:
+consultancies (`@speero` 0 uploads, `@Widerfunnel` 2,
+`@conversionrateexperts` 0), tool vendors (Optimizely 106 uploads with 2
+long-form; AB Tasty 97 with 4, all webinars), independent practitioners
+(none resolve), and behavioural science. `@cxl` is a handle trap
+resolving to an unrelated Arabic-language channel with 4,529 uploads.
+**The near-miss is recorded rather than used:** Nudgestock, Ogilvy's
+behavioural science festival, has 239 uploads with 20 of 49 over twenty
+minutes and speakers including Charles Spence and Roger Martin. It is
+genuinely good and it is *not* conversion optimisation — behaviour
+change and creativity are adjacent, not the same. Mapping it would have
+been the credentialed halo effect in a new dress.
+
+**The relationships critic gap — SURVIVED.** The end never searched was
+credentialed clinicians who critique the mental-health content industry.
+Mickey Atkins is the near-miss: a therapist and social worker, 595
+uploads, median 74 minutes, with a substantive 37-minute debunk of Dr.
+Amen and a critique of televised couples therapists. She is not listed,
+and the reason is rule 11 rather than quality — her critical work is a
+small part of a very long catalogue that is mostly reality-television
+commentary and a running feud with a political commentator, so as a
+*critic slot for relationships* she would be thin. `@DrToddGrande` and
+`@unlearningtherapy` do not resolve. Dr Syl is a psychiatrist with real
+explainers but is a specialist, not a critic.
+
+**The philosophy critic gap — SURVIVED.** Philosophy Tube was the
+strongest untested candidate: 1M–5M, 15 of 50 recent uploads over twenty
+minutes. Read, and rejected on subject rather than quality — the
+long-form is political and social essay (conversion therapy, birth
+rates, colonialism), not criticism of philosophy content or of the
+self-help use of philosophy. `@cuckphilosophy` does not resolve. The
+Living Philosophy drifts into Jungian and esoteric territory.
+
+### Score across three batches
+
+Five structural claims tested. **Three falsified** — marketing
+text-not-video, first-aid absent-supply, brand-strategy no-candidate —
+**all three the same scope error**: a finding from one end of a domain
+applied to ends never searched. **Four survived**: addiction-recovery,
+conversion-optimization, and the two critic gaps.
+
+A test that falsifies everything is not a test. A test that falsifies
+three of seven, all in one direction, is a measurement of a specific
+habit.

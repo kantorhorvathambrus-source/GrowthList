@@ -175,6 +175,20 @@ if (thinDocumented.length) {
     // Whether a gap is ours or the world's is the thing worth surfacing: a
     // category thin because our own rules rejected candidates is a different
     // fact from one thin because nothing good exists.
+    // Rule 18: a gap without a disconfirmation test is unfinished research
+    // wearing a documented gap's clothes, so it is labelled as such here
+    // rather than counted alongside the tested ones.
+    const r18 = entry.rule18;
+    if (!r18) {
+      console.log(`    RULE 18: NOT TESTED — this is unfinished, not a documented gap`);
+    } else {
+      const unprobed = (r18.subAreas ?? []).filter((a) => !(r18.probed ?? []).includes(a));
+      console.log(`    rule 18 [${r18.outcome}] ${r18.probed?.length ?? 0}/${r18.subAreas?.length ?? 0} sub-areas probed${unprobed.length ? ` — MISSING: ${unprobed.join(', ')}` : ''}`);
+    }
+    if (entry.corrected) {
+      console.log(`    CORRECTED — this entry was wrong and says so:`);
+      for (const line of String(entry.corrected).match(/.{1,84}(\s|$)/g) ?? []) console.log(`      ${line.trim()}`);
+    }
     if (entry.gapCause) {
       const looser = entry.countUnderLooserStandard;
       const delta = looser != null && looser !== r.n ? `  (would be ${looser} under the standard used elsewhere)` : '';

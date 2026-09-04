@@ -7,7 +7,22 @@
       "countUnderLooserStandard": 2,
       "reason": "Searched deliberately rather than opportunistically: 13 candidate handles probed, 5 resolved. Included: Addiction Policy Forum (non-profit, interviews named researchers, nothing sold) and Sober Powered (a coach, explicitly not a clinician, whose post-acute withdrawal material is hard to find elsewhere). @NIDAnews is an unrelated Arabic-language news channel; @AlcoholMastery has one upload.",
       "challenged": "The owner challenged the original exclusion of @TheRecoveryVillage, correctly: it was excluded on conflict of interest alone, which is a stricter standard than this project applies anywhere else — commercial interest is normally disclosed with sells-course or sponsor-heavy and left to the visitor to weigh. Re-examined on content instead. Its long-form output is patient testimonials and staff Q&As, its mid-length band is more testimonials plus admissions and insurance explainers ('Understanding Your Admission Process', '7 Myths Around Using Insurance for Rehab'), and the remainder is generic meditation and nutrition filler unrelated to addiction. It does carry genuinely useful withdrawal-timeline and detox-danger explainers, but those are ~3-minute clips. The deciding test: would this be included if a non-profit ran it? No — the substantive content is too thin and too marketing-shaped, the same standard that excluded GitKraken, Zapier and Big Interview. @AllenCarrsEasyway fails identically: 4 long-form videos, all testimonials. So the exclusions stand, but on content quality rather than on conflict, and the original reasoning was wrong. The commercial-conflict signal was added as a result, so that future cases are disclosed rather than silently dropped.",
-      "attribution": "MIXED, and mostly our criteria rather than absent supply. Supply exists — this is a large, active field on YouTube — but almost all of it is either treatment-provider marketing or unstructured personal testimony. What is genuinely scarce is independent, credentialed, educational content. Under a looser content standard the count would still be 2, because the rejected candidates fail on substance rather than on the rule-12 conflict test; under a looser CREDENTIAL standard it could be higher, since there are many recovery-testimony channels deliberately not pursued."
+      "attribution": "MIXED, and mostly our criteria rather than absent supply. Supply exists — this is a large, active field on YouTube — but almost all of it is either treatment-provider marketing or unstructured personal testimony. What is genuinely scarce is independent, credentialed, educational content. Under a looser content standard the count would still be 2, because the rejected candidates fail on substance rather than on the rule-12 conflict test; under a looser CREDENTIAL standard it could be higher, since there are many recovery-testimony channels deliberately not pursued.",
+      "rule18": {
+        "testedAt": "batch 24",
+        "subAreas": [
+          "treatment providers",
+          "recovery testimony / peer channels",
+          "credentialed addiction clinicians and professional bodies"
+        ],
+        "probed": [
+          "treatment providers",
+          "recovery testimony / peer channels",
+          "credentialed addiction clinicians and professional bodies"
+        ],
+        "outcome": "survived",
+        "whatWasTried": "The unprobed end at the time of writing was credentialed clinicians rather than providers or testimony. @AddictionMedicine is the American Society of Addiction Medicine: 49 uploads, archived since February 2021, long-form is conference plenaries addressed to physicians rather than to anyone in recovery. @DrKAddiction, @DrAdiJaffe, @gabormate, @recoveryelevator and @sobrietyengine do not resolve; @Dr_Gabor_Mate resolves to a Czech channel with one upload."
+      }
     },
     "first-aid": {
       "count": 1,
@@ -16,8 +31,47 @@
       "corrected": "THIS ENTRY WAS WRONG AND IS REWRITTEN. It originally read gapCause: absent-supply on the strength of thirteen probes, ALL of which were institutions — Red Cross, NHS, St John Ambulance, ProTrainings, First Aid For Free. The individual-clinician end of the field was never searched. Under rule 18 it was searched, and PrepMedic is there: a critical-care flight paramedic, 353 uploads, 44 long-form videos matching bystander first-aid terms, including a 33-minute explanation of life-saving medications aimed explicitly at bystanders. This is the same failure as the marketing note — a finding from one end of a domain applied to an end never searched — caught twice in two batches by the same rule.",
       "reason": "What survives, narrowed to what was actually evidenced: THE CERTIFYING BODIES DO NOT TEACH ON VIDEO. British Red Cross has 502 uploads at a one-minute median and its only long-form is about listening and social division; American Red Cross (@redcross, 2,180 uploads) publishes blood-donation interviews; the NHS has one long-form video, a BSL winter leaflet; @sja has 5 uploads, @ProTrainings 5, @firstaidforfree 20. That claim is true and remains on the record. The claim that no usable supply exists was an unwarranted generalisation from it.",
       "attribution": "MIXED. Genuinely absent: a structured video syllabus from a body qualified to certify, and the reason is defensible rather than negligent — certification requires hands-on assessment, so the course is the product and video is its marketing. Genuinely our criteria: individual credentialed clinicians do publish usable bystander education, and one is now listed. countUnderLooserStandard is 2 rather than a larger number because SkinnyMedic (500k-1M, 1,409 uploads) is the next candidate and fails on content — 36 of 50 recent uploads under two minutes, long-form that is a course promo plus gear, and a catalogue mixing trauma care with firearm reviews. Uncredentialed first-aid presenters were not enumerated and are not counted: under rule 12's acute-recall rationale they are the specific thing not to ship.",
-      "challenged": "Confirmed as a rule 12 category by the owner in batch 19, with a rationale the owner was explicit should stay narrow: not that bad advice is costly over time, but that the content is recalled under acute stress by someone who has no capacity to evaluate it in the moment. The owner also predicted this would end as a documented gap and said that outcome is correct — an empty first-aid category beats a well-produced one from someone unqualified. Re-tested under rule 18 in batch 24 after the owner asked for every absent-supply gap to be re-examined, and it did not survive. The category is no longer empty."
+      "challenged": "Confirmed as a rule 12 category by the owner in batch 19, with a rationale the owner was explicit should stay narrow: not that bad advice is costly over time, but that the content is recalled under acute stress by someone who has no capacity to evaluate it in the moment. The owner also predicted this would end as a documented gap and said that outcome is correct — an empty first-aid category beats a well-produced one from someone unqualified. Re-tested under rule 18 in batch 24 after the owner asked for every absent-supply gap to be re-examined, and it did not survive. The category is no longer empty.",
+      "rule18": {
+        "testedAt": "batch 24",
+        "subAreas": [
+          "certifying bodies and public-health institutions",
+          "individual credentialed clinicians",
+          "wilderness and tactical medicine instructors"
+        ],
+        "probed": [
+          "certifying bodies and public-health institutions",
+          "individual credentialed clinicians",
+          "wilderness and tactical medicine instructors"
+        ],
+        "outcome": "falsified",
+        "whatWasTried": "All thirteen original probes were institutions. Searching the individual-clinician end found PrepMedic (critical-care flight paramedic, 353 uploads, 44 long-form bystander-first-aid hits) immediately, and SkinnyMedic as a second candidate that fails on content. The gap as written did not survive; the narrower institutional claim did."
+      }
+    },
+    "conversion-optimization": {
+      "count": 0,
+      "gapCause": "absent-supply",
+      "countUnderLooserStandard": 0,
+      "reason": "Nothing in this category is a teaching catalogue. The consultancies are absent or empty (@speero 0 uploads, @Widerfunnel 2, @jeffreyeisenberg 0, @conversionrateexperts 0); the individual practitioners do not resolve (@conversionxl, @GoodUIorg, @behaveio, @richardshotton, @rorysutherland); and @cxl is a handle trap resolving to an unrelated Arabic-language channel with 4,529 uploads.",
+      "attribution": "ABSENT SUPPLY. The two tool vendors with catalogues are thin and product-shaped: Optimizely has 106 uploads with two long-form videos, one an 88-minute conference keynote; AB Tasty has 97 with four, all webinars. Neither teaches the discipline. countUnderLooserStandard is 0 because the looser standard here would mean listing a testing-tool vendor's webinar under a category about research and testing method, which is the vendor-content problem rather than a solution to it.",
+      "rule18": {
+        "testedAt": "batch 25",
+        "subAreas": [
+          "CRO consultancies and agencies",
+          "testing-tool vendors",
+          "independent practitioners",
+          "behavioural science and academic"
+        ],
+        "probed": [
+          "CRO consultancies and agencies",
+          "testing-tool vendors",
+          "independent practitioners",
+          "behavioural science and academic"
+        ],
+        "outcome": "survived",
+        "whatWasTried": "Written only after the marketing and first-aid corrections, so all four sub-areas were probed before the claim was made rather than after. The behavioural-science end does exist — Nudgestock, Ogilvy's behavioural science festival, has 239 uploads with 20 of 49 over twenty minutes and speakers including Charles Spence and Roger Martin. It is NOT mapped here: behaviour change and creativity are adjacent to conversion optimisation, not the same subject, and mapping it would be the credentialed halo effect in a new dress. Recorded as a near-miss rather than used."
+      }
     }
   },
-  "_schema": "Each entry: reason (what was searched and found), gapCause (absent-supply | our-criteria | mixed), countUnderLooserStandard (how many creators the category would hold if our own criteria were relaxed to the standard used elsewhere in the dataset — so a gap caused by our rules is never mistaken for a gap in the world), and challenged (any reasoning that was contested and re-examined)."
+  "_schema": "Each entry: reason (what was searched and found), gapCause (absent-supply | our-criteria | mixed), countUnderLooserStandard, challenged (any reasoning contested and re-examined), and RULE 18 — rule18: { testedAt, subAreas[], probed[], outcome: survived|falsified, whatWasTried }. An entry without a rule18 block is UNFINISHED, not documented: a gap nobody tried to disprove is indistinguishable from a search that stopped early. probed must cover every sub-area listed, because the failure mode caught twice in this project is a finding from one end of a domain applied to ends never searched. A falsified finding keeps a `corrected` field stating what the entry originally claimed and why that was wrong, rather than being quietly rewritten — see first-aid."
 }

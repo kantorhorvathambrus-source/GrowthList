@@ -409,6 +409,40 @@ if (creators.length > 0) {
   }
 }
 
+// -------------------------------------------------- rule 18 on gaps
+// The owner's ruling after two findings were falsified in two batches: an
+// untested gap is UNFINISHED, not documented. A gap nobody tried to disprove
+// is indistinguishable from a search that stopped early, and both of the
+// findings that failed did so the same way — evidence from one sub-area,
+// applied to sub-areas never searched. So the test is not "was this checked"
+// but "which ends were checked".
+if (existsSync(join(DATA, 'thin-gaps.json'))) {
+  const tg = JSON.parse(readFileSync(join(DATA, 'thin-gaps.json'), 'utf8')).gaps ?? {};
+  for (const [id, entry] of Object.entries(tg)) {
+    const where = `thin-gaps.json ${id}`;
+    if (typeof entry === 'string') { warn(where, 'legacy string entry — no rule 18 test recorded, so this is unfinished rather than documented'); continue; }
+    const r = entry.rule18;
+    if (!r) {
+      cover(where, 'no rule18 block — an untested gap is unfinished, not documented');
+      continue;
+    }
+    if (!Array.isArray(r.subAreas) || r.subAreas.length < 2) {
+      fail(where, 'rule18.subAreas must name at least two sub-areas — a domain with one end does not need this rule');
+    }
+    if (!Array.isArray(r.probed)) fail(where, 'rule18.probed must list the sub-areas actually searched');
+    const unprobed = (r.subAreas ?? []).filter((a) => !(r.probed ?? []).includes(a));
+    if (unprobed.length) {
+      cover(where, `rule18 lists sub-areas never probed (${unprobed.join(', ')}) — the finding is about the ends you searched, not the domain`);
+    }
+    if (!['survived', 'falsified'].includes(r.outcome)) fail(where, 'rule18.outcome must be "survived" or "falsified"');
+    if (!r.whatWasTried || String(r.whatWasTried).length < 100) fail(where, 'rule18.whatWasTried must say what was actually searched and found');
+    // A falsified finding keeps its original claim on the record.
+    if (r.outcome === 'falsified' && !entry.corrected) {
+      fail(where, 'a falsified finding must keep a `corrected` field saying what it originally claimed and why that was wrong');
+    }
+  }
+}
+
 // ------------------------------------------------- rule 12 subject notes
 // Every rule 12 category must say so on its own page. The check that matters
 // is not that a note exists but that it is written for the right audience:

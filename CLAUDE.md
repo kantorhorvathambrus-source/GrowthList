@@ -251,6 +251,31 @@ this file has the rules, schema, and current state.
     finding is about that one — name it that way, or go and search the
     others.
 
+    **Enforced, not honour-system.** Every entry in
+    `data/thin-gaps.json` carries
+    `rule18: { testedAt, subAreas[], probed[], outcome, whatWasTried }`.
+    `validate.mjs` treats a gap with **no** `rule18` block, or one whose
+    `probed` does not cover its own `subAreas`, as **unfinished rather
+    than documented** — the owner's ruling, and the right one: a gap
+    nobody tried to disprove is indistinguishable from a search that
+    stopped early. `coverage-report.mjs` prints the outcome and the
+    sub-area count per gap.
+
+    **A falsified finding keeps a `corrected` field** stating what the
+    entry originally claimed and why that was wrong, rather than being
+    quietly rewritten. Validated: `outcome: "falsified"` without
+    `corrected` fails. The reason is that a silently edited entry loses
+    the only thing that distinguishes *a measurement that moved* from
+    *a claim that was always wrong* — and it is the second of those that
+    a future reader needs to be warned about.
+
+    **Running score.** Three findings tested. `marketing/text-not-video`
+    FALSIFIED (batch 23), `first-aid/absent-supply` FALSIFIED (batch 24)
+    — both the same scope error. `addiction-recovery` SURVIVED (batch
+    24), and `conversion-optimization` was written *after* the
+    corrections with all four sub-areas probed first, which is the
+    order this rule is meant to produce.
+
 17. **A badge everyone in a domain carries is a fact about the field or
     a fact about us — and the two belong on different pages.**
     `data/domain-notes.json` holds one entry per `(domain, signal)` that
@@ -525,11 +550,11 @@ in `categories.json`-derived output with a computed creator `count`.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research). **Batches 01–24 are
+- **Current phase**: Phase 2 (creator research). **Batches 01–25 are
   written, gated, validated and committed.**
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
-- **Creator count: 195 of 400.** Taxonomy 197, three slots held.
-- **175 of 197 categories populated; 22 empty.** Practical is 13/13.
+- **Creator count: 196 of 400.** Taxonomy 197, three slots held.
+- **176 of 197 categories populated; 21 empty.** Practical is 13/13.
   Full: fitness, communication, creativity, learning, philosophy,
   **tech, programming**. Practical 12/13 — its only hole, `first-aid`,
   is a documented gap by design rather than unfinished work.
@@ -562,12 +587,13 @@ this section first to know exactly where to resume.)*
   n=2 is confirmed by measurement** and its `basis` flipped from
   `editorial` to `measured`, with the provenance kept so the record shows
   it was a prediction first.
-- **Critics: 29 of 175 populated categories.** Batch 18 added four —
+- **Critics: 29 of 176 populated categories.** Batch 18 added four —
   Ann Reardon on cooking and baking, Project Farm on car maintenance and
   home repair. **Relationships and philosophy have none anywhere** — both
   flagged under rule 11, neither filled.
-- **Documented thin gaps: 2** (`addiction-recovery`, `first-aid`), and
-  **both have now been tested under rule 18 rather than assumed.**
+- **Documented thin gaps: 3** (`addiction-recovery`, `first-aid`,
+  `conversion-optimization`), **all carrying a rule 18 test** — the
+  validator now treats an untested gap as unfinished.
   `first-aid` FAILED the test — its 13 probes were all institutions, the
   individual-clinician end was never searched, and searching it found
   PrepMedic at once. Rewritten from `absent-supply` to `mixed` with a
