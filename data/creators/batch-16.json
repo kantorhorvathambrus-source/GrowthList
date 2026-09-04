@@ -222,5 +222,56 @@
     ],
     "role": "specialist",
     "caveats": "Income figures are the dominant framing in titles. Much of the recent catalogue is tied to specific AI tooling and will date quickly. Sells courses and communities."
+  },
+  {
+    "id": "moz",
+    "name": "Moz (Whiteboard Friday)",
+    "handle": "@Moz",
+    "channelUrl": "https://www.youtube.com/@Moz",
+    "country": null,
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A tool vendor's channel, but the long-running Whiteboard Friday series is a rotating platform for independent practitioners rather than product content.",
+    "longDescription": "Moz sells SEO software, and most of what a tool vendor publishes is about the tool. The exception here is substantial: Whiteboard Friday is a long-running weekly series in which a different named practitioner explains one topic at a whiteboard — Tom Capper on how search behaviour is shifting, Crystal Carter and Chima Mmeje on specific techniques, Phil Nottingham on video. The guests are independent professionals rather than staff, which makes the series closer to a rolling conference than to marketing. Nineteen of fifty recent uploads run three to nineteen minutes and twelve run past twenty, with a six-minute median. Product videos sit in the same feed and are easy to tell apart by title.",
+    "notFor": "Anyone wanting a beginner's path into SEO — the series assumes working knowledge and each episode is a self-contained topic with no sequence.",
+    "formatTags": [
+      "tutorial",
+      "video-essay",
+      "interview"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "commercial-conflict"
+    ],
+    "categories": [
+      {
+        "id": "seo",
+        "strength": "primary",
+        "why": "The guest format means the analysis comes from independent practitioners rather than from the company selling the software, which is unusual in this field.",
+        "evidence": "A long-running weekly series hosted by rotating named external practitioners covering search technique and shifts in search behaviour, published alongside the company's own product content.",
+        "entryVideo": {
+          "title": "The New (AI) SEO Playbook | Tom Capper | Whiteboard Friday 4K",
+          "videoId": "CmlKP44N4FI",
+          "whyThisOne": "A named external practitioner on the biggest current shift in the field, which shows what the guest format is for.",
+          "durationMin": 11
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "An SEO software company owns the channel, and product videos share the feed with the guest series — check the title. Episodes are one-off topics with no beginner path through them."
   }
 ]

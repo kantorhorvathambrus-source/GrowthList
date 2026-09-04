@@ -282,6 +282,62 @@ Deliberately not taken:
 | `@ErinTalksMoney` | 169 of 200 uploads under two minutes. Thin. |
 | `@ClearValueTax`, `@RobBerger`, `@TheMoneyGuyShow` | 0, 1 and 0 uploads — handle traps. The real Money Guy Show is `@MoneyGuyShow`. |
 
+### The marketing domain — an evidenced finding, not a prediction
+
+The owner asked for a second pass at the practitioner end before cutting
+anything, and specifically raised the possibility that marketing's best
+work is not in video at all. **That is close to what the evidence
+shows, with one important qualification.**
+
+Independent practitioner channels, by upload count:
+
+| Practitioner | Standing | Uploads |
+| --- | --- | --- |
+| Rand Fishkin | founded Moz, then SparkToro | **1** |
+| Aleyda Solis | independent SEO consultant | **10** |
+| Ann Handley | marketing-writing author | **15** |
+| Byron Sharp | academic behind *How Brands Grow* | **0** |
+| Julian Shapiro | growth writer | **0** |
+| Adam Erhart, Rory Vaden | marketing educators | **0** each |
+
+Channels with real volume, by owner:
+
+| Channel | Uploads | What it is |
+| --- | --- | --- |
+| Moz | 1,130 | SEO software vendor |
+| Think with Google | 966 | Google's own ads-education arm |
+| Kit (ConvertKit) | 812 | email platform vendor |
+| StoryBrand | 509 | a framework consultancy selling that framework |
+| Ahrefs | 420 | SEO software vendor |
+| SparkToro | 89 | audience-research tool vendor |
+
+**The qualification matters.** The independent voices are not absent
+from video — they appear as *guests on vendor-hosted series*. Moz's
+Whiteboard Friday is the clearest case: a weekly slot given to a
+different named external practitioner each week, which is closer to a
+rolling conference than to product marketing. So the honest finding is
+not "the good material is not in video" but something more specific:
+
+> **In marketing, the practitioners publish text and the vendors publish
+> video. Where practitioner thinking does reach video, it is almost
+> always on a platform owned by a company selling tooling for the thing
+> being discussed.**
+
+The practical consequence is that filling the marketing domain to
+standard is possible, but nearly every creator in it will carry a
+`commercial-conflict` signal — which under rule 13 is a disclosure
+rather than a disqualification, but is a real characteristic of the
+domain and should be stated on the category pages rather than discovered
+by a visitor.
+
+**Recommendation: do not cut the marketing categories.** The content
+exists. What does not exist is a conflict-free version of it, and that
+is a fact about the industry rather than a gap in our research. The
+categories most at risk remain `affiliate-marketing` and
+`cold-email-outreach`, where the supply is course-sellers rather than
+tool vendors — a worse position, and one I would still expect to end as
+documented gaps.
+
 ## When the obvious handle fails: the fallback search path
 
 A person's obvious handle failing is **not** grounds to drop them. Before

@@ -4,6 +4,13 @@
 
 import { getCategory, getCreatorsForCategory, getCategoryIndex } from '../data.js';
 import { esc, stateBlock, statePage, setTitle, LEVELS, SIZE_BUCKETS, domainLabel } from '../utils.js';
+
+// Named rather than coded, because "No AU creator" reads as a database error
+// and "No Australian creator" reads as a fact about the world.
+const COUNTRY_NAMES = {
+  US: 'American', UK: 'British', CA: 'Canadian', AU: 'Australian',
+  IE: 'Irish', NZ: 'New Zealand', ZA: 'South African', IN: 'Indian',
+};
 import { creatorCard } from '../components/creator-card.js';
 import { replaceQuery, parseHash } from '../router.js';
 import { ornamentFor } from '../components/ornament.js';
@@ -301,11 +308,24 @@ export async function renderCategory(app, { params, query }) {
     if (!entries.length) {
       listEl.innerHTML = '';
     } else if (!visible.length) {
-      listEl.innerHTML = `<li>${stateBlock(
-        'empty',
-        'No creators match these filters.',
-        'Try widening the channel size or format, or raising the self-promotion limit.'
-      )}</li>`;
+      // If the country is the reason nothing matched, say that plainly and name
+      // the country. An honest "we have nobody for you here" is more use than a
+      // generic filter message next to five creators whose advice does not
+      // apply to the visitor's tax system.
+      const otherFilters = { ...current, jurisdiction: '' };
+      const countryIsTheReason = current.jurisdiction && applyFilters(nonCritics, otherFilters).length > 0;
+      listEl.innerHTML = countryIsTheReason
+        ? `<li>${stateBlock(
+            'empty',
+            `No ${esc(COUNTRY_NAMES[current.jurisdiction] ?? current.jurisdiction)} creator in this skill yet.`,
+            'This skill depends on tax, law or regulation, so creators from elsewhere would not apply to you. ' +
+            'We would rather tell you that than show you advice for another country. Clear the country filter to see who is here.'
+          )}</li>`
+        : `<li>${stateBlock(
+            'empty',
+            'No creators match these filters.',
+            'Try widening the channel size or format, or raising the self-promotion limit.'
+          )}</li>`;
     } else {
       listEl.innerHTML = visible.map(({ creator, mapping }) => creatorCard(creator, mapping)).join('');
     }
@@ -313,7 +333,9 @@ export async function renderCategory(app, { params, query }) {
     if (summaryEl) {
       summaryEl.textContent = visible.length
         ? `Showing ${visible.length} of ${nonCritics.length} creators.`
-        : `No creators match. ${nonCritics.length} available at other settings.`;
+        : current.jurisdiction
+          ? `No ${COUNTRY_NAMES[current.jurisdiction] ?? current.jurisdiction} creator here. ${nonCritics.length} listed for other countries.`
+          : `No creators match. ${nonCritics.length} available at other settings.`;
     }
   }
 

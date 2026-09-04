@@ -1,9 +1,29 @@
 {
   "_comment": "Categories where tax, law or regulation makes advice non-transferable across countries. A creator can be excellent and still be useless to a visitor in the wrong country — five US creators in a category is not coverage for a UK visitor. The owner's instruction: solve this with metadata rather than by multiplying the 5-creator minimum. Creators in these categories carry a `jurisdiction` field; the coverage report names any flagged category with no creator for a major English-speaking market.",
-  "markets": ["US", "UK", "CA", "AU"],
+  "_priority": "The owner's call: chase US and UK only. Filling twelve categories across four jurisdictions would consume a large share of the remaining creator budget for a minority of visitors, and those creators are better spent on the categories still empty for everyone. CA and AU are documented gaps, not targets — report them, do not staff them. Where a market has no creator the UI says so plainly rather than showing content that does not apply: an honest 'no Australian creator in this category' beats five American ones behind a filter that returns nothing.",
+  "markets": [
+    "US",
+    "UK",
+    "CA",
+    "AU"
+  ],
+  "targetMarkets": [
+    "US",
+    "UK"
+  ],
+  "documentedGapMarkets": [
+    "CA",
+    "AU"
+  ],
   "values": {
-    "US": "United States", "UK": "United Kingdom", "CA": "Canada", "AU": "Australia",
-    "IE": "Ireland", "NZ": "New Zealand", "ZA": "South Africa", "IN": "India",
+    "US": "United States",
+    "UK": "United Kingdom",
+    "CA": "Canada",
+    "AU": "Australia",
+    "IE": "Ireland",
+    "NZ": "New Zealand",
+    "ZA": "South Africa",
+    "IN": "India",
     "general": "Transfers across countries — no jurisdiction-specific tax, law or regulation involved."
   },
   "categories": {

@@ -84,8 +84,20 @@ if (jurCats.length) {
     const flag = list.length === 0 ? 'category empty' : missing.length ? missing.join(', ') : 'none';
     console.log(`  ${pad(id, 26)} ${cells.join('')}${String(gen).padEnd(5)}${flag}`);
   }
+  const targets = jur.targetMarkets ?? MARKETS;
+  const gapOnly = jur.documentedGapMarkets ?? [];
   console.log('\n  Categories with no creator for that market (excluding "general"):');
-  for (const [m, n] of missingTally) console.log(`    ${m}: ${n} of ${jurCats.length}`);
+  for (const [m, n] of missingTally) {
+    const role = targets.includes(m) ? 'TARGET — staff these' : gapOnly.includes(m) ? 'documented gap — report, do not staff' : '';
+    console.log(`    ${pad(m, 4)} ${String(n).padStart(2)} of ${jurCats.length}   ${role}`);
+  }
+  const targetWork = jurCats.filter((id) => {
+    const list = byCat.get(id) ?? [];
+    if (list.some((c) => c.jurisdiction === 'general')) return false;
+    return targets.some((m) => !list.some((c) => c.jurisdiction === m));
+  });
+  console.log(`\n  Actual work outstanding: ${targetWork.length} categories missing a US or UK creator.`);
+  if (targetWork.length) console.log(`    ${targetWork.join(', ')}`);
   console.log('\n  "-" means nobody at all; "g" means covered only by a general creator.');
   console.log('  This is a documented gap of a different kind — a passing creator count');
   console.log('  can still leave a whole market unserved.');
