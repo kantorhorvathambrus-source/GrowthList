@@ -22,6 +22,29 @@ this file has the rules, schema, and current state.
    categories per creator, hard max 6. Max 4 categories where
    `strength: "primary"`. Spanning >2 top-level domains requires
    `scopeNote`.
+
+   **The credentialed variant: a mapping made from a CV.** The halo
+   effect is usually described as fame leaking across categories — she
+   is excellent at X, so surely also at Y. It has a second form that is
+   harder to catch because it feels like diligence rather than
+   laziness: **the credential leaks instead of the fame.** The person
+   genuinely is a leading scholar of the subject, so the mapping feels
+   not merely defensible but obviously correct — and the evidence string
+   ends up describing who they are rather than what this channel
+   contains.
+   The live case is Hans-Georg Moeller (`@carefreewandering`), a
+   philosophy professor at the University of Macau and a well-known
+   Western scholar of Daoism, and therefore the obvious first pick for
+   `eastern-philosophy`. A keyword scan of **all 86 of his uploads** for
+   Daoism, Taoism, Zhuangzi, Laozi, Confucian and Chinese returned
+   **zero long-form hits**: the channel is contemporary social
+   philosophy, and the Daoism is in his books. He is excluded and the
+   reasoning is in `UNVERIFIED.md`.
+   The test that catches it: **read the `evidence` string on its own and
+   ask whether it describes videos or describes a person.** "A leading
+   scholar of X" is a fact about the creator. "Four long-form videos on
+   X, running 20–70 minutes" is a fact about the channel, and only the
+   second kind is admissible.
 5. **English-language only**, everywhere: creators, UI copy, data.
    `language` is normally `"en"`. Country/accent do not matter and must
    not be used as an exclusion signal — only primary upload language does.
@@ -85,11 +108,11 @@ this file has the rules, schema, and current state.
     Document each accepted gap in `data/critic-gaps.json` with the
     reason; `validate.mjs --final` treats a documented gap as reported,
     not as a failure, and an undocumented one still fails.
-12. **Six categories are higher-stakes, and there an empty category
+12. **Seven categories are higher-stakes, and there an empty category
     beats a mediocre one.** `data/high-stakes.json`, **owner-confirmed
     and in force**: `addiction-recovery`, `injury-rehab`,
     `back-pain-management`, `grief-and-loss`, `supplements-literacy`,
-    `therapy-literacy`. In these: prefer a documented gap to an adjacent
+    `therapy-literacy`, `first-aid`. In these: prefer a documented gap to an adjacent
     creator; expect `credentialed` or say plainly why the creator is
     trustworthy without it; state in `notFor` and `caveats` that this is
     education rather than assessment; and if a creator's framing
@@ -98,12 +121,26 @@ this file has the rules, schema, and current state.
     category exists to teach someone to judge supplement claims, so a
     creator who sells supplements works against its purpose and is
     disqualified rather than merely flagged.
+    `first-aid` was added in batch 19, owner-confirmed, and its
+    rationale is **deliberately narrower than the other six and must not
+    be generalised**. It is not that bad advice here is costly over
+    time. It is that the content is recalled **under acute stress by
+    someone with no capacity to evaluate it in the moment** — no time to
+    check a second source, no attention left to notice that a presenter
+    is confident rather than qualified. Everywhere else the visitor
+    keeps some ability to judge what they were told; here the situation
+    is precisely what removes it. The test before reaching for this
+    reasoning again is not "does the subject sound serious" — it is
+    **"is this acted on under stress, from memory, with evaluation
+    impossible?"**
     I originally proposed ten categories; the owner cut four
     (`fat-loss`, `anxiety-management`, `emotional-regulation`,
     `hormonal-health`) because applying it there would have bought my
     caution at the price of most of the mindset domain. Those go under
     rule 13 like everything else. **Do not add a category to this file
     without asking** — narrowing the candidate pool is the owner's call.
+    Twice now the owner has had to trim or qualify my instinct here;
+    that is the pattern this paragraph exists to interrupt.
 
 13. **Commercial interest is disclosed, not silently excluded.** The
     project's normal handling is a signal — `sells-course`,
@@ -422,7 +459,9 @@ this section first to know exactly where to resume.)*
   Ann Reardon on cooking and baking, Project Farm on car maintenance and
   home repair. **Relationships and philosophy have none anywhere** — both
   flagged under rule 11, neither filled.
-- **Documented thin gaps: 1** (`addiction-recovery`).
+- **Documented thin gaps: 2** (`addiction-recovery`, `first-aid`).
+- **Rule 12 now covers seven categories**; `first-aid` was added on the
+  owner's acute-recall rationale and is expected to ship empty.
 - **Affiliation fallback ledger: 11 rescues, 3 wrong, 0 written.**
 
 ### Immediate next actions

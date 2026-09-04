@@ -424,17 +424,19 @@ carrying contested-claims risk that needs reading rather than a guess.
 Four of the thirteen practical categories are still empty, and the
 reasons differ:
 
-- **`first-aid`** — searched, nothing listable found yet. The
-  authoritative bodies are on YouTube but not usefully: `@sja` has 5
-  uploads, `@firstaidforfree` 20, and `@AmericanRedCross` does not
-  resolve at all. `@ProTrainings` has 5. The British Red Cross channel
-  (`@britishredcross`, 502 uploads) exists and has not yet been read.
-  This is the highest-stakes category in the domain — the failure mode
-  is someone doing the wrong thing in the first two minutes of an
-  emergency — so it stays empty until something well-credentialed turns
-  up. **Worth the owner's attention: this looks like a rule 12
-  candidate, but rule 12 is confirmed for six categories and I am not
-  extending it unilaterally again.**
+- **`first-aid`** — **searched to a decision; now a documented gap and a
+  rule 12 category** (owner-confirmed after batch 19). Thirteen handles
+  probed across the certifying and public-health bodies. The finding is
+  structural rather than incidental: **these organisations use YouTube
+  for campaigns, not instruction.** British Red Cross — 502 uploads,
+  median one minute, and its only three long-form videos are about
+  listening and social division. American Red Cross (`@redcross`, 2,180
+  uploads) — the long-form is blood-donation interviews. NHS — 478
+  uploads, one long-form video, a BSL winter-health leaflet. `@sja` has
+  5 uploads, `@ProTrainings` 5, `@firstaidforfree` 20.
+  The reason is defensible rather than negligent: certification requires
+  hands-on assessment, so the course is the product and video is its
+  marketing. Full entry in `data/thin-gaps.json`.
 - **`travel-planning`**, **`camping-and-outdoor-skills`**,
   **`personal-style-and-grooming`** — candidates probed and resolved
   (`@NoraDunn`, `@TheOutdoorGearReview`, `@Gentlemansgazette`,
