@@ -21,7 +21,9 @@
       ],
       "found": "Alex Cattoni (848 uploads, a real copywriting curriculum), Pat Flynn (four 70-85 minute affiliate workshops) and 30 Minutes to President's Club all publish substantially in video. The standing note built on the claim was retired at 6/9, 67%.",
       "survives": "The narrow form: Harry Dry has 4 uploads, Seth Godin 7, copyhackers and backlinko unresolvable, and the SEO end really is vendor-hosted.",
-      "correctionIn": "data/domain-notes.json retired[]"
+      "correctionIn": "data/domain-notes.json retired[]",
+      "reachedVisitors": true,
+      "reachedVisitorsNote": "The standing note rendered on every marketing category page; verified live in a browser check at the time."
     },
     {
       "id": "first-aid-absent-supply",
@@ -41,7 +43,9 @@
       ],
       "found": "PrepMedic, a critical-care flight paramedic with 353 uploads and 44 long-form bystander-first-aid videos, found on the first probe of the clinician end.",
       "survives": "The institutional claim: certification needs hands-on assessment, so the bodies that certify treat the course as the product and video as its marketing.",
-      "correctionIn": "data/thin-gaps.json first-aid.corrected"
+      "correctionIn": "data/thin-gaps.json first-aid.corrected",
+      "reachedVisitors": false,
+      "reachedVisitorsNote": "Internal only. The gap lived in thin-gaps.json; the category was empty, which is not a claim, and the visitor-facing subject note said nothing false."
     },
     {
       "id": "brand-strategy-no-candidate",
@@ -60,7 +64,9 @@
       ],
       "found": "Brand Master Academy: 39-63 minute interviews with April Dunford, Bobby Moesta, Blair Enns, Laura Ries.",
       "survives": "Nothing of the original claim.",
-      "correctionIn": "data/creators/batch-25.json"
+      "correctionIn": "data/creators/batch-25.json",
+      "reachedVisitors": false,
+      "reachedVisitorsNote": "Internal only — an unwritten conclusion that kept a category empty. Nothing was published."
     },
     {
       "id": "badges-are-our-inclusion-rules",
@@ -76,7 +82,9 @@
       "found": "29 of 196 creators carry no practitioner badge, so it is not a requirement. Measured across domains it runs 100% (marketing, business, fitness, programming, productivity) to 14% (philosophy). An inclusion rule would be near-uniform. credentialed runs 70% (relationships) to 0% (marketing); cites-research 71% (philosophy) to 0% (programming). All three track the subject, not our preference.",
       "survives": "A real but secondary editorial preference for qualifications in relationships, which is why that one entry is 'mixed' rather than 'field'.",
       "correctionIn": "data/domain-notes.json corrected — 15 entries reclassified and moved to category pages; the colophon section rewritten",
-      "note": "The worst of the four: never probed at all when made, repeated in every batch report from 17 to 25, and shipped to visitors as a claim about our own rigour."
+      "note": "The worst of the four: never probed at all when made, repeated in every batch report from 17 to 25, and shipped to visitors as a claim about our own rigour.",
+      "reachedVisitors": true,
+      "reachedVisitorsNote": "On the colophon, as a statement about our own rigour, for several weeks."
     },
     {
       "id": "addiction-recovery-gap",
@@ -170,7 +178,9 @@
       "found": "The median is 1 and the mean 1.47. 62% of creators have exactly ONE mapping; only 38% fall in the claimed two-to-four band. The ratio was measured at 1.58 back at 143 creators and has DRIFTED DOWN since — so the claim got steadily more wrong and was never re-run.",
       "survives": "The 'never more than six' half, and the scope rule itself. 2-4 was always a design intent in rule 4, not a description of the dataset; the error was restating an intent to visitors as a fact.",
       "correctionIn": "js/views/colophon.js — the rule now says most appear under one, and the coverage section computes the median rather than asserting it",
-      "note": "Second inward-facing claim to fail, and the same shape as the badge one: cheap to query, never queried."
+      "note": "Second inward-facing claim to fail, and the same shape as the badge one: cheap to query, never queried.",
+      "reachedVisitors": true,
+      "reachedVisitorsNote": "On the colophon, in the inclusion rules a visitor reads to decide whether to trust the list."
     },
     {
       "id": "footer-two-things-stored",
@@ -188,7 +198,10 @@
       "found": "Five distinct stores, not two: theme preference, plan progress, categories seen this session, whether the form endpoint exists, and the survey dismissal state. I grepped localStorage when writing the sentence and never looked at sessionStorage — the same partial-search error as the outward findings, at the smallest possible scale, one exchange after naming the pattern.",
       "survives": "That nothing leaves the device and nothing reaches us. Both still true.",
       "correctionIn": "index.html footer now names the kinds and states no count; validate.mjs holds a registry and fails on any undisclosed store",
-      "note": "Caught by the enforcement written in the same batch, not by review. The check found its author's error within minutes of existing."
+      "note": "Caught by the enforcement written in the same batch, not by review. The check found its author's error within minutes of existing.",
+      "reachedVisitors": true,
+      "reachedVisitorsNote": "In the site footer, in the paragraph about what we collect."
     }
-  ]
+  ],
+  "_framing": "How to state this ledger, per the owner: the honest framing is that this project tested ten of its own claims and found six wrong — and the alternative was NOT six correct claims, it was six wrong ones nobody checked. Report both numbers together: how many were falsified, and how many had REACHED VISITORS before being caught. The second is the difference between an internal process finding its own errors and a dataset that shipped them."
 }

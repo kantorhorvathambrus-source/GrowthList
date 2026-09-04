@@ -43,9 +43,14 @@ if (existsSync(join(ROOT, 'data/findings-ledger.json'))) {
   const bad = claims.filter((c) => c.status === 'falsified');
   console.log('RULE 18 LEDGER — structural claims, tested');
   console.log('='.repeat(72));
+  const shipped = bad.filter((c) => c.reachedVisitors);
   console.log(`${claims.length} claims tested: ${bad.length} falsified, ${claims.length - bad.length} survived.`);
-  console.log('A claim is listed here only once it has been tested. An untested claim is');
-  console.log('not a finding.\n');
+  console.log(`Of the ${bad.length} wrong: ${shipped.length} had REACHED VISITORS before being caught, ${bad.length - shipped.length} were caught internally.`);
+  console.log('');
+  console.log('Read that as a description of the process, not an indictment of the data.');
+  console.log('The alternative to six wrong claims found was not six correct claims —');
+  console.log('it was six wrong ones nobody checked. The number that separates a process');
+  console.log('finding its own errors from a dataset shipping them is the second one.\n');
   for (const c of claims) {
     const missing = (c.subAreas ?? []).filter((a) => !(c.probedWhenMade ?? []).includes(a));
     console.log(`  [${c.status.toUpperCase()}] ${c.id}   made ${c.madeAt}, tested ${c.testedAt}`);
@@ -61,6 +66,11 @@ if (existsSync(join(ROOT, 'data/findings-ledger.json'))) {
   }
   // The pattern is the finding. Every falsification so far has the same shape.
   const scoped = bad.filter((c) => (c.probedWhenMade ?? []).length < (c.subAreas ?? []).length);
+  if (shipped.length) {
+    console.log('  Reached visitors before being caught:');
+    for (const c of shipped) console.log(`    ${c.id} — ${c.reachedVisitorsNote}`);
+    console.log('');
+  }
   console.log(`  ${scoped.length} of ${bad.length} falsified claims were made without probing every sub-area.`);
   console.log('  That is not bad luck. It is the default failure of a search that stops');
   console.log('  when it finds a pattern, and it is what rule 18 exists to interrupt.\n\n');
