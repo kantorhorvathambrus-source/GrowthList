@@ -1,0 +1,450 @@
+[
+  {
+    "id": "aiexplained",
+    "name": "AI Explained",
+    "handle": "@AIExplained-official",
+    "channelUrl": "https://www.youtube.com/@AIExplained-official",
+    "country": "GB",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Close reading of model releases and papers by someone who built a reasoning benchmark rather than just commentating on them.",
+    "longDescription": "The channel's distinguishing claim is verifiable and unusual: its author built Simple Bench, a benchmark designed to expose the gap between human and language-model reasoning. That means the assessments here come with an instrument attached rather than resting on impressions. The format suits it — no short-form at all in fifty recent uploads, thirty in the three-to-nineteen band and twenty past twenty minutes, at an eighteen-minute median — and the recurring work is reading a model card or a ninety-page technical report properly and reporting what it does and does not establish. He is consistently the person pointing out that a benchmark result is contaminated or that a capability claim outruns its evidence, which is the scarce thing in AI coverage.",
+    "notFor": "Anyone wanting to learn how models work from first principles, or anyone who needs coverage that will still be current in a year — this tracks releases closely.",
+    "formatTags": [
+      "video-essay",
+      "long-form"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 4,
+      "practical": 2,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 4
+    },
+    "signals": [
+      "cites-research",
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "ai-fundamentals",
+        "strength": "primary",
+        "why": "Reads the primary documents — model cards, technical reports, benchmark results — rather than the press release, and shows what the numbers actually support.",
+        "evidence": "Author of the Simple Bench reasoning benchmark, publishing long analyses of specific model releases including a full read of a 92-page technical report with independent benchmark results.",
+        "entryVideo": {
+          "title": "Llama 405b: Full 92 page Analysis, and Uncontaminated SIMPLE Benchmark Results",
+          "videoId": "Tf1nooXtUHE",
+          "whyThisOne": "A complete technical report read properly and tested against his own benchmark — the method on full display rather than described.",
+          "durationMin": 27
+        }
+      },
+      {
+        "id": "ai-ethics-and-risk",
+        "strength": "secondary",
+        "why": "Treats capability claims as things to be checked, which is the prerequisite for any serious argument about what these systems can and cannot be trusted with.",
+        "evidence": "Sustained coverage of benchmark contamination and of capability claims outrunning their evidence, including on reasoning claims made by major labs.",
+        "entryVideo": {
+          "title": "Gemini 3.1 Pro and the Downfall of Benchmarks: Welcome to the Vibe Era of AI",
+          "videoId": "2_DPnzoiHaY",
+          "whyThisOne": "Argues that the measurement itself has broken down, which matters more than any individual model claim.",
+          "durationMin": 19
+        }
+      }
+    ],
+    "role": "critic",
+    "caveats": "Release-driven, so it dates fast. Sells a paid membership and promotes his own products, including the benchmark that underpins his authority here."
+  },
+  {
+    "id": "computerphile",
+    "name": "Computerphile",
+    "handle": "@Computerphile",
+    "channelUrl": "https://www.youtube.com/@Computerphile",
+    "country": null,
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Academics explaining how computing actually works, one mechanism at a time, in unhurried single-topic conversations.",
+    "longDescription": "Computerphile is the computing sister channel to Numberphile, and the format has not changed in over a decade: sit an academic down and have them explain one thing properly. There is no short-form at all in fifty recent uploads — thirty-three run three to nineteen minutes and seventeen run longer, at an eighteen-minute median. The subject range is genuinely broad and consistently mechanical rather than topical: how passkeys work, how Ethernet moves data, how watermarking of generated content is done. Because the explanations are of mechanisms rather than products, the back catalogue ages unusually well. The trade-off is that nothing here is a course — it is a very large set of well-explained pieces with no path through them.",
+    "notFor": "Anyone wanting to learn to do something. This explains how things work; it will not teach you to configure, build or operate anything.",
+    "formatTags": [
+      "interview",
+      "video-essay",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 1,
+      "energy": 2,
+      "selfPromotion": 1,
+      "depth": 3
+    },
+    "signals": [
+      "credentialed",
+      "sponsor-heavy"
+    ],
+    "categories": [
+      {
+        "id": "cybersecurity-basics",
+        "strength": "secondary",
+        "why": "Explains the mechanisms behind the security advice — what a passkey actually does — so the advice becomes reasoning rather than a rule to follow.",
+        "evidence": "Single-topic academic explanations of authentication and security mechanisms, including a dedicated treatment of how passkeys work.",
+        "entryVideo": {
+          "title": "How Passkeys Work - Computerphile",
+          "videoId": "xYfiOnufBSk",
+          "whyThisOne": "The replacement everyone is being pushed toward, explained mechanically rather than as an instruction to adopt it.",
+          "durationMin": 19
+        }
+      },
+      {
+        "id": "home-networking",
+        "strength": "secondary",
+        "why": "Gives the layer underneath the router settings, which is what turns network troubleshooting from guesswork into diagnosis.",
+        "evidence": "Academic explanations of networking mechanisms including how Ethernet transmits data, within a long-running single-topic explainer catalogue.",
+        "entryVideo": {
+          "title": "How Ethernet Sends Data - Computerphile",
+          "videoId": "SJE2lFR5utM",
+          "whyThisOne": "The physical and protocol reality under every home network, explained once and applicable permanently.",
+          "durationMin": 22
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Carries a named financial sponsor. No sequence or curriculum — it is a library of explanations, and you have to know what to look for."
+  },
+  {
+    "id": "johnhammond",
+    "name": "John Hammond",
+    "handle": "@_JohnHammond",
+    "channelUrl": "https://www.youtube.com/@_JohnHammond",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Security work shown rather than described — real malware, real phishing kits, pulled apart on camera.",
+    "longDescription": "The channel's stated remit is free cybersecurity education and ethical hacking, and the distinctive material is analysis of things actually found in the wild: a phishing kit capable of bypassing multi-factor authentication, malware served through a search result, campaigns dissected while they are still running. That is a different and more useful thing than a list of security tips, because it shows what an attack actually looks like from the inside. Eighteen of fifty recent uploads run past twenty minutes with twenty-eight as clips. The framing is practitioner-to-practitioner and it assumes some comfort with a terminal, so it is not the gentlest entry point to the subject.",
+    "notFor": "Anyone wanting personal security hygiene — passwords, backups, account safety. This is offensive-security analysis and it assumes technical footing.",
+    "formatTags": [
+      "long-form",
+      "tutorial",
+      "shorts"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 3,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sponsor-heavy"
+    ],
+    "categories": [
+      {
+        "id": "cybersecurity-basics",
+        "strength": "primary",
+        "why": "Shows a real attack being taken apart, which builds the pattern recognition that abstract advice about suspicious links never does.",
+        "evidence": "Analyses of live threats found in the wild, including a multi-factor-bypassing phishing kit recovered from the dark web and malware distributed through search results.",
+        "entryVideo": {
+          "title": "I Found an MFA-Bypassing Phishing Kit on the Dark Web",
+          "videoId": "NKS8Gbt6qUk",
+          "whyThisOne": "Shows that the security measure most people now rely on can be defeated, and exactly how — which changes what you look for.",
+          "durationMin": 18
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Assumes technical comfort and covers offensive security rather than personal safety. Heavily sponsored, and works in the industry he covers."
+  },
+  {
+    "id": "naomibrockwell",
+    "name": "Naomi Brockwell TV",
+    "handle": "@NaomiBrockwellTV",
+    "channelUrl": "https://www.youtube.com/@NaomiBrockwellTV",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Practical digital privacy from a non-profit funded by donations rather than by the products it might otherwise be recommending.",
+    "longDescription": "NBTV states its structure openly: a project of the Ludlow Institute, a registered non-profit, funded entirely by community support. In a category where most content is affiliate-driven VPN marketing, that funding model is the single most important fact about it. The output matches — no short-form at all in fifty recent uploads, twenty-nine in the three-to-nineteen band and twenty-one longer, at an eighteen-minute median. Coverage runs from practical tooling through to the legal and doctrinal machinery that makes mass collection possible, which is the half most privacy content omits. There is a clear civil-liberties position throughout; it is argued rather than hidden, and you should read it as advocacy as well as instruction.",
+    "notFor": "Anyone wanting a quick product recommendation, or who finds a strong civil-liberties frame distracting. The arguments are political as well as technical.",
+    "formatTags": [
+      "tutorial",
+      "long-form",
+      "video-essay",
+      "interview"
+    ],
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 1,
+      "depth": 3
+    },
+    "signals": [
+      "cites-research",
+      "practitioner",
+      "strong-ideological-frame"
+    ],
+    "categories": [
+      {
+        "id": "privacy-and-opsec",
+        "strength": "primary",
+        "why": "Donation-funded rather than affiliate-funded, in a category where almost every recommendation elsewhere is paid for by the product being recommended.",
+        "evidence": "A project of a registered 501(c)(3) non-profit funded by community support per its own description, publishing both practical tooling coverage and analysis of the legal doctrines enabling mass collection.",
+        "entryVideo": {
+          "title": "THIS doctrine destroyed your privacy",
+          "videoId": "iakgpq4p9yM",
+          "whyThisOne": "Explains the legal mechanism that makes the technical problem what it is, which reorders what you would otherwise bother protecting.",
+          "durationMin": 21
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "An explicit civil-liberties position runs through everything, including the choice of topics. US legal framing throughout."
+  },
+  {
+    "id": "lawrencesystems",
+    "name": "Lawrence Systems",
+    "handle": "@LawrenceSystems",
+    "channelUrl": "https://www.youtube.com/@LawrenceSystems",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Firewalls, storage and network engineering at working-professional depth, from an IT company that shows the tools it actually uses.",
+    "longDescription": "Lawrence Systems is the channel of a managed IT provider, and its own description is candid about that: tutorials on the products they use and the solutions they build for clients. Twenty-six of fifty recent uploads run past twenty minutes with a twenty-five-minute median, which is unusually substantial, and the subject matter is firewall configuration, storage systems, virtualisation and open-source infrastructure. The recurring long-form Q&A format is where much of the practical judgement lives, though it is rambling by design. The commercial position is worth holding in mind — a provider recommending tooling has an interest in that tooling — but it is disclosed on the channel itself and the depth is real.",
+    "notFor": "Beginners. This assumes you know what a VLAN is and are configuring real equipment, and the vlog format buries answers in long conversations.",
+    "formatTags": [
+      "tutorial",
+      "long-form",
+      "q-and-a"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 4
+    },
+    "signals": [
+      "practitioner",
+      "commercial-conflict"
+    ],
+    "categories": [
+      {
+        "id": "home-networking",
+        "strength": "primary",
+        "why": "Configures real firewalls and networks at the depth a working engineer needs, rather than walking through a consumer router's web page.",
+        "evidence": "A managed IT provider publishing firewall, VLAN and network-engineering tutorials at a twenty-five-minute median, drawn from client work.",
+        "entryVideo": {
+          "title": "The State of pfSense in 2026",
+          "videoId": "YPtB8owYkSQ",
+          "whyThisOne": "An assessment of the platform most serious home networks end up on, including where it is now weaker than the alternatives.",
+          "durationMin": 12
+        }
+      },
+      {
+        "id": "self-hosting",
+        "strength": "secondary",
+        "why": "Covers the storage and virtualisation layer underneath self-hosted services, which is where home setups actually fail.",
+        "evidence": "Long-form coverage of storage platforms, virtualisation and homelab infrastructure within a network-engineering catalogue.",
+        "entryVideo": {
+          "title": "VLOG Thursday 494: TrueNAS 26 Beta 2, Firewalls, Security, Virtualization & Homelab Q&A",
+          "videoId": "EpGYYnfmot8",
+          "whyThisOne": "A representative long-form session — watch it to judge whether the rambling Q&A format suits you before relying on the channel.",
+          "durationMin": 51
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Runs an IT services company and recommends tooling it sells and deploys — disclosed on the channel, but weigh product assessments accordingly. Assumes real hardware and prior knowledge."
+  },
+  {
+    "id": "technotim",
+    "name": "Techno Tim",
+    "handle": "@TechnoTim",
+    "channelUrl": "https://www.youtube.com/@TechnoTim",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Home-lab and self-hosting walkthroughs, with the whole running system shown rather than one service at a time.",
+    "longDescription": "Techno Tim covers running your own infrastructure at home, and the strongest material is the periodic full accounting of what he is actually running — dozens of self-hosted services, the hardware under them, the network and storage they sit on. That whole-system view is rare and useful, because self-hosting fails at the seams between services rather than inside any one of them. Thirty of fifty recent uploads run three to nineteen minutes and seventeen run longer, at a fourteen-minute median, so individual guides are a workable length. Individual service walkthroughs date as the software moves, but the architectural material holds up. The register assumes containers and command lines are already familiar.",
+    "notFor": "Anyone who has not run a container or used a terminal. Nothing here starts from zero, and the hardware assumptions are real.",
+    "formatTags": [
+      "tutorial",
+      "long-form"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 4,
+      "energy": 3,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sponsor-heavy"
+    ],
+    "categories": [
+      {
+        "id": "self-hosting",
+        "strength": "primary",
+        "why": "Shows an entire working setup and how the parts fit, which is where self-hosting actually breaks — not inside any single service.",
+        "evidence": "Periodic full-system accounts of fifty-plus self-hosted services with the underlying hardware, network and storage, alongside individual service walkthroughs.",
+        "entryVideo": {
+          "title": "What’s Actually Running in My Homelab? (50+ Self-Hosted Services)",
+          "videoId": "efl2kuPNEpE",
+          "whyThisOne": "The whole system at once, which tells you what you are signing up for far better than any single tutorial.",
+          "durationMin": 35
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Heavily sponsored, and service-specific guides date quickly as the software moves. Assumes containers, terminals and real hardware."
+  },
+  {
+    "id": "gamersnexus",
+    "name": "Gamers Nexus",
+    "handle": "@GamersNexus",
+    "channelUrl": "https://www.youtube.com/@GamersNexus",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Hardware testing with published methodology, and sustained investigation of the manufacturers everyone else is sponsored by.",
+    "longDescription": "Gamers Nexus reviews PC hardware, and two things separate it from the rest of that field. The first is the testing itself: forty-four of fifty recent uploads run past twenty minutes at a twenty-nine-minute median, because a benchmark run explained properly takes that long. The second is that it investigates the industry it covers — support failures, warranty practice, misleading marketing at named companies — which is a direct conflict with the sponsorship model most hardware channels depend on. That combination makes it the natural counterweight in a category where the default content is a sponsored unboxing. It is also relentlessly detailed, and the tone in the investigative pieces is adversarial.",
+    "notFor": "Anyone who just wants a build list. The depth is the point, and the industry investigations are journalism rather than buying advice.",
+    "formatTags": [
+      "long-form",
+      "documentary",
+      "video-essay"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 4,
+      "practical": 3,
+      "energy": 3,
+      "selfPromotion": 2,
+      "depth": 4
+    },
+    "signals": [
+      "cites-research",
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "pc-building",
+        "strength": "primary",
+        "why": "Tests components with a published method and then investigates the companies making them, which is the opposite of the sponsored-review default in this category.",
+        "evidence": "Long-form hardware benchmarking at a twenty-nine-minute median, alongside sustained investigations of named manufacturers' support, warranty and marketing practices.",
+        "entryVideo": {
+          "title": "How Razer Screws Customers | Hardware, Software, & Support Failures",
+          "videoId": "KhfqhCxqpQ8",
+          "whyThisOne": "An investigation of a major brand most hardware channels take sponsorship from — the clearest evidence of what this channel is for.",
+          "durationMin": 23
+        }
+      }
+    ],
+    "role": "critic",
+    "caveats": "Exhaustively detailed and slow-paced. The investigative pieces are adversarial in tone, and they are reporting rather than purchasing guidance."
+  },
+  {
+    "id": "networkchuck",
+    "name": "NetworkChuck",
+    "handle": "@NetworkChuck",
+    "channelUrl": "https://www.youtube.com/@NetworkChuck",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "5M-20M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "High-energy Linux and IT teaching aimed at people entering the field, wrapped around a certification-training business.",
+    "longDescription": "NetworkChuck's stated goal is getting as many people as possible into IT careers through certifications, and he describes himself as a trainer for a certification-training company — which is the commercial frame the whole channel sits inside. Within that, the Linux material is genuinely good at the job it sets out to do: getting a nervous beginner to open a terminal and not close it again. Command roundups, distribution comparisons, and full switching guides make up the substantial end, with fifteen of forty-nine recent uploads past twenty minutes against twenty-three clips. The style is loud and the claims are enthusiastic — 'you need to switch RIGHT NOW' is a title, not a considered position — but the underlying instruction is sound.",
+    "notFor": "Anyone who finds hype grating, or who wants measured comparison rather than advocacy. Certification framing runs through everything.",
+    "formatTags": [
+      "tutorial",
+      "shorts",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 4,
+      "energy": 4,
+      "selfPromotion": 4,
+      "depth": 2
+    },
+    "signals": [
+      "practitioner",
+      "sells-course",
+      "commercial-conflict"
+    ],
+    "categories": [
+      {
+        "id": "linux-basics",
+        "strength": "primary",
+        "why": "Aimed squarely at the first hour in a terminal, which is the barrier that actually stops people, rather than at someone already comfortable there.",
+        "evidence": "Linux instruction including command roundups and full switching guides, from a working certification trainer whose stated goal is moving beginners into IT.",
+        "entryVideo": {
+          "title": "37 INSANE Linux Commands you NEED to Know in 2025",
+          "videoId": "6P-vjgPx9ww",
+          "whyThisOne": "Eleven minutes of things you can type immediately, which is the fastest way past the blank-terminal problem.",
+          "durationMin": 11
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Trains for a certification company and sells courses, so recommendations about what to learn are not disinterested. Hype-heavy titles overstate consistently."
+  }
+]

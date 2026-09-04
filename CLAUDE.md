@@ -344,19 +344,20 @@ in `categories.json`-derived output with a computed creator `count`.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research). **Batches 01–13 are
+- **Current phase**: Phase 2 (creator research). **Batches 01–14 are
   written, gated, validated and committed.**
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
-- **Creator count: 124 of 400.** Every entry video passed the gate.
+- **Creator count: 132 of 400.** Every entry video passed the gate.
 - **Taxonomy 195** after migration 001. Five freed slots HELD.
-- **105 of 195 categories populated.** Career 10/13 (open:
-  `career-change`, `remote-work`, `workplace-politics`). Health 12/14
-  (open: `sports-nutrition`, `gut-health`).
-- **Rule 12 is CONFIRMED and in force for six categories** — see
-  `data/high-stakes.json`. Do not add to that file without asking.
-- **Untouched domains (6)**: money, business, marketing, tech,
-  relationships, practical, philosophy.
-- **Critics: 18 of 105 populated categories.**
+- **113 of 195 categories populated.** Tech 8/11 (open:
+  `prompt-engineering`, `building-with-llms`, `data-literacy`), career
+  10/13, health 12/14.
+- **Untouched domains (5)**: money, business, marketing, relationships,
+  practical, philosophy.
+- **Critics: 21 of 113 populated categories.**
+- **Mapping provenance: 193 first-pass, 6 retroactive (3.0%).** Rule 15
+  governs the retroactive ones; check the provenance section of
+  `coverage-report.mjs` before adding another.
 - **Documented thin gaps: 1** (`addiction-recovery`).
 - **Affiliation fallback ledger: 11 rescues, 3 wrong answers, 0 wrong
   answers written.**

@@ -235,6 +235,25 @@ record with their own evidence and entry videos. Adding a second
 management creator to cover ground this one already covers would have
 been padding.
 
+### Batch 14 — tech (8 of 11)
+
+Three categories left open: `prompt-engineering`, `building-with-llms`,
+`data-literacy`. Unfinished, not decided — the AI-tooling categories in
+particular move fast enough that candidates need a fresh look rather
+than a guess.
+
+`@simonclark` was probed for `data-literacy` (PhD atmospheric physics,
+climate-literacy channel, 707 uploads) and set aside: 31 of 50 recent
+uploads are under two minutes, and the subject is climate science rather
+than reading charts and studies critically. Adjacent, not the category.
+
+First use of the **`commercial-conflict`** signal added in batch 12:
+Lawrence Systems is a managed IT provider recommending tooling it sells
+and deploys, and NetworkChuck trains for a certification company while
+advising on what certifications to pursue. Both are disclosed on their
+own channels; both are included with the signal and a caveat rather than
+excluded, which is rule 13 working as intended.
+
 ## When the obvious handle fails: the fallback search path
 
 A person's obvious handle failing is **not** grounds to drop them. Before
