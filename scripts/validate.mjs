@@ -35,6 +35,14 @@ const SIGNALS = [
   'practitioner',
   'sells-course',
   'sponsor-heavy',
+  // Distinct from sells-course: the creator profits from the specific DECISION
+  // the content advises on, not from selling teaching about it. A rehab chain
+  // discussing whether to seek treatment, a broker discussing whether to
+  // invest. The owner's point, and it is right: commercial interest is
+  // disclosed with a signal so the visitor can weigh it, not used as a silent
+  // exclusion. Exclusion needs a reason that survives asking "would I include
+  // this if a non-profit ran it?"
+  'commercial-conflict',
   'contested-claims',
   'strong-ideological-frame',
 ];

@@ -86,19 +86,42 @@ this file has the rules, schema, and current state.
     reason; `validate.mjs --final` treats a documented gap as reported,
     not as a failure, and an undocumented one still fails.
 12. **Some categories are higher-stakes, and there an empty category
-    beats a mediocre one.** `data/high-stakes.json` names them —
-    addiction-recovery, therapy-literacy, injury-rehab, fat-loss,
-    grief-and-loss and the rest — on the principle that a bad
-    recommendation there costs more than an absent one. In those
-    categories: prefer a documented gap to an adjacent creator; expect
-    the `credentialed` signal or say plainly why the creator is
-    trustworthy without it; state in `notFor` and `caveats` that this is
-    education rather than assessment; and if a creator's framing
-    discourages professional help, name that rather than soften it.
-    Adding a category to that file raises the standard and never lowers
-    one. The owner's ruling, made about `addiction-recovery` and
-    generalised deliberately so it is applied consistently rather than
-    remembered.
+    beats a mediocre one.** `data/high-stakes.json` names them.
+    **STATUS: PROVISIONAL.** The owner approved this standard for
+    `addiction-recovery` only; extending it to nine more categories was
+    my judgement, and they flagged that as a decision that was theirs —
+    several of those meaningfully narrow the candidate pool. Until they
+    confirm or trim the list, **only `addiction-recovery` is in force**
+    and the rest is a proposal. In a category that IS in force: prefer a
+    documented gap to an adjacent creator; expect the `credentialed`
+    signal or say plainly why the creator is trustworthy without it;
+    state in `notFor` and `caveats` that this is education rather than
+    assessment; and if a creator's framing discourages professional
+    help, name that rather than soften it.
+13. **Commercial interest is disclosed, not silently excluded.** The
+    project's normal handling is a signal — `sells-course`,
+    `sponsor-heavy`, and now `commercial-conflict` for a creator who
+    profits from the specific *decision* the content advises on rather
+    than from selling teaching about it (a rehab chain discussing
+    treatment, a broker discussing investing). Excluding on conflict
+    alone is a stricter standard than this project applies anywhere
+    else, and it hides the creator from a visitor who will meet them on
+    YouTube regardless, without our caveat attached.
+    **The test for exclusion: would this be included if a non-profit
+    ran it?** If yes, the objection is conflict — include it with the
+    signal and a caveat naming the conflict plainly. If no, the
+    objection is content, and that is the reason to record.
+    This rule exists because The Recovery Village was excluded on
+    conflict, the owner challenged it, and re-examination showed the
+    real disqualifier was that its long-form output is patient
+    testimonials and admissions marketing. Right outcome, wrong reason.
+14. **A documented gap must say whose fault it is.** Every entry in
+    `data/thin-gaps.json` carries `gapCause` (`absent-supply` |
+    `our-criteria` | `mixed`) and `countUnderLooserStandard`, so a
+    category that is thin because our own rules rejected candidates is
+    never mistaken for one that is thin because nothing good exists.
+    The owner's requirement, and it is the difference between a limit
+    of the field and a limit of ours.
 
 ## Naming conventions
 

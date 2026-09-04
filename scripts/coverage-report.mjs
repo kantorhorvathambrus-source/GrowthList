@@ -89,7 +89,24 @@ console.log('finished looking and written why. Until then it is just work not do
 
 if (thinDocumented.length) {
   console.log(`\nSearched and documented (${thinDocumented.length})`);
-  for (const r of thinDocumented) console.log(`  ${r.n} creator${r.n === 1 ? ' ' : 's'}  ${pad(r.id, 30)} ${pad(r.domain, 14)} ${thinGaps[r.id]}`);
+  for (const r of thinDocumented) {
+    const g = thinGaps[r.id];
+    const entry = typeof g === 'string' ? { reason: g } : g;
+    console.log(`\n  ${r.id}  (${r.n} creator${r.n === 1 ? '' : 's'}, ${r.domain})`);
+    // Whether a gap is ours or the world's is the thing worth surfacing: a
+    // category thin because our own rules rejected candidates is a different
+    // fact from one thin because nothing good exists.
+    if (entry.gapCause) {
+      const looser = entry.countUnderLooserStandard;
+      const delta = looser != null && looser !== r.n ? `  (would be ${looser} under the standard used elsewhere)` : '';
+      console.log(`    cause: ${entry.gapCause}${delta}`);
+    }
+    for (const [label, text] of [['reason', entry.reason], ['attribution', entry.attribution], ['challenged', entry.challenged]]) {
+      if (!text) continue;
+      console.log(`    ${label}:`);
+      for (const line of String(text).match(/.{1,86}(\s|$)/g) ?? []) console.log(`      ${line.trim()}`);
+    }
+  }
 }
 
 // High-stakes categories get called out by name: an empty one there is a
@@ -99,8 +116,14 @@ const hsPath = join(ROOT, 'data/high-stakes.json');
 if (existsSync(hsPath)) highStakes = read('data/high-stakes.json').categories ?? {};
 const hsRows = under.filter((r) => highStakes[r.id]);
 if (hsRows.length) {
-  console.log(`\nHIGHER-STAKES categories below target (${hsRows.length}) — rule 12`);
+  const hsStatus = (existsSync(hsPath) ? read('data/high-stakes.json').status : null) ?? 'in force';
+  console.log(`\nHIGHER-STAKES categories below target (${hsRows.length}) — rule 12 [${hsStatus}]`);
   console.log('  An empty category here is preferred to an adjacent creator.');
+  if (hsStatus !== 'in force') {
+    console.log('  NOT YET IN FORCE: the owner approved this standard for addiction-recovery');
+    console.log('  only. The other nine are proposed and must be confirmed or trimmed before');
+    console.log('  they constrain any further batch.');
+  }
   for (const r of hsRows) {
     const state = thinGaps[r.id] ? 'documented' : 'open';
     console.log(`  ${r.n} creator${r.n === 1 ? ' ' : 's'}  ${pad(r.id, 26)} ${pad(state, 11)} ${highStakes[r.id].slice(0, 70)}`);

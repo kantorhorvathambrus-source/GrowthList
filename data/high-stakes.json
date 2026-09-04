@@ -1,4 +1,6 @@
 {
+  "status": "provisional — awaiting owner confirmation",
+  "_provenance": "The owner approved this standard for addiction-recovery ONLY. Extending it to the other nine was my own judgement and the owner flagged that as a decision that was theirs to make — some of these meaningfully narrow the candidate pool. Until confirmed or trimmed, this file does NOT constrain batches: treat entries other than addiction-recovery as a proposal, not a rule.",
   "_comment": "Categories where acting on bad advice can cause physical harm, delay treatment someone needs, or worsen a crisis. The bar is higher here and an empty category is explicitly preferred to an adjacent one: a bad recommendation costs more than an absent one. Owner's ruling, made about addiction-recovery and generalised. Adding a category here raises the standard; it never lowers one.",
   "categories": {
     "addiction-recovery": "Dependence, withdrawal and relapse. Wrong or moralising advice can keep someone from treatment, and some withdrawal is medically dangerous.",
