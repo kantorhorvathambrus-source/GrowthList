@@ -275,10 +275,22 @@ this file has the rules, schema, and current state.
     number — the owner's requirement, and the reasoning is that a
     directory which has never falsified one of its own findings has
     either been lucky or has not looked. **The final Phase 2 report
-    leads with this ledger.**
+    leads with this ledger** — before any coverage number.
 
-    **Running score: 8 claims tested, 4 falsified, 4 survived — and 4 of
-    4 falsifications were made without probing every sub-area.**
+    **How to state it.** "Six of ten claims did not survive" is accurate
+    and reads as an indictment of the dataset. It is a description of the
+    process: **this project tested ten of its own claims and found six
+    wrong — and the alternative was not six correct claims, it was six
+    wrong ones nobody checked.** Report both figures together: how many
+    were falsified, and **how many had reached visitors before being
+    caught**. The second is the line between an internal process finding
+    its own errors and a dataset that shipped them.
+    **Currently 6 of 10 wrong, 4 of those 6 live on the site.** Do not
+    round that off or lead with the kinder half.
+
+    **Running score: 10 tested, 6 falsified, 4 of the 6 reached
+    visitors. Every falsification was made without probing every
+    sub-area, and three were inward-facing.**
     The worst was `badges-are-our-inclusion-rules`: the claim that
     `practitioner` saturates because *we require it*. It was **never
     probed at all** when made in batch 17, was repeated in every batch
