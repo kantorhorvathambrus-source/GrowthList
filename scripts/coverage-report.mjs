@@ -56,6 +56,41 @@ for (const [id, list] of undocumented.sort()) {
   console.log(`  ${pad(id, 26)} ${list.length} creator${list.length === 1 ? '' : 's'}`);
 }
 
+// ------------------------------------------------ jurisdiction gaps
+// A category can hit its creator target and still be empty for a whole
+// country. Five US creators is not coverage for a UK visitor. The owner's
+// requirement: name these rather than let them hide inside a passing count.
+let jur = { markets: [], categories: {} };
+const jurPath = join(ROOT, 'data/jurisdiction.json');
+if (existsSync(jurPath)) jur = read('data/jurisdiction.json');
+const MARKETS = jur.markets ?? [];
+const jurCats = Object.keys(jur.categories ?? {});
+if (jurCats.length) {
+  console.log('\n\nJURISDICTION COVERAGE');
+  console.log('='.repeat(72));
+  console.log(`${jurCats.length} categories where tax, law or regulation makes advice non-transferable.`);
+  console.log('A creator marked "general" counts for every market.\n');
+  console.log(`  ${pad('category', 26)} ${MARKETS.map((m) => m.padEnd(4)).join('')} gen  missing`);
+  const missingTally = new Map(MARKETS.map((m) => [m, 0]));
+  for (const id of jurCats) {
+    const list = byCat.get(id) ?? [];
+    const gen = list.filter((c) => c.jurisdiction === 'general').length;
+    const cells = MARKETS.map((m) => {
+      const n = list.filter((c) => c.jurisdiction === m).length;
+      return String(n + gen === 0 ? '-' : n || (gen ? 'g' : 0)).padEnd(4);
+    });
+    const missing = MARKETS.filter((m) => !list.some((c) => c.jurisdiction === m) && gen === 0);
+    for (const m of missing) missingTally.set(m, missingTally.get(m) + 1);
+    const flag = list.length === 0 ? 'category empty' : missing.length ? missing.join(', ') : 'none';
+    console.log(`  ${pad(id, 26)} ${cells.join('')}${String(gen).padEnd(5)}${flag}`);
+  }
+  console.log('\n  Categories with no creator for that market (excluding "general"):');
+  for (const [m, n] of missingTally) console.log(`    ${m}: ${n} of ${jurCats.length}`);
+  console.log('\n  "-" means nobody at all; "g" means covered only by a general creator.');
+  console.log('  This is a documented gap of a different kind — a passing creator count');
+  console.log('  can still leave a whole market unserved.');
+}
+
 // ------------------------------------------- retroactive vs first-pass
 // The owner's requirement: track these separately so that at batch 40 it is
 // possible to tell whether the mappings-per-creator ratio improved because the

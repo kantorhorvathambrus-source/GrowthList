@@ -1,0 +1,226 @@
+[
+  {
+    "id": "theramseyshow",
+    "name": "The Ramsey Show Highlights",
+    "handle": "@TheRamseyShow",
+    "channelUrl": "https://www.youtube.com/@TheRamseyShow",
+    "country": "US",
+    "language": "en",
+    "jurisdiction": "US",
+    "jurisdictionNote": "US callers throughout, and the advice assumes US credit scoring, bankruptcy law, retirement accounts and mortgage products. The behavioural argument transfers; almost none of the specifics do.",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Call-in debt advice built on one prescriptive system, hugely popular and sharply disputed by the evidence-based end of personal finance.",
+    "longDescription": "The channel publishes highlights from a long-running call-in show where people describe their financial situation and are given direct instruction. The method is fixed and named — a numbered sequence of steps, with debts cleared smallest-balance-first rather than highest-interest-first, an insistence on avoiding credit cards entirely, and a strong moral framing around debt as a thing to be attacked. Thirty-three of fifty recent uploads run three to nineteen minutes with an eight-minute median, and the format is consistent: a real person's numbers, then a prescription. The reason it works for many people is behavioural rather than mathematical, and that is also where the disagreement sits.",
+    "notFor": "Anyone wanting an approach tailored to their circumstances, or who finds moralising about debt counterproductive. The method is one-size and delivered with certainty.",
+    "formatTags": [
+      "long-form",
+      "shorts",
+      "q-and-a"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 4,
+      "energy": 4,
+      "selfPromotion": 4,
+      "depth": 2
+    },
+    "signals": [
+      "practitioner",
+      "sells-course",
+      "contested-claims",
+      "strong-ideological-frame",
+      "commercial-conflict"
+    ],
+    "categories": [
+      {
+        "id": "debt-payoff",
+        "strength": "primary",
+        "why": "A single unambiguous system applied to real people's real numbers, which is why it works for people who have failed with more flexible advice — and why it is disputed.",
+        "evidence": "A long-running call-in show publishing highlights in volume, built on a named numbered method with smallest-balance-first debt ordering, applied case by case to callers' actual finances.",
+        "entryVideo": {
+          "title": "Drowning In Debt And Hit With A Huge Home Repair",
+          "videoId": "eCP77zWc2u8",
+          "whyThisOne": "A representative call — a real situation, the method applied to it, and the tone that comes with it, so you can judge all three at once.",
+          "durationMin": 8
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Three specific disagreements, not a vague 'some disagree'. (1) The method clears debts smallest-balance-first; paying highest-interest-first costs less money, and the case for the smallest-first ordering is behavioural — momentum from early wins — rather than mathematical. (2) It advises avoiding credit cards entirely and closing accounts; in the US that can lower a credit score by shortening history and raising utilisation, which affects mortgage and insurance pricing. (3) It advocates pausing retirement contributions while clearing debt, which can forfeit an employer match — a guaranteed return usually larger than the interest saved. Separately, the organisation sells courses, books and an advisor-referral programme, and it earns from referrals to the advice it gives. Included because it is what a great many people in debt actually encounter and use, and an honest description serves them better than an absence."
+  },
+  {
+    "id": "ycombinator",
+    "name": "Y Combinator",
+    "handle": "@ycombinator",
+    "channelUrl": "https://www.youtube.com/@ycombinator",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "An accelerator publishing its own startup curriculum and founder interviews — the closest thing to a syllabus this domain has.",
+    "longDescription": "Y Combinator invests in and works intensively with early-stage companies, and it gives away a substantial amount of the material it teaches those founders. That is what makes the channel unusual here: thirty-three of fifty recent uploads run past twenty minutes with a thirty-one-minute median, and much of it is structured teaching rather than promotion. The content splits between advice sessions on specific founder problems and long interviews with people who built something hard, where the useful part is the sequence of decisions rather than the outcome. The commercial position is obvious and worth stating: an accelerator publishing startup education is generating deal flow, and the advice is calibrated to venture-backed companies rather than to bootstrapped or small businesses.",
+    "notFor": "Anyone building a small or lifestyle business. The assumptions throughout are venture scale — rapid growth, outside capital, and an eventual exit.",
+    "formatTags": [
+      "lecture",
+      "interview",
+      "long-form",
+      "course"
+    ],
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 4
+    },
+    "signals": [
+      "practitioner",
+      "commercial-conflict"
+    ],
+    "categories": [
+      {
+        "id": "startup-fundamentals",
+        "strength": "primary",
+        "why": "Publishes the actual curriculum an accelerator teaches its own companies, at length, rather than a founder's retrospective account of what worked once.",
+        "evidence": "An operating accelerator publishing structured advice sessions and long founder interviews, with a thirty-one-minute median and a third of recent uploads past twenty minutes.",
+        "entryVideo": {
+          "title": "What Big Tech Missed And How Startups Can Still Win",
+          "videoId": "FVsgX0AdDTo",
+          "whyThisOne": "A strategic argument about where a small company can actually compete, which is the first real question rather than the tactics that follow it.",
+          "durationMin": 29
+        }
+      },
+      {
+        "id": "venture-fundraising",
+        "strength": "secondary",
+        "why": "The people teaching it are the ones on the other side of the table, which is worth more than any founder's account of how they raised.",
+        "evidence": "Investor-side advice sessions and founder interviews covering the raise, from a firm that invests in every company it admits.",
+        "entryVideo": {
+          "title": "Blake Scholl: How 50 People Built a Supersonic Jet",
+          "videoId": "byAj35QlGbs",
+          "whyThisOne": "A capital-intensive company told end to end, where the funding decisions are inseparable from the engineering ones.",
+          "durationMin": 50
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "An accelerator publishing startup education generates its own deal flow — this is marketing as well as teaching. Advice is calibrated to venture-backed companies and can be actively wrong for a bootstrapped one."
+  },
+  {
+    "id": "ahrefs",
+    "name": "Ahrefs",
+    "handle": "@AhrefsCom",
+    "channelUrl": "https://www.youtube.com/@AhrefsCom",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "500k-1M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "SEO tutorials from a company that sells SEO software — competent teaching with an unavoidable interest in the answer.",
+    "longDescription": "Ahrefs publishes digital marketing tutorials focused on search, and the material is structured as courses rather than tips: numbered modules covering technical configuration, keyword research and the changes search is undergoing as answers move into AI systems. Seventeen of fifty recent uploads sit in the three-to-nineteen-minute band against thirty-one clips, so the substance is a minority of the feed but it is real and current. The conflict is structural rather than incidental: a company selling an SEO toolset teaching SEO will consistently frame problems as ones its toolset solves. That does not make the technical content wrong — the robots.txt and crawler material is straightforwardly correct — but it shapes which problems get airtime.",
+    "notFor": "Anyone wanting a vendor-neutral view of whether SEO is worth the effort at all, or anyone without a site to work on.",
+    "formatTags": [
+      "tutorial",
+      "course",
+      "shorts"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 4,
+      "depth": 2
+    },
+    "signals": [
+      "practitioner",
+      "commercial-conflict",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "seo",
+        "strength": "primary",
+        "why": "Teaches the technical layer concretely — what crawlers read and how to configure for them — which is checkable and does not depend on trusting the source.",
+        "evidence": "Numbered course modules on technical search configuration including robots.txt and AI-crawler directives, alongside keyword research and recovery case studies.",
+        "entryVideo": {
+          "title": "Technical SEO for AI: Robots.txt, GPTBot & llms.txt Explained | 3.4. AEO Course by Ahrefs",
+          "videoId": "RyJYGpVyl0o",
+          "whyThisOne": "Verifiable technical instruction where the vendor's interest cannot bend the answer — a good place to judge their teaching before trusting their strategy.",
+          "durationMin": 8
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "A tool vendor teaching the discipline its tool serves; problems get framed as ones the product solves. Most uploads are short-form promotion rather than the course material."
+  },
+  {
+    "id": "gregisenberg",
+    "name": "Greg Isenberg",
+    "handle": "@GregIsenberg",
+    "channelUrl": "https://www.youtube.com/@GregIsenberg",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "500k-1M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Long podcast sessions on finding and testing business ideas, currently dominated by building them with AI tooling.",
+    "longDescription": "Greg Isenberg is a founder who describes himself as a former advisor to Reddit and TikTok, and the channel is his podcast on startup ideas. The format is unusually substantial for this domain — forty-two of forty-nine recent uploads run past twenty minutes, at a thirty-nine-minute median, with almost nothing short. The recurring work is idea generation and validation: where an opportunity comes from, how to tell whether one is real, what a business model has to do. The heavy caveat is direction. A large share of recent output is about building products with AI agents and tooling, which is genuinely current and will date faster than anything else in this dataset. Titles lean hard on income figures.",
+    "notFor": "Anyone allergic to revenue-figure framing, or wanting durable principles — much of the current catalogue is tied to tooling that will look dated within a year.",
+    "formatTags": [
+      "interview",
+      "long-form",
+      "tutorial"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 0,
+      "practical": 4,
+      "energy": 3,
+      "selfPromotion": 4,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "bootstrapping",
+        "strength": "primary",
+        "why": "Concentrates on finding and validating an idea before building it, which is where most self-funded attempts actually fail.",
+        "evidence": "A long-form podcast on startup ideas at a thirty-nine-minute median, from a founder and former advisor to consumer platforms, focused on idea generation and business-model design.",
+        "entryVideo": {
+          "title": "The $1M+ Solo AI Agent Business (Full Course)",
+          "videoId": "BI-MNjm1tTQ",
+          "whyThisOne": "The most complete single session on the channel, and a fair test of whether the revenue-led framing is something you can work with.",
+          "durationMin": 48
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Income figures are the dominant framing in titles. Much of the recent catalogue is tied to specific AI tooling and will date quickly. Sells courses and communities."
+  }
+]

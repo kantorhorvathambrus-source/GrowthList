@@ -25,6 +25,10 @@ const STATUSES = ['active', 'archive'];
 // The rule-5 exemption. Extend this list if another language-acquisition
 // category is ever added; do NOT widen it to mean "foreign-language content".
 const LANGUAGE_EXEMPT_CATEGORIES = ['language-learning'];
+const jurisdictionCfg = existsSync(join(DATA, 'jurisdiction.json'))
+  ? JSON.parse(readFileSync(join(DATA, 'jurisdiction.json'), 'utf8')) : { values: {}, categories: {} };
+const JURISDICTION_VALUES = Object.keys(jurisdictionCfg.values ?? {});
+const JURISDICTION_CATEGORIES = Object.keys(jurisdictionCfg.categories ?? {});
 const ROLES = ['specialist', 'generalist', 'critic'];
 const STRENGTHS = ['primary', 'secondary'];
 const LEVELS = ['beginner', 'intermediate', 'advanced'];
@@ -186,6 +190,20 @@ for (const c of creators) {
   // mismatch, it is the method working. The exemption is deliberately narrow:
   // a non-English creator must map ONLY to exempt categories, and must carry a
   // languageNote so the record says out loud what a reader is walking into.
+  // jurisdiction: required in categories where tax, law or regulation makes
+  // advice non-transferable, optional elsewhere. Five US creators is not
+  // coverage for a UK visitor, and a count alone hides that.
+  if (c.jurisdiction != null && !JURISDICTION_VALUES.includes(c.jurisdiction)) {
+    fail(where, `jurisdiction "${c.jurisdiction}" is not one of ${JURISDICTION_VALUES.join(', ')}`);
+  }
+  {
+    const needs = (c.categories ?? []).map((m) => m.id).filter((id) => JURISDICTION_CATEGORIES.includes(id));
+    if (needs.length && c.jurisdiction == null) {
+      fail(where, `maps to jurisdiction-sensitive ${needs.join(', ')} but has no "jurisdiction" field ` +
+                  `(use "general" if the content genuinely transfers)`);
+    }
+  }
+
   if (c.language && c.language !== 'en') {
     const mapped = (c.categories ?? []).map((m) => m.id);
     const outside = mapped.filter((id) => !LANGUAGE_EXEMPT_CATEGORIES.includes(id));

@@ -1,0 +1,23 @@
+{
+  "_comment": "Categories where tax, law or regulation makes advice non-transferable across countries. A creator can be excellent and still be useless to a visitor in the wrong country — five US creators in a category is not coverage for a UK visitor. The owner's instruction: solve this with metadata rather than by multiplying the 5-creator minimum. Creators in these categories carry a `jurisdiction` field; the coverage report names any flagged category with no creator for a major English-speaking market.",
+  "markets": ["US", "UK", "CA", "AU"],
+  "values": {
+    "US": "United States", "UK": "United Kingdom", "CA": "Canada", "AU": "Australia",
+    "IE": "Ireland", "NZ": "New Zealand", "ZA": "South Africa", "IN": "India",
+    "general": "Transfers across countries — no jurisdiction-specific tax, law or regulation involved."
+  },
+  "categories": {
+    "personal-budgeting": "Credit systems, benefits and account types differ enough to change the advice.",
+    "debt-payoff": "Bankruptcy, collections and consumer-protection law are national.",
+    "index-fund-investing": "Tax wrappers (ISA, TFSA, 401k, RRSP) determine which account to use before which fund.",
+    "retirement-planning": "Pensions, state provision and withdrawal rules are entirely national.",
+    "tax-basics": "Definitionally national.",
+    "real-estate-investing": "Purchase taxes, mortgage rules, tenancy law and reliefs are all national.",
+    "credit-and-loans": "Credit scoring and lending regulation differ fundamentally between markets.",
+    "insurance-basics": "Health, liability and life cover are shaped by national systems.",
+    "crypto-literacy": "Tax treatment and exchange regulation vary sharply.",
+    "salary-negotiation": "Pay data, norms and disclosure law are local.",
+    "resume-writing": "CV conventions, length, photographs and legal restrictions differ by country.",
+    "addiction-recovery": "Treatment systems, funding and access routes are national."
+  }
+}

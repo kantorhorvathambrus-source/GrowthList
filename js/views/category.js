@@ -15,7 +15,8 @@ function readFilters(query) {
   const size = SIZE_BUCKETS.includes(query.size) ? query.size : '';
   const format = query.format ? String(query.format) : '';
   const promo = /^[0-4]$/.test(query.promo ?? '') ? Number(query.promo) : 4;
-  return { level, size, format, promo };
+  const jurisdiction = typeof query.jurisdiction === 'string' ? query.jurisdiction : '';
+  return { level, size, format, promo, jurisdiction };
 }
 
 function applyFilters(entries, filters) {
@@ -24,6 +25,10 @@ function applyFilters(entries, filters) {
     if (filters.size && creator.sizeBucket !== filters.size) return false;
     if (filters.format && !creator.formatTags?.includes(filters.format)) return false;
     if ((creator.profile?.selfPromotion ?? 0) > filters.promo) return false;
+    // A creator marked "general" transfers, so it survives every country
+    // filter. Anything else has to match the country the visitor picked.
+    if (filters.jurisdiction && creator.jurisdiction && creator.jurisdiction !== 'general'
+        && creator.jurisdiction !== filters.jurisdiction) return false;
     return true;
   });
 }
@@ -49,9 +54,22 @@ function tabsMarkup(entries, active) {
 function filtersMarkup(entries, filters) {
   const formats = [...new Set(entries.flatMap(({ creator }) => creator.formatTags ?? []))].sort();
   const sizes = SIZE_BUCKETS.filter((b) => entries.some(({ creator }) => creator.sizeBucket === b));
+  // The country control only appears where jurisdiction actually varies within
+  // the category — on a category where everyone transfers, it would be a
+  // control that does nothing.
+  const countries = [...new Set(entries
+    .map(({ creator }) => creator.jurisdiction)
+    .filter((j) => j && j !== 'general'))].sort();
 
   return `<form class="filters" id="filters" aria-label="Filter creators">
     <div class="filters__row">
+      ${countries.length ? `<div class="filters__group">
+        <label for="filter-jurisdiction">Country</label>
+        <select id="filter-jurisdiction" name="jurisdiction">
+          <option value="">Any country</option>
+          ${countries.map((j) => `<option value="${esc(j)}" ${j === filters.jurisdiction ? 'selected' : ''}>${esc(j)} and general</option>`).join('')}
+        </select>
+      </div>` : ''}
       <div class="filters__group">
         <label for="filter-size">Channel size</label>
         <select id="filter-size" name="size">
@@ -324,6 +342,7 @@ export async function renderCategory(app, { params, query }) {
     form.addEventListener('submit', (e) => e.preventDefault());
     form.querySelector('#filter-size')?.addEventListener('change', (e) => update({ size: e.target.value }));
     form.querySelector('#filter-format')?.addEventListener('change', (e) => update({ format: e.target.value }));
+    form.querySelector('#filter-jurisdiction')?.addEventListener('change', (e) => update({ jurisdiction: e.target.value }));
     const promo = form.querySelector('#filter-promo');
     promo?.addEventListener('input', (e) => {
       form.querySelector('#promo-value').textContent = e.target.value;
@@ -332,7 +351,7 @@ export async function renderCategory(app, { params, query }) {
     form.querySelector('#filters-reset')?.addEventListener('click', () => {
       form.reset();
       form.querySelector('#promo-value').textContent = '4';
-      update({ size: '', format: '', promo: '' });
+      update({ size: '', format: '', promo: '', jurisdiction: '' });
     });
   }
 

@@ -49,7 +49,9 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Education, never assessment or treatment. If you or someone else is in danger, this is not the resource — alcohol and some other withdrawals can be medically serious and need supervision. US policy focus throughout."
+    "caveats": "Education, never assessment or treatment. If you or someone else is in danger, this is not the resource — alcohol and some other withdrawals can be medically serious and need supervision. US policy focus throughout.",
+    "jurisdiction": "US",
+    "jurisdictionNote": "A US non-profit; its policy framing, treatment routes and funding discussion are US-specific, though the research interviews transfer."
   },
   {
     "id": "soberpowered",
@@ -99,7 +101,9 @@
       }
     ],
     "role": "specialist",
-    "caveats": "A coach, not a clinician — the record says so because the distinction matters here. Alcohol withdrawal can be medically dangerous and needs medical supervision; nothing on this channel substitutes for that. Sells coaching."
+    "caveats": "A coach, not a clinician — the record says so because the distinction matters here. Alcohol withdrawal can be medically dangerous and needs medical supervision; nothing on this channel substitutes for that. Sells coaching.",
+    "jurisdiction": "general",
+    "jurisdictionNote": "Alcohol's effects on the brain and the experience of stopping do not vary by country; she discusses a US Surgeon General warning but the content is not system-specific."
   },
   {
     "id": "abbeysharp",
@@ -267,7 +271,9 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Self-reported and unverified figures, skewed toward people willing to be filmed and heavily US-centric. Advocacy for pay transparency is the explicit mission, which shapes what gets published."
+    "caveats": "Self-reported and unverified figures, skewed toward people willing to be filmed and heavily US-centric. Advocacy for pay transparency is the explicit mission, which shapes what gets published.",
+    "jurisdiction": "US",
+    "jurisdictionNote": "Pay figures collected on US streets, in US dollars, under US disclosure norms. The figures are the product, so they do not transfer at all."
   },
   {
     "id": "thefutur",

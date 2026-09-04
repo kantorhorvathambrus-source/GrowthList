@@ -122,6 +122,26 @@ this file has the rules, schema, and current state.
     conflict, the owner challenged it, and re-examination showed the
     real disqualifier was that its long-form output is patient
     testimonials and admissions marketing. Right outcome, wrong reason.
+16. **Jurisdiction is metadata, not a reason to raise the minimum.**
+    `data/jurisdiction.json` names the categories where tax, law or
+    regulation makes advice non-transferable, and any creator mapping to
+    one **must** carry a `jurisdiction` field — validated, with
+    `"general"` as the honest value when the content genuinely
+    transfers. A `jurisdictionNote` says what specifically does and does
+    not carry across. The owner's instruction was explicit: do **not**
+    solve this by requiring more creators per category. Five US creators
+    is not coverage for a UK visitor, and fifteen creators is not the
+    fix — the fix is telling the visitor which ones apply to them.
+    The card shows `"UK only"` and similar where it constrains the
+    viewer, never on a `general` creator. The category page grows a
+    country filter only where jurisdiction actually varies within that
+    category, and a `general` creator survives every country filter.
+    `coverage-report.mjs` names any flagged category with no creator for
+    a major English-speaking market — a documented gap of a different
+    kind, and one a passing creator count would otherwise hide.
+    **Current state: AU has no creator in 11 of 12 flagged categories,
+    UK in 9, CA in 8, US in 7.**
+
 15. **A retroactive mapping clears a higher bar than a first-pass one.**
     Re-mapping a creator already on file is cheaper than researching a
     new one, so there is a standing pull toward finding one more
@@ -344,27 +364,18 @@ in `categories.json`-derived output with a computed creator `count`.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research). **Batches 01–15 are
+- **Current phase**: Phase 2 (creator research). **Batches 01–16 are
   written, gated, validated and committed.**
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
-- **Creator count: 138 of 400.** Every entry video passed the gate.
-- **Taxonomy is 197** after migration 002: added `decision-making`,
-  `journaling`, `personal-style-and-grooming`; cut `options-trading`.
-  **Three slots still held.** `dance` and `self-defence` were proposed
-  and deliberately held by the owner — dance pending whether its supply
-  teaches or only performs, self-defence pending a rule-12 decision.
-- **122 of 197 categories populated.** Money 9/12 (open: `debt-payoff`,
-  `real-estate-investing`, `insurance-basics`).
-- **Untouched domains (4)**: business, marketing, relationships,
-  practical, philosophy. **Do not cut any category in business or
-  marketing until they are researched** — the owner's instruction, and
-  money already proved my supply guess wrong in the optimistic
-  direction.
-- **Critics: 25 of 122 populated categories.**
-- **Mapping provenance: 6 retroactive of 205 (2.9%).**
+- **Creator count: 142 of 400.** Taxonomy 197, three slots held.
+- **126 of 197 categories populated.** Money 10/12, business 3/13,
+  marketing 1/13.
+- **Untouched domains (3)**: relationships, practical, philosophy.
+- **Jurisdiction metadata is live** (rule 16). AU is unserved in 11 of
+  12 flagged categories, UK in 9, CA in 8, US in 7.
+- **Critics: 25 of 126 populated categories.**
 - **Documented thin gaps: 1** (`addiction-recovery`).
-- **Affiliation fallback ledger: 11 rescues, 3 wrong answers, 0 wrong
-  answers written.**
+- **Affiliation fallback ledger: 11 rescues, 3 wrong, 0 written.**
 
 ### Immediate next actions
 

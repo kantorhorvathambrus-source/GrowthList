@@ -81,6 +81,7 @@ const indexOut = creatorsOut.map((c) => ({
   level: c.level,
   categories: (c.categories ?? []).map((m) => ({ id: m.id, strength: m.strength })),
   shortDescription: c.shortDescription,
+  ...(c.jurisdiction ? { jurisdiction: c.jurisdiction } : {}),
   // Only for the rule-5 exemption: a creator whose uploads are not in English
   // must say so on the card, not only on the detail page.
   ...(c.languageNote ? { languageNote: c.languageNote } : {}),

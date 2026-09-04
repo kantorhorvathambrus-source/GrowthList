@@ -13,8 +13,15 @@
     "shortDescription": "Job-search strategy from a recruiter's side of the table, with a named framework for answering behavioural questions.",
     "longDescription": "Madeline Mann's channel is built around what actually happens inside a hiring process rather than what candidates imagine happens. She is the author of a book on job searching and has a named method — the Story Toolbox — for the behavioural questions that most people improvise badly. Twelve of fifty recent uploads run past twenty minutes, several near an hour, which is unusual in career content and lets her work a full interview round rather than a single question. The most useful material is unglamorous and specific: getting more interviews at a given salary band, what later rounds are actually testing, and how to recover an offer after a round that went badly. Thirty of fifty recent uploads are clips.",
     "notFor": "Anyone outside a conventional white-collar hiring process. The advice assumes recruiters, structured rounds and a résumé screen.",
-    "formatTags": ["long-form", "tutorial", "shorts"],
-    "level": ["beginner", "intermediate"],
+    "formatTags": [
+      "long-form",
+      "tutorial",
+      "shorts"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
     "profile": {
       "evidenceBased": 1,
       "practical": 4,
@@ -22,7 +29,10 @@
       "selfPromotion": 3,
       "depth": 3
     },
-    "signals": ["practitioner", "sells-course"],
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
     "categories": [
       {
         "id": "resume-writing",
@@ -50,7 +60,9 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Sells a course and a book, promoted throughout. Assumes a US-style corporate hiring process with recruiters and structured rounds."
+    "caveats": "Sells a course and a book, promoted throughout. Assumes a US-style corporate hiring process with recruiters and structured rounds.",
+    "jurisdiction": "US",
+    "jurisdictionNote": "Assumes US-style recruiting — ATS screening, résumé conventions and no-photograph norms. CV conventions differ materially elsewhere."
   },
   {
     "id": "writingwithandrew",
@@ -66,8 +78,15 @@
     "shortDescription": "Prose style taught from rhetoric and linguistics rather than from rules — why a sentence works, not which words to avoid.",
     "longDescription": "The channel's stated basis is drawing on rhetorical theory, creative writing, linguistics and philosophy to produce techniques that make someone a better writer, and its analogy is deliberate: writing as a skill you practise like an instrument. The shape is right for that ambition — thirty-four of fifty recent uploads run three to nineteen minutes and ten run longer, with a sixteen-minute median and almost no short-form. The material goes underneath the usual advice: an argument that concision is about density rather than length, the mechanics of style as a set of choices, and practice sessions where he writes sentences on camera. It is not business-specific, which is the trade — the principles transfer to a work email but the examples are literary.",
     "notFor": "Anyone wanting templates for a status update or a performance review. This teaches how sentences work, and you do the applying.",
-    "formatTags": ["video-essay", "tutorial", "long-form"],
-    "level": ["intermediate", "advanced"],
+    "formatTags": [
+      "video-essay",
+      "tutorial",
+      "long-form"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
     "profile": {
       "evidenceBased": 2,
       "practical": 3,
@@ -75,7 +94,9 @@
       "selfPromotion": 2,
       "depth": 4
     },
-    "signals": ["practitioner"],
+    "signals": [
+      "practitioner"
+    ],
     "categories": [
       {
         "id": "business-writing",
@@ -107,8 +128,15 @@
     "shortDescription": "The management publication's video arm — long conversations with researchers and executives, buried under a great many clips.",
     "longDescription": "HBR states its premise plainly: that management matters, and that better-run organisations would be better for everyone in them. The channel reflects the publication — conversations with academics and executives about leading under pressure, the beliefs that limit a leader's effectiveness, what actually makes senior work sustainable. The format is heavily barbelled and the ratio is poor: a hundred and eighty-three of two hundred recent uploads run two minutes or less, with just nine past twenty minutes. Those nine are worth finding, and they are the reason this record exists. The institutional voice is a real characteristic rather than a complaint — the perspective is consistently that of large organisations and the people running them.",
     "notFor": "Anyone managing a small team or working outside a corporate structure. The frame is large-organisation leadership throughout, and most uploads are clips.",
-    "formatTags": ["interview", "shorts", "long-form"],
-    "level": ["intermediate", "advanced"],
+    "formatTags": [
+      "interview",
+      "shorts",
+      "long-form"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
     "profile": {
       "evidenceBased": 3,
       "practical": 2,
@@ -116,7 +144,10 @@
       "selfPromotion": 2,
       "depth": 3
     },
-    "signals": ["credentialed", "cites-research"],
+    "signals": [
+      "credentialed",
+      "cites-research"
+    ],
     "categories": [
       {
         "id": "leadership",

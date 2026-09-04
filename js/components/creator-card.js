@@ -42,6 +42,9 @@ function meta(creator) {
   if (creator.role === 'critic') parts.push('Critic');
   else if (creator.role === 'generalist') parts.push('Generalist');
   if (creator.status === 'archive') parts.push('Archive');
+  // Only shown when it constrains the viewer. A "general" creator transfers,
+  // so saying so would be noise on every card in every other category.
+  if (creator.jurisdiction && creator.jurisdiction !== 'general') parts.push(`${creator.jurisdiction} only`);
 
   return parts
     .filter(Boolean)
