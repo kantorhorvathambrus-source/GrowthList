@@ -437,6 +437,61 @@ if (creators.length > 0) {
     if (!ok) fail('self-claim', `the site says "${claim}" and the data no longer supports it`);
   }
 
+  // Numbers in visitor-facing copy that came from a SPEC rather than a query.
+  // A target and a description are the same sentence once the document they
+  // came from is a few weeks old, which is how "typically two to four skills"
+  // survived for months at a real median of one. So a spec-sourced number must
+  // be hedged in the copy — the hedge is what tells a reader it is an aim.
+  const colophonPath = join(ROOT, 'js/views/colophon.js');
+  if (existsSync(colophonPath)) {
+    const src = readFileSync(colophonPath, 'utf8');
+    // rule 4's hard cap is the one spec number in the rules prose.
+    const capSentence = /never under more than six/.test(src);
+    const hedged = /never under more than six/.test(src);
+    if (capSentence && !hedged) {
+      fail('copy-provenance', 'the mapping cap appears in visitor copy without a hedge — a spec number stated flat reads as a measurement');
+    }
+    // A number written as a literal where a measurement is implied is the
+    // exact failure. "most appear under <n>" must be interpolated, not typed.
+    if (/most appear under (one|two|three|four|five|six)\b/.test(src)) {
+      fail('copy-provenance', 'the colophon states the modal mapping count as a literal — it must be computed at render, or it decays as the data moves');
+    }
+  }
+
+  // What the site stores in the visitor's browser. The footer describes this,
+  // and a count in that sentence decays the moment a store is added — which
+  // it already did: the copy said "two things" while the code wrote five.
+  // So the copy names kinds, and every actual store must map to a named kind
+  // here. A new store fails the build until the footer is updated.
+  {
+    const STORES = {
+      'growthlist:theme': 'light or dark preference',
+      'growthlist:plan:': 'progress through a four-week plan',
+      'growthlist:seen-categories': 'what you have already seen',
+      'growthlist:netlify': 'what you have already seen',
+      'components/how-did-you-hear.js:key': 'dismissed the question',
+    };
+    const found = new Set();
+    for (const f of readdirSync(join(ROOT, 'js'), { recursive: true })) {
+      const rel = String(f);
+      if (!rel.endsWith('.js')) continue;
+      const js = readFileSync(join(ROOT, 'js', rel), 'utf8');
+      for (const k of js.matchAll(/(?:local|session)Storage\.setItem\(\s*([A-Za-z_$][\w$]*)/g)) {
+        const decl = js.match(new RegExp(`(?:const|let|var)\\s+${k[1]}\\s*=\\s*['\`"]([^'\`"]+)`));
+        found.add(decl ? decl[1] : `${rel}:${k[1]}`);
+      }
+    }
+    for (const store of found) {
+      if (!STORES[store]) {
+        fail('copy-provenance', `the code stores "${store}" in the browser and the footer does not describe it — add it here and to the footer, or stop storing it`);
+      }
+    }
+    const html = existsSync(join(ROOT, 'index.html')) ? readFileSync(join(ROOT, 'index.html'), 'utf8') : '';
+    if (/keep\s+(?:one|two|three|four|five|\d+)\s+things?\s+locally/.test(html)) {
+      fail('copy-provenance', 'the footer states a COUNT of things stored locally — counts decay silently; describe the kinds instead');
+    }
+  }
+
   // The uniform-versus-spread detector, kept because it is what caught the
   // badge claim: a rule OF OURS produces near-uniformity across domains; a
   // fact about the world produces variance. Any signal we are tempted to

@@ -310,7 +310,22 @@ this file has the rules, schema, and current state.
     build fails rather than the copy quietly becoming false. The colophon
     computes its numbers instead of stating them.
 
-    **The uniform-versus-spread detector**, kept because it is what
+    **Numbers sourced from a spec, not a query, must be marked as such
+    at the point they are written.** The owner's addition, and the
+    sharpest diagnosis of the whole sequence: rule 4's "2–4 categories"
+    was a *target*. **The sentence never changed — only its job did.**
+    It was written as an intention and later read as a description, which
+    is why no review caught it: there was nothing to catch, only a
+    provenance nobody could see.
+    So in visitor-facing copy: a **measured** number is computed at
+    render and cannot decay; a **target** number must carry a hedge
+    ("we aim for", "never more than") that tells a reader it is an
+    intention. `colophon.js` marks each one inline, and `validate.mjs`
+    fails a modal-count stated as a literal rather than interpolated.
+    **A claim that decays as the data moves is worse than one wrong at
+    the start**, because only the second is caught by a first check.
+
+        **The uniform-versus-spread detector**, kept because it is what
     caught the badge claim and it is cheap to apply to any future
     saturation claim: **a rule of ours produces near-uniformity across
     domains; a fact about the world produces variance.** `practitioner`
@@ -593,7 +608,7 @@ in `categories.json`-derived output with a computed creator `count`.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research). **Batches 01–27 are
+- **Current phase**: Phase 2 (creator research). **Batches 01–28 are
   written, gated, validated and committed.**
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
 - **Creator count: 196 of 400.** Taxonomy 197, three slots held.

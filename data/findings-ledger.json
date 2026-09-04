@@ -171,6 +171,24 @@
       "survives": "The 'never more than six' half, and the scope rule itself. 2-4 was always a design intent in rule 4, not a description of the dataset; the error was restating an intent to visitors as a fact.",
       "correctionIn": "js/views/colophon.js — the rule now says most appear under one, and the coverage section computes the median rather than asserting it",
       "note": "Second inward-facing claim to fail, and the same shape as the badge one: cheap to query, never queried."
+    },
+    {
+      "id": "footer-two-things-stored",
+      "claim": "The site keeps two things in your browser: plan progress, and whether you dismissed the survey question.",
+      "madeAt": "batch 27",
+      "testedAt": "batch 28",
+      "status": "falsified",
+      "subAreas": [
+        "localStorage writes",
+        "sessionStorage writes"
+      ],
+      "probedWhenMade": [
+        "localStorage writes"
+      ],
+      "found": "Five distinct stores, not two: theme preference, plan progress, categories seen this session, whether the form endpoint exists, and the survey dismissal state. I grepped localStorage when writing the sentence and never looked at sessionStorage — the same partial-search error as the outward findings, at the smallest possible scale, one exchange after naming the pattern.",
+      "survives": "That nothing leaves the device and nothing reaches us. Both still true.",
+      "correctionIn": "index.html footer now names the kinds and states no count; validate.mjs holds a registry and fails on any undisclosed store",
+      "note": "Caught by the enforcement written in the same batch, not by review. The check found its author's error within minutes of existing."
     }
   ]
 }

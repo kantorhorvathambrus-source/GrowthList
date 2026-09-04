@@ -760,3 +760,36 @@ near-uniformity and a fact about the world produces variance.
 
 **Ledger: 9 claims tested, 5 falsified. Two of the five were
 inward-facing, and both were live on the site.**
+
+## Batch 28 — the enforcement caught its own author
+
+The owner's addition to the inward class: a number that came from a
+**spec** rather than a query must be marked at the point it is written,
+because a target and a description are the same sentence once the design
+document is a few weeks old. Rule 4's "2–4 categories" never changed —
+only its job did.
+
+Implemented: measured numbers in visitor copy are computed at render and
+cannot decay; target numbers carry a hedge that tells a reader they are
+an intention. `validate.mjs` fails a modal count written as a literal.
+
+**And then the new enforcement immediately falsified a claim written one
+exchange earlier.** The footer said the browser keeps **two** things
+locally. The code writes **five** distinct stores: theme preference, plan
+progress, categories seen this session, whether the form endpoint exists,
+and the survey dismissal state.
+
+The cause is exactly the pattern named two batches ago, at the smallest
+possible scale: **I grepped `localStorage` and never looked at
+`sessionStorage`.** One sub-area probed, a claim made about both.
+
+The fix is not a corrected count — a count decays the moment a sixth
+store is added. The footer now names the *kinds* of thing stored, and
+`validate.mjs` holds a registry mapping every store in the code to a
+described kind. A new store fails the build until the footer is updated,
+and a count reappearing in that sentence fails too.
+
+**Ledger: 10 claims tested, 6 falsified.** Three of the six were
+inward-facing. The most recent was caught by a check written in the same
+batch, minutes after it existed — which is the argument for enforcement
+over care.

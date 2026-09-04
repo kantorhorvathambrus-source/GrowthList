@@ -10,16 +10,31 @@
 import { getDomainNotes, getCategoryIndex, getCreators } from '../data.js';
 import { esc, setTitle, statePage, domainLabel, SIGNAL_LABELS } from '../utils.js';
 
-const RULES = [
+// Every number that appears in visitor-facing prose carries its provenance
+// here, because the project has now shipped two false claims of exactly this
+// shape. The distinction that matters:
+//
+//   measured  — computed from the shipped data at render time. Cannot decay.
+//   target    — from the spec, NOT a description of the data. Must be hedged
+//               in the copy ("we aim for", "never more than") so a reader
+//               cannot mistake an intention for a finding.
+//
+// A target sentence and a description sentence look identical once the
+// document they came from is a few weeks old. "Typically two to four skills"
+// was rule 4's target, restated as fact, wrong by a factor of two, and live
+// for months. Mark them at the point of writing or this happens again.
+const RULES = (facts) => [
   ['Verified, or not listed',
    `Every channel is confirmed through the YouTube Data API before it is
     written down. No entry is built from a remembered handle or a guessed URL,
     and the entry-point video on each card is checked to belong to that
     channel rather than merely to mention it.`],
   ['Mapped only where the work supports it',
+   // "six" is a TARGET (rule 4's hard cap) and is hedged as one.
+   // "${facts.modal}" is MEASURED at render.
    `A creator appears under a skill only when their own body of work covers it,
-    and never under more than six. In practice most appear under one: being
-    excellent at one thing is not evidence about the next thing, and the
+    and never under more than six. In practice most appear under ${facts.modal}:
+    being excellent at one thing is not evidence about the next thing, and the
     temptation to let it count is the single easiest way for a list like this
     to go soft.`],
   ['Ranges, not numbers',
@@ -36,9 +51,9 @@ const RULES = [
     does, and it would make every other entry harder to trust.`],
 ];
 
-function rulesMarkup() {
+function rulesMarkup(facts) {
   return `<ol class="colophon-rules">
-    ${RULES.map(([title, body]) => `<li>
+    ${RULES(facts).map(([title, body]) => `<li>
       <h3>${esc(title)}</h3>
       <p>${esc(body.replace(/\s+/g, ' ').trim())}</p>
     </li>`).join('')}
@@ -82,6 +97,16 @@ function floorMarkup(notes) {
   return `<div class="sec-head"><span class="num">03</span><h2 id="floor-heading">${esc(sec.title)}</h2></div>
     ${(sec.paras ?? []).map((p) => `<p>${esc(p)}</p>`).join('')}
     ${floorTable(notes.entries ?? [], notes.dataAsOf)}`;
+}
+
+// The numbers the copy above needs, derived rather than written down.
+function measuredFacts(creators) {
+  const counts = creators.map((c) => c.categories?.length ?? 0);
+  const tally = new Map();
+  for (const n of counts) tally.set(n, (tally.get(n) ?? 0) + 1);
+  const modal = [...tally.entries()].sort((a, b) => b[1] - a[1])[0]?.[0] ?? 0;
+  const WORDS = ['none', 'one', 'two', 'three', 'four', 'five', 'six'];
+  return { modal: WORDS[modal] ?? String(modal) };
 }
 
 // Coverage, stated plainly. A directory that shows only its filled shelves is
@@ -148,7 +173,7 @@ export async function renderColophon(app) {
       <div class="rail"><span>The rules</span></div>
       <div class="band-body">
         <div class="sec-head"><span class="num">01</span><h2 id="rules-heading">What it takes to be listed</h2></div>
-        ${rulesMarkup()}
+        ${rulesMarkup(measuredFacts(creators))}
       </div>
     </section>
 
