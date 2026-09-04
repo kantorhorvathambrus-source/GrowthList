@@ -1,0 +1,37 @@
+[
+  {
+    "id": "bulletjournal",
+    "name": "Bullet Journal (Ryder Carroll)",
+    "handle": "@bulletjournal",
+    "channelUrl": "https://www.youtube.com/@bulletjournal",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "The originator of the bullet journal method on writing by hand as a way of thinking, rather than as decoration.",
+    "longDescription": "Carroll invented the method, and the channel is unusual for the genre in that it is almost entirely about the reasoning rather than the aesthetics — there is no spread-decorating content here. The recurring subject is what putting something on paper actually does: a video on the four levels of thinking on paper, another on writing feelings down, a minimalist argument that the method works in any notebook and needs no supplies. That last point is the honest core of it, and he makes it repeatedly against an internet culture built around buying things. Twenty-three of two hundred uploads run over eight minutes, so the substantial material is a minority of a catalogue that is otherwise short clips. He sells the book and an official notebook, which is the conflict, and it sits oddly beside his own insistence that any notebook will do.",
+    "notFor": "Anyone wanting the decorative or artistic side of journaling, or a digital system — the method is deliberately analogue and deliberately plain. Also not therapeutic writing, though one video touches on it.",
+    "formatTags": ["tutorial", "shorts", "lecture"],
+    "level": ["beginner", "intermediate"],
+    "profile": { "evidenceBased": 2, "practical": 4, "energy": 2, "selfPromotion": 3, "depth": 2 },
+    "signals": ["practitioner", "commercial-conflict"],
+    "categories": [
+      {
+        "id": "journaling",
+        "strength": "primary",
+        "why": "Treats writing by hand as a thinking method with a structure, rather than as a diary or a craft project — which is the version of this skill worth learning.",
+        "evidence": "Long-form on the four levels of thinking on paper, on writing feelings down, on running a whole system from any plain notebook, and a sixty-one-minute retrospective on twelve years of the method.",
+        "entryVideo": {
+          "title": "How to Think on Paper",
+          "videoId": "V8BQT3jt0So",
+          "whyThisOne": "The argument underneath the whole method, before any notation or technique — if this does not land, the rest of the channel will not help you.",
+          "durationMin": 9
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "He sells the book and an official notebook, which sits awkwardly against his own repeated point that any notebook works. Claims about the method's effects are experiential rather than researched."
+  }
+]

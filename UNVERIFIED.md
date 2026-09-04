@@ -829,3 +829,26 @@ twenty-five long-form builds in the other.
 threshold; both are now one creator from falling below it. The standing
 notes stay for now and the watch note on the programming entry records
 why they are being kept rather than defended.
+
+## Batch 30 — Jeff Su rejected, and why the rejection is the point
+
+`journaling` filled with the Bullet Journal channel — the method's
+originator, and unusually for the genre almost entirely about the
+reasoning rather than the decoration.
+
+**Jeff Su rejected** (`@JeffSu`, 1M–5M, 313 uploads), and this is a
+useful case. He is well known for workplace and career content, and
+`career-change`, `remote-work` and `workplace-politics` are all empty, so
+the pull to map him was strong. A keyword scan of **300 uploads** for
+career, promotion, manager, workplace, politics, feedback, meeting, email
+and resume returned **one** long-form hit — a resume video, in a category
+that already has creators. The catalogue is short-form AI-tool tips.
+
+Reputation said career channel; the body of work said otherwise. That is
+rule 4 in its ordinary form, and it is worth logging precisely because
+nothing dramatic happened: the scan took one command, and the alternative
+was a mapping made from what I remembered about him.
+
+Also probed and rejected: `@Jeff_Su` resolves to a different account with
+0 uploads, `@Buffer` to a 0-upload channel called "piozzo", `@AshleyStahl`
+to "Ashley Flaman" with 8. Three more name traps.
