@@ -40,6 +40,14 @@ export const getCreators = () => load('creators.json');
 export const getDomainNotes = () =>
   load('domain-notes.json').catch(() => ({ notes: {} }));
 
+/**
+ * Rule 12 subject notes: categories where we held a higher bar, and the short
+ * factual reason. Generated from the research file, so only the visitor-facing
+ * half ships. Optional — a missing file means no category has one.
+ */
+export const getSubjectNotes = () =>
+  load('subject-notes.json').catch(() => ({ notes: {} }));
+
 /** Search index: categories (name + aliases) and creators (name + handle). */
 export const getSearchIndex = () => load('search-index.json');
 

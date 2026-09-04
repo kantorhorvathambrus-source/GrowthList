@@ -409,6 +409,35 @@ if (creators.length > 0) {
   }
 }
 
+// ------------------------------------------------- rule 12 subject notes
+// Every rule 12 category must say so on its own page. The check that matters
+// is not that a note exists but that it is written for the right audience:
+// the research rationale references our own rulings and process, and would
+// read as self-regard on a page about learning a skill.
+if (existsSync(join(DATA, 'high-stakes.json'))) {
+  const hs = JSON.parse(readFileSync(join(DATA, 'high-stakes.json'), 'utf8'));
+  const catIds = new Set(categories.map((c) => c.id));
+  // Markers of research-facing prose. If any of these reach a visitorNote,
+  // the audience separation has broken down.
+  const RESEARCH_VOICE = /\bowner\b|\brule 12\b|\bthin-gaps\b|\bcountUnderLooserStandard\b|[A-Z]{4,}[ -][A-Z]{4,}/;
+  for (const [id, entry] of Object.entries(hs.categories ?? {})) {
+    const where = `high-stakes.json ${id}`;
+    if (!catIds.has(id)) fail(where, 'not a category id');
+    if (typeof entry === 'string') { fail(where, 'must be an object with rationale and visitorNote'); continue; }
+    if (!entry.rationale) fail(where, 'missing rationale (research-facing)');
+    if (!entry.visitorNote) {
+      fail(where, 'missing visitorNote — a rule 12 category must say so on its page');
+      continue;
+    }
+    const note = String(entry.visitorNote).trim();
+    if (note.length < 80) fail(where, 'visitorNote is too short to say anything useful');
+    if (note.length > 480) warn(where, `visitorNote is ${note.length} chars — the owner asked for short`);
+    if (RESEARCH_VOICE.test(note)) {
+      fail(where, 'visitorNote reads as research prose (mentions our process, or uses the all-caps rationale voice) — it is addressed to a visitor learning a skill');
+    }
+  }
+}
+
 // ------------------------------------------------------ domain notes
 // Rule 17. Three failure modes worth catching mechanically, because none is
 // visible by inspection: a saturated signal with no note at all (the badge is

@@ -2,7 +2,7 @@
 // the critic in a visually distinct ink band, and the four-week plan as a
 // numbered sequence with a connecting line.
 
-import { getCategory, getCreatorsForCategory, getCategoryIndex, getDomainNotes } from '../data.js';
+import { getCategory, getCreatorsForCategory, getCategoryIndex, getDomainNotes, getSubjectNotes } from '../data.js';
 import { esc, stateBlock, statePage, setTitle, LEVELS, SIZE_BUCKETS, domainLabel } from '../utils.js';
 
 // Named rather than coded, because "No AU creator" reads as a database error
@@ -99,6 +99,24 @@ function filtersMarkup(entries, filters) {
     </div>
     <p class="filters__summary" id="filters-summary" role="status" aria-live="polite"></p>
   </form>`;
+}
+
+// Rule 12: a handful of skills are held to a higher bar than the rest, and a
+// visitor cannot tell which from the outside — every card has notFor and
+// caveats, so the extra care reads as ordinary. Saying so is part of the
+// honesty rather than decoration, which is also why it is deliberately not
+// styled as a warning: it states something about the subject, it does not
+// disclaim on our behalf.
+//
+// Rendered even on an empty category: "we would rather list nobody here" is
+// exactly the thing worth saying when the list is empty.
+function subjectNoteMarkup(categoryId, subjectNotes) {
+  const note = subjectNotes?.notes?.[categoryId];
+  if (!note) return '';
+  return `<aside class="subject-note" aria-labelledby="subject-note-heading">
+    <h2 id="subject-note-heading" class="subject-note__head">A note on this skill</h2>
+    <p>${esc(note)}</p>
+  </aside>`;
 }
 
 // A signal carried by nearly every creator in a domain says something, but not
@@ -206,12 +224,14 @@ export async function renderCategory(app, { params, query }) {
   let entries;
   let index;
   let domainNotes;
+  let subjectNotes;
   try {
-    [category, entries, index, domainNotes] = await Promise.all([
+    [category, entries, index, domainNotes, subjectNotes] = await Promise.all([
       getCategory(params.id),
       getCreatorsForCategory(params.id),
       getCategoryIndex(),
       getDomainNotes(),
+      getSubjectNotes(),
     ]);
   } catch (err) {
     app.setAttribute('aria-busy', 'false');
@@ -268,6 +288,8 @@ export async function renderCategory(app, { params, query }) {
                than a list we have not verified. <a href="#/">Browse other skills</a>.`
             )}</div>`
           : ''}
+
+        ${subjectNoteMarkup(category.id, subjectNotes)}
 
         ${domainNoteMarkup(category.domain, domainNotes, entries.length > 0)}
 

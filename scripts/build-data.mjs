@@ -97,6 +97,23 @@ const categoriesIndexOut = categories.map((c) => ({
   count: counts.get(c.id) ?? 0,
 }));
 
+// Rule 12 subject notes. The research file carries two fields per category —
+// a rationale written for the owner, referencing our own process and rulings,
+// and a short visitorNote about the subject. Only the second ships. Deriving
+// the shipped file here rather than hand-maintaining it means the research
+// prose cannot leak onto a page about learning a skill, and the two cannot
+// drift apart.
+const highStakesPath = join(DATA, 'high-stakes.json');
+const subjectNotesOut = { notes: {} };
+if (existsSync(highStakesPath)) {
+  const hs = readJson(highStakesPath);
+  for (const [id, entry] of Object.entries(hs.categories ?? {})) {
+    const note = typeof entry === 'string' ? null : entry.visitorNote;
+    if (note) subjectNotesOut.notes[id] = note;
+    else console.error(`WARNING: high-stakes category "${id}" has no visitorNote — it will say nothing on its page`);
+  }
+}
+
 // Search index: what the search box matches against.
 const searchOut = {
   categories: categories.map((c) => ({
@@ -120,6 +137,7 @@ const kbFull = writeJson('creators.json', creatorsOut);
 const kbIndex = writeJson('index.json', indexOut);
 const kbCats = writeJson('categories-index.json', categoriesIndexOut);
 const kbSearch = writeJson('search-index.json', searchOut);
+writeJson('subject-notes.json', subjectNotesOut);
 
 // ---------------------------------------------------------------- report
 

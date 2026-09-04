@@ -1016,3 +1016,24 @@ pre, table { overflow-x: auto; max-width: 100%; }
 .colophon-table th, .colophon-table td { text-align: left; padding: var(--sp-2) var(--sp-4) var(--sp-2) 0; border-bottom: 1px solid var(--rule-faint); }
 .colophon-table thead th { font-family: var(--font-cond); text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent-ink); border-bottom-color: var(--rule); }
 .colophon-pct { color: var(--text-muted); }
+
+/* ------------------------------------------------- rule 12 subject note */
+/* Deliberately the same restrained treatment as the domain standing note:
+   a left rule, small text, no alarm colour. It states a fact about the
+   subject; it is not a disclaimer, and styling it as one would be a
+   different and less honest claim. */
+.subject-note {
+  border-left: var(--bd-4) solid var(--rule);
+  padding: var(--sp-1) 0 var(--sp-1) var(--sp-4);
+  margin-bottom: var(--sp-6);
+  max-width: 66ch;
+}
+.subject-note__head {
+  font-family: var(--font-cond);
+  font-size: var(--fs-small);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin: 0 0 var(--sp-2);
+}
+.subject-note p { font-size: var(--fs-small); margin: 0; }

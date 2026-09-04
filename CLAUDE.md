@@ -196,6 +196,37 @@ this file has the rules, schema, and current state.
     conflict, the owner challenged it, and re-examination showed the
     real disqualifier was that its long-form output is patient
     testimonials and admissions marketing. Right outcome, wrong reason.
+18. **Four failed probes is not a finding.** A structural claim about a
+    field — "the practitioners here publish in text, not video", "the
+    certifying bodies use YouTube for campaigns rather than
+    instruction" — is a real and valuable kind of result, and it is
+    also the most flattering thing a search can produce, because it
+    converts *not having found anything* into *having discovered
+    something*. The two are indistinguishable from the inside.
+    **A structural finding must survive a deliberate attempt to
+    disprove it, not merely an absence of hits.** Before writing one
+    down: name what would falsify it, then go looking for that
+    specifically.
+    The live near-miss is `git-and-version-control` in batch 22.
+    Fireship returned zero long-form hits across 250 uploads, GitHub's
+    channel is product marketing and podcasts, Coding Garden is
+    four-hour livestreams — three failures in a row, and the
+    text-not-video pattern was already established in marketing, so the
+    conclusion was sitting there ready to be reached. **It would have
+    been wrong.** One more round of probing found The Modern Coder,
+    whose fundamentals video defines the working directory, staging
+    area and repository as three places a file can be — exactly the
+    mental model the category asks for.
+    The two findings that *have* earned the label were tested this way:
+    marketing survived a direct attempt to falsify it (Harry Dry has 4
+    uploads, Seth Godin 7, and copyhackers, backlinko, CXL, HubSpot and
+    Klaviyo do not resolve at all), and `first-aid` survived reading the
+    large channels rather than only counting them — the American Red
+    Cross has 2,180 uploads and its long-form is blood-donation
+    interviews.
+    **A real finding is one you tried to break.** An absence of hits is
+    a report about your search, not about the world.
+
 17. **A badge everyone in a domain carries is a fact about the field or
     a fact about us — and the two belong on different pages.**
     `data/domain-notes.json` holds one entry per `(domain, signal)` that
@@ -510,6 +541,11 @@ this section first to know exactly where to resume.)*
   Harry Dry has 4 uploads, Seth Godin 7, and copyhackers/backlinko/CXL
   do not resolve. The discipline's practitioners chose not to work in
   video. See UNVERIFIED.md batch 20.
+- **Rule 12 is now visible to visitors** (owner's call): each of the
+  eight categories carries a short factual `visitorNote` rendered above
+  the creator list, generated from `high-stakes.json` so the
+  research-facing rationale cannot leak onto the site. `validate.mjs`
+  fails a missing note and fails one written in the research voice.
 - **Rule 12 now covers eight categories**, under three distinct and
   non-interchangeable rationales: six for cost-over-time, `first-aid`
   for acute recall, `camping-and-outdoor-skills` for verification being

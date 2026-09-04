@@ -205,7 +205,12 @@ if (hsRows.length) {
   }
   for (const r of hsRows) {
     const state = thinGaps[r.id] ? 'documented' : 'open';
-    console.log(`  ${r.n} creator${r.n === 1 ? ' ' : 's'}  ${pad(r.id, 26)} ${pad(state, 11)} ${highStakes[r.id].slice(0, 70)}`);
+    const hs = highStakes[r.id];
+    // Entries carry a research rationale and a visitor-facing note; only the
+    // first belongs in a report written for the owner.
+    const why = typeof hs === 'string' ? hs : hs.rationale ?? '';
+    console.log(`  ${r.n} creator${r.n === 1 ? ' ' : 's'}  ${pad(r.id, 26)} ${pad(state, 11)} ${why.slice(0, 70)}`);
+    if (typeof hs === 'object' && !hs.visitorNote) console.log(`      NO VISITOR NOTE — rule 12 categories must say so on the page`);
   }
 }
 
