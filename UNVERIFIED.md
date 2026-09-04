@@ -793,3 +793,39 @@ and a count reappearing in that sentence fails too.
 inward-facing. The most recent was caught by a check written in the same
 batch, minutes after it existed — which is the argument for enforcement
 over care.
+
+## Batch 29 — business and productivity, with three rejections worth naming
+
+Two creators listed: Shopify Masters (`ecommerce`) and n8n
+(`workflow-automation`). Both are vendor channels, both included with the
+conflict on the record under rule 13, and in both cases the reason is
+that the substance survives the test — would this be listed if a
+non-profit ran it? Yes: twenty-one long-form founder case studies in one,
+twenty-five long-form builds in the other.
+
+**Rejected, and the reasons differ:**
+
+- **The Operations Room** (`@TheOperationsRoom`, 1M–5M, 211 uploads) —
+  a complete name collision. It is a **military-history animation
+  channel**: Pearl Harbor, Midway, Operation Anaconda. Probed because
+  the handle looked exactly like an operations-and-process channel.
+- **MyWifeQuitHerJob** (`@MyWifeQuitHerJob`, 500k–1M, 1,247 uploads) —
+  Steve Chou is a real ecommerce operator, and the catalogue is not
+  teaching. The long-form is opportunity listicles: "8 Claude AI Side
+  Hustles That Each Make $100K/Yr", "9 UNSEXY Products Quietly Making
+  $10M+ on TikTok Shop". The `ecommerce` category is about sourcing,
+  margins and logistics; this is about what to sell this month.
+  Rejected on content, not on the commercial interest.
+- **SocialTalent** (`@SocialTalent`, 487 uploads) — the channel
+  description is a pitch for an AI recruiting product, and only two of
+  the fifty recent uploads are long-form, both webinars. The
+  `hiring-and-recruiting` category stays empty and **unfinished** —
+  the recruiter-practitioner and academic ends have not been probed, so
+  under rule 18 this is not yet a documented gap.
+
+**Drift caught by the validator, not by review:**
+`productivity/sells-course` fell from 86% to 75% as the domain grew, and
+`programming/sells-course` sits at 71%. Both are still above the
+threshold; both are now one creator from falling below it. The standing
+notes stay for now and the watch note on the programming entry records
+why they are being kept rather than defended.

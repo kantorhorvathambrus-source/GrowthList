@@ -6,7 +6,7 @@
     "minCreators": 4
   },
   "dataAsOf": "2026-09",
-  "measuredAtCreators": 196,
+  "measuredAtCreators": 198,
   "entries": [
     {
       "domain": "fitness",
@@ -40,7 +40,7 @@
       "basis": "measured",
       "measured": {
         "n": 6,
-        "of": 7
+        "of": 8
       },
       "placement": "category-page",
       "note": "Almost every productivity creator listed here sells a course, an app or a book built on the method they teach. This field is unusually self-referential that way: the product often is the method, so the incentive to present one system as more general than it really is comes built in. The note on each card names what the person sells and how hard they push it."
@@ -87,8 +87,8 @@
       "cause": "field",
       "basis": "measured",
       "measured": {
-        "n": 7,
-        "of": 7
+        "n": 8,
+        "of": 8
       },
       "placement": "category-page",
       "usesSharedNote": "practitioner"
@@ -207,8 +207,8 @@
       "cause": "field",
       "basis": "measured",
       "measured": {
-        "n": 5,
-        "of": 5
+        "n": 6,
+        "of": 6
       },
       "placement": "category-page",
       "usesSharedNote": "practitioner"

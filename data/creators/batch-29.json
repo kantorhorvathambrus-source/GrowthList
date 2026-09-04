@@ -1,0 +1,72 @@
+[
+  {
+    "id": "shopifymasters",
+    "name": "Shopify Masters",
+    "handle": "@ShopifyMasters",
+    "channelUrl": "https://www.youtube.com/@ShopifyMasters",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Half-hour interviews with founders of physical-product businesses about how the thing was actually built, hosted by the platform they sell on.",
+    "longDescription": "Twenty-one of the fifty most recent uploads run over twenty minutes and the format is a single founder walking through their own business — sourcing, margins, the retail relationships, the year it nearly failed. The useful ones are specific about constraints rather than triumphant: a brand handling the operational consequences of a sudden ranking, two founders building without outside investment, a compilation of mistakes from eight real businesses. This is Shopify's own podcast, which is the obvious conflict and also why the guests are willing to be concrete — they are talking to a friendly host on a platform they already use. Note the shape: twenty-eight of the fifty most recent uploads are under two minutes, so the substantial interviews are a minority of the front page.",
+    "notFor": "Anyone wanting a how-to. These are case studies, and the lesson is inductive across several rather than stated in one. Also not platform-neutral: the assumed stack is Shopify throughout.",
+    "formatTags": ["interview", "long-form", "shorts"],
+    "level": ["beginner", "intermediate"],
+    "profile": { "evidenceBased": 2, "practical": 3, "energy": 2, "selfPromotion": 3, "depth": 3 },
+    "signals": ["practitioner", "commercial-conflict"],
+    "categories": [
+      {
+        "id": "ecommerce",
+        "strength": "primary",
+        "why": "Sourcing, margins and logistics discussed by people who ran them, at a length that lets the constraints and the near-failures come out rather than only the outcome.",
+        "evidence": "Long-form interviews on building a multimillion-dollar brand without investors, on Peak Design reaching $100m without investment, on an operational crisis caused by a Consumer Reports ranking, and a compilation of mistakes drawn from eight businesses.",
+        "entryVideo": {
+          "title": "The Mistakes That Changed Everything (From 8 Real Businesses)",
+          "videoId": "DDFEK92gK_4",
+          "whyThisOne": "Eight failures in twelve minutes is a faster education than eight successes, and it calibrates the more triumphant interviews elsewhere on the channel.",
+          "durationMin": 12
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Made by Shopify. The guests are Shopify merchants, the stack is assumed, and no competing platform will ever be discussed neutrally here. Included for the case studies with the conflict on the record — the same treatment given to every other vendor channel on this site."
+  },
+  {
+    "id": "n8n",
+    "name": "n8n",
+    "handle": "@n8n-io",
+    "channelUrl": "https://www.youtube.com/@n8n-io",
+    "country": "DE",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "The automation platform's own channel, teaching workflow building at real length — including the maintenance problem most automation content ignores.",
+    "longDescription": "Twenty-five of the fifty most recent uploads run over twenty minutes and the median is twenty, which is unusual for vendor content and is the reason this is listed. The material ranges from a genuine beginner path — first workflow through to a working assistant — to hour-long builds with the platform's own engineers. The most valuable strand for this skill is the organisational one: an interview about running seven hundred workflows across a three-thousand-person company, and one about the operations team's own automation, both of which are largely about what happens when automations break and who is left holding them. That is the failure mode the skill is defined against, and it is discussed here rather than assumed away. Everything is n8n-specific, which is the trade: you learn the concepts through one tool and inherit that tool's assumptions.",
+    "notFor": "Anyone wanting a tool-neutral treatment, or looking to automate with scripts rather than a platform. Every video assumes n8n, and much of the recent catalogue assumes you want AI agents in the loop.",
+    "formatTags": ["tutorial", "long-form", "interview"],
+    "level": ["beginner", "intermediate", "advanced"],
+    "profile": { "evidenceBased": 2, "practical": 4, "energy": 2, "selfPromotion": 4, "depth": 3 },
+    "signals": ["practitioner", "commercial-conflict"],
+    "categories": [
+      {
+        "id": "workflow-automation",
+        "strength": "primary",
+        "why": "It covers the part that decides whether automation helps or hurts — what breaks, who maintains it, and what happens at organisational scale — rather than stopping at the first working workflow.",
+        "evidence": "A beginner path from first workflow to a working assistant, an interview on running seven hundred workflows across a three-thousand-person company, and a session on the automation the company's own operations team relies on.",
+        "entryVideo": {
+          "title": "From first workflow to WhatsApp assistant",
+          "videoId": "4wSiQA8vG78",
+          "whyThisOne": "A complete small build in eleven minutes, which is enough to judge whether this style of automation suits you before committing to a platform.",
+          "durationMin": 11
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "This is the vendor's own channel and every solution is its product; the fragility warning in this skill's description applies with particular force to a workflow you can only maintain inside one platform. Case-study numbers — hours saved, dollars saved — are the company's own marketing figures and are not independently verified."
+  }
+]
