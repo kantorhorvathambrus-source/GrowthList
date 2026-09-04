@@ -470,15 +470,15 @@ in `categories.json`-derived output with a computed creator `count`.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research). **Batches 01–21 are
+- **Current phase**: Phase 2 (creator research). **Batches 01–22 are
   written, gated, validated and committed.**
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
-- **Creator count: 186 of 400.** Taxonomy 197, three slots held.
-- **165 of 197 categories populated.** **Every domain has creators.**
-  Full: fitness, communication, creativity, learning, philosophy.
-  **Practical is 12/13** — the only hole is `first-aid`, which is a
-  documented gap by design rather than unfinished work.
-  Thinnest: marketing 5/13, business 7/13, tech 8/11.
+- **Creator count: 191 of 400.** Taxonomy 197, three slots held.
+- **169 of 197 categories populated; 28 empty.**
+  Full: fitness, communication, creativity, learning, philosophy,
+  **tech, programming**. Practical 12/13 — its only hole, `first-aid`,
+  is a documented gap by design rather than unfinished work.
+  Thinnest: **marketing 5/13, business 7/13**, productivity 7/9.
 - **Untouched domains: none.**
 - **Practical still empty (4)**: `first-aid`, `travel-planning`,
   `camping-and-outdoor-skills`, `personal-style-and-grooming`.
@@ -501,7 +501,7 @@ this section first to know exactly where to resume.)*
   n=2 is confirmed by measurement** and its `basis` flipped from
   `editorial` to `measured`, with the provenance kept so the record shows
   it was a prediction first.
-- **Critics: 29 of 165 populated categories.** Batch 18 added four —
+- **Critics: 29 of 169 populated categories.** Batch 18 added four —
   Ann Reardon on cooking and baking, Project Farm on car maintenance and
   home repair. **Relationships and philosophy have none anywhere** — both
   flagged under rule 11, neither filled.

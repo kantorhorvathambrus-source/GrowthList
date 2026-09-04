@@ -1,0 +1,177 @@
+[
+  {
+    "id": "themoderncoder",
+    "name": "The Modern Coder",
+    "handle": "@TheModernCoder",
+    "channelUrl": "https://www.youtube.com/@TheModernCoder",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Git taught as a model of what the tool is actually doing, so the commands stop being incantations you memorise.",
+    "longDescription": "The central video here does the thing almost no Git tutorial does: it explains the working directory, the staging area and the repository as three distinct places a file can be, and defines a commit in terms of moving between them. Once that model is in place the rest of the channel is much shorter than it would otherwise need to be — clone, push and fetch as one video, the two structurally different kinds of merge conflict as another, worktrees and forks each as their own. Ninety-five uploads, under a hundred thousand subscribers, and the videos sit around eight to ten minutes because a single concept explained properly does not need longer. There is no attempt to cover every flag; the bet is that a correct mental model plus the documentation beats a memorised command list, and it is the right bet.",
+    "notFor": "Anyone wanting a full Git reference or advanced plumbing commands. Also not a course — the videos are individual concepts rather than a sequence, so you assemble the path yourself.",
+    "formatTags": ["tutorial", "lecture"],
+    "level": ["beginner", "intermediate"],
+    "profile": { "evidenceBased": 3, "practical": 4, "energy": 2, "selfPromotion": 1, "depth": 3 },
+    "signals": ["practitioner"],
+    "categories": [
+      {
+        "id": "git-and-version-control",
+        "strength": "primary",
+        "why": "It builds the mental model first — three places a file can live, and what a commit actually moves — which is precisely what makes branching stop being frightening.",
+        "evidence": "A fundamentals video defining the working directory, staging area, repository, file states and commits, plus separate treatments of the two structurally different merge-conflict types, worktrees, and fork versus clone.",
+        "entryVideo": {
+          "title": "Git Fundamentals: Staging area, repository, working directory, file states, and commits tutorial.",
+          "videoId": "BIjrKuJGTxw",
+          "whyThisOne": "Watch this before any other Git video anywhere. Almost every later confusion traces back to not having this picture.",
+          "durationMin": 10
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Small channel with a modest catalogue; there is no coverage of team workflow conventions, CI integration or hosting-platform specifics."
+  },
+  {
+    "id": "philomatics",
+    "name": "Philomatics",
+    "handle": "@philomatics",
+    "channelUrl": "https://www.youtube.com/@philomatics",
+    "country": "AT",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Short, opinionated treatments of the Git operations people avoid — rebase, interactive rebase, submodules.",
+    "longDescription": "A small Austrian channel of twenty-nine uploads whose Git videos are unusually well targeted: not another introduction, but the specific operations experienced developers still get wrong or refuse to touch. Rebase gets two videos, one on why and when and one on resolving the conflicts it produces, which is the right split because those are separate problems. Submodules get a video that starts from why everyone hates them, which is a more honest opening than most tooling content manages. The register is direct and the videos are five to ten minutes. The channel is not primarily about Git — there is material on monorepos, GPU rendering and a podcast — so this is a good short shelf rather than a course.",
+    "notFor": "Beginners. These assume you already commit and branch comfortably, and they are about the operations that come after that.",
+    "formatTags": ["tutorial", "video-essay"],
+    "level": ["intermediate", "advanced"],
+    "profile": { "evidenceBased": 3, "practical": 4, "energy": 2, "selfPromotion": 1, "depth": 3 },
+    "signals": ["practitioner"],
+    "categories": [
+      {
+        "id": "git-and-version-control",
+        "strength": "secondary",
+        "why": "Covers the operations that stay frightening after the basics are comfortable — rebase and submodules — which is where most people stop learning Git.",
+        "evidence": "Separate videos on why and when to rebase, on fixing the conflicts rebasing produces, on interactive rebase for undoing, editing and squashing, and on why submodules are disliked.",
+        "entryVideo": {
+          "title": "git rebase - Why, When & How to fix conflicts",
+          "videoId": "DkWDHzmMvyg",
+          "whyThisOne": "Rebase is the operation people avoid longest; this separates when to use it from how to survive it, which is why the avoidance persists.",
+          "durationMin": 10
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Only 29 uploads and Git is a minority of them. Views are stated as opinions and some — the monorepo argument in particular — are contested positions rather than consensus."
+  },
+  {
+    "id": "jamesbriggs",
+    "name": "James Briggs",
+    "handle": "@jamesbriggs",
+    "channelUrl": "https://www.youtube.com/@jamesbriggs",
+    "country": "GB",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Half-hour code walkthroughs of retrieval, agents and evaluation, built rather than described.",
+    "longDescription": "Thirty-one of the fifty most recent uploads run over twenty minutes and the median is twenty-five, because these are implementations rather than overviews. The subjects are the actual engineering problems of putting a language model into production — retrieval and how it fails, agent execution and tool use, streaming, observability, and how conversation history should be managed, which he argues most implementations get wrong. The frameworks covered are the ones people actually use, and he is willing to go deep enough into one to show where its abstractions leak. The important caveat is shelf life: this is a field where the correct approach changes every few months, and the most recent upload in the scanned window is from October 2025, so treat anything framework-specific as a snapshot rather than current practice.",
+    "notFor": "Anyone who does not write code. Every video assumes a working Python environment and the ability to read an API surface.",
+    "formatTags": ["tutorial", "long-form", "course"],
+    "level": ["intermediate", "advanced"],
+    "profile": { "evidenceBased": 3, "practical": 4, "energy": 2, "selfPromotion": 2, "depth": 4 },
+    "signals": ["practitioner"],
+    "categories": [
+      {
+        "id": "building-with-llms",
+        "strength": "primary",
+        "why": "Retrieval, tools, evaluation and observability are each built on camera rather than described, which is the only way the failure modes become visible.",
+        "evidence": "Long-form implementations of an end-to-end agent project, of agent executors and tool use, of streaming and API integration, of observability, and an argument about how agentic chat history should be handled.",
+        "entryVideo": {
+          "title": "End-to-end AI Agent Project with LangChain | Full Walkthrough",
+          "videoId": "AO6WbXTeDow",
+          "whyThisOne": "A complete build rather than a component, so you see how the pieces fail together rather than individually.",
+          "durationMin": 46
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Fast-decaying subject matter and no upload in the scanned window since October 2025 — framework specifics will have moved. Some content is produced in partnership with the vendors whose tools are demonstrated."
+  },
+  {
+    "id": "aijason",
+    "name": "AI Jason",
+    "handle": "@AIJasonZ",
+    "channelUrl": "https://www.youtube.com/@AIJasonZ",
+    "country": "AU",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Practical experiments in structuring context for language models, reported as what worked and what did not.",
+    "longDescription": "Forty-three of the hundred most recent uploads run over eight minutes, and the useful thread is context rather than phrasing: how information should be assembled and handed to a model, why a loop was built wrong, why a coding agent was being given context in a way that degraded it, how memory should be handled. That is the durable half of prompt engineering — the clever-wording half ages out in weeks, the structural half survives. Two things to hold against it. The titles are engagement-optimised to the point of being uninformative (\"I don't prompt agents anymore...\"), which makes the catalogue harder to navigate than it should be. And systematic iteration — evaluation, measuring whether a change actually helped — is the weakest part of the coverage, despite being the part that separates method from anecdote.",
+    "notFor": "Anyone wanting settled practice. This is a field moving monthly and the channel reports experiments, so treat specifics as of their publication date rather than as technique.",
+    "formatTags": ["tutorial", "video-essay"],
+    "level": ["intermediate", "advanced"],
+    "profile": { "evidenceBased": 2, "practical": 4, "energy": 3, "selfPromotion": 2, "depth": 3 },
+    "signals": ["practitioner"],
+    "categories": [
+      {
+        "id": "prompt-engineering",
+        "strength": "primary",
+        "why": "The structure-and-context half of the skill, which is the half that keeps its value — how information is assembled and handed to a model rather than how a request is worded.",
+        "evidence": "Videos on giving a coding agent context correctly, on building agent loops, on agent memory, and on moving from prompting to structured context entirely.",
+        "entryVideo": {
+          "title": "I was giving my coding agent context the wrong way...",
+          "videoId": "iWRmtPdFbGw",
+          "whyThisOne": "The clearest statement of the structural point — that what you supply matters more than how you phrase it — worked through on a concrete failure.",
+          "durationMin": 9
+        }
+      }
+    ],
+    "role": "generalist",
+    "caveats": "Engagement-optimised titles that describe the video poorly. Evaluation and systematic iteration are thinly covered, which is a real gap against what this skill requires. Short shelf life; check publication dates."
+  },
+  {
+    "id": "crashcourse",
+    "name": "CrashCourse",
+    "handle": "@CrashCourse",
+    "channelUrl": "https://www.youtube.com/@CrashCourse",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "5M-20M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Listed for one thing only: a complete seven-part series on how scientific claims are made, checked, and misread.",
+    "longDescription": "CrashCourse is an enormous general-education channel covering everything from biology to art history, and almost none of it is relevant here. It is listed for a single self-contained series — Crash Course Scientific Thinking — which runs seven episodes of ten to twelve minutes and covers, in order: cognitive bias, statistical thinking in science, why the single decisive experiment is a myth, what peer review does and does not catch, how consensus is actually built, evaluating sources and fact-checking, and what happens when scientific findings meet public opinion. That is a genuine curriculum in reading claims critically, produced to a standard the subject rarely gets, and it is the reason for the mapping. The rest of the catalogue is not part of this recommendation.",
+    "notFor": "Anyone wanting statistical technique or chart-making — this teaches you to read claims, not to produce them. Also aimed at a general and fairly young audience, so the pace is brisk and the depth is deliberately limited.",
+    "formatTags": ["lecture", "course", "tutorial"],
+    "level": ["beginner"],
+    "profile": { "evidenceBased": 4, "practical": 3, "energy": 3, "selfPromotion": 1, "depth": 2 },
+    "signals": ["cites-research"],
+    "categories": [
+      {
+        "id": "data-literacy",
+        "strength": "primary",
+        "why": "A complete sequence on where numbers and studies go wrong — bias, statistical reasoning, peer review, consensus, source evaluation — which is the critical-reading skill this category names.",
+        "evidence": "The seven-episode Crash Course Scientific Thinking series, each 10–12 minutes: cognitive bias, statistical thinking, the myth of the decisive experiment, peer review, consensus formation, fact-checking, and science in public dispute.",
+        "entryVideo": {
+          "title": "Statistical Thinking in Science: Crash Course Scientific Thinking #2",
+          "videoId": "Lw4oMXTEAkw",
+          "whyThisOne": "The episode aimed directly at how a number can be true and still mislead, which is the specific failure this skill exists to catch.",
+          "durationMin": 11
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Mapped on one series out of an enormous and unrelated catalogue — do not read this as a recommendation of the channel generally. Introductory by design, and produced for a broad audience, so it establishes the questions rather than the methods."
+  }
+]

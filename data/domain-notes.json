@@ -6,7 +6,7 @@
     "minCreators": 4
   },
   "dataAsOf": "2026-09",
-  "measuredAtCreators": 186,
+  "measuredAtCreators": 191,
   "entries": [
     {
       "domain": "marketing",
@@ -40,10 +40,11 @@
       "basis": "measured",
       "measured": {
         "n": 10,
-        "of": 12
+        "of": 14
       },
       "placement": "category-page",
-      "note": "Most programming creators listed here sell a course or a paid track. That is close to universal among independent programming educators now, so read it as the default rather than as a warning. The question worth asking is whether the free videos are complete enough to learn from without buying anything, which the note on each card addresses."
+      "note": "Most programming creators listed here sell a course or a paid track. That is close to universal among independent programming educators now, so read it as the default rather than as a warning. The question worth asking is whether the free videos are complete enough to learn from without buying anything, which the note on each card addresses.",
+      "watch": "Drifted from 83% to 71% between batches 16 and 22 as the domain filled out. One more creator without the badge drops it below the 70% threshold and this note should come down. Recorded because a note that survives only by a rounding margin is worth watching, not defending."
     },
     {
       "domain": "productivity",
@@ -86,8 +87,8 @@
       "cause": "selection",
       "basis": "measured",
       "measured": {
-        "n": 12,
-        "of": 12
+        "n": 14,
+        "of": 14
       },
       "placement": "build-page"
     },
@@ -119,8 +120,8 @@
       "cause": "selection",
       "basis": "measured",
       "measured": {
-        "n": 7,
-        "of": 8
+        "n": 9,
+        "of": 11
       },
       "placement": "build-page"
     },
