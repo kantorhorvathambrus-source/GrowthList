@@ -227,6 +227,30 @@ this file has the rules, schema, and current state.
     **A real finding is one you tried to break.** An absence of hits is
     a report about your search, not about the world.
 
+    **The named failure mode: a finding from one end of a domain,
+    applied to ends you never searched.** This is the halo effect's
+    sibling — there, evidence about a creator leaks across categories;
+    here, evidence about a *sub-area* leaks across a domain. It is
+    harder to see because the reasoning is sound at every step except
+    the last one.
+    What happened: the marketing text-not-video finding was made after
+    probing the **SEO end**, where the vendor pattern is real and
+    documented. It was then stated as a claim about *marketing*, a
+    domain whose copywriting, sales and affiliate ends had **never been
+    probed at all**. Three batches later, probing those ends found Alex
+    Cattoni (848 uploads, a real copywriting curriculum), Pat Flynn
+    (four 70–85 minute affiliate workshops) and 30 Minutes to
+    President's Club — and the standing note built on the finding had to
+    be retired.
+    Nothing was wrong with the observation. What was wrong was the
+    scope of the claim made from it.
+    **So: a structural claim about a domain requires evidence from
+    across that domain, not from the first sub-area you happened to
+    search.** Before writing one down, list the domain's sub-areas and
+    say which ones you actually probed. If the answer is one, the
+    finding is about that one — name it that way, or go and search the
+    others.
+
 17. **A badge everyone in a domain carries is a fact about the field or
     a fact about us — and the two belong on different pages.**
     `data/domain-notes.json` holds one entry per `(domain, signal)` that
@@ -501,11 +525,11 @@ in `categories.json`-derived output with a computed creator `count`.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research). **Batches 01–23 are
+- **Current phase**: Phase 2 (creator research). **Batches 01–24 are
   written, gated, validated and committed.**
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
-- **Creator count: 194 of 400.** Taxonomy 197, three slots held.
-- **174 of 197 categories populated; 23 empty.**
+- **Creator count: 195 of 400.** Taxonomy 197, three slots held.
+- **175 of 197 categories populated; 22 empty.** Practical is 13/13.
   Full: fitness, communication, creativity, learning, philosophy,
   **tech, programming**. Practical 12/13 — its only hole, `first-aid`,
   is a documented gap by design rather than unfinished work.
@@ -538,15 +562,20 @@ this section first to know exactly where to resume.)*
   n=2 is confirmed by measurement** and its `basis` flipped from
   `editorial` to `measured`, with the provenance kept so the record shows
   it was a prediction first.
-- **Critics: 29 of 174 populated categories.** Batch 18 added four —
+- **Critics: 29 of 175 populated categories.** Batch 18 added four —
   Ann Reardon on cooking and baking, Project Farm on car maintenance and
   home repair. **Relationships and philosophy have none anywhere** — both
   flagged under rule 11, neither filled.
-- **Documented thin gaps: 2** (`addiction-recovery`, `first-aid`).
-- **`copywriting` is empty for a reason**, not yet formally documented:
-  Harry Dry has 4 uploads, Seth Godin 7, and copyhackers/backlinko/CXL
-  do not resolve. The discipline's practitioners chose not to work in
-  video. See UNVERIFIED.md batch 20.
+- **Documented thin gaps: 2** (`addiction-recovery`, `first-aid`), and
+  **both have now been tested under rule 18 rather than assumed.**
+  `first-aid` FAILED the test — its 13 probes were all institutions, the
+  individual-clinician end was never searched, and searching it found
+  PrepMedic at once. Rewritten from `absent-supply` to `mixed` with a
+  `corrected` field. `addiction-recovery` SURVIVED: the clinician end
+  turns out to be ASAM, archived since 2021 and addressed to physicians.
+- **`copywriting` is populated** (Alex Cattoni). The batch-20 claim that
+  its practitioners chose not to work in video was the same scope error
+  as the marketing note and did not survive batch 23.
 - **Rule 12 is now visible to visitors** (owner's call): each of the
   eight categories carries a short factual `visitorNote` rendered above
   the creator list, generated from `high-stakes.json` so the

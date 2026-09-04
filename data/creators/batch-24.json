@@ -1,0 +1,37 @@
+[
+  {
+    "id": "prepmedic",
+    "name": "PrepMedic (Sam Bonanno)",
+    "handle": "@PrepMedic",
+    "channelUrl": "https://www.youtube.com/@PrepMedic",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "500k-1M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A critical-care flight paramedic explaining what a bystander can usefully do, and testing the emergency products sold on the promise that they help.",
+    "longDescription": "The channel's own description states the credential — critical care flight paramedic, reserve deputy sheriff, tactical medic — and states the aim as evidence-based medical care for first responders and civilians alike. Two strands earn the listing. The first is bystander education proper: a thirty-three-minute treatment of six medications a bystander might encounter and what each actually does, a home paediatric choking kit, croup, what bystanders need to know when fire is involved. The second is more unusual and arguably more valuable: he tests emergency products against their marketing, including a viral haemostatic spray checked against the published science and several tourniquets tested rather than reviewed. That matters in a field where a device bought on a claim is a device you will trust when it counts. Be clear about the rest of the catalogue: a large share is tactical loadouts, chest rigs and medic bags aimed at professional responders and at an armed-civilian context that is specifically American.",
+    "notFor": "Anyone wanting a structured first-aid syllabus, or anyone outside a US context — a substantial part of the catalogue assumes gunshot wounds, tactical kit and equipment that is not lawful or available everywhere. It is also not a substitute for a course.",
+    "formatTags": ["tutorial", "documentary", "shorts"],
+    "level": ["beginner", "intermediate"],
+    "profile": { "evidenceBased": 4, "practical": 4, "energy": 3, "selfPromotion": 3, "depth": 3 },
+    "signals": ["credentialed", "practitioner", "cites-research", "sponsor-heavy"],
+    "categories": [
+      {
+        "id": "first-aid",
+        "strength": "primary",
+        "why": "Bystander-level emergency education from someone qualified to give it, plus the rarer thing — emergency products tested against the claims they are sold on, which is what stops a kit being decoration.",
+        "evidence": "A thirty-three-minute explanation of six life-saving medications aimed explicitly at bystanders, a home paediatric choking kit, first aid and advanced care for croup, guidance for bystanders where fire is involved, and a fifteen-minute check of a viral haemostatic spray against the published science.",
+        "entryVideo": {
+          "title": "Could You Help? 6 Life-Saving Medications Explained for Bystanders",
+          "videoId": "o9vmBiUx8D4",
+          "whyThisOne": "It is aimed squarely at someone with no training who happens to be present, which is the situation this skill is actually about, and it explains rather than instructs.",
+          "durationMin": 33
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "**This is education, not training, and it cannot assess you.** First aid is acted on under pressure from memory, and certification exists because competence has to be checked by a person watching your hands — treat this as preparation for a course rather than a substitute. Much of the catalogue is tactical and gear-focused, heavily sponsored, and assumes a US armed-civilian context that does not transfer."
+  }
+]

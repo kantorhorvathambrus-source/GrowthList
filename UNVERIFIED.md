@@ -577,3 +577,57 @@ strategy), `@amyporterfield` (1,342 uploads but 40 of the recent 50 are
 under two minutes, and the long-form is a course funnel).
 `brand-strategy` and `conversion-optimization` remain empty with no
 candidate found — unfinished, not decided.
+
+## Batch 24 — the rule 18 audit of every standing structural finding
+
+The owner asked for rule 18 to be run against the structural findings
+still on the record, particularly any documented gap resting on "the
+supply does not exist" rather than "the supply exists and fails our bar."
+
+**Result: one of two absent-supply findings was falsified, by the same
+failure mode as the marketing note.**
+
+### `first-aid` — FALSIFIED and rewritten
+
+Thirteen probes had produced the gap, and **every one of them was an
+institution**: Red Cross, NHS, St John Ambulance, ProTrainings, First
+Aid For Free. The individual-clinician end was never searched. Searching
+it found **PrepMedic** immediately — a critical-care flight paramedic
+with 353 uploads and 44 long-form videos matching bystander first-aid
+terms, including a 33-minute explanation of life-saving medications
+aimed explicitly at bystanders and a check of a viral haemostatic spray
+against the published science. He is now listed.
+
+The narrower claim survives and is still evidenced: **the certifying
+bodies do not teach on video**, for the defensible reason that
+certification requires hands-on assessment. What was wrong was
+generalising from that to the whole field. `gapCause` moves from
+`absent-supply` to `mixed`, and the entry carries a `corrected` field
+saying so rather than being quietly edited.
+
+### `addiction-recovery` — SURVIVED
+
+Tested the same way, at the end that had not been probed: credentialed
+addiction clinicians rather than treatment providers or recovery
+testimony. `@AddictionMedicine` is the American Society of Addiction
+Medicine — 49 uploads, **archived since February 2021**, and the
+long-form is conference plenaries addressed to physicians rather than to
+anyone in recovery. `@DrKAddiction`, `@DrAdiJaffe`, `@gabormate`,
+`@recoveryelevator` and `@sobrietyengine` do not resolve;
+`@Dr_Gabor_Mate` resolves to a Czech channel with one upload. The gap
+holds, and now holds having been tested rather than assumed.
+
+### The two categories the owner flagged were already filled
+
+`affiliate-marketing` and `cold-email-outreach` were predicted to fail on
+the same reasoning that collapsed — but batch 23's disconfirmation
+attempt reached them first. Both are populated (Pat Flynn; 30 Minutes to
+President's Club) and neither was ever written up as a gap. Worth stating
+plainly: the prediction was right about the reasoning and wrong about the
+outcome, because the reasoning had already been corrected.
+
+**Score for rule 18 across two batches: two findings tested, both were
+scope errors of the same shape, both caught. One finding tested and
+survived.** The rule's value is not that it produces new creators — it is
+that a finding nobody tried to break is indistinguishable from a search
+that stopped early.
