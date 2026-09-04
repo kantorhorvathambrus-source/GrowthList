@@ -418,3 +418,36 @@ Mark Manson, Julie Smith, Teepa Snow and Cinema Therapy.
 **Not researched to a decision this batch**, and still open:
 `@TheHolisticPsychologist` and `@CrappyChildhoodFairy` — both large, both
 carrying contested-claims risk that needs reading rather than a guess.
+
+## Batch 18 — practical: what was left out and why
+
+Four of the thirteen practical categories are still empty, and the
+reasons differ:
+
+- **`first-aid`** — searched, nothing listable found yet. The
+  authoritative bodies are on YouTube but not usefully: `@sja` has 5
+  uploads, `@firstaidforfree` 20, and `@AmericanRedCross` does not
+  resolve at all. `@ProTrainings` has 5. The British Red Cross channel
+  (`@britishredcross`, 502 uploads) exists and has not yet been read.
+  This is the highest-stakes category in the domain — the failure mode
+  is someone doing the wrong thing in the first two minutes of an
+  emergency — so it stays empty until something well-credentialed turns
+  up. **Worth the owner's attention: this looks like a rule 12
+  candidate, but rule 12 is confirmed for six categories and I am not
+  extending it unilaterally again.**
+- **`travel-planning`**, **`camping-and-outdoor-skills`**,
+  **`personal-style-and-grooming`** — candidates probed and resolved
+  (`@NoraDunn`, `@TheOutdoorGearReview`, `@Gentlemansgazette`,
+  `@audreycoyne`, `@realmenrealstyle`, `@beardbrand`) but not yet read
+  closely enough to write up. Unfinished research, not a decided gap.
+
+**Handle traps this batch:** `@ChrisFixIt` resolves to a 0-upload channel
+called "Chris_Fix_it"; the real one is `@ChrisFix`. `@WolterWorld`, 0
+uploads. `@TheFoodTheory`, 3. Probed and dropped rather than guessed at.
+
+**Commercial interest disclosed rather than used as an exclusion**
+(rule 13): Park Tool is a tool manufacturer teaching you to use its own
+tools, and This Old House is a commercial television brand. Both carry
+the conflict on the card. Applying the test — would this be included if
+a non-profit ran it? — the answer for both is plainly yes, because the
+instruction is sound and the conflict is visible in the video itself.

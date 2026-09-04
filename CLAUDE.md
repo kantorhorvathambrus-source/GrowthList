@@ -396,26 +396,30 @@ in `categories.json`-derived output with a computed creator `count`.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research). **Batches 01–17 are
+- **Current phase**: Phase 2 (creator research). **Batches 01–18 are
   written, gated, validated and committed.**
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
-- **Creator count: 154 of 400.** Taxonomy 197, three slots held.
-- **138 of 197 categories populated.** Money 10/12, business 3/13,
-  marketing 1/13, relationships 11/12.
-- **Untouched domains (2)**: practical, philosophy.
+- **Creator count: 167 of 400.** Taxonomy 197, three slots held.
+- **147 of 197 categories populated.** Money 10/12, business 3/13,
+  marketing 1/13, relationships 11/12, practical 9/13.
+- **Untouched domains (1)**: philosophy.
+- **Practical still empty (4)**: `first-aid`, `travel-planning`,
+  `camping-and-outdoor-skills`, `personal-style-and-grooming`.
 - **Relationships has no critic anywhere** (rule 11 — flagged, not
   filled). `making-friends-as-an-adult` is the one empty category left in
   the domain.
 - **Jurisdiction metadata is live** (rule 16). AU is unserved in 11 of
   12 flagged categories, UK in 9, CA in 8, US in 7.
 - **Domain standing notes are live** (rule 17), split by cause: 4
-  field-caused notes on category pages, 10 selection-caused ones on the
+  field-caused notes on category pages, 11 selection-caused ones on the
   new `#/how-this-list-was-built` colophon. Marketing's is `editorial`
   at n=2; `sells-course` in business is unanswerable at n=2, logged open.
-  Batch 17 exercised the mechanism for real — relationships surfaced
-  three saturated signals on its first pass and mindset's stored counts
-  drifted, both caught by the validator rather than by noticing.
-- **Critics: 25 of 138 populated categories.**
+  Batches 17–18 exercised the mechanism for real: relationships surfaced
+  three saturated signals on its first pass, practical one, and mindset's
+  stored counts drifted — all caught by the validator, none by noticing.
+- **Critics: 29 of 147 populated categories.** Batch 18 added four —
+  Ann Reardon on cooking and baking, Project Farm on car maintenance and
+  home repair. Relationships still has none anywhere.
 - **Documented thin gaps: 1** (`addiction-recovery`).
 - **Affiliation fallback ledger: 11 rescues, 3 wrong, 0 written.**
 
