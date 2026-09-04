@@ -292,6 +292,29 @@ for (const c of creators) {
     }
     if (typeof m.evidence !== 'string' || !m.evidence.trim()) fail(mWhere, 'missing "evidence"');
 
+    // Retroactive mappings clear a HIGHER bar than first-pass ones. Re-mapping
+    // a creator already on file is cheaper than researching a new one, so
+    // there is a standing pull toward finding one more category in someone we
+    // already have — which is the halo effect wearing a new hat. A mapping
+    // added after the creator's own batch must say so, say what triggered it,
+    // and say why the evidence was not obvious first time round. If the honest
+    // answer to that last question is "I was looking for a way to fill this
+    // category", the mapping does not belong.
+    if (m.addedLater != null) {
+      const a = m.addedLater;
+      if (typeof a !== 'object' || Array.isArray(a)) {
+        fail(mWhere, 'addedLater must be an object { batch, trigger, whyNotAtFirstPass }');
+      } else {
+        if (!Number.isInteger(a.batch)) fail(mWhere, 'addedLater.batch must be the batch number that added it');
+        if (String(a.trigger ?? '').trim().length < 30) {
+          fail(mWhere, 'addedLater.trigger must say what specifically prompted revisiting this creator (30+ chars)');
+        }
+        if (String(a.whyNotAtFirstPass ?? '').trim().length < 30) {
+          fail(mWhere, 'addedLater.whyNotAtFirstPass must say why the evidence was not obvious at first pass (30+ chars)');
+        }
+      }
+    }
+
     // entryVideo — required and must be verified
     const v = m.entryVideo;
     if (!v || typeof v !== 'object') {

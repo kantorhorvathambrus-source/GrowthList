@@ -122,6 +122,30 @@ this file has the rules, schema, and current state.
     conflict, the owner challenged it, and re-examination showed the
     real disqualifier was that its long-form output is patient
     testimonials and admissions marketing. Right outcome, wrong reason.
+15. **A retroactive mapping clears a higher bar than a first-pass one.**
+    Re-mapping a creator already on file is cheaper than researching a
+    new one, so there is a standing pull toward finding one more
+    category in someone we already have. That is the halo effect wearing
+    a new hat, and the incentive runs exactly against rule 4.
+    A mapping added after its creator's own batch must carry
+    `addedLater: { batch, trigger, whyNotAtFirstPass }` — validated, not
+    optional. `trigger` says what specifically prompted revisiting the
+    creator. `whyNotAtFirstPass` says why the evidence was not obvious
+    the first time.
+    **If the honest answer to `whyNotAtFirstPass` is "I was looking for
+    a way to fill this category", the mapping does not belong.** A
+    legitimate one reads like "the record was written during a
+    communication pass and this is a management category" — out of
+    scope then, not newly invented now.
+    `coverage-report.mjs` tracks retroactive against first-pass
+    mappings and prints every trigger, so the owner can tell at batch 40
+    whether the ratio improved because the data was under-mapped or
+    because the bar drifted. **Current state: 6 of 188 mappings are
+    retroactive (3.2%), and all six were triggered by an empty
+    category** — which is the pattern this rule exists to watch. Two of
+    them (Cal Newport and Carl Pullein on inbox-and-email-systems) say
+    so in their own records rather than dressing the trigger up.
+
 14. **A documented gap must say whose fault it is.** Every entry in
     `data/thin-gaps.json` carries `gapCause` (`absent-supply` |
     `our-criteria` | `mixed`) and `countUnderLooserStandard`, so a

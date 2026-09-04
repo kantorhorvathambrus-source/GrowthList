@@ -818,6 +818,11 @@
           "videoId": "7jgFsMcf_Kk",
           "whyThisOne": "Shows what is actually being sold behind free social-skills advice, using one specific coach rather than a general warning.",
           "durationMin": 65
+        },
+        "addedLater": {
+          "batch": 2,
+          "trigger": "conversation-skills had no critic, and munecat's catalogue was checked to see whether anything in it qualified.",
+          "whyNotAtFirstPass": "Her batch-01 record was written around body-language and critical-thinking, the two categories her most prominent videos target. The 65-minute investigation of a pick-up artist's sales funnel is squarely about the social-skills advice industry, and I simply did not connect it to conversation-skills while writing the record."
         }
       }
     ],

@@ -358,6 +358,11 @@
           "videoId": "rBrzjxpVmPg",
           "whyThisOne": "The situation new managers handle worst, addressed procedurally rather than left to instinct.",
           "durationMin": 32
+        },
+        "addedLater": {
+          "batch": 13,
+          "trigger": "people-management was empty, and Manager Tools was the obvious place to look — a two-thousand-episode management archive already on file.",
+          "whyNotAtFirstPass": "Its batch-02 record was written during a COMMUNICATION pass, so the mapping stopped at giving-feedback and difficult-conversations. The management material was always the bulk of that archive; it was outside the domain being researched, not newly discovered."
         }
       },
       {
@@ -370,6 +375,11 @@
           "videoId": "ZV-2dpjnZfM",
           "whyThisOne": "Part one of the sequence, which starts with what to delegate rather than how — the step people skip.",
           "durationMin": 24
+        },
+        "addedLater": {
+          "batch": 13,
+          "trigger": "delegation was empty, and a two-part episode on it was already in the evidence gathered for batch 02.",
+          "whyNotAtFirstPass": "Out of scope during a communication pass, for the same reason. The episode was in the upload scan at the time."
         }
       },
       {
@@ -382,6 +392,11 @@
           "videoId": "z5w4acrEfBs",
           "whyThisOne": "Relocates the work to before the room, which is the single biggest change most people can make to their meetings.",
           "durationMin": 27
+        },
+        "addedLater": {
+          "batch": 13,
+          "trigger": "meeting-facilitation was empty and the prewiring episodes are marked by Manager Tools as their own hall-of-fame guidance.",
+          "whyNotAtFirstPass": "Out of scope in batch 02 for the same reason. This is the WEAKEST of the three on evidence — prewiring is about the conversations before a meeting rather than facilitating one — which is why it is mapped secondary and flagged here."
         }
       }
     ],

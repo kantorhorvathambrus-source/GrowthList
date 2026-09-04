@@ -56,6 +56,38 @@ for (const [id, list] of undocumented.sort()) {
   console.log(`  ${pad(id, 26)} ${list.length} creator${list.length === 1 ? '' : 's'}`);
 }
 
+// ------------------------------------------- retroactive vs first-pass
+// The owner's requirement: track these separately so that at batch 40 it is
+// possible to tell whether the mappings-per-creator ratio improved because the
+// data was genuinely under-mapped, or because the bar drifted.
+const retro = [];
+let firstPass = 0;
+for (const c of creators) {
+  for (const m of c.categories ?? []) {
+    if (m.addedLater) retro.push({ creator: c.id, category: m.id, ...m.addedLater });
+    else firstPass++;
+  }
+}
+const totalMaps = retro.length + firstPass;
+console.log('\n\nMAPPING PROVENANCE');
+console.log('='.repeat(72));
+console.log(`  first-pass ... ${String(firstPass).padStart(4)}  (written with the creator's own batch)`);
+console.log(`  retroactive .. ${String(retro.length).padStart(4)}  (added to an existing record later)`);
+console.log(`  retroactive share: ${(100 * retro.length / totalMaps).toFixed(1)}%`);
+console.log(`  ratio ${(totalMaps / creators.length).toFixed(2)}/creator, of which ${(firstPass / creators.length).toFixed(2)} is first-pass`);
+if (retro.length) {
+  console.log('\n  Every retroactive mapping, with what triggered it:');
+  const byBatch = new Map();
+  for (const r of retro) {
+    if (!byBatch.has(r.batch)) byBatch.set(r.batch, []);
+    byBatch.get(r.batch).push(r);
+  }
+  for (const [b, rows] of [...byBatch].sort((a, x) => a[0] - x[0])) {
+    console.log(`\n  added in batch ${String(b).padStart(2, '0')}:`);
+    for (const r of rows) console.log(`    ${pad(r.creator + ' -> ' + r.category, 46)} ${r.trigger}`);
+  }
+}
+
 // -------------------------------------------------- thin categories
 // The owner's standing request: keep this list growing in the open rather
 // than discovering it at batch 40.
