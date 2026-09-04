@@ -501,15 +501,15 @@ in `categories.json`-derived output with a computed creator `count`.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research). **Batches 01–22 are
+- **Current phase**: Phase 2 (creator research). **Batches 01–23 are
   written, gated, validated and committed.**
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
-- **Creator count: 191 of 400.** Taxonomy 197, three slots held.
-- **169 of 197 categories populated; 28 empty.**
+- **Creator count: 194 of 400.** Taxonomy 197, three slots held.
+- **174 of 197 categories populated; 23 empty.**
   Full: fitness, communication, creativity, learning, philosophy,
   **tech, programming**. Practical 12/13 — its only hole, `first-aid`,
   is a documented gap by design rather than unfinished work.
-  Thinnest: **marketing 5/13, business 7/13**, productivity 7/9.
+  Thinnest: **business 7/13**, productivity 7/9, marketing 10/13.
 - **Untouched domains: none.**
 - **Practical still empty (4)**: `first-aid`, `travel-planning`,
   `camping-and-outdoor-skills`, `personal-style-and-grooming`.
@@ -522,6 +522,12 @@ this section first to know exactly where to resume.)*
   field-caused notes on category pages, 15 selection-caused ones on the
   new `#/how-this-list-was-built` colophon. Marketing's is `editorial`
   at n=2; `sells-course` in business is unanswerable at n=2, logged open.
+  **The marketing note has been RETIRED** — written editorially at n=2,
+  confirmed at n=6, falsified at n=9 (6 of 9, 67%) when rule 18's
+  disconfirmation attempt found three practitioners working in video.
+  Its full arc is kept in `domain-notes.json` under `retired` rather
+  than deleted, because a note that was written, confirmed and then
+  falsified is a more useful record than one that vanished.
   Batches 17–20 exercised the mechanism for real: every new domain
   surfaced saturated signals on its first pass and several stored counts
   drifted — all caught by the validator, none by noticing.
@@ -532,7 +538,7 @@ this section first to know exactly where to resume.)*
   n=2 is confirmed by measurement** and its `basis` flipped from
   `editorial` to `measured`, with the provenance kept so the record shows
   it was a prediction first.
-- **Critics: 29 of 169 populated categories.** Batch 18 added four —
+- **Critics: 29 of 174 populated categories.** Batch 18 added four —
   Ann Reardon on cooking and baking, Project Farm on car maintenance and
   home repair. **Relationships and philosophy have none anywhere** — both
   flagged under rule 11, neither filled.

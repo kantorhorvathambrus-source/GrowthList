@@ -291,6 +291,19 @@ if (editorial.length) {
 // Questions that could not be measured when they were asked. Kept here
 // rather than answered from judgement, and kept after they are answered so
 // the answer is visible as an answer to something that was once open.
+// A note that stopped being true. Kept rather than deleted: a standing note
+// that was written, confirmed and then falsified is a more useful record than
+// one that quietly disappeared, and it is the only way to tell a measurement
+// that moved from a claim that was always wrong.
+for (const r of domainNotes.retired ?? []) {
+  console.log(`\n  RETIRED — ${r.domain}/${r.signal}  (now ${r.finalMeasurement.n}/${r.finalMeasurement.of}, ${r.finalMeasurement.pct}%)`);
+  for (const [label, text] of [['history', r.history], ['why', r.why], ['what still stands', r.standing]]) {
+    if (!text) continue;
+    console.log(`    ${label}:`);
+    for (const line of String(text).match(/.{1,84}(\s|$)/g) ?? []) console.log(`      ${line.trim()}`);
+  }
+}
+
 for (const q of domainNotes.open ?? []) {
   console.log(`\n  ${q.status === 'answered' ? 'ANSWERED' : 'OPEN QUESTION'} — ${q.domain}/${q.signal}`);
   console.log(`    ${q.question}`);

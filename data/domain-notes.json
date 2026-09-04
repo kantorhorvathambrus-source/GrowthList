@@ -6,21 +6,8 @@
     "minCreators": 4
   },
   "dataAsOf": "2026-09",
-  "measuredAtCreators": 191,
+  "measuredAtCreators": 194,
   "entries": [
-    {
-      "domain": "marketing",
-      "signal": "commercial-conflict",
-      "cause": "field",
-      "basis": "measured",
-      "measured": {
-        "n": 5,
-        "of": 6
-      },
-      "placement": "category-page",
-      "provenance": "Written editorially at n=2 from the marketing domain pass, flagged for re-measurement, and MEASURED at n=6 in batch 20: 5 of 6, 83%. The prediction held. Recorded this way rather than quietly upgraded, because a claim that turns out right is only evidence of good judgement if the record shows it was a claim first.",
-      "note": "Almost every marketing creator listed here has a commercial interest in the field they are explaining. That is the shape of the supply rather than a run of bad apples: the independent practitioners in this field publish in newsletters and blogs, and most of the video that exists is hosted by companies selling the tools. The badge still separates what it should — who discloses the conflict, who is selling the specific thing they are advising you to do, and who is only hosting an outside practitioner's thinking on their own platform."
-    },
     {
       "domain": "fitness",
       "signal": "sells-course",
@@ -219,8 +206,8 @@
       "cause": "selection",
       "basis": "measured",
       "measured": {
-        "n": 6,
-        "of": 6
+        "n": 9,
+        "of": 9
       },
       "placement": "build-page"
     }
@@ -247,6 +234,22 @@
       "answeredAtCreators": 5,
       "caveat": "n=5 is one creator above the measurement floor and 60% is one creator below the threshold, so this can flip. It is an answer, not a settled fact — re-check as business fills out.",
       "history": "Asked by the owner at 143 creators, when business had 2 and the question was unanswerable: 1 of 2 is 50% and means nothing. Left open rather than guessed at, and answered when the data existed."
+    }
+  ],
+  "retired": [
+    {
+      "domain": "marketing",
+      "signal": "commercial-conflict",
+      "retiredAtCreators": 194,
+      "finalMeasurement": {
+        "n": 6,
+        "of": 9,
+        "pct": 67
+      },
+      "note": "Almost every marketing creator listed here has a commercial interest in the field they are explaining. That is the shape of the supply rather than a run of bad apples: the independent practitioners in this field publish in newsletters and blogs, and most of the video that exists is hosted by companies selling the tools. The badge still separates what it should — who discloses the conflict, who is selling the specific thing they are advising you to do, and who is only hosting an outside practitioner's thinking on their own platform.",
+      "history": "Written EDITORIALLY at n=2 from the marketing domain pass, flagged for re-measurement. CONFIRMED at n=6 in batch 20: 5 of 6, 83%. FALSIFIED at n=9 in batch 23: 6 of 9, 67%, below the 70% threshold. Retired.",
+      "why": "The retirement is not a measurement wobble, it is the finding being tested. Rule 18 required a deliberate attempt to disprove the underlying claim that marketing's independent practitioners publish in text rather than video. That attempt found three of them working substantially in video — Alex Cattoni, Pat Flynn, 30 Minutes to President's Club — and none carries commercial-conflict. Looking for counterexamples produced counterexamples, which is what it is supposed to do.",
+      "standing": "The weak form of the marketing finding survives and is still on the record in UNVERIFIED.md: several named practitioners genuinely are not in video (Harry Dry 4 uploads, Seth Godin 7, copyhackers and backlinko unresolvable) and the SEO end of the domain remains vendor-hosted. The strong form — that the practitioners as a class are absent from video — is false."
     }
   ]
 }

@@ -1,0 +1,131 @@
+[
+  {
+    "id": "alexcattoni",
+    "name": "Alex Cattoni",
+    "handle": "@alexcattoni",
+    "channelUrl": "https://www.youtube.com/@alexcattoni",
+    "country": "CA",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A working copywriter teaching the craft in video at length — the counterexample to the assumption that this discipline only publishes in text.",
+    "longDescription": "Cattoni runs a copywriting business and the channel is a genuine instructional catalogue rather than a promotional one: twenty-five long-form videos in the two hundred most recent uploads, a median around eleven minutes, and a beginner's introduction that actually defines the work before selling anything. The strongest pieces are the tested ones — five landing-page hooks run against each other with the results reported, an argument about which email conventions have stopped working and why. She also covers the commercial side of being a copywriter, which most craft teaching omits: rates, service positioning, and what the arrival of generated text has actually done to the market. The register is high-energy and hook-driven, which is itself a demonstration of the techniques being taught and will not suit everyone. Her channel description opens with a course pitch, which is a fair signal of how the business works.",
+    "notFor": "Anyone wanting literary or long-form writing craft — this is conversion writing, and the goal is always a sale or a signup. The delivery is deliberately high-energy.",
+    "formatTags": ["tutorial", "video-essay", "shorts"],
+    "level": ["beginner", "intermediate"],
+    "profile": { "evidenceBased": 2, "practical": 4, "energy": 4, "selfPromotion": 4, "depth": 3 },
+    "signals": ["practitioner", "sells-course"],
+    "categories": [
+      {
+        "id": "copywriting",
+        "strength": "primary",
+        "why": "Words that sell, taught as a craft with a beginner's on-ramp and specific tested claims rather than as a set of formulas to copy.",
+        "evidence": "A seventeen-minute introduction defining the work and how to start, a test of five landing-page hooks with results reported, and pieces on where to source material and how the market has shifted with generated text.",
+        "entryVideo": {
+          "title": "Copywriting 101 For Beginners (what is it + how to get started)",
+          "videoId": "NKazXs1PfGs",
+          "whyThisOne": "It defines the work before selling anything, which is the right order and is rarer in this field than it should be.",
+          "durationMin": 17
+        }
+      },
+      {
+        "id": "email-marketing",
+        "strength": "secondary",
+        "why": "A recurring email strand focused on what gets opened and read, argued from her own testing rather than from received conventions.",
+        "evidence": "An eighteen-minute piece on which email conventions have stopped working and what she does instead, alongside sequence and offer material across the catalogue.",
+        "entryVideo": {
+          "title": "These Email Rules Are DEAD in 2026 (I Broke All of Them)",
+          "videoId": "0JCMZ1IqazQ",
+          "whyThisOne": "It names specific conventions and says what replaced them, which is more useful than another list of subject-line tips.",
+          "durationMin": 18
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Sells courses hard and the videos route to them consistently. Claims are from her own testing rather than published research, and the hook-driven presentation is a technique being demonstrated as well as taught — read the confidence accordingly."
+  },
+  {
+    "id": "patflynn",
+    "name": "Pat Flynn",
+    "handle": "@patflynn",
+    "channelUrl": "https://www.youtube.com/@patflynn",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Affiliate marketing taught by the person most associated with doing it disclosed — full workshops rather than tactics.",
+    "longDescription": "Flynn built his reputation on publishing his own income reports and on refusing to recommend products he had not used, which is why he belongs in a category whose defining constraint is disclosure and trust rather than conversion rate. The substantial material is four live workshops running seventy to eighty-five minutes, which cover the mechanics end to end rather than as a list of tips. Be clear about the shape of the rest: twenty-nine of the fifty most recent uploads are under two minutes, and the current catalogue has drifted heavily toward live-streaming setup, short-form video challenges and creator-business content. The affiliate workshops are the reason for this listing, and they sit some way back in the catalogue rather than at the front.",
+    "notFor": "Anyone looking for current tactics — the affiliate material is workshop-shaped and older than the recent uploads. Also not for someone uninterested in the audience-building that his approach depends on.",
+    "formatTags": ["long-form", "lecture", "shorts"],
+    "level": ["beginner", "intermediate"],
+    "profile": { "evidenceBased": 2, "practical": 4, "energy": 3, "selfPromotion": 3, "depth": 3 },
+    "signals": ["practitioner", "sells-course", "commercial-conflict"],
+    "categories": [
+      {
+        "id": "affiliate-marketing",
+        "strength": "primary",
+        "why": "Disclosure and trust as the operating constraint rather than an afterthought, from someone who published his own numbers for years and declines products he has not used.",
+        "evidence": "Four live workshops of seventy to eighty-five minutes covering affiliate mechanics end to end, plus shorter material on product selection and on where creators go wrong selling to an audience.",
+        "entryVideo": {
+          "title": "Affiliate Marketing Workshop with Pat Flynn (LIVE)",
+          "videoId": "WojN98qLmJQ",
+          "whyThisOne": "The longest and most complete of the workshops — treat it as a session to work through rather than a video, and skip the shorter tactic clips entirely.",
+          "durationMin": 85
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "He earns from affiliate relationships and from courses about affiliate marketing, which is a conflict in exactly the subject being taught — disclosed, and worth holding. Most of the recent catalogue is unrelated short-form creator content."
+  },
+  {
+    "id": "30mpc",
+    "name": "30 Minutes to President's Club",
+    "handle": "@30MPC",
+    "channelUrl": "https://www.youtube.com/@30MPC",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Working B2B sellers walking through calls and sequences line by line, including the exact words for the objections everyone gets.",
+    "longDescription": "Fifteen of the fifty most recent uploads run over twenty minutes and several pass forty, and the format is specific in a way sales content usually is not: a live screen share of an actual prospecting process, six discovery styles compared with an argument about which one works, a forty-five-minute treatment of running a discovery call without the performance most people associate with selling. The objection videos give the literal reply — one is built entirely around what to say when a prospect claims they will do it in-house. There is a strong outbound and cold-email strand with sequences and templates published rather than described. All of it assumes B2B with a considered purchase and a named buyer; none of it transfers to consumer selling. The hosts run a paid training business and the videos route to it.",
+    "notFor": "Anyone selling to consumers, or selling something bought on impulse. Everything here assumes a business buyer, a longer cycle, and a pipeline to manage.",
+    "formatTags": ["long-form", "interview", "shorts"],
+    "level": ["intermediate", "advanced"],
+    "profile": { "evidenceBased": 2, "practical": 4, "energy": 3, "selfPromotion": 3, "depth": 3 },
+    "signals": ["practitioner", "sells-course"],
+    "categories": [
+      {
+        "id": "sales-fundamentals",
+        "strength": "primary",
+        "why": "Qualifying honestly and helping a buyer decide is treated as the mechanic of the call, with the actual words supplied rather than the principle.",
+        "evidence": "A forty-five-minute treatment of running a discovery call without feeling salesy, a comparison of six discovery styles, objection handling with literal replies, and a masterclass on account expansion.",
+        "entryVideo": {
+          "title": "How to Run The Perfect Discovery Call (Without Feeling Salesy)",
+          "videoId": "FAm9HLkhVsI",
+          "whyThisOne": "Discovery is where an honest sale is either set up or lost, and this covers it as a structure rather than as a personality trait.",
+          "durationMin": 45
+        }
+      },
+      {
+        "id": "cold-email-outreach",
+        "strength": "primary",
+        "why": "Sequences and templates are published in full with reply rates attached, which is the level of specificity this skill needs and rarely gets.",
+        "evidence": "A cold email template shared with its stated reply rate, a twenty-nine-minute treatment of a full outbound sequence including scripts and messaging, and a live screen share of a working prospecting process.",
+        "entryVideo": {
+          "title": "The Perfect Outbound Sequence: Scripts, Templates, Messaging",
+          "videoId": "xe0MqfuKAZk",
+          "whyThisOne": "The whole sequence rather than one message, which is the unit that actually determines whether outreach works.",
+          "durationMin": 29
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "A paid sales-training business sits behind the podcast and the videos route to it. Reply rates and results are self-reported by the practitioners quoting them. Strictly B2B."
+  }
+]

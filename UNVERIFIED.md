@@ -534,3 +534,46 @@ as small lies:
   API says "…How You Show Up in Search". This is exactly the failure
   mode rule 3 exists for, and it happened again on batch 20 — titles get
   **copied from the API, never completed from context**.
+
+## Batch 23 — the marketing finding, tested and partly falsified
+
+Rule 18 says a structural finding must survive a deliberate attempt to
+disprove it. Batch 23 was that attempt for the marketing text-not-video
+claim, and **the strong form of it did not survive.**
+
+Three independent practitioners publishing substantially in video:
+
+- **Alex Cattoni** — 848 uploads, 25 long-form in the recent 200, a
+  median around 11 minutes, and a genuine beginner's introduction to
+  copywriting. She is a working copywriter, not a vendor or an agency.
+- **Pat Flynn** — four affiliate workshops of 70 to 85 minutes.
+- **30 Minutes to President's Club** — working B2B sellers publishing
+  full sequences with reply rates, 15 of 50 recent uploads over 20
+  minutes.
+
+None of the three carries `commercial-conflict`, and adding them moved
+the measurement from **5 of 6 (83%) to 6 of 9 (67%)** — below the
+saturation threshold. **The marketing standing note has been retired**,
+with its full arc kept in `data/domain-notes.json` rather than deleted:
+written editorially at n=2, confirmed at n=6, falsified at n=9.
+
+**What still stands** is the weak form, and it is still evidenced: Harry
+Dry has 4 uploads, Seth Godin has 7, and copyhackers, backlinko, CXL,
+HubSpot and Klaviyo do not resolve. The SEO end of this domain really is
+vendor-hosted. What is false is the generalisation from those cases to
+the discipline as a whole.
+
+**The lesson is about the order of operations, not about marketing.** The
+original finding was made after probing the SEO end, where the vendor
+pattern is real, and then extended to a domain that had never been probed
+at its copywriting and sales end. Three batches later the extension was
+tested and failed. Nothing was wrong with the observation; what was wrong
+was treating a finding about one part of a domain as a finding about the
+domain.
+
+**Rejected this batch:** `@markpollard` (49 uploads, archived since 2023,
+and its single long-form video is about a car part rather than brand
+strategy), `@amyporterfield` (1,342 uploads but 40 of the recent 50 are
+under two minutes, and the long-form is a course funnel).
+`brand-strategy` and `conversion-optimization` remain empty with no
+candidate found — unfinished, not decided.
