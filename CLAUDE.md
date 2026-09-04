@@ -269,12 +269,31 @@ this file has the rules, schema, and current state.
     *a claim that was always wrong* — and it is the second of those that
     a future reader needs to be warned about.
 
-    **Running score.** Three findings tested. `marketing/text-not-video`
-    FALSIFIED (batch 23), `first-aid/absent-supply` FALSIFIED (batch 24)
-    — both the same scope error. `addiction-recovery` SURVIVED (batch
-    24), and `conversion-optimization` was written *after* the
-    corrections with all four sub-areas probed first, which is the
-    order this rule is meant to produce.
+    **The ledger. `data/findings-ledger.json` holds every structural
+    claim this project has made and what happened when it was tested.**
+    `coverage-report.mjs` prints it **first**, before any coverage
+    number — the owner's requirement, and the reasoning is that a
+    directory which has never falsified one of its own findings has
+    either been lucky or has not looked. **The final Phase 2 report
+    leads with this ledger.**
+
+    **Running score: 8 claims tested, 4 falsified, 4 survived — and 4 of
+    4 falsifications were made without probing every sub-area.**
+    The worst was `badges-are-our-inclusion-rules`: the claim that
+    `practitioner` saturates because *we require it*. It was **never
+    probed at all** when made in batch 17, was repeated in every batch
+    report through 25, and was **shipped to visitors on the colophon as
+    a statement about our own rigour.** It is false — 29 of 196 creators
+    carry no `practitioner` badge, and the share runs 100% in marketing
+    and fitness to 14% in philosophy, where an inclusion rule would be
+    near-uniform. All fifteen affected entries were reclassified from
+    `selection` to `field` and moved to the category pages, and the
+    colophon now reports the real finding: badges track how a subject is
+    taught, not who we let in.
+    **The lesson that generalises: a claim about our own criteria feels
+    like introspection and is actually an empirical claim about the
+    dataset.** It is checkable in one query, which is exactly why it went
+    unchecked for nine batches.
 
 17. **A badge everyone in a domain carries is a fact about the field or
     a fact about us — and the two belong on different pages.**
@@ -550,7 +569,7 @@ in `categories.json`-derived output with a computed creator `count`.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research). **Batches 01–25 are
+- **Current phase**: Phase 2 (creator research). **Batches 01–26 are
   written, gated, validated and committed.**
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
 - **Creator count: 196 of 400.** Taxonomy 197, three slots held.
@@ -571,6 +590,8 @@ this section first to know exactly where to resume.)*
   field-caused notes on category pages, 15 selection-caused ones on the
   new `#/how-this-list-was-built` colophon. Marketing's is `editorial`
   at n=2; `sells-course` in business is unanswerable at n=2, logged open.
+  **Fifteen entries were reclassified in batch 26** after the claim
+  underlying them was falsified — see the ledger.
   **The marketing note has been RETIRED** — written editorially at n=2,
   confirmed at n=6, falsified at n=9 (6 of 9, 67%) when rule 18's
   disconfirmation attempt found three practitioners working in video.

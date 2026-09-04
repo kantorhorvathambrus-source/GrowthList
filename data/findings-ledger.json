@@ -1,0 +1,160 @@
+{
+  "_comment": "Every structural claim this project has made about a field, and what happened when it was tested under rule 18. The owner's requirement: the final Phase 2 report leads with this ledger, before any coverage number, because it says more about whether the dataset can be trusted than category counts do. A claim is only listed once it has been TESTED — an untested claim is not a finding and does not belong here.",
+  "_schema": "status: falsified | survived. Each entry names the sub-areas, which were probed, what was found, and where the correction lives.",
+  "claims": [
+    {
+      "id": "marketing-text-not-video",
+      "claim": "Marketing's independent practitioners publish in newsletters and blogs; the video supply is vendor-hosted.",
+      "madeAt": "batch 16",
+      "testedAt": "batch 23",
+      "status": "falsified",
+      "subAreas": [
+        "SEO",
+        "copywriting",
+        "sales",
+        "affiliate",
+        "paid ads",
+        "community"
+      ],
+      "probedWhenMade": [
+        "SEO"
+      ],
+      "found": "Alex Cattoni (848 uploads, a real copywriting curriculum), Pat Flynn (four 70-85 minute affiliate workshops) and 30 Minutes to President's Club all publish substantially in video. The standing note built on the claim was retired at 6/9, 67%.",
+      "survives": "The narrow form: Harry Dry has 4 uploads, Seth Godin 7, copyhackers and backlinko unresolvable, and the SEO end really is vendor-hosted.",
+      "correctionIn": "data/domain-notes.json retired[]"
+    },
+    {
+      "id": "first-aid-absent-supply",
+      "claim": "No usable first-aid teaching exists on video; the certifying bodies use YouTube for campaigns.",
+      "madeAt": "batch 18",
+      "testedAt": "batch 24",
+      "status": "falsified",
+      "subAreas": [
+        "certifying bodies",
+        "public-health institutions",
+        "individual credentialed clinicians",
+        "wilderness and tactical instructors"
+      ],
+      "probedWhenMade": [
+        "certifying bodies",
+        "public-health institutions"
+      ],
+      "found": "PrepMedic, a critical-care flight paramedic with 353 uploads and 44 long-form bystander-first-aid videos, found on the first probe of the clinician end.",
+      "survives": "The institutional claim: certification needs hands-on assessment, so the bodies that certify treat the course as the product and video as its marketing.",
+      "correctionIn": "data/thin-gaps.json first-aid.corrected"
+    },
+    {
+      "id": "brand-strategy-no-candidate",
+      "claim": "No listable brand-strategy channel exists.",
+      "madeAt": "batch 23",
+      "testedAt": "batch 25",
+      "status": "falsified",
+      "subAreas": [
+        "consultancies",
+        "individual strategists",
+        "training businesses that interview practitioners"
+      ],
+      "probedWhenMade": [
+        "consultancies",
+        "individual strategists"
+      ],
+      "found": "Brand Master Academy: 39-63 minute interviews with April Dunford, Bobby Moesta, Blair Enns, Laura Ries.",
+      "survives": "Nothing of the original claim.",
+      "correctionIn": "data/creators/batch-25.json"
+    },
+    {
+      "id": "badges-are-our-inclusion-rules",
+      "claim": "practitioner, credentialed and cites-research are near-universal in some domains because of OUR inclusion rules — 'we do not list someone who explains a skill they have never practised'.",
+      "madeAt": "batch 17",
+      "testedAt": "batch 26",
+      "status": "falsified",
+      "subAreas": [
+        "whether any listed creator lacks the badge",
+        "whether the share is uniform across domains"
+      ],
+      "probedWhenMade": [],
+      "found": "29 of 196 creators carry no practitioner badge, so it is not a requirement. Measured across domains it runs 100% (marketing, business, fitness, programming, productivity) to 14% (philosophy). An inclusion rule would be near-uniform. credentialed runs 70% (relationships) to 0% (marketing); cites-research 71% (philosophy) to 0% (programming). All three track the subject, not our preference.",
+      "survives": "A real but secondary editorial preference for qualifications in relationships, which is why that one entry is 'mixed' rather than 'field'.",
+      "correctionIn": "data/domain-notes.json corrected — 15 entries reclassified and moved to category pages; the colophon section rewritten",
+      "note": "The worst of the four: never probed at all when made, repeated in every batch report from 17 to 25, and shipped to visitors as a claim about our own rigour."
+    },
+    {
+      "id": "addiction-recovery-gap",
+      "claim": "Independent, credentialed, educational addiction content is genuinely scarce.",
+      "madeAt": "batch 11",
+      "testedAt": "batch 24",
+      "status": "survived",
+      "subAreas": [
+        "treatment providers",
+        "recovery testimony",
+        "credentialed clinicians and professional bodies"
+      ],
+      "probedWhenMade": [
+        "treatment providers",
+        "recovery testimony"
+      ],
+      "found": "The clinician end is ASAM: 49 uploads, archived since February 2021, conference plenaries addressed to physicians. Five other clinician handles do not resolve.",
+      "survives": "The whole claim.",
+      "correctionIn": "n/a"
+    },
+    {
+      "id": "conversion-optimization-gap",
+      "claim": "No conversion-optimization teaching catalogue exists on video.",
+      "madeAt": "batch 25",
+      "testedAt": "batch 25",
+      "status": "survived",
+      "subAreas": [
+        "consultancies",
+        "testing-tool vendors",
+        "independent practitioners",
+        "behavioural science"
+      ],
+      "probedWhenMade": [
+        "consultancies",
+        "testing-tool vendors",
+        "independent practitioners",
+        "behavioural science"
+      ],
+      "found": "All four probed before the claim was written — the first gap documented in the right order. Nudgestock recorded as a near-miss and not mapped: adjacent subject, not the same one.",
+      "survives": "The whole claim.",
+      "correctionIn": "n/a"
+    },
+    {
+      "id": "relationships-critic-gap",
+      "claim": "No credible critic of the relationship-advice field exists on video.",
+      "madeAt": "batch 17",
+      "testedAt": "batch 25",
+      "status": "survived",
+      "subAreas": [
+        "dating-coach critics",
+        "attachment-discourse critics",
+        "credentialed clinicians critiquing the content industry"
+      ],
+      "probedWhenMade": [
+        "dating-coach critics",
+        "attachment-discourse critics"
+      ],
+      "found": "Mickey Atkins is the near-miss — credentialed, with a substantive Dr. Amen debunk — but her critical work is a small part of a catalogue that is mostly reality-television commentary, so the slot would be thin. Rule 11 applies.",
+      "survives": "The claim, on rule 11 grounds rather than absence.",
+      "correctionIn": "n/a"
+    },
+    {
+      "id": "philosophy-critic-gap",
+      "claim": "No credible critic of commercialised philosophy exists on video.",
+      "madeAt": "batch 19",
+      "testedAt": "batch 25",
+      "status": "survived",
+      "subAreas": [
+        "pop-Stoicism critics",
+        "philosophy-YouTube critics",
+        "political and cultural essayists"
+      ],
+      "probedWhenMade": [
+        "pop-Stoicism critics"
+      ],
+      "found": "Philosophy Tube read rather than counted: 15 of 50 recent uploads over twenty minutes, but the subject is political and social essay, not criticism of philosophy content.",
+      "survives": "The claim.",
+      "correctionIn": "n/a"
+    }
+  ]
+}

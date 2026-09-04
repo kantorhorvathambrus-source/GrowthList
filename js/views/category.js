@@ -131,12 +131,15 @@ function subjectNoteMarkup(categoryId, subjectNotes) {
 // a list of nobody is a claim about nobody.
 function domainNoteMarkup(domain, domainNotes, hasCreators) {
   if (!hasCreators) return '';
+  const shared = domainNotes?.sharedNotes ?? {};
   const here = (domainNotes?.entries ?? [])
-    .filter((e) => e.domain === domain && e.placement === 'category-page' && e.note);
+    .filter((e) => e.domain === domain && e.placement === 'category-page')
+    .map((e) => ({ ...e, text: e.note ?? (e.usesSharedNote ? shared[e.usesSharedNote] : null) }))
+    .filter((e) => e.text);
   if (!here.length) return '';
   return `<aside class="standing-note" aria-labelledby="standing-note-heading">
     <h2 id="standing-note-heading" class="standing-note__head">Worth knowing about ${esc(domainLabel(domain))}</h2>
-    ${here.map((e) => `<p>${esc(e.note)}</p>`).join('')}
+    ${here.map((e) => `<p>${esc(e.text)}</p>`).join('')}
     <p class="standing-note__meta"><a href="#/how-this-list-was-built">How this list was built</a></p>
   </aside>`;
 }

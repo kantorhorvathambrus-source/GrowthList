@@ -510,9 +510,16 @@ if (existsSync(join(DATA, 'domain-notes.json'))) {
     if (e.cause !== 'selection' && e.placement !== 'category-page') {
       fail(where, 'a field-caused note tells the visitor about the domain — placement must be category-page');
     }
-    if (e.placement === 'category-page' && (!e.note || String(e.note).trim().length < 80)) {
-      fail(where, 'a category-page note needs its own text, and this one is missing or too short');
+    // A note may carry its own text or use the shared text for its signal.
+    // Sharing matters here: the same fact holds in twelve domains, and twelve
+    // near-identical paragraphs would reproduce the very problem rule 17
+    // exists to fix, one level up.
+    const shared = dn.sharedNotes?.[e.signal];
+    const text = e.note ?? (e.usesSharedNote ? shared : null);
+    if (e.placement === 'category-page' && (!text || String(text).trim().length < 80)) {
+      fail(where, 'a category-page note needs text — its own, or a sharedNotes entry for its signal');
     }
+    if (e.usesSharedNote && !shared) fail(where, `usesSharedNote "${e.usesSharedNote}" has no entry in sharedNotes`);
     if (e.placement === 'build-page' && e.note) {
       warn(where, 'note text on a build-page entry is never rendered — the build page states it once');
     }
@@ -532,8 +539,8 @@ if (existsSync(join(DATA, 'domain-notes.json'))) {
     }
   }
 
-  if (entries.some((e) => e.placement === 'build-page') && !dn.buildPage?.selectionFloor?.paras?.length) {
-    fail('domain-notes.json', 'entries are placed on the build page but buildPage.selectionFloor has no text');
+  if (!dn.buildPage?.whatTheBadgesTrack?.paras?.length) {
+    fail('domain-notes.json', 'buildPage.whatTheBadgesTrack has no text');
   }
 
   for (const r of saturatedRows(satRows)) {

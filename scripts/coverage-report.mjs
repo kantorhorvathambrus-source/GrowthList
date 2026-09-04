@@ -31,6 +31,41 @@ const documented = populated.filter(([id, l]) => !l.some((c) => c.role === 'crit
 const undocumented = populated.filter(([id, l]) => !l.some((c) => c.role === 'critic') && !gaps[id]);
 
 const pad = (s, n) => String(s).padEnd(n);
+
+// ---------------------------------------------------------- rule 18 ledger
+// Printed FIRST, on the owner's instruction: this says more about whether the
+// dataset can be trusted than any coverage number does. A directory that has
+// never falsified one of its own findings has either been lucky or has not
+// looked.
+if (existsSync(join(ROOT, 'data/findings-ledger.json'))) {
+  const ledger = read('data/findings-ledger.json');
+  const claims = ledger.claims ?? [];
+  const bad = claims.filter((c) => c.status === 'falsified');
+  console.log('RULE 18 LEDGER — structural claims, tested');
+  console.log('='.repeat(72));
+  console.log(`${claims.length} claims tested: ${bad.length} falsified, ${claims.length - bad.length} survived.`);
+  console.log('A claim is listed here only once it has been tested. An untested claim is');
+  console.log('not a finding.\n');
+  for (const c of claims) {
+    const missing = (c.subAreas ?? []).filter((a) => !(c.probedWhenMade ?? []).includes(a));
+    console.log(`  [${c.status.toUpperCase()}] ${c.id}   made ${c.madeAt}, tested ${c.testedAt}`);
+    console.log(`    claim: ${c.claim}`);
+    console.log(`    sub-areas ${c.probedWhenMade?.length ?? 0}/${c.subAreas?.length ?? 0} probed when the claim was made` +
+      (missing.length ? ` — unprobed: ${missing.join(', ')}` : ''));
+    for (const [label, text] of [['found', c.found], ['what survives', c.survives], ['note', c.note]]) {
+      if (!text) continue;
+      console.log(`    ${label}:`);
+      for (const line of String(text).match(/.{1,82}(\s|$)/g) ?? []) console.log(`      ${line.trim()}`);
+    }
+    console.log('');
+  }
+  // The pattern is the finding. Every falsification so far has the same shape.
+  const scoped = bad.filter((c) => (c.probedWhenMade ?? []).length < (c.subAreas ?? []).length);
+  console.log(`  ${scoped.length} of ${bad.length} falsified claims were made without probing every sub-area.`);
+  console.log('  That is not bad luck. It is the default failure of a search that stops');
+  console.log('  when it finds a pattern, and it is what rule 18 exists to interrupt.\n\n');
+}
+
 console.log('CRITIC COVERAGE');
 console.log('='.repeat(72));
 console.log(`${creators.length} creators | ${populated.length} of ${cats.length} categories populated`);

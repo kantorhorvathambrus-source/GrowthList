@@ -47,8 +47,12 @@ function rulesMarkup() {
 // The measured evidence for the section above it. Rendered as a table because
 // the claim is a set of counts, and prose would only obscure them.
 function floorTable(entries, dataAsOf) {
+  // The spread is the point, so show every measured entry rather than only
+  // the ones that happen to sit on this page. An earlier version filtered to
+  // build-page rows; after the badges were reclassified there were none, and
+  // the table silently emptied — which is exactly how a page starts lying.
   const rows = entries
-    .filter((e) => e.placement === 'build-page' && e.measured)
+    .filter((e) => e.measured)
     .sort((a, b) => b.measured.n / b.measured.of - a.measured.n / a.measured.of);
   if (!rows.length) return '';
   const names = [...new Set(rows.map((e) => e.signal))].map((s) => SIGNAL_LABELS[s] ?? s);
@@ -72,7 +76,7 @@ function floorTable(entries, dataAsOf) {
 }
 
 function floorMarkup(notes) {
-  const sec = notes?.buildPage?.selectionFloor;
+  const sec = notes?.buildPage?.whatTheBadgesTrack;
   if (!sec) return '';
   return `<div class="sec-head"><span class="num">03</span><h2 id="floor-heading">${esc(sec.title)}</h2></div>
     ${(sec.paras ?? []).map((p) => `<p>${esc(p)}</p>`).join('')}

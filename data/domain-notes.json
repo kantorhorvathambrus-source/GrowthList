@@ -6,7 +6,7 @@
     "minCreators": 4
   },
   "dataAsOf": "2026-09",
-  "measuredAtCreators": 195,
+  "measuredAtCreators": 196,
   "entries": [
     {
       "domain": "fitness",
@@ -60,167 +60,192 @@
     {
       "domain": "fitness",
       "signal": "practitioner",
-      "cause": "selection",
+      "cause": "field",
       "basis": "measured",
       "measured": {
         "n": 15,
         "of": 15
       },
-      "placement": "build-page"
+      "placement": "category-page",
+      "usesSharedNote": "practitioner"
     },
     {
       "domain": "programming",
       "signal": "practitioner",
-      "cause": "selection",
+      "cause": "field",
       "basis": "measured",
       "measured": {
         "n": 14,
         "of": 14
       },
-      "placement": "build-page"
+      "placement": "category-page",
+      "usesSharedNote": "practitioner"
     },
     {
       "domain": "productivity",
       "signal": "practitioner",
-      "cause": "selection",
+      "cause": "field",
       "basis": "measured",
       "measured": {
         "n": 7,
         "of": 7
       },
-      "placement": "build-page"
+      "placement": "category-page",
+      "usesSharedNote": "practitioner"
     },
     {
       "domain": "creativity",
       "signal": "practitioner",
-      "cause": "selection",
+      "cause": "field",
       "basis": "measured",
       "measured": {
         "n": 25,
         "of": 27
       },
-      "placement": "build-page"
+      "placement": "category-page",
+      "usesSharedNote": "practitioner"
     },
     {
       "domain": "tech",
       "signal": "practitioner",
-      "cause": "selection",
+      "cause": "field",
       "basis": "measured",
       "measured": {
         "n": 9,
         "of": 11
       },
-      "placement": "build-page"
+      "placement": "category-page",
+      "usesSharedNote": "practitioner"
     },
     {
       "domain": "career",
       "signal": "practitioner",
-      "cause": "selection",
+      "cause": "field",
       "basis": "measured",
       "measured": {
         "n": 6,
         "of": 7
       },
-      "placement": "build-page"
+      "placement": "category-page",
+      "usesSharedNote": "practitioner"
     },
     {
       "domain": "money",
       "signal": "practitioner",
-      "cause": "selection",
+      "cause": "field",
       "basis": "measured",
       "measured": {
         "n": 6,
         "of": 7
       },
-      "placement": "build-page"
+      "placement": "category-page",
+      "usesSharedNote": "practitioner"
     },
     {
       "domain": "mindset",
       "signal": "practitioner",
-      "cause": "selection",
+      "cause": "field",
       "basis": "measured",
       "measured": {
         "n": 11,
         "of": 13
       },
-      "placement": "build-page"
+      "placement": "category-page",
+      "usesSharedNote": "practitioner"
     },
     {
       "domain": "relationships",
       "signal": "practitioner",
-      "cause": "selection",
+      "cause": "field",
       "basis": "measured",
       "measured": {
         "n": 9,
         "of": 10
       },
-      "placement": "build-page"
+      "placement": "category-page",
+      "usesSharedNote": "practitioner"
     },
     {
       "domain": "relationships",
       "signal": "credentialed",
-      "cause": "selection",
+      "cause": "mixed",
       "basis": "measured",
       "measured": {
         "n": 7,
         "of": 10
       },
-      "placement": "build-page"
+      "placement": "category-page",
+      "usesSharedNote": "credentialed"
     },
     {
       "domain": "practical",
       "signal": "practitioner",
-      "cause": "selection",
+      "cause": "field",
       "basis": "measured",
       "measured": {
         "n": 18,
         "of": 19
       },
-      "placement": "build-page"
+      "placement": "category-page",
+      "usesSharedNote": "practitioner"
     },
     {
       "domain": "philosophy",
       "signal": "cites-research",
-      "cause": "selection",
+      "cause": "field",
       "basis": "measured",
       "measured": {
         "n": 5,
         "of": 7
       },
-      "placement": "build-page"
+      "placement": "category-page",
+      "usesSharedNote": "cites-research"
     },
     {
       "domain": "business",
       "signal": "practitioner",
-      "cause": "selection",
+      "cause": "field",
       "basis": "measured",
       "measured": {
         "n": 5,
         "of": 5
       },
-      "placement": "build-page"
+      "placement": "category-page",
+      "usesSharedNote": "practitioner"
     },
     {
       "domain": "marketing",
       "signal": "practitioner",
-      "cause": "selection",
+      "cause": "field",
       "basis": "measured",
       "measured": {
-        "n": 9,
-        "of": 9
+        "n": 10,
+        "of": 10
       },
-      "placement": "build-page"
+      "placement": "category-page",
+      "usesSharedNote": "practitioner"
+    },
+    {
+      "domain": "marketing",
+      "signal": "sells-course",
+      "cause": "field",
+      "basis": "measured",
+      "measured": {
+        "n": 7,
+        "of": 10
+      },
+      "placement": "category-page",
+      "note": "Most marketing creators listed here sell a course, a tool or an agency's services. In a field with no licence and no gatekeeping, teaching in public is how practitioners are found and paid, so a product attached to the advice is the norm rather than a warning. What the badge still separates is who is selling the specific thing they are advising you to do."
     }
   ],
   "buildPage": {
-    "selectionFloor": {
-      "title": "Why some badges are on almost every card",
+    "whatTheBadgesTrack": {
+      "title": "What the badges actually track",
       "paras": [
-        "The “practitioner” badge appears on nearly every creator in several domains — on every single one in fitness, programming and productivity, and on eighteen of nineteen in practical skills. That is not a discovery about those fields. It is our own inclusion rule showing up in the data: we do not list someone who explains a skill they have never practised, so by the time a creator reaches a category page they have already cleared that bar.",
-        "The “credentialed” badge does the same thing in relationships, where seven of ten carry it. Relationship advice on YouTube is not mostly given by licensed clinicians — we simply chose them, because the subject sits close enough to clinical territory that we would rather over-weight a qualification than under-weight one. That is a defensible editorial choice and it is still a choice, so it belongs here rather than being presented as a fact about the field.",
-        "In philosophy the same thing shows up as “cites research”, on five of seven. Philosophy on YouTube is not mostly textual — a great deal of it is motivational content with a Roman name attached — and we preferred the channels that work from sources. Again: our choice, stated here rather than presented as a description of the field.",
-        "Badges like these separate the creators on this site from the wider internet rather than from each other. That is worth knowing when you are deciding whether to trust the list at all, which is why it is written down here. It is not worth repeating on a page about learning a skill, which is why you will not find it there.",
-        "Where a badge is near-universal because of the field rather than because of us — paid courses in fitness, programming, productivity and relationships, commercial interest in marketing — the explanation stays on the category page, because that one does tell you something about the domain you are entering."
+        "Some badges are on almost every card in a subject and almost none in another. The “practitioner” badge — meaning the person does this work outside of teaching it — is on every creator we list in marketing, business, fitness, programming and productivity, and on one in seven in philosophy.",
+        "That spread is the interesting part. It is not a rule we apply: 29 of the creators here carry no practitioner badge at all, and several of the best of them never practise what they explain. What it reflects is that skills you perform are usually taught by people who perform them, while subjects you reason about are more often taught by explainers, essayists and academics. Neither is better. They fail differently, which is worth knowing before you pick who to learn from.",
+        "The other two behave the same way. A professional qualification is common in relationships and health, where the subject sits near clinical practice, and absent in marketing and business, where no licence exists to hold. Citing sources is the norm in philosophy and rare in programming — not because programmers are careless, but because the claims are checked by running the code instead.",
+        "We got this wrong at first and said so on these pages for several weeks: we described these badges as our own inclusion rules showing up in the data. They are not. The correction, and the measurement that forced it, is on the record in the project's own files."
       ]
     }
   },
@@ -251,5 +276,16 @@
       "why": "The retirement is not a measurement wobble, it is the finding being tested. Rule 18 required a deliberate attempt to disprove the underlying claim that marketing's independent practitioners publish in text rather than video. That attempt found three of them working substantially in video — Alex Cattoni, Pat Flynn, 30 Minutes to President's Club — and none carries commercial-conflict. Looking for counterexamples produced counterexamples, which is what it is supposed to do.",
       "standing": "The weak form of the marketing finding survives and is still on the record in UNVERIFIED.md: several named practitioners genuinely are not in video (Harry Dry 4 uploads, Seth Godin 7, copyhackers and backlinko unresolvable) and the SEO end of the domain remains vendor-hosted. The strong form — that the practitioners as a class are absent from video — is false."
     }
-  ]
+  ],
+  "sharedNotes": {
+    "practitioner": "Nearly every creator listed here does this work outside of teaching it, so the badge does not separate them from each other — read it as a description of the field rather than a distinction between these creators. Skills you perform tend to be taught by people who perform them; subjects you reason about are more often taught by explainers and academics. This is one of the former.",
+    "credentialed": "Most creators listed here hold a professional qualification. That is largely a fact about the field — this subject sits close enough to clinical practice that licensed people are the ones publishing — rather than something that sets these creators apart from each other. We did also weight qualifications more heavily here than elsewhere, which is our choice and is stated on the colophon.",
+    "cites-research": "Most creators listed here work from sources and say so, which in this subject is close to a definition of doing it properly rather than a mark of unusual rigour. The badge is the norm here; what still varies is how close to the primary texts they stay."
+  },
+  "corrected": {
+    "what": "Fifteen entries were labelled cause: selection on the claim that these badges are near-universal because of our own inclusion rules — specifically that we 'do not list someone who explains a skill they have never practised'. The colophon said so to visitors.",
+    "whyItWasWrong": "The claim was never tested and it is false. 29 of 196 creators — 15% — carry no practitioner badge at all, including Kane B, CrashCourse, Wireless Philosophy, Harvard Business Review and Heidi Priebe, so it plainly is not a requirement. Measured across domains, practitioner runs from 100% (marketing, business, fitness, programming, productivity) to 14% (philosophy). An inclusion rule would be near-uniform; a 100-to-14 spread is a fact about which subjects are taught by people who do them. credentialed and cites-research behave the same way — credentialed is 70% in relationships and 0% in marketing, cites-research is 71% in philosophy and 0% in programming. All three track the subject, not our preference.",
+    "correction": "All fifteen entries reclassified to cause: field (relationships/credentialed to mixed, because a real editorial preference sits on top of the field structure there) and moved from the colophon to the category pages, which is where the placement rule sends a field-caused note. The colophon section that asserted the inclusion rule has been rewritten to report the actual finding.",
+    "foundBy": "Rule 18, batch 26, during the sweep the owner asked for. The claim had been repeated in every batch report since batch 17 and never once checked."
+  }
 }
