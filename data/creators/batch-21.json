@@ -1,0 +1,259 @@
+[
+  {
+    "id": "homemadewanderlust",
+    "name": "Homemade Wanderlust (Dixie)",
+    "handle": "@HomemadeWanderlust",
+    "channelUrl": "https://www.youtube.com/@HomemadeWanderlust",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A triple-crown thru-hiker answering the beginner questions about being outdoors that people are too embarrassed to ask.",
+    "longDescription": "Dixie has walked the Appalachian, Pacific Crest and Continental Divide trails, plus the Camino and Kilimanjaro, and the channel is the accumulated practical knowledge of doing so. Fifty-four of the two hundred most recent uploads run over eight minutes and twenty pass twenty. The most useful thing here is a format she returns to: multi-hour question sessions covering over a hundred beginner questions explicitly framed as the ones people are too embarrassed to ask — how you go to the toilet, what you do when it rains for four days, what actually goes wrong. That is the layer of outdoor knowledge normally transmitted in person and almost never written down. There is a strand on judgement rather than gear too: what she would do differently across the three trails, and what the most important things you learn out there actually are.",
+    "notFor": "Anyone wanting technical mountaineering, winter travel or wilderness navigation to a professional standard — this is long-distance trail hiking. Also US-trail-shaped in its examples, permits and resupply logistics.",
+    "formatTags": [
+      "q-and-a",
+      "long-form",
+      "vlog"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 3,
+      "selfPromotion": 2,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sponsor-heavy"
+    ],
+    "categories": [
+      {
+        "id": "camping-and-outdoor-skills",
+        "strength": "primary",
+        "why": "Comfort and judgement outdoors taught by someone who has spent months at a time out there, including the unglamorous logistics nobody writes down.",
+        "evidence": "A 170-minute session answering over a hundred beginner backpacking questions, a follow-up of the same format, beginner gear lists including one for hiking with a toddler, and a piece on what you actually learn from long-distance walking.",
+        "entryVideo": {
+          "title": "ALL The Backpacking Questions You're TOO EMBARRASSED To Ask (Over 100 Questions)",
+          "videoId": "bNiOg2XBOZs",
+          "whyThisOne": "It answers the questions that stop people going in the first place, and it is a reference to return to rather than a video to watch once.",
+          "durationMin": 170
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Gear sponsorship is frequent and gear recommendation is a large share of the catalogue. Experience-derived rather than instructor-trained: this is not a substitute for wilderness first aid or navigation training, and nothing here covers conditions where a mistake is not recoverable."
+  },
+  {
+    "id": "hikingguy",
+    "name": "HikingGuy",
+    "handle": "@HikingGuy",
+    "channelUrl": "https://www.youtube.com/@HikingGuy",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Trail-tested navigation and safety equipment reviewed sceptically, wrapped around a ten-essentials framework.",
+    "longDescription": "The channel's stated remit is safer planning, trail guides and real-world gear testing, and the honest summary of what is actually published is that the third dominates. Of two hundred and fifty uploads scanned, the substantial ones are largely Garmin GPS units, satellite messengers and emergency beacons, tested over months rather than unboxed. That narrowness is worth something specific: navigation and emergency communication are the parts of outdoor safety where equipment genuinely matters, and he is willing to return a thousand-dollar device on camera and say why, then buy it again and say why. The two long ten-essentials videos are the framework the rest hangs on. Trail guides for specific American peaks make up the remainder.",
+    "notFor": "Anyone looking for skills rather than equipment — shelter, weather judgement and campcraft are barely covered. The trail guides are US-specific and the gear is expensive.",
+    "formatTags": [
+      "tutorial",
+      "documentary",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sponsor-heavy"
+    ],
+    "categories": [
+      {
+        "id": "camping-and-outdoor-skills",
+        "strength": "secondary",
+        "why": "The navigation and emergency-communication half of this skill, which is the part where the equipment choice is a real decision rather than a preference.",
+        "evidence": "Long-form ten-essentials treatments, months-long tests of satellite messengers and GPS units including a returned device explained on camera, and work on offline mapping and beacon alternatives.",
+        "entryVideo": {
+          "title": "Best Hiking Gear - The HikingGuy 10 Essentials",
+          "videoId": "4hXO9Uu8qrA",
+          "whyThisOne": "The ten essentials are the safety framework the rest of the channel assumes, and this is the version where he explains the reasoning rather than listing products.",
+          "durationMin": 27
+        }
+      }
+    ],
+    "role": "generalist",
+    "caveats": "Predominantly a gear-review channel with affiliate incentives on expensive equipment, despite the safety framing. Judgement about conditions — the part that keeps people alive — is largely absent, so do not treat this as outdoor-skills education on its own."
+  },
+  {
+    "id": "gentlemansgazette",
+    "name": "Gentleman's Gazette",
+    "handle": "@Gentlemansgazette",
+    "channelUrl": "https://www.youtube.com/@Gentlemansgazette",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Classic menswear explained through fit and construction rather than trend, by people who will show you what a tailor actually changes.",
+    "longDescription": "The channel's premise is that clothing decisions become easy once you understand fit and proportion, and it teaches those directly: a fifteen-minute piece in which an alterations tailor shows what can and cannot be changed on a pair of trousers is more useful than any amount of outfit inspiration. The wardrobe material is the other strong strand — two long videos arguing that a complete classic wardrobe is smaller than most people assume, and one built around a capsule concept that turns out to be sixty years old. The frame is firmly classic and firmly menswear, which is a limitation rather than a flaw as long as you know it going in: if you want contemporary or casual dressing, this is the wrong channel. They manufacture and sell their own accessories, and those appear in the videos.",
+    "notFor": "Anyone dressing casually or contemporarily, and anyone not dressing in menswear — the whole frame is classic tailoring. Also expensive by default; the assumed budget is high.",
+    "formatTags": [
+      "tutorial",
+      "long-form",
+      "documentary"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 3,
+      "selfPromotion": 4,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "commercial-conflict",
+      "sponsor-heavy"
+    ],
+    "categories": [
+      {
+        "id": "personal-style-and-grooming",
+        "strength": "primary",
+        "why": "Fit and proportion are treated as the deciding variables and taught concretely, which is what separates dressing deliberately from buying more clothes.",
+        "evidence": "An alterations tailor demonstrating what can and cannot be adjusted on trousers, two long treatments arguing a complete wardrobe is smaller than expected, and construction explainers on specific tailoring traditions.",
+        "entryVideo": {
+          "title": "Alterations Tailor Reveals The Secrets To Custom-Fit Pants (Without The Price Tag!)",
+          "videoId": "VMD4HAJDa0U",
+          "whyThisOne": "Fit is the variable that decides how clothes look, and this shows exactly what a tailor can change — which is the cheapest useful thing to learn here.",
+          "durationMin": 15
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "They manufacture and sell the accessories featured in their own videos, which is a direct conflict on any recommendation. The classic-menswear frame is presented as timeless correctness rather than as one tradition among several."
+  },
+  {
+    "id": "audreycoyne",
+    "name": "Audrey Coyne",
+    "handle": "@audreycoyne",
+    "channelUrl": "https://www.youtube.com/@audreycoyne",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "500k-1M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Wardrobe building through subtraction — what to stop buying, what survives seven years, and how colour actually works on you.",
+    "longDescription": "Forty-five of the fifty most recent uploads run between three and nineteen minutes, and the useful thread through them is restraint: things she stopped buying that improved her style, seven items still worn after seven years, a small capsule that produces many outfits. That framing is the opposite of the haul format and it is the reason this belongs in a skills directory at all. The colour material is the other substantial strand, including a twenty-three-minute piece comparing four different professional colour analyses on the same person, which is unusually willing to test whether the service works rather than assume it. Be clear-eyed about the rest: a significant share of the catalogue is shopping content organised by price point, and the channel is monetised through the products it features.",
+    "notFor": "Anyone who wants menswear, or who finds a curated aspirational aesthetic unhelpful. The assumed budget varies widely and some recommendations are expensive.",
+    "formatTags": [
+      "tutorial",
+      "vlog",
+      "shorts"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 3,
+      "selfPromotion": 3,
+      "depth": 2
+    },
+    "signals": [
+      "practitioner",
+      "sponsor-heavy",
+      "commercial-conflict"
+    ],
+    "categories": [
+      {
+        "id": "personal-style-and-grooming",
+        "strength": "primary",
+        "why": "A wardrobe that suits your life is built by removing decisions, and the strongest material here is explicitly about what to stop buying rather than what to add.",
+        "evidence": "Videos on what she stopped buying to improve her style, on seven items still worn after seven years, on small capsules producing many outfits, and a comparison of four professional colour analyses on the same person.",
+        "entryVideo": {
+          "title": "Things I Stopped Buying To Improve My Style",
+          "videoId": "nOSicwjAuB4",
+          "whyThisOne": "Subtraction is the cheapest move available and the one most style content will never recommend, because it sells nothing.",
+          "durationMin": 8
+        }
+      }
+    ],
+    "role": "generalist",
+    "caveats": "Substantially monetised through affiliate links on featured products, and a large share of the catalogue is shopping content — which sits awkwardly against the buy-less framing of the best videos. Judge the two strands separately."
+  },
+  {
+    "id": "nomadicmatt",
+    "name": "Nomadic Matt",
+    "handle": "@Nomadicmatt",
+    "channelUrl": "https://www.youtube.com/@Nomadicmatt",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Hour-long sessions on the mechanics of travel — airfare, insurance, rail, accommodation — rather than on destinations.",
+    "longDescription": "The channel title reads as a personal name and the identity is established by the channel's own description, which names Nomadic Matt and the website behind it. The format is unusual and useful: thirty-one of the fifty most recent uploads run over twenty minutes and the median is fifty-four, because these are workshop sessions rather than travel vlogs. The subjects are the ones that actually decide whether a trip works — how airfare pricing behaves and where the savings genuinely are, what travel insurance does and does not cover, how European rail booking works, whether home exchange is worth the friction. Almost none of it is destination content, which is the point: this is the planning layer, and it is the layer that most travel media skips in favour of scenery.",
+    "notFor": "Anyone looking for where to go. There is essentially no destination inspiration here, and some sessions are commercially framed around partner services.",
+    "formatTags": [
+      "long-form",
+      "lecture",
+      "q-and-a"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course",
+      "commercial-conflict"
+    ],
+    "categories": [
+      {
+        "id": "travel-planning",
+        "strength": "primary",
+        "why": "Routing, budgeting and booking treated as the actual subject at full length, rather than as an afterthought to a destination video.",
+        "evidence": "Fifty-minute-plus sessions on saving money on airfare, on what travel insurance actually covers, on travelling Europe by train, and on the mechanics of home exchange.",
+        "entryVideo": {
+          "title": "How to Save Money on Airfare (July 2026)",
+          "videoId": "4J5JkV0ONjQ",
+          "whyThisOne": "Flights are usually the largest single cost and the one most susceptible to method, so this is where planning effort pays back fastest.",
+          "durationMin": 56
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "A large travel-media business sits behind this — books, tours, a membership — and several sessions are built around partner services, including insurance and booking platforms he earns from. Airfare tactics date quickly; check the publication date."
+  }
+]

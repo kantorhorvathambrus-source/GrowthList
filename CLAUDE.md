@@ -139,8 +139,17 @@ this file has the rules, schema, and current state.
     caution at the price of most of the mindset domain. Those go under
     rule 13 like everything else. **Do not add a category to this file
     without asking** — narrowing the candidate pool is the owner's call.
-    Twice now the owner has had to trim or qualify my instinct here;
-    that is the pattern this paragraph exists to interrupt.
+    Twice now the owner has had to trim or qualify my instinct here — but
+    **do not read that as an instruction to stop proposing.** The owner's
+    ruling on this is explicit: *"Keep proposing when you think it
+    applies; I'd rather trim than miss."* The error in the other
+    direction — failing to flag a category that genuinely warrants rule
+    12 because a trim is anticipated — is **as costly and much harder to
+    see**, because a proposal that was never made leaves no trace in the
+    record while a trimmed one does. The asymmetry is the whole point:
+    over-proposing is visible and cheap to correct, under-proposing is
+    invisible and correctable by nobody. Propose it, say why, and let the
+    owner decide.
 
 13. **Commercial interest is disclosed, not silently excluded.** The
     project's normal handling is a signal — `sells-course`,
@@ -433,12 +442,14 @@ in `categories.json`-derived output with a computed creator `count`.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research). **Batches 01–20 are
+- **Current phase**: Phase 2 (creator research). **Batches 01–21 are
   written, gated, validated and committed.**
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
-- **Creator count: 181 of 400.** Taxonomy 197, three slots held.
-- **162 of 197 categories populated.** **Every domain has creators.**
+- **Creator count: 186 of 400.** Taxonomy 197, three slots held.
+- **165 of 197 categories populated.** **Every domain has creators.**
   Full: fitness, communication, creativity, learning, philosophy.
+  **Practical is 12/13** — the only hole is `first-aid`, which is a
+  documented gap by design rather than unfinished work.
   Thinnest: marketing 5/13, business 7/13, tech 8/11.
 - **Untouched domains: none.**
 - **Practical still empty (4)**: `first-aid`, `travel-planning`,
@@ -462,7 +473,7 @@ this section first to know exactly where to resume.)*
   n=2 is confirmed by measurement** and its `basis` flipped from
   `editorial` to `measured`, with the provenance kept so the record shows
   it was a prediction first.
-- **Critics: 29 of 162 populated categories.** Batch 18 added four —
+- **Critics: 29 of 165 populated categories.** Batch 18 added four —
   Ann Reardon on cooking and baking, Project Farm on car maintenance and
   home repair. **Relationships and philosophy have none anywhere** — both
   flagged under rule 11, neither filled.
