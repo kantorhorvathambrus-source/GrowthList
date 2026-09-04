@@ -792,6 +792,23 @@ people entirely. Write what the evidence supports, log the rest in
 `UNVERIFIED.md`, and say the number plainly. Rule 1 outranks the
 target.
 
+**A name that matches the CATEGORY is more suspicious, not less.**
+`identityMatch` catches person-name collisions, because a person's name
+is specific enough that a description or upload titles can confirm it.
+**Category words cannot do that work.** "Operations", "recovery",
+"growth", "focus", "process" are generic enough that any channel in any
+field carries them innocently, so a name match on a category term is
+evidence of nothing.
+The case: probing `@TheOperationsRoom` for `operations-and-process`
+returned a 1M-subscriber channel called *The Operations Room* — **a
+military-history animation channel** making battle maps of Pearl Harbor
+and Midway. The handle matched the category term exactly, which is
+precisely why it matched nothing useful.
+`genericNameCollision()` in `scripts/lib/youtube.mjs` prints a warning,
+surfaced by `check-handles.mjs --for <category-id>`. **Pass `--for`
+whenever a handle was guessed from a category name rather than a
+person's**, and read the uploads before believing any channel it flags.
+
 **A failed handle is not an exclusion.** When a well-known person's
 obvious handle does not resolve, or resolves to something that clearly
 is not them (wrong content type, wildly wrong upload count, a bio that

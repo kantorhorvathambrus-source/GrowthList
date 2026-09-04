@@ -632,3 +632,36 @@ export async function resolveCreator({ name, handles = [], affiliations = [], sa
     rescued: true,
   };
 }
+
+/**
+ * A channel whose NAME is made of the words you searched for is more
+ * suspicious, not less.
+ *
+ * The trap this exists for: probing `@TheOperationsRoom` for the
+ * `operations-and-process` category returned a 1M-subscriber channel called
+ * "The Operations Room" — a military-history animation channel making battle
+ * maps of Pearl Harbor and Midway. The handle matched the category term
+ * exactly, which is precisely why it matched nothing useful.
+ *
+ * Person-name collisions (the Chris Voss case) are caught by identityMatch,
+ * because a person's name is specific enough that a description or upload
+ * titles can confirm it. Category words cannot do that work: "operations",
+ * "recovery", "growth", "focus" are generic enough that any channel in any
+ * field can carry them innocently. So a name match on a category term is
+ * evidence of nothing and must be followed by reading the uploads.
+ *
+ * @param {string} channelTitle  the resolved channel's own title
+ * @param {string} categoryId    the kebab-case category being searched for
+ * @returns {string|null} a warning to print, or null
+ */
+export function genericNameCollision(channelTitle, categoryId) {
+  if (!channelTitle || !categoryId) return null;
+  const STOP = new Set(['and', 'the', 'of', 'for', 'a', 'to', 'with', 'in', 'basics', 'fundamentals', 'skills']);
+  const terms = categoryId.split('-').filter((t) => t.length > 3 && !STOP.has(t));
+  if (!terms.length) return null;
+  const title = channelTitle.toLowerCase();
+  const hit = terms.filter((t) => title.includes(t));
+  if (!hit.length) return null;
+  return `NAME MATCHES THE CATEGORY TERM (${hit.join(', ')}) — this is a reason for MORE ` +
+         `suspicion, not less. Category words are generic; read the uploads before believing it.`;
+}

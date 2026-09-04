@@ -13,10 +13,15 @@
  * 1 quota unit per handle.
  */
 
-import { getChannelByHandle, quotaUsed, redact } from './lib/youtube.mjs';
+import { getChannelByHandle, quotaUsed, redact, genericNameCollision } from './lib/youtube.mjs';
 import { readFileSync } from 'node:fs';
 
 let handles = process.argv.slice(2);
+// Optional: --for <category-id> turns on the generic-name-collision warning,
+// which is worth passing whenever a handle was guessed from a category name.
+let forCategory = null;
+const forAt = handles.indexOf('--for');
+if (forAt !== -1) { forCategory = handles[forAt + 1] ?? null; handles.splice(forAt, 2); }
 if (handles[0] === '--file') {
   handles = readFileSync(handles[1], 'utf8').split('\n').map((s) => s.trim()).filter((s) => s && !s.startsWith('#'));
 }
@@ -38,10 +43,12 @@ for (const handle of handles) {
     }
     found.push(c);
     const subs = c.hiddenSubscriberCount ? 'hidden' : c.sizeBucket;
+    const collision = genericNameCollision(c.title, forCategory);
     console.log(
       `OK       ${handle.padEnd(28)} ${String(c.title).slice(0, 30).padEnd(31)} ` +
       `${String(subs).padEnd(10)} ${c.country ?? '--'}  ${c.videoCount} vids`
     );
+    if (collision) console.log(`         ${collision}`);
   } catch (err) {
     console.log(`ERROR    ${handle}  ${redact(err.message).slice(0, 90)}`);
   }
