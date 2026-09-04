@@ -347,6 +347,42 @@
           "whyThisOne": "Diagnoses the avoidance before prescribing anything, which is the right order and rarely the one taken.",
           "durationMin": 68
         }
+      },
+      {
+        "id": "people-management",
+        "strength": "primary",
+        "why": "Treats the one-to-one as the core mechanism of managing rather than an optional check-in, and is specific about what belongs in one.",
+        "evidence": "A two-thousand-episode management archive with extended treatments of one-to-one meetings, including how to handle personal disclosure in them.",
+        "entryVideo": {
+          "title": "How to Handle Personal Topics in One-on-One Meetings",
+          "videoId": "rBrzjxpVmPg",
+          "whyThisOne": "The situation new managers handle worst, addressed procedurally rather than left to instinct.",
+          "durationMin": 32
+        }
+      },
+      {
+        "id": "delegation",
+        "strength": "primary",
+        "why": "Handles handing work over as a repeatable procedure with a named sequence, which is why it survives the manager who is bad at letting go.",
+        "evidence": "A two-part episode on delegating tasks to free up time, within an archive built on procedural management guidance.",
+        "entryVideo": {
+          "title": "How to Delegate Tasks & Free Up Your Time at Work - Part 1",
+          "videoId": "ZV-2dpjnZfM",
+          "whyThisOne": "Part one of the sequence, which starts with what to delegate rather than how — the step people skip.",
+          "durationMin": 24
+        }
+      },
+      {
+        "id": "meeting-facilitation",
+        "strength": "secondary",
+        "why": "Argues the decisive work happens before the meeting, in conversations you have individually — which is why so many well-run meetings still decide nothing.",
+        "evidence": "A two-part episode on prewiring a meeting, marked as their own hall-of-fame guidance, within a procedural management archive.",
+        "entryVideo": {
+          "title": "How To Prewire a Meeting - Part 1 (Hall of Fame Guidance)",
+          "videoId": "z5w4acrEfBs",
+          "whyThisOne": "Relocates the work to before the room, which is the single biggest change most people can make to their meetings.",
+          "durationMin": 27
+        }
       }
     ],
     "role": "specialist",

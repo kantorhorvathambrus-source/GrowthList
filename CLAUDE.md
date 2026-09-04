@@ -85,19 +85,26 @@ this file has the rules, schema, and current state.
     Document each accepted gap in `data/critic-gaps.json` with the
     reason; `validate.mjs --final` treats a documented gap as reported,
     not as a failure, and an undocumented one still fails.
-12. **Some categories are higher-stakes, and there an empty category
-    beats a mediocre one.** `data/high-stakes.json` names them.
-    **STATUS: PROVISIONAL.** The owner approved this standard for
-    `addiction-recovery` only; extending it to nine more categories was
-    my judgement, and they flagged that as a decision that was theirs —
-    several of those meaningfully narrow the candidate pool. Until they
-    confirm or trim the list, **only `addiction-recovery` is in force**
-    and the rest is a proposal. In a category that IS in force: prefer a
-    documented gap to an adjacent creator; expect the `credentialed`
-    signal or say plainly why the creator is trustworthy without it;
-    state in `notFor` and `caveats` that this is education rather than
-    assessment; and if a creator's framing discourages professional
-    help, name that rather than soften it.
+12. **Six categories are higher-stakes, and there an empty category
+    beats a mediocre one.** `data/high-stakes.json`, **owner-confirmed
+    and in force**: `addiction-recovery`, `injury-rehab`,
+    `back-pain-management`, `grief-and-loss`, `supplements-literacy`,
+    `therapy-literacy`. In these: prefer a documented gap to an adjacent
+    creator; expect `credentialed` or say plainly why the creator is
+    trustworthy without it; state in `notFor` and `caveats` that this is
+    education rather than assessment; and if a creator's framing
+    discourages professional help, name it rather than soften it.
+    `supplements-literacy` is the one **definitional** case — the
+    category exists to teach someone to judge supplement claims, so a
+    creator who sells supplements works against its purpose and is
+    disqualified rather than merely flagged.
+    I originally proposed ten categories; the owner cut four
+    (`fat-loss`, `anxiety-management`, `emotional-regulation`,
+    `hormonal-health`) because applying it there would have bought my
+    caution at the price of most of the mindset domain. Those go under
+    rule 13 like everything else. **Do not add a category to this file
+    without asking** — narrowing the candidate pool is the owner's call.
+
 13. **Commercial interest is disclosed, not silently excluded.** The
     project's normal handling is a signal — `sells-course`,
     `sponsor-heavy`, and now `commercial-conflict` for a creator who
@@ -313,21 +320,20 @@ in `categories.json`-derived output with a computed creator `count`.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research). **Batches 01–12 are
+- **Current phase**: Phase 2 (creator research). **Batches 01–13 are
   written, gated, validated and committed.**
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
-- **Creator count: 121 of 400.** Every entry video passed the gate.
+- **Creator count: 124 of 400.** Every entry video passed the gate.
 - **Taxonomy 195** after migration 001. Five freed slots HELD.
-- **99 of 195 categories populated.** Health 12/14 (still open:
-  `sports-nutrition`, `gut-health`). Career opened at 4/13.
-- **First documented thin gap written**: `addiction-recovery` ships at 2
-  under rule 12, with the reasoning in `data/thin-gaps.json`. That file
-  is the model for every gap that follows — say what was searched, what
-  was rejected and why.
-- **Untouched domains (7)**: money, business, marketing, tech,
+- **105 of 195 categories populated.** Career 10/13 (open:
+  `career-change`, `remote-work`, `workplace-politics`). Health 12/14
+  (open: `sports-nutrition`, `gut-health`).
+- **Rule 12 is CONFIRMED and in force for six categories** — see
+  `data/high-stakes.json`. Do not add to that file without asking.
+- **Untouched domains (6)**: money, business, marketing, tech,
   relationships, practical, philosophy.
-- **Critics: 18 of 99 populated categories** (Abbey Sharp added
-  fat-loss).
+- **Critics: 18 of 105 populated categories.**
+- **Documented thin gaps: 1** (`addiction-recovery`).
 - **Affiliation fallback ledger: 11 rescues, 3 wrong answers, 0 wrong
   answers written.**
 

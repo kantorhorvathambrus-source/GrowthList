@@ -1,0 +1,137 @@
+[
+  {
+    "id": "selfmademillennial",
+    "name": "Self Made Millennial (Madeline Mann)",
+    "handle": "@SelfMadeMillennial",
+    "channelUrl": "https://www.youtube.com/@SelfMadeMillennial",
+    "country": null,
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Job-search strategy from a recruiter's side of the table, with a named framework for answering behavioural questions.",
+    "longDescription": "Madeline Mann's channel is built around what actually happens inside a hiring process rather than what candidates imagine happens. She is the author of a book on job searching and has a named method — the Story Toolbox — for the behavioural questions that most people improvise badly. Twelve of fifty recent uploads run past twenty minutes, several near an hour, which is unusual in career content and lets her work a full interview round rather than a single question. The most useful material is unglamorous and specific: getting more interviews at a given salary band, what later rounds are actually testing, and how to recover an offer after a round that went badly. Thirty of fifty recent uploads are clips.",
+    "notFor": "Anyone outside a conventional white-collar hiring process. The advice assumes recruiters, structured rounds and a résumé screen.",
+    "formatTags": ["long-form", "tutorial", "shorts"],
+    "level": ["beginner", "intermediate"],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 4,
+      "energy": 3,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": ["practitioner", "sells-course"],
+    "categories": [
+      {
+        "id": "resume-writing",
+        "strength": "primary",
+        "why": "Treats the document as a screening problem with a specific reader, which is why generic résumé advice produces documents nobody calls back.",
+        "evidence": "A recruiter-side channel with a published book on job searching, including long-form material on getting more interviews at a target salary band.",
+        "entryVideo": {
+          "title": "How to Get More Job Interviews FAST for $150,000+ Jobs",
+          "videoId": "znGs5PUMUrI",
+          "whyThisOne": "Works backwards from the screen rather than forwards from your history, which is the reframe that changes what you put on the page.",
+          "durationMin": 11
+        }
+      },
+      {
+        "id": "job-interviewing",
+        "strength": "secondary",
+        "why": "Covers the later rounds and the recovery case, which almost nothing else does — most interview content stops at the first conversation.",
+        "evidence": "Hour-long treatments of later-round interviews and of salvaging an offer after a poor round, plus a named framework for behavioural answers.",
+        "entryVideo": {
+          "title": "How to Ace Later Round Interviews to Get the Offer",
+          "videoId": "yssL2G6aJeE",
+          "whyThisOne": "The stage where prepared candidates usually run out of preparation, given a full hour rather than a tip.",
+          "durationMin": 60
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Sells a course and a book, promoted throughout. Assumes a US-style corporate hiring process with recruiters and structured rounds."
+  },
+  {
+    "id": "writingwithandrew",
+    "name": "Writing with Andrew",
+    "handle": "@writingwithandrew",
+    "channelUrl": "https://www.youtube.com/@writingwithandrew",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Prose style taught from rhetoric and linguistics rather than from rules — why a sentence works, not which words to avoid.",
+    "longDescription": "The channel's stated basis is drawing on rhetorical theory, creative writing, linguistics and philosophy to produce techniques that make someone a better writer, and its analogy is deliberate: writing as a skill you practise like an instrument. The shape is right for that ambition — thirty-four of fifty recent uploads run three to nineteen minutes and ten run longer, with a sixteen-minute median and almost no short-form. The material goes underneath the usual advice: an argument that concision is about density rather than length, the mechanics of style as a set of choices, and practice sessions where he writes sentences on camera. It is not business-specific, which is the trade — the principles transfer to a work email but the examples are literary.",
+    "notFor": "Anyone wanting templates for a status update or a performance review. This teaches how sentences work, and you do the applying.",
+    "formatTags": ["video-essay", "tutorial", "long-form"],
+    "level": ["intermediate", "advanced"],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 3,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 4
+    },
+    "signals": ["practitioner"],
+    "categories": [
+      {
+        "id": "business-writing",
+        "strength": "primary",
+        "why": "Attacks the actual problem behind unclear documents — sentences that carry too little per word — rather than handing over a template to fill in.",
+        "evidence": "A rhetoric- and linguistics-grounded catalogue on style and concision, including a dedicated argument that concision means density rather than brevity, at a sixteen-minute median with no short-form.",
+        "entryVideo": {
+          "title": "Concise Means More Than Short",
+          "videoId": "RQL-2LHweKY",
+          "whyThisOne": "Corrects the single most common misreading of 'write more concisely', which is the instruction most people are given and most people misapply.",
+          "durationMin": 21
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Examples are literary rather than professional, so the transfer to workplace documents is yours to make. Nothing here on document structure, audience or approvals."
+  },
+  {
+    "id": "harvardbusinessreview",
+    "name": "Harvard Business Review",
+    "handle": "@HarvardBusinessReview",
+    "channelUrl": "https://www.youtube.com/@HarvardBusinessReview",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "The management publication's video arm — long conversations with researchers and executives, buried under a great many clips.",
+    "longDescription": "HBR states its premise plainly: that management matters, and that better-run organisations would be better for everyone in them. The channel reflects the publication — conversations with academics and executives about leading under pressure, the beliefs that limit a leader's effectiveness, what actually makes senior work sustainable. The format is heavily barbelled and the ratio is poor: a hundred and eighty-three of two hundred recent uploads run two minutes or less, with just nine past twenty minutes. Those nine are worth finding, and they are the reason this record exists. The institutional voice is a real characteristic rather than a complaint — the perspective is consistently that of large organisations and the people running them.",
+    "notFor": "Anyone managing a small team or working outside a corporate structure. The frame is large-organisation leadership throughout, and most uploads are clips.",
+    "formatTags": ["interview", "shorts", "long-form"],
+    "level": ["intermediate", "advanced"],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 2,
+      "energy": 1,
+      "selfPromotion": 2,
+      "depth": 3
+    },
+    "signals": ["credentialed", "cites-research"],
+    "categories": [
+      {
+        "id": "leadership",
+        "strength": "primary",
+        "why": "Handles the part of leadership that is about the leader's own judgement and assumptions, rather than techniques for directing other people.",
+        "evidence": "Long-form conversations with researchers and executives on leading through instability and on the beliefs that constrain leaders, from the video arm of a management publication.",
+        "entryVideo": {
+          "title": "Are Your Beliefs Holding You Back as a Leader?",
+          "videoId": "iwCq-Eu7D0Y",
+          "whyThisOne": "Turns the question inward, which is the harder and less-covered half of the subject.",
+          "durationMin": 29
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Overwhelmingly short-form — nine of two hundred recent uploads carry the substance. Institutional and large-organisation in perspective, and it promotes HBR subscriptions."
+  }
+]

@@ -216,6 +216,25 @@ business channel for designers, not a graphic-design channel" — and it
 is now the right creator for `freelancing` and `consulting`, exactly
 where that note predicted it belonged.
 
+### Batch 13 — career (10 of 13)
+
+| Handle | What the API returned | Why it was excluded |
+| --- | --- | --- |
+| `@advicewitherin` | AdviceWithErin, 977 uploads, 1M–5M | 191 of 200 uploads under two minutes, only 2 past twenty. Real career advice, but almost no substance to point at — the same thin-content standard as GitKraken and Big Interview. |
+| `@LennysPodcast` | 1,782 uploads, 500k–1M | Substantial long-form, but the episodes are named after guests and the subject is product management rather than any career category here. No mapping the evidence supports. |
+| `@TheRemoteJobCoach`, `@MattMochary` | 0 uploads each | Empty. `remote-work` stays unfilled rather than take these. |
+
+Three career categories remain: `career-change`, `remote-work`,
+`workplace-politics`. Unfinished, not decided.
+
+**Manager Tools was extended rather than duplicated.** It was already in
+batch 02 for `giving-feedback` and `difficult-conversations`; its
+two-thousand-episode archive genuinely covers one-to-ones, delegation
+and meeting prewiring, so three mappings were added to the existing
+record with their own evidence and entry videos. Adding a second
+management creator to cover ground this one already covers would have
+been padding.
+
 ## When the obvious handle fails: the fallback search path
 
 A person's obvious handle failing is **not** grounds to drop them. Before
