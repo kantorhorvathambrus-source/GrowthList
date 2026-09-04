@@ -17,10 +17,11 @@ const RULES = [
     and the entry-point video on each card is checked to belong to that
     channel rather than merely to mention it.`],
   ['Mapped only where the work supports it',
-   `A creator appears under a skill only when their own body of work covers
-    it — typically two to four skills, never more than six. Being excellent at
-    one thing is not evidence about the next thing, and the temptation to let
-    it count is the single easiest way for a list like this to go soft.`],
+   `A creator appears under a skill only when their own body of work covers it,
+    and never under more than six. In practice most appear under one: being
+    excellent at one thing is not evidence about the next thing, and the
+    temptation to let it count is the single easiest way for a list like this
+    to go soft.`],
   ['Ranges, not numbers',
    `Subscriber figures are shown as broad bands with the month they were taken,
     because an exact count is out of date the day it is published.`],
@@ -86,17 +87,29 @@ function floorMarkup(notes) {
 // Coverage, stated plainly. A directory that shows only its filled shelves is
 // telling you something untrue by omission.
 function coverageMarkup(categories, creators) {
+  // Computed, never written into the copy. An earlier version of the rules
+  // above claimed creators appear under "typically two to four" skills; the
+  // median was one, and had been for months. A sentence about our own data is
+  // an empirical claim, and the cheapest ones are the ones nobody re-runs.
   const filled = new Set(creators.flatMap((c) => (c.categories ?? []).map((m) => m.id)));
   const empty = categories.filter((c) => !filled.has(c.id)).length;
   const thin = categories.filter((c) => {
     const n = creators.filter((x) => (x.categories ?? []).some((m) => m.id === c.id)).length;
     return n > 0 && n < 5;
   }).length;
+  const maps = creators.reduce((a, c) => a + (c.categories?.length ?? 0), 0);
+  const counts = creators.map((c) => c.categories?.length ?? 0).sort((a, b) => a - b);
+  const median = counts[Math.floor(counts.length / 2)] ?? 0;
   return `<p>
     Right now the list holds ${creators.length} creators across
     ${categories.length} skills. ${empty} of those skills have nobody in them
     yet and ${thin} have fewer than five, which is the number we aim for. Those
     pages will say so rather than pad themselves out.
+  </p>
+  <p>
+    Those ${creators.length} creators account for ${maps} listings in total —
+    a median of ${median} skill${median === 1 ? '' : 's'} each. That number is
+    low on purpose. It is the scope rule above doing its job.
   </p>`;
 }
 

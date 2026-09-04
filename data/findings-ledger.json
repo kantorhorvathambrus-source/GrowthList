@@ -1,5 +1,5 @@
 {
-  "_comment": "Every structural claim this project has made about a field, and what happened when it was tested under rule 18. The owner's requirement: the final Phase 2 report leads with this ledger, before any coverage number, because it says more about whether the dataset can be trusted than category counts do. A claim is only listed once it has been TESTED — an untested claim is not a finding and does not belong here.",
+  "_comment": "Every structural claim this project has made about a field, and what happened when it was tested under rule 18. The owner's requirement: the final Phase 2 report leads with this ledger, before any coverage number, because it says more about whether the dataset can be trusted than category counts do. A claim is only listed once it has been TESTED — an untested claim is not a finding and does not belong here. INWARD-FACING CLAIMS are tracked here too, and are the most dangerous class: a claim about our own criteria reads as introspection but is an empirical claim about the data. Two of the falsifications are of this kind, and both were live on the site.",
   "_schema": "status: falsified | survived. Each entry names the sub-areas, which were probed, what was found, and where the correction lives.",
   "claims": [
     {
@@ -155,6 +155,22 @@
       "found": "Philosophy Tube read rather than counted: 15 of 50 recent uploads over twenty minutes, but the subject is political and social essay, not criticism of philosophy content.",
       "survives": "The claim.",
       "correctionIn": "n/a"
+    },
+    {
+      "id": "creators-cover-two-to-four-skills",
+      "claim": "A creator appears under a skill only when their work supports it — typically two to four skills, never more than six. (Stated on the colophon to visitors, and as the default in rule 4.)",
+      "madeAt": "phase 1 brief, shipped on the colophon in batch 22",
+      "testedAt": "batch 27",
+      "status": "falsified",
+      "subAreas": [
+        "the actual distribution of mappings per creator",
+        "whether the design intent was ever met"
+      ],
+      "probedWhenMade": [],
+      "found": "The median is 1 and the mean 1.47. 62% of creators have exactly ONE mapping; only 38% fall in the claimed two-to-four band. The ratio was measured at 1.58 back at 143 creators and has DRIFTED DOWN since — so the claim got steadily more wrong and was never re-run.",
+      "survives": "The 'never more than six' half, and the scope rule itself. 2-4 was always a design intent in rule 4, not a description of the dataset; the error was restating an intent to visitors as a fact.",
+      "correctionIn": "js/views/colophon.js — the rule now says most appear under one, and the coverage section computes the median rather than asserting it",
+      "note": "Second inward-facing claim to fail, and the same shape as the badge one: cheap to query, never queried."
     }
   ]
 }

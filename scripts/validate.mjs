@@ -409,6 +409,66 @@ if (creators.length > 0) {
   }
 }
 
+// ------------------------------------- rule 18: inward-facing claims
+// The class of claim this project got wrong twice: a statement about our own
+// criteria or rigour. It feels like introspection and is actually an
+// empirical claim about the data — and it is cheap to check, which is
+// precisely why nobody checks it. Both failures were shipped to visitors.
+//
+// So the site's self-descriptions are asserted here as tests. If the data
+// stops matching the copy, this fails rather than the copy quietly becoming
+// false.
+{
+  const selfClaims = [
+    ['every creator record is API-verified',
+     () => creators.every((c) => c.verified === true)],
+    ['every creator carries a size band and the month it was taken',
+     () => creators.every((c) => c.sizeBucket && c.dataAsOf)],
+    ['every mapping has an attributed entry video',
+     () => creators.every((c) => (c.categories ?? []).every((m) => m.entryVideo?.videoId))],
+    ['no creator exceeds four primary mappings',
+     () => creators.every((c) => (c.categories ?? []).filter((m) => m.strength === 'primary').length <= 4)],
+    ['no creator exceeds six mappings',
+     () => creators.every((c) => (c.categories ?? []).length <= 6)],
+  ];
+  for (const [claim, test] of selfClaims) {
+    let ok = false;
+    try { ok = test(); } catch { ok = false; }
+    if (!ok) fail('self-claim', `the site says "${claim}" and the data no longer supports it`);
+  }
+
+  // The uniform-versus-spread detector, kept because it is what caught the
+  // badge claim: a rule OF OURS produces near-uniformity across domains; a
+  // fact about the world produces variance. Any signal we are tempted to
+  // describe as "our inclusion rule" must be near-uniform, or it is not one.
+  const domainOf = new Map(categories.map((c) => [c.id, c.domain]));
+  const share = new Map();
+  for (const c of creators) {
+    for (const d of new Set((c.categories ?? []).map((m) => domainOf.get(m.id)).filter(Boolean))) {
+      if (!share.has(d)) share.set(d, new Map());
+      const rec = share.get(d);
+      rec.set('_n', (rec.get('_n') ?? 0) + 1);
+      for (const sig of new Set(c.signals ?? [])) rec.set(sig, (rec.get(sig) ?? 0) + 1);
+    }
+  }
+  if (existsSync(join(DATA, 'domain-notes.json'))) {
+    const dn = JSON.parse(readFileSync(join(DATA, 'domain-notes.json'), 'utf8'));
+    for (const e of dn.entries ?? []) {
+      if (e.cause !== 'selection') continue;
+      const pcts = [...share.entries()]
+        .filter(([, r]) => (r.get('_n') ?? 0) >= 4)
+        .map(([, r]) => (r.get(e.signal) ?? 0) / r.get('_n'));
+      if (pcts.length < 2) continue;
+      const spread = Math.max(...pcts) - Math.min(...pcts);
+      if (spread > 0.5) {
+        fail('self-claim', `${e.domain}/${e.signal} is marked cause "selection" — our own rule — but the signal ` +
+          `varies by ${Math.round(100 * spread)} points across domains. A rule of ours would be near-uniform; ` +
+          `this is a fact about the subject. See the badge correction in findings-ledger.json.`);
+      }
+    }
+  }
+}
+
 // -------------------------------------------------- rule 18 on gaps
 // The owner's ruling after two findings were falsified in two batches: an
 // untested gap is UNFINISHED, not documented. A gap nobody tried to disprove

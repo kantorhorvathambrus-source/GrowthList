@@ -290,10 +290,34 @@ this file has the rules, schema, and current state.
     `selection` to `field` and moved to the category pages, and the
     colophon now reports the real finding: badges track how a subject is
     taught, not who we let in.
-    **The lesson that generalises: a claim about our own criteria feels
-    like introspection and is actually an empirical claim about the
-    dataset.** It is checkable in one query, which is exactly why it went
-    unchecked for nine batches.
+    **INWARD-FACING CLAIMS ARE A NAMED CLASS, AND THE MOST DANGEROUS
+    ONE.** Rule 18 was written pointing outward — at domains, supply,
+    categories. The failures that hurt most pointed inward: claims about
+    our own criteria, rigour or process. They feel settled *because* they
+    are about us, so they get repeated rather than queried.
+    **Any statement of the form "we never X", "every creator has Y", "we
+    only include Z", "typically N" is an empirical claim about the data
+    and must be measured before it ships — and re-measured, because the
+    data moves under it.** The cheapness is what makes it invisible: a
+    claim answerable in one query is the one nobody thinks to run.
+    Two have failed so far, both live on the site: the badge-inclusion
+    claim (nine batches), and "typically two to four skills per creator"
+    when the median is one and had been for months.
+    **Enforced:** `validate.mjs` now asserts the site's self-descriptions
+    as tests — every record API-verified, every creator with a size band
+    and stamp, every mapping with an attributed entry video, the primary
+    and total mapping caps. If the data stops matching the copy, the
+    build fails rather than the copy quietly becoming false. The colophon
+    computes its numbers instead of stating them.
+
+    **The uniform-versus-spread detector**, kept because it is what
+    caught the badge claim and it is cheap to apply to any future
+    saturation claim: **a rule of ours produces near-uniformity across
+    domains; a fact about the world produces variance.** `practitioner`
+    ran 100% to 14% — a 86-point spread — which is not what a
+    requirement looks like. `validate.mjs` fails any entry marked
+    `cause: "selection"` whose signal varies by more than 50 points
+    across domains.
 
 17. **A badge everyone in a domain carries is a fact about the field or
     a fact about us — and the two belong on different pages.**
@@ -569,7 +593,7 @@ in `categories.json`-derived output with a computed creator `count`.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research). **Batches 01–26 are
+- **Current phase**: Phase 2 (creator research). **Batches 01–27 are
   written, gated, validated and committed.**
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
 - **Creator count: 196 of 400.** Taxonomy 197, three slots held.

@@ -698,3 +698,65 @@ conversion-optimization, and the two critic gaps.
 A test that falsifies everything is not a test. A test that falsifies
 three of seven, all in one direction, is a measurement of a specific
 habit.
+
+## Batch 27 — the inward sweep
+
+The owner's point, and it is sharper than the correction that prompted
+it: rule 18 had been pointed **outward** — at domains, supply,
+categories. The two failures that reached visitors pointed **inward**, at
+claims about our own process. Those feel settled precisely because they
+are about us.
+
+Every self-description in `CLAUDE.md`, the colophon and the footer was
+run as a query.
+
+### FALSIFIED — "typically two to four skills per creator"
+
+Stated on the colophon and as the default in rule 4. The actual
+distribution:
+
+| mappings | creators | share |
+|---|---|---|
+| 1 | 121 | 62% |
+| 2 | 61 | 31% |
+| 3 | 12 | 6% |
+| 4 | 1 | 1% |
+| 5 | 1 | 1% |
+
+**Median 1, mean 1.47. Only 38% fall inside the claimed band.** The ratio
+was 1.58 at 143 creators and has drifted *down* since — the claim got
+steadily more wrong and was never re-run. Rule 4's "2–4" was always a
+design intent; the error was restating an intent to visitors as a
+description. The colophon now says most creators appear under one skill,
+and **computes the median rather than asserting it**.
+
+### SURVIVED — everything else, and it is worth listing what was checked
+
+- Every creator record `verified: true` — **196 of 196.**
+- Every creator carries a size band and the month it was taken — **196 of
+  196.**
+- Every mapping has an attributed entry video — **288 of 288.**
+- No creator over four `primary` mappings, or over six total — **0
+  violations.**
+- "No affiliate links anywhere on this site" — no affiliate or tracking
+  parameter appears in any shipped file. The only outbound hosts
+  referenced anywhere in the code are `youtube-nocookie.com` and
+  `youtube.com`.
+- "We set no cookies and run no analytics" — true, and no third-party
+  beacon of any kind. **But incomplete:** the site does use
+  `localStorage` and `sessionStorage` for plan progress and for
+  dismissing the survey prompt. Not a cookie and never sent anywhere,
+  but a visitor reading "no cookies" would not expect it. **The footer
+  now says so.**
+
+### The five checks are now tests, not prose
+
+`validate.mjs` asserts each self-description against the data. If the
+data stops matching the copy, the build fails rather than the copy
+quietly becoming false. The uniform-versus-spread detector is also
+enforced: any entry marked `cause: "selection"` whose signal varies more
+than 50 points across domains fails, because a rule of ours produces
+near-uniformity and a fact about the world produces variance.
+
+**Ledger: 9 claims tested, 5 falsified. Two of the five were
+inward-facing, and both were live on the site.**
