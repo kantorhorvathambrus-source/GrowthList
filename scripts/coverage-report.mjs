@@ -283,9 +283,17 @@ if (editorial.length) {
   console.log('\n  Standing notes not backed by a measurement:');
   for (const e of editorial) console.log(`    ${pad(e.domain + '/' + e.signal, 34)} ${e.basis}; re-check when ${e.reviewWhen}`);
 }
+// Questions that could not be measured when they were asked. Kept here
+// rather than answered from judgement, and kept after they are answered so
+// the answer is visible as an answer to something that was once open.
 for (const q of domainNotes.open ?? []) {
-  console.log(`\n  OPEN QUESTION — ${q.domain}/${q.signal}: ${q.status}`);
-  console.log(`    ${q.blockedBy}`);
+  console.log(`\n  ${q.status === 'answered' ? 'ANSWERED' : 'OPEN QUESTION'} — ${q.domain}/${q.signal}`);
+  console.log(`    ${q.question}`);
+  for (const [label, text] of [['answer', q.answer], ['caveat', q.caveat], ['blocked by', q.blockedBy], ['history', q.history]]) {
+    if (!text) continue;
+    console.log(`    ${label}:`);
+    for (const line of String(text).match(/.{1,84}(\s|$)/g) ?? []) console.log(`      ${line.trim()}`);
+  }
 }
 
 // ---------------------------------------------------------------- rescues

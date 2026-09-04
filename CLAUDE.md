@@ -433,13 +433,13 @@ in `categories.json`-derived output with a computed creator `count`.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research). **Batches 01–19 are
+- **Current phase**: Phase 2 (creator research). **Batches 01–20 are
   written, gated, validated and committed.**
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
-- **Creator count: 174 of 400.** Taxonomy 197, three slots held.
-- **154 of 197 categories populated.** **Every domain now has creators.**
+- **Creator count: 181 of 400.** Taxonomy 197, three slots held.
+- **162 of 197 categories populated.** **Every domain has creators.**
   Full: fitness, communication, creativity, learning, philosophy.
-  Thinnest: marketing 1/13, business 3/13, productivity 7/9.
+  Thinnest: marketing 5/13, business 7/13, tech 8/11.
 - **Untouched domains: none.**
 - **Practical still empty (4)**: `first-aid`, `travel-planning`,
   `camping-and-outdoor-skills`, `personal-style-and-grooming`.
@@ -449,17 +449,28 @@ this section first to know exactly where to resume.)*
 - **Jurisdiction metadata is live** (rule 16). AU is unserved in 11 of
   12 flagged categories, UK in 9, CA in 8, US in 7.
 - **Domain standing notes are live** (rule 17), split by cause: 4
-  field-caused notes on category pages, 13 selection-caused ones on the
+  field-caused notes on category pages, 15 selection-caused ones on the
   new `#/how-this-list-was-built` colophon. Marketing's is `editorial`
   at n=2; `sells-course` in business is unanswerable at n=2, logged open.
-  Batches 17–18 exercised the mechanism for real: relationships surfaced
-  three saturated signals on its first pass, practical one, and mindset's
-  stored counts drifted — all caught by the validator, none by noticing.
-- **Critics: 29 of 154 populated categories.** Batch 18 added four —
+  Batches 17–20 exercised the mechanism for real: every new domain
+  surfaced saturated signals on its first pass and several stored counts
+  drifted — all caught by the validator, none by noticing.
+  **Both questions the owner asked are now answered from data.** Business
+  `sells-course` is 3 of 5, **60% — it does not saturate**, so no note
+  (caveat: one creator either way flips it). Marketing
+  `commercial-conflict` is 5 of 6, **83% — the editorial note written at
+  n=2 is confirmed by measurement** and its `basis` flipped from
+  `editorial` to `measured`, with the provenance kept so the record shows
+  it was a prediction first.
+- **Critics: 29 of 162 populated categories.** Batch 18 added four —
   Ann Reardon on cooking and baking, Project Farm on car maintenance and
   home repair. **Relationships and philosophy have none anywhere** — both
   flagged under rule 11, neither filled.
 - **Documented thin gaps: 2** (`addiction-recovery`, `first-aid`).
+- **`copywriting` is empty for a reason**, not yet formally documented:
+  Harry Dry has 4 uploads, Seth Godin 7, and copyhackers/backlinko/CXL
+  do not resolve. The discipline's practitioners chose not to work in
+  video. See UNVERIFIED.md batch 20.
 - **Rule 12 now covers seven categories**; `first-aid` was added on the
   owner's acute-recall rationale and is expected to ship empty.
 - **Affiliation fallback ledger: 11 rescues, 3 wrong, 0 written.**

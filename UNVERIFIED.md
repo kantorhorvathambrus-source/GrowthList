@@ -492,3 +492,45 @@ somebody taking apart commercialised Stoicism, which the `stoicism`
 blurb explicitly warns about — has not turned up. Weltgeist's "Self-help
 is dead. Read this instead." is the nearest thing and it is one video,
 not a body of work. Left empty under rule 11.
+
+## Batch 20 — business and marketing: the text-not-video finding, measured
+
+The batch-16 marketing finding was that independent practitioners in
+this field publish in newsletters and blogs, and the video supply is
+vendor-hosted. Batch 20 probed it directly and it held, with numbers:
+
+- **Harry Dry (Marketing Examples)** — arguably the best-known
+  independent copywriting practitioner working today. `@marketingexamples`
+  resolves. **Four uploads.** His work is a newsletter.
+- **Seth Godin** — `@sethgodin`, **seven uploads**.
+- `@copyhackers`, `@backlinko`, `@CXLInstitute`, `@HubSpot`,
+  `@KlaviyoHQ`, `@JebBlount` — **none resolve at all.**
+
+What does resolve at scale in marketing is, without exception, a vendor
+or an agency: Semrush, Ahrefs, Moz, Exposure Ninja, Neil Patel. The
+measured result is now on the record: **`commercial-conflict` in
+marketing is 5 of 6, 83%** — the editorially-written standing note has
+been confirmed by measurement rather than left as a prediction.
+
+**`copywriting` is therefore still empty and this is why.** It is not
+that the category was skipped. It is that the discipline's best
+practitioners have made a deliberate choice not to work in video, and
+the alternative is listing an agency selling copywriting services under
+a category about learning to write. Not yet logged in `thin-gaps.json`
+because the search is not finished — the vendor end has not been read to
+a decision.
+
+**Handle traps:** `@productschool` → "Werner Müller", 1 upload. `@SVPG`
+→ "Thomas Traveler", 0 uploads. `@SMBSuccess` → a Korean-language
+channel. `@Paramedic` → a Russian travel channel. `@AdamErhart`, 0
+uploads. Five more in one batch.
+
+**Two gate catches worth recording**, both of which would have shipped
+as small lies:
+- MicroConf's growth-ceiling talk has **embedding disabled**, so the
+  play button would have done nothing. Replaced with a different entry
+  video from the same channel.
+- I completed a truncated Exposure Ninja title as "…How You Rank". The
+  API says "…How You Show Up in Search". This is exactly the failure
+  mode rule 3 exists for, and it happened again on batch 20 — titles get
+  **copied from the API, never completed from context**.

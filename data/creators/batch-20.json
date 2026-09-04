@@ -1,0 +1,407 @@
+[
+  {
+    "id": "acquiringminds",
+    "name": "Acquiring Minds",
+    "handle": "@acquiringminds",
+    "channelUrl": "https://www.youtube.com/@acquiringminds",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Ninety-minute interviews with people who actually bought a small business, including the ones it went badly for.",
+    "longDescription": "Every one of the fifty most recent uploads runs over twenty minutes and the median is eighty-four, because the format is a single long interview with someone who has recently completed an acquisition. What makes it unusually honest for a genre built on success stories is the failure coverage, which is not an occasional gesture: an SBA loan that brought down two businesses, a customer-concentration problem that killed an exit, a buyer three years and eighty thousand dollars in giving an update that is explicitly not a victory lap. Deal structure gets real attention — SBA versus seller financing versus a liquidity access line — as does the arithmetic underneath, which is why this is also the closest thing on the channel to a small-business finance education. Deal sizes range from a few hundred thousand to forty million.",
+    "notFor": "Anyone outside the US on the financing specifics: SBA lending is an American programme and it shapes most of what is discussed. Also not a course — the learning is inductive, across many episodes.",
+    "formatTags": [
+      "interview",
+      "long-form",
+      "documentary"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 4
+    },
+    "signals": [
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "buying-a-business",
+        "strength": "primary",
+        "why": "Sourcing, valuation and diligence covered through people who just did it, at a length that lets the awkward parts of a deal actually come out.",
+        "evidence": "Long-form interviews on buying a $20m business as a first-timer, on acquiring earnings without an SBA loan, on search-fund outcomes, and on deals that failed — including an SBA loan that took down two businesses.",
+        "entryVideo": {
+          "title": "How to Buy a $20m Business as a First-Timer | Alan Turkus Interview",
+          "videoId": "t1gV8fzGKm0",
+          "whyThisOne": "One complete deal narrated end to end by the person who did it, which is the shape of the whole channel at its most useful.",
+          "durationMin": 84
+        }
+      },
+      {
+        "id": "small-business-finance",
+        "strength": "secondary",
+        "why": "Cash flow, debt service and customer concentration are the recurring subjects because they are what decides whether these deals survive, so the numbers get discussed rather than summarised.",
+        "evidence": "Episodes turning on financing structure and its consequences — a liquidity access line as an SBA alternative, a 60% customer concentration that killed an exit, and a two-month revenue freeze in year one.",
+        "entryVideo": {
+          "title": "How 1 SBA Loan Brought Down 2 Businesses | Edgar Galindo Interview",
+          "videoId": "m1OEvY7gEuQ",
+          "whyThisOne": "The clearest lesson on the channel about what debt service does to a small business when revenue moves, told by someone it happened to.",
+          "durationMin": 89
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Selection bias is structural: guests are mostly people willing to talk publicly about their deal, which skews toward those who survived. US-specific on financing throughout. There is a paid community attached."
+  },
+  {
+    "id": "microconf",
+    "name": "MicroConf",
+    "handle": "@MicroConf",
+    "channelUrl": "https://www.youtube.com/@MicroConf",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Conference talks and founder interviews about software businesses built from revenue rather than investment.",
+    "longDescription": "Twenty-one of the thirty-three uploads run over twenty minutes and the median is twenty-seven, so the catalogue is small but almost entirely substantial. The subject is B2B software built by independent founders — how a growth ceiling forms and what breaks it, five playbooks for taking customers from larger competitors, when to sell and how to get a materially better offer, what a non-technical founder can actually do. A forty-six-minute talk on venture capital myths starts from the figure that most funded startups are written off, which is a useful counterweight in a domain where the funded path is treated as the default. The material is specific to subscription software; almost none of it generalises to other business models, and the channel does not pretend otherwise.",
+    "notFor": "Anyone not building software. The playbooks assume recurring revenue, a subscription price and a churn number, and lose their meaning without those.",
+    "formatTags": [
+      "lecture",
+      "interview",
+      "long-form"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "saas-business",
+        "strength": "primary",
+        "why": "Retention, expansion and the growth ceiling are handled as the specific mechanics of subscription software rather than as general business advice with software examples.",
+        "evidence": "Long-form talks on why a SaaS growth ceiling forms and how to break it, five playbooks for winning customers from larger competitors, and what changes for bootstrapped SaaS under AI agents.",
+        "entryVideo": {
+          "title": "How to Win Customers From Bigger Competitors: 5 SaaS Playbooks",
+          "videoId": "oYRzvehnC64",
+          "whyThisOne": "The position most independent software businesses are actually in, handled as five concrete moves rather than as encouragement.",
+          "durationMin": 46
+        }
+      },
+      {
+        "id": "bootstrapping",
+        "strength": "primary",
+        "why": "The whole premise is building from revenue, and the channel argues the case against the funded path with numbers rather than sentiment.",
+        "evidence": "A forty-six-minute talk on venture capital myths built around the write-off rate for funded startups, plus interviews with founders who reached an exit without investment.",
+        "entryVideo": {
+          "title": "Venture Capital Myths: Why 77% of Funded Startups Get Written Off",
+          "videoId": "7klibkFTWOI",
+          "whyThisOne": "It states the base rates the funded path is usually discussed without, which is the decision this category actually turns on.",
+          "durationMin": 46
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "MicroConf runs paid conferences, a mastermind and a community, so the channel is partly a funnel for those. Only 33 uploads. The bootstrapping case is argued by people invested in it being right."
+  },
+  {
+    "id": "lennyspodcast",
+    "name": "Lenny's Podcast",
+    "handle": "@LennysPodcast",
+    "channelUrl": "https://www.youtube.com/@LennysPodcast",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "500k-1M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Long interviews with product leaders from companies you have heard of, including ones who argue their own discipline is broken.",
+    "longDescription": "The long-form episodes run eighty to a hundred minutes and the guests are heads of product at companies operating at scale. What raises this above access journalism is that the disagreements are left in: one episode is a chief product officer arguing that product management should not exist as a role, another is titled around half of product managers being in trouble. Both are more useful than a list of frameworks. The interviews are specific about process — how a particular team decides what to build, what they stopped doing, where the roadmap actually comes from. Note the shape of the catalogue: forty-six of the fifty most recent uploads are under two minutes, because the channel clips heavily, so the substantial episodes are a small fraction of what you will see on the front page.",
+    "notFor": "Anyone outside a company with a product team. Almost everything assumes colleagues, a roadmap and organisational politics to navigate.",
+    "formatTags": [
+      "interview",
+      "long-form",
+      "shorts"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 3,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "product-management",
+        "strength": "primary",
+        "why": "Deciding what to build and getting a team to ship it, discussed by people currently doing it at scale — including ones who think the discipline is misconceived.",
+        "evidence": "Ninety-minute interviews on the patterns behind successful products, on how one product team moves unusually fast, and two episodes arguing against the role itself as commonly practised.",
+        "entryVideo": {
+          "title": "This CPO regrets that product management exists | Tom Verrilli (CPO of Whatnot)",
+          "videoId": "ruvis-VWg2s",
+          "whyThisOne": "Start with the strongest case against the discipline; the frameworks elsewhere on the channel are easier to weigh afterwards.",
+          "durationMin": 85
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "A large paid newsletter and course business sits behind the podcast, and guests are frequently promoting something. Heavily clipped — most uploads are under two minutes and are not the substance."
+  },
+  {
+    "id": "jonloomer",
+    "name": "Jon Loomer",
+    "handle": "@jonloomer",
+    "channelUrl": "https://www.youtube.com/@jonloomer",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Fifteen years on Meta advertising specifically, with unusual care about what the reported numbers actually mean.",
+    "longDescription": "Loomer has worked on Facebook advertising since 2007 and only on that, which is why the channel goes deeper than the general-marketing alternative. The videos worth your time are the measurement ones: an argument that most advertisers should use incremental attribution rather than the default reporting, and a piece on misdiagnosing creative fatigue — both of which are about not being fooled by a dashboard the platform designed. He publishes at high frequency in short pieces, median around five minutes, so the channel works as a running commentary on platform changes rather than as a course. He is explicit that he is writing for ethical advertisers, and the content reflects that: there is no growth-hacking register and no claim that a tactic will keep working.",
+    "notFor": "Anyone advertising outside Meta's platforms — the specificity is the point and it does not transfer to Google, TikTok or elsewhere.",
+    "formatTags": [
+      "tutorial",
+      "shorts",
+      "q-and-a"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "paid-ads",
+        "strength": "primary",
+        "why": "Buying traffic profitably on one platform, from someone who has tracked its changes for fifteen years and says plainly when a tactic has stopped working.",
+        "evidence": "Videos on the foundational elements of Meta advertising as they now stand, on when value rules apply, and on diagnosing creative fatigue correctly rather than by assumption.",
+        "entryVideo": {
+          "title": "The Foundational Elements of Meta Advertising Today",
+          "videoId": "Ha0gOItSZaU",
+          "whyThisOne": "The current state of the platform stated plainly, which is the baseline every tactical video on the channel assumes.",
+          "durationMin": 8
+        }
+      },
+      {
+        "id": "marketing-analytics",
+        "strength": "primary",
+        "why": "The honest-attribution problem is his recurring subject, and the argument is against trusting the platform's own reported numbers — which is exactly what this category asks for.",
+        "evidence": "A direct argument that most advertisers should only use incremental attribution, alongside work on measurement error in creative performance diagnosis.",
+        "entryVideo": {
+          "title": "Most Advertisers Should Only Use Incremental Attribution",
+          "videoId": "Xx_hBs9Re8s",
+          "whyThisOne": "It names the specific way platform reporting overstates its own contribution, which is the first thing to understand about marketing measurement.",
+          "durationMin": 9
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Sells training and a membership. Single-platform by design, and dependent on Meta's product decisions — older tactical videos date quickly, so check the publication date on anything specific."
+  },
+  {
+    "id": "cmx",
+    "name": "CMX",
+    "handle": "@cmxhub",
+    "channelUrl": "https://www.youtube.com/@cmxhub",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Conference talks by people whose full-time job is running a community, on the parts that are actually hard.",
+    "longDescription": "Forty-six of the fifty most recent uploads run over twenty minutes and the median is twenty-eight, because the catalogue is largely recorded conference sessions rather than clips. The speakers are practitioners — the person who grew a specific technical community past twelve thousand members, the person who had to migrate or sunset one without destroying it, the person who has to justify community spending to a finance team. That last strand matters: several talks are explicitly about making the business case internally, which is the failure point for most community work and is almost never covered elsewhere. The recurring argument is that a community is a product with its own design problems rather than a marketing channel, and the talks treat it accordingly.",
+    "notFor": "Someone building an audience rather than a community — the distinction is the whole subject here, and the advice assumes members who talk to each other. Also assumes an organisational context with budgets and stakeholders.",
+    "formatTags": [
+      "lecture",
+      "long-form",
+      "interview"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "commercial-conflict"
+    ],
+    "categories": [
+      {
+        "id": "community-building",
+        "strength": "primary",
+        "why": "Members talking to each other rather than to you is stated here as the design goal, and the talks cover the unglamorous half — moderation, migration, sunsetting, and justifying the budget.",
+        "evidence": "Conference sessions on treating a community as a product designed for network effects, on migrating, merging or sunsetting one without losing members, on scaling volunteer champions, and on presenting community ROI to executives.",
+        "entryVideo": {
+          "title": "Loop 2026 - Treat Your Community Like a Product: Designing for Network Effects",
+          "videoId": "pCfy8LnUEb4",
+          "whyThisOne": "It sets up the distinction the rest of the category depends on — a community that works without you versus an audience that only responds to you.",
+          "durationMin": 35
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "CMX is owned by a community-software company and runs paid events and training, so the channel is both a resource and a funnel. The talks assume a company with a community budget; very little applies to an individual."
+  },
+  {
+    "id": "exposureninja",
+    "name": "Exposure Ninja",
+    "handle": "@exposureninja",
+    "channelUrl": "https://www.youtube.com/@exposureninja",
+    "country": "GB",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A British search agency publishing genuinely detailed website and search teardowns, with its own services as the obvious next step.",
+    "longDescription": "Seventeen of the fifty most recent uploads run over twenty minutes and the median is thirteen, which is longer than most agency content manages. The strongest material is technical and specific: a forty-minute treatment of the foundations that determine how a site is assessed, a piece on what to check before redesigning a website, and a growing strand on how large language models decide which businesses to cite. That last subject is where the channel is currently most useful, because it is new enough that most advice is speculation and they publish what they measured. They are an agency and the videos route to a free website review, which is the lead magnet; the content stands up anyway, which is why this is a disclosure rather than an exclusion.",
+    "notFor": "Anyone wanting vendor-neutral advice — the recommendations reliably arrive at work an agency does. Also UK-shaped in its examples and case studies.",
+    "formatTags": [
+      "tutorial",
+      "long-form",
+      "video-essay"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 3,
+      "selfPromotion": 4,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "commercial-conflict",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "content-marketing",
+        "strength": "primary",
+        "why": "Content connected to a business outcome rather than to a traffic number is the framing throughout, and the lead-quality material is about that connection specifically.",
+        "evidence": "Long-form on attracting high-quality leads through a website, on a strategy that produced measured lead volume from LLM referrals, and on how AI search is changing the buyer journey.",
+        "entryVideo": {
+          "title": "How To Attract High-Quality Leads Through Your Website",
+          "videoId": "UBbnEqTQbzI",
+          "whyThisOne": "It keeps the outcome — a lead worth having — in front of the tactics, which is the discipline this category is really about.",
+          "durationMin": 24
+        }
+      },
+      {
+        "id": "seo",
+        "strength": "secondary",
+        "why": "The technical foundations are covered at unusual length for agency content, and the AI-search strand addresses the part of the field that is actually changing.",
+        "evidence": "A forty-minute treatment of the technical foundations that determine how a site is assessed, plus work on getting a business cited by large language models.",
+        "entryVideo": {
+          "title": "Google is Grading Your Website: The Technical Foundations That Decide How You Show Up in Search",
+          "videoId": "dFYe4gsdkhA",
+          "whyThisOne": "The technical layer is the part most SEO content skips because it is not exciting, and it is the part that silently caps everything else.",
+          "durationMin": 40
+        }
+      }
+    ],
+    "role": "generalist",
+    "caveats": "An agency channel. Every video ends at a free website review that is the entry to a sales process, and the recommendations consistently favour work agencies are hired to do. Examples are UK-centric."
+  },
+  {
+    "id": "semrush",
+    "name": "Semrush",
+    "handle": "@semrush",
+    "channelUrl": "https://www.youtube.com/@semrush",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "The search-tool vendor's channel, worth reading for the data it publishes about how AI search actually cites sources.",
+    "longDescription": "This is vendor content and the tool is never far from the frame, but the research strand is genuinely hard to get elsewhere: an analysis of a hundred and fifty thousand AI citations, work on measuring share of voice inside AI answers, and a specific argument that being cited by a chatbot is not by itself worth anything. Those pieces publish numbers rather than assertions, which in a subject this new is the difference between information and speculation. The rest of the catalogue is workflow demonstrations — how to run an audit, how to find keywords — and those are shaped around the product by design. Of the fifty most recent uploads, twenty-six run under two minutes, so the substantial material is a minority and you have to go looking for it.",
+    "notFor": "Anyone wanting to know whether to buy the tool, or working without it — most workflow videos assume a paid subscription. Also not a place for fundamentals; it assumes you already do this work.",
+    "formatTags": [
+      "tutorial",
+      "shorts",
+      "documentary"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 3,
+      "energy": 3,
+      "selfPromotion": 4,
+      "depth": 2
+    },
+    "signals": [
+      "practitioner",
+      "commercial-conflict",
+      "cites-research"
+    ],
+    "categories": [
+      {
+        "id": "marketing-analytics",
+        "strength": "secondary",
+        "why": "The AI-citation research is measurement work on a channel nobody has good numbers for yet, and it is honest about what a citation does and does not cause.",
+        "evidence": "An analysis of 150,000 AI citations, a piece arguing that being cited by a chatbot is insufficient on its own, and work on measuring brand share of voice inside AI answers.",
+        "entryVideo": {
+          "title": "This Is NOT What We Expected To Find Analyzing 150,000 AI Citations",
+          "videoId": "4iiAaQ-GPgw",
+          "whyThisOne": "It reports a result that contradicted the expectation, which is the only kind of vendor research worth reading.",
+          "durationMin": 11
+        }
+      }
+    ],
+    "role": "generalist",
+    "caveats": "A software vendor. Most of the catalogue is product workflow, the research is published to sell a subscription, and no comparison with competing tools will ever be neutral here. Included for the data, with the conflict on the record."
+  }
+]

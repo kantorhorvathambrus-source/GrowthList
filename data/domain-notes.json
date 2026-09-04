@@ -6,17 +6,19 @@
     "minCreators": 4
   },
   "dataAsOf": "2026-09",
-  "measuredAtCreators": 174,
+  "measuredAtCreators": 181,
   "entries": [
     {
       "domain": "marketing",
       "signal": "commercial-conflict",
       "cause": "field",
-      "basis": "editorial",
-      "measured": null,
+      "basis": "measured",
+      "measured": {
+        "n": 5,
+        "of": 6
+      },
       "placement": "category-page",
-      "reviewWhen": "marketing reaches 4 creators and the signal can be measured",
-      "provenance": "Stated from the marketing domain pass, not from a count: at 2 creators the percentage would be arithmetic rather than evidence. Recorded as editorial so it is re-checked rather than assumed.",
+      "provenance": "Written editorially at n=2 from the marketing domain pass, flagged for re-measurement, and MEASURED at n=6 in batch 20: 5 of 6, 83%. The prediction held. Recorded this way rather than quietly upgraded, because a claim that turns out right is only evidence of good judgement if the record shows it was a claim first.",
       "note": "Almost every marketing creator listed here has a commercial interest in the field they are explaining. That is the shape of the supply rather than a run of bad apples: the independent practitioners in this field publish in newsletters and blogs, and most of the video that exists is hosted by companies selling the tools. The badge still separates what it should — who discloses the conflict, who is selling the specific thing they are advising you to do, and who is only hosting an outside practitioner's thinking on their own platform."
     },
     {
@@ -198,6 +200,28 @@
         "of": 7
       },
       "placement": "build-page"
+    },
+    {
+      "domain": "business",
+      "signal": "practitioner",
+      "cause": "selection",
+      "basis": "measured",
+      "measured": {
+        "n": 5,
+        "of": 5
+      },
+      "placement": "build-page"
+    },
+    {
+      "domain": "marketing",
+      "signal": "practitioner",
+      "cause": "selection",
+      "basis": "measured",
+      "measured": {
+        "n": 6,
+        "of": 6
+      },
+      "placement": "build-page"
     }
   ],
   "buildPage": {
@@ -217,9 +241,11 @@
       "domain": "business",
       "signal": "sells-course",
       "question": "Is sells-course near-universal in business the way it is in fitness, productivity and programming?",
-      "status": "unanswerable",
-      "blockedBy": "business has 2 creators. Below the 4-creator minimum the percentage is arithmetic rather than evidence — 1 of 2 is 50% and means nothing.",
-      "reviewWhen": "business reaches 4 creators"
+      "status": "answered",
+      "answer": "No. Measured at n=5 in batch 20: 3 of 5, 60% — below the 70% saturation threshold, so business gets no standing note for it and the per-creator badge still distinguishes creators within the domain.",
+      "answeredAtCreators": 5,
+      "caveat": "n=5 is one creator above the measurement floor and 60% is one creator below the threshold, so this can flip. It is an answer, not a settled fact — re-check as business fills out.",
+      "history": "Asked by the owner at 143 creators, when business had 2 and the question was unanswerable: 1 of 2 is 50% and means nothing. Left open rather than guessed at, and answered when the data existed."
     }
   ]
 }
