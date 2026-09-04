@@ -1,0 +1,357 @@
+[
+  {
+    "id": "benfelix",
+    "name": "Ben Felix",
+    "handle": "@BenFelixCSI",
+    "channelUrl": "https://www.youtube.com/@BenFelixCSI",
+    "country": "CA",
+    "language": "en",
+    "sizeBucket": "500k-1M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Investing arguments settled against the academic literature, by a licensed portfolio manager who mostly tells you the popular strategy does not work.",
+    "longDescription": "Ben Felix states his position plainly on the channel: Portfolio Manager and Chief Investment Officer at PWL Capital, a CFA charterholder and CFP professional, securities-licensed in Canada, and the content is produced and owned by his firm. That last clause matters and is disclosed rather than buried. What he does with it is unusual — most of the catalogue is dismantling investing beliefs against published finance research, including beliefs his own industry profits from. Thirty-six of fifty recent uploads run three to nineteen minutes and twelve run longer, at a sixteen-minute median. The register is dry and the conclusions are frequently unwelcome: that the strategy you were sold has no evidence behind it, and that the boring answer is still the right one.",
+    "notFor": "Anyone wanting stock picks, market calls or encouragement. The recurring answer is that you cannot beat the market and should stop trying, which people find deflating.",
+    "formatTags": [
+      "video-essay",
+      "long-form",
+      "tutorial"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 4,
+      "practical": 3,
+      "energy": 1,
+      "selfPromotion": 2,
+      "depth": 4
+    },
+    "signals": [
+      "credentialed",
+      "cites-research",
+      "practitioner",
+      "commercial-conflict"
+    ],
+    "categories": [
+      {
+        "id": "index-fund-investing",
+        "strength": "primary",
+        "why": "Argues the passive case from the finance literature rather than from ideology, including where common index products are constructed badly.",
+        "evidence": "A CFA charterholder and licensed portfolio manager publishing research-grounded analyses of index construction and passive strategy, including a dedicated critique of equal-weight index funds.",
+        "entryVideo": {
+          "title": "The Problem with Equal Weight Index Funds",
+          "videoId": "xu7kMpLbJJs",
+          "whyThisOne": "Takes a product that sounds obviously sensible and shows why it is not, which is a fair sample of how he treats every popular idea.",
+          "durationMin": 16
+        }
+      },
+      {
+        "id": "behavioral-finance",
+        "strength": "primary",
+        "why": "Goes after the beliefs that cost people money — the ones that feel like sophistication and are actually expensive habits.",
+        "evidence": "A dedicated treatment of the largest myths in personal finance, within a catalogue that consistently tests popular beliefs against published research.",
+        "entryVideo": {
+          "title": "The Biggest Myths in Personal Finance",
+          "videoId": "3u-mP3C26mg",
+          "whyThisOne": "Twenty-one minutes of widely held beliefs taken apart one at a time — the fastest way to find out which ones you hold.",
+          "durationMin": 21
+        }
+      }
+    ],
+    "role": "critic",
+    "caveats": "The channel is produced and owned by the asset-management firm he is CIO of, which is disclosed on the channel itself — his conclusions favour the low-cost passive approach that firm sells. Canadian tax and account framing throughout."
+  },
+  {
+    "id": "theplainbagel",
+    "name": "The Plain Bagel",
+    "handle": "@ThePlainBagel",
+    "channelUrl": "https://www.youtube.com/@ThePlainBagel",
+    "country": "CA",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A CFA analyst explaining how finance actually works, and taking apart the schemes aimed at people who do not know yet.",
+    "longDescription": "Richard Coffin describes himself as a CFA charterholder and CFP professional working as an analyst at an investment management firm, and his stated motivation is that people lack the resources to make good financial decisions. The catalogue splits usefully in two. One half is mechanism — how a tax works, what an asset bubble is and how you would tell from inside one, what a financial product actually does. The other half is investigation: specific scams, specific manias, and the sales pitches aimed at inexperienced investors. Thirty-one of forty-nine recent uploads run three to nineteen minutes and seventeen run longer, at an eighteen-minute median. He is careful about uncertainty and says when something is unknowable.",
+    "notFor": "Anyone wanting to be told what to buy. He explains mechanisms and dismantles pitches; he does not make recommendations.",
+    "formatTags": [
+      "video-essay",
+      "long-form",
+      "documentary"
+    ],
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 4,
+      "practical": 2,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 3
+    },
+    "signals": [
+      "credentialed",
+      "cites-research",
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "crypto-literacy",
+        "strength": "primary",
+        "why": "Treats speculative manias as things to be understood structurally, and is willing to say plainly when a pitch is a scam rather than an opportunity.",
+        "evidence": "A CFA analyst publishing structural analyses of asset bubbles and direct investigations of specific investment scams targeting retail investors.",
+        "entryVideo": {
+          "title": "Let's Talk About the AI Bubble",
+          "videoId": "fIcWfHikAOo",
+          "whyThisOne": "A live mania analysed while it is still running, which is much harder and more useful than explaining one after it has burst.",
+          "durationMin": 22
+        }
+      },
+      {
+        "id": "tax-basics",
+        "strength": "secondary",
+        "why": "Explains how a specific tax mechanism actually operates, which is the level almost no financial content bothers with.",
+        "evidence": "Dedicated explainers of named tax mechanisms, delivered by a CFP professional within a broader financial-education catalogue.",
+        "entryVideo": {
+          "title": "Canada's Exit Tax Explained",
+          "videoId": "imNcJrD1QpM",
+          "whyThisOne": "One mechanism explained properly end to end — a good sample of the method, though the jurisdiction is Canadian.",
+          "durationMin": 21
+        }
+      }
+    ],
+    "role": "critic",
+    "caveats": "Canadian tax and regulatory framing on the jurisdiction-specific material. Works in the industry he analyses, though he does not sell products to viewers."
+  },
+  {
+    "id": "twocents",
+    "name": "Two Cents (PBS)",
+    "handle": "@TwoCentsPBS",
+    "channelUrl": "https://www.youtube.com/@TwoCentsPBS",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "500k-1M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Public-broadcasting personal finance for people starting from zero — budgeting, credit and debt, with nothing to sell.",
+    "longDescription": "Two Cents is a PBS-produced personal finance show, written by a named team and hosted by a couple, one of whom has been licensed as an investment advisor. The public-broadcasting origin is the single most useful fact about it: in a domain where nearly every channel funnels toward a product, a course or an advisory relationship, this one has no such incentive. The material is squarely beginner — how to build credit from nothing, how to avoid medical debt, budgeting approaches that survive an irregular income. Thirty-one of fifty recent uploads are under two minutes with nineteen in the mid-length band, so the substantial episodes are a minority, and the presentation is deliberately light.",
+    "notFor": "Anyone past the basics, or outside the US — credit scores, medical debt and retirement accounts are all framed on US systems.",
+    "formatTags": [
+      "tutorial",
+      "shorts",
+      "documentary"
+    ],
+    "level": [
+      "beginner"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 3,
+      "selfPromotion": 0,
+      "depth": 2
+    },
+    "signals": [
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "personal-budgeting",
+        "strength": "primary",
+        "why": "Starts genuinely at the beginning with no product attached, which is rarer in this domain than it should be.",
+        "evidence": "A PBS-produced personal finance show with a named writing team and a licensed investment advisor as host, covering budgeting methods for ordinary and irregular incomes.",
+        "entryVideo": {
+          "title": "You Aren't Using These Sneaky Budget Tricks",
+          "videoId": "2yWDKDm-ZD8",
+          "whyThisOne": "Concrete, small and immediately applicable, which is what a first budgeting video should be rather than a philosophy of money.",
+          "durationMin": 11
+        }
+      },
+      {
+        "id": "credit-and-loans",
+        "strength": "primary",
+        "why": "Handles credit from an actual standing start — building a score from nothing — instead of assuming you already have one to optimise.",
+        "evidence": "Dedicated beginner episodes on building credit from scratch and on avoiding medical debt, from a public-broadcasting show with no product to sell.",
+        "entryVideo": {
+          "title": "How to Build Credit from Scratch!",
+          "videoId": "VrOB35_7QCE",
+          "whyThisOne": "The situation most credit advice skips entirely, answered in six minutes.",
+          "durationMin": 6
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "US-specific systems throughout. Beginner-level only, and much of the recent output is short-form."
+  },
+  {
+    "id": "jamesshack",
+    "name": "James Shack",
+    "handle": "@JamesShack",
+    "channelUrl": "https://www.youtube.com/@JamesShack",
+    "country": "GB",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A UK financial planner modelling what retirement money actually does — including the finding that most people underspend it.",
+    "longDescription": "James Shack is a financial planner publishing on money, financial independence and, as he puts it, living a good life, with an explicit disclaimer that nothing on the channel is advice. The distinctive work is modelled rather than asserted: what a given pot actually supports in retirement at different sizes, why people who saved diligently then fail to spend what they have, and the cases where continuing to contribute to a pension is the wrong move. That last one is notable because it argues against the default advice of his own profession. No short-form at all in fifty recent uploads — forty run three to nineteen minutes and ten longer, at a seventeen-minute median.",
+    "notFor": "Anyone outside the UK. Pensions, tax wrappers and the state pension are all UK-specific, and the modelling assumes UK rules throughout.",
+    "formatTags": [
+      "long-form",
+      "tutorial",
+      "video-essay"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 3
+    },
+    "signals": [
+      "credentialed",
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "retirement-planning",
+        "strength": "primary",
+        "why": "Models specific pot sizes against realistic spending rather than quoting a rule of thumb, so the answer is about your numbers instead of a percentage.",
+        "evidence": "A practising financial planner publishing modelled retirement-spending analyses at named pot sizes, alongside cases where further pension contributions are counterproductive.",
+        "entryVideo": {
+          "title": "How Much Can You (Actually) Spend in Retirement with £250k/£500k/£1m?",
+          "videoId": "-EGrPGUBGn0",
+          "whyThisOne": "Turns the abstract question into three concrete modelled answers, which is the thing almost no retirement content will commit to.",
+          "durationMin": 18
+        }
+      },
+      {
+        "id": "financial-independence",
+        "strength": "secondary",
+        "why": "Addresses the failure mode nobody warns about — reaching the number and then being psychologically unable to spend it.",
+        "evidence": "A dedicated analysis of why retirees systematically underspend their savings, within a catalogue on financial independence and planning.",
+        "entryVideo": {
+          "title": "Why You’ll Never Actually Spend Your Retirement Savings",
+          "videoId": "IYaFO7FGBwc",
+          "whyThisOne": "The problem that arrives after you succeed, which is the half of financial independence almost nothing covers.",
+          "durationMin": 19
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Entirely UK-specific on tax, pensions and accounts. He is a financial planner, so the professional frame shapes what counts as a question worth asking."
+  },
+  {
+    "id": "pensioncraft",
+    "name": "PensionCraft (Ramin Nakisa)",
+    "handle": "@PensionCraft",
+    "channelUrl": "https://www.youtube.com/@PensionCraft",
+    "country": "GB",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Ex-investment-banker teaching UK investors to run their own portfolios, with fee avoidance as the organising principle.",
+    "longDescription": "Ramin Nakisa started PensionCraft in 2016 with a stated aim: teaching people to invest for themselves so they stop losing money to unnecessary fees, having previously worked in investment banking. That fee-first framing runs through the catalogue and is the most useful thing about it, because fees are the one variable a retail investor fully controls. Twenty-one of fifty recent uploads run past twenty minutes and twenty-eight sit in the mid-length band, at an eighteen-minute median. He also covers where passive investing is genuinely changing and where well-known active managers have run into trouble, which is more interesting than either cheerleading or dismissing the approach.",
+    "notFor": "Anyone outside the UK, or wanting simple answers — the register is technical and assumes you will do your own portfolio work.",
+    "formatTags": [
+      "long-form",
+      "tutorial",
+      "q-and-a"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 4
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "index-fund-investing",
+        "strength": "secondary",
+        "why": "Treats passive investing as something with live structural problems rather than a settled answer, which is a more honest position than most advocacy of it.",
+        "evidence": "Long-form analyses of how passive investing is changing and of specific active managers' difficulties with it, from a former investment banker teaching self-directed investing.",
+        "entryVideo": {
+          "title": "Passive Investing Is Changing: Here's What to Do Now",
+          "videoId": "T5qcy5yXl3E",
+          "whyThisOne": "Complicates the passive case rather than repeating it, which is what you want once you have accepted the basic argument.",
+          "durationMin": 17
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "UK accounts and tax throughout. Sells a paid membership and courses, promoted regularly. Technical register that assumes prior knowledge."
+  },
+  {
+    "id": "aswathdamodaran",
+    "name": "Aswath Damodaran",
+    "handle": "@AswathDamodaranOnValuation",
+    "channelUrl": "https://www.youtube.com/@AswathDamodaranOnValuation",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "500k-1M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A finance professor publishing his actual university courses in full, plus valuations of real companies as the news breaks.",
+    "longDescription": "Aswath Damodaran teaches corporate finance, valuation and investment philosophy at NYU's Stern School of Business, and the channel carries complete online versions of all three courses — the corporate finance sequence alone runs to thirty-six numbered sessions. That is a genuine university curriculum given away, which almost nothing else in this domain offers. Alongside it he values specific companies as they come into the news, showing the assumptions and the arithmetic rather than announcing a conclusion. Twenty-four of fifty recent uploads run past twenty minutes with a nineteen-minute median. He is also, notably, a valuation professor who teaches a session making the case for passive investing — an academic willing to argue against the usefulness of his own subject.",
+    "notFor": "Anyone wanting quick answers or a beginner on-ramp to investing. This is a graduate-level course, taught at course pace, with the mathematics included.",
+    "formatTags": [
+      "lecture",
+      "course",
+      "long-form"
+    ],
+    "level": [
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 4,
+      "practical": 3,
+      "energy": 1,
+      "selfPromotion": 1,
+      "depth": 4
+    },
+    "signals": [
+      "credentialed",
+      "cites-research"
+    ],
+    "categories": [
+      {
+        "id": "stock-analysis",
+        "strength": "primary",
+        "why": "Shows the whole valuation — assumptions, arithmetic, and where it could be wrong — instead of announcing a target price and moving on.",
+        "evidence": "An NYU Stern professor publishing complete numbered university courses in valuation and corporate finance, alongside worked valuations of specific companies as they are in the news.",
+        "entryVideo": {
+          "title": "Session 35 (of 42): The Case for Passive Investing - Active Investors' Track Record",
+          "videoId": "Ldu9iEgPFBA",
+          "whyThisOne": "A valuation professor making the evidence-based case that most people should not pick stocks — the most honest possible entry to a stock-analysis category.",
+          "durationMin": 16
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Genuinely advanced and taught at university pace; the numbered sessions expect to be worked through in order. Company valuations date quickly as the news moves."
+  }
+]

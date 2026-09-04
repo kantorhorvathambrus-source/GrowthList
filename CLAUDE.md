@@ -344,20 +344,24 @@ in `categories.json`-derived output with a computed creator `count`.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research). **Batches 01–14 are
+- **Current phase**: Phase 2 (creator research). **Batches 01–15 are
   written, gated, validated and committed.**
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
-- **Creator count: 132 of 400.** Every entry video passed the gate.
-- **Taxonomy 195** after migration 001. Five freed slots HELD.
-- **113 of 195 categories populated.** Tech 8/11 (open:
-  `prompt-engineering`, `building-with-llms`, `data-literacy`), career
-  10/13, health 12/14.
-- **Untouched domains (5)**: money, business, marketing, relationships,
-  practical, philosophy.
-- **Critics: 21 of 113 populated categories.**
-- **Mapping provenance: 193 first-pass, 6 retroactive (3.0%).** Rule 15
-  governs the retroactive ones; check the provenance section of
-  `coverage-report.mjs` before adding another.
+- **Creator count: 138 of 400.** Every entry video passed the gate.
+- **Taxonomy is 197** after migration 002: added `decision-making`,
+  `journaling`, `personal-style-and-grooming`; cut `options-trading`.
+  **Three slots still held.** `dance` and `self-defence` were proposed
+  and deliberately held by the owner — dance pending whether its supply
+  teaches or only performs, self-defence pending a rule-12 decision.
+- **122 of 197 categories populated.** Money 9/12 (open: `debt-payoff`,
+  `real-estate-investing`, `insurance-basics`).
+- **Untouched domains (4)**: business, marketing, relationships,
+  practical, philosophy. **Do not cut any category in business or
+  marketing until they are researched** — the owner's instruction, and
+  money already proved my supply guess wrong in the optimistic
+  direction.
+- **Critics: 25 of 122 populated categories.**
+- **Mapping provenance: 6 retroactive of 205 (2.9%).**
 - **Documented thin gaps: 1** (`addiction-recovery`).
 - **Affiliation fallback ledger: 11 rescues, 3 wrong answers, 0 wrong
   answers written.**

@@ -533,6 +533,88 @@
     }
   },
   {
+    "id": "decision-making",
+    "name": "Decision making",
+    "domain": "mindset",
+    "blurb": "Making choices under uncertainty deliberately — weighing options, deciding when to decide, and judging the decision separately from the outcome.",
+    "aliases": [
+      "making decisions",
+      "decision quality",
+      "judgement",
+      "choosing",
+      "weighing options"
+    ],
+    "relatedCategories": [
+      "cognitive-biases",
+      "critical-thinking",
+      "prioritization"
+    ],
+    "levels": {
+      "beginner": "Learn to separate a decision from its outcome — a good call can lose and a bad one can win. Start writing down what you expected before you find out.",
+      "intermediate": "Work with explicit alternatives and stated assumptions, notice which decisions are reversible and can be made fast, and calibrate how confident you actually are.",
+      "advanced": "Handle decisions with genuinely conflicting values or long feedback loops, decide well as a group without averaging everyone into mush, and review past calls honestly enough to learn from them."
+    },
+    "plan": {
+      "week1": {
+        "watch": [],
+        "do": ""
+      },
+      "week2": {
+        "watch": [],
+        "do": ""
+      },
+      "week3": {
+        "watch": [],
+        "do": ""
+      },
+      "week4": {
+        "watch": [],
+        "do": ""
+      }
+    }
+  },
+  {
+    "id": "journaling",
+    "name": "Journaling",
+    "domain": "mindset",
+    "blurb": "Writing regularly about your own life in a way that produces something — clarity, a record, a decision — rather than just filling pages.",
+    "aliases": [
+      "journal",
+      "diary",
+      "morning pages",
+      "reflective writing",
+      "writing practice"
+    ],
+    "relatedCategories": [
+      "self-awareness",
+      "emotional-regulation",
+      "habit-formation"
+    ],
+    "levels": {
+      "beginner": "Start small and unstructured enough that you actually do it. The habit matters more than the method, and most people quit because they set the bar at an essay.",
+      "intermediate": "Use prompts or formats that suit what you want out of it — processing an emotion, thinking a problem through, and keeping a record are different jobs needing different approaches.",
+      "advanced": "Reread deliberately rather than only writing, use the archive to notice patterns you would otherwise forget, and recognise when journaling has become rumination rather than reflection."
+    },
+    "plan": {
+      "week1": {
+        "watch": [],
+        "do": ""
+      },
+      "week2": {
+        "watch": [],
+        "do": ""
+      },
+      "week3": {
+        "watch": [],
+        "do": ""
+      },
+      "week4": {
+        "watch": [],
+        "do": ""
+      }
+    }
+  },
+  {
     "id": "strength-training",
     "name": "Strength training",
     "domain": "fitness",
@@ -3140,47 +3222,6 @@
       "beginner": "Learn what insurance is for — catastrophic risk, not small costs — and identify which policies your situation genuinely requires.",
       "intermediate": "Compare policies on exclusions and claim behaviour rather than premium alone, and get the sums insured right for dependants and liabilities.",
       "advanced": "Understand complex products and where investment and insurance are bundled unfavourably, and coordinate cover with your wider financial plan."
-    },
-    "plan": {
-      "week1": {
-        "watch": [],
-        "do": ""
-      },
-      "week2": {
-        "watch": [],
-        "do": ""
-      },
-      "week3": {
-        "watch": [],
-        "do": ""
-      },
-      "week4": {
-        "watch": [],
-        "do": ""
-      }
-    }
-  },
-  {
-    "id": "options-trading",
-    "name": "Options and derivatives",
-    "domain": "money",
-    "blurb": "Understanding how options are priced and used, including how most retail traders lose money on them.",
-    "aliases": [
-      "options",
-      "derivatives",
-      "calls and puts",
-      "hedging",
-      "covered calls"
-    ],
-    "relatedCategories": [
-      "stock-analysis",
-      "behavioral-finance",
-      "index-fund-investing"
-    ],
-    "levels": {
-      "beginner": "Learn what an option contract actually is, how time decay and volatility affect its price, and why the simple strategies aren't free income.",
-      "intermediate": "Understand the greeks, spread structures, and assignment mechanics, and model outcomes before entering rather than after.",
-      "advanced": "Handle volatility trading and portfolio hedging, understand market structure and liquidity, and account honestly for costs and tax treatment."
     },
     "plan": {
       "week1": {
@@ -7701,6 +7742,48 @@
       "beginner": "Learn layering, shelter, and food and water basics, and plan a first trip within your fitness and daylight rather than your ambition.",
       "intermediate": "Navigate with map and compass rather than only GPS, manage weather and terrain judgement, and lighten your load sensibly.",
       "advanced": "Handle multi-day remote trips, winter or alpine conditions, and the risk assessment and self-rescue skills those require."
+    },
+    "plan": {
+      "week1": {
+        "watch": [],
+        "do": ""
+      },
+      "week2": {
+        "watch": [],
+        "do": ""
+      },
+      "week3": {
+        "watch": [],
+        "do": ""
+      },
+      "week4": {
+        "watch": [],
+        "do": ""
+      }
+    }
+  },
+  {
+    "id": "personal-style-and-grooming",
+    "name": "Personal style and grooming",
+    "domain": "practical",
+    "blurb": "Dressing and presenting yourself deliberately — fit, proportion, and a wardrobe that suits your actual life rather than trends.",
+    "aliases": [
+      "style",
+      "fashion",
+      "dressing well",
+      "wardrobe",
+      "grooming",
+      "how to dress"
+    ],
+    "relatedCategories": [
+      "skincare",
+      "confidence-building",
+      "decluttering-and-organizing"
+    ],
+    "levels": {
+      "beginner": "Learn fit before anything else — it matters more than brand, price or trend. Work out what you actually wear in a normal week before buying anything.",
+      "intermediate": "Build a coherent wardrobe around your real life and climate, understand proportion and colour on your own body, and learn basic alteration and care.",
+      "advanced": "Develop a personal register that reads consistently across contexts, judge quality and construction directly, and stop needing external rules for it."
     },
     "plan": {
       "week1": {

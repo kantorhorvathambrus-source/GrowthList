@@ -129,8 +129,8 @@ for (const cat of categories) {
 // 195 after migration 001: four approved merges absorbed FIVE categories, because
 // deep-work-and-focus absorbed two. The five freed slots are HELD until the
 // unresearched domains have had a pass — see REBALANCE.md. Target is still 200.
-if (categories.length !== 195) {
-  warn('categories.json', `expected 195 categories (200 target minus 5 slots held after migration 001), found ${categories.length}`);
+if (categories.length !== 197) {
+  warn('categories.json', `expected 197 categories (200 target minus 3 slots still held; see migrations 001 and 002), found ${categories.length}`);
 }
 
 // relatedCategories must resolve (checked after all ids known)

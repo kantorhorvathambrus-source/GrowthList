@@ -254,6 +254,34 @@ advising on what certifications to pursue. Both are disclosed on their
 own channels; both are included with the signal and a caveat rather than
 excluded, which is rule 13 working as intended.
 
+### Batch 15 — money (9 of 12), and a first grounded read on the domain
+
+Open: `debt-payoff`, `real-estate-investing`, `insurance-basics`.
+
+**Supply finding, since the owner asked for a grounded view before
+cutting anything here:** money is the best-credentialed domain
+researched so far. CFA charterholders, licensed portfolio managers, a
+practising financial planner and an NYU finance professor all publish
+seriously, at length, for free. That is the opposite of what I expected,
+and it argues against cutting money categories on supply grounds.
+
+The domain also splits hard by jurisdiction in a way no other domain
+does. Ben Felix and The Plain Bagel are Canadian; James Shack and
+PensionCraft are UK; Two Cents is US. Tax wrappers, pensions, credit
+scoring and account types are not transferable, so several money
+categories may need creators per jurisdiction rather than five in total.
+Worth the owner knowing before the final coverage assessment.
+
+Deliberately not taken:
+
+| Handle | Why |
+| --- | --- |
+| `@GrahamStephan`, `@AndreiJikh`, `@MinorityMindset` | Large channels, but the recurring content is wealth-signalling and real-estate promotion, and several run paid programmes on the strategies being advocated. Not excluded on conflict — under rule 13 that would be a `commercial-conflict` signal — but on content: the substantive teaching is thin relative to the promotion. |
+| `@CalebHammer` | 4,772 uploads of confrontational audits of individuals' finances. Genuinely popular, and it is entertainment built on other people's distress rather than instruction. |
+| `@TheRamseyShow` | 11,574 uploads. A single prescriptive method presented as the answer, with well-known disagreement from the evidence-based end of the field. Would need `contested-claims` and `strong-ideological-frame`; deferred rather than rejected, and it would suit `debt-payoff` if taken. |
+| `@ErinTalksMoney` | 169 of 200 uploads under two minutes. Thin. |
+| `@ClearValueTax`, `@RobBerger`, `@TheMoneyGuyShow` | 0, 1 and 0 uploads — handle traps. The real Money Guy Show is `@MoneyGuyShow`. |
+
 ## When the obvious handle fails: the fallback search path
 
 A person's obvious handle failing is **not** grounds to drop them. Before
