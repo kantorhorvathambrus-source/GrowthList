@@ -879,3 +879,30 @@ the category perfectly and the content did not overlap it at all.
 This is the second time in two batches that a channel named after a
 category turned out to be about something else. The guard is now doing
 the noticing rather than luck.
+
+## Batch 32 — pivot to depth, and three reputation rejections
+
+With the depth goal restated to 3, the higher-yield work is depth in the
+180 populated categories rather than the last 17 empties, where supply is
+genuinely worst. Batch 32 starts that pass in programming, where 14 of 14
+categories sit below 3.
+
+**Rejected, all three for the same reason — reputation without a current
+body of work:**
+
+- **Dr. Todd Grande** (`@DrGrande`, 4,102 uploads). Note the handle: an
+  earlier batch recorded `@DrToddGrande` as "does not resolve", and the
+  real channel was found this batch. He is genuinely credentialed and was
+  a plausible relationships critic. The recent catalogue is **true-crime
+  case commentary** with tabloid titles. Rejected — and it confirms the
+  earlier decision not to force a critic into that slot.
+- **Theo / t3.gg** (`@t3dotgg`, 1,150 uploads, 30 of 50 over twenty
+  minutes). Known as a web-frontend educator. The current catalogue is
+  **AI model commentary and reaction** — "NVIDIA Just Lost Their Lead",
+  "Which AI Models Are Worth Using". Rejected for `web-frontend`.
+- **Vanessa Lau** (`@VanessaLau`, 588 uploads). Known for social-media
+  growth teaching; the channel is now founder vlogs and travel diaries.
+
+Three well-known names, three categories that needed filling, and in each
+case the scan settled it in one command. This is the Jeff Su pattern
+repeating, which suggests it is the normal case rather than a notable one.

@@ -1,0 +1,119 @@
+[
+  {
+    "id": "arjancodes",
+    "name": "ArjanCodes",
+    "handle": "@ArjanCodes",
+    "channelUrl": "https://www.youtube.com/@ArjanCodes",
+    "country": "NL",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Software design taught through Python — why a piece of code is fragile, and what changes to make it hold.",
+    "longDescription": "A university lecturer in computer science with two decades in industry, and the channel reflects both: twenty-four of the fifty most recent uploads run over twenty minutes and the median is nineteen. The organising subject is design rather than syntax — why a codebase becomes fragile, what a design pattern is actually for and when you do not need one, how to stop third-party APIs leaking through your own abstractions. Most examples are Python and most videos take one specific smell and refactor it on camera, which is far more useful than a pattern catalogue. He is unusually willing to argue against received practice: separate videos cover why you probably do not need a given pattern and why a widely-taught object-oriented approach is worse than it looks.",
+    "notFor": "Beginners still learning syntax — this assumes you can already write working code and want it to survive being changed. Also strongly Python-flavoured even where the ideas are general.",
+    "formatTags": ["tutorial", "lecture", "long-form"],
+    "level": ["intermediate", "advanced"],
+    "profile": { "evidenceBased": 3, "practical": 4, "energy": 2, "selfPromotion": 3, "depth": 4 },
+    "signals": ["credentialed", "practitioner", "sells-course"],
+    "categories": [
+      {
+        "id": "python",
+        "strength": "primary",
+        "why": "Python beyond the tutorial stage — the design decisions that determine whether the code you wrote last month can be changed this month.",
+        "evidence": "Refactoring videos taking one specific problem at a time: bloated classes, dictionaries used where a type belongs, parameter lists that have got out of hand, plus a survey of underused standard libraries.",
+        "entryVideo": {
+          "title": "Let’s Fix Bloated Python Classes Once and For All",
+          "videoId": "F5Av5yDGSQs",
+          "whyThisOne": "A single common smell, refactored on camera end to end — the format the whole channel repeats, on the problem most Python codebases actually have.",
+          "durationMin": 15
+        }
+      },
+      {
+        "id": "testing-and-quality",
+        "strength": "secondary",
+        "why": "Fragility is the channel's recurring diagnosis, and the videos are about the structural changes that make code testable rather than about test frameworks.",
+        "evidence": "Long-form on why a codebase is too fragile, on isolating third-party APIs so they cannot break your code, and on when a design pattern earns its complexity and when it does not.",
+        "entryVideo": {
+          "title": "Your Codebase Is Too Fragile",
+          "videoId": "UEqk0njCuQo",
+          "whyThisOne": "It names the property that testing is supposed to protect, which is the right frame before any tooling.",
+          "durationMin": 18
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Sells courses and the videos route to them. Opinionated about design in ways that are defensible but are positions rather than consensus — treat the arguments as arguments."
+  },
+  {
+    "id": "mcoding",
+    "name": "mCoding (James Murphy)",
+    "handle": "@mCoding",
+    "channelUrl": "https://www.youtube.com/@mCoding",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Precise, unhurried explanations of how Python actually behaves, including the corners that surprise experienced people.",
+    "longDescription": "A hundred and twenty-one uploads, forty-five of the fifty most recent between three and nineteen minutes, and almost no filler. The subject is Python semantics rather than Python projects: what context managers and try-finally really guarantee, how async for loops work, a generator cleanup pitfall that bites in production, all seventy-one built-in functions covered systematically. The register is exact — he is careful about what the language specifies versus what CPython happens to do, which is a distinction most tutorials never draw. Uploads have stopped: the most recent in the scanned window is September 2024, so this is a back catalogue rather than a channel to follow, and anything version-specific should be checked against current Python.",
+    "notFor": "Anyone learning to program. This assumes Python is already familiar and you want to know why it does what it does. No project-building, no frameworks.",
+    "formatTags": ["tutorial", "lecture"],
+    "level": ["intermediate", "advanced"],
+    "profile": { "evidenceBased": 4, "practical": 3, "energy": 2, "selfPromotion": 1, "depth": 4 },
+    "signals": ["practitioner"],
+    "categories": [
+      {
+        "id": "python",
+        "strength": "primary",
+        "why": "The semantics layer — what the language guarantees rather than what usually happens — which is what separates someone who writes Python from someone who can debug it.",
+        "evidence": "Long-form on context managers and try-finally, on async for loops, on a generator cleanup pitfall, on itertools as an iteration model, and a systematic pass through all 71 built-in functions.",
+        "entryVideo": {
+          "title": "The ins and outs of context managers and try-finally in Python",
+          "videoId": "LBJlGwJ899Y",
+          "whyThisOne": "Resource cleanup is where confident Python quietly goes wrong, and this is the clearest treatment of what the construct actually promises.",
+          "durationMin": 19
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "No uploads since September 2024 in the scanned window — a back catalogue, not an active channel. Version-specific details should be checked against current Python."
+  },
+  {
+    "id": "thecodingtrain",
+    "name": "The Coding Train (Daniel Shiffman)",
+    "handle": "@TheCodingTrain",
+    "channelUrl": "https://www.youtube.com/@TheCodingTrain",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "JavaScript learned by building visual things, with the mistakes and debugging left in rather than edited out.",
+    "longDescription": "Thirty-two of the fifty most recent uploads run over twenty minutes and the median is thirty-one, because the format is a live-coded build from nothing to something that works. The Coding Challenge series is the core: a problem is posed, the code is written on camera, and it goes wrong several times first — which is the part every polished tutorial removes and the part a learner most needs to see. The vehicle is JavaScript and p5.js, so the output is visual and the feedback loop is fast, and the subjects stretch from Bayes theorem to browser machine learning without the difficulty being hidden. Shiffman teaches at a university and the register is deliberately warm and unintimidating, which is a real pedagogical choice rather than a style tic.",
+    "notFor": "Anyone wanting production JavaScript — this is creative coding, and the patterns suit sketches rather than applications. Also not for someone who wants a tight edit; the sessions are long and meandering by design.",
+    "formatTags": ["tutorial", "livestream", "long-form"],
+    "level": ["beginner", "intermediate"],
+    "profile": { "evidenceBased": 3, "practical": 4, "energy": 4, "selfPromotion": 1, "depth": 3 },
+    "signals": ["credentialed", "practitioner"],
+    "categories": [
+      {
+        "id": "javascript",
+        "strength": "primary",
+        "why": "The language learned by making something visible, with debugging shown rather than cut — which is what turns a tutorial follower into someone who can write their own.",
+        "evidence": "The Coding Challenge series, live-coded builds of 20 to 137 minutes on subjects from Bayes theorem to browser chatbots, plus systematic coverage of p5.js including data loading and version changes.",
+        "entryVideo": {
+          "title": "Coding Challenge 187: Bayes Theorem",
+          "videoId": "g3-PXyF8U70",
+          "whyThisOne": "A real idea built from nothing in one sitting, including the parts that do not work first time — a fair sample of both the method and the pace.",
+          "durationMin": 54
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Creative coding rather than software engineering: the patterns shown suit sketches, not applications that others maintain. Sessions are long and unedited, so the information density is low by design."
+  }
+]
