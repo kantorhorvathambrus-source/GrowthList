@@ -255,6 +255,30 @@ this file has the rules, schema, and current state.
     conflict, the owner challenged it, and re-examination showed the
     real disqualifier was that its long-form output is patient
     testimonials and admissions marketing. Right outcome, wrong reason.
+19. **The taxonomy is uncapped; admission is funding-gated.** Owner's
+    decision at 222 creators, replacing the 200-category target.
+    **A new category may be added at any time, with no ceiling — provided
+    it arrives holding at least 3 creators of its own.** `addedAt` on a
+    category record marks it as admitted under this rule;
+    `validate.mjs` **fails** any such category below 3. The original 197
+    carry no `addedAt` and are grandfathered: they were specified before
+    the rule and are being filled, not admitted.
+    **Why gate rather than cap.** The two numbers are the same dial from
+    opposite ends. 400 creators at the 1.43 mappings-per-creator ratio
+    the scope rule produces is ~573 mappings; depth 3 across 197
+    categories needs 591. **The creator cap does not fund the taxonomy
+    that already exists**, so before this rule every added category was
+    taking ~2.1 creators out of a budget already committed, while 16
+    categories sat empty. An expanding taxonomy also pushes directly
+    against rule 4 — more categories means more places a creator could
+    plausibly be mapped, which is the pressure the second-or-later
+    metric exists to watch.
+    Under the gate, breadth pays its own way: a category cannot exist in
+    a half-funded state, so growth never dilutes what is already here.
+    **If breadth at current depth is wanted, the honest lever is a
+    larger creator number, not more categories against a fixed one** —
+    250 categories at depth 3 needs ~525 creators.
+
 18. **Four failed probes is not a finding.** A structural claim about a
     field — "the practitioners here publish in text, not video", "the
     certifying bodies use YouTube for campaigns rather than
@@ -512,7 +536,7 @@ this file has the rules, schema, and current state.
 
 ## Data schema
 
-### Category (`data/categories.json`, array, exactly 200)
+### Category (`data/categories.json`, array — uncapped, see rule 19)
 
 ```json
 {
@@ -682,7 +706,8 @@ this section first to know exactly where to resume.)*
 - **Current phase**: Phase 2 (creator research). **Batches 01–40 are
   written, gated, validated and committed.**
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
-- **Creator count: 222 of 400.** Taxonomy 197, three slots held.
+- **Creator count: 222 of 400.** Taxonomy 197 and **uncapped** (rule 19)
+  — a new category may be added whenever it arrives with 3 creators.
 - **Fitness is complete at 2+ across all 14 categories** (3 at depth 3).
 - **180 of 197 categories populated; 17 empty.** Practical is 13/13.
 - **Depth pass started (batch 32).** With the goal at 3, the faster path

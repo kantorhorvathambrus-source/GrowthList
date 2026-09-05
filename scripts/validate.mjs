@@ -131,11 +131,21 @@ for (const cat of categories) {
 }
 
 // 195 after migration 001: four approved merges absorbed FIVE categories, because
-// deep-work-and-focus absorbed two. The five freed slots are HELD until the
-// unresearched domains have had a pass — see REBALANCE.md. Target is still 200.
-if (categories.length !== 197) {
-  warn('categories.json', `expected 197 categories (200 target minus 3 slots still held; see migrations 001 and 002), found ${categories.length}`);
-}
+// deep-work-and-focus absorbed two. The 200 target is retired; see below.
+// THE CATEGORY COUNT IS UNCAPPED, admission is funding-gated instead.
+// Owner's decision at 222 creators. The reasoning is arithmetic: 400 creators
+// at the 1.43 mappings-per-creator ratio the scope rule produces is ~573
+// mappings, and depth 3 across 197 categories needs 591. The cap does not
+// fund the taxonomy that already exists, so every added category was taking
+// ~2.1 creators out of a budget already committed — and an expanding
+// taxonomy pushes directly against the scope rule, which is the pressure the
+// second-or-later metric exists to watch.
+//
+// So: no ceiling on how many categories exist, and a new one may only enter
+// carrying its own funding. Any category with an `addedAt` field must hold at
+// least 3 creators. The original 197 have no `addedAt` and are grandfathered
+// — they were specified before this rule and are being filled, not admitted.
+const NEW_CATEGORY_MIN_CREATORS = 3;
 
 // relatedCategories must resolve (checked after all ids known)
 for (const cat of categories) {
@@ -388,6 +398,15 @@ if (creators.length > 0) {
     const where = `category ${catId}`;
     // A category no batch has reached yet is not a coverage problem, it is
     // work not done. Counted, not enumerated, unless this is the final check.
+    // FUNDING GATE. A category admitted after the taxonomy was uncapped must
+    // arrive with its own creators — breadth pays its own way rather than
+    // borrowing from the depth of everything already here. Grandfathered
+    // categories carry no `addedAt` and are exempt.
+    const cat = categories.find((c) => c.id === catId);
+    if (cat?.addedAt && list.length < NEW_CATEGORY_MIN_CREATORS) {
+      fail(where, `added in ${cat.addedAt} with ${list.length} creator${list.length === 1 ? '' : 's'} — a new category must enter with at least ${NEW_CATEGORY_MIN_CREATORS}, or it dilutes the categories already here`);
+    }
+
     if (list.length === 0 && !FINAL) { untouched++; continue; }
     // DEPTH GOAL IS 3, not 5. At the mapping ratio the scope rule actually
     // produces (1.46/creator), 400 creators lands at 3.0 per category; 5
@@ -482,8 +501,12 @@ if (creators.length > 0) {
       'growthlist:netlify': 'what you have already seen',
       'components/how-did-you-hear.js:key': 'dismissed the question',
     };
+    // Tolerate a data-only root: validate.mjs is run against fixture
+    // directories that contain data/ and nothing else, and a missing js/
+    // should skip this check rather than crash the whole run.
     const found = new Set();
-    for (const f of readdirSync(join(ROOT, 'js'), { recursive: true })) {
+    const jsDir = join(ROOT, 'js');
+    for (const f of existsSync(jsDir) ? readdirSync(jsDir, { recursive: true }) : []) {
       const rel = String(f);
       if (!rel.endsWith('.js')) continue;
       const js = readFileSync(join(ROOT, 'js', rel), 'utf8');

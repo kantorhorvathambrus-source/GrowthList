@@ -6,15 +6,15 @@
     "minCreators": 4
   },
   "dataAsOf": "2026-09",
-  "measuredAtCreators": 214,
+  "measuredAtCreators": 222,
   "entries": [
     {
       "domain": "fitness",
       "signal": "sells-course",
       "basis": "measured",
       "measured": {
-        "n": 17,
-        "of": 18
+        "n": 21,
+        "of": 26
       }
     },
     {
@@ -50,8 +50,8 @@
       "signal": "practitioner",
       "basis": "measured",
       "measured": {
-        "n": 18,
-        "of": 18
+        "n": 26,
+        "of": 26
       }
     },
     {
