@@ -203,5 +203,11 @@
       "reachedVisitorsNote": "In the site footer, in the paragraph about what we collect."
     }
   ],
-  "_framing": "How to state this ledger, per the owner: the honest framing is that this project tested ten of its own claims and found six wrong — and the alternative was NOT six correct claims, it was six wrong ones nobody checked. Report both numbers together: how many were falsified, and how many had REACHED VISITORS before being caught. The second is the difference between an internal process finding its own errors and a dataset that shipped them."
+  "_framing": "How to state this ledger, per the owner: the honest framing is that this project tested ten of its own claims and found six wrong — and the alternative was NOT six correct claims, it was six wrong ones nobody checked. Report both numbers together: how many were falsified, and how many had REACHED VISITORS before being caught. The second is the difference between an internal process finding its own errors and a dataset that shipped them.",
+  "whatTheChecksCaught": {
+    "note": "The clearest evidence the automated checks paid for themselves, to be cited in the final report.",
+    "case": "At batch 36, five stored domain-note measurements had drifted as the dataset grew — fitness/sells-course 14/15 to 17/18, programming/practitioner 14/14 to 25/25, programming/sells-course 10/14 to 15/25, fitness/practitioner 15/15 to 18/18, tech/practitioner 9/11 to 10/12.",
+    "whoCaughtIt": "All five by the validator. NONE by review — and they were reviewed, in the same session, by someone actively watching for exactly this.",
+    "contrast": "This is the badge-claim failure mode caught in one pass instead of nine batches. The badge claim was the same kind of error — a stored assertion the data had moved past — and it survived nine batches of careful reading because nothing queried it."
+  }
 }

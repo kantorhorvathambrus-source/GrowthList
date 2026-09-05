@@ -1012,3 +1012,32 @@ counted twice. One mapping, and the reasoning is on his card.
 populated by a channel that reads the literature rather than selling
 supplements — which for that category specifically is the difference
 between a listing and a liability.
+
+## Batch 37 — fitness depth, and an unfinished observation about endurance sports
+
+Juggernaut Training Systems (`strength-training`), Minus The Gym
+(`calisthenics`). Two creators — the honest yield after probing eleven
+fitness channels.
+
+**A second refusal of the Calgary Barbell shape.** Juggernaut's catalogue
+is powerlifting-specific programming and would map to `powerlifting`
+comfortably. It is mapped to `strength-training` only: the powerlifting
+material is the same body of work under a narrower name, and that
+category is already served by a channel whose *whole* catalogue is the
+sport. Two batches, two refusals of this kind — it is becoming the common
+case rather than the notable one.
+
+**Rejected:** The Run Experience (logged as reputation drift — 300
+uploads scanned, nine long-form teaching hits, catalogue now race recaps
+and challenge vlogs, dormant since January 2025); Global Cycling Network
+(9,183 uploads, four long-form teaching hits in 200 — a media brand
+rather than an instructional one); megsquats (nine long-form hits in 200,
+mixed with lifestyle content).
+
+**An observation I am NOT recording as a finding.** All three rejections
+are endurance or general-fitness channels shaped as entertainment brands
+rather than teaching ones, and `running` and `cycling` both remain at 1.
+That is three channels. Under rule 18 that is a report about my search,
+not about the field — the coaching-practitioner and physiology-research
+ends of both sports are unprobed. `running` and `cycling` stay
+**unfinished**, not documented.
