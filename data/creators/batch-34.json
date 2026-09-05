@@ -1,0 +1,107 @@
+[
+  {
+    "id": "errichto",
+    "name": "Errichto (Kamil Dębowski)",
+    "handle": "@Errichto",
+    "channelUrl": "https://www.youtube.com/@Errichto",
+    "country": "PL",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A competitive programming finalist solving hard problems out loud, at two hours a session, with the dead ends left in.",
+    "longDescription": "Thirty-four of the fifty most recent uploads run over twenty minutes and the median is sixty-one, which is unusual even for this subject. The channel's own description states the credential — an ICPC and Facebook Hacker Cup finalist — and the format is his thought process rather than a polished solution: the CSES problem sets are worked through across multi-hour sessions, dynamic programming alone taking four parts of roughly two hours each. He also commentates the International Olympiad in Informatics live, which is the closest thing available to watching how strong problem-solvers actually read a problem. Crucially he shows the approaches that do not work before the one that does, so the videos teach selection between techniques rather than a catalogue of them.",
+    "notFor": "Anyone preparing for an ordinary interview quickly — this is competitive programming, which is harder and differently shaped than most job screens. Also demands real time: the useful units are one to three hours.",
+    "formatTags": ["long-form", "livestream", "tutorial"],
+    "level": ["intermediate", "advanced"],
+    "profile": { "evidenceBased": 3, "practical": 4, "energy": 2, "selfPromotion": 1, "depth": 4 },
+    "signals": ["practitioner"],
+    "categories": [
+      {
+        "id": "algorithms-and-data-structures",
+        "strength": "primary",
+        "why": "Technique selection shown rather than described — which approach to try, why the first two fail, and how a strong solver narrows the space before writing anything.",
+        "evidence": "The CSES problem sets worked through in multi-hour sessions including a four-part dynamic programming series of roughly two hours each, plus live commentary on the International Olympiad in Informatics.",
+        "entryVideo": {
+          "title": "CSES Introductory Problems",
+          "videoId": "pL7Jy3g62GM",
+          "whyThisOne": "The on-ramp to the series, on problems simple enough that the reasoning is visible rather than buried under the difficulty.",
+          "durationMin": 133
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Competitive programming is its own discipline and the techniques transfer to interviews unevenly. Sessions are very long and largely unedited; there is no structured curriculum, only problem sets worked in order."
+  },
+  {
+    "id": "beabetterdev",
+    "name": "Be A Better Dev",
+    "handle": "@BeABetterDev",
+    "channelUrl": "https://www.youtube.com/@BeABetterDev",
+    "country": "CA",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "AWS explained service by service, starting from what the thing is for rather than from the console.",
+    "longDescription": "Ninety-two long-form videos in two hundred uploads, and the shape is unusually orderly for cloud content: a nineteen-minute answer to what AWS is and why anyone uses it, a sixty-five-minute pass over the services that actually matter, then individual walkthroughs — connecting a Lambda function to a relational database, setting up Config, installing Terraform and the CLI. The consistent choice is to explain the problem a service solves before showing the buttons, which is what makes the knowledge survive the interface being redesigned. He also covers the parts of cloud that cost people money, including how the free tier now actually works. Scope is AWS specifically; Azure and Google Cloud are not covered.",
+    "notFor": "Anyone on Azure or Google Cloud, and anyone wanting architecture at scale — this is service-level understanding and hands-on setup, not system design.",
+    "formatTags": ["tutorial", "long-form"],
+    "level": ["beginner", "intermediate"],
+    "profile": { "evidenceBased": 3, "practical": 4, "energy": 2, "selfPromotion": 2, "depth": 3 },
+    "signals": ["practitioner", "sells-course"],
+    "categories": [
+      {
+        "id": "cloud-computing",
+        "strength": "primary",
+        "why": "Starts from what each service is for, which is the understanding that survives a console redesign — and covers the billing traps most tutorials omit.",
+        "evidence": "A 19-minute introduction to what AWS is and why it is used, a 65-minute pass over the most important services, hands-on walkthroughs including Lambda to RDS, and an explanation of how the current free tier actually works.",
+        "entryVideo": {
+          "title": "What is AWS and Why Is It Useful?? WATCH THIS FIRST!",
+          "videoId": "mMGMEC66je0",
+          "whyThisOne": "The question every other cloud tutorial assumes you have already answered, and the reason so many people follow steps without understanding them.",
+          "durationMin": 19
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "AWS only. Sells courses and the videos route to them. Cloud interfaces and pricing change faster than video — check the publication date on anything involving the console or a bill."
+  },
+  {
+    "id": "kodekloud",
+    "name": "KodeKloud",
+    "handle": "@KodeKloud",
+    "channelUrl": "https://www.youtube.com/@KodeKloud",
+    "country": "IN",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A training platform's channel, worth it for a handful of genuinely complete free courses among a lot of short promotional material.",
+    "longDescription": "This is a commercial learning platform and most of the catalogue is short — nineteen of the fifty most recent uploads are under two minutes, and the median is three. The reason it is listed is a small number of full courses published free and in one piece: a 165-minute system design course aimed at people starting from nothing, a sixty-minute end-to-end explanation of how machine learning works, a fifty-one-minute piece on AI infrastructure. Those are complete rather than teasers, which is not the norm for vendor channels. The shorter project videos — building a defect tracker, a real-time leaderboard, a CI/CD pipeline — are competent but exist to demonstrate the labs product. Treat the channel as a shelf holding three or four things worth your time rather than something to subscribe to.",
+    "notFor": "Anyone browsing — the ratio of promotional short-form to substance is high, and you should arrive knowing which course you came for.",
+    "formatTags": ["course", "long-form", "shorts"],
+    "level": ["beginner", "intermediate"],
+    "profile": { "evidenceBased": 2, "practical": 4, "energy": 2, "selfPromotion": 4, "depth": 3 },
+    "signals": ["practitioner", "commercial-conflict"],
+    "categories": [
+      {
+        "id": "system-design",
+        "strength": "primary",
+        "why": "A complete beginner's course on the subject published free and in one piece, which is rare — most system design content assumes the vocabulary it should be teaching.",
+        "evidence": "A 165-minute system design course for beginners published in full, alongside a 51-minute treatment of AI infrastructure covering GPUs and serving, and hands-on architecture builds on AWS.",
+        "entryVideo": {
+          "title": "System Design Interview Prep for Beginners (Full Course)",
+          "videoId": "oz5c88cO5P8",
+          "whyThisOne": "A complete course rather than an excerpt, starting from no assumed vocabulary — treat it as several sittings.",
+          "durationMin": 165
+        }
+      }
+    ],
+    "role": "generalist",
+    "caveats": "A commercial training platform, and the channel exists to sell its labs subscription. Most uploads are promotional short-form; the free courses are genuine but are also the top of a funnel. Content is framed around certification exams, which shapes what gets emphasised."
+  }
+]

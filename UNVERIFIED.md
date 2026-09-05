@@ -928,3 +928,34 @@ A professional indie developer and a plausible second game-development
 creator. Nineteen long-form videos in 250 uploads, and most are Unity
 Asset Store roundups and Steam-marketing interviews rather than teaching.
 Median upload length is two minutes.
+
+## Batch 34 — the depth pass is rejection-bound, not effort-bound
+
+Errichto (`algorithms-and-data-structures`), Be A Better Dev
+(`cloud-computing`), KodeKloud (`system-design`). Marginal ratio 1.00,
+second-or-later share 0%. Three batches into the depth pass the scope
+rule is holding and the bar is not drifting.
+
+**But the batch size is not what was targeted, and the reason is worth
+stating rather than treated as slowness.** Batches 32–34 probed 40
+handles and evidenced 14 channels to list 9 creators. The rejections are
+running at roughly two for every three listings, and almost all have one
+shape: **a well-known name whose current catalogue is no longer what the
+reputation says.**
+
+- **Sean Allen** — 534 uploads, 107 long-form, and *every one* is the
+  same weekly iOS news roundup ("X, Y, Z & More"). The Swift teaching
+  lives in his paid courses. `mobile-development` stays at 1.
+- **Code Monkey**, **Theo**, **Vanessa Lau**, **Dr. Todd Grande** — same
+  pattern in the previous batch.
+- **`@davegray`** resolves to a *different* Dave Gray — "Possibilitarian
+  at School of the Possible", a visual-thinking podcast — not the
+  web-development educator. Another name collision, and the sixth in
+  four batches.
+
+The honest read on pace: at these standards the depth pass yields three
+to four per batch, not eight to ten, because the well-known candidates
+in populated categories are disproportionately channels that pivoted.
+Getting to eight would mean either loosening what counts as a body of
+work, or spending the probe budget on less famous channels — the second
+is the right answer and is slower per candidate, not faster.

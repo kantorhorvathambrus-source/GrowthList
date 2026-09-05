@@ -46,6 +46,24 @@ this file has the rules, schema, and current state.
    X, running 20–70 minutes" is a fact about the channel, and only the
    second kind is admissible.
 
+   **The sharper test, once categories are shallow rather than empty:
+   would this mapping count ONE body of work twice?** Not "is the
+   creator competent in the second area" — competence is easy to argue
+   for and the argument is usually true, which is what makes it a bad
+   test. Ask instead whether the evidence for the second mapping is
+   *different videos* from the evidence for the first.
+   The case: Viktor Farcic (`@DevOpsToolkit`) genuinely covers delivery
+   pipelines and Kubernetes infrastructure, and `cloud-computing` was
+   sitting at one creator. But the evidence for both is **the same
+   ninety-minute question-and-answer streams** — his subject is platform
+   engineering, which this taxonomy splits in two. One mapping, and the
+   reasoning went on his visitor-facing card rather than only into the
+   log.
+   This test gets harder to rationalise around than competence does,
+   and it matters more as the depth pass runs: a creator who could
+   plausibly land in four shallow categories is a far bigger temptation
+   than one who fills a single empty one.
+
    **The same substitution happens with REPUTATION in place of a
    credential, and it is the more common case.** Jeff Su (`@JeffSu`,
    1M–5M) is widely known for workplace and career content, and
@@ -661,10 +679,10 @@ in `categories.json`-derived output with a computed creator `count`.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research). **Batches 01–33 are
+- **Current phase**: Phase 2 (creator research). **Batches 01–34 are
   written, gated, validated and committed.**
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
-- **Creator count: 206 of 400.** Taxonomy 197, three slots held.
+- **Creator count: 209 of 400.** Taxonomy 197, three slots held.
 - **180 of 197 categories populated; 17 empty.** Practical is 13/13.
 - **Depth pass started (batch 32).** With the goal at 3, the faster path
   is depth in populated categories, not the last 17 hard empties.
