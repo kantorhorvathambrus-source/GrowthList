@@ -1041,3 +1041,31 @@ That is three channels. Under rule 18 that is a report about my search,
 not about the field — the coaching-practitioner and physiology-research
 ends of both sports are unprobed. `running` and `cycling` stay
 **unfinished**, not documented.
+
+## Batch 38 — the withheld observation was wrong, which is why it was withheld
+
+Strength Running (`running`), TrainerRoad (`cycling`). Both categories
+move from 1 to 2.
+
+Last batch I noted a tempting pattern — three endurance channels
+rejected, all shaped as entertainment brands rather than teaching ones —
+and explicitly declined to record it as a finding on the grounds that
+three channels is a report about my search, not about the field. The
+unprobed ends were named: coaching practitioners and physiology.
+
+**Probing those ends took one batch and found both.** Strength Running is
+a coach publishing plan construction, VO2 max periodisation and
+endurance-specific strength work. TrainerRoad publishes an hour-plus
+weekly coaching podcast on cycling physiology, including episodes arguing
+against the popular reading of zone two.
+
+Had that observation been written up as a structural finding, it would
+now be the fourth falsification in the ledger — and it would have been
+made from three channels, which is fewer than either the marketing claim
+(one sub-area) or the first-aid claim (thirteen institutional probes)
+rested on. **The rule caught it before it was written rather than after
+it shipped**, which is the first time that has happened in this project.
+
+Worth noting the shape of what was found: neither is a person with a
+camera. One is a coaching business, one is a software company. The
+teaching end of endurance sport is commercial, and both cards say so.
