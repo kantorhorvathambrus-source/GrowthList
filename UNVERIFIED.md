@@ -852,3 +852,30 @@ was a mapping made from what I remembered about him.
 Also probed and rejected: `@Jeff_Su` resolves to a different account with
 0 uploads, `@Buffer` to a 0-upload channel called "piozzo", `@AshleyStahl`
 to "Ashley Flaman" with 8. Three more name traps.
+
+## Batch 31 — business-strategy, and the collision guard earning its keep
+
+Acquired listed for `business-strategy`. The fit is unusually clean: the
+Trader Joe's episode is subtitled *counter positioning* and is genuinely
+about why a larger competitor cannot copy a model without damaging its
+own, which is the category's question stated exactly. Caveats recorded
+plainly — the frame is an investor's throughout, the sponsors include
+institutions that also appear as episode subjects, and narrative history
+makes outcomes look more inevitable than they were.
+
+**`@StrategyU` rejected, and the new guard flagged it before I read it:**
+
+```
+OK  @StrategyU  StrategyU  <100k  US  88 vids
+    NAME MATCHES THE CATEGORY TERM (strategy) — more suspicion, not less.
+```
+
+Reading the uploads confirmed the warning was worth acting on. Only two
+of forty-nine uploads run over eight minutes, and both are about
+*consulting careers* — how elite firms run a process, whether case
+interviews should exist — not about business strategy. The name matched
+the category perfectly and the content did not overlap it at all.
+
+This is the second time in two batches that a channel named after a
+category turned out to be about something else. The guard is now doing
+the noticing rather than luck.

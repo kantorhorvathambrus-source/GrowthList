@@ -6,7 +6,7 @@
     "minCreators": 4
   },
   "dataAsOf": "2026-09",
-  "measuredAtCreators": 199,
+  "measuredAtCreators": 200,
   "entries": [
     {
       "domain": "fitness",
@@ -207,8 +207,8 @@
       "cause": "field",
       "basis": "measured",
       "measured": {
-        "n": 6,
-        "of": 6
+        "n": 7,
+        "of": 7
       },
       "placement": "category-page",
       "usesSharedNote": "practitioner"

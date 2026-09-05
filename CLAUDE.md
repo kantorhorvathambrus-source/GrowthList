@@ -45,6 +45,21 @@ this file has the rules, schema, and current state.
    scholar of X" is a fact about the creator. "Four long-form videos on
    X, running 20–70 minutes" is a fact about the channel, and only the
    second kind is admissible.
+
+   **The same substitution happens with REPUTATION in place of a
+   credential, and it is the more common case.** Jeff Su (`@JeffSu`,
+   1M–5M) is widely known for workplace and career content, and
+   `career-change`, `remote-work` and `workplace-politics` were all
+   empty — three categories pulling at once. A keyword scan of **300
+   uploads** for career, promotion, manager, workplace, politics,
+   feedback, meeting, email and resume returned **one** long-form hit: a
+   resume video, in a category that already had creators. The catalogue
+   is short-form AI-tool tips.
+   Keep this as the worked example precisely because **nothing dramatic
+   happened**. The scan was one command, it settled the question, and
+   the alternative was a mapping made from what I remembered about him.
+   That is the halo effect handled as routine rather than as a
+   judgement call — which is the only way it stays handled.
 5. **English-language only**, everywhere: creators, UI copy, data.
    `language` is normally `"en"`. Country/accent do not matter and must
    not be used as an exclusion signal — only primary upload language does.
@@ -620,11 +635,11 @@ in `categories.json`-derived output with a computed creator `count`.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research). **Batches 01–30 are
+- **Current phase**: Phase 2 (creator research). **Batches 01–31 are
   written, gated, validated and committed.**
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
-- **Creator count: 199 of 400.** Taxonomy 197, three slots held.
-- **179 of 197 categories populated; 18 empty.** Practical is 13/13.
+- **Creator count: 200 of 400.** Taxonomy 197, three slots held.
+- **180 of 197 categories populated; 17 empty.** Practical is 13/13.
   Full: fitness, communication, creativity, learning, philosophy,
   **tech, programming**. Practical 12/13 — its only hole, `first-aid`,
   is a documented gap by design rather than unfinished work.
@@ -659,7 +674,7 @@ this section first to know exactly where to resume.)*
   n=2 is confirmed by measurement** and its `basis` flipped from
   `editorial` to `measured`, with the provenance kept so the record shows
   it was a prediction first.
-- **Critics: 29 of 179 populated categories.** Batch 18 added four —
+- **Critics: 29 of 180 populated categories.** Batch 18 added four —
   Ann Reardon on cooking and baking, Project Farm on car maintenance and
   home repair. **Relationships and philosophy have none anywhere** — both
   flagged under rule 11, neither filled.
