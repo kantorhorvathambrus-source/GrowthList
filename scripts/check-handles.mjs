@@ -14,7 +14,20 @@
  */
 
 import { getChannelByHandle, quotaUsed, redact, genericNameCollision } from './lib/youtube.mjs';
-import { readFileSync } from 'node:fs';
+import { readFileSync, existsSync } from 'node:fs';
+import { join, dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+// The probe ledger, cross-referenced automatically. This exists because the
+// validator caught a complete second record being researched and written for
+// a creator already in the dataset — the fourth time a stored fact had been
+// checked against memory instead of queried, and the first where the cost was
+// wasted research rather than a false claim. The check now happens at the
+// moment of probing rather than depending on recall.
+const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
+const LEDGER = existsSync(join(ROOT, 'data/probed.json'))
+  ? JSON.parse(readFileSync(join(ROOT, 'data/probed.json'), 'utf8')).probed ?? {}
+  : {};
 
 let handles = process.argv.slice(2);
 // Optional: --for <category-id> turns on the generic-name-collision warning,
@@ -44,10 +57,16 @@ for (const handle of handles) {
     found.push(c);
     const subs = c.hiddenSubscriberCount ? 'hidden' : c.sizeBucket;
     const collision = genericNameCollision(c.title, forCategory);
+    const seen = LEDGER[handle.toLowerCase()];
     console.log(
       `OK       ${handle.padEnd(28)} ${String(c.title).slice(0, 30).padEnd(31)} ` +
       `${String(subs).padEnd(10)} ${c.country ?? '--'}  ${c.videoCount} vids`
     );
+    if (seen) {
+      const label = seen.status === 'listed' ? 'ALREADY IN THE DATASET' :
+        seen.status === 'collision' ? 'KNOWN COLLISION' : 'ALREADY REJECTED';
+      console.log(`         ${label} (${seen.at}) — ${seen.why}`);
+    }
     if (collision) console.log(`         ${collision}`);
   } catch (err) {
     console.log(`ERROR    ${handle}  ${redact(err.message).slice(0, 90)}`);

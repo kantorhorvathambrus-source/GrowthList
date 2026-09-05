@@ -1,0 +1,1241 @@
+{
+  "_comment": "Every handle this project has probed and what came of it. Built at batch 42 after the validator caught a complete second record being written for a creator already in the dataset — the fourth instance of a stored fact being checked against memory instead of queried. check-handles.mjs cross-references this automatically, so the check happens at the moment of probing rather than depending on recall.",
+  "_schema": "handle -> { status: listed | rejected | collision, why, at }. Listed entries are derived from the dataset at build time and need no maintenance; rejected and collision entries are appended when the rejection is made.",
+  "probed": {
+    "@30mpc": {
+      "status": "listed",
+      "why": "30 Minutes to President's Club",
+      "at": "dataset"
+    },
+    "@3blue1brown": {
+      "status": "listed",
+      "why": "3Blue1Brown (Grant Sanderson)",
+      "at": "dataset"
+    },
+    "@_johnhammond": {
+      "status": "listed",
+      "why": "John Hammond",
+      "at": "dataset"
+    },
+    "@abbeysharprd": {
+      "status": "listed",
+      "why": "Abbey Sharp",
+      "at": "dataset"
+    },
+    "@abbieemmons": {
+      "status": "listed",
+      "why": "Abbie Emmons",
+      "at": "dataset"
+    },
+    "@acquiredfm": {
+      "status": "listed",
+      "why": "Acquired",
+      "at": "dataset"
+    },
+    "@acquiringminds": {
+      "status": "listed",
+      "why": "Acquiring Minds",
+      "at": "dataset"
+    },
+    "@addictionpolicyforum": {
+      "status": "listed",
+      "why": "Addiction Policy Forum",
+      "at": "dataset"
+    },
+    "@ahrefscom": {
+      "status": "listed",
+      "why": "Ahrefs",
+      "at": "dataset"
+    },
+    "@aiexplained-official": {
+      "status": "listed",
+      "why": "AI Explained",
+      "at": "dataset"
+    },
+    "@aijasonz": {
+      "status": "listed",
+      "why": "AI Jason",
+      "at": "dataset"
+    },
+    "@alanbeckertutorials": {
+      "status": "listed",
+      "why": "Alan Becker Tutorials",
+      "at": "dataset"
+    },
+    "@alexanderbromley": {
+      "status": "listed",
+      "why": "Alexander Bromley",
+      "at": "dataset"
+    },
+    "@alexanderlyon": {
+      "status": "listed",
+      "why": "Alexander Lyon Communication Coach",
+      "at": "dataset"
+    },
+    "@alexcattoni": {
+      "status": "listed",
+      "why": "Alex Cattoni",
+      "at": "dataset"
+    },
+    "@andrejkarpathy": {
+      "status": "listed",
+      "why": "Andrej Karpathy",
+      "at": "dataset"
+    },
+    "@andrewhuang": {
+      "status": "listed",
+      "why": "Andrew Huang",
+      "at": "dataset"
+    },
+    "@aragusea": {
+      "status": "listed",
+      "why": "Adam Ragusea",
+      "at": "dataset"
+    },
+    "@arjancodes": {
+      "status": "listed",
+      "why": "ArjanCodes",
+      "at": "dataset"
+    },
+    "@askamortician": {
+      "status": "listed",
+      "why": "Caitlin Doughty (Ask a Mortician)",
+      "at": "dataset"
+    },
+    "@askvinh": {
+      "status": "listed",
+      "why": "Vinh Giang",
+      "at": "dataset"
+    },
+    "@aswathdamodaranonvaluation": {
+      "status": "listed",
+      "why": "Aswath Damodaran",
+      "at": "dataset"
+    },
+    "@audreycoyne": {
+      "status": "listed",
+      "why": "Audrey Coyne",
+      "at": "dataset"
+    },
+    "@barbellmedicine": {
+      "status": "listed",
+      "why": "Barbell Medicine",
+      "at": "dataset"
+    },
+    "@beabetterdev": {
+      "status": "listed",
+      "why": "Be A Better Dev",
+      "at": "dataset"
+    },
+    "@benfelixcsi": {
+      "status": "listed",
+      "why": "Ben Felix",
+      "at": "dataset"
+    },
+    "@benjaminkeep": {
+      "status": "listed",
+      "why": "Benjamin Keep",
+      "at": "dataset"
+    },
+    "@betterideas": {
+      "status": "listed",
+      "why": "Better Ideas (Joey Schweitzer)",
+      "at": "dataset"
+    },
+    "@brandmasteracademy": {
+      "status": "listed",
+      "why": "Brand Master Academy",
+      "at": "dataset"
+    },
+    "@brianlagerstrom": {
+      "status": "listed",
+      "why": "Brian Lagerstrom",
+      "at": "dataset"
+    },
+    "@buffer": {
+      "status": "collision",
+      "why": "resolves to 'piozzo', 0 uploads",
+      "at": "batch 30"
+    },
+    "@bulletjournal": {
+      "status": "listed",
+      "why": "Bullet Journal (Ryder Carroll)",
+      "at": "dataset"
+    },
+    "@buzzsprout": {
+      "status": "listed",
+      "why": "Buzzsprout",
+      "at": "dataset"
+    },
+    "@bytebytego": {
+      "status": "listed",
+      "why": "ByteByteGo",
+      "at": "dataset"
+    },
+    "@calgarybarbell": {
+      "status": "listed",
+      "why": "Calgary Barbell (Bryce Lewis)",
+      "at": "dataset"
+    },
+    "@calnewportmedia": {
+      "status": "listed",
+      "why": "Cal Newport",
+      "at": "dataset"
+    },
+    "@careervidz": {
+      "status": "listed",
+      "why": "CareerVidz (Richard McMunn)",
+      "at": "dataset"
+    },
+    "@carl_pullein": {
+      "status": "listed",
+      "why": "Carl Pullein",
+      "at": "dataset"
+    },
+    "@chainbaker": {
+      "status": "listed",
+      "why": "ChainBaker",
+      "at": "dataset"
+    },
+    "@chandoo_": {
+      "status": "listed",
+      "why": "Chandoo",
+      "at": "dataset"
+    },
+    "@charismaoncommand": {
+      "status": "listed",
+      "why": "Charisma on Command",
+      "at": "dataset"
+    },
+    "@charlesdowding1nodig": {
+      "status": "listed",
+      "why": "Charles Dowding",
+      "at": "dataset"
+    },
+    "@chewjitsu": {
+      "status": "listed",
+      "why": "Chewjitsu (Nick Albin)",
+      "at": "dataset"
+    },
+    "@chloeting": {
+      "status": "listed",
+      "why": "Chloe Ting",
+      "at": "dataset"
+    },
+    "@chrisfix": {
+      "status": "listed",
+      "why": "ChrisFix",
+      "at": "dataset"
+    },
+    "@chrisfixit": {
+      "status": "collision",
+      "why": "resolves to 'Chris_Fix_it', 0 uploads",
+      "at": "batch 18"
+    },
+    "@chrisvoss": {
+      "status": "collision",
+      "why": "resolves to a book podcast with 10,150 uploads",
+      "at": "batch 02"
+    },
+    "@clutterbug": {
+      "status": "listed",
+      "why": "Clutterbug (Cassandra Aarssen)",
+      "at": "dataset"
+    },
+    "@cmxhub": {
+      "status": "listed",
+      "why": "CMX",
+      "at": "dataset"
+    },
+    "@codemonkeyunity": {
+      "status": "rejected",
+      "why": "reputation drift — Unity Asset Store roundups and Steam-marketing interviews; teaching largely moved to paid ",
+      "at": "batch 33"
+    },
+    "@coffeezilla": {
+      "status": "listed",
+      "why": "Coffeezilla",
+      "at": "dataset"
+    },
+    "@computerphile": {
+      "status": "listed",
+      "why": "Computerphile",
+      "at": "dataset"
+    },
+    "@conorneill": {
+      "status": "listed",
+      "why": "Conor Neill",
+      "at": "dataset"
+    },
+    "@contrapoints": {
+      "status": "listed",
+      "why": "ContraPoints",
+      "at": "dataset"
+    },
+    "@coreyms": {
+      "status": "listed",
+      "why": "Corey Schafer",
+      "at": "dataset"
+    },
+    "@cosmicskeptic": {
+      "status": "listed",
+      "why": "Alex O'Connor (CosmicSkeptic)",
+      "at": "dataset"
+    },
+    "@crashcourse": {
+      "status": "listed",
+      "why": "CrashCourse",
+      "at": "dataset"
+    },
+    "@cxl": {
+      "status": "collision",
+      "why": "resolves to an unrelated Arabic-language channel with 4,529 uploads",
+      "at": "batch 25"
+    },
+    "@databasestar": {
+      "status": "listed",
+      "why": "Database Star (Ben Brumm)",
+      "at": "dataset"
+    },
+    "@davegray": {
+      "status": "collision",
+      "why": "resolves to a different Dave Gray — 'Possibilitarian at School of the Possible', a visual-th",
+      "at": "batch 34"
+    },
+    "@dementiacareblazers": {
+      "status": "listed",
+      "why": "Dementia Careblazers (Dr. Natali Edmonds)",
+      "at": "dataset"
+    },
+    "@devopstoolkit": {
+      "status": "listed",
+      "why": "DevOps Toolkit (Viktor Farcic)",
+      "at": "dataset"
+    },
+    "@doctorramani": {
+      "status": "listed",
+      "why": "Dr. Ramani Durvasula",
+      "at": "dataset"
+    },
+    "@drandystapleton": {
+      "status": "listed",
+      "why": "Andy Stapleton",
+      "at": "dataset"
+    },
+    "@dreamingspanish": {
+      "status": "listed",
+      "why": "Dreaming Spanish",
+      "at": "dataset"
+    },
+    "@drgrande": {
+      "status": "rejected",
+      "why": "reputation drift — True-crime case commentary with tabloid-style titles.",
+      "at": "batch 32"
+    },
+    "@drmaryclaire": {
+      "status": "listed",
+      "why": "Dr. Mary Claire Haver",
+      "at": "dataset"
+    },
+    "@drtraceymarks": {
+      "status": "listed",
+      "why": "Dr. Tracey Marks",
+      "at": "dataset"
+    },
+    "@duartedesign": {
+      "status": "listed",
+      "why": "Duarte, Inc.",
+      "at": "dataset"
+    },
+    "@dylanjohnsoncycling": {
+      "status": "listed",
+      "why": "Dylan Johnson",
+      "at": "dataset"
+    },
+    "@e3rehab": {
+      "status": "listed",
+      "why": "E3 Rehab",
+      "at": "dataset"
+    },
+    "@effortlessswimming": {
+      "status": "listed",
+      "why": "Effortless Swimming (Brenton Ford)",
+      "at": "dataset"
+    },
+    "@einzelganger": {
+      "status": "listed",
+      "why": "Einzelgänger",
+      "at": "dataset"
+    },
+    "@einzelgangermusic": {
+      "status": "collision",
+      "why": "resolves to 'Thijs Geritz', 10 uploads",
+      "at": "batch 19"
+    },
+    "@errichto": {
+      "status": "listed",
+      "why": "Errichto (Kamil Dębowski)",
+      "at": "dataset"
+    },
+    "@estherperel": {
+      "status": "listed",
+      "why": "Esther Perel",
+      "at": "dataset"
+    },
+    "@examstudyexpert": {
+      "status": "listed",
+      "why": "Exam Study Expert (William Wadsworth)",
+      "at": "dataset"
+    },
+    "@exposureninja": {
+      "status": "listed",
+      "why": "Exposure Ninja",
+      "at": "dataset"
+    },
+    "@fighttips": {
+      "status": "listed",
+      "why": "fightTIPS (Shane Fazen)",
+      "at": "dataset"
+    },
+    "@filmriot": {
+      "status": "listed",
+      "why": "Film Riot",
+      "at": "dataset"
+    },
+    "@fitnessfaqs": {
+      "status": "listed",
+      "why": "FitnessFAQs (Daniel Vadnal)",
+      "at": "dataset"
+    },
+    "@foldingideas": {
+      "status": "listed",
+      "why": "Folding Ideas (Dan Olson)",
+      "at": "dataset"
+    },
+    "@gamersnexus": {
+      "status": "listed",
+      "why": "Gamers Nexus",
+      "at": "dataset"
+    },
+    "@garethdavidstudio": {
+      "status": "listed",
+      "why": "Gareth David Studio",
+      "at": "dataset"
+    },
+    "@gentlemansgazette": {
+      "status": "listed",
+      "why": "Gentleman's Gazette",
+      "at": "dataset"
+    },
+    "@gmtk": {
+      "status": "listed",
+      "why": "Game Maker's Toolkit (Mark Brown)",
+      "at": "dataset"
+    },
+    "@goodinside": {
+      "status": "listed",
+      "why": "Good Inside (Dr. Becky Kennedy)",
+      "at": "dataset"
+    },
+    "@gregisenberg": {
+      "status": "listed",
+      "why": "Greg Isenberg",
+      "at": "dataset"
+    },
+    "@harvardbusinessreview": {
+      "status": "listed",
+      "why": "Harvard Business Review",
+      "at": "dataset"
+    },
+    "@healthygamergg": {
+      "status": "listed",
+      "why": "HealthyGamerGG (Dr. Alok Kanojia)",
+      "at": "dataset"
+    },
+    "@heidipriebe1": {
+      "status": "listed",
+      "why": "Heidi Priebe",
+      "at": "dataset"
+    },
+    "@hellofutureme": {
+      "status": "listed",
+      "why": "Tim Hickson (Hello Future Me)",
+      "at": "dataset"
+    },
+    "@hikingguy": {
+      "status": "listed",
+      "why": "HikingGuy",
+      "at": "dataset"
+    },
+    "@hnasr": {
+      "status": "listed",
+      "why": "Hussein Nasser",
+      "at": "dataset"
+    },
+    "@homemadewanderlust": {
+      "status": "listed",
+      "why": "Homemade Wanderlust (Dixie)",
+      "at": "dataset"
+    },
+    "@hoopersbeta": {
+      "status": "listed",
+      "why": "Hooper's Beta",
+      "at": "dataset"
+    },
+    "@howcommunicationworks": {
+      "status": "listed",
+      "why": "How Communication Works",
+      "at": "dataset"
+    },
+    "@howtoadhd": {
+      "status": "listed",
+      "why": "How to ADHD (Jessica McCabe)",
+      "at": "dataset"
+    },
+    "@howtocookthat": {
+      "status": "listed",
+      "why": "How To Cook That (Ann Reardon)",
+      "at": "dataset"
+    },
+    "@indepthcine": {
+      "status": "listed",
+      "why": "In Depth Cine",
+      "at": "dataset"
+    },
+    "@internetshaquille": {
+      "status": "listed",
+      "why": "Internet Shaquille",
+      "at": "dataset"
+    },
+    "@inthemix": {
+      "status": "listed",
+      "why": "In The Mix (Michael Wynne)",
+      "at": "dataset"
+    },
+    "@jamesbriggs": {
+      "status": "listed",
+      "why": "James Briggs",
+      "at": "dataset"
+    },
+    "@jameshoffmann": {
+      "status": "listed",
+      "why": "James Hoffmann",
+      "at": "dataset"
+    },
+    "@jamesshack": {
+      "status": "listed",
+      "why": "James Shack",
+      "at": "dataset"
+    },
+    "@jeffersonfisher": {
+      "status": "listed",
+      "why": "Jefferson Fisher",
+      "at": "dataset"
+    },
+    "@jeffnippard": {
+      "status": "listed",
+      "why": "Jeff Nippard",
+      "at": "dataset"
+    },
+    "@jeffsu": {
+      "status": "rejected",
+      "why": "reputation drift — Short-form AI tool tips.",
+      "at": "batch 30"
+    },
+    "@jherr": {
+      "status": "listed",
+      "why": "Jack Herrington",
+      "at": "dataset"
+    },
+    "@jonloomer": {
+      "status": "listed",
+      "why": "Jon Loomer",
+      "at": "dataset"
+    },
+    "@juggernauttrainingsystems": {
+      "status": "listed",
+      "why": "Juggernaut Training Systems",
+      "at": "dataset"
+    },
+    "@justinguitar": {
+      "status": "listed",
+      "why": "JustinGuitar (Justin Sandercoe)",
+      "at": "dataset"
+    },
+    "@justinsung": {
+      "status": "listed",
+      "why": "Justin Sung",
+      "at": "dataset"
+    },
+    "@kaneb": {
+      "status": "listed",
+      "why": "Kane B",
+      "at": "dataset"
+    },
+    "@kevinpowell": {
+      "status": "listed",
+      "why": "Kevin Powell",
+      "at": "dataset"
+    },
+    "@kodekloud": {
+      "status": "listed",
+      "why": "KodeKloud",
+      "at": "dataset"
+    },
+    "@labmuffinbeautyscience": {
+      "status": "listed",
+      "why": "Lab Muffin Beauty Science (Michelle Wong)",
+      "at": "dataset"
+    },
+    "@latticetraining": {
+      "status": "listed",
+      "why": "Lattice Training",
+      "at": "dataset"
+    },
+    "@lawrencesystems": {
+      "status": "listed",
+      "why": "Lawrence Systems",
+      "at": "dataset"
+    },
+    "@leilagharani": {
+      "status": "listed",
+      "why": "Leila Gharani",
+      "at": "dataset"
+    },
+    "@lennyspodcast": {
+      "status": "listed",
+      "why": "Lenny's Podcast",
+      "at": "dataset"
+    },
+    "@lessonsfromthescreenplay": {
+      "status": "listed",
+      "why": "Lessons from the Screenplay",
+      "at": "dataset"
+    },
+    "@linkingyourthinking": {
+      "status": "listed",
+      "why": "Linking Your Thinking (Nick Milo)",
+      "at": "dataset"
+    },
+    "@lucalampariello": {
+      "status": "listed",
+      "why": "Luca Lampariello",
+      "at": "dataset"
+    },
+    "@madfit": {
+      "status": "listed",
+      "why": "MadFit (Maddie Lymburner)",
+      "at": "dataset"
+    },
+    "@managertools": {
+      "status": "listed",
+      "why": "Manager Tools",
+      "at": "dataset"
+    },
+    "@marcobucci": {
+      "status": "listed",
+      "why": "Marco Bucci",
+      "at": "dataset"
+    },
+    "@mattdavella": {
+      "status": "listed",
+      "why": "Matt D'Avella",
+      "at": "dataset"
+    },
+    "@mcoding": {
+      "status": "listed",
+      "why": "mCoding (James Murphy)",
+      "at": "dataset"
+    },
+    "@medlifecrisis": {
+      "status": "listed",
+      "why": "Medlife Crisis (Dr. Rohin Francis)",
+      "at": "dataset"
+    },
+    "@microconf": {
+      "status": "listed",
+      "why": "MicroConf",
+      "at": "dataset"
+    },
+    "@minusthegym": {
+      "status": "listed",
+      "why": "Minus The Gym",
+      "at": "dataset"
+    },
+    "@misterwootube": {
+      "status": "listed",
+      "why": "Eddie Woo",
+      "at": "dataset"
+    },
+    "@modernsoftwareengineeringyt": {
+      "status": "listed",
+      "why": "Modern Software Engineering (Dave Farley)",
+      "at": "dataset"
+    },
+    "@moz": {
+      "status": "listed",
+      "why": "Moz (Whiteboard Friday)",
+      "at": "dataset"
+    },
+    "@munecat": {
+      "status": "listed",
+      "why": "münecat",
+      "at": "dataset"
+    },
+    "@mywifequitherjob": {
+      "status": "rejected",
+      "why": "reputation drift — Opportunity listicles: '8 Claude AI Side Hustles That Each Make $100K/Yr', '9 UNSEXY Produ",
+      "at": "batch 29"
+    },
+    "@n8n-io": {
+      "status": "listed",
+      "why": "n8n",
+      "at": "dataset"
+    },
+    "@naomibrockwelltv": {
+      "status": "listed",
+      "why": "Naomi Brockwell TV",
+      "at": "dataset"
+    },
+    "@neetcode": {
+      "status": "listed",
+      "why": "NeetCode",
+      "at": "dataset"
+    },
+    "@negotiationmastery": {
+      "status": "listed",
+      "why": "Chris Voss & The Black Swan Group",
+      "at": "dataset"
+    },
+    "@nelsondellis": {
+      "status": "listed",
+      "why": "Nelson Dellis",
+      "at": "dataset"
+    },
+    "@networkchuck": {
+      "status": "listed",
+      "why": "NetworkChuck",
+      "at": "dataset"
+    },
+    "@newyorkvocalcoaching": {
+      "status": "listed",
+      "why": "New York Vocal Coaching (Justin Stoney)",
+      "at": "dataset"
+    },
+    "@nigeldanson": {
+      "status": "listed",
+      "why": "Nigel Danson",
+      "at": "dataset"
+    },
+    "@nngroup": {
+      "status": "listed",
+      "why": "Nielsen Norman Group",
+      "at": "dataset"
+    },
+    "@nomadicmatt": {
+      "status": "listed",
+      "why": "Nomadic Matt",
+      "at": "dataset"
+    },
+    "@nutritionmadesimple": {
+      "status": "listed",
+      "why": "Nutrition Made Simple! (Dr. Gil Carvalho)",
+      "at": "dataset"
+    },
+    "@oxfordunion": {
+      "status": "listed",
+      "why": "The Oxford Union",
+      "at": "dataset"
+    },
+    "@oxygenadvantage": {
+      "status": "listed",
+      "why": "Oxygen Advantage (Patrick McKeown)",
+      "at": "dataset"
+    },
+    "@paramedic": {
+      "status": "collision",
+      "why": "resolves to a Russian-language travel channel",
+      "at": "batch 24"
+    },
+    "@parktool": {
+      "status": "listed",
+      "why": "Park Tool",
+      "at": "dataset"
+    },
+    "@patflynn": {
+      "status": "listed",
+      "why": "Pat Flynn",
+      "at": "dataset"
+    },
+    "@patrickteahanofficial": {
+      "status": "listed",
+      "why": "Patrick Teahan",
+      "at": "dataset"
+    },
+    "@pensioncraft": {
+      "status": "listed",
+      "why": "PensionCraft (Ramin Nakisa)",
+      "at": "dataset"
+    },
+    "@perfectionismproject": {
+      "status": "listed",
+      "why": "Sam Laura Brown",
+      "at": "dataset"
+    },
+    "@peterattiamd": {
+      "status": "listed",
+      "why": "Peter Attia MD",
+      "at": "dataset"
+    },
+    "@philipplackner": {
+      "status": "listed",
+      "why": "Philipp Lackner",
+      "at": "dataset"
+    },
+    "@philomatics": {
+      "status": "listed",
+      "why": "Philomatics",
+      "at": "dataset"
+    },
+    "@philosophyoverdose": {
+      "status": "collision",
+      "why": "resolves to 'IKEBANA CHRONICLES', 2 uploads",
+      "at": "batch 19"
+    },
+    "@physionic": {
+      "status": "listed",
+      "why": "Physionic (Nicolas Verhoeven)",
+      "at": "dataset"
+    },
+    "@pianoteofficial": {
+      "status": "listed",
+      "why": "Pianote",
+      "at": "dataset"
+    },
+    "@positiveparentingsolutions": {
+      "status": "collision",
+      "why": "resolves to a British creator, not Amy McCready's US organisation",
+      "at": "batch 17"
+    },
+    "@premiumbeat": {
+      "status": "listed",
+      "why": "PremiumBeat by Shutterstock",
+      "at": "dataset"
+    },
+    "@prepmedic": {
+      "status": "listed",
+      "why": "PrepMedic (Sam Bonanno)",
+      "at": "dataset"
+    },
+    "@productschool": {
+      "status": "collision",
+      "why": "resolves to 'Werner Müller', 1 upload",
+      "at": "batch 20"
+    },
+    "@professorpincushion": {
+      "status": "listed",
+      "why": "Professor Pincushion",
+      "at": "dataset"
+    },
+    "@projectfarm": {
+      "status": "listed",
+      "why": "Project Farm",
+      "at": "dataset"
+    },
+    "@prokotv": {
+      "status": "listed",
+      "why": "Proko (Stan Prokopenko)",
+      "at": "dataset"
+    },
+    "@psychologyinseattle": {
+      "status": "listed",
+      "why": "Psychology In Seattle (Dr. Kirk Honda)",
+      "at": "dataset"
+    },
+    "@radicalcandor": {
+      "status": "listed",
+      "why": "Radical Candor",
+      "at": "dataset"
+    },
+    "@rationalityrules": {
+      "status": "listed",
+      "why": "Rationality Rules (Stephen Woodford)",
+      "at": "dataset"
+    },
+    "@reasoniocritthinking": {
+      "status": "listed",
+      "why": "Gregory B. Sadler (ReasonIO)",
+      "at": "dataset"
+    },
+    "@refold": {
+      "status": "listed",
+      "why": "Refold",
+      "at": "dataset"
+    },
+    "@refugeingrief": {
+      "status": "listed",
+      "why": "Megan Devine",
+      "at": "dataset"
+    },
+    "@rexkrueger": {
+      "status": "listed",
+      "why": "Rex Krueger",
+      "at": "dataset"
+    },
+    "@salarytransparentstreet": {
+      "status": "listed",
+      "why": "Salary Transparent Street",
+      "at": "dataset"
+    },
+    "@sarahockwellsmith": {
+      "status": "listed",
+      "why": "Sarah Ockwell-Smith",
+      "at": "dataset"
+    },
+    "@satorigraphics": {
+      "status": "listed",
+      "why": "Satori Graphics",
+      "at": "dataset"
+    },
+    "@seanallen": {
+      "status": "rejected",
+      "why": "reputation drift — A weekly iOS news roundup. The teaching moved into paid courses, which the channel descrip",
+      "at": "batch 34"
+    },
+    "@selfmademillennial": {
+      "status": "listed",
+      "why": "Self Made Millennial (Madeline Mann)",
+      "at": "dataset"
+    },
+    "@semrush": {
+      "status": "listed",
+      "why": "Semrush",
+      "at": "dataset"
+    },
+    "@sentdex": {
+      "status": "listed",
+      "why": "sentdex (Harrison Kinsley)",
+      "at": "dataset"
+    },
+    "@sexplanations": {
+      "status": "listed",
+      "why": "Sexplanations (Dr. Lindsey Doe)",
+      "at": "dataset"
+    },
+    "@shaelinwrites": {
+      "status": "listed",
+      "why": "Shaelin Bishop (ShaelinWrites)",
+      "at": "dataset"
+    },
+    "@shopifymasters": {
+      "status": "listed",
+      "why": "Shopify Masters",
+      "at": "dataset"
+    },
+    "@simpletivity": {
+      "status": "listed",
+      "why": "Simpletivity (Scott Friesen)",
+      "at": "dataset"
+    },
+    "@sisyphus55": {
+      "status": "listed",
+      "why": "Sisyphus 55",
+      "at": "dataset"
+    },
+    "@skillopedia": {
+      "status": "listed",
+      "why": "Skillopedia",
+      "at": "dataset"
+    },
+    "@smbsuccess": {
+      "status": "collision",
+      "why": "resolves to a Korean-language channel",
+      "at": "batch 20"
+    },
+    "@soberpowered": {
+      "status": "listed",
+      "why": "Sober Powered (Gill Tietz)",
+      "at": "dataset"
+    },
+    "@squatuniversity": {
+      "status": "listed",
+      "why": "Squat University (Dr. Aaron Horschig)",
+      "at": "dataset"
+    },
+    "@statquest": {
+      "status": "listed",
+      "why": "StatQuest with Josh Starmer",
+      "at": "dataset"
+    },
+    "@stephankesting": {
+      "status": "listed",
+      "why": "Stephan Kesting",
+      "at": "dataset"
+    },
+    "@storycorps": {
+      "status": "listed",
+      "why": "StoryCorps",
+      "at": "dataset"
+    },
+    "@strategyu": {
+      "status": "collision",
+      "why": "resolves to a consulting-careers channel — two long-form videos in 49, both about case inter",
+      "at": "batch 31"
+    },
+    "@strengthrunning": {
+      "status": "listed",
+      "why": "Strength Running (Jason Fitzgerald)",
+      "at": "dataset"
+    },
+    "@strongerbyscience": {
+      "status": "listed",
+      "why": "Stronger By Science",
+      "at": "dataset"
+    },
+    "@studiobinder": {
+      "status": "listed",
+      "why": "StudioBinder",
+      "at": "dataset"
+    },
+    "@stumpynubs": {
+      "status": "listed",
+      "why": "Stumpy Nubs (James Hamilton)",
+      "at": "dataset"
+    },
+    "@svpg": {
+      "status": "collision",
+      "why": "resolves to 'Thomas Traveler', 0 uploads",
+      "at": "batch 20"
+    },
+    "@swimsmooth": {
+      "status": "listed",
+      "why": "Swim Smooth",
+      "at": "dataset"
+    },
+    "@t3dotgg": {
+      "status": "rejected",
+      "why": "reputation drift — AI model commentary and reaction — 'NVIDIA Just Lost Their Lead', 'Which AI Models Are Wor",
+      "at": "batch 32"
+    },
+    "@tarabrach": {
+      "status": "listed",
+      "why": "Tara Brach",
+      "at": "dataset"
+    },
+    "@technotim": {
+      "status": "listed",
+      "why": "Techno Tim",
+      "at": "dataset"
+    },
+    "@techworldwithnana": {
+      "status": "listed",
+      "why": "TechWorld with Nana",
+      "at": "dataset"
+    },
+    "@terri_cole": {
+      "status": "listed",
+      "why": "Terri Cole",
+      "at": "dataset"
+    },
+    "@thecherno": {
+      "status": "listed",
+      "why": "The Cherno (Yan Chernikov)",
+      "at": "dataset"
+    },
+    "@thecloserlook": {
+      "status": "listed",
+      "why": "The Closer Look",
+      "at": "dataset"
+    },
+    "@thecoachlee": {
+      "status": "collision",
+      "why": "resolves to 'Bald History', 0 uploads",
+      "at": "batch 17"
+    },
+    "@thecodingtrain": {
+      "status": "listed",
+      "why": "The Coding Train (Daniel Shiffman)",
+      "at": "dataset"
+    },
+    "@thefutur": {
+      "status": "listed",
+      "why": "The Futur",
+      "at": "dataset"
+    },
+    "@thegottmaninstitute": {
+      "status": "listed",
+      "why": "The Gottman Institute",
+      "at": "dataset"
+    },
+    "@themathsorcerer": {
+      "status": "listed",
+      "why": "The Math Sorcerer",
+      "at": "dataset"
+    },
+    "@thematthewhussey": {
+      "status": "listed",
+      "why": "Matthew Hussey",
+      "at": "dataset"
+    },
+    "@themoderncoder": {
+      "status": "listed",
+      "why": "The Modern Coder",
+      "at": "dataset"
+    },
+    "@themoth": {
+      "status": "listed",
+      "why": "The Moth",
+      "at": "dataset"
+    },
+    "@theoperationsroom": {
+      "status": "collision",
+      "why": "resolves to a military-history animation channel (Pearl Harbor, Midway, Operation Anaconda),",
+      "at": "batch 29"
+    },
+    "@thepartiallyexaminedlife": {
+      "status": "listed",
+      "why": "The Partially Examined Life",
+      "at": "dataset"
+    },
+    "@theplainbagel": {
+      "status": "listed",
+      "why": "The Plain Bagel",
+      "at": "dataset"
+    },
+    "@theplottery": {
+      "status": "listed",
+      "why": "The Plottery",
+      "at": "dataset"
+    },
+    "@theramseyshow": {
+      "status": "listed",
+      "why": "The Ramsey Show Highlights",
+      "at": "dataset"
+    },
+    "@therapyinanutshell": {
+      "status": "listed",
+      "why": "Therapy in a Nutshell (Emma McAdam)",
+      "at": "dataset"
+    },
+    "@thereadystate": {
+      "status": "rejected",
+      "why": "reputation drift — A general wellness and interview podcast. Recent long-form covers women's health, resilien",
+      "at": "batch 39"
+    },
+    "@therunexperience": {
+      "status": "rejected",
+      "why": "reputation drift — Race recaps, personal vlogs and challenge videos — a marathon recap, a 30-day cold plunge,",
+      "at": "batch 37"
+    },
+    "@theschooloflifetv": {
+      "status": "listed",
+      "why": "The School of Life",
+      "at": "dataset"
+    },
+    "@thesleepdoctor": {
+      "status": "listed",
+      "why": "Sleep Doctor (Dr. Michael Breus)",
+      "at": "dataset"
+    },
+    "@thespeakerlab": {
+      "status": "listed",
+      "why": "The Speaker Lab",
+      "at": "dataset"
+    },
+    "@thinkfasttalksmart": {
+      "status": "listed",
+      "why": "Think Fast Talk Smart (Matt Abrahams)",
+      "at": "dataset"
+    },
+    "@thisguyedits": {
+      "status": "listed",
+      "why": "This Guy Edits (Sven Pape)",
+      "at": "dataset"
+    },
+    "@thisoldhouse": {
+      "status": "listed",
+      "why": "This Old House",
+      "at": "dataset"
+    },
+    "@thomasheatonphoto": {
+      "status": "listed",
+      "why": "Thomas Heaton",
+      "at": "dataset"
+    },
+    "@tiagoforte": {
+      "status": "listed",
+      "why": "Tiago Forte",
+      "at": "dataset"
+    },
+    "@toastmasters": {
+      "status": "listed",
+      "why": "Toastmasters International",
+      "at": "dataset"
+    },
+    "@tony_jeffries": {
+      "status": "listed",
+      "why": "Tony Jeffries",
+      "at": "dataset"
+    },
+    "@trainerroad": {
+      "status": "listed",
+      "why": "TrainerRoad",
+      "at": "dataset"
+    },
+    "@twocentspbs": {
+      "status": "listed",
+      "why": "Two Cents (PBS)",
+      "at": "dataset"
+    },
+    "@uprighthealth": {
+      "status": "listed",
+      "why": "Upright Health",
+      "at": "dataset"
+    },
+    "@vanessalau": {
+      "status": "rejected",
+      "why": "reputation drift — Founder vlogs and travel diaries. She states the pivot herself in the channel description.",
+      "at": "batch 32"
+    },
+    "@vo2maxproductions": {
+      "status": "listed",
+      "why": "Vo2maxProductions (Sage Canaday)",
+      "at": "dataset"
+    },
+    "@webdevsimplified": {
+      "status": "listed",
+      "why": "Web Dev Simplified (Kyle Cook)",
+      "at": "dataset"
+    },
+    "@weltgeistyt": {
+      "status": "listed",
+      "why": "Weltgeist",
+      "at": "dataset"
+    },
+    "@wirelessphilosophy": {
+      "status": "listed",
+      "why": "Wireless Philosophy",
+      "at": "dataset"
+    },
+    "@writingwithandrew": {
+      "status": "listed",
+      "why": "Writing with Andrew",
+      "at": "dataset"
+    },
+    "@ycombinator": {
+      "status": "listed",
+      "why": "Y Combinator",
+      "at": "dataset"
+    },
+    "@yogawithadriene": {
+      "status": "listed",
+      "why": "Yoga With Adriene",
+      "at": "dataset"
+    },
+    "@yogawithkassandra": {
+      "status": "listed",
+      "why": "Yoga with Kassandra",
+      "at": "dataset"
+    }
+  }
+}

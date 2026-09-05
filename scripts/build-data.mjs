@@ -97,6 +97,26 @@ const categoriesIndexOut = categories.map((c) => ({
   count: counts.get(c.id) ?? 0,
 }));
 
+// Keep the probe ledger's "listed" half derived rather than maintained. A
+// hand-kept list of who is already in the dataset is the exact defect this
+// ledger exists to fix, so the dataset half regenerates on every build and
+// only the rejections and collisions are appended by hand.
+const probedPath = join(DATA, 'probed.json');
+if (existsSync(probedPath)) {
+  const ledger = readJson(probedPath);
+  for (const key of Object.keys(ledger.probed ?? {})) {
+    if (ledger.probed[key].status === 'listed') delete ledger.probed[key];
+  }
+  for (const c of creators) {
+    const h = String(c.handle ?? '').toLowerCase();
+    if (h) ledger.probed[h] = { status: 'listed', why: c.name, at: 'dataset' };
+  }
+  ledger.probed = Object.fromEntries(Object.entries(ledger.probed).sort());
+  writeFileSync(probedPath, JSON.stringify(ledger, null, 2) + '\n');
+  const n = Object.values(ledger.probed);
+  console.log(`  probed.json ledger: ${n.length} handles (${n.filter((x) => x.status === 'listed').length} listed, ${n.filter((x) => x.status !== 'listed').length} rejected or collided)`);
+}
+
 // Rule 12 subject notes. The research file carries two fields per category —
 // a rationale written for the owner, referencing our own process and rulings,
 // and a short visitorNote about the subject. Only the second ships. Deriving
