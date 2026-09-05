@@ -1,0 +1,72 @@
+[
+  {
+    "id": "drdray",
+    "name": "Dr Dray",
+    "handle": "@DrDrayzday",
+    "channelUrl": "https://www.youtube.com/@DrDrayzday",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A board-certified dermatologist answering skincare questions at length, ingredient by ingredient, including which trends are not worth the money.",
+    "longDescription": "Five thousand uploads and a median around fifteen minutes, with eleven of the fifty most recent running over twenty. The subject is dermatology rather than beauty: how often exfoliation is actually warranted, one acid compared against another for a stated purpose, whether a drug prescribed for acne affects collagen, what a new ingredient with a marketing acronym does and whether it is worth the hype. She also covers the boundary between skin and the rest of medicine — skin signs that indicate something systemic, whether diet affects inflammation, what GLP-1 drugs do to skin — which is where a dermatologist's training earns its keep over a reviewer's. Her channel description discloses affiliate participation across several programmes, and product recommendation is a constant thread.",
+    "notFor": "Anyone with a condition that needs diagnosis — this is education, not assessment, and skin problems are the kind that reward being looked at in person. Also expect a lot of product discussion.",
+    "formatTags": ["tutorial", "q-and-a", "shorts"],
+    "level": ["beginner", "intermediate"],
+    "profile": { "evidenceBased": 4, "practical": 4, "energy": 2, "selfPromotion": 3, "depth": 3 },
+    "signals": ["credentialed", "cites-research", "practitioner", "commercial-conflict"],
+    "categories": [
+      {
+        "id": "skincare",
+        "strength": "primary",
+        "why": "Ingredients and claims assessed by someone trained to assess them, including the routine ones people over-do and the new ones that turn out to be marketing.",
+        "evidence": "Long-form on how often exfoliation is warranted, direct comparisons between anti-ageing acids, whether a common acne drug affects collagen, an assessment of a hyped new ingredient, and skin signs that indicate systemic problems.",
+        "entryVideo": {
+          "title": "How Often Should You Really Exfoliate Your Skin?",
+          "videoId": "bLDs-KM0F1o",
+          "whyThisOne": "The single most over-done step in most routines, answered by frequency and reason rather than by product — which is the shape of good advice here.",
+          "durationMin": 15
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Affiliate participation is disclosed on the channel and product recommendation runs through the catalogue — treat any specific purchase suggestion accordingly. Enormous back catalogue with no structure, so arrive with a question rather than browsing."
+  },
+  {
+    "id": "mamadoctorjones",
+    "name": "Mama Doctor Jones (Dr. Danielle Jones)",
+    "handle": "@MamaDoctorJones",
+    "channelUrl": "https://www.youtube.com/@MamaDoctorJones",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A board-certified obstetrician-gynaecologist taking apart the hormone and fertility claims sold to women online.",
+    "longDescription": "Thirteen of the fifty most recent uploads run over twenty minutes and several pass forty. The corrective work is the reason to watch: a direct treatment of fertility influencers making false hormonal claims, an explanation of why particular pregnancy restrictions exist and which are folklore, an analysis of a viral unassisted birth, and a long piece on women turned away by doctors twice before being taken seriously. That last strand matters — she is as willing to name where medicine fails women as where the internet does, which is what separates a credible corrective voice from a defensive one. She has also covered how purity culture shapes what people believe about their own bodies, and reviews dramatised medical scenes to explain what is actually happening.",
+    "notFor": "Anyone seeking guidance on their own pregnancy or condition — this is education and commentary, never assessment. The format is often reaction and commentary rather than instruction.",
+    "formatTags": ["video-essay", "long-form", "shorts"],
+    "level": ["beginner", "intermediate"],
+    "profile": { "evidenceBased": 4, "practical": 3, "energy": 3, "selfPromotion": 2, "depth": 3 },
+    "signals": ["credentialed", "cites-research", "practitioner"],
+    "categories": [
+      {
+        "id": "hormonal-health",
+        "strength": "primary",
+        "why": "The counterweight this subject most needs — a specialist dismantling specific hormone and fertility claims, while also naming where conventional care genuinely fails people.",
+        "evidence": "A 21-minute treatment of fertility influencers making false hormonal claims, a 21-minute explanation of which pregnancy restrictions have a basis and which do not, a 26-minute account of a patient turned away twice, and long-form on how cultural framing shapes belief about the body.",
+        "entryVideo": {
+          "title": "Hormone Fertility Influencers Are Lying to You (Again)",
+          "videoId": "eJZ623LcysM",
+          "whyThisOne": "Names the specific claims and shows why they fail, which inoculates against a whole category of content rather than correcting one instance of it.",
+          "durationMin": 21
+        }
+      }
+    ],
+    "role": "critic",
+    "caveats": "Largely corrective and commentary-shaped: you will learn what is false more often than what to do. Reaction to media and viral cases is a large part of the format, and the register is deliberately entertaining."
+  }
+]

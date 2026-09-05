@@ -703,13 +703,13 @@ in `categories.json`-derived output with a computed creator `count`.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research). **Batches 01–41 are
+- **Current phase**: Phase 2 (creator research). **Batches 01–42 are
   written, gated, validated and committed.**
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
-- **Creator count: 223 of 400.** Taxonomy 197 and **uncapped** (rule 19)
+- **Creator count: 225 of 400.** Taxonomy 197 and **uncapped** (rule 19)
   — a new category may be added whenever it arrives with 3 creators.
 - **Fitness is complete at 2+ across all 14 categories** (3 at depth 3).
-- **180 of 197 categories populated; 17 empty.** Practical is 13/13.
+- **181 of 197 categories populated; 16 empty.** Practical is 13/13.
 - **Depth pass started (batch 32).** With the goal at 3, the faster path
   is depth in populated categories, not the last 17 hard empties.
   Full: fitness, communication, creativity, learning, philosophy,
@@ -717,16 +717,23 @@ this section first to know exactly where to resume.)*
   is a documented gap by design rather than unfinished work.
   Thinnest: **business 7/13**, productivity 7/9, marketing 10/13.
 - **Untouched domains: none.**
-- **Practical still empty (4)**: `first-aid`, `travel-planning`,
-  `camping-and-outdoor-skills`, `personal-style-and-grooming`.
+- **Practical's only hole is `first-aid`**, a documented gap by design
+  (rule 12) rather than unfinished work. The other three that were empty
+  — `travel-planning`, `camping-and-outdoor-skills`,
+  `personal-style-and-grooming` — are filled.
+- **Health is the current depth pass (batch 42 on).** 12 categories:
+  `gut-health` empty and explicitly unfinished (the gastroenterology and
+  research ends are unprobed), `breathwork`, `fat-loss`, `meditation`,
+  `posture-and-ergonomics`, `sleep-quality` and `sports-nutrition` at 1.
 - **Relationships has no critic anywhere** (rule 11 — flagged, not
   filled). `making-friends-as-an-adult` is the one empty category left in
   the domain.
 - **Jurisdiction metadata is live** (rule 16). AU is unserved in 11 of
   12 flagged categories, UK in 9, CA in 8, US in 7.
-- **Domain standing notes are live** (rule 17), split by cause: 4
-  field-caused notes on category pages, 15 selection-caused ones on the
-  new `#/how-this-list-was-built` colophon. Marketing's is `editorial`
+- **Domain standing notes: the arc, kept as history** (rule 17, now
+  retired). They were split by cause: 4 field-caused notes on category
+  pages, 15 selection-caused ones on the `#/how-this-list-was-built`
+  colophon. Marketing's is `editorial`
   at n=2; `sells-course` in business is unanswerable at n=2, logged open.
   **Fifteen entries were reclassified in batch 26** after the claim
   underlying them was falsified — see the ledger.
@@ -746,8 +753,9 @@ this section first to know exactly where to resume.)*
   n=2 is confirmed by measurement** and its `basis` flipped from
   `editorial` to `measured`, with the provenance kept so the record shows
   it was a prediction first.
-- **Categories with a dissenting voice: 29 of 180.** A target since 200
-  creators, not a validator rule — see rule 11.
+- **Categories with a dissenting voice: 30 of 181**, carried by 21
+  critic creators out of 225. A target since 200 creators, not a
+  validator rule — see rule 11.
 - **Depth goal is 3 per category**, restated from 5 at 200 creators.
   400 creators × the 1.46 ratio the scope rule produces = 3.0 per
   category; 5 everywhere needs ~675 creators. The scope rule does not

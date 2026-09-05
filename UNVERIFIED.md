@@ -1149,3 +1149,44 @@ category blurb warns against — "These Tiny Seeds Repair Your Gut Lining
 Fast", "10-Minute Gut Reset", an argument that FODMAP protocols do not
 work. The gastroenterology and research ends are unprobed, so this is a
 report about my search, not the field.
+
+## Batch 42 — health, and the first use of the queried handle list
+
+Dr Dray (`skincare`, 1→2) and Mama Doctor Jones (`hormonal-health`,
+1→2, **critic**). Two creators, two mappings — marginal ratio 1.00,
+second-or-later share 0%.
+
+**`data/probed.json` paid for itself on its first batch.** The
+pre-write check is no longer a list typed from memory: `check-handles`
+now reads 247 handles — 223 in the dataset, 24 rejected or collided —
+and labels each candidate `ALREADY IN THE DATASET`, `ALREADY REJECTED`
+or `KNOWN COLLISION` before any research is done. The Sleep Doctor
+duplicate that cost a full record in batch 41 would have been refused
+at the first probe.
+
+**Dr Dray is the awkward kind of good source.** Board-certified
+dermatologist, 5255 uploads, and the volume is the problem as much as
+the credential is the recommendation — a catalogue that large is not
+curated, and the entry video was chosen to be a question a beginner
+actually has rather than the most-viewed thing on the channel. She
+carries `commercial-conflict`: the product-recommendation videos are a
+real part of the catalogue and the badge says so.
+
+**Mama Doctor Jones is a critic, which is why she is here.** Health is
+the domain where the dissenting-voice count matters most and it is the
+one where the incentive to sell runs hardest against dissent. Her
+premise is that fertility and hormone influencers are wrong on the
+facts, and she says so with citations; the entry video is exactly that
+argument. `hormonal-health` had one creator and no dissent.
+
+**No structural claim is made about health from two probes.** Ten of
+its twelve categories sit at 1 or 0 and the domain has had one batch.
+Rule 18 applies to the gaps here as much as anywhere: `gut-health`
+stays an unfinished search, not a finding about the field.
+
+**Rule 17 residue removed from the coverage report.** The saturation
+table was still printing a `cause` column of `undefined` and a
+placement of `MISSING — rule 17` for signals with no entry — labels for
+a rule retired two batches earlier. The measurement stays, the
+classification columns are gone, and the table now says plainly what
+the numbers are still for: drift detection in the validator.

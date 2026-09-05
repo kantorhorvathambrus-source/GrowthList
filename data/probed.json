@@ -322,6 +322,11 @@
       "why": "Andy Stapleton",
       "at": "dataset"
     },
+    "@drdrayzday": {
+      "status": "listed",
+      "why": "Dr Dray",
+      "at": "dataset"
+    },
     "@dreamingspanish": {
       "status": "listed",
       "why": "Dreaming Spanish",
@@ -625,6 +630,11 @@
     "@madfit": {
       "status": "listed",
       "why": "MadFit (Maddie Lymburner)",
+      "at": "dataset"
+    },
+    "@mamadoctorjones": {
+      "status": "listed",
+      "why": "Mama Doctor Jones (Dr. Danielle Jones)",
       "at": "dataset"
     },
     "@managertools": {

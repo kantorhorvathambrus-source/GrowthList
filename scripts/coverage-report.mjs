@@ -352,18 +352,18 @@ console.log('describing the creator and started describing the field — or desc
 console.log(`Domains under ${MIN_N} creators are not measured: the percentage would be arithmetic.\n`);
 
 const sat = saturatedRows(satRows);
-console.log(`  ${pad('domain', 14)} ${pad('signal', 20)} share    cause      where it is said`);
+console.log(`  ${pad('domain', 14)} ${pad('signal', 20)} share    recorded`);
 for (const r of sat) {
   const e = entryFor(r);
-  const state = e ? e.placement : 'MISSING — rule 17';
-  console.log(`  ${pad(r.domain, 14)} ${pad(r.signal, 20)} ${String(r.n).padStart(2)}/${String(r.of).padEnd(3)} ${String(Math.round(100 * r.pct)).padStart(3)}%  ${pad(e?.cause ?? '-', 10)} ${state}`);
+  console.log(`  ${pad(r.domain, 14)} ${pad(r.signal, 20)} ${String(r.n).padStart(2)}/${String(r.of).padEnd(3)} ${String(Math.round(100 * r.pct)).padStart(3)}%  ${e ? 'yes' : 'not yet'}`);
+  if (e?.watch) console.log(`      watch: ${e.watch}`);
 }
-const uncovered = sat.filter((r) => !entryFor(r));
-const onCat = sat.filter((r) => entryFor(r)?.placement === 'category-page').length;
-const onBuild = sat.filter((r) => entryFor(r)?.placement === 'build-page').length;
-console.log(`\n  ${sat.length} saturated signal${sat.length === 1 ? '' : 's'}: ${onCat} on category pages, ${onBuild} on the colophon, ${uncovered.length} unhandled.`);
-console.log('  A selection-caused note is about our own inclusion rules, so it lives with');
-console.log('  the rules. Only a field-caused one earns space on a page about a skill.');
+console.log(`\n  ${sat.length} saturated signal${sat.length === 1 ? '' : 's'}.`);
+console.log('  These are measurements, not classifications. Rule 17 asked which of them');
+console.log('  were caused by the field and which by our own selection; that judgement');
+console.log('  was retired because it cost more to maintain than it returned. What the');
+console.log('  numbers are still good for is drift: validate.mjs fails the build when a');
+console.log('  recorded figure stops matching the data.');
 
 const near = nearRows(satRows);
 if (near.length) {
