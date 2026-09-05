@@ -258,10 +258,10 @@
     "caveats": "A commercial sleep practice sits behind the channel and product recommendations are frequent. Overwhelmingly short-form.",
     "catalogue": {
       "scanned": 50,
-      "shortPct": 72,
-      "longPct": 10,
+      "shortPct": 74,
+      "longPct": 8,
       "medianMin": 1,
-      "videoCount": 1393,
+      "videoCount": 1394,
       "at": "2026-09"
     },
     "entity": "individual"
@@ -322,9 +322,9 @@
     "catalogue": {
       "scanned": 50,
       "shortPct": 70,
-      "longPct": 16,
+      "longPct": 14,
       "medianMin": 1,
-      "videoCount": 708,
+      "videoCount": 709,
       "at": "2026-09"
     },
     "entity": "individual"
@@ -580,7 +580,7 @@
       "shortPct": 54,
       "longPct": 28,
       "medianMin": 2,
-      "videoCount": 1795,
+      "videoCount": 1796,
       "at": "2026-09"
     },
     "entity": "individual"

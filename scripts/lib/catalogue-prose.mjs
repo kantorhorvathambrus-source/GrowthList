@@ -62,6 +62,13 @@ export function catalogueValues(cat) {
   for (const [k, n] of Object.entries(v)) {
     if (typeof n === 'number') v[`${k}Words`] = toWords(n);
   }
+  // A number and its unit have to agree, and the first record to use this
+  // produced "the median is one minutes". A placeholder that can only emit a
+  // bare numeral pushes the grammar onto whoever writes the sentence, which is
+  // how a mechanism meant to remove hand-typed facts starts introducing errors
+  // of its own. These carry the unit with them.
+  v.medianPhrase = `${toWords(cat.medianMin)} minute${cat.medianMin === 1 ? '' : 's'}`;
+  v.videoCountPhrase = `${cat.videoCount} upload${cat.videoCount === 1 ? '' : 's'}`;
   return v;
 }
 

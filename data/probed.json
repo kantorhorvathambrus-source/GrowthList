@@ -12,6 +12,11 @@
       "why": "3Blue1Brown (Grant Sanderson)",
       "at": "dataset"
     },
+    "@4cornerresources": {
+      "status": "rejected",
+      "why": "staffing agency channel returned by a hiring-topic search — recruiting-vendor marketing, not teaching",
+      "at": "batch 46"
+    },
     "@AmerGastroAssn": {
       "status": "rejected",
       "why": "professional-association channel — career and leadership content for gastroenterologists, not patients",
@@ -297,6 +302,11 @@
       "why": "CMX",
       "at": "dataset"
     },
+    "@coachingforleaders": {
+      "status": "listed",
+      "why": "Coaching for Leaders (Dr. Dave Stachowiak)",
+      "at": "dataset"
+    },
     "@codemonkeyunity": {
       "status": "rejected",
       "why": "reputation drift — Unity Asset Store roundups and Steam-marketing interviews; teaching largely moved to paid ",
@@ -351,6 +361,11 @@
       "status": "collision",
       "why": "resolves to a different Dave Gray — 'Possibilitarian at School of the Possible', a visual-th",
       "at": "batch 34"
+    },
+    "@davestachowiak": {
+      "status": "collision",
+      "why": "1 upload — the real channel is @CoachingforLeaders",
+      "at": "batch 46"
     },
     "@declutterthemind": {
       "status": "listed",
@@ -492,6 +507,11 @@
       "why": "Film Riot",
       "at": "dataset"
     },
+    "@firmlearning": {
+      "status": "listed",
+      "why": "Firm Learning (Heinrich Rusche)",
+      "at": "dataset"
+    },
     "@fitnessfaqs": {
       "status": "listed",
       "why": "FitnessFAQs (Daniel Vadnal)",
@@ -590,6 +610,11 @@
     "@howtocookthat": {
       "status": "listed",
       "why": "How To Cook That (Ann Reardon)",
+      "at": "dataset"
+    },
+    "@impactpricing": {
+      "status": "listed",
+      "why": "Impact Pricing",
       "at": "dataset"
     },
     "@indepthcine": {
@@ -706,6 +731,11 @@
       "status": "listed",
       "why": "Lawrence Systems",
       "at": "dataset"
+    },
+    "@legalvisionlaw": {
+      "status": "rejected",
+      "why": "a law firms own channel; legal content is jurisdiction-bound and this is a firm selling services in its own jurisdiction",
+      "at": "batch 46"
     },
     "@leilagharani": {
       "status": "listed",
@@ -974,8 +1004,8 @@
     },
     "@productschool": {
       "status": "collision",
-      "why": "resolves to 'Werner Müller', 1 upload",
-      "at": "batch 20"
+      "why": "already recorded in batch 20; re-probed and still resolves to Werner Muller, 1 upload",
+      "at": "batch 46"
     },
     "@professorpincushion": {
       "status": "listed",
@@ -1026,6 +1056,11 @@
       "status": "listed",
       "why": "Rex Krueger",
       "at": "dataset"
+    },
+    "@saaspricing": {
+      "status": "rejected",
+      "why": "a pricing consultancy clip channel — 43 of 50 uploads under two minutes, three long-form in the recent window",
+      "at": "batch 46"
     },
     "@salarytransparentstreet": {
       "status": "listed",
@@ -1101,6 +1136,11 @@
       "status": "listed",
       "why": "Sober Powered (Gill Tietz)",
       "at": "dataset"
+    },
+    "@sparkhire": {
+      "status": "rejected",
+      "why": "recruiting-software vendor channel",
+      "at": "batch 46"
     },
     "@squatuniversity": {
       "status": "listed",
@@ -1391,6 +1431,11 @@
       "status": "listed",
       "why": "Wireless Philosophy",
       "at": "dataset"
+    },
+    "@workitdaily": {
+      "status": "rejected",
+      "why": "real long-form (14 of 49 over 20m, several 36-52m) but its centre is job search and LinkedIn profiles; job-interviewing is already at 2 and the resume-writing blurb is about the document itself. Reconsider for a job-search category, not career-change",
+      "at": "batch 46"
     },
     "@writingwithandrew": {
       "status": "listed",

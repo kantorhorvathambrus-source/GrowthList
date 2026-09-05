@@ -1,0 +1,180 @@
+[
+  {
+    "id": "firmlearning",
+    "name": "Firm Learning (Heinrich Rusche)",
+    "handle": "@FirmLearning",
+    "channelUrl": "https://www.youtube.com/@FirmLearning",
+    "country": "DE",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "An ex-consultant teaching the mechanics of the job — structuring a problem, building the model, running the project — rather than how to get hired into it.",
+    "longDescription": "He describes himself as a former McKinsey consultant with six years in the job and a stint leading project teams, now in a corporate C-level role. What makes the channel useful is that the teaching is about the work rather than the entry exam: hypothesis-based problem solving explained as a method — start from a day-one answer, break it into testable hypotheses, build a plan that survives time pressure — plus how consulting firms actually build financial models in Excel, what a good project lead does differently, and the vocabulary senior people use. There is also a candid strand on the trade the job asks for, including a direct treatment of what consulting does to family life. The channel is mostly short: {{shortCountWords}} of the {{scannedWords}} most recent uploads run two minutes or less, the median upload is {{medianPhrase}}, and none reach twenty. Recent output leans on whether AI displaces consultants, which is commentary rather than teaching.",
+    "notFor": "Anyone wanting case-interview drilling to get a consulting offer — that is a different genre and this is deliberately not it. Also not for someone who wants depth in one sitting; the substance is spread across many short videos.",
+    "formatTags": [
+      "tutorial",
+      "shorts"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "consulting",
+        "strength": "primary",
+        "why": "The diagnosis and framing the category blurb calls the real value, taught as a method by someone who did the job — against a training business teaching how to sell the service.",
+        "evidence": "A 10-minute treatment of hypothesis-based problem solving from day-one answer to work plan, 12 minutes on how consulting firms build financial models, 13 on what strong project leads do differently, and 12 on the hours the job actually costs.",
+        "entryVideo": {
+          "title": "HOW TO SOLVE ANY PROBLEM - How do consulting firms work (hypothesis-based problem solving explained)",
+          "videoId": "SeZCRlAN7nY",
+          "whyThisOne": "The one transferable thing consulting teaches, explained as a procedure with two worked examples — useful even if you never work in the field.",
+          "durationMin": 10
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "The McKinsey background is self-described on the channel and we have not verified it independently. He sells courses, and the recent catalogue drifts toward AI-and-consulting commentary that is not teaching.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 74,
+      "longPct": 0,
+      "medianMin": 1,
+      "videoCount": 573,
+      "at": "2026-09"
+    },
+    "entity": "individual"
+  },
+  {
+    "id": "impactpricing",
+    "name": "Impact Pricing",
+    "handle": "@impactpricing",
+    "channelUrl": "https://www.youtube.com/@impactpricing",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A long-running interview show about what customers will actually pay, and why the answer is almost never about your costs.",
+    "longDescription": "{{longCountWords|cap}} of the {{scannedWords}} most recent uploads run over twenty minutes and the median is {{medianMinWords}}, which for a subject usually handled in listicles is the point. Guests are pricing practitioners and consultants talking through specific situations: a coach who raised prices fivefold, lost forty per cent of his clients and finished ahead; why deals stall for reasons that have nothing to do with the number; what happens to pricing when the buyer is an AI agent rather than a person. The recurring argument is the one the category is named for — that price follows the value a buyer perceives and their willingness to pay, not what the thing cost to make. There is also a live coaching format where the host works a real pricing problem with the person who has it.",
+    "notFor": "Anyone who wants a formula. These are conversations, the answers are situational, and you have to extract the method yourself. Almost everything is framed for B2B software and consulting rather than physical products or retail.",
+    "formatTags": [
+      "interview",
+      "long-form"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 4
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "pricing-strategy",
+        "strength": "primary",
+        "why": "The only sustained treatment of value-based pricing we found at length — the category's whole premise, argued repeatedly against cost-plus by people who have done it.",
+        "evidence": "30 minutes on a five-fold price rise that lost 40% of clients and made more money, 37 on why buyers stall for reasons other than price, 40 on pricing under AI, and a live coaching format that works one real pricing problem end to end.",
+        "entryVideo": {
+          "title": "Raised Prices 5X, Lost 40% of His Clients... and Made More Money with Robin Waite",
+          "videoId": "DY10P-O5L9U",
+          "whyThisOne": "The category's argument as an actual outcome with numbers attached, including the part people skip — that the right price loses you customers on purpose.",
+          "durationMin": 30
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "The host is a pricing consultant and most guests sell pricing services; the show is a shop window for that trade even when the advice is sound. Interview-shaped, so nothing here is a curriculum.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 86,
+      "medianMin": 32,
+      "videoCount": 452,
+      "at": "2026-09"
+    }
+  },
+  {
+    "id": "coachingforleaders",
+    "name": "Coaching for Leaders (Dr. Dave Stachowiak)",
+    "handle": "@CoachingforLeaders",
+    "channelUrl": "https://www.youtube.com/@CoachingforLeaders",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Eight hundred numbered episodes of long interviews with researchers and practitioners, on the parts of leading a group that are learnable.",
+    "longDescription": "Every one of the {{scannedWords}} most recent uploads runs over twenty minutes and the median is {{medianMinWords}} — the format has not changed since 2011 and the episodes are numbered into the high seven hundreds. The host describes a doctorate and fifteen years at Dale Carnegie, and the guests are named and checkable: a professor of industrial-organisational psychology on designing advancement paths that work for people who do not fit the standard mould, an executive coach on the question that frees up an hour a day, authors on finishing what you start and on building a tolerance for uncertainty. The premise stated on the channel is that leaders are made rather than born, and the episodes treat leadership as a set of specific practices — asking better questions, learning from peers, holding uncertainty — rather than as character.",
+    "notFor": "Anyone who wants to be told what to do. It is a conversation show, most episodes orbit one guest's book, and the useful part has to be lifted out. Nothing here is about managing the mechanics of a team — meetings, one-to-ones, performance — which is a different category.",
+    "formatTags": [
+      "interview",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 3,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 4
+    },
+    "signals": [
+      "credentialed",
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "leadership",
+        "strength": "primary",
+        "why": "A practitioner's counterweight to a business publication — fifteen years of weekly conversations treating leadership as practices you can rehearse rather than as a set of principles to agree with.",
+        "evidence": "40 minutes with an industrial-organisational psychology professor on advancement paths, 38 on charisma with the author who wrote the standard book on it, 39 on tolerating uncertainty, 38 on the delegation question that returns an hour a day, and nearly 800 numbered episodes behind them.",
+        "entryVideo": {
+          "title": "792: Create Leadership Paths That Work for Everyone, with Ludmila Praslova",
+          "videoId": "W-TOOK6-zYo",
+          "whyThisOne": "A named academic on a concrete leadership problem — how people advance, and who gets missed — which shows both the format and the standard of guest before you commit to the archive.",
+          "durationMin": 40
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Guests are usually promoting a book, and the show sells a leadership academy. The doctorate and Dale Carnegie history are self-described on the channel and not independently verified here.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 100,
+      "medianMin": 39,
+      "videoCount": 710,
+      "at": "2026-09"
+    },
+    "entity": "individual"
+  }
+]

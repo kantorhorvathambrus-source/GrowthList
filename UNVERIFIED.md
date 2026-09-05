@@ -1778,3 +1778,53 @@ needs 16, career 15, mindset 13, money 13, marketing 13 — **70 of the
 121 between five domains** — while health, philosophy and programming
 need seven between them. The last four batches have been health,
 creativity and music. That should change.
+
+## Batch 46 — business and career, where the work actually is
+
+Firm Learning (`consulting`, 1→2), Impact Pricing (`pricing-strategy`,
+**0→1**) and Coaching for Leaders (`leadership`, 1→2). Three creators,
+three mappings — marginal 1.00, second-or-later share 0%.
+
+**Two of the three deliberately pair an individual against an
+institution**, which is the entity axis doing the job it was added for.
+`consulting` was held by The Futur, a training business; it now also
+has someone who did the job. `leadership` was held by Harvard Business
+Review; it now also has a practitioner with eight hundred numbered
+episodes. Neither pairing would have registered as diversity under
+`role` alone — all four records say `specialist`.
+
+**Discovery failed on these domains, and the failure is measurable.**
+Business and career are dominated by two things the search returns
+instead of teaching: vendor marketing and motivational content.
+`hiring-and-recruiting` returned a staffing agency, a recruiting-software
+vendor and an assessment platform. `career-change` returned TEDx,
+Forbes, Udacity and Mel Robbins. That is the fifth and sixth measured
+limit — **where the buyer is a business, the long-form is sales; where
+the topic is a life decision with no profession behind it, the
+long-form is motivation.** All three creators in this batch came from
+recall instead, every candidate query-verified before any research.
+
+**`pricing-strategy` opens at 1, not 2.** Impact Pricing is 43 of 50
+uploads over twenty minutes with a median of thirty-two, on a subject
+usually handled in listicles. The obvious second, Willingness to Pay,
+is a consultancy's clip channel — 43 of 50 uploads *under* two minutes.
+A category at 1 is honest; a category at 2 padded with a clip feed is
+not.
+
+**Work It Daily is the interesting rejection.** Genuinely substantial —
+fourteen of forty-nine uploads over twenty minutes, several past forty
+— but its centre is job search and LinkedIn profiles, and
+`job-interviewing` is already at 2 while the `resume-writing` blurb is
+about the document itself. Recorded with the reason, because it would
+be a good fit for a job-search category we do not have.
+
+**The interpolation mechanism produced its first error, and it was
+mine.** Firm Learning's sentence rendered as "the median is one
+minutes". A placeholder that can only emit a bare numeral pushes
+grammatical agreement onto whoever writes the sentence — which is how a
+mechanism built to remove hand-typed facts starts introducing errors of
+its own. Fixed in the mechanism, not the sentence: `{{medianPhrase}}`
+carries its unit and pluralises.
+
+**Depth after this batch: 96 of 197 at target with active creators**,
+100 on paper. 118 mappings still needed.

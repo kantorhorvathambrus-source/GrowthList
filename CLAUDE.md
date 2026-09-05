@@ -720,14 +720,15 @@ in `categories.json`-derived output with a computed creator `count`.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research). **Batches 01–45 are
+- **Current phase**: Phase 2 (creator research). **Batches 01–46 are
   written, gated, validated and committed.**
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
 - **PHASE 2 CLOSING ARITHMETIC (measured at 233 creators, against
   ACTIVE creators — the paper count is 4 categories more generous).**
-  18 categories have no active creator, 85 have one. **121 mappings
-  still needed**, ≈**113 creators** at the current 1.08 marginal ratio,
-  leaving **54 of the 400 cap** for the depth-3 priority list.
+  Measured again after batch 46: **96 of 197 at target with active
+  creators** (100 on paper). 17 categories have no active creator, 84
+  have one — **118 mappings still needed**, ≈110 creators, leaving ~54
+  of the 400 cap for the depth-3 priority list.
   At the measured recent rate of **2.31 creators/batch (30 over batches
   33–45) that is 49 batches**; at the 5/batch that discovery-assisted
   batches should support, **23**. Treat 23 as the target and 49 as what
@@ -735,7 +736,7 @@ this section first to know exactly where to resume.)*
   The work is not where the depth pass has been: **business 16,
   career 15, mindset 13, money 13, marketing 13** — 70 of the 121 —
   while health, philosophy and programming need 7 between them.
-- **Creator count: 233 of 400.** Taxonomy 197 and **uncapped** (rule 19)
+- **Creator count: 236 of 400.** Taxonomy 197 and **uncapped** (rule 19)
   — a new category may be added whenever it arrives with 3 creators.
 - **Fitness is complete at 2+ across all 14 categories** (3 at depth 3).
 - **182 of 197 categories populated; 15 empty.** Practical is 13/13.
@@ -814,6 +815,27 @@ this section first to know exactly where to resume.)*
   from 197×2, which silently counted surplus depth as progress. The
   owner chose the target on the wrong number; the direction survives the
   correction and the number did not.
+- **THE FORGOTTEN KNOWN — a class of its own.** The clear-before-write
+  pattern was **already in this repository**, correct, in
+  `build-data.mjs`, explained in that file's own comment. It did not
+  transfer to a script written weeks later for the same job. That is
+  not an unknown and not a wrong belief: it is a solved problem that
+  did not travel. Distinct from the other classes — nothing was stale,
+  no schema failed, no number was unproduced — and the owner's read is
+  that it is probably **more common than either of us would guess**,
+  because it leaves no trace. A stale fact drifts visibly; a forgotten
+  known just quietly fails to appear in the next place it was needed.
+  **Before writing a new script, grep the repo for the problem it
+  solves.** The answer may already be here with its reasoning attached.
+- **AN INEXPRESSIBLE GAP ESCALATES; IT NEVER GETS AN INVENTED VALUE.**
+  The standard response wherever a closed vocabulary cannot say "we
+  could not check": no placeholder, no best guess, no silently retained
+  old value — **exit non-zero and name the record.**
+  `audit-status.mjs` does this when a channel stops resolving, because
+  `status` has no way to express the doubt. Where a gap *is* expressible
+  the rule is the opposite and equally firm: leave it unset, as
+  `derive-entity.mjs` does for its 73 ambiguous records. Wrong confident
+  values are the thing both rules exist to prevent.
 - **A SCRIPT THAT WRITES A DERIVED FIELD MUST CLEAR BEFORE IT WRITES.**
   Seventh instance of a stored fact that stopped being queried, and the
   first *inside the defence itself*: `derive-entity.mjs --write` only
@@ -1286,6 +1308,14 @@ returns marketing: `posture` returned clinic channels, an insurance
 broker and two chair vendors. (4) Where the topic word names the MEDIUM
 it returns instances of the medium: `podcasting` came back as Joe Rogan,
 NPR, GQ and the Daily Beast rather than anyone teaching podcasting.
+(5) Where the BUYER IS A BUSINESS the long-form is sales:
+`hiring-and-recruiting` returned a staffing agency, a recruiting-software
+vendor and an assessment platform. (6) Where the topic is a LIFE
+DECISION with no profession behind it the long-form is motivation:
+`career-change` returned TEDx, Forbes, Udacity and Mel Robbins.
+**Limits 5 and 6 cover most of business and career**, which is where 70
+of the remaining 118 mappings sit — so plan on recall plus
+`check-handles` there, not on discovery.
 **So it supplements recall, it does not replace it, and a category probed only this way has been probed at one
 end** — which is a rule 18 obligation, not a caveat.
 
