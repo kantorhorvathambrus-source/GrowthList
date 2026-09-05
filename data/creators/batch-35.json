@@ -1,0 +1,84 @@
+[
+  {
+    "id": "andrejkarpathy",
+    "name": "Andrej Karpathy",
+    "handle": "@AndrejKarpathy",
+    "channelUrl": "https://www.youtube.com/@AndrejKarpathy",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Neural networks built from an empty file, one two-hour lecture at a time, by someone who did this work at the top of the field.",
+    "longDescription": "Seventeen uploads, thirteen of them over eight minutes, median a hundred and fifteen. There is no filler here at all. The spine is the Zero to Hero sequence: backpropagation built from scratch in micrograd, then language modelling built up across five makemore parts, then GPT written line by line, then a tokenizer, then GPT-2 reproduced at 124 million parameters across four hours. Nothing is imported that has not first been built. Alongside it sit two long orientation pieces — a one-hour introduction to large language models and a three-and-a-half-hour deep dive aimed at people who use them rather than train them — and a separate, more practical hundred-and-thirty-minute video on how he actually uses these tools day to day. Uploads are rare and the most recent in the scanned window is February 2025.",
+    "notFor": "Anyone in a hurry, and anyone without comfortable Python and some calculus. These are lectures, not tutorials — the shortest useful one is an hour.",
+    "formatTags": ["lecture", "long-form", "course"],
+    "level": ["intermediate", "advanced"],
+    "profile": { "evidenceBased": 4, "practical": 4, "energy": 2, "selfPromotion": 1, "depth": 4 },
+    "signals": ["credentialed", "practitioner", "cites-research"],
+    "categories": [
+      {
+        "id": "machine-learning-engineering",
+        "strength": "primary",
+        "why": "Every abstraction is built before it is used — backpropagation, then a language model, then a transformer, then a tokenizer — which is the only way the later engineering decisions stop being guesswork.",
+        "evidence": "The Zero to Hero sequence: micrograd and backpropagation from scratch (146m), five makemore parts building up language modelling (76–118m each), GPT written from scratch (116m), the tokenizer (134m), and GPT-2 reproduced at 124M parameters (241m).",
+        "entryVideo": {
+          "title": "The spelled-out intro to neural networks and backpropagation: building micrograd",
+          "videoId": "VMj-3S1tku0",
+          "whyThisOne": "The foundation everything else in the series stands on, built from nothing in one sitting. If this lands, the rest of the sequence is worth clearing time for.",
+          "durationMin": 146
+        }
+      },
+      {
+        "id": "building-with-llms",
+        "strength": "secondary",
+        "why": "A separate strand aimed at people who use these systems rather than train them — different videos entirely from the from-scratch series, and unusually candid about what the tools are bad at.",
+        "evidence": "A 131-minute account of how he personally uses large language models day to day, a 60-minute general introduction for non-specialists, and a 211-minute deep dive on how the systems behave and why.",
+        "entryVideo": {
+          "title": "How I use LLMs",
+          "videoId": "EWvNQjAaOHw",
+          "whyThisOne": "Practice rather than theory, from someone who knows exactly how the machine works — which makes the limitations he names more credible than most advice on this subject.",
+          "durationMin": 131
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Uploads are infrequent and the most recent in the scanned window is February 2025, so tooling specifics have moved. The from-scratch approach is superb for understanding and is not how anyone ships production systems."
+  },
+  {
+    "id": "jackherrington",
+    "name": "Jack Herrington",
+    "handle": "@jherr",
+    "channelUrl": "https://www.youtube.com/@jherr",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Current React and frontend architecture explained at ten minutes a time, including which new things are not worth adopting.",
+    "longDescription": "Sixty-nine long-form videos in two hundred uploads, median around eight minutes, and the subject is the frontend as it currently is rather than as it was when a course was recorded — React Server Components and partial caching, the React compiler, new hooks assessed rather than announced. The useful habit is scepticism: one video asks whether a new hook is a genuine improvement or a gimmick and answers it, which is rarer than it should be in a field whose content economy rewards enthusiasm. He goes deep on specific libraries too, including a hundred-minute session on one ecosystem. Some recent uploads have drifted toward AI tooling, but the frontend material is current and is still the bulk of it.",
+    "notFor": "Beginners — this assumes React is already familiar and you are trying to keep up rather than start. Framework-specific and moves fast, so older videos date quickly.",
+    "formatTags": ["tutorial", "video-essay"],
+    "level": ["intermediate", "advanced"],
+    "profile": { "evidenceBased": 3, "practical": 4, "energy": 3, "selfPromotion": 2, "depth": 3 },
+    "signals": ["practitioner", "sells-course", "sponsor-heavy"],
+    "categories": [
+      {
+        "id": "web-frontend",
+        "strength": "primary",
+        "why": "Keeps pace with a field that changes faster than any course can, and judges new features rather than announcing them — which is the skill this category actually needs.",
+        "evidence": "Videos on React Server Components and partial page caching, the React compiler, and an assessment of a new hook framed explicitly as improvement-or-gimmick, plus long-form on state and data libraries.",
+        "entryVideo": {
+          "title": "Partial Page Caching Using React Server Components",
+          "videoId": "t9xB8xvySyo",
+          "whyThisOne": "A concrete current technique explained in nine minutes, which is a fair sample of both the depth and the pace.",
+          "durationMin": 9
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Sponsored segments are frequent and several recent videos are built around AI developer tools. Highly React-specific: little here transfers to other frameworks, and the fast-moving subject means anything over a year old should be checked."
+  }
+]

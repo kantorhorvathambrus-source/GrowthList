@@ -959,3 +959,31 @@ in populated categories are disproportionately channels that pivoted.
 Getting to eight would mean either loosening what counts as a body of
 work, or spending the probe budget on less famous channels — the second
 is the right answer and is slower per candidate, not faster.
+
+## Batch 35 — the second mapping that passed the test
+
+Andrej Karpathy (`machine-learning-engineering`, `building-with-llms`)
+and Jack Herrington (`web-frontend`). Marginal 1.50, second-or-later
+share 33% — the first batch of the depth pass where a creator took two
+categories.
+
+**It is worth showing why that one passed where Farcic's failed**, since
+these are the two data points the scope-pressure metric now exists to
+compare.
+
+Karpathy's two mappings rest on **entirely different videos**. The
+machine-learning-engineering mapping is the Zero to Hero sequence —
+micrograd, five makemore parts, GPT from scratch, the tokenizer, GPT-2
+reproduced — roughly eighteen hours of building things from an empty
+file. The building-with-llms mapping is a separate strand aimed at people
+who *use* these systems: a 131-minute account of his own daily practice
+and a 60-minute introduction for non-specialists. No video supports both
+claims.
+
+Farcic's failed on exactly that point: his delivery-pipeline and
+Kubernetes evidence was **the same ninety-minute Q&A streams**. Same
+competence in two areas, one body of work.
+
+The test is doing what it should — permitting a second mapping when the
+evidence is genuinely separate, refusing one when it is the same material
+described twice.
