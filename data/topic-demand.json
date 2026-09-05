@@ -1,0 +1,24 @@
+{
+  "_comment": "Median view count of the 50 most relevant YouTube videos for each category's own name and top two aliases. Measured at batch 47 to answer one question: are our thin categories niche subjects or obvious ones? IT IS NOT TRAFFIC. This site has no analytics, the home page lists all 197 categories equally with no featured subset, and nothing here knows which category a visitor arrives at. This measures appetite for the SUBJECT among people already watching video about it — a real number with a narrow meaning. Our visitors are self-selected people who came to a curated directory and may want precisely what the mass audience ignores. One input to a judgement, never the judgement.",
+  "_method": "scripts/topic-demand.mjs — search.list 50 videos, videos.list for statistics, median of viewCount. 101 quota units per category.",
+  "measuredAt": "2026-09",
+  "coverage": "41 of the 100 categories below depth 2 were measured: all 17 empties and a 24-category sample of the 83 at one creator, chosen to span every domain. 59 single-creator categories are UNMEASURED and any ranking below is silent about them.",
+  "medianViews": {
+    "animation": 1100000, "ai-fundamentals": 980000, "body-language": 955000,
+    "stoicism": 620000, "self-discipline": 575000, "sleep-quality": 537000,
+    "emotional-regulation": 501000, "gardening": 469000, "habit-formation": 425000,
+    "decluttering-and-organizing": 393000, "hiring-and-recruiting": 388000,
+    "confidence-building": 377000, "personal-budgeting": 335000,
+    "prompt-engineering": 300000, "resume-writing": 269000, "dating-skills": 253000,
+    "negotiation": 239000, "salary-negotiation": 226000, "debt-payoff": 221000,
+    "real-estate-investing": 201000, "video-editing": 186000,
+    "couples-communication": 182000, "travel-planning": 144000,
+    "setting-boundaries": 144000, "insurance-basics": 104000, "saas-business": 102000,
+    "paid-ads": 86000, "making-friends-as-an-adult": 66000, "product-management": 63000,
+    "career-change": 23000, "operations-and-process": 23000, "copywriting": 10000,
+    "goal-setting": 7000, "decision-making": 5000, "cognitive-biases": 495,
+    "conversion-optimization": 312, "workplace-politics": 278,
+    "social-media-growth": 233, "legal-for-founders": 134, "resilience": 118,
+    "remote-work": 46
+  }
+}
