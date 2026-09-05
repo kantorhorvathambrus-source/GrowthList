@@ -716,13 +716,15 @@ in `categories.json`-derived output with a computed creator `count`.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research). **Batches 01–43 are
+- **Current phase**: Phase 2 (creator research). **Batches 01–44 are
   written, gated, validated and committed.**
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
-- **Creator count: 228 of 400.** Taxonomy 197 and **uncapped** (rule 19)
+- **Creator count: 231 of 400.** Taxonomy 197 and **uncapped** (rule 19)
   — a new category may be added whenever it arrives with 3 creators.
 - **Fitness is complete at 2+ across all 14 categories** (3 at depth 3).
 - **182 of 197 categories populated; 15 empty.** Practical is 13/13.
+  **Against the depth-2 target: 96 categories are done, 86 sit at 1,
+  15 at 0.**
 - **Depth pass started (batch 32).** With the goal at 3, the faster path
   is depth in populated categories, not the last 17 hard empties.
   Full: fitness, communication, creativity, learning, philosophy,
@@ -735,12 +737,15 @@ this section first to know exactly where to resume.)*
   — `travel-planning`, `camping-and-outdoor-skills`,
   `personal-style-and-grooming` — are filled.
 - **Health is the current depth pass (batch 42 on).** 12 categories.
-  `gut-health` is no longer empty — the gastroenterology end was probed
-  in batch 43 and produced two listable creators on the first attempt,
-  which is the sixth instance of an unfinished search having been
-  mistaken for an absent field. Still at 1: `breathwork`, `meditation`,
-  `posture-and-ergonomics`, `sleep-quality`, `sports-nutrition`. The
-  unprobed ends for the first three are named in the batch-43 entry.
+  `gut-health` filled from the gastroenterology end in batch 43;
+  `sports-nutrition`, `posture-and-ergonomics` and `meditation` reached
+  2 in batch 44. Still at 1: **`breathwork`, `fat-loss` is at 2,
+  `sleep-quality`**. Breathwork was probed at the physiology-lecture,
+  Buteyko and coaching ends and produced nothing that was not a second
+  copy of the frame already there; the respiratory-physiotherapy,
+  wind-instrument and clinical-anxiety ends are unprobed. Sleep's
+  long-form search is swamped by sleep-aid audio, which is a limit of
+  the search, not a finding about the field.
 - **Relationships has no critic anywhere** (rule 11 — flagged, not
   filled). `making-friends-as-an-adult` is the one empty category left in
   the domain.
@@ -772,10 +777,38 @@ this section first to know exactly where to resume.)*
 - **Categories with a dissenting voice: 30 of 181**, carried by 21
   critic creators out of 225. A target since 200 creators, not a
   validator rule — see rule 11.
-- **Depth goal is 3 per category**, restated from 5 at 200 creators.
-  400 creators × the 1.46 ratio the scope rule produces = 3.0 per
-  category; 5 everywhere needs ~675 creators. The scope rule does not
-  move, so the number did. 5 stays an aspiration where earned.
+- **DEPTH TARGET IS 2 PER CATEGORY**, restated from 3 at 231 creators
+  (from 5 at 200 before that). Three restatements is itself the finding:
+  each one chased a mapping ratio that was falling for a structural
+  reason, not a fixable one. **A depth pass yields 1.00 by
+  construction** — it names one thin category and fills it with a
+  specialist who legitimately belongs only there, and rule 4's
+  double-counting test forbids the second mapping that would lift the
+  ratio. That was knowable before it was predicted otherwise; it is in
+  the rule 18 ledger as `depth-pass-raises-the-ratio`.
+  The arithmetic that settles the number: depth 3 across 197 categories
+  needs 591 mappings against 326 held, and the creators left under the
+  400 cap would have to arrive at a 1.56 ratio — higher than the project
+  has ever sustained even when every category was empty.
+  **Measure the distance per category, never as a total.** Mappings are
+  not fungible: a category already at 4 does not help one at 0. The
+  correct figure is `2×(categories at 0) + (categories at 1)` — 116
+  mappings, about 108 creators at the current 1.08 marginal. I first
+  reported this as 71 mappings and ~66 creators by subtracting the total
+  from 197×2, which silently counted surplus depth as progress. The
+  owner chose the target on the wrong number; the direction survives the
+  correction and the number did not.
+- **THREE IS EARNED, AND SPENT DELIBERATELY.** The ~61 creators of
+  headroom past depth 2 do not go to whichever category is being
+  researched. `scripts/lib/depth3.mjs` ranks the claims, printed by the
+  coverage report: **high-stakes** categories (rule 12) first, then
+  **jurisdiction-split** ones (rule 16), then ones where **the two
+  existing creators agree with each other** — same role, no critic,
+  overlapping stance signals. That third test is the one that has to be
+  computed rather than recalled: agreement is invisible from a category
+  page, because both records look fine on their own. `injury-rehab` is
+  the current worst case — E3 Rehab and Squat University, same role,
+  100% stance overlap, and high-stakes on top.
 - **Rule 17's classification machinery is RETIRED.** The saturation
   measurement stays in the coverage report; `cause`/`placement` and the
   category-page standing notes are gone. It never prevented an error and
@@ -1046,6 +1079,42 @@ The bottleneck was never quota — a batch costs 150–250 units of a
 10,000 daily allowance. It is the volume of evidence output that has to
 be read and the editorial prose that has to be written against it (79%
 of every record is hand-written prose). These rules cut the reading.
+
+**GENERATE CANDIDATES BY QUERY, NOT BY RECALL — `scripts/discover.mjs`.**
+For forty-three batches candidate handles came out of my own memory, and
+by batch 43 that was producing dead channels, shorts-only channels,
+wrong-audience channels and handle collisions at a rate that made the
+reading the bottleneck: ~38 recalled probes and seven evidence dumps to
+accept three creators. `discover.mjs` searches for LONG videos on a
+topic, reports the channels behind them ranked by share of the results,
+and labels each against `probed.json` before a single evidence call is
+spent. Validated on `gut-health`, where I had ground truth: it returned
+`@gastrogirl` at rank two — one of the two creators I had just accepted
+— plus `@sameerislammd`, whose real handle three recalled guesses had
+all missed.
+
+**The policy it replaces was right in the context it was written for.**
+`search.list` costs 100 units and was kept as a fallback because for
+NAME RESOLUTION it is expensive per answer and often wrong. That is
+true. I generalised it to CANDIDATE DISCOVERY, where 100 units buys
+forty candidates at once, and never tested it there. **Fifth instance of
+a rule validated in one sub-area and applied to one never tested** —
+the same shape as the four in the rule 18 ledger, this time in a policy
+rather than a claim.
+
+**Where discovery works and where it does not.** It is strong when the
+topic maps to a profession with a talking-head culture: gut-health
+returned practising gastroenterologists immediately. It is weak in three
+measured ways. (1) `videoDuration=long` means over twenty minutes, so a
+small dense catalogue never ranks — Dr. Will Bulsiewicz (45 uploads,
+median 15m) does not appear for gut-health while a 2,171-upload channel
+does. (2) Where the topic word also names an audio product it returns
+the product: `meditation` and `sleep-quality` come back as guided-audio
+and sleep-music libraries. (3) Where the long-form is marketing it
+returns marketing: `posture` returned clinic channels, an insurance
+broker and two chair vendors. **So it supplements recall, it does not
+replace it, and a category probed only this way has been probed at one
+end** — which is a rule 18 obligation, not a caveat.
 
 **A near-empty channel that passes the gate is not an answer.**
 `resolveCreator` treats any handle-path match with fewer than

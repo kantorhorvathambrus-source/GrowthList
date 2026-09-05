@@ -408,11 +408,16 @@ if (creators.length > 0) {
     }
 
     if (list.length === 0 && !FINAL) { untouched++; continue; }
-    // DEPTH GOAL IS 3, not 5. At the mapping ratio the scope rule actually
-    // produces (1.46/creator), 400 creators lands at 3.0 per category; 5
-    // everywhere would need ~675. The owner's call: keep the scope rule, move
-    // the number. 5 remains an aspiration for categories that earn it.
-    if (list.length < 3) cover(where, `only ${list.length} creators, target 3`);
+    // DEPTH TARGET IS 2, restated at 228 creators. It was 5, then 3, and each
+    // restatement chased a mapping ratio that was falling for a structural
+    // reason rather than a fixable one. The arithmetic that settled it: depth
+    // 3 across 197 categories needs 591 mappings; 323 exist; the 172 creators
+    // left under the 400 cap would have to arrive at a 1.56 ratio, higher
+    // than the project has ever sustained even when every category was empty.
+    // Depth 2 needs 394 and is reachable. THREE IS NOT ABANDONED — it is
+    // earned, and spent deliberately (see DEPTH_3_PRIORITY below) rather than
+    // wherever research happens to be pointing.
+    if (list.length < 2) cover(where, `only ${list.length} creators, target 2`);
 
     // A CRITIC IS A TARGET, NOT A RULE. It was a validator failure until 200
     // creators, at which point 29 of 180 populated categories had one — a

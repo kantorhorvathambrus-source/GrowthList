@@ -13,6 +13,7 @@
 import { readFileSync, existsSync, readdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { depth3Priority } from './lib/depth3.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const read = (p) => JSON.parse(readFileSync(join(ROOT, p), 'utf8'));
@@ -48,8 +49,12 @@ if (existsSync(join(ROOT, 'data/findings-ledger.json'))) {
   console.log(`Of the ${bad.length} wrong: ${shipped.length} had REACHED VISITORS before being caught, ${bad.length - shipped.length} were caught internally.`);
   console.log('');
   console.log('Read that as a description of the process, not an indictment of the data.');
-  console.log('The alternative to six wrong claims found was not six correct claims —');
-  console.log('it was six wrong ones nobody checked. The number that separates a process');
+  // Computed, not typed. This paragraph said "six" for eight batches after the
+  // count moved past six — a number about our own process, hardcoded from a
+  // spec, which is precisely the inward-facing class rule 18 exists to catch.
+  const wrong = bad.length;
+  console.log(`The alternative to ${wrong} wrong claims found was not ${wrong} correct claims —`);
+  console.log(`it was ${wrong} wrong ones nobody checked. The number that separates a process`);
   console.log('finding its own errors from a dataset shipping them is the second one.\n');
   for (const c of claims) {
     const missing = (c.subAreas ?? []).filter((a) => !(c.probedWhenMade ?? []).includes(a));
@@ -174,6 +179,39 @@ const totalMaps = retro.length + firstPass;
 // widely, which is either the data having been under-mapped or the bar
 // drifting. If the second-or-later share rises FASTER than the ratio, it is
 // the bar.
+// THE DEPTH TARGET IS 2, AND THE HEADROOM IS SPENT ON PURPOSE.
+// Restated at 228 creators: depth 3 across 197 categories needs 591 mappings
+// against 323 held, and the 172 creators left under the cap would have to
+// arrive at a 1.56 ratio the project has never sustained. Depth 2 needs 394.
+// What follows is where the third voice goes once a category has two — the
+// owner's instruction being that it not go to whichever category research
+// happens to be pointing at. See lib/depth3.mjs for what each claim means.
+{
+  const hsP = join(ROOT, 'data/high-stakes.json');
+  const juP = join(ROOT, 'data/jurisdiction.json');
+  const rows = depth3Priority({
+    categories: cats,
+    creators,
+    highStakes: existsSync(hsP) ? read('data/high-stakes.json') : null,
+    jurisdiction: existsSync(juP) ? read('data/jurisdiction.json') : null,
+  });
+  console.log('\n\nDEPTH 3 PRIORITY — where a third voice changes what a visitor gets');
+  console.log('='.repeat(72));
+  console.log('Categories at exactly 2, ranked by claim on the remaining creators.');
+  console.log('A category at 2 with no claim listed is finished as far as the');
+  console.log('target goes — this is a spending order, never a failure.\n');
+  if (!rows.length) {
+    console.log('  none — no category at 2 carries a claim.');
+  } else {
+    for (const r of rows) {
+      console.log(`  [${r.rank}] ${r.id}  (${r.domain})`);
+      console.log(`      ${r.reasons.join('; ')}`);
+      console.log(`      currently: ${r.who.join(', ')}`);
+    }
+    console.log(`\n  ${rows.length} categories at 2 with a claim on the headroom.`);
+  }
+}
+
 {
   const dir = join(ROOT, 'data/creators');
   const files = existsSync(dir) ? readdirSync(dir).filter((f) => /^batch-\d{2}\.json$/.test(f)).sort() : [];

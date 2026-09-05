@@ -201,9 +201,29 @@
       "note": "Caught by the enforcement written in the same batch, not by review. The check found its author's error within minutes of existing.",
       "reachedVisitors": true,
       "reachedVisitorsNote": "In the site footer, in the paragraph about what we collect."
+    },
+    {
+      "id": "depth-pass-raises-the-ratio",
+      "claim": "The falling marginal mapping ratio was partly a search artefact of single-target fills, and the depth pass would push it back up as categories filled out.",
+      "madeAt": "batch 32",
+      "testedAt": "batch 43",
+      "status": "falsified",
+      "subAreas": [
+        "whether single-target fills were depressing the measured ratio",
+        "whether a depth pass can produce a ratio above 1.0 at all"
+      ],
+      "probedWhenMade": [
+        "whether single-target fills were depressing the measured ratio"
+      ],
+      "found": "Batches 33-43 ran at a 1.08 marginal ratio across 25 creators — lower than when the claim was made, not higher. The reason was available without any measurement: a depth pass names one thin category and fills it with a specialist who legitimately belongs only there, and rule 4's double-counting test forbids the second mapping that would lift the ratio. A depth pass yields 1.00 by construction. The mechanism was knowable before the prediction was made; I checked the first sub-area and asserted the second.",
+      "survives": "Nothing of the prediction. The narrower observation it rested on stands: single-target fills do measure at 1.00, which is why the ratio fell. That was the mechanism, not an artefact obscuring one.",
+      "correctionIn": "Depth target restated from 3 to 2 in scripts/validate.mjs and CLAUDE.md; the arithmetic that settles it recorded with the change. Headroom past depth 2 now allocated by scripts/lib/depth3.mjs rather than by whichever category is being researched.",
+      "note": "SECOND PROJECTION OF THIS KIND. The first was 'depth 5 everywhere is reachable at 400 creators', restated to 3 at batch 32 and now to 2. Both were forecasts about our own process rather than about YouTube, and both were made without testing the mechanism that drives the number. The owner's ruling: a prediction about our own process belongs in this ledger alongside claims about it — same class, same standard. Consequence for the live estimate: a 31-batch projection for the remaining 172 creators is recorded in UNVERIFIED.md explicitly discounted on this record.",
+      "reachedVisitors": false,
+      "reachedVisitorsNote": "Internal only. The depth number has never appeared in visitor-facing copy; the colophon computes what the data actually shows rather than stating a target, which is the rule-18 fix from batch 26 doing its job."
     }
   ],
-  "_framing": "How to state this ledger, per the owner: the honest framing is that this project tested ten of its own claims and found six wrong — and the alternative was NOT six correct claims, it was six wrong ones nobody checked. Report both numbers together: how many were falsified, and how many had REACHED VISITORS before being caught. The second is the difference between an internal process finding its own errors and a dataset that shipped them.",
+  "_framing": "How to state this ledger, per the owner: the honest framing is that this project tested N of its own claims and found M wrong — and the alternative was NOT M correct claims, it was M wrong ones nobody checked. BOTH NUMBERS ARE COMPUTED FROM THIS FILE, never typed: the paragraph read \"six\" for eight batches after the count had moved past six, which is the inward-facing class of rule 18 appearing inside rule 18ʼs own report. Report both numbers together: how many were falsified, and how many had REACHED VISITORS before being caught. The second is the difference between an internal process finding its own errors and a dataset that shipped them.",
   "whatTheChecksCaught": {
     "note": "The clearest evidence the automated checks paid for themselves, to be cited in the final report.",
     "case": "At batch 36, five stored domain-note measurements had drifted as the dataset grew — fitness/sells-course 14/15 to 17/18, programming/practitioner 14/14 to 25/25, programming/sells-course 10/14 to 15/25, fitness/practitioner 15/15 to 18/18, tech/practitioner 9/11 to 10/12.",

@@ -202,6 +202,11 @@
       "why": "Bullet Journal (Ryder Carroll)",
       "at": "dataset"
     },
+    "@buteykoclinicinternational": {
+      "status": "rejected",
+      "why": "the same Buteyko tradition Oxygen Advantage already carries — doubling the frame, not adding a second voice",
+      "at": "batch 44"
+    },
     "@buzzsprout": {
       "status": "listed",
       "why": "Buzzsprout",
@@ -342,6 +347,11 @@
       "why": "resolves to a different Dave Gray — 'Possibilitarian at School of the Possible', a visual-th",
       "at": "batch 34"
     },
+    "@declutterthemind": {
+      "status": "listed",
+      "why": "Declutter The Mind",
+      "at": "dataset"
+    },
     "@dementiacareblazers": {
       "status": "listed",
       "why": "Dementia Careblazers (Dr. Natali Edmonds)",
@@ -356,6 +366,11 @@
       "status": "collision",
       "why": "2 uploads",
       "at": "batch 43"
+    },
+    "@docjenfit": {
+      "status": "rejected",
+      "why": "reputation drift — a DPT known for mobility work, whose recent long-form is a general wellness podcast: breast implant illness, technology addiction, sarcopenia. Not posture",
+      "at": "batch 44"
     },
     "@docsameer": {
       "status": "collision",
@@ -420,6 +435,11 @@
     "@e3rehab": {
       "status": "listed",
       "why": "E3 Rehab",
+      "at": "dataset"
+    },
+    "@eatforendurance": {
+      "status": "listed",
+      "why": "Eat for Endurance (Claire Shorenstein)",
       "at": "dataset"
     },
     "@effortlessswimming": {
@@ -596,6 +616,11 @@
       "status": "listed",
       "why": "James Shack",
       "at": "dataset"
+    },
+    "@jasonstephensonmeditation": {
+      "status": "rejected",
+      "why": "sleep and ambient meditation audio — a listening product rather than a practice",
+      "at": "batch 44"
     },
     "@jeffersonfisher": {
       "status": "listed",
@@ -825,6 +850,11 @@
     "@nutritionmadesimple": {
       "status": "listed",
       "why": "Nutrition Made Simple! (Dr. Gil Carvalho)",
+      "at": "dataset"
+    },
+    "@oliviergirard": {
+      "status": "listed",
+      "why": "Olivier Girard - the Posture Guy",
       "at": "dataset"
     },
     "@oxfordunion": {
@@ -1172,6 +1202,11 @@
       "why": "Matthew Hussey",
       "at": "dataset"
     },
+    "@themindfulmovement": {
+      "status": "rejected",
+      "why": "guided-audio library that duplicates what the category already has, with no situational indexing to distinguish it",
+      "at": "batch 44"
+    },
     "@themoderncoder": {
       "status": "listed",
       "why": "The Modern Coder",
@@ -1297,6 +1332,11 @@
       "why": "reputation drift — Founder vlogs and travel diaries. She states the pivot herself in the channel description.",
       "at": "batch 32"
     },
+    "@vipassanameditation": {
+      "status": "rejected",
+      "why": "organisation channel for a specific retreat network rather than teaching a visitor can use",
+      "at": "batch 44"
+    },
     "@vo2maxproductions": {
       "status": "listed",
       "why": "Vo2maxProductions (Sage Canaday)",
@@ -1336,6 +1376,11 @@
       "status": "listed",
       "why": "Yoga with Kassandra",
       "at": "dataset"
+    },
+    "@yuttadhammo": {
+      "status": "rejected",
+      "why": "a monastic teacher with 2,257 uploads whose recent catalogue is a weekly two-hour Q&A livestream — same refusal as Plum Village, an undifferentiated stream archive with no entry point",
+      "at": "batch 44"
     }
   }
 }

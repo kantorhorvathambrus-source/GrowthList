@@ -1,0 +1,107 @@
+[
+  {
+    "id": "eatforendurance",
+    "name": "Eat for Endurance (Claire Shorenstein)",
+    "handle": "@eatforendurance",
+    "channelUrl": "https://www.youtube.com/@eatforendurance",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A board-certified sports dietitian on fuelling endurance training, in episodes long enough to actually finish a subject.",
+    "longDescription": "Twenty-three of the fifty most recent uploads run over twenty minutes and many pass an hour: ninety-two minutes on iron deficiency in athletes, eighty-seven on how much protein athletes actually need, seventy-seven on why endurance athletes get gastrointestinal trouble and what to do about it, fifty-five on when fibre helps and when it gets in the way. The register is unusual for the subject — she reflects on how the advice itself has moved, naming high-carbohydrate fuelling and individual sweat-sodium testing as trends and saying where she thinks athletes should be cautious, which is a different posture from a channel selling a protocol. Guests are named and carry the same credentials she does. Recent episodes also take on GLP-1 medication in active people, including her own experience of it, and an elite runner managing Crohn's disease alongside training.",
+    "notFor": "Anyone who wants a plan on a page. These are hour-long conversations, the answers are conditional, and there is no beginner on-ramp — it assumes you already train.",
+    "formatTags": ["interview", "long-form", "shorts"],
+    "level": ["intermediate", "advanced"],
+    "profile": { "evidenceBased": 4, "practical": 4, "energy": 2, "selfPromotion": 2, "depth": 4 },
+    "signals": ["credentialed", "practitioner", "sells-course"],
+    "categories": [
+      {
+        "id": "sports-nutrition",
+        "strength": "primary",
+        "why": "The endurance half of the subject, which the category otherwise covers only from the strength-and-physique side — fuelling a long session, and the deficiencies that quietly wreck one.",
+        "evidence": "92 minutes on iron deficiency in athletes, 87 on protein requirements with a second board-certified sports dietitian, 77 on gastrointestinal trouble in endurance athletes, 55 on fibre timing, and 29 reviewing which sports-nutrition trends of the last seven years held up.",
+        "entryVideo": {
+          "title": "7 Ways Sports Nutrition Has Changed Since I Started Podcasting",
+          "videoId": "R9AbAbWf3cw",
+          "whyThisOne": "Orients you in a field where the advice has genuinely moved, and shows her naming the trends she thinks are overdone — which tells you how to read everything else on the channel.",
+          "durationMin": 29
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "She sells one-to-one nutrition coaching to athletes, which is the service the podcast advertises. Everything is podcast-shaped: no visuals, no structure to work through, and an hour is a normal length."
+  },
+  {
+    "id": "oliviergirard",
+    "name": "Olivier Girard - the Posture Guy",
+    "handle": "@oliviergirard",
+    "channelUrl": "https://www.youtube.com/@oliviergirard",
+    "country": "CH",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A working ergonomist on the equipment half of the subject — chairs, desks, screens and input devices, set up for the body using them.",
+    "longDescription": "He describes himself as an ergonomist and posture therapist with twenty years of field experience, and the catalogue matches: a step-by-step walk through adjusting a chair, desk and screen with timestamps for each adjustment, a thirty-minute training video on chair adjustment aimed at the people who install them, and a run of independent reviews of chairs, vertical mice and adjustable mousepads. The reviews are the reason to be careful and also part of why he is here — he is willing to publish an honest take on a risky chair design rather than only recommend, and equipment is a real part of this subject that nobody else in the category touches. Median length is four minutes and only one upload in fifty passes twenty, so this is a channel of short specific answers rather than a course. Some videos are in French.",
+    "notFor": "Anyone looking for exercises, pain rehabilitation or a movement programme — that is the other half of this category, not this channel. If product reviews put you off, most of the recent catalogue is product reviews.",
+    "formatTags": ["tutorial", "shorts"],
+    "level": ["beginner", "intermediate"],
+    "profile": { "evidenceBased": 3, "practical": 4, "energy": 2, "selfPromotion": 3, "depth": 2 },
+    "signals": ["credentialed", "practitioner", "commercial-conflict", "sells-course"],
+    "categories": [
+      {
+        "id": "posture-and-ergonomics",
+        "strength": "primary",
+        "why": "The second word in the category name, which nothing else here covers: how the chair, desk, screen and mouse are actually set up, by someone whose profession is exactly that.",
+        "evidence": "A chapter-marked step-by-step desk and chair setup, a 30-minute chair-adjustment training aimed at installers, a free workstation self-assessment, and independent reviews of vertical mice, adjustable mousepads and several office chairs including a critical one.",
+        "entryVideo": {
+          "title": "Set Up Your Desk Like a Pro (Step-by-Step Ergonomics Guide)",
+          "videoId": "o3Qi3CIhxM0",
+          "whyThisOne": "Chapter-marked by adjustment — chair height, then screen, then the rest — so it works as something to follow at your own desk rather than watch.",
+          "durationMin": 9
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "He reviews the equipment this category is about, which is a direct conflict even when the reviews are critical; treat a specific product recommendation as a recommendation from someone in that trade. The desk-setup video funnels to his free workstation assessment. Bilingual channel — several videos are French-only."
+  },
+  {
+    "id": "declutterthemind",
+    "name": "Declutter The Mind",
+    "handle": "@declutterthemind",
+    "channelUrl": "https://www.youtube.com/@declutterthemind",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A secular library of fifteen-minute guided sittings, indexed by the situation you are in rather than by tradition.",
+    "longDescription": "Forty-seven of the fifty most recent uploads sit in the three-to-nineteen-minute band and almost all are exactly fifteen minutes: a spoken guided meditation, a male voice, no music. What makes it usable is the indexing — the sittings are titled by the state you arrive in rather than by technique or teacher. After an argument. When you feel stuck. Work stress. Self-loathing. Emotional numbness. Guilt. Annoyance. That is a different thing from an archive of talks, and it is the thing somebody actually reaches for at the moment they need it. No tradition is claimed and no credential is asserted anywhere on the channel; the framing is simply that you sit down and observe the mind, and the videos help you do that.",
+    "notFor": "Anyone who wants to understand meditation rather than do it — there is no instruction here about technique, no explanation of what the practice is for, and nobody to learn from. It is a library of sittings, not a teacher.",
+    "formatTags": ["tutorial", "long-form"],
+    "level": ["beginner", "intermediate"],
+    "profile": { "evidenceBased": 2, "practical": 4, "energy": 1, "selfPromotion": 3, "depth": 2 },
+    "signals": ["sells-course"],
+    "categories": [
+      {
+        "id": "meditation",
+        "strength": "primary",
+        "why": "Practice you can reach for by situation at a fixed, honest fifteen minutes — the opposite failure mode from a talk archive, and the one a beginner is more likely to actually use.",
+        "evidence": "A run of uniform 15-minute guided sittings indexed by state — after an argument, feeling stuck, work stress, guilt, emotional numbness — spoken, with no music, and free on the channel rather than held back for the app.",
+        "entryVideo": {
+          "title": "When You Feel Stuck | 15 Minute Guided Meditation (Male Voice, No Music)",
+          "videoId": "6VQOGwNJYG4",
+          "whyThisOne": "A representative sitting at the channel's standard length, on a state most people arrive in — if this one does not work for you, none of the others will either.",
+          "durationMin": 15
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "The sittings are drawn from a paid app and every description says so. The descriptions are also templated and not always checked — the entry video's own description calls it a ten-minute meditation when it is fifteen. Nobody on this channel is identified or credentialed, which matters more here than the sloppiness does."
+  }
+]
