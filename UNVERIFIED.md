@@ -1190,3 +1190,90 @@ placement of `MISSING — rule 17` for signals with no entry — labels for
 a rule retired two batches earlier. The measurement stays, the
 classification columns are gone, and the table now says plainly what
 the numbers are still for: drift detection in the validator.
+
+## Batch 43 — `gut-health` was not empty, it was unprobed
+
+Dr. Spencer Nadolsky (`fat-loss`, 1→2), The Gastro Girl Podcast
+(`gut-health`, **0→1**) and Dr. Will Bulsiewicz (`gut-health`, 1→2).
+Three creators, three mappings — marginal ratio 1.00, second-or-later
+share 0%.
+
+**The batch-41 gut-health note was a report about my search, and it
+said so.** Two batches ago I probed the influencer end, found exactly
+the content the category blurb warns against, and wrote that the
+gastroenterology and research ends were unprobed. They were probed
+this batch. Seven handles, four resolved, two listable on the first
+attempt — one of them a channel where eighty-six of the last two
+hundred uploads run over twenty minutes and the guests are the people
+who write the screening guidelines.
+
+This is the sixth instance of the same shape and the first where
+naming the unprobed sub-areas at the time meant nothing false ever
+shipped. The finding is not that gut-health is well served; it is that
+"I could not find it" and "it is not there" are different sentences,
+and only one of them was true.
+
+**Both gut-health creators have a conflict and neither is hidden.**
+Bulsiewicz founded a supplement company in this exact subject and the
+entry video's own description opens with a link to his paid
+constipation course; he carries `commercial-conflict`,
+`sells-course` and `strong-ideological-frame`, and the caveat says the
+teaching is good and the selling is constant, both at once. Gastro
+Girl's problem is the opposite and worth stating: the host is not a
+clinician, so the interviewing is sympathetic rather than adversarial
+and nobody gets pushed. Rule 13's test decided both — a non-profit
+running either of these would be listed without hesitation.
+
+**Nadolsky is the tightest conflict the project has listed.** The
+subject is weight-loss medication and a hundred and forty-seven of his
+last two hundred uploads are short videos funnelling to a free guide
+from an obesity-care company he is attached to. The eight long
+episodes carry no such link, read named randomised trials with the
+researchers who ran them, and turn at one point on what a waterfall
+plot shows that a line graph hides. The entry video is one of those
+eight, deliberately. This is what rule 13 is for, and the caveat names
+the funnel rather than gesturing at it.
+
+**A title check paid off again.** "The Truth About Obesity Genetics
+that No One is Talking About" was my first choice of entry video for
+Nadolsky. Reading the description rather than the title: it is
+thirty-nine minutes on Bardet-Biedl syndrome, a rare ciliopathy. A
+reasonable entry point for `fat-loss` on the strength of its title, and
+completely wrong on the strength of its content.
+
+**Fifteen rejections recorded, and the shape of them has changed.**
+Until now the rejection ledger was almost entirely reputation drift.
+This batch added dead channels (`@drjud`, last upload 2022), wrong
+audiences (`@Physiotutors` states it teaches physiotherapists, not
+patients), funnels (`@ConorHarris`, whose every long-form description
+is a single link to his own program and whose "evidence-based" title
+carries no citation), and one refusal worth explaining: Plum Village is
+substantial, sells nothing, and has a median video length of eighty
+minutes — and is still not listable, because a monastery's archive of
+retreat talks and ceremonies has no entry point for someone learning
+to meditate. Length is not the same as teaching.
+
+**`meditation` and `posture-and-ergonomics` stay at 1, and that is an
+unfinished search, not a finding.** Probed for meditation: the guided
+end (overlaps Tara Brach), the secular-technique end (`@drjud` dead,
+`@UnifiedMindfulness` shorts), the tradition end (Plum Village). Not
+probed: the clinical-trials end, the Insight/IMS teacher circuit,
+non-English instruction. For posture: the biomechanics-coach end
+(Conor Harris) and the clinician end (E3 Rehab and Squat University are
+both already in the dataset, and a third mapping for either would be
+the double-counting rule 4 forbids). Not probed: occupational-health
+and workplace-ergonomics research, which is the end the category is
+actually named after.
+
+**Rule 12 proposal — `gut-health`.** The rationale is the
+cost-over-time one, not a new kind: the failure mode is years of
+self-managing a symptom while a diagnosis that changes the outcome
+waits, and nothing about the intervening period tells the person the
+advice was wrong. That is the same structure as the existing six, and
+it is deliberately not "this could hurt someone." Proposed, not
+shipped.
+
+**Marginal ratio for batches 33–43: 1.08** across 25 creators and 27
+mappings; the dataset stands at 1.42 over 228 creators and 323
+mappings. The creator-300 recomputation the owner asked for is still
+seventy-two creators away.

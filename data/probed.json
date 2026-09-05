@@ -12,6 +12,46 @@
       "why": "3Blue1Brown (Grant Sanderson)",
       "at": "dataset"
     },
+    "@AmerGastroAssn": {
+      "status": "rejected",
+      "why": "professional-association channel — career and leadership content for gastroenterologists, not patients",
+      "at": "batch 43"
+    },
+    "@Biolayne1": {
+      "status": "rejected",
+      "why": "a genuine critic, but fat-loss already has one in Abbey Sharp and the catalogue is 12 videos over 8 minutes in 200, median 3m",
+      "at": "batch 43"
+    },
+    "@ConorHarris": {
+      "status": "rejected",
+      "why": "every long-form description is a single link to one of his own programs, the channel asserts no credential, and a title claiming 'evidence-based' carries no citation. Would have been the second strong-ideological-frame voice in a two-creator category",
+      "at": "batch 43"
+    },
+    "@DrSameerIslamMD": {
+      "status": "collision",
+      "why": "1 upload",
+      "at": "batch 43"
+    },
+    "@Physiotutors": {
+      "status": "rejected",
+      "why": "wrong audience — states it teaches physiotherapy students and professionals; 173 of 198 uploads under 2 minutes, long-form is a clinician podcast",
+      "at": "batch 43"
+    },
+    "@PrecisionMovement": {
+      "status": "collision",
+      "why": "resolves to 'Mr. Owen Moore - Adv Practitioner', 2 uploads — not Precision Movement",
+      "at": "batch 43"
+    },
+    "@TheGutHealthDoctor": {
+      "status": "collision",
+      "why": "category-term name, 2 uploads — not Megan Rossi's channel",
+      "at": "batch 43"
+    },
+    "@UnifiedMindfulness": {
+      "status": "rejected",
+      "why": "165 of 200 uploads under 2 minutes, one long-form",
+      "at": "batch 43"
+    },
     "@_johnhammond": {
       "status": "listed",
       "why": "John Hammond",
@@ -312,6 +352,16 @@
       "why": "DevOps Toolkit (Viktor Farcic)",
       "at": "dataset"
     },
+    "@dhammagiri": {
+      "status": "collision",
+      "why": "2 uploads",
+      "at": "batch 43"
+    },
+    "@docsameer": {
+      "status": "collision",
+      "why": "resolves to 'Sameer M', 0 uploads",
+      "at": "batch 43"
+    },
     "@doctorramani": {
       "status": "listed",
       "why": "Dr. Ramani Durvasula",
@@ -337,9 +387,19 @@
       "why": "reputation drift — True-crime case commentary with tabloid-style titles.",
       "at": "batch 32"
     },
+    "@drjud": {
+      "status": "rejected",
+      "why": "dead channel — last upload 2022-10-30, and the catalogue is a COVID-era daily anxiety series, not meditation instruction",
+      "at": "batch 43"
+    },
     "@drmaryclaire": {
       "status": "listed",
       "why": "Dr. Mary Claire Haver",
+      "at": "dataset"
+    },
+    "@drnadolsky": {
+      "status": "listed",
+      "why": "Dr. Spencer Nadolsky",
       "at": "dataset"
     },
     "@drtraceymarks": {
@@ -425,6 +485,11 @@
     "@garethdavidstudio": {
       "status": "listed",
       "why": "Gareth David Studio",
+      "at": "dataset"
+    },
+    "@gastrogirl": {
+      "status": "listed",
+      "why": "The Gastro Girl Podcast",
       "at": "dataset"
     },
     "@gentlemansgazette": {
@@ -662,6 +727,16 @@
       "why": "Medlife Crisis (Dr. Rohin Francis)",
       "at": "dataset"
     },
+    "@menno.henselmans": {
+      "status": "rejected",
+      "why": "hypertrophy rather than fat loss, and median 2m with 26 of 50 uploads under 2 minutes",
+      "at": "batch 43"
+    },
+    "@michaeltaft": {
+      "status": "collision",
+      "why": "resolves to 'Hello there', 0 uploads",
+      "at": "batch 43"
+    },
     "@microconf": {
       "status": "listed",
       "why": "MicroConf",
@@ -821,6 +896,11 @@
       "status": "listed",
       "why": "Pianote",
       "at": "dataset"
+    },
+    "@plumvillageonline": {
+      "status": "rejected",
+      "why": "substantial — median 80m, nothing sold — but it is a monastery archive of retreat talks, ceremonies and panels, with no entry point for someone learning to meditate",
+      "at": "batch 43"
     },
     "@positiveparentingsolutions": {
       "status": "collision",
@@ -1077,6 +1157,11 @@
       "why": "The Gottman Institute",
       "at": "dataset"
     },
+    "@theguthealthmd": {
+      "status": "listed",
+      "why": "Dr. Will Bulsiewicz, The Gut Health MD",
+      "at": "dataset"
+    },
     "@themathsorcerer": {
       "status": "listed",
       "why": "The Math Sorcerer",
@@ -1151,6 +1236,11 @@
       "status": "listed",
       "why": "The Speaker Lab",
       "at": "dataset"
+    },
+    "@thesportsphysio": {
+      "status": "rejected",
+      "why": "Adam Meakins, found only via the 320-unit fallback search: 7 uploads",
+      "at": "batch 43"
     },
     "@thinkfasttalksmart": {
       "status": "listed",

@@ -703,13 +703,13 @@ in `categories.json`-derived output with a computed creator `count`.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research). **Batches 01–42 are
+- **Current phase**: Phase 2 (creator research). **Batches 01–43 are
   written, gated, validated and committed.**
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
-- **Creator count: 225 of 400.** Taxonomy 197 and **uncapped** (rule 19)
+- **Creator count: 228 of 400.** Taxonomy 197 and **uncapped** (rule 19)
   — a new category may be added whenever it arrives with 3 creators.
 - **Fitness is complete at 2+ across all 14 categories** (3 at depth 3).
-- **181 of 197 categories populated; 16 empty.** Practical is 13/13.
+- **182 of 197 categories populated; 15 empty.** Practical is 13/13.
 - **Depth pass started (batch 32).** With the goal at 3, the faster path
   is depth in populated categories, not the last 17 hard empties.
   Full: fitness, communication, creativity, learning, philosophy,
@@ -721,10 +721,13 @@ this section first to know exactly where to resume.)*
   (rule 12) rather than unfinished work. The other three that were empty
   — `travel-planning`, `camping-and-outdoor-skills`,
   `personal-style-and-grooming` — are filled.
-- **Health is the current depth pass (batch 42 on).** 12 categories:
-  `gut-health` empty and explicitly unfinished (the gastroenterology and
-  research ends are unprobed), `breathwork`, `fat-loss`, `meditation`,
-  `posture-and-ergonomics`, `sleep-quality` and `sports-nutrition` at 1.
+- **Health is the current depth pass (batch 42 on).** 12 categories.
+  `gut-health` is no longer empty — the gastroenterology end was probed
+  in batch 43 and produced two listable creators on the first attempt,
+  which is the sixth instance of an unfinished search having been
+  mistaken for an absent field. Still at 1: `breathwork`, `meditation`,
+  `posture-and-ergonomics`, `sleep-quality`, `sports-nutrition`. The
+  unprobed ends for the first three are named in the batch-43 entry.
 - **Relationships has no critic anywhere** (rule 11 — flagged, not
   filled). `making-friends-as-an-adult` is the one empty category left in
   the domain.

@@ -1,0 +1,107 @@
+[
+  {
+    "id": "drnadolsky",
+    "name": "Dr. Spencer Nadolsky",
+    "handle": "@DrNadolsky",
+    "channelUrl": "https://www.youtube.com/@DrNadolsky",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "An obesity and lipid specialist physician reading the weight-loss drug trials in public, at length, with another physician arguing back.",
+    "longDescription": "The channel has two halves and only one of them is worth your time. Of the two hundred most recent uploads, a hundred and forty-seven run two minutes or less and most of those end in a link to a free guide from an obesity-care company he is attached to. Behind them sit eight episodes over twenty minutes — thirty-one to fifty-six — and those are the reason he is listed. In them he and Dr. Karl Nadolsky work through named randomised trials with guests who ran or reviewed them: a Pennington Biomedical metabolism researcher on whether metabolically healthy obesity is a durable state, an endocrinologist on what the evidence actually says about bone density on GLP-1 medicines, a long session separating clinical peptide evidence from social-media claims. The habit that distinguishes the episodes is reading the trial figures rather than the headline — one segment turns on what a waterfall plot shows that a line graph hides.",
+    "notFor": "Anyone who wants a plan rather than an argument, and anyone looking for a non-pharmacological approach — the centre of gravity here is medication. The short videos are marketing and should be treated as such.",
+    "formatTags": ["interview", "long-form", "shorts"],
+    "level": ["intermediate", "advanced"],
+    "profile": { "evidenceBased": 4, "practical": 2, "energy": 2, "selfPromotion": 4, "depth": 4 },
+    "signals": ["credentialed", "cites-research", "practitioner", "commercial-conflict"],
+    "categories": [
+      {
+        "id": "fat-loss",
+        "strength": "primary",
+        "why": "The medical half of a subject the category otherwise covers only from the dieting side — what obesity is treated as, what the drugs do, and what the maintenance data actually shows.",
+        "evidence": "A 39-minute reading of two new maintenance trials, a 47-minute session with a metabolism researcher on metabolically healthy obesity, 31 minutes on bone density under GLP-1 medicines with an endocrinologist, and 56 minutes separating clinical peptide evidence from marketing.",
+        "entryVideo": {
+          "title": "The Truth About GLP-1 Maintenance No One is Talking About | Docs Who Lifts",
+          "videoId": "RoEDCdq13Uk",
+          "whyThisOne": "Maintenance is where fat loss actually fails, and this is two trials read carefully rather than a claim about willpower. It also carries no product link, unlike most of the channel.",
+          "durationMin": 39
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "The conflict is unusually tight and should be stated plainly: the subject is weight-loss medication and most short videos funnel to a free guide from an obesity-care company he is attached to. The long episodes carry no such link, which is why the entry point is one of them. Format is a two-host podcast, so you get the argument rather than the summary."
+  },
+  {
+    "id": "gastrogirl",
+    "name": "The Gastro Girl Podcast",
+    "handle": "@gastrogirl",
+    "channelUrl": "https://www.youtube.com/@gastrogirl",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Long interviews with named academic gastroenterologists, aimed at a patient about to make a decision rather than at a browser.",
+    "longDescription": "Eighty-six of the two hundred most recent uploads run twenty minutes or more, which is an unusual density for a channel this small. The host, Jacqueline Gaulin, is not a clinician — she runs the patient-education company behind the show — and that is the whole shape of the thing: the value is entirely in who is on the other chair. Recent guests include the president of the American College of Gastroenterology on what to do when constipation-predominant IBS treatment stops working, a Mayo Clinic gastroenterologist on why bloating and slow transit compound each other, and an NYU outcomes researcher who co-authored the multi-society colorectal screening guidelines. Episodes are organised around a decision a patient is actually facing — which screening test, why the prep matters, what a persisting symptom might mean — and several are produced with the ACG's patient care committee. Alongside the interviews there is a run of patient-story episodes, and a visible cluster on constipation-predominant IBS that no sponsor is declared for.",
+    "notFor": "Anyone with no particular question. This is not a gut-health curriculum and it does not build; it is a set of consultations with specialists on separate problems, and it will bore you unless one of them is yours.",
+    "formatTags": ["interview", "long-form", "shorts"],
+    "level": ["beginner", "intermediate"],
+    "profile": { "evidenceBased": 4, "practical": 3, "energy": 2, "selfPromotion": 2, "depth": 3 },
+    "signals": ["cites-research"],
+    "categories": [
+      {
+        "id": "gut-health",
+        "strength": "primary",
+        "why": "Puts practising academic gastroenterologists in front of the questions people actually take to the internet, which is the end of this subject the algorithm buries under supplements.",
+        "evidence": "40 minutes on colorectal screening options with a guideline co-author, 36 minutes with an ACG president on IBS-C when first-line treatment fails, 32 minutes on why colonoscopy preparation determines what the test can find, and 26 minutes on bloating in IBS-C with a Mayo gastroenterologist.",
+        "entryVideo": {
+          "title": "Colorectal Cancer Screening: Colonoscopy vs Other Tests",
+          "videoId": "X8U5cgcOPoY",
+          "whyThisOne": "A real decision with real alternatives, answered by someone who co-wrote the guidelines — and the one gut-health topic where acting early changes the outcome most.",
+          "durationMin": 40
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "The host is a patient-education company founder rather than a clinician, so the interviewing is sympathetic rather than adversarial — nobody on this channel is pushed hard. No sponsorship is disclosed in the descriptions we read, but the repeated focus on one drug-treated condition is visible and worth noticing for yourself."
+  },
+  {
+    "id": "guthealthmd",
+    "name": "Dr. Will Bulsiewicz, The Gut Health MD",
+    "handle": "@theguthealthmd",
+    "channelUrl": "https://www.youtube.com/@theguthealthmd",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A board-certified gastroenterologist explaining digestive problems at real length — and selling a supplement company and courses on the same subject.",
+    "longDescription": "Forty-five uploads, median fifteen minutes, seventeen of them over twenty: a small catalogue with almost no filler, which is rare. The long episodes are the clinical ones — four distinct patterns of constipation and why treating them alike is why people stay stuck, the two-way link between anorectal problems and constipation, the gut and mental health, an assessment of what leaky-gut supplements do and do not have behind them. The shorter half turns toward lists and foods, which is where the channel starts to resemble the genre it is better than. He states his frame openly rather than hiding it: fibre and plants are the centre of his practice and his books, and he treats that as settled more than the field does. He also founded a supplement company, which he names in his own channel description.",
+    "notFor": "Anyone wanting a neutral read on gut supplements or on fibre — he has a commercial stake in one and an authored position on the other. Anyone who wants a broad gastroenterology education rather than one clinician's approach.",
+    "formatTags": ["long-form", "interview", "tutorial"],
+    "level": ["beginner", "intermediate"],
+    "profile": { "evidenceBased": 4, "practical": 4, "energy": 3, "selfPromotion": 4, "depth": 4 },
+    "signals": ["credentialed", "cites-research", "practitioner", "sells-course", "commercial-conflict", "strong-ideological-frame"],
+    "categories": [
+      {
+        "id": "gut-health",
+        "strength": "primary",
+        "why": "The clinical mechanics most gut content skips — why a symptom has several different causes and why matching the cause matters more than the remedy.",
+        "evidence": "A 48-minute breakdown of four constipation patterns and why fibre and laxatives make two of them worse, 52 minutes on anorectal problems and their link back to constipation, 53 minutes on the gut-brain connection, and 22 minutes assessing the evidence behind common gut supplements.",
+        "entryVideo": {
+          "title": "The 4 Patterns of Constipation and How to Fix Them | The Gut Insiders Episode 12",
+          "videoId": "0KtphM0jQvQ",
+          "whyThisOne": "The clearest demonstration of what a specialist adds: one complaint, four different mechanisms, and two of them made worse by the standard advice.",
+          "durationMin": 48
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "He founded a supplement company in this exact subject and the entry video's own description opens with a link to his paid constipation course. The teaching is good and the selling is constant; both are true at once. His plant-and-fibre position is stated as more settled than the literature has it."
+  }
+]
