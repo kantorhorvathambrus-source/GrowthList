@@ -226,7 +226,8 @@
       "medianMin": 1,
       "videoCount": 925,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "sarahockwellsmith",
@@ -358,7 +359,8 @@
       "medianMin": 8,
       "videoCount": 917,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "heidipriebe",
@@ -414,7 +416,8 @@
       "medianMin": 27,
       "videoCount": 266,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "terricole",
@@ -474,7 +477,8 @@
       "medianMin": 1,
       "videoCount": 2205,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "thematthewhussey",
@@ -545,7 +549,8 @@
       "medianMin": 13,
       "videoCount": 1282,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "sexplanations",
@@ -603,7 +608,8 @@
       "medianMin": 8,
       "videoCount": 485,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "doctorramani",
@@ -663,7 +669,8 @@
       "medianMin": 17,
       "videoCount": 2264,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "psychologyinseattle",
@@ -722,6 +729,7 @@
       "medianMin": 27,
       "videoCount": 5852,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   }
 ]

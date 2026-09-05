@@ -105,6 +105,12 @@ export async function renderCreator(app, { params }) {
   // Both non-active states are shown. `dormant` exists because a channel
   // silent for over a year is a fact the reader wants before being sent to
   // learn from someone, and a two-state field could not carry it.
+  // Who is speaking, when it is not one person. Shown because "this is a
+  // company's channel" changes how a reader weighs everything on it, and the
+  // record already knows. Individuals get no label — that is the default
+  // expectation and a badge for it would be noise.
+  if (creator.entity === 'vendor') metaParts.push('Company channel');
+  if (creator.entity === 'institution') metaParts.push('Organisation');
   if (creator.status === 'archive') metaParts.push('Archive');
   if (creator.status === 'dormant') metaParts.push('Quiet for over a year');
 

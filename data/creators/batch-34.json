@@ -55,7 +55,8 @@
       "medianMin": 61,
       "videoCount": 160,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "beabetterdev",
@@ -113,7 +114,8 @@
       "medianMin": 10,
       "videoCount": 494,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "kodekloud",
@@ -172,6 +174,7 @@
       "medianMin": 3,
       "videoCount": 1282,
       "at": "2026-09"
-    }
+    },
+    "entity": "vendor"
   }
 ]

@@ -94,7 +94,8 @@
       "medianMin": 1,
       "videoCount": 621,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "conorneill",
@@ -165,7 +166,8 @@
       "medianMin": 5,
       "videoCount": 424,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "duartedesign",
@@ -248,7 +250,8 @@
       "medianMin": 2,
       "videoCount": 432,
       "at": "2026-09"
-    }
+    },
+    "entity": "institution"
   },
   {
     "id": "radicalcandor",
@@ -499,7 +502,8 @@
       "medianMin": 6,
       "videoCount": 1136,
       "at": "2026-09"
-    }
+    },
+    "entity": "institution"
   },
   {
     "id": "storycorps",
@@ -627,7 +631,8 @@
       "medianMin": 12,
       "videoCount": 3310,
       "at": "2026-09"
-    }
+    },
+    "entity": "institution"
   },
   {
     "id": "wirelessphilosophy",
@@ -779,7 +784,8 @@
       "medianMin": 2,
       "videoCount": 458,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "foldingideas",
@@ -837,7 +843,8 @@
       "medianMin": 28,
       "videoCount": 185,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "coffeezilla",
@@ -895,7 +902,8 @@
       "medianMin": 21,
       "videoCount": 531,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "contrapoints",
@@ -952,7 +960,8 @@
       "medianMin": 32,
       "videoCount": 36,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "skillopedia",

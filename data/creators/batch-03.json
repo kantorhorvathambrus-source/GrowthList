@@ -57,7 +57,8 @@
       "medianMin": 1,
       "videoCount": 318,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "premiumbeat",
@@ -114,7 +115,8 @@
       "medianMin": 9,
       "videoCount": 616,
       "at": "2026-09"
-    }
+    },
+    "entity": "institution"
   },
   {
     "id": "studiobinder",
@@ -186,7 +188,8 @@
       "medianMin": 1,
       "videoCount": 720,
       "at": "2026-09"
-    }
+    },
+    "entity": "institution"
   },
   {
     "id": "indepthcine",
@@ -243,7 +246,8 @@
       "medianMin": 14,
       "videoCount": 263,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "filmriot",
@@ -359,7 +363,8 @@
       "medianMin": 19,
       "videoCount": 690,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "nigeldanson",
@@ -418,7 +423,8 @@
       "medianMin": 21,
       "videoCount": 463,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "nngroup",
@@ -479,7 +485,8 @@
       "medianMin": 2,
       "videoCount": 1252,
       "at": "2026-09"
-    }
+    },
+    "entity": "institution"
   },
   {
     "id": "proko",
@@ -539,7 +546,8 @@
       "medianMin": 33,
       "videoCount": 1204,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "marcobucci",
@@ -597,7 +605,8 @@
       "medianMin": 9,
       "videoCount": 133,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "andrewhuang",
@@ -657,7 +666,8 @@
       "medianMin": 1,
       "videoCount": 903,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "inthemix",
@@ -715,7 +725,8 @@
       "medianMin": 5,
       "videoCount": 303,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "justinguitar",
@@ -775,7 +786,8 @@
       "medianMin": 2,
       "videoCount": 1300,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "pianoteofficial",
@@ -834,7 +846,8 @@
       "medianMin": 1,
       "videoCount": 1694,
       "at": "2026-09"
-    }
+    },
+    "entity": "vendor"
   },
   {
     "id": "newyorkvocalcoaching",
@@ -895,7 +908,8 @@
       "medianMin": 8,
       "videoCount": 370,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "alanbeckertutorials",
@@ -952,7 +966,8 @@
       "medianMin": 5,
       "videoCount": 67,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "rexkrueger",
@@ -1011,7 +1026,8 @@
       "medianMin": 2,
       "videoCount": 823,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "stumpynubs",
@@ -1069,7 +1085,8 @@
       "medianMin": 8,
       "videoCount": 1040,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "buzzsprout",
@@ -1129,7 +1146,8 @@
       "medianMin": 1,
       "videoCount": 552,
       "at": "2026-09"
-    }
+    },
+    "entity": "institution"
   },
   {
     "id": "garethdavidstudio",
@@ -1188,7 +1206,8 @@
       "medianMin": 1,
       "videoCount": 520,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "satorigraphics",

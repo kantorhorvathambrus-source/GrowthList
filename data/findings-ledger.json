@@ -221,6 +221,26 @@
       "note": "SECOND PROJECTION OF THIS KIND. The first was 'depth 5 everywhere is reachable at 400 creators', restated to 3 at batch 32 and now to 2. Both were forecasts about our own process rather than about YouTube, and both were made without testing the mechanism that drives the number. The owner's ruling: a prediction about our own process belongs in this ledger alongside claims about it — same class, same standard. Consequence for the live estimate: a 31-batch projection for the remaining 172 creators is recorded in UNVERIFIED.md explicitly discounted on this record.",
       "reachedVisitors": false,
       "reachedVisitorsNote": "Internal only. The depth number has never appeared in visitor-facing copy; the colophon computes what the data actually shows rather than stating a target, which is the rule-18 fix from batch 26 doing its job."
+    },
+    {
+      "id": "contrast-verified-by-script",
+      "claim": "Contrast is verified by script, not by eye: 22 text/background pairings across both themes, all passing WCAG AA.",
+      "madeAt": "phase 4 notes, undated",
+      "testedAt": "batch 45",
+      "status": "falsified",
+      "class": "never-even-wrong",
+      "subAreas": [
+        "whether the script existed",
+        "whether the count was right",
+        "whether the pairings pass"
+      ],
+      "probedWhenMade": [],
+      "found": "No such script has ever existed in this repository. `git log --all --name-only` has no record of any contrast, a11y or colour-checking file being added OR deleted — it was never there. The number 22 came from nowhere that can be identified.",
+      "survives": "The substance, once an artifact was built to test it: 0 pairings below WCAG AA. The count did not — 30, not 22.",
+      "correctionIn": "scripts/check-contrast.mjs written and run; the sentence in CLAUDE.md now names the script and carries the number the script prints.",
+      "note": "WORSE THAN THE BADGE CLAIM, and a different kind of worse. The badge claim was a wrong inference from real data. This asserted a specific measured result about our own rigour with no measurement anywhere behind it — it was never even wrong, because nothing ever produced it. It also survived every previous sweep: the rule-18 ledger looks for claims that were tested and failed, and this one could not be tested. It took asking a different question — which rules require manual repetition — to surface it. Its own first run then reported two failures that were phantoms, because it tested semantic tokens that no CSS rule uses.",
+      "reachedVisitors": false,
+      "reachedVisitorsNote": "Internal. But it is the claim most likely to have been repeated to someone as evidence of care."
     }
   ],
   "_framing": "How to state this ledger, per the owner: the honest framing is that this project tested N of its own claims and found M wrong — and the alternative was NOT M correct claims, it was M wrong ones nobody checked. BOTH NUMBERS ARE COMPUTED FROM THIS FILE, never typed: the paragraph read \"six\" for eight batches after the count had moved past six, which is the inward-facing class of rule 18 appearing inside rule 18ʼs own report. Report both numbers together: how many were falsified, and how many had REACHED VISITORS before being caught. The second is the difference between an internal process finding its own errors and a dataset that shipped them.",
@@ -229,5 +249,11 @@
     "case": "At batch 36, five stored domain-note measurements had drifted as the dataset grew — fitness/sells-course 14/15 to 17/18, programming/practitioner 14/14 to 25/25, programming/sells-course 10/14 to 15/25, fitness/practitioner 15/15 to 18/18, tech/practitioner 9/11 to 10/12.",
     "whoCaughtIt": "All five by the validator. NONE by review — and they were reviewed, in the same session, by someone actively watching for exactly this.",
     "contrast": "This is the badge-claim failure mode caught in one pass instead of nine batches. The badge claim was the same kind of error — a stored assertion the data had moved past — and it survived nine batches of careful reading because nothing queried it."
+  },
+  "_classes": {
+    "_comment": "Three distinct failures live in this ledger and they need different defences. Named at batch 45 on the owner's instruction, after the third was found.",
+    "stale-stored-fact": "A fact was true when written and stopped being queried. Defence: re-query it on a schedule. Six instances — the handle list, the badge shares, five drifted domain measurements, the duplicate record, entry-video titles, size bands.",
+    "schema-cannot-express-it": "The value was wrong the DAY it was written, because the field's shape could not carry the truth. Defence: write the truest sentence about a real subject, then try to say it in the schema. Two instances — `status` could not say 'quiet for eighteen months'; `role` could not say 'this is a company'.",
+    "never-even-wrong": "A claim that no process ever produced. Not stale, not mis-shaped — there was never an artifact behind it, so it could not have been checked, and its specific number came from nowhere at all. Defence: for every measurement asserted about ourselves, name the artifact that computes it, or delete the number. See data/claim-artifacts.json."
   }
 }

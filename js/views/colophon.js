@@ -91,11 +91,35 @@ function floorTable(entries, dataAsOf) {
   </div>`;
 }
 
-function floorMarkup(notes) {
+// Counts inside this section's copy are filled at render, never typed. The
+// sentence about absent badges names a number about our own data, which is the
+// category of claim that has gone wrong most often here.
+const COMMERCIAL = ['sells-course', 'sponsor-heavy', 'commercial-conflict'];
+const NW = ['zero','one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve','thirteen','fourteen','fifteen','sixteen','seventeen','eighteen','nineteen'];
+const NT = ['', '', 'twenty','thirty','forty','fifty','sixty','seventy','eighty','ninety'];
+function numberToWords(n) {
+  if (n < 20) return NW[n];
+  if (n < 100) { const u = n % 10; return u ? `${NT[Math.floor(n / 10)]}-${NW[u]}` : NT[Math.floor(n / 10)]; }
+  return String(n);
+}
+function floorFacts(creators) {
+  const n = creators.filter((c) => !(c.signals ?? []).some((s) => COMMERCIAL.includes(s))).length;
+  return { noCommercial: String(n), noCommercialWords: numberToWords(n) };
+}
+function fillFacts(text, facts) {
+  return text.replace(/\{\{\s*([A-Za-z]+)\s*(?:\|\s*(cap)\s*)?\}\}/g, (whole, key, mod) => {
+    if (facts[key] === undefined) return whole;
+    const v = facts[key];
+    return mod === 'cap' ? v.charAt(0).toUpperCase() + v.slice(1) : v;
+  });
+}
+
+function floorMarkup(notes, creators) {
   const sec = notes?.buildPage?.whatTheBadgesTrack;
   if (!sec) return '';
+  const facts = floorFacts(creators);
   return `<div class="sec-head"><span class="num">03</span><h2 id="floor-heading">${esc(sec.title)}</h2></div>
-    ${(sec.paras ?? []).map((p) => `<p>${esc(p)}</p>`).join('')}
+    ${(sec.paras ?? []).map((p) => `<p>${esc(fillFacts(p, facts))}</p>`).join('')}
     ${floorTable(notes.entries ?? [], notes.dataAsOf)}`;
 }
 
@@ -188,7 +212,7 @@ export async function renderColophon(app) {
     <section class="band band--paper" aria-labelledby="floor-heading">
       <div class="rail"><span>Badges</span></div>
       <div class="band-body">
-        ${floorMarkup(notes)}
+        ${floorMarkup(notes, creators)}
       </div>
     </section>
   `;

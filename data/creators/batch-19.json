@@ -139,7 +139,8 @@
       "medianMin": 85,
       "videoCount": 613,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "kaneb",
@@ -206,7 +207,8 @@
       "medianMin": 45,
       "videoCount": 581,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "partiallyexaminedlife",

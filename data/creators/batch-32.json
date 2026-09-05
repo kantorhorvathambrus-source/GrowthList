@@ -69,7 +69,8 @@
       "medianMin": 19,
       "videoCount": 567,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "mcoding",
@@ -126,7 +127,8 @@
       "medianMin": 10,
       "videoCount": 121,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "thecodingtrain",
@@ -185,6 +187,7 @@
       "medianMin": 31,
       "videoCount": 1290,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   }
 ]

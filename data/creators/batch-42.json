@@ -58,7 +58,8 @@
       "medianMin": 14,
       "videoCount": 5256,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "mamadoctorjones",
@@ -118,6 +119,7 @@
       "medianMin": 1,
       "videoCount": 584,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   }
 ]

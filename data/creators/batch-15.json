@@ -72,7 +72,8 @@
       "medianMin": 16,
       "videoCount": 178,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "theplainbagel",
@@ -147,7 +148,8 @@
       "medianMin": 18,
       "videoCount": 278,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "twocents",
@@ -291,7 +293,8 @@
       "medianMin": 17,
       "videoCount": 124,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "pensioncraft",
@@ -352,7 +355,8 @@
       "medianMin": 18,
       "videoCount": 688,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "aswathdamodaran",
@@ -412,6 +416,7 @@
       "medianMin": 19,
       "videoCount": 1412,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   }
 ]

@@ -116,7 +116,8 @@
       "medianMin": 1,
       "videoCount": 1434,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "squatuniversity",
@@ -188,7 +189,8 @@
       "medianMin": 1,
       "videoCount": 4887,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "yogawithadriene",
@@ -318,7 +320,8 @@
       "medianMin": 18,
       "videoCount": 1026,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "tonyjeffries",
@@ -437,6 +440,7 @@
       "medianMin": 1,
       "videoCount": 1422,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   }
 ]

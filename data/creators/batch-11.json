@@ -69,7 +69,8 @@
       "medianMin": 1,
       "videoCount": 469,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "physionic",
@@ -139,7 +140,8 @@
       "medianMin": 9,
       "videoCount": 925,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "labmuffin",
@@ -199,7 +201,8 @@
       "medianMin": 1,
       "videoCount": 483,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "thesleepdoctor",
@@ -260,7 +263,8 @@
       "medianMin": 1,
       "videoCount": 1393,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "oxygenadvantage",
@@ -322,7 +326,8 @@
       "medianMin": 1,
       "videoCount": 708,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "uprighthealth",
@@ -455,7 +460,8 @@
       "medianMin": 1,
       "videoCount": 1191,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "tarabrach",
@@ -576,6 +582,7 @@
       "medianMin": 2,
       "videoCount": 1795,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   }
 ]

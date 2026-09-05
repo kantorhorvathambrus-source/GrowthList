@@ -57,7 +57,8 @@
       "medianMin": 6,
       "videoCount": 213,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "oliviergirard",
@@ -117,7 +118,8 @@
       "medianMin": 4,
       "videoCount": 468,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "declutterthemind",
@@ -174,6 +176,7 @@
       "medianMin": 15,
       "videoCount": 560,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   }
 ]

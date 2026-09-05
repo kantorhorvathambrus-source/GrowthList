@@ -68,7 +68,8 @@
       "medianMin": 19,
       "videoCount": 158,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "computerphile",
@@ -261,7 +262,8 @@
       "medianMin": 18,
       "videoCount": 703,
       "at": "2026-09"
-    }
+    },
+    "entity": "institution"
   },
   {
     "id": "lawrencesystems",
@@ -390,7 +392,8 @@
       "medianMin": 14,
       "videoCount": 310,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "gamersnexus",
@@ -509,6 +512,7 @@
       "medianMin": 8,
       "videoCount": 618,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   }
 ]

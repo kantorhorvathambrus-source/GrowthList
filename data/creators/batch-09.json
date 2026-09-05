@@ -71,7 +71,8 @@
       "medianMin": 1,
       "videoCount": 624,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "barbellmedicine",
@@ -206,7 +207,8 @@
       "medianMin": 1,
       "videoCount": 1829,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "e3rehab",
@@ -400,7 +402,8 @@
       "medianMin": 1,
       "videoCount": 1361,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "chewjitsu",
@@ -459,7 +462,8 @@
       "medianMin": 6,
       "videoCount": 1807,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "hoopersbeta",

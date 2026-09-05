@@ -55,7 +55,8 @@
       "medianMin": 2,
       "videoCount": 917,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "tomofujita",
@@ -114,6 +115,7 @@
       "medianMin": 1,
       "videoCount": 2134,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   }
 ]

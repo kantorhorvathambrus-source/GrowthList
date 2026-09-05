@@ -56,7 +56,8 @@
       "medianMin": 10,
       "videoCount": 727,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "internetshaquille",
@@ -113,7 +114,8 @@
       "medianMin": 6,
       "videoCount": 255,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "brianlagerstrom",
@@ -183,7 +185,8 @@
       "medianMin": 19,
       "videoCount": 398,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "chainbaker",
@@ -420,7 +423,8 @@
       "medianMin": 2,
       "videoCount": 829,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "jameshoffmann",
@@ -481,7 +485,8 @@
       "medianMin": 20,
       "videoCount": 409,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "parktool",
@@ -657,7 +662,8 @@
       "medianMin": 1,
       "videoCount": 1599,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "howtocookthat",
@@ -729,7 +735,8 @@
       "medianMin": 16,
       "videoCount": 564,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "projectfarm",

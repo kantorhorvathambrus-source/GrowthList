@@ -80,7 +80,8 @@
       "medianMin": 1,
       "videoCount": 1480,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "charismaoncommand",
@@ -232,7 +233,8 @@
       "medianMin": 41,
       "videoCount": 773,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "alexanderlyon",
@@ -314,7 +316,8 @@
       "medianMin": 1,
       "videoCount": 597,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "howcommunicationworks",
@@ -397,7 +400,8 @@
       "medianMin": 1,
       "videoCount": 771,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "negotiationmastery",
@@ -654,7 +658,8 @@
       "medianMin": 20,
       "videoCount": 33,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "abbieemmons",
@@ -714,7 +719,8 @@
       "medianMin": 1,
       "videoCount": 782,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "hellofutureme",
@@ -784,7 +790,8 @@
       "medianMin": 27,
       "videoCount": 522,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "shaelinwrites",
@@ -843,7 +850,8 @@
       "medianMin": 27,
       "videoCount": 282,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "munecat",
@@ -991,7 +999,8 @@
       "medianMin": 1,
       "videoCount": 231,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "lessonsfromthescreenplay",
@@ -1060,7 +1069,8 @@
       "medianMin": 12,
       "videoCount": 68,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "thecloserlook",
@@ -1129,6 +1139,7 @@
       "medianMin": 26,
       "videoCount": 88,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   }
 ]

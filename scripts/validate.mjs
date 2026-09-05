@@ -34,6 +34,15 @@ const jurisdictionCfg = existsSync(join(DATA, 'jurisdiction.json'))
 const JURISDICTION_VALUES = Object.keys(jurisdictionCfg.values ?? {});
 const JURISDICTION_CATEGORIES = Object.keys(jurisdictionCfg.categories ?? {});
 const ROLES = ['specialist', 'generalist', 'critic'];
+// A SECOND AXIS, ADDED AT BATCH 45. `role` says what they do for the reader;
+// `entity` says who is speaking. They were conflated, and 201 of 233 records
+// carried `specialist` — a working dermatologist and a subscription piano
+// school wearing the same word. That is not a vocabulary nicety: the depth-3
+// allocator flags a category when its two creators AGREE, so a vendor and an
+// individual read as agreeing when they differ in kind. Derived from evidence
+// by scripts/derive-entity.mjs; 47 records are deliberately UNSET because the
+// evidence was ambiguous and a guess here corrupts the allocation.
+const ENTITIES = ['individual', 'institution', 'vendor'];
 const STRENGTHS = ['primary', 'secondary'];
 const LEVELS = ['beginner', 'intermediate', 'advanced'];
 const PROFILE_AXES = ['evidenceBased', 'practical', 'energy', 'selfPromotion', 'depth'];
@@ -256,6 +265,7 @@ for (const c of creators) {
     }
   }
   if (c.role && !ROLES.includes(c.role)) fail(where, `invalid role "${c.role}"`);
+  if (c.entity && !ENTITIES.includes(c.entity)) fail(where, `invalid entity "${c.entity}"`);
   if (typeof c.longDescription === 'string' && c.longDescription.length < 200) {
     fail(where, `longDescription is ${c.longDescription.length} chars, minimum 200`);
   }

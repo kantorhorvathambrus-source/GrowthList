@@ -59,7 +59,8 @@
       "medianMin": 14,
       "videoCount": 327,
       "at": "2026-09"
-    }
+    },
+    "entity": "institution"
   },
   {
     "id": "soberpowered",
@@ -119,7 +120,8 @@
       "medianMin": 6,
       "videoCount": 127,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "abbeysharp",
@@ -192,7 +194,8 @@
       "medianMin": 2,
       "videoCount": 1511,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "careervidz",
@@ -251,7 +254,8 @@
       "medianMin": 9,
       "videoCount": 2989,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "salarytransparentstreet",
@@ -385,6 +389,7 @@
       "medianMin": 1,
       "videoCount": 2271,
       "at": "2026-09"
-    }
+    },
+    "entity": "institution"
   }
 ]

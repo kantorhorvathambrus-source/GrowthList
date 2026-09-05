@@ -1603,3 +1603,96 @@ have changed shape, and any record it flags gets rewritten with
 placeholders at that point. The retrofit then happens incrementally,
 paid for only where the prose has actually gone wrong, instead of all
 at once for prose that is mostly still true.
+
+## The entity axis, and a claim that was never even wrong
+
+### `role` split — because it corrupted the allocator
+
+`entity` now sits beside `role` on every record: **individual /
+institution / vendor.** Not for vocabulary accuracy. `role` said a
+subscription piano school and a working piano teacher were the same
+kind of voice, and the depth-3 allocator reads that as *agreement* —
+in the one place where it is the widest disagreement a category has.
+
+Derived from evidence rather than assigned: an evidence ladder from
+the creator naming themselves in their own description, through our
+own opening identity sentence, down to voice markers. **143
+individual, 15 institution, 2 vendor, 73 deliberately unset.** A wrong
+value here corrupts the allocation the axis exists to protect, so
+ambiguity stays a gap.
+
+**Four wrong rules, all caught by reading the output rather than by
+review.** `sells-course` accepted as vendor evidence, which made E3
+Rehab — practising physical therapists publishing free protocols — a
+vendor beside Pianote. "hosting" matching the Oxford Union *hosting*
+prominent speakers. Corporate voice alone making Cal Newport an
+institution because his description says "our" and never "I". And a
+pattern reading a professor's employer as their entity, which turned
+three individuals into universities. Every one produced a *confident
+wrong value*, which is worse than a gap.
+
+**And the script had the exact defect it was written to fix.**
+`--write` only ever set `entity`; it never cleared. So when I tightened
+the vendor rule, records classified by the old rule kept their old
+value — a stored fact that stopped being queried, introduced by me,
+today, inside the tool built for that class. It clears before it writes
+now.
+
+**In the allocator**, a vendor/non-vendor split disqualifies an
+agreement finding; institution-versus-individual only discounts it. My
+first version disqualified both and **suppressed the `injury-rehab`
+finding** — the case that proved the test worth having — over E3 Rehab
+being a group practice and Squat University one clinician. They are not
+that category's widest disagreement. They are two rehab voices saying
+the same thing, and the test should say so.
+
+**A debugging note against myself.** I spent three probes chasing a
+phantom bug because I checked `@ahrefs` when the record says
+`@AhrefsCom` — a handle from memory instead of from the record, while
+debugging the axis added because memory was the problem.
+
+### `signals`: not re-judged, stated as a limitation
+
+Eighty-one records carry no commercial badge and the schema cannot say
+whether that means "checked, sells nothing" or "nobody looked". The
+colophon now says so in terms — *read an absent badge as silence, not
+as a clean bill of health* — with the count **interpolated at render**,
+because a literal number in visitor copy is the thing the validator
+already forbids.
+
+### The claim that was never even wrong
+
+The ledger now separates three failures, because they need different
+defences:
+
+- **stale stored fact** — true when written, stopped being queried.
+  Six instances. Defence: re-query on a schedule.
+- **schema cannot express it** — wrong the day it was written. Two.
+  Defence: write the truest sentence about a real subject, then try to
+  say it in the schema.
+- **never even wrong** — no process ever produced it. Defence: name the
+  artifact, or delete the number.
+
+"Contrast is verified by script: 22 pairings, all passing AA" is the
+first of the third kind. It **survived every previous sweep**, because
+rule 18 looks for claims that were tested and failed, and this one
+could not be tested — there was nothing to test it against. It took a
+different question, about which rules require manual repetition, to
+surface it at all.
+
+**So I asked that question of every number CLAUDE.md asserts about
+us.** A second one has no producer: **"79% of every record is
+hand-written prose."** Nothing has ever computed a prose share. The
+real figure is **65%** — and that number was load-bearing, since it was
+the stated reason the bottleneck is "the prose, not the quota". The
+conclusion happens to survive; it rested on nothing.
+
+Four more are stale snapshots of numbers an artifact *does* recompute.
+The sharpest is "6 of 188 mappings are retroactive (3.2%)": the
+numerator held at 6 while the denominator nearly doubled to 326, so the
+true share halved to 1.9% while the sentence kept the old one. Those
+now point at the artifact instead of restating it.
+
+**The standing rule:** a number describing our records, our rigour or
+our process must name the thing that computes it, in the same sentence.
+If no artifact exists, build it or delete the number.

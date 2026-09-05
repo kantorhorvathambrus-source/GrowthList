@@ -70,7 +70,8 @@
       "medianMin": 2,
       "videoCount": 403,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "writingwithandrew",
@@ -187,6 +188,7 @@
       "medianMin": 1,
       "videoCount": 728,
       "at": "2026-09"
-    }
+    },
+    "entity": "institution"
   }
 ]

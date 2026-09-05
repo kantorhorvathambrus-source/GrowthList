@@ -1,0 +1,64 @@
+{
+  "_comment": "EVERY MEASUREMENT CLAUDE.md ASSERTS ABOUT OURSELVES, and the artifact that produces it. Run at batch 45 after the contrast claim was found to be a specific measured number with nothing behind it. The tooling sweep asked which rules never ran; this asks which numbers never came from anywhere. The test is one question per number: name the thing that computes it.",
+  "auditedAt": "batch 45",
+  "verdicts": {
+    "no-artifact": "Nothing has ever computed this. The number came from nowhere identifiable.",
+    "stale-snapshot": "An artifact computes it, but the copy written into CLAUDE.md is a frozen snapshot and has drifted. Lower severity — the truth is one command away — but the prose still states a wrong number.",
+    "spec-enforced": "Not a measurement. A design decision, and the validator enforces it."
+  },
+  "claims": [
+    {
+      "claim": "Contrast is verified by script: 22 pairings across both themes, all passing WCAG AA.",
+      "verdict": "no-artifact",
+      "evidence": "git log --all --name-only has no contrast/a11y/colour file ever added or deleted.",
+      "truth": "30 pairings, 0 below AA, once scripts/check-contrast.mjs was written to produce the number.",
+      "fixed": true
+    },
+    {
+      "claim": "79% of every record is hand-written prose.",
+      "verdict": "no-artifact",
+      "evidence": "No script computes a prose share. Measured directly at batch 45: 65% of record bytes are hand-written prose fields.",
+      "truth": "65%, and the denominator moves as structured fields are added — `catalogue` and `entity` both landed this batch, which is exactly why a frozen percentage about our own records decays.",
+      "fixed": true,
+      "note": "The number was load-bearing: it was the stated reason the bottleneck was 'the prose, not the quota'. That conclusion happened to survive the correction, but it rested on a number nothing produced."
+    },
+    {
+      "claim": "29 of 180 populated categories have a dissenting voice (16%).",
+      "verdict": "stale-snapshot",
+      "evidence": "coverage-report.mjs computes and prints it every run.",
+      "truth": "Recomputed live on every report. The CLAUDE.md copy lags by whatever has been added since.",
+      "fixed": "pointed at the artifact instead of restating the number"
+    },
+    {
+      "claim": "6 of 188 mappings are retroactive (3.2%).",
+      "verdict": "stale-snapshot",
+      "evidence": "coverage-report.mjs MAPPING PROVENANCE section computes it.",
+      "truth": "6 of 326, 1.9% — the numerator held and the denominator nearly doubled, which halved the share while the prose kept the old one.",
+      "fixed": "pointed at the artifact"
+    },
+    {
+      "claim": "29 of 196 creators carry no practitioner badge; the share runs 100% to 14%.",
+      "verdict": "stale-snapshot",
+      "evidence": "validate.mjs fails on drift in the stored domain-notes measurements; coverage-report prints the live saturation table.",
+      "truth": "Live in the report. The prose copy is from batch 26.",
+      "fixed": "left as a dated historical statement, since it is describing a past finding rather than the current state"
+    },
+    {
+      "claim": "AU has no creator in 11 of 12 flagged categories, UK in 9, CA in 8, US in 7.",
+      "verdict": "stale-snapshot",
+      "evidence": "coverage-report.mjs has a jurisdiction-gap section that recomputes it.",
+      "fixed": "pointed at the artifact"
+    },
+    {
+      "claim": "Max 4 primary categories per creator, hard max 6.",
+      "verdict": "spec-enforced",
+      "evidence": "validate.mjs fails a record exceeding either. Not a measurement — a decision."
+    },
+    {
+      "claim": "A signal is saturated at 70% of a domain's creators; domains under 4 creators are not measured.",
+      "verdict": "spec-enforced",
+      "evidence": "Thresholds in scripts/lib/saturation.mjs, applied on every report."
+    }
+  ],
+  "_theRule": "Any number in this file that describes US — our records, our rigour, our process — must name the artifact that computes it, in the same sentence. If no artifact exists, either build it or delete the number. A measurement with no producer cannot be checked, cannot be corrected, and is the only kind of claim that never even gets the chance to be wrong."
+}

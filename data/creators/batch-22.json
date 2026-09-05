@@ -54,7 +54,8 @@
       "medianMin": 1,
       "videoCount": 95,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "philomatics",
@@ -226,7 +227,8 @@
       "medianMin": 13,
       "videoCount": 100,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "crashcourse",

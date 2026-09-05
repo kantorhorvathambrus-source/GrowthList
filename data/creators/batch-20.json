@@ -67,7 +67,8 @@
       "medianMin": 84,
       "videoCount": 448,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "microconf",
@@ -267,7 +268,8 @@
       "medianMin": 5,
       "videoCount": 1423,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "cmx",
@@ -398,7 +400,8 @@
       "medianMin": 13,
       "videoCount": 570,
       "at": "2026-09"
-    }
+    },
+    "entity": "institution"
   },
   {
     "id": "semrush",
@@ -458,6 +461,7 @@
       "medianMin": 1,
       "videoCount": 743,
       "at": "2026-09"
-    }
+    },
+    "entity": "institution"
   }
 ]

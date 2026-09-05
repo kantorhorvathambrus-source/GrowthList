@@ -56,7 +56,8 @@
       "medianMin": 15,
       "videoCount": 879,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "hikingguy",
@@ -115,7 +116,8 @@
       "medianMin": 8,
       "videoCount": 335,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "gentlemansgazette",
@@ -294,6 +296,7 @@
       "medianMin": 54,
       "videoCount": 159,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   }
 ]

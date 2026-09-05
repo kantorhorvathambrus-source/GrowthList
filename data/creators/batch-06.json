@@ -57,7 +57,8 @@
       "medianMin": 6,
       "videoCount": 175,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "examstudyexpert",
@@ -119,7 +120,8 @@
       "medianMin": 1,
       "videoCount": 305,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "perfectionismproject",
@@ -178,7 +180,8 @@
       "medianMin": 42,
       "videoCount": 288,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "theschooloflife",

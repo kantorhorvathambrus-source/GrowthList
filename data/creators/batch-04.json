@@ -56,7 +56,8 @@
       "medianMin": 6,
       "videoCount": 349,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "benjaminkeep",
@@ -138,7 +139,8 @@
       "medianMin": 10,
       "videoCount": 115,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "justinsung",
@@ -223,7 +225,8 @@
       "medianMin": 18,
       "videoCount": 888,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "linkingyourthinking",
@@ -282,7 +285,8 @@
       "medianMin": 1,
       "videoCount": 191,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "lucalampariello",
@@ -341,7 +345,8 @@
       "medianMin": 23,
       "videoCount": 429,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "refold",
@@ -471,7 +476,8 @@
       "medianMin": 2,
       "videoCount": 242,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "misterwootube",
@@ -542,7 +548,8 @@
       "medianMin": 8,
       "videoCount": 5042,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "themathsorcerer",
@@ -602,7 +609,8 @@
       "medianMin": 2,
       "videoCount": 10413,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "drandystapleton",
@@ -674,7 +682,8 @@
       "medianMin": 1,
       "videoCount": 779,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "dreamingspanish",

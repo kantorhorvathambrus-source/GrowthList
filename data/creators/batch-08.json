@@ -85,7 +85,8 @@
       "medianMin": 2,
       "videoCount": 1356,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "calnewport",
@@ -174,7 +175,8 @@
       "medianMin": 52,
       "videoCount": 756,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "tiagoforte",
@@ -234,7 +236,8 @@
       "medianMin": 2,
       "videoCount": 270,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "mattdavella",
@@ -293,7 +296,8 @@
       "medianMin": 12,
       "videoCount": 469,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "leilagharani",
@@ -412,7 +416,8 @@
       "medianMin": 3,
       "videoCount": 603,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "simpletivity",
@@ -470,6 +475,7 @@
       "medianMin": 2,
       "videoCount": 753,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   }
 ]

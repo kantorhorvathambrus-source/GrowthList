@@ -35,7 +35,29 @@ export function agreementScore(list) {
   if (list.length !== 2) return null;
   const [a, b] = list;
   if (a.role === 'critic' || b.role === 'critic') return null;
+  // TWO AXES. `role` alone said Pianote and a working piano teacher were the
+  // same kind of voice, because 201 of 233 records carry `specialist`. An
+  // institution and an individual are close to the widest disagreement a
+  // category can offer, so a difference on the entity axis DISQUALIFIES the
+  // agreement finding outright rather than merely reducing it. Where either
+  // entity is unset the pair is left alone — an unknown is not a match, and
+  // guessing here would corrupt the allocation this test exists to drive.
+  if (!a.entity || !b.entity) return { sameRole: false, overlap: null, shared: [], sameLevel: false, unknownEntity: true };
+  // A VENDOR AND A NON-VENDOR ARE NOT AGREEING, whatever their signals say: a
+  // company whose channel sells its own product and a person teaching a craft
+  // are different in kind. That disqualifies the finding.
+  //
+  // An institution and an individual are a WEAKER difference and the first
+  // version of this rule got it wrong by disqualifying them too — which
+  // suppressed the injury-rehab finding, the case that showed the test was
+  // worth having, over E3 Rehab being a group practice and Squat University
+  // one clinician. They are not the widest disagreement in that category; they
+  // are two evidence-based rehab voices saying the same thing. So it reduces
+  // the score instead of erasing the finding.
+  const vendorSplit = (a.entity === 'vendor') !== (b.entity === 'vendor');
+  if (vendorSplit) return { sameRole: false, overlap: null, shared: [], sameLevel: false, differentEntity: [a.entity, b.entity] };
   const sameRole = a.role === b.role;
+  const entityPenalty = a.entity === b.entity ? 0 : 1;
   const sa = new Set((a.signals ?? []).filter((s) => STANCE_SIGNALS.has(s)));
   const sb = new Set((b.signals ?? []).filter((s) => STANCE_SIGNALS.has(s)));
   const union = new Set([...sa, ...sb]);
@@ -43,7 +65,7 @@ export function agreementScore(list) {
   // No stance signals on either side is not agreement, it is no information.
   const overlap = union.size === 0 ? null : shared.length / union.size;
   const sameLevel = JSON.stringify([...(a.level ?? [])].sort()) === JSON.stringify([...(b.level ?? [])].sort());
-  return { sameRole, overlap, shared, sameLevel };
+  return { sameRole, overlap, shared, sameLevel, entityPenalty, entities: [a.entity, b.entity] };
 }
 
 export function depth3Priority({ categories, creators, highStakes, jurisdiction }) {
@@ -65,11 +87,13 @@ export function depth3Priority({ categories, creators, highStakes, jurisdiction 
     if (ju.has(cat.id)) { reasons.push('jurisdiction-split'); rank += 2; }
     const ag = agreementScore(list);
     if (ag && ag.sameRole && ag.overlap !== null && ag.overlap >= 0.5) {
-      reasons.push(`the two agree (same role, ${Math.round(ag.overlap * 100)}% stance overlap${ag.shared.length ? ': ' + ag.shared.join(', ') : ''})`);
-      rank += 2;
+      const who = ag.entityPenalty ? `${ag.entities.join(' and ')}` : `both ${ag.entities[0]}`;
+      reasons.push(`the two agree (${who}, same role, ${Math.round(ag.overlap * 100)}% stance overlap${ag.shared.length ? ': ' + ag.shared.join(', ') : ''})`);
+      rank += 2 - ag.entityPenalty;
     } else if (ag && ag.sameRole && ag.overlap === null) {
-      reasons.push('the two agree (same role, neither carries a stance signal)');
-      rank += 1;
+      const who = ag.entityPenalty ? `${ag.entities.join(' and ')}` : `both ${ag.entities[0]}`;
+      reasons.push(`the two agree (${who}, same role, neither carries a stance signal)`);
+      rank += Math.max(0, 1 - ag.entityPenalty);
     }
     if (!reasons.length) continue;
     rows.push({ id: cat.id, domain: cat.domain, rank, reasons, who: list.map((c) => c.name) });

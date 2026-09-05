@@ -128,7 +128,8 @@
       "medianMin": 14,
       "videoCount": 870,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "kevinpowell",
@@ -188,7 +189,8 @@
       "medianMin": 3,
       "videoCount": 1134,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "hnasr",
@@ -317,7 +319,8 @@
       "medianMin": 11,
       "videoCount": 343,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "techworldwithnana",
@@ -390,7 +393,8 @@
       "medianMin": 23,
       "videoCount": 180,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "bytebytego",
@@ -580,7 +584,8 @@
       "medianMin": 11,
       "videoCount": 628,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "philipplackner",
@@ -639,7 +644,8 @@
       "medianMin": 15,
       "videoCount": 1170,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "gmtk",
@@ -698,7 +704,8 @@
       "medianMin": 17,
       "videoCount": 237,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "statquest",
@@ -759,6 +766,7 @@
       "medianMin": 24,
       "videoCount": 299,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   }
 ]

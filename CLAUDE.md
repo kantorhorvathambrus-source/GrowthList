@@ -491,7 +491,8 @@ this file has the rules, schema, and current state.
     `coverage-report.mjs` names any flagged category with no creator for
     a major English-speaking market — a documented gap of a different
     kind, and one a passing creator count would otherwise hide.
-    **Current state: AU has no creator in 11 of 12 flagged categories,
+    **Current state: run `coverage-report.mjs`, which recomputes it. As
+    once written here: AU had no creator in 11 of 12 flagged categories,
     UK in 9, CA in 8, US in 7.**
 
 15. **A retroactive mapping clears a higher bar than a first-pass one.**
@@ -512,8 +513,10 @@ this file has the rules, schema, and current state.
     `coverage-report.mjs` tracks retroactive against first-pass
     mappings and prints every trigger, so the owner can tell at batch 40
     whether the ratio improved because the data was under-mapped or
-    because the bar drifted. **Current state: 6 of 188 mappings are
-    retroactive (3.2%), and all six were triggered by an empty
+    because the bar drifted. **Current state: run `coverage-report.mjs` — MAPPING PROVENANCE
+    computes it. The snapshot once written here said 6 of 188 (3.2%);
+    the numerator held while the denominator nearly doubled, so the real
+    figure halved while the prose kept the old one, and all six were triggered by an empty
     category** — which is the pattern this rule exists to watch. Two of
     them (Cal Newport and Carl Pullein on inbox-and-email-systems) say
     so in their own records rather than dressing the trigger up.
@@ -677,7 +680,8 @@ because "todo list" is a real category alias. Phrases (`lorem`,
 matched case-insensitively. A bare lowercase `example` is **not** a
 placeholder — it is a word people legitimately write in a description.
 
-**Coverage** (≥5 creators per category, a `critic`, all three levels) is
+**Coverage** (**2+** creators per category since batch 45, a `critic`
+where one exists, all three levels) is
 a property of the *finished* dataset. While batches are landing it
 reports as **warnings**, and categories no batch has reached yet are
 counted in one line rather than enumerated. Run
@@ -798,6 +802,25 @@ this section first to know exactly where to resume.)*
   from 197×2, which silently counted surplus depth as progress. The
   owner chose the target on the wrong number; the direction survives the
   correction and the number did not.
+- **EVERY NUMBER ABOUT OURSELVES NAMES ITS ARTIFACT —
+  `data/claim-artifacts.json`.** The tooling sweep asked which rules
+  never ran; this asks **which numbers never came from anywhere.** Two
+  found with no producer at all. The contrast claim — 22 pairings, all
+  passing AA — from a script that has never existed. And **"79% of every
+  record is hand-written prose"**, which nothing has ever computed; the
+  real figure is **65%**, and that number was load-bearing, because it
+  was the stated reason the bottleneck was "the prose, not the quota".
+  Four more are stale snapshots of numbers an artifact does recompute —
+  among them "6 of 188 mappings are retroactive (3.2%)", where the
+  numerator held while the denominator nearly doubled, so the true share
+  halved while the prose kept the old one. Those now point at the
+  artifact instead of restating it.
+  **The rule: a number describing our records, our rigour or our process
+  must name the thing that computes it, in the same sentence. If no
+  artifact exists, build it or delete the number.**
+  A measurement with no producer cannot be checked, cannot be corrected,
+  and is the only kind of claim that never gets the chance to be wrong —
+  logged in the ledger as its own class, `never-even-wrong`.
 - **RULES THAT NEED MANUAL REPETITION ARE NOT IN FORCE —
   `data/procedure-audit.json`.** A distinct failure class from a stale
   fact: the rule existed, this file claimed it was in force, and it had
@@ -813,6 +836,34 @@ this section first to know exactly where to resume.)*
   and is there evidence it ran".** A rule needing N manual repetitions
   will be executed zero times. Anything written here in the imperative
   gets that test before it is believed.
+- **`entity` IS A SECOND AXIS ON EVERY RECORD — `scripts/derive-entity.mjs`.**
+  `role` says what they do for the reader; `entity` says who is
+  speaking: **individual / institution / vendor**. Split because it
+  corrupted the depth-3 allocator, not for tidiness — a vendor and an
+  individual teacher read as *agreeing* when they differ in kind.
+  Derived from evidence, never guessed: an evidence ladder running from
+  the creator naming themselves, through our own opening identity
+  sentence, down to voice markers. **143 individual, 15 institution,
+  2 vendor, and 73 deliberately UNSET** — a wrong value here corrupts
+  the allocation this axis exists to protect, so ambiguity is left as a
+  gap for judgement.
+  In the allocator: **a vendor/non-vendor split disqualifies** an
+  agreement finding; institution-versus-individual only **discounts** it.
+  The first version disqualified both and suppressed the `injury-rehab`
+  finding — the case that showed the test was worth having — over E3
+  Rehab being a group practice and Squat University one clinician. They
+  are not that category's widest disagreement; they are two rehab voices
+  saying the same thing.
+  **Four wrong rules were caught by reading the output, not by review:**
+  `sells-course` treated as vendor evidence (E3 Rehab became a vendor
+  beside Pianote); "hosting" matching a debating society *hosting*
+  speakers; corporate voice alone making Cal Newport an institution; and
+  `ORG_SELF` reading a professor's employer as their entity. Each was a
+  confident wrong value, which is worse than a gap.
+  **And the script had the defect it was written to fix:** `--write` only
+  ever set `entity`, so tightening a rule left the old classifications
+  in place — a stored fact that stopped being queried, introduced by me,
+  in the tool built for that class. It clears before it writes now.
 - **TWO DEFECT CLASSES, TWO DEFENCES — `data/schema-expressiveness.json`.**
   The first six were stored facts that stopped being queried; the
   defence is re-querying. `status` was different — wrong the day it was
@@ -1166,8 +1217,8 @@ gate — the gate and the identity checks are unchanged):
 
 The bottleneck was never quota — a batch costs 150–250 units of a
 10,000 daily allowance. It is the volume of evidence output that has to
-be read and the editorial prose that has to be written against it (79%
-of every record is hand-written prose). These rules cut the reading.
+be read and the editorial prose that has to be written against it (65%
+of record bytes are hand-written prose — measured at batch 45; the 79% this line carried for forty-four batches was produced by nothing). These rules cut the reading.
 
 **GENERATE CANDIDATES BY QUERY, NOT BY RECALL — `scripts/discover.mjs`.**
 For forty-three batches candidate handles came out of my own memory, and

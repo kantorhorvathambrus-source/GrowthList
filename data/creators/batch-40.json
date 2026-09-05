@@ -57,7 +57,8 @@
       "medianMin": 1,
       "videoCount": 674,
       "at": "2026-09"
-    }
+    },
+    "entity": "institution"
   },
   {
     "id": "chloeting",
@@ -114,6 +115,7 @@
       "medianMin": 17,
       "videoCount": 530,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   }
 ]

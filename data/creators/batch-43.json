@@ -58,7 +58,8 @@
       "medianMin": 2,
       "videoCount": 847,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "gastrogirl",
@@ -179,6 +180,7 @@
       "medianMin": 15,
       "videoCount": 45,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   }
 ]

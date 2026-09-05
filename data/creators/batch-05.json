@@ -71,7 +71,8 @@
       "medianMin": 2,
       "videoCount": 692,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "healthygamergg",
@@ -145,7 +146,8 @@
       "medianMin": 1,
       "videoCount": 3049,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "howtoadhd",
@@ -204,7 +206,8 @@
       "medianMin": 1,
       "videoCount": 541,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "betterideas",
@@ -273,7 +276,8 @@
       "medianMin": 12,
       "videoCount": 130,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "patrickteahan",
@@ -345,7 +349,8 @@
       "medianMin": 2,
       "videoCount": 1647,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "drtraceymarks",
@@ -404,6 +409,7 @@
       "medianMin": 1,
       "videoCount": 1517,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   }
 ]
