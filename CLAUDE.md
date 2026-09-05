@@ -679,10 +679,10 @@ in `categories.json`-derived output with a computed creator `count`.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research). **Batches 01–38 are
+- **Current phase**: Phase 2 (creator research). **Batches 01–39 are
   written, gated, validated and committed.**
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
-- **Creator count: 218 of 400.** Taxonomy 197, three slots held.
+- **Creator count: 220 of 400.** Taxonomy 197, three slots held.
 - **180 of 197 categories populated; 17 empty.** Practical is 13/13.
 - **Depth pass started (batch 32).** With the goal at 3, the faster path
   is depth in populated categories, not the last 17 hard empties.

@@ -127,6 +127,18 @@
       ],
       "outcome": "rejected",
       "checkedAt": "batch 37"
+    },
+    {
+      "handle": "@TheReadyState",
+      "name": "The Ready State (Dr. Kelly Starrett)",
+      "knownFor": "Mobility and self-maintenance — the MobilityWOD work that largely created the online mobility genre. A physical therapist and three-time bestselling author.",
+      "catalogueNow": "A general wellness and interview podcast. Recent long-form covers women's health, resilience under pressure, youth sports dropout rates, and a 65-minute account of a hippo attack.",
+      "scan": "300 uploads scanned for mobility, hip, shoulder, ankle, pain, stretch, squat, range. FOUR long-form hits — and two of the four are the hippo story. Median upload length one minute.",
+      "categoriesAffected": [
+        "mobility-and-flexibility"
+      ],
+      "outcome": "rejected",
+      "checkedAt": "batch 39"
     }
   ],
   "collisions": [

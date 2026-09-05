@@ -1,0 +1,102 @@
+[
+  {
+    "id": "stephankesting",
+    "name": "Stephan Kesting",
+    "handle": "@StephanKesting",
+    "channelUrl": "https://www.youtube.com/@StephanKesting",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A jiu-jitsu black belt teaching escapes and positions in the order a beginner actually needs them, plus the unglamorous question of how to choose a gym.",
+    "longDescription": "Fourteen hundred uploads, most of them short, with a steady thread of nine-to-fourteen-minute instructional videos underneath. What distinguishes them is sequencing: one is explicitly the first side-control escape you should learn, another is the guillotine escape taught as concepts rather than a single move, another is a drill for making your guard hard to pass. That framing — which technique to learn first, and why — is what most jiu-jitsu content omits in favour of whatever is currently fashionable in competition. He also made a thirty-nine minute video on red flags to look for when choosing a club, which is a subject nobody in this sport addresses and which matters more to a beginner than any technique. Some instruction is delivered by invited black belts rather than by him.",
+    "notFor": "Anyone wanting competition analysis or the current meta. Also clip-heavy on the surface — forty of the fifty most recent uploads are under two minutes, so the teaching takes finding.",
+    "formatTags": [
+      "tutorial",
+      "shorts"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "brazilian-jiu-jitsu",
+        "strength": "primary",
+        "why": "Teaches in a deliberate order — escapes before submissions, concepts before variations — and covers choosing a gym, which is the decision that determines whether any of the technique gets learned.",
+        "evidence": "Instructional long-form on the first side-control escape to learn, guillotine escape concepts, the crucifix position from basic grips upward, a guard-retention drill, and a 39-minute treatment of red flags when choosing a club.",
+        "entryVideo": {
+          "title": "The FIRST and Most Important Side Control Escape You Should Learn",
+          "videoId": "QgbQuTq0psI",
+          "whyThisOne": "Being stuck under side control is the beginner's actual problem, and this is framed as the first thing to learn rather than one option among many.",
+          "durationMin": 10
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Sells instructional products and the videos route to them. The catalogue is dominated by short clips, and some teaching is by guest instructors rather than by him."
+  },
+  {
+    "id": "fighttips",
+    "name": "fightTIPS (Shane Fazen)",
+    "handle": "@fightTIPS",
+    "channelUrl": "https://www.youtube.com/@fightTIPS",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Striking technique broken down at length, including what transfers between boxing and Muay Thai and what does not.",
+    "longDescription": "Eighteen of the fifty most recent uploads run over twenty minutes and the median is fourteen. The best material is comparative: a fifty-nine minute treatment of Muay Thai footwork set against boxing footwork, which is the kind of thing that clarifies both rather than teaching either in isolation. Elsewhere he takes single techniques seriously — low kicks trained without a heavy bag, updated findings on the calf kick, solo hand-eye drills for people without a partner. That solo-training thread matters, because most striking instruction assumes a gym and a partner and most viewers have neither. The channel also carries workout sessions and a fair amount of personal and career content that is not instruction at all.",
+    "notFor": "Anyone wanting grappling, or looking for a structured beginner curriculum — this is a large unordered library, and you need to arrive knowing what you want to work on.",
+    "formatTags": [
+      "tutorial",
+      "long-form",
+      "vlog"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 3,
+      "selfPromotion": 2,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "boxing-and-striking",
+        "strength": "primary",
+        "why": "Technique taught comparatively across striking arts, and with a real thread on what can be trained alone — which is the constraint most viewers are actually under.",
+        "evidence": "A 59-minute comparison of Muay Thai and boxing footwork, a 24-minute update on calf-kick mechanics, low kicks trained without a heavy bag, and solo hand-eye coordination drills.",
+        "entryVideo": {
+          "title": "Muay Thai Footwork vs Boxing",
+          "videoId": "QD8tDyPQTT0",
+          "whyThisOne": "Setting two systems against each other explains why each moves as it does, which is more durable than learning either as a set of steps.",
+          "durationMin": 59
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "A large share of the catalogue is workouts, vlogs and career content rather than instruction. Sells courses. No structured path through the material — it is a library, not a curriculum."
+  }
+]

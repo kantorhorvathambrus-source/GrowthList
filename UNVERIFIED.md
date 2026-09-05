@@ -1069,3 +1069,27 @@ it shipped**, which is the first time that has happened in this project.
 Worth noting the shape of what was found: neither is a person with a
 camera. One is a coaching business, one is a software company. The
 teaching end of endurance sport is commercial, and both cards say so.
+
+## Batch 39 — martial arts filled; the mobility genre's founder has left it
+
+Stephan Kesting (`brazilian-jiu-jitsu`), fightTIPS
+(`boxing-and-striking`). Both categories move from 1 to 2.
+
+**The Ready State rejected, and it is the starkest drift case yet.** Dr.
+Kelly Starrett is a physical therapist, a three-time bestselling author,
+and the person whose MobilityWOD work largely created the online mobility
+genre. `mobility-and-flexibility` sits at 2 and he would have been the
+obvious third.
+
+A scan of 300 uploads for mobility, hip, shoulder, ankle, pain, stretch,
+squat and range returned **four long-form hits — and two of the four are
+a 65-minute account of a hippo attack on the Zambezi River.** The channel
+is now a general wellness and interview podcast; the median upload is one
+minute. Two genuine mobility videos remain in the recent catalogue.
+
+Eleventh drift entry. The pattern now has enough cases to say something
+specific: **the drift is almost always toward podcast, news or vlog
+formats, and the teaching either moves behind a paywall or stops.** That
+is a claim about the eleven cases in the file and nothing more — the
+denominator is unknown, since channels that did *not* drift were never
+systematically counted.
