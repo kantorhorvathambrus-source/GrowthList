@@ -987,3 +987,28 @@ competence in two areas, one body of work.
 The test is doing what it should — permitting a second mapping when the
 evidence is genuinely separate, refusing one when it is the same material
 described twice.
+
+## Batch 36 — fitness depth, and `sports-nutrition` filled
+
+Stronger By Science (`hypertrophy-training`, `sports-nutrition`), Calgary
+Barbell (`powerlifting`), Swim Smooth (`swimming-technique`). Marginal
+1.33, second-or-later share 25%.
+
+**Stronger By Science took two categories and it passes the test on the
+same grounds Karpathy did.** The hypertrophy mapping rests on the
+training-literature episodes — warming up and muscle growth, weakly
+supported growth beliefs, hyperplasia, muscle memory. The sports-nutrition
+mapping rests on an entirely different set: a 91-minute episode on basal
+metabolic rate, and short pieces on excess protein, on whether muscle
+gain raises metabolism, on low-carb diets and growth. Different videos,
+different claims.
+
+**Calgary Barbell was the refusal in this batch.** `strength-training`
+sits at 2 and he would fit it comfortably — but his strength content *is*
+his powerlifting content under a broader name, which is one body of work
+counted twice. One mapping, and the reasoning is on his card.
+
+`sports-nutrition` was one of the 17 empty categories and is now
+populated by a channel that reads the literature rather than selling
+supplements — which for that category specifically is the difference
+between a listing and a liability.

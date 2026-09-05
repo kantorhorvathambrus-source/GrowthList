@@ -1,0 +1,167 @@
+[
+  {
+    "id": "strongerbyscience",
+    "name": "Stronger By Science",
+    "handle": "@StrongerByScience",
+    "channelUrl": "https://www.youtube.com/@StrongerByScience",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Training and nutrition research read properly — including the studies that do not say what the fitness internet claims they say.",
+    "longDescription": "Two formats, and both matter. The long podcast episodes run seventy to a hundred and twenty minutes and work through a topic against the literature, which is where the real substance is — an entire episode on warming up to build muscle, another on basal metabolic rate, another on the muscle-growth beliefs the team consider weakly supported. Alongside those sit short Science Explained pieces that answer one question each: whether hyperplasia is real, what happens to protein eaten beyond the point of use, whether gaining muscle meaningfully raises metabolism. The register is careful in a way this field rarely is — effect sizes get mentioned, and they are willing to say the evidence is thin rather than pick a side. Upload cadence has slowed considerably; the most recent in the scanned window is February 2025.",
+    "notFor": "Anyone wanting a program to follow. This is the reasoning underneath programming, and it will often conclude that the honest answer is 'it depends' or 'nobody has measured that well'.",
+    "formatTags": [
+      "long-form",
+      "video-essay",
+      "shorts"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 4,
+      "practical": 3,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 4
+    },
+    "signals": [
+      "cites-research",
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "hypertrophy-training",
+        "strength": "primary",
+        "why": "The training-for-size literature read carefully, including where popular certainties turn out to rest on very little.",
+        "evidence": "A 71-minute episode on whether warming up affects muscle growth, an 87-minute episode on weakly-supported growth beliefs, and shorter pieces on muscle memory and whether hyperplasia occurs in humans.",
+        "entryVideo": {
+          "title": "Weak Muscle Growth Beliefs (Episode 140)",
+          "videoId": "A9UBZOgv4hU",
+          "whyThisOne": "An episode spent on things the field believes without good grounds — the fastest way to calibrate how much of the rest of fitness content to trust.",
+          "durationMin": 87
+        }
+      },
+      {
+        "id": "sports-nutrition",
+        "strength": "primary",
+        "why": "A separate strand entirely — metabolism and macronutrients treated as measurement problems — and it answers the questions people actually get wrong rather than the ones that sell supplements.",
+        "evidence": "A 91-minute episode on basal metabolic rate, plus distinct short pieces on what happens to protein eaten in excess, whether muscle gain raises metabolism meaningfully, and whether low-carb diets impair muscle growth.",
+        "entryVideo": {
+          "title": "Everything you Need to Know About Basal Metabolic Rate (Episode 143)",
+          "videoId": "Kl4UXSUMuuc",
+          "whyThisOne": "Metabolic rate is the number most nutrition advice is built on and most people misunderstand; this is the careful version.",
+          "durationMin": 91
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Cadence has slowed sharply — nothing in the scanned window since February 2025. They sell training programmes and software, which is the funding model behind the research summaries. Conclusions are frequently 'the evidence is weak', which is honest and can be unsatisfying."
+  },
+  {
+    "id": "calgarybarbell",
+    "name": "Calgary Barbell (Bryce Lewis)",
+    "handle": "@CalgaryBarbell",
+    "channelUrl": "https://www.youtube.com/@CalgaryBarbell",
+    "country": "CA",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Competitive powerlifting coaching, including a free sixteen-week program and monthly sessions critiquing viewers' actual lifts.",
+    "longDescription": "Eight hundred and thirty-nine uploads and a median around twelve minutes. Two things distinguish it. The Form Check series runs monthly and is exactly what it sounds like: a coach watching viewers' submitted lifts and saying what is wrong, at twenty to thirty minutes a session, which is closer to being coached than anything else available free. And the sixteen-week program is published in full at no cost, with a video explaining the reasoning behind the revisions rather than just the sets and reps. There is also a competition strand — meet preparation, rule changes explained at length, a weight-class cut described honestly including what it cost. The channel's own description explicitly rejects quick fixes and generalisations, and the content matches that.",
+    "notFor": "Anyone not training the competition lifts. This is barbell powerlifting throughout, and general fitness or physique training is not covered.",
+    "formatTags": [
+      "tutorial",
+      "vlog",
+      "long-form"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "powerlifting",
+        "strength": "primary",
+        "why": "Coaching rather than content — form corrected on real submitted lifts, a full program given away, and the competition side explained by someone who competes.",
+        "evidence": "The monthly Form Check series critiquing viewers' lifts at 16 to 29 minutes a session, a 16-week program published free with the revisions explained, a 50-minute explanation of federation rule changes, and an honest account of dropping a weight class.",
+        "entryVideo": {
+          "title": "Critiquing Viewers' Lifting Form | Form Check Friday – Feb 2026",
+          "videoId": "Ef03iHd3OA4",
+          "whyThisOne": "Watching a coach correct twenty different people's lifts teaches you more about your own than any single tutorial, because you see which errors recur.",
+          "durationMin": 29
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Sells coaching and programming; the free program is genuine and is also the top of that funnel. Strictly competition powerlifting — mapped to one category deliberately, because the strength-training content here is the same body of work under a broader name."
+  },
+  {
+    "id": "swimsmooth",
+    "name": "Swim Smooth",
+    "handle": "@SwimSmooth",
+    "channelUrl": "https://www.youtube.com/@SwimSmooth",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Freestyle technique broken into individual faults, each with the correction and the reason it works.",
+    "longDescription": "Two hundred and twenty uploads, twenty-three of them long-form, and the subject is almost entirely freestyle mechanics. The approach is diagnostic: rather than one ideal stroke, videos isolate a specific fault and its fix — stroke rate chosen for your body rather than copied, why continuous laps leave you exhausted when the technique is wrong, what finger spacing actually does. That last one is characteristic, in that the answer contradicts a widely repeated coaching cue. There is a beginner path for learning freestyle from nothing, and the analysis of elite swimmers is used to explain principles rather than to suggest imitating them. The coaching business behind it sells video analysis and squads, and some videos are built around a partner's wearable.",
+    "notFor": "Anyone wanting strokes other than freestyle, or open-water and race tactics — the focus is narrow. Also sponsor-shaped in places.",
+    "formatTags": [
+      "tutorial",
+      "documentary"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course",
+      "sponsor-heavy"
+    ],
+    "categories": [
+      {
+        "id": "swimming-technique",
+        "strength": "primary",
+        "why": "Faults diagnosed one at a time with the mechanism explained, which is how swimming technique is actually taught in person and almost never on video.",
+        "evidence": "Videos on determining your own optimal stroke rate rather than copying one, on why continuous freestyle exhausts you, on finger spacing against the common cue, and a from-scratch path for learning freestyle.",
+        "entryVideo": {
+          "title": "Why can't I swim continuous laps of freestyle without getting exhausted?",
+          "videoId": "uyibIqz-G3Q",
+          "whyThisOne": "The specific failure that stops most adult swimmers, explained as a technique problem rather than a fitness one — which is the reframe the whole channel depends on.",
+          "durationMin": 14
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "A coaching business selling video analysis and squad places, and several videos are built around a sponsor's wearable. Freestyle only; other strokes are barely covered."
+  }
+]

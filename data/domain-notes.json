@@ -6,15 +6,15 @@
     "minCreators": 4
   },
   "dataAsOf": "2026-09",
-  "measuredAtCreators": 200,
+  "measuredAtCreators": 214,
   "entries": [
     {
       "domain": "fitness",
       "signal": "sells-course",
       "basis": "measured",
       "measured": {
-        "n": 14,
-        "of": 15
+        "n": 17,
+        "of": 18
       }
     },
     {
@@ -22,8 +22,8 @@
       "signal": "sells-course",
       "basis": "measured",
       "measured": {
-        "n": 10,
-        "of": 14
+        "n": 15,
+        "of": 25
       },
       "watch": "Drifted from 83% to 71% between batches 16 and 22 as the domain filled out. One more creator without the badge drops it below the 70% threshold and this note should come down. Recorded because a note that survives only by a rounding margin is worth watching, not defending."
     },
@@ -50,8 +50,8 @@
       "signal": "practitioner",
       "basis": "measured",
       "measured": {
-        "n": 15,
-        "of": 15
+        "n": 18,
+        "of": 18
       }
     },
     {
@@ -59,8 +59,8 @@
       "signal": "practitioner",
       "basis": "measured",
       "measured": {
-        "n": 14,
-        "of": 14
+        "n": 25,
+        "of": 25
       }
     },
     {
@@ -86,8 +86,8 @@
       "signal": "practitioner",
       "basis": "measured",
       "measured": {
-        "n": 9,
-        "of": 11
+        "n": 10,
+        "of": 12
       }
     },
     {
