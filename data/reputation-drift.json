@@ -1,0 +1,89 @@
+{
+  "_comment": "Two findings about YouTube that fell out of the research rather than being looked for, captured deliberately from batch 34 on the owner's instruction. NOT yet surfaced to visitors — the data exists in a usable shape and the decision about whether to publish it comes at the end of Phase 2. The reason it may be worth publishing: someone searching \"learn iOS\" finds Sean Allen and has no way to discover that his teaching moved behind a paywall years ago and the channel is now a news show. That gap between what a name is known for and what the channel currently is, is precisely what a search engine cannot tell them and a read catalogue can.",
+  "_schema": {
+    "drift": "A creator whose CURRENT catalogue no longer matches what their reputation is for. Each entry: handle, name, knownFor, catalogueNow, scan (what the keyword scan actually returned — the number is the point), categoriesAffected, outcome (rejected | listed-with-caveat), checkedAt.",
+    "collisions": "A handle that resolves to a real channel that is not the person or subject sought. Each entry: handle, resolvedTo, sought, note, checkedAt. Two kinds worth distinguishing: a PERSON-name collision, which identityMatch can catch because a name is specific; and a CATEGORY-term collision, which it cannot, because category words are generic enough for any channel to carry them innocently."
+  },
+  "drift": [
+    {
+      "handle": "@seanallen", "name": "Sean Allen",
+      "knownFor": "Swift and SwiftUI teaching; one of the best-known iOS development educators on the platform.",
+      "catalogueNow": "A weekly iOS news roundup. The teaching moved into paid courses, which the channel description links to.",
+      "scan": "300 uploads scanned for swiftui, swift, tutorial, build, how to, beginner, concurrency. 107 long-form hits — and every one is the same roundup format, titled \"X, Y, Z & More\".",
+      "categoriesAffected": ["mobile-development"], "outcome": "rejected", "checkedAt": "batch 34"
+    },
+    {
+      "handle": "@t3dotgg", "name": "Theo (t3.gg)",
+      "knownFor": "Web frontend and TypeScript education; creator of the T3 stack.",
+      "catalogueNow": "AI model commentary and reaction — 'NVIDIA Just Lost Their Lead', 'Which AI Models Are Worth Using'.",
+      "scan": "50 recent uploads, 30 over twenty minutes, and the long-form list contains no frontend teaching.",
+      "categoriesAffected": ["web-frontend"], "outcome": "rejected", "checkedAt": "batch 32"
+    },
+    {
+      "handle": "@JeffSu", "name": "Jeff Su",
+      "knownFor": "Workplace and career skills — the channel people recommend for professional communication.",
+      "catalogueNow": "Short-form AI tool tips.",
+      "scan": "300 uploads scanned for career, promotion, manager, workplace, politics, feedback, meeting, email, resume. ONE long-form hit, a resume video, in a category that already had creators.",
+      "categoriesAffected": ["career-change", "remote-work", "workplace-politics"], "outcome": "rejected", "checkedAt": "batch 30"
+    },
+    {
+      "handle": "@VanessaLau", "name": "Vanessa Lau",
+      "knownFor": "Social media growth and content strategy teaching.",
+      "catalogueNow": "Founder vlogs and travel diaries. She states the pivot herself in the channel description.",
+      "scan": "588 uploads, 42 of the 50 most recent under two minutes; the long-form is diaries and vlogging-gear reviews.",
+      "categoriesAffected": ["social-media-growth"], "outcome": "rejected", "checkedAt": "batch 32"
+    },
+    {
+      "handle": "@DrGrande", "name": "Dr. Todd Grande",
+      "knownFor": "Credentialed counsellor education — a plausible critic of pop relationship psychology.",
+      "catalogueNow": "True-crime case commentary with tabloid-style titles.",
+      "scan": "4,102 uploads; the 50 most recent are true-crime analyses, median 15 minutes.",
+      "categoriesAffected": ["relationships (critic slot)", "therapy-literacy"], "outcome": "rejected", "checkedAt": "batch 32"
+    },
+    {
+      "handle": "@CodeMonkeyUnity", "name": "Code Monkey",
+      "knownFor": "Unity and C# game development tutorials from a professional indie developer.",
+      "catalogueNow": "Unity Asset Store roundups and Steam-marketing interviews; teaching largely moved to paid courses.",
+      "scan": "250 uploads scanned; 19 long-form hits, most of them asset roundups. Median upload length two minutes.",
+      "categoriesAffected": ["game-development"], "outcome": "rejected", "checkedAt": "batch 33"
+    },
+    {
+      "handle": "@MyWifeQuitHerJob", "name": "MyWifeQuitHerJob (Steve Chou)",
+      "knownFor": "Ecommerce operations — sourcing, margins, running a physical-product business.",
+      "catalogueNow": "Opportunity listicles: '8 Claude AI Side Hustles That Each Make $100K/Yr', '9 UNSEXY Products Quietly Making $10M+'.",
+      "scan": "1,247 uploads, median 2 minutes; the long-form is trend-chasing rather than operational teaching.",
+      "categoriesAffected": ["ecommerce"], "outcome": "rejected", "checkedAt": "batch 29"
+    },
+    {
+      "handle": "@aragusea", "name": "Adam Ragusea",
+      "knownFor": "Cooking technique explained from first principles — the salt-in-pasta-water genre.",
+      "catalogueNow": "Substantially food journalism and policy: peanut allergies, farm economics, processed-food regulation, plus an unrelated podcast strand.",
+      "scan": "600 uploads scanned to find the technique videos; the fundamentals material is real but older than most of the recent catalogue.",
+      "categoriesAffected": ["home-cooking-fundamentals"], "outcome": "listed-with-caveat", "checkedAt": "batch 18"
+    },
+    {
+      "handle": "@patflynn", "name": "Pat Flynn",
+      "knownFor": "Affiliate marketing done with disclosure; published his own income reports for years.",
+      "catalogueNow": "Live-streaming setup, short-form video challenges and creator-business content. 29 of the 50 most recent uploads are under two minutes.",
+      "scan": "400 uploads scanned for affiliate terms; five long-form hits, four of them the workshops that justify the listing, all well back in the catalogue.",
+      "categoriesAffected": ["affiliate-marketing"], "outcome": "listed-with-caveat", "checkedAt": "batch 23"
+    }
+  ],
+  "collisions": [
+    { "handle": "@chrisvoss", "resolvedTo": "a book podcast with 10,150 uploads", "sought": "Chris Voss the FBI hostage negotiator", "kind": "person", "note": "The trap that produced identityMatch: a channel merely NAMED after a person fails the gate; its own description or recurring upload titles must tie it to them.", "checkedAt": "batch 02" },
+    { "handle": "@TheOperationsRoom", "resolvedTo": "a military-history animation channel (Pearl Harbor, Midway, Operation Anaconda), 1M-5M subscribers", "sought": "an operations-and-process channel", "kind": "category-term", "note": "The trap that produced genericNameCollision(). identityMatch cannot help here: 'operations' is generic enough that any channel in any field carries it innocently.", "checkedAt": "batch 29" },
+    { "handle": "@StrategyU", "resolvedTo": "a consulting-careers channel — two long-form videos in 49, both about case interviews", "sought": "a business-strategy channel", "kind": "category-term", "note": "Flagged by the new guard BEFORE it was read, which is the first time the check did the noticing rather than luck.", "checkedAt": "batch 31" },
+    { "handle": "@davegray", "resolvedTo": "a different Dave Gray — 'Possibilitarian at School of the Possible', a visual-thinking podcast", "sought": "Dave Gray the web-development educator", "kind": "person", "checkedAt": "batch 34" },
+    { "handle": "@cxl", "resolvedTo": "an unrelated Arabic-language channel with 4,529 uploads", "sought": "CXL, the conversion-optimization training company", "kind": "acronym", "checkedAt": "batch 25" },
+    { "handle": "@Paramedic", "resolvedTo": "a Russian-language travel channel", "sought": "a paramedic teaching first aid", "kind": "category-term", "checkedAt": "batch 24" },
+    { "handle": "@philosophyoverdose", "resolvedTo": "'IKEBANA CHRONICLES', 2 uploads", "sought": "Philosophy Overdose", "kind": "person", "checkedAt": "batch 19" },
+    { "handle": "@Einzelgangermusic", "resolvedTo": "'Thijs Geritz', 10 uploads", "sought": "Einzelgänger (the real channel is @Einzelganger)", "kind": "person", "checkedAt": "batch 19" },
+    { "handle": "@thecoachlee", "resolvedTo": "'Bald History', 0 uploads", "sought": "Coach Lee, breakup coaching", "kind": "person", "checkedAt": "batch 17" },
+    { "handle": "@PositiveParentingSolutions", "resolvedTo": "a British creator, not Amy McCready's US organisation", "sought": "Positive Parenting Solutions", "kind": "person", "checkedAt": "batch 17" },
+    { "handle": "@productschool", "resolvedTo": "'Werner Müller', 1 upload", "sought": "Product School", "kind": "person", "checkedAt": "batch 20" },
+    { "handle": "@SVPG", "resolvedTo": "'Thomas Traveler', 0 uploads", "sought": "Silicon Valley Product Group", "kind": "acronym", "checkedAt": "batch 20" },
+    { "handle": "@Buffer", "resolvedTo": "'piozzo', 0 uploads", "sought": "Buffer, the social media company", "kind": "person", "checkedAt": "batch 30" },
+    { "handle": "@SMBSuccess", "resolvedTo": "a Korean-language channel", "sought": "small-business content", "kind": "acronym", "checkedAt": "batch 20" },
+    { "handle": "@ChrisFixIt", "resolvedTo": "'Chris_Fix_it', 0 uploads", "sought": "ChrisFix (the real channel is @ChrisFix)", "kind": "person", "checkedAt": "batch 18" }
+  ]
+}

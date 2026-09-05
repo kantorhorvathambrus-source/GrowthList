@@ -410,6 +410,36 @@ for (const q of domainNotes.open ?? []) {
   }
 }
 
+// ------------------------------------------------- reputation drift
+// Not a coverage metric. A finding about YouTube that fell out of the research
+// rather than being looked for, kept because it is the strongest evidence this
+// directory offers something a search engine cannot: someone searching "learn
+// iOS" finds Sean Allen and has no way to discover the teaching moved behind a
+// paywall and the channel is now a news show.
+if (existsSync(join(ROOT, 'data/reputation-drift.json'))) {
+  const rd = read('data/reputation-drift.json');
+  const rejected = (rd.drift ?? []).filter((d) => d.outcome === 'rejected');
+  console.log('\n\nREPUTATION DRIFT  (data/reputation-drift.json)');
+  console.log('='.repeat(72));
+  console.log(`${(rd.drift ?? []).length} creators whose current catalogue no longer matches what they are`);
+  console.log(`known for — ${rejected.length} rejected outright, ${(rd.drift ?? []).length - rejected.length} listed with the drift named on the card.`);
+  console.log('Not yet surfaced to visitors; the decision comes at the end of Phase 2.\n');
+  for (const d of rd.drift ?? []) {
+    console.log(`  ${d.name}  [${d.outcome}]`);
+    console.log(`    known for: ${d.knownFor}`);
+    console.log(`    now:       ${d.catalogueNow}`);
+    console.log(`    scan:      ${d.scan}`);
+    console.log('');
+  }
+  const kinds = {};
+  for (const c of rd.collisions ?? []) kinds[c.kind] = (kinds[c.kind] ?? 0) + 1;
+  console.log(`  HANDLE COLLISIONS: ${(rd.collisions ?? []).length} recorded — ` +
+    Object.entries(kinds).map(([k, n]) => `${n} ${k}`).join(', ') + '.');
+  console.log('  A person-name collision is catchable by identityMatch. A category-term');
+  console.log('  collision is not, because category words are generic enough for any');
+  console.log('  channel to carry them innocently — hence genericNameCollision().');
+}
+
 // ---------------------------------------------------------------- rescues
 console.log('\n\nHANDLE RESCUES  (data/handle-rescues.json)');
 console.log('='.repeat(72));

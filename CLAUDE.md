@@ -759,6 +759,29 @@ this section first to know exactly where to resume.)*
   were proposed and rejected — bench-side work is checkable.
 - **Affiliation fallback ledger: 11 rescues, 3 wrong, 0 written.**
 
+### Reputation drift — a finding, not an obstacle
+
+`data/reputation-drift.json`, started at batch 34 on the owner's
+instruction. **Every rejection of the shape "well-known name, catalogue
+has moved on" gets an entry**, with what they are known for, what the
+channel actually is now, and the scan that showed it — the number is the
+point (*Sean Allen: 300 uploads scanned, 107 long-form hits, every one
+the same weekly news roundup*).
+
+Two reasons it is being kept. It is **the strongest evidence this
+directory offers something a search engine cannot**: a person searching
+"learn iOS" finds Sean Allen and has no way to learn that the teaching
+moved behind a paywall and the channel is now a news show. And it may be
+worth showing visitors — **that decision is deferred to the end of Phase
+2, and no UI is to be built for it before then.**
+
+The file also holds **handle collisions**, which are a separate finding:
+9 person-name, 3 category-term, 3 acronym. The distinction matters
+because `identityMatch` catches the first kind and structurally cannot
+catch the second — hence `genericNameCollision()`.
+
+Add to it in the same batch as the rejection, not later.
+
 ### Immediate next actions
 
 1. Batch 03 onward. Check in with the owner every 5–6 batches, but
