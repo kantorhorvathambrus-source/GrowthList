@@ -1191,27 +1191,20 @@ a rule retired two batches earlier. The measurement stays, the
 classification columns are gone, and the table now says plainly what
 the numbers are still for: drift detection in the validator.
 
-## Batch 43 — `gut-health` was not empty, it was unprobed
+## Batch 43 — three conflicts, disclosed
 
 Dr. Spencer Nadolsky (`fat-loss`, 1→2), The Gastro Girl Podcast
 (`gut-health`, **0→1**) and Dr. Will Bulsiewicz (`gut-health`, 1→2).
 Three creators, three mappings — marginal ratio 1.00, second-or-later
 share 0%.
 
-**The batch-41 gut-health note was a report about my search, and it
-said so.** Two batches ago I probed the influencer end, found exactly
-the content the category blurb warns against, and wrote that the
-gastroenterology and research ends were unprobed. They were probed
-this batch. Seven handles, four resolved, two listable on the first
-attempt — one of them a channel where eighty-six of the last two
-hundred uploads run over twenty minutes and the guests are the people
-who write the screening guidelines.
-
-This is the sixth instance of the same shape and the first where
-naming the unprobed sub-areas at the time meant nothing false ever
-shipped. The finding is not that gut-health is well served; it is that
-"I could not find it" and "it is not there" are different sentences,
-and only one of them was true.
+`gut-health` filled from the gastroenterology end that batch 41
+recorded as unprobed. Seven handles, four resolved, two listable.
+That is rule 18 operating normally, not a result: naming the unprobed
+sub-areas is what the rule requires, and nothing false shipping is the
+expected consequence of following it rather than an achievement.
+Recorded here because the ledger should show the rule being used, and
+not written up as a finding.
 
 **Both gut-health creators have a conflict and neither is hidden.**
 Bulsiewicz founded a supplement company in this exact subject and the
@@ -1265,13 +1258,18 @@ the double-counting rule 4 forbids). Not probed: occupational-health
 and workplace-ergonomics research, which is the end the category is
 actually named after.
 
-**Rule 12 proposal — `gut-health`.** The rationale is the
-cost-over-time one, not a new kind: the failure mode is years of
-self-managing a symptom while a diagnosis that changes the outcome
-waits, and nothing about the intervening period tells the person the
-advice was wrong. That is the same structure as the existing six, and
-it is deliberately not "this could hurt someone." Proposed, not
-shipped.
+**Rule 12 for `gut-health`: proposed, and declined.** The owner's
+reason is better than my proposal. The cost-over-time rationale is the
+loosest of the three and can be argued for most chronic-health
+categories — `fat-loss` and `hormonal-health` were trimmed off rule 12
+on exactly this ground, and admitting `gut-health` would readmit them
+and leave rule 12 covering the health domain rather than marking
+anything out inside it. A test that selects everything selects
+nothing. The delayed-diagnosis point is real and now sits where it
+belongs: the category's beginner level names the symptoms that mean
+stop self-managing, and both creators' caveats carry their own
+conflicts. Recorded in CLAUDE.md as the boundary marker for the
+cost-over-time rationale.
 
 **Marginal ratio for batches 33–43: 1.08** across 25 creators and 27
 mappings; the dataset stands at 1.42 over 228 creators and 323

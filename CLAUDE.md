@@ -223,11 +223,24 @@ this file has the rules, schema, and current state.
     I originally proposed ten categories; the owner cut four
     (`fat-loss`, `anxiety-management`, `emotional-regulation`,
     `hormonal-health`) because applying it there would have bought my
-    caution at the price of most of the mindset domain. Those go under
-    rule 13 like everything else. **Do not add a category to this file
-    without asking** — narrowing the candidate pool is the owner's call.
-    Twice now the owner has had to trim or qualify my instinct here — but
-    **do not read that as an instruction to stop proposing.** The owner's
+    caution at the price of most of the mindset domain. **`gut-health`
+    was proposed in batch 43 and declined on the same ground, and the
+    reason generalises: the cost-over-time rationale is the loosest of
+    the three and can be argued for most chronic-health categories.**
+    If it carries `gut-health` it carries `fat-loss` and
+    `hormonal-health` too, and then rule 12 covers the health domain
+    instead of marking anything out within it. A test that selects
+    everything selects nothing. Delayed diagnosis in `gut-health` is
+    handled where it belongs — in the category's own beginner level,
+    which now names the symptoms that mean stop self-managing, and in
+    the creators' caveats. Treat this as the boundary marker for the
+    cost-over-time rationale: it earns a rule 12 note only where the
+    cost is specific to that subject rather than generic to chronic
+    illness. All five go under rule 13 like everything else.
+    **Do not add a category to this file without asking** — narrowing
+    the candidate pool is the owner's call. Three times now the owner has
+    had to trim or qualify my instinct here — but **do not read that as
+    an instruction to stop proposing.** The owner's
     ruling on this is explicit: *"Keep proposing when you think it
     applies; I'd rather trim than miss."* The error in the other
     direction — failing to flag a category that genuinely warrants rule
