@@ -97,6 +97,11 @@
       "why": "AI Jason",
       "at": "dataset"
     },
+    "@ajsmart": {
+      "status": "rejected",
+      "why": "design-sprint agency channel; the teaching is a funnel for the workshop business",
+      "at": "batch 45"
+    },
     "@alanbeckertutorials": {
       "status": "listed",
       "why": "Alan Becker Tutorials",
@@ -622,6 +627,11 @@
       "why": "sleep and ambient meditation audio — a listening product rather than a practice",
       "at": "batch 44"
     },
+    "@jayshettypodcast.": {
+      "status": "collision",
+      "why": "returned by a podcasting-topic search: it is a podcast, not teaching about podcasting",
+      "at": "batch 45"
+    },
     "@jeffersonfisher": {
       "status": "listed",
       "why": "Jefferson Fisher",
@@ -645,6 +655,11 @@
     "@jonloomer": {
       "status": "listed",
       "why": "Jon Loomer",
+      "at": "dataset"
+    },
+    "@joshwrightpiano": {
+      "status": "listed",
+      "why": "Josh Wright",
       "at": "dataset"
     },
     "@juggernauttrainingsystems": {
@@ -717,10 +732,20 @@
       "why": "Luca Lampariello",
       "at": "dataset"
     },
+    "@madeleineharveyvoice": {
+      "status": "rejected",
+      "why": "strong catalogue — 50 of 50 uploads in the 3-19m band, median 13m, all technique — but the last upload is 2024-12-01. Dormant, and the reason the status audit got written",
+      "at": "batch 45"
+    },
     "@madfit": {
       "status": "listed",
       "why": "MadFit (Maddie Lymburner)",
       "at": "dataset"
+    },
+    "@malewiczhype": {
+      "status": "rejected",
+      "why": "reputation drift — a designer whose recent long-form is AI-industry commentary and hot takes (\"2026 is the end of software\", \"Signs the AI bubble is ready to POP\"). Channel description advertises paid collaborations from EUR4000 per video",
+      "at": "batch 45"
     },
     "@mamadoctorjones": {
       "status": "listed",
@@ -1306,6 +1331,16 @@
       "status": "listed",
       "why": "Toastmasters International",
       "at": "dataset"
+    },
+    "@tomofujitamusic": {
+      "status": "listed",
+      "why": "TomoFujitaMusic (Tomo Fujita)",
+      "at": "dataset"
+    },
+    "@tonebasepiano": {
+      "status": "rejected",
+      "why": "subscription platform channel — the same vendor shape as Pianote, which the category already carries",
+      "at": "batch 45"
     },
     "@tony_jeffries": {
       "status": "listed",

@@ -21,7 +21,11 @@ const DATA = join(ROOT, 'data');
 // ---------------------------------------------------------------- vocabularies
 
 const SIZE_BUCKETS = ['<100k', '100k-500k', '500k-1M', '1M-5M', '5M-20M', '>20M'];
-const STATUSES = ['active', 'archive'];
+// `dormant` was added at batch 45 after an audit re-queried all 231 records:
+// five were shipping `active` while the channel had been silent 12-24 months,
+// among them the second creator in a category filled the batch before. A
+// binary at 730 days cannot say that. See scripts/audit-status.mjs.
+const STATUSES = ['active', 'dormant', 'archive'];
 // The rule-5 exemption. Extend this list if another language-acquisition
 // category is ever added; do NOT widen it to mean "foreign-language content".
 const LANGUAGE_EXEMPT_CATEGORIES = ['language-learning'];

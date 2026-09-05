@@ -102,7 +102,11 @@ export async function renderCreator(app, { params }) {
   const metaParts = [sizeLabel(creator.sizeBucket), sizeClass(creator.sizeBucket), creator.country];
   if (creator.role === 'critic') metaParts.push('Critic');
   if (creator.role === 'generalist') metaParts.push('Generalist');
+  // Both non-active states are shown. `dormant` exists because a channel
+  // silent for over a year is a fact the reader wants before being sent to
+  // learn from someone, and a two-state field could not carry it.
   if (creator.status === 'archive') metaParts.push('Archive');
+  if (creator.status === 'dormant') metaParts.push('Quiet for over a year');
 
   app.innerHTML = `
     <section class="band band--ink hero__band">

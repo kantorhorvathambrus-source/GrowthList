@@ -7,16 +7,33 @@
     "country": "US",
     "language": "en",
     "sizeBucket": "1M-5M",
-    "status": "active",
+    "status": "dormant",
     "verified": true,
     "dataAsOf": "2026-09",
     "shortDescription": "Neural networks built from an empty file, one two-hour lecture at a time, by someone who did this work at the top of the field.",
     "longDescription": "Seventeen uploads, thirteen of them over eight minutes, median a hundred and fifteen. There is no filler here at all. The spine is the Zero to Hero sequence: backpropagation built from scratch in micrograd, then language modelling built up across five makemore parts, then GPT written line by line, then a tokenizer, then GPT-2 reproduced at 124 million parameters across four hours. Nothing is imported that has not first been built. Alongside it sit two long orientation pieces — a one-hour introduction to large language models and a three-and-a-half-hour deep dive aimed at people who use them rather than train them — and a separate, more practical hundred-and-thirty-minute video on how he actually uses these tools day to day. Uploads are rare and the most recent in the scanned window is February 2025.",
     "notFor": "Anyone in a hurry, and anyone without comfortable Python and some calculus. These are lectures, not tutorials — the shortest useful one is an hour.",
-    "formatTags": ["lecture", "long-form", "course"],
-    "level": ["intermediate", "advanced"],
-    "profile": { "evidenceBased": 4, "practical": 4, "energy": 2, "selfPromotion": 1, "depth": 4 },
-    "signals": ["credentialed", "practitioner", "cites-research"],
+    "formatTags": [
+      "lecture",
+      "long-form",
+      "course"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 4,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 1,
+      "depth": 4
+    },
+    "signals": [
+      "credentialed",
+      "practitioner",
+      "cites-research"
+    ],
     "categories": [
       {
         "id": "machine-learning-engineering",
@@ -60,10 +77,26 @@
     "shortDescription": "Current React and frontend architecture explained at ten minutes a time, including which new things are not worth adopting.",
     "longDescription": "Sixty-nine long-form videos in two hundred uploads, median around eight minutes, and the subject is the frontend as it currently is rather than as it was when a course was recorded — React Server Components and partial caching, the React compiler, new hooks assessed rather than announced. The useful habit is scepticism: one video asks whether a new hook is a genuine improvement or a gimmick and answers it, which is rarer than it should be in a field whose content economy rewards enthusiasm. He goes deep on specific libraries too, including a hundred-minute session on one ecosystem. Some recent uploads have drifted toward AI tooling, but the frontend material is current and is still the bulk of it.",
     "notFor": "Beginners — this assumes React is already familiar and you are trying to keep up rather than start. Framework-specific and moves fast, so older videos date quickly.",
-    "formatTags": ["tutorial", "video-essay"],
-    "level": ["intermediate", "advanced"],
-    "profile": { "evidenceBased": 3, "practical": 4, "energy": 3, "selfPromotion": 2, "depth": 3 },
-    "signals": ["practitioner", "sells-course", "sponsor-heavy"],
+    "formatTags": [
+      "tutorial",
+      "video-essay"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 3,
+      "selfPromotion": 2,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course",
+      "sponsor-heavy"
+    ],
     "categories": [
       {
         "id": "web-frontend",

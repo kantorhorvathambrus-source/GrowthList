@@ -147,10 +147,23 @@ export function durationToMinutes(iso) {
 }
 
 /** No uploads in ~2 years → the schema's "archive" status. */
+/**
+ * THREE STATES, NOT TWO. This was a binary at 730 days until a singing coach
+ * silent since December 2024 came back as `active` — indistinguishable, in a
+ * record shown to a visitor, from a channel that posted this morning. On a
+ * site whose whole proposition is "go and learn from this person", a year of
+ * silence is a fact the reader wants. `dormant` sits between the two.
+ *
+ * `status` is also written once and then never rechecked, which is the same
+ * defect as a handle list kept in memory. `scripts/audit-status.mjs` re-queries
+ * the whole dataset; run it before any release.
+ */
 export function statusFromLatestUpload(isoDate) {
   if (!isoDate) return null;
   const ageDays = (Date.now() - new Date(isoDate).getTime()) / 86_400_000;
-  return ageDays > 730 ? 'archive' : 'active';
+  if (ageDays > 730) return 'archive';
+  if (ageDays > 365) return 'dormant';
+  return 'active';
 }
 
 // ---------------------------------------------------------------- channel

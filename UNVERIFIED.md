@@ -1344,3 +1344,61 @@ test earns its keep immediately — `injury-rehab` comes top with E3
 Rehab and Squat University at the same role and 100% stance overlap,
 which is invisible from the category page because both records are
 individually fine.
+
+## Batch 45 — a field that ships to visitors had gone stale
+
+Josh Wright (`piano`, 1→2) and TomoFujitaMusic (`guitar`, 1→2). Two
+creators, two mappings — marginal 1.00, second-or-later share 0%.
+Both take a category from 1 to the target.
+
+**The batch's real output is the status audit.** Chasing a singing
+coach for `singing`, discovery returned Madeleine Harvey: fifty of
+fifty recent uploads in the three-to-nineteen-minute band, median
+thirteen minutes, all technique — and a last upload of December 2024.
+The tool reported her as `active`, because `status` was a binary at
+730 days and she was 643 days quiet.
+
+Two separate defects behind one symptom. **The threshold could not
+express what a reader needs**: on a site whose proposition is "go and
+learn from this person", a year of silence is a fact, and a two-state
+field cannot carry it. `dormant` now sits between `active` and
+`archive` at 365 days and renders as "Quiet for over a year".
+
+**And `status` was written once and never re-queried.** It has shipped
+to visitors since batch 01. The first audit of all 231 records found
+**seven disagreeing with the API** — five claiming `active` for
+channels silent between twelve and twenty-four months, two overstating
+`archive` for channels that were merely quiet. The five wrong ones
+include Andrej Karpathy, and **Stronger By Science, the other creator
+in `sports-nutrition` — the category filled to 2 in the batch before
+this one.** That category has two entries and one active channel, and
+nothing in the process would have said so.
+
+This is the sixth instance of a stored fact that stopped being
+queried, and the first found in a field the site actually displays.
+The previous five cost research time or produced internal claims; this
+one had been telling visitors something untrue. `audit-status.mjs`
+re-queries the whole dataset for about two units per creator and is
+now a pre-release step.
+
+**On the two creators.** Both fill a category whose single occupant was
+an institution: Pianote is a subscription school and JustinGuitar is a
+curriculum. Josh Wright is a performing classical pianist teaching
+named repertoire and the technique underneath it, from recorded
+private lessons. Tomo Fujita's whole position is that learners
+memorise shapes without hearing intervals, and he is unusually direct
+about what learning from YouTube leaves out — a thirty-five-minute
+conversation on exactly that, which is a strange and useful thing to
+find on the medium it criticises.
+
+**I nearly wrote a credential neither channel asserts.** Tomo Fujita's
+description says "musician, author, and educator" and names no
+institution; Josh Wright's asserts no teaching qualification. Both
+records say so, and neither carries `credentialed`. The case for each
+is the playing, which is on the channel to judge.
+
+**Discovery's fourth measured limit: `podcasting`.** The query returned
+podcasts — Joe Rogan, NPR, GQ, the Daily Beast — rather than anyone
+teaching podcasting. When the topic word names the medium, the search
+returns instances of the medium. Same family as the audio-product
+limit, and the category stays at 1.

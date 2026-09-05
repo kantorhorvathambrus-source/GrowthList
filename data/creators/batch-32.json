@@ -13,10 +13,27 @@
     "shortDescription": "Software design taught through Python — why a piece of code is fragile, and what changes to make it hold.",
     "longDescription": "A university lecturer in computer science with two decades in industry, and the channel reflects both: twenty-four of the fifty most recent uploads run over twenty minutes and the median is nineteen. The organising subject is design rather than syntax — why a codebase becomes fragile, what a design pattern is actually for and when you do not need one, how to stop third-party APIs leaking through your own abstractions. Most examples are Python and most videos take one specific smell and refactor it on camera, which is far more useful than a pattern catalogue. He is unusually willing to argue against received practice: separate videos cover why you probably do not need a given pattern and why a widely-taught object-oriented approach is worse than it looks.",
     "notFor": "Beginners still learning syntax — this assumes you can already write working code and want it to survive being changed. Also strongly Python-flavoured even where the ideas are general.",
-    "formatTags": ["tutorial", "lecture", "long-form"],
-    "level": ["intermediate", "advanced"],
-    "profile": { "evidenceBased": 3, "practical": 4, "energy": 2, "selfPromotion": 3, "depth": 4 },
-    "signals": ["credentialed", "practitioner", "sells-course"],
+    "formatTags": [
+      "tutorial",
+      "lecture",
+      "long-form"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 4
+    },
+    "signals": [
+      "credentialed",
+      "practitioner",
+      "sells-course"
+    ],
     "categories": [
       {
         "id": "python",
@@ -54,16 +71,30 @@
     "country": "US",
     "language": "en",
     "sizeBucket": "100k-500k",
-    "status": "active",
+    "status": "dormant",
     "verified": true,
     "dataAsOf": "2026-09",
     "shortDescription": "Precise, unhurried explanations of how Python actually behaves, including the corners that surprise experienced people.",
     "longDescription": "A hundred and twenty-one uploads, forty-five of the fifty most recent between three and nineteen minutes, and almost no filler. The subject is Python semantics rather than Python projects: what context managers and try-finally really guarantee, how async for loops work, a generator cleanup pitfall that bites in production, all seventy-one built-in functions covered systematically. The register is exact — he is careful about what the language specifies versus what CPython happens to do, which is a distinction most tutorials never draw. Uploads have stopped: the most recent in the scanned window is September 2024, so this is a back catalogue rather than a channel to follow, and anything version-specific should be checked against current Python.",
     "notFor": "Anyone learning to program. This assumes Python is already familiar and you want to know why it does what it does. No project-building, no frameworks.",
-    "formatTags": ["tutorial", "lecture"],
-    "level": ["intermediate", "advanced"],
-    "profile": { "evidenceBased": 4, "practical": 3, "energy": 2, "selfPromotion": 1, "depth": 4 },
-    "signals": ["practitioner"],
+    "formatTags": [
+      "tutorial",
+      "lecture"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 4,
+      "practical": 3,
+      "energy": 2,
+      "selfPromotion": 1,
+      "depth": 4
+    },
+    "signals": [
+      "practitioner"
+    ],
     "categories": [
       {
         "id": "python",
@@ -95,10 +126,26 @@
     "shortDescription": "JavaScript learned by building visual things, with the mistakes and debugging left in rather than edited out.",
     "longDescription": "Thirty-two of the fifty most recent uploads run over twenty minutes and the median is thirty-one, because the format is a live-coded build from nothing to something that works. The Coding Challenge series is the core: a problem is posed, the code is written on camera, and it goes wrong several times first — which is the part every polished tutorial removes and the part a learner most needs to see. The vehicle is JavaScript and p5.js, so the output is visual and the feedback loop is fast, and the subjects stretch from Bayes theorem to browser machine learning without the difficulty being hidden. Shiffman teaches at a university and the register is deliberately warm and unintimidating, which is a real pedagogical choice rather than a style tic.",
     "notFor": "Anyone wanting production JavaScript — this is creative coding, and the patterns suit sketches rather than applications. Also not for someone who wants a tight edit; the sessions are long and meandering by design.",
-    "formatTags": ["tutorial", "livestream", "long-form"],
-    "level": ["beginner", "intermediate"],
-    "profile": { "evidenceBased": 3, "practical": 4, "energy": 4, "selfPromotion": 1, "depth": 3 },
-    "signals": ["credentialed", "practitioner"],
+    "formatTags": [
+      "tutorial",
+      "livestream",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 4,
+      "selfPromotion": 1,
+      "depth": 3
+    },
+    "signals": [
+      "credentialed",
+      "practitioner"
+    ],
     "categories": [
       {
         "id": "javascript",

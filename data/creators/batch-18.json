@@ -13,10 +13,26 @@
     "shortDescription": "A former journalism lecturer who explains why a cooking technique works, so the reasoning transfers to dishes he never covers.",
     "longDescription": "Ragusea's method is to take one ordinary thing — potatoes, water, an egg, a pan — and work out what is physically happening, then let the recipe fall out of that. A ten-minute video on potatoes covers boiling, steaming, roasting and pan-frying as four different problems with the same ingredient, which is the shape of the whole catalogue at its best. He is careful about the limits of what he knows, corrects himself on camera, and links his sources. Two things to know about the channel as it stands now: the median recent upload is ten minutes but the subject has drifted well beyond cooking into food policy and journalism — peanut allergies, farm economics, processed-food regulation — and there is a long-form podcast strand that is not about food at all. The technique material is still there and still good; it is no longer most of what gets published.",
     "notFor": "Anyone who wants a recipe to follow without commentary. The videos are arguments with a recipe attached, and the recent catalogue is as much food journalism as cooking.",
-    "formatTags": ["tutorial", "video-essay", "q-and-a"],
-    "level": ["beginner", "intermediate"],
-    "profile": { "evidenceBased": 4, "practical": 3, "energy": 3, "selfPromotion": 2, "depth": 3 },
-    "signals": ["cites-research", "sponsor-heavy"],
+    "formatTags": [
+      "tutorial",
+      "video-essay",
+      "q-and-a"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 4,
+      "practical": 3,
+      "energy": 3,
+      "selfPromotion": 2,
+      "depth": 3
+    },
+    "signals": [
+      "cites-research",
+      "sponsor-heavy"
+    ],
     "categories": [
       {
         "id": "home-cooking-fundamentals",
@@ -48,10 +64,24 @@
     "shortDescription": "Terse, unglamorous cooking instruction aimed at people who need to feed themselves well without turning it into a hobby.",
     "longDescription": "The register here is the opposite of food television: no music swell, no reaction shots, no assumption that you own three pans. The channel's premise is that most home cooking is a small set of repeated operations done adequately, and it teaches those rather than showcasing dishes. The centrepiece is a two-and-a-half-hour video called How to Cook EVERYTHING, which is a genuine beginner course rather than a title — it moves through the actual sequence a new cook needs in order. Most other uploads are short and narrow: how to plate food at home, what to do with a specific cheap ingredient, which equipment is worth having. The tone is dry to the point of deadpan and there is a lot of implicit argument against the aesthetics of the rest of food YouTube.",
     "notFor": "Anyone who cooks for pleasure and wants the pleasure reflected back. It is deliberately unromantic, and the short format means little is explained twice.",
-    "formatTags": ["tutorial", "long-form", "shorts"],
-    "level": ["beginner"],
-    "profile": { "evidenceBased": 3, "practical": 4, "energy": 1, "selfPromotion": 1, "depth": 3 },
-    "signals": ["practitioner"],
+    "formatTags": [
+      "tutorial",
+      "long-form",
+      "shorts"
+    ],
+    "level": [
+      "beginner"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 1,
+      "selfPromotion": 1,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner"
+    ],
     "categories": [
       {
         "id": "home-cooking-fundamentals",
@@ -83,10 +113,25 @@
     "shortDescription": "A professionally trained cook translating restaurant technique into a home kitchen, with the reason a step exists stated as he goes.",
     "longDescription": "Lagerstrom worked in restaurants and bakeries before the channel and it shows in what he chooses to explain: not which recipe to make but which technique makes a category of food better. A twenty-seven-minute video on pan sauces is really about deglazing and emulsification; a twenty-two-minute one on vegetables is seven distinct heat and seasoning techniques rather than seven recipes. The videos run long by food-channel standards — twenty-five of the recent hundred and fifty pass eight minutes and many pass twenty — because he does not cut the explanation. There is a substantial bread strand as well, including sourdough and pizza dough handled at the level of hydration and fermentation rather than as a formula to copy.",
     "notFor": "Anyone in a hurry. These are long, and the register assumes you want to get better rather than just get fed tonight.",
-    "formatTags": ["tutorial", "long-form"],
-    "level": ["beginner", "intermediate"],
-    "profile": { "evidenceBased": 3, "practical": 4, "energy": 3, "selfPromotion": 2, "depth": 3 },
-    "signals": ["practitioner", "sponsor-heavy"],
+    "formatTags": [
+      "tutorial",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 3,
+      "selfPromotion": 2,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sponsor-heavy"
+    ],
     "categories": [
       {
         "id": "home-cooking-fundamentals",
@@ -124,16 +169,31 @@
     "country": "GB",
     "language": "en",
     "sizeBucket": "100k-500k",
-    "status": "active",
+    "status": "dormant",
     "verified": true,
     "dataAsOf": "2026-09",
     "shortDescription": "A British baker running a systematic course in what each ingredient does to dough, one variable at a time.",
     "longDescription": "This is the closest thing on YouTube to a structured baking-science curriculum. Alongside the recipe videos there is an explicit Principles of Baking series that isolates single variables — how sugar affects dough, how much fat to add and why, what dough temperature does to a cold ferment, what happens when you put porridge in bread — so the recipes afterwards are demonstrations of a principle rather than instructions to copy. Nine bread shaping methods get their own video. The format is unusually consistent: every video in the scanned catalogue runs about eight minutes, tightly edited, no preamble. Uploads have slowed markedly — the most recent in the scanned window is from May 2025 — but the back catalogue is a complete enough sequence that this matters less here than it would elsewhere.",
     "notFor": "Anyone who wants pastry, cake or patisserie — this is overwhelmingly bread. Also not for someone who wants a single reliable recipe rather than an understanding of why it works.",
-    "formatTags": ["tutorial", "lecture"],
-    "level": ["beginner", "intermediate", "advanced"],
-    "profile": { "evidenceBased": 4, "practical": 4, "energy": 1, "selfPromotion": 1, "depth": 4 },
-    "signals": ["practitioner"],
+    "formatTags": [
+      "tutorial",
+      "lecture"
+    ],
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 4,
+      "practical": 4,
+      "energy": 1,
+      "selfPromotion": 1,
+      "depth": 4
+    },
+    "signals": [
+      "practitioner"
+    ],
     "categories": [
       {
         "id": "baking",
@@ -165,10 +225,25 @@
     "shortDescription": "Long, unhurried car repair filmed from the angle you would actually be lying at, with every step shown rather than cut around.",
     "longDescription": "The defining choice of this channel is that nothing is skipped. Jobs run thirty to fifty minutes because the difficult ten minutes — the bolt you cannot reach, the thing that goes wrong — is filmed rather than edited out, which is exactly the part a first-timer needs. Over a hundred of the two hundred most recent uploads run eight minutes or more. The range covers routine servicing through to genuinely involved work: valve seals, a drum-to-disc brake conversion, trailer wheel bearings, a leaking transmission. He is consistent about safety steps and about saying when a job needs a lift, a press or a shop, which matters more here than tone does. He is not a certified mechanic; he is a very careful and very experienced amateur, and he says so.",
     "notFor": "Anyone wanting diagnosis rather than repair, or driving something he has not worked on — the coverage is broad but the demonstrations are specific to particular vehicles.",
-    "formatTags": ["tutorial", "long-form"],
-    "level": ["beginner", "intermediate"],
-    "profile": { "evidenceBased": 3, "practical": 4, "energy": 3, "selfPromotion": 2, "depth": 4 },
-    "signals": ["practitioner", "sponsor-heavy"],
+    "formatTags": [
+      "tutorial",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 3,
+      "selfPromotion": 2,
+      "depth": 4
+    },
+    "signals": [
+      "practitioner",
+      "sponsor-heavy"
+    ],
     "categories": [
       {
         "id": "car-maintenance",
@@ -200,10 +275,27 @@
     "shortDescription": "Licensed tradespeople doing real jobs in real houses, including the parts where they say to call somebody.",
     "longDescription": "The archive here is unusual on YouTube: decades of a television programme in which actual plumbers, electricians and carpenters do the work and explain it while doing it. The Ask This Old House format — full twenty-four-minute episodes, many of them uploaded whole — is the most useful shape, because each segment is a homeowner's specific problem solved by someone licensed to solve it. What distinguishes it from most DIY content is the judgement about scope: the tradespeople routinely say which parts of a job are homeowner work and which require a permit, a licence or an inspection, which is the piece the enthusiastic end of DIY YouTube tends to leave out. Coverage is broad — drains, boilers, thermostats, driveways, energy retrofits, small joinery.",
     "notFor": "Anyone outside the US on anything touching code, permits or wiring — the electrical and regulatory content is specifically American. Also not for step-by-step of one project; the format is segments, not builds.",
-    "formatTags": ["tutorial", "documentary", "long-form"],
-    "level": ["beginner", "intermediate"],
-    "profile": { "evidenceBased": 3, "practical": 4, "energy": 2, "selfPromotion": 1, "depth": 3 },
-    "signals": ["credentialed", "practitioner", "sponsor-heavy"],
+    "formatTags": [
+      "tutorial",
+      "documentary",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 1,
+      "depth": 3
+    },
+    "signals": [
+      "credentialed",
+      "practitioner",
+      "sponsor-heavy"
+    ],
     "categories": [
       {
         "id": "home-repair-diy",
@@ -235,10 +327,28 @@
     "shortDescription": "Decades of side-by-side no-dig growing trials in one British garden, filmed month by month with the results visible.",
     "longDescription": "Dowding has run the same beds for decades and much of the channel is a long-running comparison: dig against no-dig, on adjacent plots, with the yields recorded. That is a rare thing in gardening content, which usually offers assertion. The core videos are monthly garden tours running twenty to forty minutes in which he walks the beds and says what worked, what failed and why — flea beetles this year, lack of rain, a sowing that went in too late. Composting gets serious treatment, including how to do it in small bins rather than the large heaps most advice assumes. The advice is grounded in a specific British climate and soil, which is both its strength — you are watching a real place over real years — and its main limitation.",
     "notFor": "Growers outside a temperate maritime climate, where the timings will not transfer. Also not for someone wanting quick answers; the format is a slow walk through a garden.",
-    "formatTags": ["long-form", "tutorial", "documentary"],
-    "level": ["beginner", "intermediate", "advanced"],
-    "profile": { "evidenceBased": 4, "practical": 4, "energy": 1, "selfPromotion": 2, "depth": 4 },
-    "signals": ["practitioner", "sells-course", "strong-ideological-frame"],
+    "formatTags": [
+      "long-form",
+      "tutorial",
+      "documentary"
+    ],
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 4,
+      "practical": 4,
+      "energy": 1,
+      "selfPromotion": 2,
+      "depth": 4
+    },
+    "signals": [
+      "practitioner",
+      "sells-course",
+      "strong-ideological-frame"
+    ],
     "categories": [
       {
         "id": "gardening",
@@ -270,10 +380,28 @@
     "shortDescription": "A former World Barista Champion testing coffee variables properly and reporting what actually changed, including when the answer is nothing.",
     "longDescription": "Hoffmann's value is method. Rather than asserting that a technique is better, he runs the comparison — a fifty-dollar grinder against pre-ground from a thirty-five-hundred-dollar one, filter papers tested past the point of reasonableness, everything he learned about cold brew gathered into one twenty-seven-minute piece — and reports the outcome including the null results. He is candid when an expensive thing makes no detectable difference, which in a hobby this susceptible to equipment marketing is the most useful thing about him. The catalogue mixes technique with equipment reviews, and the reviews are a large share of it. He co-founded a coffee company, which he discloses; equipment is frequently supplied by manufacturers.",
     "notFor": "Anyone who wants a single recipe and no further thought. The channel will keep telling you the variables interact, because they do.",
-    "formatTags": ["tutorial", "long-form", "video-essay"],
-    "level": ["beginner", "intermediate", "advanced"],
-    "profile": { "evidenceBased": 4, "practical": 4, "energy": 2, "selfPromotion": 2, "depth": 4 },
-    "signals": ["practitioner", "cites-research", "commercial-conflict"],
+    "formatTags": [
+      "tutorial",
+      "long-form",
+      "video-essay"
+    ],
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 4,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 4
+    },
+    "signals": [
+      "practitioner",
+      "cites-research",
+      "commercial-conflict"
+    ],
     "categories": [
       {
         "id": "coffee-brewing",
@@ -305,10 +433,26 @@
     "shortDescription": "The bicycle tool manufacturer's own repair library — procedural, unglamorous, and the closest thing to a shop manual on video.",
     "longDescription": "This is a reference collection rather than a channel to follow. Nearly a thousand uploads, each covering one procedure: adjusting a cup-and-cone hub, cutting a threadless fork to length, overhauling a headset, troubleshooting a threaded one. The presentation is a mechanic at a stand doing the job in order, with torque figures and tolerances stated. Because Park Tool make the tools, every video uses theirs, and some procedures are shown with a specialised tool where a workaround exists — that is the conflict of interest and it is visible rather than hidden. Set against that, the instruction is unusually precise about the things that actually cause failures: bearing preload, chain wear thresholds, cable tension.",
     "notFor": "Anyone looking for buying advice — the answer will be a Park Tool. Also not a channel to browse; go in with the specific job you are trying to do.",
-    "formatTags": ["tutorial", "course"],
-    "level": ["beginner", "intermediate", "advanced"],
-    "profile": { "evidenceBased": 4, "practical": 4, "energy": 1, "selfPromotion": 3, "depth": 4 },
-    "signals": ["practitioner", "commercial-conflict"],
+    "formatTags": [
+      "tutorial",
+      "course"
+    ],
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 4,
+      "practical": 4,
+      "energy": 1,
+      "selfPromotion": 3,
+      "depth": 4
+    },
+    "signals": [
+      "practitioner",
+      "commercial-conflict"
+    ],
     "categories": [
       {
         "id": "bike-maintenance",
@@ -340,10 +484,25 @@
     "shortDescription": "Patient, technique-first sewing instruction that starts before the machine and does not assume you have sewn anything before.",
     "longDescription": "Most of this catalogue is a single technique done slowly and close up: a buttonhole on a machine, trim applied to a hem, a hand-sewn repair. The teaching sequence is deliberate — there is a guide to choosing a first sewing machine that explains what each feature is for rather than recommending a model, which tells you what kind of channel this is. Six hundred-odd uploads cover the ground from hand stitches through pattern work and fitting. Long-form is scarce; most videos are under eight minutes because a single technique does not need longer, and the useful unit here is the individual lesson rather than the video. There is a paid membership with additional courses, and the free catalogue is substantial enough to learn from without it.",
     "notFor": "Anyone wanting garment-design or fashion content — this is construction and repair. Also not for someone who wants to watch a project come together; the format is isolated techniques.",
-    "formatTags": ["tutorial", "course"],
-    "level": ["beginner", "intermediate"],
-    "profile": { "evidenceBased": 3, "practical": 4, "energy": 2, "selfPromotion": 2, "depth": 3 },
-    "signals": ["practitioner", "sells-course"],
+    "formatTags": [
+      "tutorial",
+      "course"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
     "categories": [
       {
         "id": "sewing-and-mending",
@@ -375,10 +534,26 @@
     "shortDescription": "Organising built around the argument that most systems fail because they were designed for a different kind of person than the one using them.",
     "longDescription": "Aarssen's central claim is that organising advice fails not through laziness but through mismatch: some people need everything visible, some need everything hidden, and a system built on the wrong assumption collapses within weeks. She sorts this into four named types, which is a proprietary framework rather than a researched taxonomy — useful as a lens, not a finding. Where the channel earns its place is in the follow-through: twenty-minute videos on why home organisation fails and what to do instead, a thirty-one-minute decluttering of a hoarded house that does not treat the occupant as a spectacle, and consistent attention to maintenance rather than to the finished photograph. The register is upbeat and the production is home-renovation-adjacent, so there is a fair amount of before-and-after alongside the method.",
     "notFor": "Anyone who wants minimalism as a philosophy — the goal here is a workable house, not fewer possessions. Also not for someone allergic to a branded personality framework.",
-    "formatTags": ["tutorial", "vlog", "long-form"],
-    "level": ["beginner", "intermediate"],
-    "profile": { "evidenceBased": 2, "practical": 4, "energy": 4, "selfPromotion": 3, "depth": 2 },
-    "signals": ["practitioner", "sells-course"],
+    "formatTags": [
+      "tutorial",
+      "vlog",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 4,
+      "selfPromotion": 3,
+      "depth": 2
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
     "categories": [
       {
         "id": "decluttering-and-organizing",
@@ -410,10 +585,27 @@
     "shortDescription": "A trained food scientist reproducing viral food content in a real kitchen and showing, on camera, that most of it does not work.",
     "longDescription": "Reardon trained as a food scientist and dietitian, and the debunking series is the most systematic thing of its kind on the platform: she takes the hacks circulating on short-form video, attempts them exactly as shown, and films the result. Fifty-five of the two hundred most recent uploads are debunks. The findings are not merely that the hacks fail — several are dangerous, and she has repeatedly covered content that instructs viewers to do things that cause burns or fires, including AI-generated recipe channels producing food that cannot be made. She explains the underlying food chemistry along the way, so the videos teach why the claim was implausible rather than only that it was false. She also makes ordinary baking content, which is competent but not what she is here for.",
     "notFor": "Anyone who wants to learn a technique rather than to stop believing a false one. This is corrective rather than instructional.",
-    "formatTags": ["video-essay", "tutorial", "documentary"],
-    "level": ["beginner", "intermediate"],
-    "profile": { "evidenceBased": 4, "practical": 3, "energy": 3, "selfPromotion": 2, "depth": 3 },
-    "signals": ["credentialed", "cites-research", "practitioner"],
+    "formatTags": [
+      "video-essay",
+      "tutorial",
+      "documentary"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 4,
+      "practical": 3,
+      "energy": 3,
+      "selfPromotion": 2,
+      "depth": 3
+    },
+    "signals": [
+      "credentialed",
+      "cites-research",
+      "practitioner"
+    ],
     "categories": [
       {
         "id": "home-cooking-fundamentals",
@@ -457,10 +649,26 @@
     "shortDescription": "Bought-at-retail products tested to destruction under controlled conditions, with the marketing claim treated as a hypothesis rather than a fact.",
     "longDescription": "The format never varies: buy the products himself, build a repeatable test, run every item through the same procedure, publish the numbers. Fifty-one of the hundred and twenty most recent uploads run eight minutes or more and almost all are comparisons. The reason it belongs in a practical-skills list rather than a shopping one is the class of question he answers — whether motor oil additives do anything measurable, whether the expensive version of a tool outperforms the cheap one — because those are the claims that drive most bad spending in car and home maintenance. He states his methodology, shows the failures of his own tests, and reports results that contradict what he expected. He does not take manufacturer samples for the comparison tests, which is the whole basis of the channel's credibility.",
     "notFor": "Anyone wanting to learn a repair — nothing here teaches a job. It tells you whether a product claim survives contact with a test.",
-    "formatTags": ["documentary", "video-essay", "long-form"],
-    "level": ["beginner", "intermediate"],
-    "profile": { "evidenceBased": 4, "practical": 3, "energy": 2, "selfPromotion": 1, "depth": 3 },
-    "signals": ["cites-research", "practitioner"],
+    "formatTags": [
+      "documentary",
+      "video-essay",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 4,
+      "practical": 3,
+      "energy": 2,
+      "selfPromotion": 1,
+      "depth": 3
+    },
+    "signals": [
+      "cites-research",
+      "practitioner"
+    ],
     "categories": [
       {
         "id": "car-maintenance",

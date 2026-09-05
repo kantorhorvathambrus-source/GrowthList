@@ -716,14 +716,14 @@ in `categories.json`-derived output with a computed creator `count`.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research). **Batches 01–44 are
+- **Current phase**: Phase 2 (creator research). **Batches 01–45 are
   written, gated, validated and committed.**
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
-- **Creator count: 231 of 400.** Taxonomy 197 and **uncapped** (rule 19)
+- **Creator count: 233 of 400.** Taxonomy 197 and **uncapped** (rule 19)
   — a new category may be added whenever it arrives with 3 creators.
 - **Fitness is complete at 2+ across all 14 categories** (3 at depth 3).
 - **182 of 197 categories populated; 15 empty.** Practical is 13/13.
-  **Against the depth-2 target: 96 categories are done, 86 sit at 1,
+  **Against the depth-2 target: 98 categories are done, 84 sit at 1,
   15 at 0.**
 - **Depth pass started (batch 32).** With the goal at 3, the faster path
   is depth in populated categories, not the last 17 hard empties.
@@ -798,6 +798,21 @@ this section first to know exactly where to resume.)*
   from 197×2, which silently counted surplus depth as progress. The
   owner chose the target on the wrong number; the direction survives the
   correction and the number did not.
+- **`status` IS RE-QUERIED, NOT REMEMBERED — `scripts/audit-status.mjs`.**
+  It was written once at research time and never checked again, so a
+  creator researched in batch 03 carried that word for forty batches
+  while their channel did whatever it did. The first full audit at 231
+  creators found **7 records disagreeing with the API**, five of them
+  shipping `active` for channels silent 12–24 months — including
+  Stronger By Science, the second creator in a category filled the
+  batch before, and Andrej Karpathy. **Run it before any release.**
+  The audit also exposed a gap in the rule itself: the threshold was a
+  binary at 730 days, so a channel quiet for twenty-one months read as
+  `active`, indistinguishable from one that posted this morning.
+  **`dormant` now sits between them at 365 days** and renders as
+  "Quiet for over a year". Sixth instance of a stored fact that had
+  stopped being queried, and the first found in a field that ships.
+
 - **THREE IS EARNED, AND SPENT DELIBERATELY.** The ~61 creators of
   headroom past depth 2 do not go to whichever category is being
   researched. `scripts/lib/depth3.mjs` ranks the claims, printed by the
@@ -1104,7 +1119,7 @@ rather than a claim.
 
 **Where discovery works and where it does not.** It is strong when the
 topic maps to a profession with a talking-head culture: gut-health
-returned practising gastroenterologists immediately. It is weak in three
+returned practising gastroenterologists immediately. It is weak in four
 measured ways. (1) `videoDuration=long` means over twenty minutes, so a
 small dense catalogue never ranks — Dr. Will Bulsiewicz (45 uploads,
 median 15m) does not appear for gut-health while a 2,171-upload channel
@@ -1112,8 +1127,10 @@ does. (2) Where the topic word also names an audio product it returns
 the product: `meditation` and `sleep-quality` come back as guided-audio
 and sleep-music libraries. (3) Where the long-form is marketing it
 returns marketing: `posture` returned clinic channels, an insurance
-broker and two chair vendors. **So it supplements recall, it does not
-replace it, and a category probed only this way has been probed at one
+broker and two chair vendors. (4) Where the topic word names the MEDIUM
+it returns instances of the medium: `podcasting` came back as Joe Rogan,
+NPR, GQ and the Daily Beast rather than anyone teaching podcasting.
+**So it supplements recall, it does not replace it, and a category probed only this way has been probed at one
 end** — which is a rule 18 obligation, not a caveat.
 
 **A near-empty channel that passes the gate is not an answer.**
