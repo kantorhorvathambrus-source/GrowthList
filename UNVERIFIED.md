@@ -1696,3 +1696,85 @@ now point at the artifact instead of restating it.
 **The standing rule:** a number describing our records, our rigour or
 our process must name the thing that computes it, in the same sentence.
 If no artifact exists, build it or delete the number.
+
+## Derivation scripts, swept — and what Phase 2 has left
+
+### Clear before you write
+
+The entity script shipping with the defect it was built to fix is the
+seventh instance, and the owner is right that it is not coincidence:
+**it is a property of any derivation script whose rules can change.**
+If `--write` only ever sets a field, then tightening a rule leaves
+behind exactly the records the old rule got wrong — stale confident
+values, produced by logic that no longer exists.
+
+All five writers swept:
+
+- **`derive-entity.mjs`** — had it. Fixed: clears, then writes.
+- **`build-data.mjs`** — **already correct.** It deletes every `listed`
+  entry in `probed.json` and regenerates from the dataset. The pattern
+  was known and documented in that file's own comment; it simply was
+  not applied to the newer script.
+- **`audit-catalogue.mjs`** — weaker instance. A channel that failed to
+  resolve kept its stored measurement, dated to the last successful
+  run and indistinguishable from one just taken. Now marked
+  `unresolvedAt`, and a later successful measure clears the marker.
+- **`audit-status.mjs`** — same shape, and it **cannot be fixed the
+  same way**: `status` has a closed vocabulary with no value meaning
+  "we could not check". A gap is not expressible, so it escalates
+  instead — the run exits non-zero and names the record.
+- **`resolve-creator --record`** — append-only log, not a derived field.
+  Exempt.
+
+The test for any future writer: **if a rule tightens, or a source goes
+away, does a confident value survive that nothing would now produce?**
+
+### The 79% is the entry that should worry us most
+
+Recorded in the ledger accordingly. It was not a wrong number in a
+description — it was **the stated reason the bottleneck was prose
+rather than quota**, and that framing shaped weeks of decisions about
+pace, batch size and where effort went. I never questioned it because
+it sounded like the output of a measurement.
+
+The conclusion happens to survive, on evidence found later and by
+accident: batch 43 spent ~38 recalled handle probes and seven evidence
+dumps to accept three creators, which showed the bottleneck was
+candidate generation — neither prose nor quota. The conclusion outlived
+the number given as its reason, which is luck, not process.
+
+**`never-even-wrong` is the hardest of the three classes**, and the
+ledger now says why. The other instances were checkable and unchecked.
+This one had nothing to check against. Rule 18 hunts for claims that
+were tested and failed, so a claim no process ever produced is
+invisible to it *by construction* — it took changing the question
+entirely, to "which rules require manual repetition", to surface it.
+The defence cannot be a better test. It has to be a requirement at the
+point of writing: **name the artifact in the same sentence as the
+number.**
+
+### What is left to close Phase 2
+
+Measured against **active** creators, which is four categories less
+generous than the paper count:
+
+| | |
+|---|---|
+| Categories with no active creator | 18 |
+| Categories with one | 85 |
+| **Mappings still needed** | **121** |
+| Creators, at the current 1.08 marginal | **≈113** |
+| Left under the 400 cap afterwards | 54 |
+
+**At the measured recent rate — 30 creators over batches 33–45, 2.31
+per batch — that is 49 batches. At the 5 per batch that
+discovery-assisted work should support, 23.** Twenty-three is the
+target; forty-nine is what happens if discovery stops paying, and I
+have been wrong about a pace projection twice, so weight it as you did
+last time.
+
+**The remaining work is not where the depth pass has been.** Business
+needs 16, career 15, mindset 13, money 13, marketing 13 — **70 of the
+121 between five domains** — while health, philosophy and programming
+need seven between them. The last four batches have been health,
+creativity and music. That should change.

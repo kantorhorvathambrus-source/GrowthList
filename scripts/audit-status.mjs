@@ -47,6 +47,10 @@ for (const { file, rec } of rows) {
     console.log(`  ERROR ${rec.handle}: ${err.message}`);
     continue;
   }
+  // `status` has a CLOSED vocabulary with no way to say "we could not check".
+  // Leaving the old value is the derive-entity defect — a stale confident value
+  // surviving a failed re-derivation — and here it cannot be expressed as a gap
+  // instead. So it escalates: the run exits non-zero and names the record.
   if (!ch) { gone.push({ file, rec }); continue; }
   const ups = await getUploads(ch.uploadsPlaylist, { max: 1 });
   const latest = ups[0]?.publishedAt ?? null;
@@ -87,3 +91,7 @@ if (WRITE && changes.length) {
   console.log('\nreport only — pass --write to apply.');
 }
 console.log('quota', JSON.stringify(quotaUsed()));
+if (gone.length) {
+  console.error(`\n${gone.length} record(s) name a channel that no longer resolves, and their stored status is now unverifiable. Exiting non-zero: a status nobody can check must not pass silently.`);
+  process.exit(1);
+}

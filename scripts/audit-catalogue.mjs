@@ -56,6 +56,7 @@ function measure(vids) {
 
 const files = readdirSync(DIR).filter((f) => /^batch-\d{2}\.json$/.test(f)).sort();
 const drift = [];
+const unresolved = [];
 const fresh = [];
 
 for (const f of files) {
@@ -66,12 +67,23 @@ for (const f of files) {
   for (const rec of list) {
     let ch;
     try { ch = await getChannelByHandle(rec.handle); } catch { ch = null; }
-    if (!ch) { console.log(`  UNRESOLVED ${rec.handle} (${rec.name}) [${f}]`); continue; }
+    // A CHANNEL THAT NO LONGER RESOLVES MUST NOT KEEP A MEASUREMENT THAT LOOKS
+    // CURRENT. `continue` here left the old `catalogue` block in place, dated
+    // to the last successful run, indistinguishable from one just taken — the
+    // same shape as derive-entity's --write that never cleared. Mark it.
+    if (!ch) {
+      console.log(`  UNRESOLVED ${rec.handle} (${rec.name}) [${f}]`);
+      unresolved.push(rec.handle);
+      if (WRITE && rec.catalogue) { rec.catalogue.unresolvedAt = new Date().toISOString().slice(0, 7); touched = true; }
+      continue;
+    }
     const ups = await getUploads(ch.uploadsPlaylist, { max: SCAN });
     const vids = [...(await getVideos(ups.map((u) => u.videoId))).values()];
     const now = measure(vids);
     if (!now) continue;
     now.videoCount = ch.videoCount;
+    // A successful re-measure clears any previous unresolved marker.
+    if (rec.catalogue?.unresolvedAt) delete rec.catalogue.unresolvedAt;
     now.at = new Date().toISOString().slice(0, 7);
 
     const was = rec.catalogue;
@@ -99,6 +111,7 @@ for (const d of drift) {
   console.log(`    ${d.note}`);
   console.log(`    -> re-read this record's prose: it may describe a catalogue that no longer exists.`);
 }
+if (unresolved.length) console.log(`\n${unresolved.length} channel(s) did not resolve; their stored catalogue is marked unresolvedAt rather than left looking current.`);
 if (WRITE) console.log('\nbaseline written into the batch files.');
 else console.log('\nreport only — pass --write to store the baseline.');
 console.log('quota', JSON.stringify(quotaUsed()));

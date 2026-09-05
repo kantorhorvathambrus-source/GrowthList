@@ -723,6 +723,18 @@ this section first to know exactly where to resume.)*
 - **Current phase**: Phase 2 (creator research). **Batches 01–45 are
   written, gated, validated and committed.**
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
+- **PHASE 2 CLOSING ARITHMETIC (measured at 233 creators, against
+  ACTIVE creators — the paper count is 4 categories more generous).**
+  18 categories have no active creator, 85 have one. **121 mappings
+  still needed**, ≈**113 creators** at the current 1.08 marginal ratio,
+  leaving **54 of the 400 cap** for the depth-3 priority list.
+  At the measured recent rate of **2.31 creators/batch (30 over batches
+  33–45) that is 49 batches**; at the 5/batch that discovery-assisted
+  batches should support, **23**. Treat 23 as the target and 49 as what
+  happens if discovery stops paying.
+  The work is not where the depth pass has been: **business 16,
+  career 15, mindset 13, money 13, marketing 13** — 70 of the 121 —
+  while health, philosophy and programming need 7 between them.
 - **Creator count: 233 of 400.** Taxonomy 197 and **uncapped** (rule 19)
   — a new category may be added whenever it arrives with 3 creators.
 - **Fitness is complete at 2+ across all 14 categories** (3 at depth 3).
@@ -802,6 +814,25 @@ this section first to know exactly where to resume.)*
   from 197×2, which silently counted surplus depth as progress. The
   owner chose the target on the wrong number; the direction survives the
   correction and the number did not.
+- **A SCRIPT THAT WRITES A DERIVED FIELD MUST CLEAR BEFORE IT WRITES.**
+  Seventh instance of a stored fact that stopped being queried, and the
+  first *inside the defence itself*: `derive-entity.mjs --write` only
+  ever set `entity`, so tightening the vendor rule left records
+  classified by the old rule untouched. **This is a property of any
+  derivation script whose rules can change**, not an accident, so all
+  five writers were swept.
+  `build-data.mjs` already had it right — it deletes every `listed`
+  entry in `probed.json` and regenerates. The pattern was known and
+  simply not applied.
+  Two weaker instances closed: `audit-catalogue.mjs` left a stale
+  measurement looking current when a channel failed to resolve (now
+  marked `unresolvedAt`), and `audit-status.mjs` did the same for
+  `status` — which has a **closed vocabulary with no way to say "we
+  could not check"**, so it cannot be left as a gap and instead
+  **exits non-zero** and names the record. `resolve-creator --record`
+  is append-only and exempt.
+  **The test for any new writer: if a rule tightens, or a source goes
+  away, does a confident value survive that nothing would now produce?**
 - **EVERY NUMBER ABOUT OURSELVES NAMES ITS ARTIFACT —
   `data/claim-artifacts.json`.** The tooling sweep asked which rules
   never ran; this asks **which numbers never came from anywhere.** Two
