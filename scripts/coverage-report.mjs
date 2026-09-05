@@ -10,7 +10,7 @@
  * recollection, so the numbers cannot drift out of date in a summary.
  */
 
-import { readFileSync, existsSync } from 'node:fs';
+import { readFileSync, existsSync, readdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -163,6 +163,39 @@ for (const c of creators) {
   }
 }
 const totalMaps = retro.length + firstPass;
+// Per-batch: the marginal ratio, and the share of mappings that were the
+// SECOND-OR-LATER for their creator. The owner's instruction as the depth pass
+// starts, and the reasoning is rule 15's: the binding constraint has shifted
+// from "is there an empty category" to the scope rule itself, and a creator who
+// could plausibly land in four under-filled categories is a far bigger
+// temptation than one who fills a single empty one.
+//
+// READ THEM TOGETHER. A rising ratio means creators are being mapped more
+// widely, which is either the data having been under-mapped or the bar
+// drifting. If the second-or-later share rises FASTER than the ratio, it is
+// the bar.
+{
+  const dir = join(ROOT, 'data/creators');
+  const files = existsSync(dir) ? readdirSync(dir).filter((f) => /^batch-\d{2}\.json$/.test(f)).sort() : [];
+  console.log('\n\nSCOPE PRESSURE — marginal ratio and extra-mapping share, by batch');
+  console.log('='.repeat(72));
+  console.log('  batch  creators  mappings  marginal  2nd-or-later share');
+  const recent = files.slice(-8);
+  for (const f of recent) {
+    const b = JSON.parse(readFileSync(join(dir, f), 'utf8'));
+    const c = b.length;
+    const m = b.reduce((a, x) => a + (x.categories?.length ?? 0), 0);
+    const extra = b.reduce((a, x) => a + Math.max(0, (x.categories?.length ?? 0) - 1), 0);
+    console.log(`   ${f.slice(6, 8)}       ${String(c).padStart(2)}       ${String(m).padStart(3)}      ${(m / c).toFixed(2)}      ${m ? Math.round(100 * extra / m) : 0}%`);
+  }
+  const all = files.map((f) => JSON.parse(readFileSync(join(dir, f), 'utf8')));
+  const tot = all.flat();
+  const totM = tot.reduce((a, x) => a + (x.categories?.length ?? 0), 0);
+  const totE = tot.reduce((a, x) => a + Math.max(0, (x.categories?.length ?? 0) - 1), 0);
+  console.log(`\n  whole dataset: ${(totM / tot.length).toFixed(2)} ratio, ${Math.round(100 * totE / totM)}% of mappings are second-or-later.`);
+  console.log('  If the ratio climbs and this share climbs faster, the bar is drifting.');
+}
+
 console.log('\n\nMAPPING PROVENANCE');
 console.log('='.repeat(72));
 console.log(`  first-pass ... ${String(firstPass).padStart(4)}  (written with the creator's own batch)`);

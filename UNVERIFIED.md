@@ -906,3 +906,25 @@ body of work:**
 Three well-known names, three categories that needed filling, and in each
 case the scan settled it in one command. This is the Jeff Su pattern
 repeating, which suggests it is the normal case rather than a notable one.
+
+## Batch 33 — the first mapping declined under scope pressure
+
+The Cherno (`game-development`), DevOps Toolkit (`devops-and-ci`),
+sentdex (`machine-learning-engineering`). Three creators, three mappings,
+**0% second-or-later** — the depth pass is not yet inflating the ratio.
+
+**One mapping was available and declined, which is the number worth
+watching.** Viktor Farcic's catalogue covers both delivery pipelines and
+Kubernetes/cloud infrastructure, and `cloud-computing` sits at 1 creator.
+The evidence for both, though, is *the same ninety-minute question-and-
+answer streams* — his subject is platform engineering, which our taxonomy
+splits in two. Mapping both would count one body of work twice. That is
+the exact pressure rule 15 anticipates once the binding constraint stops
+being "is there an empty category" and becomes the scope rule itself.
+Recorded in his `caveats` on the live card rather than only here.
+
+**Code Monkey rejected** (`@CodeMonkeyUnity`, 500k–1M, 1,669 uploads).
+A professional indie developer and a plausible second game-development
+creator. Nineteen long-form videos in 250 uploads, and most are Unity
+Asset Store roundups and Steam-marketing interviews rather than teaching.
+Median upload length is two minutes.
