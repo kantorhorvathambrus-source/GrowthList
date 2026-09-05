@@ -1,0 +1,58 @@
+{
+  "_comment": "THE SECOND CLASS, SWEPT. The first six defects were stored facts that stopped being queried; the defence is re-querying. `status` was different: it was wrong the day it was written because the SHAPE could not carry the truth. The defence there is a different question — can this field express the thing it is supposed to say? This file asks that of every closed vocabulary in the schema.",
+  "auditedAt": "batch 45",
+  "fields": [
+    {
+      "field": "status",
+      "shape": "closed set, was ['active','archive']",
+      "canItCarryTheTruth": "NO — FIXED",
+      "whatItCouldNotSay": "That a channel had been silent for eighteen months. A binary at 730 days collapsed 'posted this morning' and 'quiet since early last year' into one word.",
+      "cost": "7 records wrong on the day they were written, 4 categories counted at depth 2 with one live channel.",
+      "fix": "`dormant` at 365 days."
+    },
+    {
+      "field": "role",
+      "shape": "closed set ['specialist','generalist','critic']",
+      "canItCarryTheTruth": "NO — UNFIXED, AND IT DISTORTS A CHECK",
+      "whatItCannotSay": "That the entity is an ORGANISATION rather than a person. Pianote is a subscription school, Buzzsprout a hosting company, NNgroup a consultancy, Addiction Policy Forum a non-profit, the Gastro Girl Podcast a patient-education company. All five are `specialist`, the same word as a working dermatologist.",
+      "cost": "Real and specific: the depth-3 priority test flags a category when its two creators 'agree' — same role, overlapping stance signals. An organisation and an individual sharing the word `specialist` reads as agreement when it may be the widest disagreement in the category. 201 of 233 records carry `specialist`, so the word is close to meaningless.",
+      "proposal": "Add `institution` as a fourth role, or a separate boolean. NOT done unilaterally: it is a visitor-facing vocabulary change and it would need every one of the 201 specialists re-judged. Owner's call."
+    },
+    {
+      "field": "signals",
+      "shape": "closed set of 8, presence-only",
+      "canItCarryTheTruth": "NO — ABSENCE IS AMBIGUOUS",
+      "whatItCannotSay": "The difference between 'we looked and this creator sells nothing' and 'nobody checked'. 81 of 233 records carry no commercial signal at all, and the schema gives a reader no way to tell which of those two they are looking at.",
+      "cost": "Unquantified, and that is the point — it cannot be quantified from the data, which is exactly the defect.",
+      "proposal": "Either a `checked` list alongside `signals`, or a positive `no-commercial-interest` signal that has to be earned. The second is cheaper and reads better; both need the 81 records revisited."
+    },
+    {
+      "field": "level",
+      "shape": "closed set ['beginner','intermediate','advanced'], multi-valued",
+      "canItCarryTheTruth": "PARTLY",
+      "whatItCannotSay": "That a channel has a complete beginner course AND advanced material with nothing between, versus being uniformly intermediate. The array ['beginner','advanced'] and ['beginner','intermediate','advanced'] are the only options and neither says 'there is a gap in the middle'.",
+      "cost": "Low. 34 records claim all three levels; the distribution is otherwise sensible.",
+      "proposal": "None. The multi-valued array carries most of what is needed and the residue is genuinely editorial."
+    },
+    {
+      "field": "sizeBucket",
+      "shape": "closed set of 6 bands, null when subscriberCount is hidden",
+      "canItCarryTheTruth": "YES",
+      "whatItCannotSay": "Nothing material. The null-for-hidden case is handled and no record in the dataset has a hidden count, so the 'never guess' rule has not yet had to bite.",
+      "cost": "None found. gate-check caught the one band that had been outgrown."
+    },
+    {
+      "field": "strength",
+      "shape": "closed set ['primary','secondary']",
+      "canItCarryTheTruth": "PROBABLY — UNTESTED",
+      "whatItCannotSay": "Unclear. Flagged rather than cleared: I have no evidence of a mapping that fits neither word, but I also have not looked for one, and saying 'fine' without looking is the habit this whole audit exists to break."
+    },
+    {
+      "field": "formatTags",
+      "shape": "OPEN set — unknown tags warn rather than fail",
+      "canItCarryTheTruth": "YES, BY BEING OPEN",
+      "whatItCannotSay": "n/a. Worth noting as the counter-example: the one vocabulary deliberately left open is the one with no expressiveness failure. Its problem is completeness, not shape — 21 records omit `shorts` on channels that are 40%+ short-form, which is now a validator warning."
+    }
+  ],
+  "_theTest": "For any field: write down the truest sentence about a real creator, then try to say it in the schema. `status` failed that test the first time it was tried on Stronger By Science. `role` fails it on Pianote. The test costs one minute and neither was given it."
+}

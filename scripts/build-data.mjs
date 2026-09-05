@@ -22,6 +22,7 @@
 import { readFileSync, readdirSync, writeFileSync, existsSync, statSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { fillCatalogue, PROSE_FIELDS } from './lib/catalogue-prose.mjs';
 
 const ROOT = process.argv[2] || join(dirname(fileURLToPath(import.meta.url)), '..');
 const DATA = join(ROOT, 'data');
@@ -53,6 +54,32 @@ for (const file of batchFiles) {
       process.exit(1);
     }
     seen.add(c.id);
+    // Catalogue numbers are interpolated here, not typed into the prose. The
+    // build reads the batch files every time, so a number in a shipped
+    // sentence is re-derived from the record's own measurement rather than
+    // remembered from the day it was written. Records that carry no
+    // placeholders pass through untouched — the retrofit is deliberately not
+    // being done by machine.
+    for (const f of PROSE_FIELDS) {
+      if (typeof c[f] !== 'string') continue;
+      const { text, missing } = fillCatalogue(c[f], c.catalogue);
+      if (missing.length) {
+        console.error(`FATAL: ${c.id}.${f} names unknown placeholder(s): ${missing.join(', ')}`);
+        process.exit(1);
+      }
+      c[f] = text;
+    }
+    for (const m of c.categories ?? []) {
+      for (const f of ['why', 'evidence']) {
+        if (typeof m[f] !== 'string') continue;
+        const { text, missing } = fillCatalogue(m[f], c.catalogue);
+        if (missing.length) {
+          console.error(`FATAL: ${c.id}.${m.id}.${f} names unknown placeholder(s): ${missing.join(', ')}`);
+          process.exit(1);
+        }
+        m[f] = text;
+      }
+    }
     creators.push(c);
   }
 }

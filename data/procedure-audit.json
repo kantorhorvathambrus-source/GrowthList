@@ -1,0 +1,60 @@
+{
+  "_comment": "RULES THAT REQUIRE MANUAL REPETITION, and whether they have ever actually run. The owner's framing: a rule the tooling makes impractical is not a rule in force, and documentation claiming it IS in force is a false claim about our own process — the same family as the badge claim. Every verdict below has evidence beside it; where the evidence is weak, the verdict says so.",
+  "auditedAt": "batch 45",
+  "rules": [
+    {
+      "rule": "Run gate-check.mjs over EVERY batch file before any release, not only when a batch is first written.",
+      "where": "CLAUDE.md, Phase 2 notes",
+      "verdict": "NEVER RUN",
+      "howIKnow": "The script took `process.argv[2]` — a single path. Executing the rule meant 45 hand invocations. Running it across the dataset for the first time immediately found 2 entry-video titles renamed at the source and 1 outgrown size band, which would not have survived a single prior full run.",
+      "fix": "gate-check.mjs --all. 328 entry videos, 240 units, now 0 failures."
+    },
+    {
+      "rule": "Contrast is verified by script: 22 pairings across both themes, all passing WCAG AA. Re-run after any palette change.",
+      "where": "CLAUDE.md, Phase 4 notes",
+      "verdict": "NEVER RUN — THE SCRIPT DID NOT EXIST",
+      "howIKnow": "No file matching contrast/a11y/color appears anywhere in `git log --all --name-only`. It was never added and never deleted; it was never there.",
+      "fix": "scripts/check-contrast.mjs written and run. The claim's substance held — 0 failures — but the count was wrong: 30 pairings, not 22. The corrected sentence names the script.",
+      "note": "The worst of this class. An inward-facing claim about our own rigour, carrying a specific measured number, produced by nothing."
+    },
+    {
+      "rule": "MARKUP.md is the DOM contract. Markup change and MARKUP.md change go in the same commit.",
+      "where": "CLAUDE.md, Phase 4 notes",
+      "verdict": "MOSTLY NOT FOLLOWED",
+      "howIKnow": "Of the 16 most recent commits touching js/ or index.html, 2 also touched MARKUP.md. The rule is real and cheap; it is simply not being done, including by me — the `dormant` meta label added this batch changed rendered markup and did not update MARKUP.md.",
+      "fix": "NOT FIXED. A commit-time check would need a hook, and whether a js change is a markup change cannot be decided mechanically. Recorded as a known gap rather than closed."
+    },
+    {
+      "rule": "Definition-of-done tracker, kept current.",
+      "where": "CLAUDE.md, end",
+      "verdict": "STALE FOR 44 BATCHES",
+      "howIKnow": "It read '200 categories, each with 5+ creators' and '700 verified unique creators' while the live targets are 197 categories at depth 2 and a 400-creator cap. It also said validate.mjs 'passes on the current empty dataset' with 233 creators in it.",
+      "fix": "Updated, with the old numbers left visible so the drift is legible rather than erased."
+    },
+    {
+      "rule": "Commit after every batch and every phase.",
+      "where": "CLAUDE.md rule 8",
+      "verdict": "IN FORCE",
+      "howIKnow": "Every batch file in data/creators has a corresponding commit; git log shows one commit per batch with the batch named in the subject."
+    },
+    {
+      "rule": "Run the gate over the finished batch file; zero failures is the bar for committing.",
+      "where": "CLAUDE.md, Phase 2 notes",
+      "verdict": "IN FORCE for new batches",
+      "howIKnow": "Distinct from the 'every batch file' rule above, and this one only needs one invocation per batch. Each batch's report records the gate result. It is the per-batch version that ran; the whole-dataset version that never did."
+    },
+    {
+      "rule": "Keep the Netlify form name attributes in sync between index.html and formMarkup().",
+      "where": "CLAUDE.md, Phase 5 notes",
+      "verdict": "IN FORCE",
+      "howIKnow": "index.html declares form-name, bot-field, source, note and the form name `how-did-you-hear`; js/components/how-did-you-hear.js sets FORM_NAME to the same string and formMarkup emits the same four names. Checked directly."
+    },
+    {
+      "rule": "Pre-release: audit-status.mjs and audit-catalogue.mjs.",
+      "where": "CLAUDE.md, added batch 45",
+      "verdict": "NEW — one run each",
+      "howIKnow": "Both written this batch. Named here so that a later audit can ask the same question of them, since a rule added today is the most likely to be assumed rather than checked."
+    }
+  ],
+  "_whatThisClassLooksLike": "In all four failures the documentation asserted a procedure was in force. Nothing lied about the data; the claim was about US. The distinguishing test is not 'is this rule good' but 'can one command execute it, and is there evidence it ran'. A rule that needs N manual repetitions will be executed zero times."
+}

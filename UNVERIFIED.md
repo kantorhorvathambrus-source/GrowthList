@@ -1471,3 +1471,135 @@ honest one. The four that lose it — `confidence-building`,
 two entries and one live channel. `sports-nutrition` is the one that
 started this: filled to 2 in batch 44, and one of the two had been
 silent since February 2025.
+
+## Rules that could not be run, and the cost of fixing the prose
+
+### 1. A rule nobody can run is a false claim about our own process
+
+Four rules in CLAUDE.md require manual repetition. **Two had never run
+once.**
+
+**"Run gate-check over every batch file before any release."** The
+script took a single path. Executing the rule meant forty-five hand
+invocations, so it was never executed. Its first real run found two
+entry-video titles renamed at the source and one outgrown size band —
+none of which could have survived a single earlier full run.
+
+**"Contrast is verified by script: 22 pairings across both themes, all
+passing WCAG AA."** No such script has ever existed in this repository.
+`git log --all --name-only` has no record of one being added or
+deleted. It was never there. A specific measured number, asserted about
+our own rigour, produced by nothing — the badge-claim failure in the
+design half of the project.
+
+I wrote it (`scripts/check-contrast.mjs`) rather than deleting the
+claim. The substance held: **0 pairings below AA.** The number did not:
+**30, not 22.**
+
+And the script's own first version reported two dark-theme failures
+that were phantoms. It tested the semantic aliases in `tokens.css`, and
+**seven of those aliases are declared and referenced by nothing** —
+the bands colour themselves from raw scale steps. A checker built from
+the token list invents pairings that do not exist. That is the third
+detector I have written this session that produced false positives
+before it produced a true one; the pair list is now read off
+`style.css` and every entry must trace to a rule setting both a colour
+and its surface.
+
+Two more: **MARKUP.md co-commits, 2 of the last 16** touching markup,
+including my own `dormant` label this batch — recorded as an open gap,
+because whether a JS change is a markup change cannot be decided
+mechanically. And the **definition-of-done tracker was stale for
+forty-four batches**, still claiming 200 categories at 5 creators each
+and 700 creators, and still describing validate.mjs as passing "on the
+current empty dataset" with 233 creators in it.
+
+The test that separates these from real rules is not whether the rule
+is good. It is: **can one command execute it, and is there evidence it
+ran.**
+
+### 2. The second defect class, and the one-minute test that catches it
+
+The first six defects were stored facts that stopped being queried, and
+the defence is re-querying. `status` was not that. It was wrong the day
+it was written, because the shape could not carry the truth. The
+defence is a different question, and it is cheap: *write the truest
+sentence about a real creator, then try to say it in the schema.*
+
+**`role` fails that test.** Pianote is a subscription school,
+Buzzsprout a hosting company, NNgroup a consultancy, the Gastro Girl
+Podcast a patient-education firm. All four carry `specialist`, the same
+word as a working dermatologist, and 201 of 233 records carry it. The
+cost is not cosmetic: the depth-3 priority test flags a category when
+its two creators "agree" — same role, overlapping stance signals — so
+**an institution and an individual read as agreeing** when that may be
+the widest disagreement in the category.
+
+**`signals` fails it too.** Absence cannot distinguish "we checked and
+this creator sells nothing" from "nobody looked". 81 of 233 records sit
+in that ambiguity and no reader can tell which.
+
+Both fixes are visitor-facing vocabulary changes requiring existing
+records to be re-judged, so both are proposals, not changes.
+`sizeBucket` passes. `level` is partly limited and not worth fixing.
+`formatTags` — the one vocabulary deliberately left **open** — is the
+only one with no expressiveness failure at all, which is worth noticing.
+
+### 3. What interpolating the prose numbers costs
+
+**Done, and required for new records.**
+`scripts/lib/catalogue-prose.mjs` gives a record placeholders —
+`{{shortCountWords|cap}} of the {{scannedWords}} most recent uploads` —
+and `build-data.mjs` fills them from that record's own `catalogue`
+block, fataling on an unknown name. Word forms exist because the house
+style spells numbers out. Proven end to end on Dr. Spencer Nadolsky,
+whose shipped sentence now reads "Of the fifty most recent uploads,
+thirty-seven run two minutes or less" with every number derived.
+
+**The retrofit of the other 231: I recommend against it, and here is
+the arithmetic.**
+
+305 sentences carry a countable catalogue claim:
+
+| shape | count | interpolable |
+|---|---|---|
+| median length | 127 | yes |
+| total upload count | 46 | yes |
+| N of the scan window | 45 | yes, if the windows match |
+| a specific video's length | 62 | **no** — not a catalogue statistic |
+| other | 25 | mostly no |
+
+So roughly 218 of 305 could be interpolated in principle. Three things
+make the real cost much higher than that ratio suggests.
+
+**The scan windows disagree.** Records were written from 50-upload
+scans and 200-upload scans, and `catalogue` stores one window. Nadolsky
+was written from 200 — "a hundred and forty-seven of the two hundred
+most recent" — and converting him to the stored 50-window changed what
+the sentence *says*, not just its digits. His next sentence, "eight
+episodes over twenty minutes", is a 200-window fact that is simply
+false of a 50-window and had to be rewritten to drop the count. **One
+record took a paragraph rewrite, not a substitution.**
+
+**The 62 specific-video lengths are not catalogue statistics.** "Ninety
+minutes on iron deficiency" is a fact about one video. Storing those
+means a per-video store and a per-video re-check, which is a second
+system, not an extension of this one.
+
+**And the numbers are spelled out inside varied English.** "Sixty-five
+of the last two hundred", "around a hundred and twenty", "every one of
+the fifty". Substitution has to preserve casing, hyphenation and
+grammatical agreement across 231 hand-written voices.
+
+Realistically that is **231 records re-read and largely re-written, at
+roughly the cost of writing them the first time** — comparable to
+fifty batches of research, to protect claims that are four days old on
+a project where nothing has yet had time to drift.
+
+**Recommendation: do not retrofit. Accept it knowingly.** The exposure
+is bounded and now measurable: `audit-catalogue.mjs` holds a dated
+baseline for all 233 records, so the *next* run reports which channels
+have changed shape, and any record it flags gets rewritten with
+placeholders at that point. The retrofit then happens incrementally,
+paid for only where the prose has actually gone wrong, instead of all
+at once for prose that is mostly still true.

@@ -798,6 +798,46 @@ this section first to know exactly where to resume.)*
   from 197×2, which silently counted surplus depth as progress. The
   owner chose the target on the wrong number; the direction survives the
   correction and the number did not.
+- **RULES THAT NEED MANUAL REPETITION ARE NOT IN FORCE —
+  `data/procedure-audit.json`.** A distinct failure class from a stale
+  fact: the rule existed, this file claimed it was in force, and it had
+  never once run. **Four found. Two never ran at all** — "gate-check
+  over every batch file" (the script took one path, so the rule meant
+  45 hand invocations) and "contrast verified by script: 22 pairings,
+  all passing AA" (**no such script had ever existed**; git has no
+  record of one being added or deleted). One is mostly not followed —
+  MARKUP.md co-commits, 2 of the last 16, including my own this batch.
+  One was stale for 44 batches — the definition-of-done tracker still
+  said 200 categories at 5 creators and 700 creators.
+  **The test is not "is this rule good" but "can one command execute it,
+  and is there evidence it ran".** A rule needing N manual repetitions
+  will be executed zero times. Anything written here in the imperative
+  gets that test before it is believed.
+- **TWO DEFECT CLASSES, TWO DEFENCES — `data/schema-expressiveness.json`.**
+  The first six were stored facts that stopped being queried; the
+  defence is re-querying. `status` was different — wrong the day it was
+  written because the SHAPE could not carry the truth — and the defence
+  there is a one-minute test: *write the truest sentence about a real
+  creator, then try to say it in the schema.* Swept every closed
+  vocabulary. **`role` fails it**: Pianote, Buzzsprout, NNgroup and the
+  Gastro Girl Podcast are organisations wearing the same word as a
+  working dermatologist, 201 of 233 records say `specialist`, and the
+  depth-3 "the two agree" test reads an institution and an individual
+  as agreeing. **`signals` fails it**: absence cannot distinguish
+  "checked, sells nothing" from "not recorded", and 81 records sit in
+  that ambiguity. Both proposals are the owner's call — they are
+  visitor-facing vocabulary changes needing existing records re-judged.
+  `level` is partly limited and not worth fixing; `sizeBucket` and the
+  open `formatTags` set pass.
+- **CATALOGUE NUMBERS IN CREATOR PROSE ARE INTERPOLATED —
+  `scripts/lib/catalogue-prose.mjs`.** The colophon fix applied to the
+  place it was never applied: a record writes
+  `{{shortCountWords|cap}} of the {{scannedWords}} most recent uploads`
+  and `build-data.mjs` fills it from that record's own `catalogue`,
+  fataling on an unknown placeholder. Word forms exist because the house
+  style spells numbers out. **Required for new records. The existing 231
+  are NOT retrofitted** — the cost is in `UNVERIFIED.md` and the owner
+  accepted it knowingly.
 - **THE GENERALISATION SWEEP IS DONE — `data/field-audit.json`.** Every
   displayed field, what produces it, and whether anything can catch it
   being wrong. **The question it started from was half wrong and the
@@ -1244,8 +1284,25 @@ The visual layer is implemented from the owner's handoff.
 - `MARKUP.md` is the DOM contract and is current. **Keep it in sync** —
   markup change and `MARKUP.md` change go in the same commit.
 
-Contrast is verified by script, not by eye: 22 text/background pairings
-across both themes, all passing WCAG AA. Re-run after any palette change.
+**Contrast is verified by `scripts/check-contrast.mjs`** — 30 pairings
+across both themes, 0 below WCAG AA. Re-run after any palette change.
+
+This sentence used to claim "22 pairings, all passing AA, verified by
+script" and **no such script had ever existed in this repository** —
+git has no record of one being added or removed. A specific measured
+result, asserted about our own rigour, produced by nothing. It is the
+badge-claim failure in the design half of the project, and it was found
+by the sweep for rules that require manual repetition, not by review.
+
+The script reads `css/tokens.css` and resolves `var()` chains rather
+than holding a copy of the palette. Its first version tested the
+semantic aliases and reported two dark-theme failures; both were
+phantoms, because **seven of those aliases are declared and referenced
+by nothing** — `--bg-inverse`, `--text-on-dark`, `--text-muted-dark`,
+`--link`, `--link-hover`, `--badge-ink`, `--bg-accent` — while the
+bands colour themselves from raw scale steps. The pair list is now read
+off `css/style.css`, and anything added to it must be traceable to a
+rule that sets both a colour and its surface.
 
 ### Phase 5 notes (the Netlify form)
 
@@ -1349,11 +1406,16 @@ top-level domains" test is measured against.
 
 ### Definition-of-done tracker
 
-- [~] 200 categories, no near-duplicates, each with 5+ creators, three
-      levels, a critic, and a four-week plan — *taxonomy and levels done;
-      creator coverage and plans pending Phases 2–3*
-- [ ] 700 verified unique creators with `notFor`, taste profile, signals,
-      verified entry video per category mapping
+- [~] 197 categories, no near-duplicates, each with **2+ creators**
+      (restated from 5 at batch 45 — see the depth arithmetic), three
+      levels, a critic where one exists, and a four-week plan —
+      *taxonomy and levels done; creator coverage and plans pending
+      Phases 2–3*
+- [ ] **400** verified unique creators with `notFor`, taste profile,
+      signals, verified entry video per category mapping
+      *(was 700; the cap was restated and this tracker was not updated
+      for forty-four batches, which is why it is in the manual-repetition
+      audit)*
 - [ ] Expertise scope rule respected
 - [ ] Every creator English-language, verified
 - [x] Click-to-load nocookie embeds, no third-party requests before user
@@ -1361,8 +1423,9 @@ top-level domains" test is measured against.
 - [x] Stack builder producing per-category specialists, shareable via URL
 - [x] "How did you hear about us" via Netlify Forms, no other data
       collected
-- [x] `node scripts/validate.mjs` exits clean *(passes on the current
-      empty dataset; coverage rules only bite once creators exist)*
+- [x] `node scripts/validate.mjs` exits clean *(233 creators; the
+      parenthetical here said "on the current empty dataset" until
+      batch 45)*
 - [ ] Lighthouse 90+ across the board — *deliberately deferred to
       Phase 6; scoring an empty dataset would be meaningless*
 - [~] README, CLAUDE.md, UNVERIFIED.md written — *CLAUDE.md and
