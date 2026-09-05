@@ -111,6 +111,32 @@ this file has the rules, schema, and current state.
     `.env` and removed it with `rm -f .env`, which would have destroyed
     a real key file had one been present. It didn't, but only by luck.
     The same applies to `data/` — synthetic fixtures live in `/tmp`.
+11. **A critic per category is a TARGET, not a rule — changed at 200
+    creators.** It was a validator failure until then, at which point
+    **29 of 180 populated categories had one (16%)**. A rule violated by
+    84% of its subjects is not a rule; it is noise that trains a reader
+    to skim the warnings that matter, which costs the checks that work.
+    The structural reason it was mis-specified: **a genuine critic of a
+    field is perhaps ten times rarer than a good teacher of it** — 19
+    exist across 200 creators, and requiring one per category was
+    requiring ~120 more of the scarcest type.
+    Reported in `coverage-report.mjs` as **"categories with a dissenting
+    voice: 29 of 180"** — always with the denominator, never as a failure
+    line, and never enumerating the 151 as problems.
+    **What has NOT changed:** a weak or bad-faith critic is still worse
+    than none, and filling the slot to make a number move is still the
+    thing this rule exists to prevent. Relationships and philosophy were
+    both tested for a critic and left empty on those grounds.
+
+10. **A test must never touch a real config filename.** Anything that
+    creates, writes, or deletes a config or secret file during a test
+    uses a temp directory or a distinct name (`.env.leak-test`,
+    `/tmp/gl-fixture/.env`) — never `.env`, never `netlify.toml`, never
+    a real data file. Cleanup then deletes only the throwaway path.
+    This rule exists because a leak test in this project created a fake
+    `.env` and removed it with `rm -f .env`, which would have destroyed
+    a real key file had one been present. It didn't, but only by luck.
+    The same applies to `data/` — synthetic fixtures live in `/tmp`.
 11. **Never fill a critic slot with a weak or bad-faith critic.** Every
     category is supposed to have one `role: "critic"`. Where no
     credible one exists after the research is done, the category ships
@@ -674,7 +700,19 @@ this section first to know exactly where to resume.)*
   n=2 is confirmed by measurement** and its `basis` flipped from
   `editorial` to `measured`, with the provenance kept so the record shows
   it was a prediction first.
-- **Critics: 29 of 180 populated categories.** Batch 18 added four —
+- **Categories with a dissenting voice: 29 of 180.** A target since 200
+  creators, not a validator rule — see rule 11.
+- **Depth goal is 3 per category**, restated from 5 at 200 creators.
+  400 creators × the 1.46 ratio the scope rule produces = 3.0 per
+  category; 5 everywhere needs ~675 creators. The scope rule does not
+  move, so the number did. 5 stays an aspiration where earned.
+- **Rule 17's classification machinery is RETIRED.** The saturation
+  measurement stays in the coverage report; `cause`/`placement` and the
+  category-page standing notes are gone. It never prevented an error and
+  it manufactured one. Cost stated plainly: the true field-caused notes
+  on fitness, marketing and three other domains went with it.
+- **No further rule work** unless something ships false to visitors.
+  Wants get noted and deferred to the end of Phase 2. Batch 18 added four —
   Ann Reardon on cooking and baking, Project Farm on car maintenance and
   home repair. **Relationships and philosophy have none anywhere** — both
   flagged under rule 11, neither filled.

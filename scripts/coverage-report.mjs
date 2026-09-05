@@ -76,12 +76,18 @@ if (existsSync(join(ROOT, 'data/findings-ledger.json'))) {
   console.log('  when it finds a pattern, and it is what rule 18 exists to interrupt.\n\n');
 }
 
-console.log('CRITIC COVERAGE');
+console.log('CRITIC COVERAGE — a target, not a requirement');
 console.log('='.repeat(72));
 console.log(`${creators.length} creators | ${populated.length} of ${cats.length} categories populated`);
-console.log(`  has a critic .................. ${withCritic.length}`);
-console.log(`  documented gap (rule 11) ...... ${documented.length}`);
-console.log(`  no critic, not yet documented .. ${undocumented.length}`);
+console.log(`\n  CATEGORIES WITH A DISSENTING VOICE: ${withCritic.length} of ${populated.length}`);
+const criticCreators = creators.filter((c) => c.role === 'critic').length;
+console.log(`  carried by ${criticCreators} critic creators out of ${creators.length}.`);
+console.log('');
+console.log('  This stopped being a validator rule at 200 creators. It was violated by');
+console.log('  84% of populated categories, and a rule broken that often is noise that');
+console.log('  trains a reader to skim the warnings that matter. The structural reason:');
+console.log('  a genuine critic of a field is far rarer than a good teacher of it.');
+console.log(`  ${documented.length} categories have a written reason for having none (rule 11).`);
 
 console.log(`\nHas a critic (${withCritic.length})`);
 for (const [id, list] of withCritic.sort()) {
@@ -94,12 +100,8 @@ if (documented.length) {
   for (const [id] of documented.sort()) console.log(`  ${pad(id, 26)} ${gaps[id]}`);
 }
 
-console.log(`\nStill open — no critic and no documented reason (${undocumented.length})`);
-console.log('  These are unfinished, not decided. Rule 11 applies only once the');
-console.log('  search is done and the gap is written down with a reason.');
-for (const [id, list] of undocumented.sort()) {
-  console.log(`  ${pad(id, 26)} ${list.length} creator${list.length === 1 ? '' : 's'}`);
-}
+console.log(`\nWithout one (${undocumented.length}) — not a failure, and not enumerated.`);
+console.log('  Listing 151 categories as problems was the noise this change removes.');
 
 // ------------------------------------------------ jurisdiction gaps
 // A category can hit its creator target and still be empty for a whole
@@ -196,20 +198,22 @@ if (existsSync(thinPath)) thinGaps = read('data/thin-gaps.json').gaps ?? {};
 
 const under = cats
   .map((c) => ({ id: c.id, domain: c.domain, n: (byCat.get(c.id) ?? []).length }))
-  .filter((r) => r.n < 5)
+  .filter((r) => r.n < 3)
   .sort((a, b) => a.n - b.n || a.domain.localeCompare(b.domain) || a.id.localeCompare(b.id));
 
 const thinDocumented = under.filter((r) => thinGaps[r.id]);
 const openWork = under.filter((r) => !thinGaps[r.id]);
 
-console.log('\n\nBELOW THE 5-CREATOR TARGET  (running list)');
+console.log('\n\nBELOW THE 3-CREATOR TARGET  (running list)');
 console.log('='.repeat(72));
-console.log(`${under.length} of ${cats.length} categories are under 5 creators.`);
+console.log(`${under.length} of ${cats.length} categories are under 3 creators.`);
 console.log(`  searched and documented ... ${thinDocumented.length}  (a reason is on file)`);
 console.log(`  still open ................ ${openWork.length}  (unfinished research, no claim made)`);
-console.log('\nThe 5-minimum is a target, not a validator failure — the owner accepted');
-console.log('~74 gaps knowingly. But a gap only counts as decided once someone has');
-console.log('finished looking and written why. Until then it is just work not done.');
+console.log('\nThe depth goal is 3, restated from 5 at 200 creators. At the mapping ratio');
+console.log('the scope rule actually produces, 400 creators lands at 3.0 per category;');
+console.log('5 everywhere would need ~675. The scope rule is the last thing to trade,');
+console.log('so the number moved instead. 5 stays an aspiration for categories that');
+console.log('earn it. A gap counts as decided only once someone finished looking.');
 
 if (thinDocumented.length) {
   console.log(`\nSearched and documented (${thinDocumented.length})`);
@@ -288,8 +292,8 @@ for (const [d, rows] of [...byDom].sort((a, b) => b[1].length - a[1].length)) {
 
 const have = creators.reduce((a, c) => a + (c.categories?.length ?? 0), 0);
 const ratio = have / creators.length;
-console.log(`\nmappings ${have} of ${cats.length * 5} needed for 5 everywhere  (ratio ${ratio.toFixed(2)}/creator)`);
-console.log(`projection at 400 creators: ~${Math.round(400 * ratio)} mappings => ~${Math.round(400 * ratio / 5)} categories at full depth, ~${cats.length - Math.round(400 * ratio / 5)} carrying a gap`);
+console.log(`\nmappings ${have} of ${cats.length * 3} needed for 3 everywhere  (ratio ${ratio.toFixed(2)}/creator)`);
+console.log(`projection at 400 creators: ~${Math.round(400 * ratio)} mappings => ${(400 * ratio / cats.length).toFixed(1)} per category average (target 3); 5 everywhere would need ~${Math.round(cats.length * 5 / ratio)} creators`);
 
 // ------------------------------------------------ signal saturation
 // A badge everybody has is noise. Rule 17: once a signal is near-universal

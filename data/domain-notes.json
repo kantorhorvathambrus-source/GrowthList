@@ -11,231 +11,174 @@
     {
       "domain": "fitness",
       "signal": "sells-course",
-      "cause": "field",
       "basis": "measured",
       "measured": {
         "n": 14,
         "of": 15
-      },
-      "placement": "category-page",
-      "note": "Nearly every fitness creator listed here sells coaching or a training program. That is how the credible end of this field is funded, so a paid program is the norm here rather than a mark against anyone. What still varies is whether the free videos stand on their own without the purchase, and the note on each card says which."
+      }
     },
     {
       "domain": "programming",
       "signal": "sells-course",
-      "cause": "field",
       "basis": "measured",
       "measured": {
         "n": 10,
         "of": 14
       },
-      "placement": "category-page",
-      "note": "Most programming creators listed here sell a course or a paid track. That is close to universal among independent programming educators now, so read it as the default rather than as a warning. The question worth asking is whether the free videos are complete enough to learn from without buying anything, which the note on each card addresses.",
       "watch": "Drifted from 83% to 71% between batches 16 and 22 as the domain filled out. One more creator without the badge drops it below the 70% threshold and this note should come down. Recorded because a note that survives only by a rounding margin is worth watching, not defending."
     },
     {
       "domain": "productivity",
       "signal": "sells-course",
-      "cause": "field",
       "basis": "measured",
       "measured": {
         "n": 6,
         "of": 8
-      },
-      "placement": "category-page",
-      "note": "Almost every productivity creator listed here sells a course, an app or a book built on the method they teach. This field is unusually self-referential that way: the product often is the method, so the incentive to present one system as more general than it really is comes built in. The note on each card names what the person sells and how hard they push it."
+      }
     },
     {
       "domain": "relationships",
       "signal": "sells-course",
-      "cause": "field",
       "basis": "measured",
       "measured": {
         "n": 7,
         "of": 10
-      },
-      "placement": "category-page",
-      "note": "Most relationship creators listed here sell something built on the method — a course, a membership, a book, a retreat. In this field the people who have done the work to be worth listening to have generally turned it into a business, so a paid product is the norm rather than a signal about quality. Read the note on each card for what the specific product is and how hard the free videos push toward it."
+      }
     },
     {
       "domain": "fitness",
       "signal": "practitioner",
-      "cause": "field",
       "basis": "measured",
       "measured": {
         "n": 15,
         "of": 15
-      },
-      "placement": "category-page",
-      "usesSharedNote": "practitioner"
+      }
     },
     {
       "domain": "programming",
       "signal": "practitioner",
-      "cause": "field",
       "basis": "measured",
       "measured": {
         "n": 14,
         "of": 14
-      },
-      "placement": "category-page",
-      "usesSharedNote": "practitioner"
+      }
     },
     {
       "domain": "productivity",
       "signal": "practitioner",
-      "cause": "field",
       "basis": "measured",
       "measured": {
         "n": 8,
         "of": 8
-      },
-      "placement": "category-page",
-      "usesSharedNote": "practitioner"
+      }
     },
     {
       "domain": "creativity",
       "signal": "practitioner",
-      "cause": "field",
       "basis": "measured",
       "measured": {
         "n": 25,
         "of": 27
-      },
-      "placement": "category-page",
-      "usesSharedNote": "practitioner"
+      }
     },
     {
       "domain": "tech",
       "signal": "practitioner",
-      "cause": "field",
       "basis": "measured",
       "measured": {
         "n": 9,
         "of": 11
-      },
-      "placement": "category-page",
-      "usesSharedNote": "practitioner"
+      }
     },
     {
       "domain": "career",
       "signal": "practitioner",
-      "cause": "field",
       "basis": "measured",
       "measured": {
         "n": 6,
         "of": 7
-      },
-      "placement": "category-page",
-      "usesSharedNote": "practitioner"
+      }
     },
     {
       "domain": "money",
       "signal": "practitioner",
-      "cause": "field",
       "basis": "measured",
       "measured": {
         "n": 6,
         "of": 7
-      },
-      "placement": "category-page",
-      "usesSharedNote": "practitioner"
+      }
     },
     {
       "domain": "mindset",
       "signal": "practitioner",
-      "cause": "field",
       "basis": "measured",
       "measured": {
         "n": 12,
         "of": 14
-      },
-      "placement": "category-page",
-      "usesSharedNote": "practitioner"
+      }
     },
     {
       "domain": "relationships",
       "signal": "practitioner",
-      "cause": "field",
       "basis": "measured",
       "measured": {
         "n": 9,
         "of": 10
-      },
-      "placement": "category-page",
-      "usesSharedNote": "practitioner"
+      }
     },
     {
       "domain": "relationships",
       "signal": "credentialed",
-      "cause": "mixed",
       "basis": "measured",
       "measured": {
         "n": 7,
         "of": 10
-      },
-      "placement": "category-page",
-      "usesSharedNote": "credentialed"
+      }
     },
     {
       "domain": "practical",
       "signal": "practitioner",
-      "cause": "field",
       "basis": "measured",
       "measured": {
         "n": 18,
         "of": 19
-      },
-      "placement": "category-page",
-      "usesSharedNote": "practitioner"
+      }
     },
     {
       "domain": "philosophy",
       "signal": "cites-research",
-      "cause": "field",
       "basis": "measured",
       "measured": {
         "n": 5,
         "of": 7
-      },
-      "placement": "category-page",
-      "usesSharedNote": "cites-research"
+      }
     },
     {
       "domain": "business",
       "signal": "practitioner",
-      "cause": "field",
       "basis": "measured",
       "measured": {
         "n": 7,
         "of": 7
-      },
-      "placement": "category-page",
-      "usesSharedNote": "practitioner"
+      }
     },
     {
       "domain": "marketing",
       "signal": "practitioner",
-      "cause": "field",
       "basis": "measured",
       "measured": {
         "n": 10,
         "of": 10
-      },
-      "placement": "category-page",
-      "usesSharedNote": "practitioner"
+      }
     },
     {
       "domain": "marketing",
       "signal": "sells-course",
-      "cause": "field",
       "basis": "measured",
       "measured": {
         "n": 7,
         "of": 10
-      },
-      "placement": "category-page",
-      "note": "Most marketing creators listed here sell a course, a tool or an agency's services. In a field with no licence and no gatekeeping, teaching in public is how practitioners are found and paid, so a product attached to the advice is the norm rather than a warning. What the badge still separates is who is selling the specific thing they are advising you to do."
+      }
     }
   ],
   "buildPage": {
@@ -277,15 +220,11 @@
       "standing": "The weak form of the marketing finding survives and is still on the record in UNVERIFIED.md: several named practitioners genuinely are not in video (Harry Dry 4 uploads, Seth Godin 7, copyhackers and backlinko unresolvable) and the SEO end of the domain remains vendor-hosted. The strong form — that the practitioners as a class are absent from video — is false."
     }
   ],
-  "sharedNotes": {
-    "practitioner": "Nearly every creator listed here does this work outside of teaching it, so the badge does not separate them from each other — read it as a description of the field rather than a distinction between these creators. Skills you perform tend to be taught by people who perform them; subjects you reason about are more often taught by explainers and academics. This is one of the former.",
-    "credentialed": "Most creators listed here hold a professional qualification. That is largely a fact about the field — this subject sits close enough to clinical practice that licensed people are the ones publishing — rather than something that sets these creators apart from each other. We did also weight qualifications more heavily here than elsewhere, which is our choice and is stated on the colophon.",
-    "cites-research": "Most creators listed here work from sources and say so, which in this subject is close to a definition of doing it properly rather than a mark of unusual rigour. The badge is the norm here; what still varies is how close to the primary texts they stay."
-  },
   "corrected": {
     "what": "Fifteen entries were labelled cause: selection on the claim that these badges are near-universal because of our own inclusion rules — specifically that we 'do not list someone who explains a skill they have never practised'. The colophon said so to visitors.",
     "whyItWasWrong": "The claim was never tested and it is false. 29 of 196 creators — 15% — carry no practitioner badge at all, including Kane B, CrashCourse, Wireless Philosophy, Harvard Business Review and Heidi Priebe, so it plainly is not a requirement. Measured across domains, practitioner runs from 100% (marketing, business, fitness, programming, productivity) to 14% (philosophy). An inclusion rule would be near-uniform; a 100-to-14 spread is a fact about which subjects are taught by people who do them. credentialed and cites-research behave the same way — credentialed is 70% in relationships and 0% in marketing, cites-research is 71% in philosophy and 0% in programming. All three track the subject, not our preference.",
     "correction": "All fifteen entries reclassified to cause: field (relationships/credentialed to mixed, because a real editorial preference sits on top of the field structure there) and moved from the colophon to the category pages, which is where the placement rule sends a field-caused note. The colophon section that asserted the inclusion rule has been rewritten to report the actual finding.",
     "foundBy": "Rule 18, batch 26, during the sweep the owner asked for. The claim had been repeated in every batch report since batch 17 and never once checked."
-  }
+  },
+  "_comment": "Signal saturation measured per domain. The CLASSIFICATION machinery that used to sit on top of this — cause: selection|field|mixed, placement: category-page|build-page, and the visitor-facing standing notes it drove — was RETIRED at 200 creators. It never prevented an error; it manufactured one (see corrected[] and findings-ledger.json badges-are-our-inclusion-rules), took two rounds to unwind, and shipped a false claim to visitors for nine batches. What is kept is the measurement, printed in the coverage report, and the colophon section reporting what the badges actually track. Cost of the retirement, stated honestly: the field-caused notes on fitness, programming, productivity, relationships and marketing category pages are gone, and those were true and useful."
 }

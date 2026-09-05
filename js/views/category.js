@@ -2,7 +2,7 @@
 // the critic in a visually distinct ink band, and the four-week plan as a
 // numbered sequence with a connecting line.
 
-import { getCategory, getCreatorsForCategory, getCategoryIndex, getDomainNotes, getSubjectNotes } from '../data.js';
+import { getCategory, getCreatorsForCategory, getCategoryIndex, getSubjectNotes } from '../data.js';
 import { esc, stateBlock, statePage, setTitle, LEVELS, SIZE_BUCKETS, domainLabel } from '../utils.js';
 
 // Named rather than coded, because "No AU creator" reads as a database error
@@ -119,31 +119,6 @@ function subjectNoteMarkup(categoryId, subjectNotes) {
   </aside>`;
 }
 
-// A signal carried by nearly every creator in a domain says something, but not
-// always something about the domain. Where the saturation is the field's doing
-// — paid courses in fitness, commercial interest in marketing — it belongs
-// here, because it tells a visitor what they are walking into. Where it is our
-// own inclusion rule showing up in the data, it is meta-commentary about how
-// the list was built and lives on the colophon instead. rule 17; the split is
-// enforced in the validator, so this renders only what is placed here.
-//
-// Suppressed on an empty category: a note saying "everyone listed here" above
-// a list of nobody is a claim about nobody.
-function domainNoteMarkup(domain, domainNotes, hasCreators) {
-  if (!hasCreators) return '';
-  const shared = domainNotes?.sharedNotes ?? {};
-  const here = (domainNotes?.entries ?? [])
-    .filter((e) => e.domain === domain && e.placement === 'category-page')
-    .map((e) => ({ ...e, text: e.note ?? (e.usesSharedNote ? shared[e.usesSharedNote] : null) }))
-    .filter((e) => e.text);
-  if (!here.length) return '';
-  return `<aside class="standing-note" aria-labelledby="standing-note-heading">
-    <h2 id="standing-note-heading" class="standing-note__head">Worth knowing about ${esc(domainLabel(domain))}</h2>
-    ${here.map((e) => `<p>${esc(e.text)}</p>`).join('')}
-    <p class="standing-note__meta"><a href="#/how-this-list-was-built">How this list was built</a></p>
-  </aside>`;
-}
-
 function planMarkup(category, creatorsById) {
   const plan = category.plan ?? {};
   const weeks = ['week1', 'week2', 'week3', 'week4'];
@@ -226,14 +201,12 @@ export async function renderCategory(app, { params, query }) {
   let category;
   let entries;
   let index;
-  let domainNotes;
   let subjectNotes;
   try {
-    [category, entries, index, domainNotes, subjectNotes] = await Promise.all([
+    [category, entries, index, subjectNotes] = await Promise.all([
       getCategory(params.id),
       getCreatorsForCategory(params.id),
       getCategoryIndex(),
-      getDomainNotes(),
       getSubjectNotes(),
     ]);
   } catch (err) {
@@ -294,7 +267,6 @@ export async function renderCategory(app, { params, query }) {
 
         ${subjectNoteMarkup(category.id, subjectNotes)}
 
-        ${domainNoteMarkup(category.domain, domainNotes, entries.length > 0)}
 
         ${tabsMarkup(nonCritics, filters.level)}
         <div id="panel-levels" role="tabpanel" aria-labelledby="tab-${filters.level}" tabindex="0">
