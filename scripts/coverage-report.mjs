@@ -179,6 +179,37 @@ const totalMaps = retro.length + firstPass;
 // widely, which is either the data having been under-mapped or the bar
 // drifting. If the second-or-later share rises FASTER than the ratio, it is
 // the bar.
+// DEPTH, COUNTED TWICE. "At target" and "at target with active creators" are
+// different numbers and the second is the honest one — see validate.mjs.
+{
+  const all = new Map(), act = new Map();
+  for (const c of creators) for (const m of c.categories ?? []) {
+    all.set(m.id, (all.get(m.id) ?? 0) + 1);
+    if (c.status === 'active') act.set(m.id, (act.get(m.id) ?? 0) + 1);
+  }
+  const lost = [];
+  let atAll = 0, atAct = 0;
+  for (const cat of cats) {
+    const a = all.get(cat.id) ?? 0, b = act.get(cat.id) ?? 0;
+    if (a >= 2) atAll++;
+    if (b >= 2) atAct++;
+    if (a >= 2 && b < 2) {
+      const stale = creators.filter((c) => c.status !== 'active' && (c.categories ?? []).some((m) => m.id === cat.id));
+      lost.push(`${cat.id} — ${a} listed, ${b} active (${stale.map((c) => `${c.name}: ${c.status}`).join(', ')})`);
+    }
+  }
+  console.log('\n\nDEPTH AGAINST THE TARGET OF 2');
+  console.log('='.repeat(72));
+  console.log(`  at target, any status ....... ${atAll} of ${cats.length}`);
+  console.log(`  at target, active only ...... ${atAct} of ${cats.length}   <- the honest number`);
+  if (lost.length) {
+    console.log(`\n  ${lost.length} categor${lost.length === 1 ? 'y' : 'ies'} meet the target only on paper:`);
+    for (const l of lost) console.log(`    ${l}`);
+    console.log('\n  A dormant channel keeps its place — the back catalogue is the point —');
+    console.log('  but it is not a second live voice, and the target should not say it is.');
+  }
+}
+
 // THE DEPTH TARGET IS 2, AND THE HEADROOM IS SPENT ON PURPOSE.
 // Restated at 228 creators: depth 3 across 197 categories needs 591 mappings
 // against 323 held, and the 172 creators left under the cap would have to

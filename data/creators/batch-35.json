@@ -61,7 +61,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Uploads are infrequent and the most recent in the scanned window is February 2025, so tooling specifics have moved. The from-scratch approach is superb for understanding and is not how anyone ships production systems."
+    "caveats": "Uploads are infrequent and the most recent in the scanned window is February 2025, so tooling specifics have moved. The from-scratch approach is superb for understanding and is not how anyone ships production systems.",
+    "catalogue": {
+      "scanned": 17,
+      "shortPct": 6,
+      "longPct": 71,
+      "medianMin": 115,
+      "videoCount": 17,
+      "at": "2026-09"
+    }
   },
   {
     "id": "jackherrington",
@@ -112,6 +120,14 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Sponsored segments are frequent and several recent videos are built around AI developer tools. Highly React-specific: little here transfers to other frameworks, and the fast-moving subject means anything over a year old should be checked."
+    "caveats": "Sponsored segments are frequent and several recent videos are built around AI developer tools. Highly React-specific: little here transfers to other frameworks, and the fast-moving subject means anything over a year old should be checked.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 12,
+      "longPct": 2,
+      "medianMin": 8,
+      "videoCount": 523,
+      "at": "2026-09"
+    }
   }
 ]

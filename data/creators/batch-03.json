@@ -49,7 +49,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Runs a paid editing community that the videos route toward. A growing share of recent uploads is industry commentary rather than craft."
+    "caveats": "Runs a paid editing community that the videos route toward. A growing share of recent uploads is industry commentary rather than craft.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 72,
+      "longPct": 18,
+      "medianMin": 1,
+      "videoCount": 318,
+      "at": "2026-09"
+    }
   },
   {
     "id": "premiumbeat",
@@ -98,7 +106,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Dormant since April 2025 and originally made to sell music licences. Software-specific steps will drift out of date even though the ideas do not."
+    "caveats": "Dormant since April 2025 and originally made to sell music licences. Software-specific steps will drift out of date even though the ideas do not.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 26,
+      "longPct": 14,
+      "medianMin": 9,
+      "videoCount": 616,
+      "at": "2026-09"
+    }
   },
   {
     "id": "studiobinder",
@@ -162,7 +178,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Content marketing for a software product; every video routes back to it eventually. Analysis rather than instruction — nobody here teaches you to shoot."
+    "caveats": "Content marketing for a software product; every video routes back to it eventually. Analysis rather than instruction — nobody here teaches you to shoot.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 86,
+      "longPct": 0,
+      "medianMin": 1,
+      "videoCount": 720,
+      "at": "2026-09"
+    }
   },
   {
     "id": "indepthcine",
@@ -211,7 +235,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "A substantial share of uploads is new-gear coverage, which dates quickly and is not the same thing as learning to shoot."
+    "caveats": "A substantial share of uploads is new-gear coverage, which dates quickly and is not the same thing as learning to shoot.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 2,
+      "longPct": 0,
+      "medianMin": 14,
+      "videoCount": 263,
+      "at": "2026-09"
+    }
   },
   {
     "id": "filmriot",
@@ -261,7 +293,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "The archive spans many years, so older episodes reference dead software and hardware. The comedic style is heavy and not to everyone's taste."
+    "caveats": "The archive spans many years, so older episodes reference dead software and hardware. The comedic style is heavy and not to everyone's taste.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 16,
+      "longPct": 6,
+      "medianMin": 12,
+      "videoCount": 1287,
+      "at": "2026-09"
+    }
   },
   {
     "id": "thomasheatonphoto",
@@ -311,7 +351,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Heavily vlog-format, and a real share of uploads is gear coverage. Landscape-specific — little here transfers directly to portraits or events."
+    "caveats": "Heavily vlog-format, and a real share of uploads is gear coverage. Landscape-specific — little here transfers directly to portraits or events.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 46,
+      "medianMin": 19,
+      "videoCount": 690,
+      "at": "2026-09"
+    }
   },
   {
     "id": "nigeldanson",
@@ -362,7 +410,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Landscape-only, and some uploads are gear or trip content rather than teaching."
+    "caveats": "Landscape-only, and some uploads are gear or trip content rather than teaching.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 2,
+      "longPct": 52,
+      "medianMin": 21,
+      "videoCount": 463,
+      "at": "2026-09"
+    }
   },
   {
     "id": "nngroup",
@@ -415,7 +471,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Sells training and certification, and the tone is corporate. Little coverage of visual craft — pair it with something that teaches the making."
+    "caveats": "Sells training and certification, and the tone is corporate. Little coverage of visual craft — pair it with something that teaches the making.",
+    "catalogue": {
+      "scanned": 48,
+      "shortPct": 56,
+      "longPct": 6,
+      "medianMin": 2,
+      "videoCount": 1252,
+      "at": "2026-09"
+    }
   },
   {
     "id": "proko",
@@ -467,7 +531,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "A large paid course business sits behind the free videos and is promoted throughout. The academic approach is slow by design."
+    "caveats": "A large paid course business sits behind the free videos and is promoted throughout. The academic approach is slow by design.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 4,
+      "longPct": 62,
+      "medianMin": 33,
+      "videoCount": 1204,
+      "at": "2026-09"
+    }
   },
   {
     "id": "marcobucci",
@@ -517,7 +589,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Sells courses and brushes. Some uploads are about the art business rather than the craft — useful, but not what you came for."
+    "caveats": "Sells courses and brushes. Some uploads are about the art business rather than the craft — useful, but not what you came for.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 40,
+      "longPct": 6,
+      "medianMin": 9,
+      "videoCount": 133,
+      "at": "2026-09"
+    }
   },
   {
     "id": "andrewhuang",
@@ -569,7 +649,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Mostly short-form and often entertainment rather than teaching. Sells a production class, a book, an app and a plugin, all promoted on the channel."
+    "caveats": "Mostly short-form and often entertainment rather than teaching. Sells a production class, a book, an app and a plugin, all promoted on the channel.",
+    "catalogue": {
+      "scanned": 49,
+      "shortPct": 67,
+      "longPct": 10,
+      "medianMin": 1,
+      "videoCount": 903,
+      "at": "2026-09"
+    }
   },
   {
     "id": "inthemix",
@@ -619,7 +707,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Sells plugins and promotes them heavily in his own videos. Much of the catalogue is specific to one DAW."
+    "caveats": "Sells plugins and promotes them heavily in his own videos. Much of the catalogue is specific to one DAW.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 44,
+      "longPct": 12,
+      "medianMin": 5,
+      "videoCount": 303,
+      "at": "2026-09"
+    }
   },
   {
     "id": "justinguitar",
@@ -671,7 +767,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "The YouTube channel is a shop window; the course structure lives on his website, so following it here alone is disorienting. Recent uploads lean heavily to short-form."
+    "caveats": "The YouTube channel is a shop window; the course structure lives on his website, so following it here alone is disorienting. Recent uploads lean heavily to short-form.",
+    "catalogue": {
+      "scanned": 49,
+      "shortPct": 69,
+      "longPct": 22,
+      "medianMin": 2,
+      "videoCount": 1300,
+      "at": "2026-09"
+    }
   },
   {
     "id": "pianoteofficial",
@@ -722,7 +826,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "A funnel for a paid subscription; the free videos are deliberately partial. Overwhelmingly short-form, so the teaching is thin per upload."
+    "caveats": "A funnel for a paid subscription; the free videos are deliberately partial. Overwhelmingly short-form, so the teaching is thin per upload.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 56,
+      "longPct": 4,
+      "medianMin": 1,
+      "videoCount": 1694,
+      "at": "2026-09"
+    }
   },
   {
     "id": "newyorkvocalcoaching",
@@ -775,7 +887,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Promotes the studio's paid lessons and courses. The voice-impression videos are a large and entirely non-instructional part of the catalogue."
+    "caveats": "Promotes the studio's paid lessons and courses. The voice-impression videos are a large and entirely non-instructional part of the catalogue.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 10,
+      "longPct": 12,
+      "medianMin": 8,
+      "videoCount": 370,
+      "at": "2026-09"
+    }
   },
   {
     "id": "alanbeckertutorials",
@@ -824,7 +944,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Dormant since November 2019, and most of the catalogue teaches a superseded version of one application. Treat it as one excellent series plus an archive."
+    "caveats": "Dormant since November 2019, and most of the catalogue teaches a superseded version of one application. Treat it as one excellent series plus an archive.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 10,
+      "longPct": 6,
+      "medianMin": 5,
+      "videoCount": 67,
+      "at": "2026-09"
+    }
   },
   {
     "id": "rexkrueger",
@@ -875,7 +1003,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Now overwhelmingly short-form, so the teaching videos take finding. Sells plans and courses."
+    "caveats": "Now overwhelmingly short-form, so the teaching videos take finding. Sells plans and courses.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 76,
+      "longPct": 6,
+      "medianMin": 2,
+      "videoCount": 823,
+      "at": "2026-09"
+    }
   },
   {
     "id": "stumpynubs",
@@ -925,7 +1061,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Assumes access to machinery, so it pairs badly with a hand-tool-only setup. Tool coverage is a large share of the catalogue."
+    "caveats": "Assumes access to machinery, so it pairs badly with a hand-tool-only setup. Tool coverage is a large share of the catalogue.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 10,
+      "longPct": 0,
+      "medianMin": 8,
+      "videoCount": 1040,
+      "at": "2026-09"
+    }
   },
   {
     "id": "buzzsprout",
@@ -977,7 +1121,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Vendor education for a hosting platform — treat any tool or platform recommendation accordingly. Much of the mid-length catalogue dates from 2022–23 and shows it."
+    "caveats": "Vendor education for a hosting platform — treat any tool or platform recommendation accordingly. Much of the mid-length catalogue dates from 2022–23 and shows it.",
+    "catalogue": {
+      "scanned": 49,
+      "shortPct": 88,
+      "longPct": 2,
+      "medianMin": 1,
+      "videoCount": 552,
+      "at": "2026-09"
+    }
   },
   {
     "id": "garethdavidstudio",
@@ -1028,7 +1180,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Sells design and software courses, promoted throughout. A meaningful share of recent uploads is career reassurance rather than craft."
+    "caveats": "Sells design and software courses, promoted throughout. A meaningful share of recent uploads is career reassurance rather than craft.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 80,
+      "longPct": 0,
+      "medianMin": 1,
+      "videoCount": 520,
+      "at": "2026-09"
+    }
   },
   {
     "id": "satorigraphics",
@@ -1080,6 +1240,14 @@
       }
     ],
     "role": "specialist",
-    "caveats": "The channel carries a named AI-tool partnership in its own description, and AI content now dominates recent uploads. Sells courses."
+    "caveats": "The channel carries a named AI-tool partnership in its own description, and AI content now dominates recent uploads. Sells courses.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 6,
+      "longPct": 12,
+      "medianMin": 10,
+      "videoCount": 1287,
+      "at": "2026-09"
+    }
   }
 ]

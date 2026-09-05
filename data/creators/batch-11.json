@@ -61,7 +61,15 @@
       }
     ],
     "role": "critic",
-    "caveats": "Mostly short-form now, so the sourced long-form takes finding. Deliberately unwilling to give simple prescriptions, which some viewers will find unhelpful."
+    "caveats": "Mostly short-form now, so the sourced long-form takes finding. Deliberately unwilling to give simple prescriptions, which some viewers will find unhelpful.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 66,
+      "longPct": 14,
+      "medianMin": 1,
+      "videoCount": 469,
+      "at": "2026-09"
+    }
   },
   {
     "id": "physionic",
@@ -123,7 +131,15 @@
       }
     ],
     "role": "critic",
-    "caveats": "Sells a paid analysis tier and promotes it. The register is technical, and he rarely converts an analysis into advice."
+    "caveats": "Sells a paid analysis tier and promotes it. The register is technical, and he rarely converts an analysis into advice.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 6,
+      "longPct": 6,
+      "medianMin": 9,
+      "videoCount": 925,
+      "at": "2026-09"
+    }
   },
   {
     "id": "labmuffin",
@@ -175,7 +191,15 @@
       }
     ],
     "role": "critic",
-    "caveats": "Some videos are disclosed brand collaborations, so read product praise in that light. Heavily short-form now, and the depth is in a minority of uploads."
+    "caveats": "Some videos are disclosed brand collaborations, so read product praise in that light. Heavily short-form now, and the depth is in a minority of uploads.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 76,
+      "longPct": 10,
+      "medianMin": 1,
+      "videoCount": 483,
+      "at": "2026-09"
+    }
   },
   {
     "id": "thesleepdoctor",
@@ -228,7 +252,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "A commercial sleep practice sits behind the channel and product recommendations are frequent. Overwhelmingly short-form."
+    "caveats": "A commercial sleep practice sits behind the channel and product recommendations are frequent. Overwhelmingly short-form.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 72,
+      "longPct": 10,
+      "medianMin": 1,
+      "videoCount": 1393,
+      "at": "2026-09"
+    }
   },
   {
     "id": "oxygenadvantage",
@@ -282,7 +314,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "A single commercial system sold through courses and instructor certification, described in its own marketing as revolutionary. Treat the framing as a claim."
+    "caveats": "A single commercial system sold through courses and instructor certification, described in its own marketing as revolutionary. Treat the framing as a claim.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 70,
+      "longPct": 16,
+      "medianMin": 1,
+      "videoCount": 708,
+      "at": "2026-09"
+    }
   },
   {
     "id": "uprighthealth",
@@ -346,7 +386,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Explicitly positions itself against health professionals, which is the main reason to pair it with E3 Rehab rather than take it alone. Sells programmes."
+    "caveats": "Explicitly positions itself against health professionals, which is the main reason to pair it with E3 Rehab rather than take it alone. Sells programmes.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 36,
+      "longPct": 2,
+      "medianMin": 5,
+      "videoCount": 1344,
+      "at": "2026-09"
+    }
   },
   {
     "id": "drmaryclaire",
@@ -399,7 +447,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Sells books and a supplement-adjacent product line, so weigh product mentions accordingly. Almost entirely short-form, and narrow by design."
+    "caveats": "Sells books and a supplement-adjacent product line, so weigh product mentions accordingly. Almost entirely short-form, and narrow by design.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 78,
+      "longPct": 20,
+      "medianMin": 1,
+      "videoCount": 1191,
+      "at": "2026-09"
+    }
   },
   {
     "id": "tarabrach",
@@ -450,7 +506,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Explicitly Buddhist and spiritual in register, with emotional-healing framing throughout. Very little instruction on technique as such — you learn by following."
+    "caveats": "Explicitly Buddhist and spiritual in register, with emotional-healing framing throughout. Very little instruction on technique as such — you learn by following.",
+    "catalogue": {
+      "scanned": 49,
+      "shortPct": 6,
+      "longPct": 45,
+      "medianMin": 19,
+      "videoCount": 1752,
+      "at": "2026-09"
+    }
   },
   {
     "id": "peterattiamd",
@@ -504,6 +568,14 @@
       }
     ],
     "role": "specialist",
-    "caveats": "The free content is the edge of a paid subscription and a private practice; several recommendations assume access to expensive testing. Excerpt-heavy, so episodes arrive out of context."
+    "caveats": "The free content is the edge of a paid subscription and a private practice; several recommendations assume access to expensive testing. Excerpt-heavy, so episodes arrive out of context.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 54,
+      "longPct": 28,
+      "medianMin": 2,
+      "videoCount": 1795,
+      "at": "2026-09"
+    }
   }
 ]

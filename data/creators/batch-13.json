@@ -62,7 +62,15 @@
     "role": "specialist",
     "caveats": "Sells a course and a book, promoted throughout. Assumes a US-style corporate hiring process with recruiters and structured rounds.",
     "jurisdiction": "US",
-    "jurisdictionNote": "Assumes US-style recruiting — ATS screening, résumé conventions and no-photograph norms. CV conventions differ materially elsewhere."
+    "jurisdictionNote": "Assumes US-style recruiting — ATS screening, résumé conventions and no-photograph norms. CV conventions differ materially elsewhere.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 60,
+      "longPct": 24,
+      "medianMin": 2,
+      "videoCount": 403,
+      "at": "2026-09"
+    }
   },
   {
     "id": "writingwithandrew",
@@ -112,7 +120,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Examples are literary rather than professional, so the transfer to workplace documents is yours to make. Nothing here on document structure, audience or approvals."
+    "caveats": "Examples are literary rather than professional, so the transfer to workplace documents is yours to make. Nothing here on document structure, audience or approvals.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 12,
+      "longPct": 20,
+      "medianMin": 16,
+      "videoCount": 324,
+      "at": "2026-09"
+    }
   },
   {
     "id": "harvardbusinessreview",
@@ -163,6 +179,14 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Overwhelmingly short-form — nine of two hundred recent uploads carry the substance. Institutional and large-organisation in perspective, and it promotes HBR subscriptions."
+    "caveats": "Overwhelmingly short-form — nine of two hundred recent uploads carry the substance. Institutional and large-organisation in perspective, and it promotes HBR subscriptions.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 94,
+      "longPct": 2,
+      "medianMin": 1,
+      "videoCount": 728,
+      "at": "2026-09"
+    }
   }
 ]

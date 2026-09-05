@@ -60,7 +60,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Infrequent uploads and some older material references dated library versions. Almost no coverage of the current framework churn."
+    "caveats": "Infrequent uploads and some older material references dated library versions. Almost no coverage of the current framework churn.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 16,
+      "longPct": 80,
+      "medianMin": 35,
+      "videoCount": 276,
+      "at": "2026-09"
+    }
   },
   {
     "id": "webdevsimplified",
@@ -112,7 +120,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Sells courses, promoted throughout. A large share of uploads is industry opinion and framework commentary rather than teaching."
+    "caveats": "Sells courses, promoted throughout. A large share of uploads is industry opinion and framework commentary rather than teaching.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 28,
+      "longPct": 32,
+      "medianMin": 14,
+      "videoCount": 870,
+      "at": "2026-09"
+    }
   },
   {
     "id": "kevinpowell",
@@ -164,7 +180,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "CSS only — no JavaScript, no application architecture. Sells courses, and a share of uploads is tooling news."
+    "caveats": "CSS only — no JavaScript, no application architecture. Sells courses, and a share of uploads is tooling news.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 42,
+      "longPct": 6,
+      "medianMin": 3,
+      "videoCount": 1134,
+      "at": "2026-09"
+    }
   },
   {
     "id": "hnasr",
@@ -227,7 +251,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Sells courses heavily and mentions them often. Unedited, repetitive delivery, and a share of uploads is reaction to industry news."
+    "caveats": "Sells courses heavily and mentions them often. Unedited, repetitive delivery, and a share of uploads is reaction to industry news.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 46,
+      "longPct": 18,
+      "medianMin": 3,
+      "videoCount": 1034,
+      "at": "2026-09"
+    }
   },
   {
     "id": "databasestar",
@@ -277,7 +309,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Small channel with basic production. Sells courses, and the coverage assumes a relational database rather than anything newer."
+    "caveats": "Small channel with basic production. Sells courses, and the coverage assumes a relational database rather than anything newer.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 8,
+      "medianMin": 11,
+      "videoCount": 343,
+      "at": "2026-09"
+    }
   },
   {
     "id": "techworldwithnana",
@@ -334,7 +374,7 @@
         "why": "Teaches the platform concepts underneath the buttons, which is what transfers when your employer uses a different cloud from the one you learned.",
         "evidence": "Cloud and container tutorials forming a large share of the catalogue, taught as multi-hour courses rather than feature walkthroughs.",
         "entryVideo": {
-          "title": "What is MCP? MCP Explained Simply",
+          "title": "MCP Explained Simply — What It Is and Why It Exists",
           "videoId": "oblaHqULUHk",
           "whyThisOne": "A current protocol explained from first principles, which shows how she handles something new rather than something settled.",
           "durationMin": 30
@@ -342,7 +382,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Heavy promotion of paid masterclasses, and a growing share of uploads is career-path interviews rather than technical teaching."
+    "caveats": "Heavy promotion of paid masterclasses, and a growing share of uploads is career-path interviews rather than technical teaching.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 18,
+      "longPct": 56,
+      "medianMin": 23,
+      "videoCount": 180,
+      "at": "2026-09"
+    }
   },
   {
     "id": "bytebytego",
@@ -393,7 +441,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Interview-oriented, so depth is sacrificed for coverage. Sells books and a newsletter, and nearly every video routes to them."
+    "caveats": "Interview-oriented, so depth is sacrificed for coverage. Sells books and a newsletter, and nearly every video routes to them.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 16,
+      "longPct": 0,
+      "medianMin": 6,
+      "videoCount": 168,
+      "at": "2026-09"
+    }
   },
   {
     "id": "neetcode",
@@ -445,7 +501,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Sells a paid platform the channel funnels toward. A growing share of uploads is AI and job-market commentary rather than algorithm teaching."
+    "caveats": "Sells a paid platform the channel funnels toward. A growing share of uploads is AI and job-market commentary rather than algorithm teaching.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 74,
+      "longPct": 8,
+      "medianMin": 1,
+      "videoCount": 473,
+      "at": "2026-09"
+    }
   },
   {
     "id": "modernsoftwareengineering",
@@ -508,7 +572,15 @@
       }
     ],
     "role": "critic",
-    "caveats": "Opinion from experience rather than evidence, and some positions are actively disputed in the industry. Sells courses and consulting."
+    "caveats": "Opinion from experience rather than evidence, and some positions are actively disputed in the industry. Sells courses and consulting.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 36,
+      "longPct": 14,
+      "medianMin": 11,
+      "videoCount": 628,
+      "at": "2026-09"
+    }
   },
   {
     "id": "philipplackner",
@@ -559,7 +631,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Android and Kotlin only. Sells courses, promoted persistently, and the monthly news videos age quickly."
+    "caveats": "Android and Kotlin only. Sells courses, promoted persistently, and the monthly news videos age quickly.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 4,
+      "longPct": 28,
+      "medianMin": 15,
+      "videoCount": 1170,
+      "at": "2026-09"
+    }
   },
   {
     "id": "gmtk",
@@ -610,7 +690,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "No code or engine work at all. A large share of recent uploads is game-jam retrospective rather than design teaching."
+    "caveats": "No code or engine work at all. A large share of recent uploads is game-jam retrospective rather than design teaching.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 8,
+      "longPct": 38,
+      "medianMin": 17,
+      "videoCount": 237,
+      "at": "2026-09"
+    }
   },
   {
     "id": "statquest",
@@ -663,6 +751,14 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Concepts and mathematics only — nothing on deployment, serving or MLOps. Sells books and a paid tier, and the jingle-heavy style is divisive."
+    "caveats": "Concepts and mathematics only — nothing on deployment, serving or MLOps. Sells books and a paid tier, and the jingle-heavy style is divisive.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 16,
+      "longPct": 56,
+      "medianMin": 24,
+      "videoCount": 299,
+      "at": "2026-09"
+    }
   }
 ]

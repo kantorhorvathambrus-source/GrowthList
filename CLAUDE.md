@@ -798,6 +798,40 @@ this section first to know exactly where to resume.)*
   from 197×2, which silently counted surplus depth as progress. The
   owner chose the target on the wrong number; the direction survives the
   correction and the number did not.
+- **THE GENERALISATION SWEEP IS DONE — `data/field-audit.json`.** Every
+  displayed field, what produces it, and whether anything can catch it
+  being wrong. **The question it started from was half wrong and the
+  correction is the useful part.** I set out to find fields that had
+  gone stale since research time. Nothing has: batch 01 was committed
+  2026-09-01, today is 2026-09-05, and all 233 records read
+  `dataAsOf: 2026-09` — correctly. `status` was never stale. It was
+  **wrong the day it was written**, because a binary at 730 days could
+  not say that Stronger By Science had already been silent eighteen
+  months when we found it. So the sharper question, and the one the
+  audit answers, is *which fields are produced by a rule that cannot
+  express the truth* — and separately, which are unfalsifiable by
+  construction and rest entirely on the writing (`level`, `profile`,
+  `role`). Never let the rigour of the checked fields be read as
+  covering those three.
+  **Found wrong: 7 statuses, 2 renamed entry-video titles, 1 outgrown
+  size band.** Found incomplete: 21 format-tag omissions.
+  **A standing policy that the tooling made impossible:** "run
+  gate-check over every batch file before any release" — the script
+  took a single path, so it could only have been done by hand
+  forty-five times, and never was. It takes `--all` now.
+  **Pre-release, all three:** `gate-check.mjs --all`,
+  `audit-status.mjs`, `audit-catalogue.mjs`. ~1,600 units of 10,000.
+- **`catalogue` IS STORED ON EVERY RECORD — `scripts/audit-catalogue.mjs`.**
+  231 of 233 records ship a countable claim about a channel's catalogue
+  and not one was checkable, because the measurement lived only inside
+  a sentence. The measurement is now stored beside the prose it was
+  written from — the same pattern that catches drift in
+  `domain-notes.json`. **The baseline starts at batch 45: this verifies
+  no existing sentence, it means the next run can say which channels
+  changed shape.** A regex over the 233 sentences was tried and
+  abandoned — 16 flags, and the first two checked were both false
+  positives, one of them accusing a record of hiding exactly what it
+  states outright.
 - **`status` IS RE-QUERIED, NOT REMEMBERED — `scripts/audit-status.mjs`.**
   It was written once at research time and never checked again, so a
   creator researched in batch 03 carried that word for forty batches

@@ -77,7 +77,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Sells courses and coaching around his own named systems, and the channel exists partly to do that. Heavily short-form now."
+    "caveats": "Sells courses and coaching around his own named systems, and the channel exists partly to do that. Heavily short-form now.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 56,
+      "longPct": 4,
+      "medianMin": 2,
+      "videoCount": 1356,
+      "at": "2026-09"
+    }
   },
   {
     "id": "calnewport",
@@ -158,7 +166,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Extremely long episodes with a lot of listener questions between the ideas. Promotes his books persistently, and his positions on technology are contested."
+    "caveats": "Extremely long episodes with a lot of listener questions between the ideas. Promotes his books persistently, and his positions on technology are contested.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 94,
+      "medianMin": 52,
+      "videoCount": 756,
+      "at": "2026-09"
+    }
   },
   {
     "id": "tiagoforte",
@@ -210,7 +226,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "A large course business sits behind this and is promoted constantly. Recent uploads lean heavily toward AI tooling rather than the underlying method."
+    "caveats": "A large course business sits behind this and is promoted constantly. Recent uploads lean heavily toward AI tooling rather than the underlying method.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 56,
+      "longPct": 16,
+      "medianMin": 2,
+      "videoCount": 270,
+      "at": "2026-09"
+    }
   },
   {
     "id": "mattdavella",
@@ -261,7 +285,15 @@
       }
     ],
     "role": "critic",
-    "caveats": "Sells courses on filmmaking and habits. The self-experiment videos are entertainment, and there is little practical method here."
+    "caveats": "Sells courses on filmmaking and habits. The self-experiment videos are entertainment, and there is little practical method here.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 30,
+      "longPct": 18,
+      "medianMin": 12,
+      "videoCount": 469,
+      "at": "2026-09"
+    }
   },
   {
     "id": "leilagharani",
@@ -313,7 +345,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Sells courses and promotes them throughout. Microsoft-only, and a growing share of uploads is AI tooling rather than spreadsheet craft."
+    "caveats": "Sells courses and promotes them throughout. Microsoft-only, and a growing share of uploads is AI tooling rather than spreadsheet craft.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 46,
+      "longPct": 4,
+      "medianMin": 6,
+      "videoCount": 643,
+      "at": "2026-09"
+    }
   },
   {
     "id": "chandoo",
@@ -364,7 +404,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Sells courses and a membership. Note the name is heavily collided on YouTube — this is `@chandoo_`; `@chandootalks` is a lifestyle vlogger with more uploads."
+    "caveats": "Sells courses and a membership. Note the name is heavily collided on YouTube — this is `@chandoo_`; `@chandootalks` is a lifestyle vlogger with more uploads.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 48,
+      "longPct": 20,
+      "medianMin": 3,
+      "videoCount": 603,
+      "at": "2026-09"
+    }
   },
   {
     "id": "simpletivity",
@@ -414,6 +462,14 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Tool tutorials date quickly and many are affiliate-adjacent. Sells courses, and there is little method here beyond the software."
+    "caveats": "Tool tutorials date quickly and many are affiliate-adjacent. Sells courses, and there is little method here beyond the software.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 52,
+      "longPct": 2,
+      "medianMin": 2,
+      "videoCount": 753,
+      "at": "2026-09"
+    }
   }
 ]

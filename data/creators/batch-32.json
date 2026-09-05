@@ -61,7 +61,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Sells courses and the videos route to them. Opinionated about design in ways that are defensible but are positions rather than consensus — treat the arguments as arguments."
+    "caveats": "Sells courses and the videos route to them. Opinionated about design in ways that are defensible but are positions rather than consensus — treat the arguments as arguments.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 48,
+      "medianMin": 19,
+      "videoCount": 567,
+      "at": "2026-09"
+    }
   },
   {
     "id": "mcoding",
@@ -110,7 +118,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "No uploads since September 2024 in the scanned window — a back catalogue, not an active channel. Version-specific details should be checked against current Python."
+    "caveats": "No uploads since September 2024 in the scanned window — a back catalogue, not an active channel. Version-specific details should be checked against current Python.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 10,
+      "medianMin": 10,
+      "videoCount": 121,
+      "at": "2026-09"
+    }
   },
   {
     "id": "thecodingtrain",
@@ -161,6 +177,14 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Creative coding rather than software engineering: the patterns shown suit sketches, not applications that others maintain. Sessions are long and unedited, so the information density is low by design."
+    "caveats": "Creative coding rather than software engineering: the patterns shown suit sketches, not applications that others maintain. Sessions are long and unedited, so the information density is low by design.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 28,
+      "longPct": 64,
+      "medianMin": 31,
+      "videoCount": 1290,
+      "at": "2026-09"
+    }
   }
 ]

@@ -13,10 +13,26 @@
     "shortDescription": "A working copywriter teaching the craft in video at length — the counterexample to the assumption that this discipline only publishes in text.",
     "longDescription": "Cattoni runs a copywriting business and the channel is a genuine instructional catalogue rather than a promotional one: twenty-five long-form videos in the two hundred most recent uploads, a median around eleven minutes, and a beginner's introduction that actually defines the work before selling anything. The strongest pieces are the tested ones — five landing-page hooks run against each other with the results reported, an argument about which email conventions have stopped working and why. She also covers the commercial side of being a copywriter, which most craft teaching omits: rates, service positioning, and what the arrival of generated text has actually done to the market. The register is high-energy and hook-driven, which is itself a demonstration of the techniques being taught and will not suit everyone. Her channel description opens with a course pitch, which is a fair signal of how the business works.",
     "notFor": "Anyone wanting literary or long-form writing craft — this is conversion writing, and the goal is always a sale or a signup. The delivery is deliberately high-energy.",
-    "formatTags": ["tutorial", "video-essay", "shorts"],
-    "level": ["beginner", "intermediate"],
-    "profile": { "evidenceBased": 2, "practical": 4, "energy": 4, "selfPromotion": 4, "depth": 3 },
-    "signals": ["practitioner", "sells-course"],
+    "formatTags": [
+      "tutorial",
+      "video-essay",
+      "shorts"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 4,
+      "selfPromotion": 4,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
     "categories": [
       {
         "id": "copywriting",
@@ -44,7 +60,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Sells courses hard and the videos route to them consistently. Claims are from her own testing rather than published research, and the hook-driven presentation is a technique being demonstrated as well as taught — read the confidence accordingly."
+    "caveats": "Sells courses hard and the videos route to them consistently. Claims are from her own testing rather than published research, and the hook-driven presentation is a technique being demonstrated as well as taught — read the confidence accordingly.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 42,
+      "longPct": 2,
+      "medianMin": 11,
+      "videoCount": 847,
+      "at": "2026-09"
+    }
   },
   {
     "id": "patflynn",
@@ -60,10 +84,27 @@
     "shortDescription": "Affiliate marketing taught by the person most associated with doing it disclosed — full workshops rather than tactics.",
     "longDescription": "Flynn built his reputation on publishing his own income reports and on refusing to recommend products he had not used, which is why he belongs in a category whose defining constraint is disclosure and trust rather than conversion rate. The substantial material is four live workshops running seventy to eighty-five minutes, which cover the mechanics end to end rather than as a list of tips. Be clear about the shape of the rest: twenty-nine of the fifty most recent uploads are under two minutes, and the current catalogue has drifted heavily toward live-streaming setup, short-form video challenges and creator-business content. The affiliate workshops are the reason for this listing, and they sit some way back in the catalogue rather than at the front.",
     "notFor": "Anyone looking for current tactics — the affiliate material is workshop-shaped and older than the recent uploads. Also not for someone uninterested in the audience-building that his approach depends on.",
-    "formatTags": ["long-form", "lecture", "shorts"],
-    "level": ["beginner", "intermediate"],
-    "profile": { "evidenceBased": 2, "practical": 4, "energy": 3, "selfPromotion": 3, "depth": 3 },
-    "signals": ["practitioner", "sells-course", "commercial-conflict"],
+    "formatTags": [
+      "long-form",
+      "lecture",
+      "shorts"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 3,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course",
+      "commercial-conflict"
+    ],
     "categories": [
       {
         "id": "affiliate-marketing",
@@ -79,7 +120,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "He earns from affiliate relationships and from courses about affiliate marketing, which is a conflict in exactly the subject being taught — disclosed, and worth holding. Most of the recent catalogue is unrelated short-form creator content."
+    "caveats": "He earns from affiliate relationships and from courses about affiliate marketing, which is a conflict in exactly the subject being taught — disclosed, and worth holding. Most of the recent catalogue is unrelated short-form creator content.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 58,
+      "longPct": 18,
+      "medianMin": 2,
+      "videoCount": 1003,
+      "at": "2026-09"
+    }
   },
   {
     "id": "30mpc",
@@ -95,10 +144,26 @@
     "shortDescription": "Working B2B sellers walking through calls and sequences line by line, including the exact words for the objections everyone gets.",
     "longDescription": "Fifteen of the fifty most recent uploads run over twenty minutes and several pass forty, and the format is specific in a way sales content usually is not: a live screen share of an actual prospecting process, six discovery styles compared with an argument about which one works, a forty-five-minute treatment of running a discovery call without the performance most people associate with selling. The objection videos give the literal reply — one is built entirely around what to say when a prospect claims they will do it in-house. There is a strong outbound and cold-email strand with sequences and templates published rather than described. All of it assumes B2B with a considered purchase and a named buyer; none of it transfers to consumer selling. The hosts run a paid training business and the videos route to it.",
     "notFor": "Anyone selling to consumers, or selling something bought on impulse. Everything here assumes a business buyer, a longer cycle, and a pipeline to manage.",
-    "formatTags": ["long-form", "interview", "shorts"],
-    "level": ["intermediate", "advanced"],
-    "profile": { "evidenceBased": 2, "practical": 4, "energy": 3, "selfPromotion": 3, "depth": 3 },
-    "signals": ["practitioner", "sells-course"],
+    "formatTags": [
+      "long-form",
+      "interview",
+      "shorts"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 3,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
     "categories": [
       {
         "id": "sales-fundamentals",
@@ -126,6 +191,14 @@
       }
     ],
     "role": "specialist",
-    "caveats": "A paid sales-training business sits behind the podcast and the videos route to it. Reply rates and results are self-reported by the practitioners quoting them. Strictly B2B."
+    "caveats": "A paid sales-training business sits behind the podcast and the videos route to it. Reply rates and results are self-reported by the practitioners quoting them. Strictly B2B.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 66,
+      "longPct": 30,
+      "medianMin": 1,
+      "videoCount": 1014,
+      "at": "2026-09"
+    }
   }
 ]

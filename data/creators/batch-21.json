@@ -48,7 +48,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Gear sponsorship is frequent and gear recommendation is a large share of the catalogue. **No instructor credential, and none is claimed** — the authority here is roughly ten thousand miles of walking on the Appalachian, Pacific Crest and Continental Divide trails plus the Camino and Kilimanjaro, which is real experience of exactly this activity rather than of the wilderness generally. Take the specific limit seriously: outdoors you cannot check what you were told. There is no signal, no second source and nobody to ask, and a wrong call lands before you can reconsider it. Get navigation and wilderness first aid from training that assesses you, and use this for the logistics and expectations around them."
+    "caveats": "Gear sponsorship is frequent and gear recommendation is a large share of the catalogue. **No instructor credential, and none is claimed** — the authority here is roughly ten thousand miles of walking on the Appalachian, Pacific Crest and Continental Divide trails plus the Camino and Kilimanjaro, which is real experience of exactly this activity rather than of the wilderness generally. Take the specific limit seriously: outdoors you cannot check what you were told. There is no signal, no second source and nobody to ask, and a wrong call lands before you can reconsider it. Get navigation and wilderness first aid from training that assesses you, and use this for the logistics and expectations around them.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 2,
+      "longPct": 40,
+      "medianMin": 15,
+      "videoCount": 879,
+      "at": "2026-09"
+    }
   },
   {
     "id": "hikingguy",
@@ -99,7 +107,15 @@
       }
     ],
     "role": "generalist",
-    "caveats": "Predominantly a gear-review channel with affiliate incentives on expensive equipment, despite the safety framing. **No instructor or guiding credential** — the basis is years of trail testing, which supports equipment claims and does not support anything else. Judgement about conditions is largely absent, so **do not treat this as outdoor-skills education**: it is education about kit, and it is not assessment of your route, your fitness or your plan. The decisions it helps with are the ones you make before you leave."
+    "caveats": "Predominantly a gear-review channel with affiliate incentives on expensive equipment, despite the safety framing. **No instructor or guiding credential** — the basis is years of trail testing, which supports equipment claims and does not support anything else. Judgement about conditions is largely absent, so **do not treat this as outdoor-skills education**: it is education about kit, and it is not assessment of your route, your fitness or your plan. The decisions it helps with are the ones you make before you leave.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 4,
+      "longPct": 10,
+      "medianMin": 8,
+      "videoCount": 335,
+      "at": "2026-09"
+    }
   },
   {
     "id": "gentlemansgazette",
@@ -151,7 +167,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "They manufacture and sell the accessories featured in their own videos, which is a direct conflict on any recommendation. The classic-menswear frame is presented as timeless correctness rather than as one tradition among several."
+    "caveats": "They manufacture and sell the accessories featured in their own videos, which is a direct conflict on any recommendation. The classic-menswear frame is presented as timeless correctness rather than as one tradition among several.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 52,
+      "longPct": 8,
+      "medianMin": 2,
+      "videoCount": 1268,
+      "at": "2026-09"
+    }
   },
   {
     "id": "audreycoyne",
@@ -203,7 +227,15 @@
       }
     ],
     "role": "generalist",
-    "caveats": "Substantially monetised through affiliate links on featured products, and a large share of the catalogue is shopping content — which sits awkwardly against the buy-less framing of the best videos. Judge the two strands separately."
+    "caveats": "Substantially monetised through affiliate links on featured products, and a large share of the catalogue is shopping content — which sits awkwardly against the buy-less framing of the best videos. Judge the two strands separately.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 6,
+      "longPct": 4,
+      "medianMin": 8,
+      "videoCount": 343,
+      "at": "2026-09"
+    }
   },
   {
     "id": "nomadicmatt",
@@ -254,6 +286,14 @@
       }
     ],
     "role": "specialist",
-    "caveats": "A large travel-media business sits behind this — books, tours, a membership — and several sessions are built around partner services, including insurance and booking platforms he earns from. Airfare tactics date quickly; check the publication date."
+    "caveats": "A large travel-media business sits behind this — books, tours, a membership — and several sessions are built around partner services, including insurance and booking platforms he earns from. Airfare tactics date quickly; check the publication date.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 38,
+      "longPct": 62,
+      "medianMin": 54,
+      "videoCount": 159,
+      "at": "2026-09"
+    }
   }
 ]

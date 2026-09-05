@@ -63,7 +63,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Sells training programmes and promotes an app persistently. Now overwhelmingly short-form, and the optimisation framing can imply precision that the underlying research does not support."
+    "caveats": "Sells training programmes and promotes an app persistently. Now overwhelmingly short-form, and the optimisation framing can imply precision that the underlying research does not support.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 80,
+      "longPct": 10,
+      "medianMin": 1,
+      "videoCount": 624,
+      "at": "2026-09"
+    }
   },
   {
     "id": "barbellmedicine",
@@ -129,7 +137,15 @@
       }
     ],
     "role": "critic",
-    "caveats": "Sells coaching, programming and seminars. Small channel, dry delivery, and heavily short-form — the long-form material takes finding."
+    "caveats": "Sells coaching, programming and seminars. Small channel, dry delivery, and heavily short-form — the long-form material takes finding.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 52,
+      "longPct": 22,
+      "medianMin": 1,
+      "videoCount": 1052,
+      "at": "2026-09"
+    }
   },
   {
     "id": "fitnessfaqs",
@@ -182,7 +198,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Overwhelmingly short-form now. Sells programmes, and the physiotherapy framing is used commercially as well as clinically."
+    "caveats": "Overwhelmingly short-form now. Sells programmes, and the physiotherapy framing is used commercially as well as clinically.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 78,
+      "longPct": 2,
+      "medianMin": 1,
+      "videoCount": 1829,
+      "at": "2026-09"
+    }
   },
   {
     "id": "e3rehab",
@@ -247,7 +271,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Sells programmes and consultations. Heavily short-form, and general education can never substitute for an assessment of your specific injury."
+    "caveats": "Sells programmes and consultations. Heavily short-form, and general education can never substitute for an assessment of your specific injury.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 68,
+      "longPct": 8,
+      "medianMin": 1,
+      "videoCount": 350,
+      "at": "2026-09"
+    }
   },
   {
     "id": "dylanjohnsoncycling",
@@ -299,7 +331,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Sells coaching and training plans. The research framing can imply more certainty than endurance science actually offers, and gear content is creeping in."
+    "caveats": "Sells coaching and training plans. The research framing can imply more certainty than endurance science actually offers, and gear content is creeping in.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 52,
+      "longPct": 20,
+      "medianMin": 1,
+      "videoCount": 202,
+      "at": "2026-09"
+    }
   },
   {
     "id": "effortlessswimming",
@@ -352,7 +392,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Sells clinics, camps and online coaching, which most videos route toward. Now heavily short-form, and freestyle-dominated."
+    "caveats": "Sells clinics, camps and online coaching, which most videos route toward. Now heavily short-form, and freestyle-dominated.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 76,
+      "longPct": 12,
+      "medianMin": 1,
+      "videoCount": 1361,
+      "at": "2026-09"
+    }
   },
   {
     "id": "chewjitsu",
@@ -403,7 +451,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Sells instructional courses and a membership. Nothing here is evidence-based in any formal sense — it is one experienced coach's judgement."
+    "caveats": "Sells instructional courses and a membership. Nothing here is evidence-based in any formal sense — it is one experienced coach's judgement.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 38,
+      "longPct": 0,
+      "medianMin": 6,
+      "videoCount": 1807,
+      "at": "2026-09"
+    }
   },
   {
     "id": "hoopersbeta",
@@ -455,6 +511,14 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Nothing new since May 2026. Climbing-specific, and the injury content is education rather than a substitute for assessment."
+    "caveats": "Nothing new since May 2026. Climbing-specific, and the injury content is education rather than a substitute for assessment.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 50,
+      "longPct": 16,
+      "medianMin": 3,
+      "videoCount": 242,
+      "at": "2026-09"
+    }
   }
 ]

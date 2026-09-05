@@ -64,7 +64,15 @@
     "role": "critic",
     "caveats": "The channel is produced and owned by the asset-management firm he is CIO of, which is disclosed on the channel itself — his conclusions favour the low-cost passive approach that firm sells. Canadian tax and account framing throughout.",
     "jurisdiction": "CA",
-    "jurisdictionNote": "Canadian securities licensing, and the account types and tax treatment discussed are Canadian. The research-based arguments transfer; the account advice does not."
+    "jurisdictionNote": "Canadian securities licensing, and the account types and tax treatment discussed are Canadian. The research-based arguments transfer; the account advice does not.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 4,
+      "longPct": 24,
+      "medianMin": 16,
+      "videoCount": 178,
+      "at": "2026-09"
+    }
   },
   {
     "id": "theplainbagel",
@@ -131,7 +139,15 @@
     "role": "critic",
     "caveats": "Canadian tax and regulatory framing on the jurisdiction-specific material. Works in the industry he analyses, though he does not sell products to viewers.",
     "jurisdiction": "CA",
-    "jurisdictionNote": "Canadian analyst; the tax explainers are Canadian specifically. The scam and bubble analysis is general."
+    "jurisdictionNote": "Canadian analyst; the tax explainers are Canadian specifically. The scam and bubble analysis is general.",
+    "catalogue": {
+      "scanned": 49,
+      "shortPct": 2,
+      "longPct": 35,
+      "medianMin": 18,
+      "videoCount": 278,
+      "at": "2026-09"
+    }
   },
   {
     "id": "twocents",
@@ -194,7 +210,15 @@
     "role": "specialist",
     "caveats": "US-specific systems throughout. Beginner-level only, and much of the recent output is short-form.",
     "jurisdiction": "US",
-    "jurisdictionNote": "Credit scores, medical debt and retirement accounts are all framed on US systems."
+    "jurisdictionNote": "Credit scores, medical debt and retirement accounts are all framed on US systems.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 62,
+      "longPct": 0,
+      "medianMin": 1,
+      "videoCount": 267,
+      "at": "2026-09"
+    }
   },
   {
     "id": "jamesshack",
@@ -259,7 +283,15 @@
     "role": "specialist",
     "caveats": "Entirely UK-specific on tax, pensions and accounts. He is a financial planner, so the professional frame shapes what counts as a question worth asking.",
     "jurisdiction": "UK",
-    "jurisdictionNote": "UK pensions, tax wrappers and state provision throughout. The modelling method transfers; none of the numbers do."
+    "jurisdictionNote": "UK pensions, tax wrappers and state provision throughout. The modelling method transfers; none of the numbers do.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 20,
+      "medianMin": 17,
+      "videoCount": 124,
+      "at": "2026-09"
+    }
   },
   {
     "id": "pensioncraft",
@@ -312,7 +344,15 @@
     "role": "specialist",
     "caveats": "UK accounts and tax throughout. Sells a paid membership and courses, promoted regularly. Technical register that assumes prior knowledge.",
     "jurisdiction": "UK",
-    "jurisdictionNote": "UK accounts, ISAs and platform fees. The fee-first argument is general; the implementation is not."
+    "jurisdictionNote": "UK accounts, ISAs and platform fees. The fee-first argument is general; the implementation is not.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 2,
+      "longPct": 42,
+      "medianMin": 18,
+      "videoCount": 688,
+      "at": "2026-09"
+    }
   },
   {
     "id": "aswathdamodaran",
@@ -321,7 +361,7 @@
     "channelUrl": "https://www.youtube.com/@AswathDamodaranOnValuation",
     "country": "US",
     "language": "en",
-    "sizeBucket": "500k-1M",
+    "sizeBucket": "1M-5M",
     "status": "active",
     "verified": true,
     "dataAsOf": "2026-09",
@@ -364,6 +404,14 @@
     "role": "specialist",
     "caveats": "Genuinely advanced and taught at university pace; the numbered sessions expect to be worked through in order. Company valuations date quickly as the news moves.",
     "jurisdiction": "general",
-    "jurisdictionNote": "Valuation methodology and corporate finance theory are not jurisdictional, though individual company valuations use US market data."
+    "jurisdictionNote": "Valuation methodology and corporate finance theory are not jurisdictional, though individual company valuations use US market data.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 48,
+      "medianMin": 19,
+      "videoCount": 1412,
+      "at": "2026-09"
+    }
   }
 ]

@@ -61,7 +61,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Cadence has slowed sharply — nothing in the scanned window since February 2025. They sell training programmes and software, which is the funding model behind the research summaries. Conclusions are frequently 'the evidence is weak', which is honest and can be unsatisfying."
+    "caveats": "Cadence has slowed sharply — nothing in the scanned window since February 2025. They sell training programmes and software, which is the funding model behind the research summaries. Conclusions are frequently 'the evidence is weak', which is honest and can be unsatisfying.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 52,
+      "longPct": 22,
+      "medianMin": 2,
+      "videoCount": 456,
+      "at": "2026-09"
+    }
   },
   {
     "id": "calgarybarbell",
@@ -112,7 +120,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Sells coaching and programming; the free program is genuine and is also the top of that funnel. Strictly competition powerlifting — mapped to one category deliberately, because the strength-training content here is the same body of work under a broader name."
+    "caveats": "Sells coaching and programming; the free program is genuine and is also the top of that funnel. Strictly competition powerlifting — mapped to one category deliberately, because the strength-training content here is the same body of work under a broader name.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 22,
+      "longPct": 26,
+      "medianMin": 12,
+      "videoCount": 839,
+      "at": "2026-09"
+    }
   },
   {
     "id": "swimsmooth",
@@ -162,6 +178,14 @@
       }
     ],
     "role": "specialist",
-    "caveats": "A coaching business selling video analysis and squad places, and several videos are built around a sponsor's wearable. Freestyle only; other strokes are barely covered."
+    "caveats": "A coaching business selling video analysis and squad places, and several videos are built around a sponsor's wearable. Freestyle only; other strokes are barely covered.",
+    "catalogue": {
+      "scanned": 49,
+      "shortPct": 47,
+      "longPct": 6,
+      "medianMin": 5,
+      "videoCount": 220,
+      "at": "2026-09"
+    }
   }
 ]

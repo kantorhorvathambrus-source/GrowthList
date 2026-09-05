@@ -13,10 +13,27 @@
     "shortDescription": "Three-hour company histories told as strategy — what a business chose not to do, and why that decision held for decades.",
     "longDescription": "Twenty-four of the fifty most recent uploads run over twenty minutes and the flagship episodes run three to four and a half hours, because the format is a complete company history built toward the strategic question. The value for this skill is that the analysis is structural rather than biographical: the Trader Joe's episode is subtitled counter positioning and is genuinely about why a large competitor could not copy the model without damaging its own; the Vanguard episode is about a structure that made the firm impossible to compete with on price. The hosts are investors and the frame is investor-shaped — durable advantage, market structure, what compounds — which is a real lens and a limited one. Shorter interview episodes with operating executives sit alongside. This is narrative rather than instruction, and there is no framework to apply at the end.",
     "notFor": "Anyone wanting a method. These are case histories, the shortest useful ones run over an hour, and the flagship episodes are longer than most films. Also not for someone running a small business — the subjects are almost all very large companies.",
-    "formatTags": ["long-form", "documentary", "interview"],
-    "level": ["intermediate", "advanced"],
-    "profile": { "evidenceBased": 3, "practical": 2, "energy": 2, "selfPromotion": 2, "depth": 4 },
-    "signals": ["practitioner", "cites-research", "sponsor-heavy"],
+    "formatTags": [
+      "long-form",
+      "documentary",
+      "interview"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 2,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 4
+    },
+    "signals": [
+      "practitioner",
+      "cites-research",
+      "sponsor-heavy"
+    ],
     "categories": [
       {
         "id": "business-strategy",
@@ -32,6 +49,14 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Heavily sponsored, including large financial institutions that also appear as episode subjects — the J.P. Morgan episode sits next to J.P. Morgan-presented live events. The frame is an investor's throughout, so durable advantage and market structure get more attention than execution, people or luck, and the narrative form tends to make outcomes look more inevitable than they were."
+    "caveats": "Heavily sponsored, including large financial institutions that also appear as episode subjects — the J.P. Morgan episode sits next to J.P. Morgan-presented live events. The frame is an investor's throughout, so durable advantage and market structure get more attention than execution, people or luck, and the narrative form tends to make outcomes look more inevitable than they were.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 50,
+      "longPct": 48,
+      "medianMin": 9,
+      "videoCount": 148,
+      "at": "2026-09"
+    }
   }
 ]

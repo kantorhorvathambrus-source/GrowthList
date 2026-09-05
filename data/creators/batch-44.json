@@ -13,10 +13,27 @@
     "shortDescription": "A board-certified sports dietitian on fuelling endurance training, in episodes long enough to actually finish a subject.",
     "longDescription": "Twenty-three of the fifty most recent uploads run over twenty minutes and many pass an hour: ninety-two minutes on iron deficiency in athletes, eighty-seven on how much protein athletes actually need, seventy-seven on why endurance athletes get gastrointestinal trouble and what to do about it, fifty-five on when fibre helps and when it gets in the way. The register is unusual for the subject — she reflects on how the advice itself has moved, naming high-carbohydrate fuelling and individual sweat-sodium testing as trends and saying where she thinks athletes should be cautious, which is a different posture from a channel selling a protocol. Guests are named and carry the same credentials she does. Recent episodes also take on GLP-1 medication in active people, including her own experience of it, and an elite runner managing Crohn's disease alongside training.",
     "notFor": "Anyone who wants a plan on a page. These are hour-long conversations, the answers are conditional, and there is no beginner on-ramp — it assumes you already train.",
-    "formatTags": ["interview", "long-form", "shorts"],
-    "level": ["intermediate", "advanced"],
-    "profile": { "evidenceBased": 4, "practical": 4, "energy": 2, "selfPromotion": 2, "depth": 4 },
-    "signals": ["credentialed", "practitioner", "sells-course"],
+    "formatTags": [
+      "interview",
+      "long-form",
+      "shorts"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 4,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 4
+    },
+    "signals": [
+      "credentialed",
+      "practitioner",
+      "sells-course"
+    ],
     "categories": [
       {
         "id": "sports-nutrition",
@@ -32,7 +49,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "She sells one-to-one nutrition coaching to athletes, which is the service the podcast advertises. Everything is podcast-shaped: no visuals, no structure to work through, and an hour is a normal length."
+    "caveats": "She sells one-to-one nutrition coaching to athletes, which is the service the podcast advertises. Everything is podcast-shaped: no visuals, no structure to work through, and an hour is a normal length.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 50,
+      "longPct": 46,
+      "medianMin": 6,
+      "videoCount": 213,
+      "at": "2026-09"
+    }
   },
   {
     "id": "oliviergirard",
@@ -48,10 +73,27 @@
     "shortDescription": "A working ergonomist on the equipment half of the subject — chairs, desks, screens and input devices, set up for the body using them.",
     "longDescription": "He describes himself as an ergonomist and posture therapist with twenty years of field experience, and the catalogue matches: a step-by-step walk through adjusting a chair, desk and screen with timestamps for each adjustment, a thirty-minute training video on chair adjustment aimed at the people who install them, and a run of independent reviews of chairs, vertical mice and adjustable mousepads. The reviews are the reason to be careful and also part of why he is here — he is willing to publish an honest take on a risky chair design rather than only recommend, and equipment is a real part of this subject that nobody else in the category touches. Median length is four minutes and only one upload in fifty passes twenty, so this is a channel of short specific answers rather than a course. Some videos are in French.",
     "notFor": "Anyone looking for exercises, pain rehabilitation or a movement programme — that is the other half of this category, not this channel. If product reviews put you off, most of the recent catalogue is product reviews.",
-    "formatTags": ["tutorial", "shorts"],
-    "level": ["beginner", "intermediate"],
-    "profile": { "evidenceBased": 3, "practical": 4, "energy": 2, "selfPromotion": 3, "depth": 2 },
-    "signals": ["credentialed", "practitioner", "commercial-conflict", "sells-course"],
+    "formatTags": [
+      "tutorial",
+      "shorts"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 2
+    },
+    "signals": [
+      "credentialed",
+      "practitioner",
+      "commercial-conflict",
+      "sells-course"
+    ],
     "categories": [
       {
         "id": "posture-and-ergonomics",
@@ -67,7 +109,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "He reviews the equipment this category is about, which is a direct conflict even when the reviews are critical; treat a specific product recommendation as a recommendation from someone in that trade. The desk-setup video funnels to his free workstation assessment. Bilingual channel — several videos are French-only."
+    "caveats": "He reviews the equipment this category is about, which is a direct conflict even when the reviews are critical; treat a specific product recommendation as a recommendation from someone in that trade. The desk-setup video funnels to his free workstation assessment. Bilingual channel — several videos are French-only.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 38,
+      "longPct": 2,
+      "medianMin": 4,
+      "videoCount": 468,
+      "at": "2026-09"
+    }
   },
   {
     "id": "declutterthemind",
@@ -83,10 +133,24 @@
     "shortDescription": "A secular library of fifteen-minute guided sittings, indexed by the situation you are in rather than by tradition.",
     "longDescription": "Forty-seven of the fifty most recent uploads sit in the three-to-nineteen-minute band and almost all are exactly fifteen minutes: a spoken guided meditation, a male voice, no music. What makes it usable is the indexing — the sittings are titled by the state you arrive in rather than by technique or teacher. After an argument. When you feel stuck. Work stress. Self-loathing. Emotional numbness. Guilt. Annoyance. That is a different thing from an archive of talks, and it is the thing somebody actually reaches for at the moment they need it. No tradition is claimed and no credential is asserted anywhere on the channel; the framing is simply that you sit down and observe the mind, and the videos help you do that.",
     "notFor": "Anyone who wants to understand meditation rather than do it — there is no instruction here about technique, no explanation of what the practice is for, and nobody to learn from. It is a library of sittings, not a teacher.",
-    "formatTags": ["tutorial", "long-form"],
-    "level": ["beginner", "intermediate"],
-    "profile": { "evidenceBased": 2, "practical": 4, "energy": 1, "selfPromotion": 3, "depth": 2 },
-    "signals": ["sells-course"],
+    "formatTags": [
+      "tutorial",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 1,
+      "selfPromotion": 3,
+      "depth": 2
+    },
+    "signals": [
+      "sells-course"
+    ],
     "categories": [
       {
         "id": "meditation",
@@ -102,6 +166,14 @@
       }
     ],
     "role": "specialist",
-    "caveats": "The sittings are drawn from a paid app and every description says so. The descriptions are also templated and not always checked — the entry video's own description calls it a ten-minute meditation when it is fifteen. Nobody on this channel is identified or credentialed, which matters more here than the sloppiness does."
+    "caveats": "The sittings are drawn from a paid app and every description says so. The descriptions are also templated and not always checked — the entry video's own description calls it a ten-minute meditation when it is fifteen. Nobody on this channel is identified or credentialed, which matters more here than the sloppiness does.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 6,
+      "medianMin": 15,
+      "videoCount": 560,
+      "at": "2026-09"
+    }
   }
 ]

@@ -13,10 +13,25 @@
     "shortDescription": "A competitive programming finalist solving hard problems out loud, at two hours a session, with the dead ends left in.",
     "longDescription": "Thirty-four of the fifty most recent uploads run over twenty minutes and the median is sixty-one, which is unusual even for this subject. The channel's own description states the credential — an ICPC and Facebook Hacker Cup finalist — and the format is his thought process rather than a polished solution: the CSES problem sets are worked through across multi-hour sessions, dynamic programming alone taking four parts of roughly two hours each. He also commentates the International Olympiad in Informatics live, which is the closest thing available to watching how strong problem-solvers actually read a problem. Crucially he shows the approaches that do not work before the one that does, so the videos teach selection between techniques rather than a catalogue of them.",
     "notFor": "Anyone preparing for an ordinary interview quickly — this is competitive programming, which is harder and differently shaped than most job screens. Also demands real time: the useful units are one to three hours.",
-    "formatTags": ["long-form", "livestream", "tutorial"],
-    "level": ["intermediate", "advanced"],
-    "profile": { "evidenceBased": 3, "practical": 4, "energy": 2, "selfPromotion": 1, "depth": 4 },
-    "signals": ["practitioner"],
+    "formatTags": [
+      "long-form",
+      "livestream",
+      "tutorial"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 1,
+      "depth": 4
+    },
+    "signals": [
+      "practitioner"
+    ],
     "categories": [
       {
         "id": "algorithms-and-data-structures",
@@ -32,7 +47,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Competitive programming is its own discipline and the techniques transfer to interviews unevenly. Sessions are very long and largely unedited; there is no structured curriculum, only problem sets worked in order."
+    "caveats": "Competitive programming is its own discipline and the techniques transfer to interviews unevenly. Sessions are very long and largely unedited; there is no structured curriculum, only problem sets worked in order.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 68,
+      "medianMin": 61,
+      "videoCount": 160,
+      "at": "2026-09"
+    }
   },
   {
     "id": "beabetterdev",
@@ -48,10 +71,25 @@
     "shortDescription": "AWS explained service by service, starting from what the thing is for rather than from the console.",
     "longDescription": "Ninety-two long-form videos in two hundred uploads, and the shape is unusually orderly for cloud content: a nineteen-minute answer to what AWS is and why anyone uses it, a sixty-five-minute pass over the services that actually matter, then individual walkthroughs — connecting a Lambda function to a relational database, setting up Config, installing Terraform and the CLI. The consistent choice is to explain the problem a service solves before showing the buttons, which is what makes the knowledge survive the interface being redesigned. He also covers the parts of cloud that cost people money, including how the free tier now actually works. Scope is AWS specifically; Azure and Google Cloud are not covered.",
     "notFor": "Anyone on Azure or Google Cloud, and anyone wanting architecture at scale — this is service-level understanding and hands-on setup, not system design.",
-    "formatTags": ["tutorial", "long-form"],
-    "level": ["beginner", "intermediate"],
-    "profile": { "evidenceBased": 3, "practical": 4, "energy": 2, "selfPromotion": 2, "depth": 3 },
-    "signals": ["practitioner", "sells-course"],
+    "formatTags": [
+      "tutorial",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
     "categories": [
       {
         "id": "cloud-computing",
@@ -67,7 +105,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "AWS only. Sells courses and the videos route to them. Cloud interfaces and pricing change faster than video — check the publication date on anything involving the console or a bill."
+    "caveats": "AWS only. Sells courses and the videos route to them. Cloud interfaces and pricing change faster than video — check the publication date on anything involving the console or a bill.",
+    "catalogue": {
+      "scanned": 49,
+      "shortPct": 12,
+      "longPct": 24,
+      "medianMin": 10,
+      "videoCount": 494,
+      "at": "2026-09"
+    }
   },
   {
     "id": "kodekloud",
@@ -83,10 +129,26 @@
     "shortDescription": "A training platform's channel, worth it for a handful of genuinely complete free courses among a lot of short promotional material.",
     "longDescription": "This is a commercial learning platform and most of the catalogue is short — nineteen of the fifty most recent uploads are under two minutes, and the median is three. The reason it is listed is a small number of full courses published free and in one piece: a 165-minute system design course aimed at people starting from nothing, a sixty-minute end-to-end explanation of how machine learning works, a fifty-one-minute piece on AI infrastructure. Those are complete rather than teasers, which is not the norm for vendor channels. The shorter project videos — building a defect tracker, a real-time leaderboard, a CI/CD pipeline — are competent but exist to demonstrate the labs product. Treat the channel as a shelf holding three or four things worth your time rather than something to subscribe to.",
     "notFor": "Anyone browsing — the ratio of promotional short-form to substance is high, and you should arrive knowing which course you came for.",
-    "formatTags": ["course", "long-form", "shorts"],
-    "level": ["beginner", "intermediate"],
-    "profile": { "evidenceBased": 2, "practical": 4, "energy": 2, "selfPromotion": 4, "depth": 3 },
-    "signals": ["practitioner", "commercial-conflict"],
+    "formatTags": [
+      "course",
+      "long-form",
+      "shorts"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 4,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "commercial-conflict"
+    ],
     "categories": [
       {
         "id": "system-design",
@@ -102,6 +164,14 @@
       }
     ],
     "role": "generalist",
-    "caveats": "A commercial training platform, and the channel exists to sell its labs subscription. Most uploads are promotional short-form; the free courses are genuine but are also the top of a funnel. Content is framed around certification exams, which shapes what gets emphasised."
+    "caveats": "A commercial training platform, and the channel exists to sell its labs subscription. Most uploads are promotional short-form; the free courses are genuine but are also the top of a funnel. Content is framed around certification exams, which shapes what gets emphasised.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 38,
+      "longPct": 6,
+      "medianMin": 3,
+      "videoCount": 1282,
+      "at": "2026-09"
+    }
   }
 ]

@@ -13,10 +13,27 @@
     "shortDescription": "A climbing coaching company treating training as a measurable problem — grip types, load progression, and what actually limits a given climber.",
     "longDescription": "The channel is clip-heavy on the surface, thirty-seven of the fifty most recent uploads under two minutes, with substantial work underneath. A forty-minute deep dive on every grip type is the sort of thing that exists nowhere else at that level of detail, and a twenty-three-minute treatment of projecting tactics addresses the actual question of how to climb at your limit rather than how to climb harder in general. They run physiological testing on climbers and publish the results, including sessions putting a boulderer through elite athlete protocols. There is a useful sceptical strand too: a thirty-minute assessment of whether climbers should bother with a wearable, answered honestly rather than sponsored. They sell assessments and training plans, which is both the funding model and the reason the testing exists.",
     "notFor": "Beginners still learning to move on the wall — this is training theory for people already climbing regularly, and technique-on-rock instruction is thin. Also indoor-weighted.",
-    "formatTags": ["tutorial", "documentary", "shorts"],
-    "level": ["intermediate", "advanced"],
-    "profile": { "evidenceBased": 4, "practical": 4, "energy": 2, "selfPromotion": 3, "depth": 4 },
-    "signals": ["practitioner", "cites-research", "commercial-conflict"],
+    "formatTags": [
+      "tutorial",
+      "documentary",
+      "shorts"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 4,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 4
+    },
+    "signals": [
+      "practitioner",
+      "cites-research",
+      "commercial-conflict"
+    ],
     "categories": [
       {
         "id": "rock-climbing",
@@ -32,7 +49,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "A coaching business selling assessments and plans; the physiological testing is real and is also the product. Weighted toward indoor and board climbing, and toward training rather than movement on rock."
+    "caveats": "A coaching business selling assessments and plans; the physiological testing is real and is also the product. Weighted toward indoor and board climbing, and toward training rather than movement on rock.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 74,
+      "longPct": 12,
+      "medianMin": 1,
+      "videoCount": 674,
+      "at": "2026-09"
+    }
   },
   {
     "id": "chloeting",
@@ -48,10 +73,24 @@
     "shortDescription": "Free follow-along home workouts requiring no equipment — competently made, and packaged in promises the workouts cannot keep.",
     "longDescription": "Twenty-four of the fifty most recent uploads run over twenty minutes and the median is seventeen, so unlike much of this genre the sessions are full length rather than clips. As workouts they are reasonable: structured intervals, no equipment assumed, clear demonstration, a range from ten to thirty minutes. The problem is the packaging. Videos are organised into two-week challenges and titled around specific aesthetic outcomes — a glow up, a snatched waist — which promise visible body recomposition on a timeline that is not physiologically available to most people. The workouts are not the issue; the implied contract is. Included because a free, no-equipment, full-length library has real value for someone with no gym and no budget, and because the alternative in this category is a shorter list, not a better one.",
     "notFor": "Anyone who will be discouraged when two weeks does not produce the advertised change — which is most people, and is the reason the framing matters. Also not progressive: the sessions do not build on each other toward anything.",
-    "formatTags": ["tutorial", "long-form"],
-    "level": ["beginner"],
-    "profile": { "evidenceBased": 1, "practical": 4, "energy": 4, "selfPromotion": 3, "depth": 1 },
-    "signals": ["practitioner", "contested-claims"],
+    "formatTags": [
+      "tutorial",
+      "long-form"
+    ],
+    "level": [
+      "beginner"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 4,
+      "energy": 4,
+      "selfPromotion": 3,
+      "depth": 1
+    },
+    "signals": [
+      "practitioner",
+      "contested-claims"
+    ],
     "categories": [
       {
         "id": "home-workouts",
@@ -67,6 +106,14 @@
       }
     ],
     "role": "generalist",
-    "caveats": "**The titles promise what the workouts cannot deliver.** Two-week challenges framed around a glow up or a snatched waist imply visible body recomposition on a timeline that is not realistic for most people, and spot reduction of fat from a named area does not occur. Take the sessions and leave the promises. No progression, no load management, and an app and programmes sold alongside."
+    "caveats": "**The titles promise what the workouts cannot deliver.** Two-week challenges framed around a glow up or a snatched waist imply visible body recomposition on a timeline that is not realistic for most people, and spot reduction of fat from a named area does not occur. Take the sessions and leave the promises. No progression, no load management, and an app and programmes sold alongside.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 10,
+      "longPct": 48,
+      "medianMin": 17,
+      "videoCount": 530,
+      "at": "2026-09"
+    }
   }
 ]

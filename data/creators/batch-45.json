@@ -13,10 +13,25 @@
     "shortDescription": "A performing classical pianist teaching named repertoire and the technique problems that stop people playing it.",
     "longDescription": "Two strands run through the catalogue. The first is repertoire: tutorials on specific pieces by name and opus — a Chopin nocturne, the finale of the B minor sonata, Schumann from the Album für die Jugend, a Prokofiev prelude — alongside his own performances, including the Bach-Busoni Chaconne. The second is the mechanical problem underneath them, treated as its own subject: how to break a scale speed barrier without adding tension, how to align the hands at fast tempos, how shaping works across a phrase and across a whole piece. He teaches from recorded private lessons, so the examples are real students failing in specific ways rather than demonstrations. There is also a run of videos on practice motivation and burnout that sit closer to self-help than to piano. The channel is mostly short: thirty-four of the fifty most recent uploads are under two minutes and none reach twenty.",
     "notFor": "Anyone starting from nothing, and anyone who wants pop, chords or playing by ear — this is written-music classical study and it assumes you read. The short-form half of the channel is largely promotional.",
-    "formatTags": ["tutorial", "shorts"],
-    "level": ["intermediate", "advanced"],
-    "profile": { "evidenceBased": 2, "practical": 4, "energy": 2, "selfPromotion": 4, "depth": 3 },
-    "signals": ["practitioner", "sells-course"],
+    "formatTags": [
+      "tutorial",
+      "shorts"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 4,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
     "categories": [
       {
         "id": "piano",
@@ -32,7 +47,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "The channel description is a lead magnet and the entry video opens with a link to his paid masterclass series; the free videos are genuinely complete, but the funnel is always present. No teaching credential is asserted anywhere on the channel — the case for him is the playing, which is on the channel to judge."
+    "caveats": "The channel description is a lead magnet and the entry video opens with a link to his paid masterclass series; the free videos are genuinely complete, but the funnel is always present. No teaching credential is asserted anywhere on the channel — the case for him is the playing, which is on the channel to judge.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 68,
+      "longPct": 0,
+      "medianMin": 2,
+      "videoCount": 917,
+      "at": "2026-09"
+    }
   },
   {
     "id": "tomofujita",
@@ -48,10 +71,26 @@
     "shortDescription": "A guitar teacher arguing that tone and listening matter more than shapes and speed, and teaching accordingly.",
     "longDescription": "The teaching videos are built around one disagreement with how guitar is usually taught online: that learners memorise shapes and positions without hearing the intervals inside them. So the triad lesson is about knowing which note is which rather than which grip to make, the practice lesson is about how to work on one song properly rather than which song to learn next, and there is a twenty-eight-minute piece on how he learned to listen to music at all. He is unusually direct about the limits of the medium a visitor is using — a thirty-five-minute conversation on what learning guitar from YouTube leaves out, and the gap between watching and digesting. The rest of the catalogue is gear: picks, strings, bridges, vintage student instruments. Thirty-six of the fifty most recent uploads are under two minutes.",
     "notFor": "Anyone who wants a structured path — there isn't one here, and the good material is scattered among gear videos. Also not for someone who wants tabs and songs; the whole argument is against learning that way.",
-    "formatTags": ["tutorial", "video-essay", "shorts"],
-    "level": ["intermediate", "advanced"],
-    "profile": { "evidenceBased": 2, "practical": 4, "energy": 2, "selfPromotion": 3, "depth": 3 },
-    "signals": ["practitioner", "sells-course"],
+    "formatTags": [
+      "tutorial",
+      "video-essay",
+      "shorts"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
     "categories": [
       {
         "id": "guitar",
@@ -67,6 +106,14 @@
       }
     ],
     "role": "specialist",
-    "caveats": "He sells a paid learning community and the lessons cross-reference its numbered material. No formal teaching credential is asserted on the channel. Gear content dominates by volume, so the teaching has to be sought out rather than browsed."
+    "caveats": "He sells a paid learning community and the lessons cross-reference its numbered material. No formal teaching credential is asserted on the channel. Gear content dominates by volume, so the teaching has to be sought out rather than browsed.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 72,
+      "longPct": 20,
+      "medianMin": 1,
+      "videoCount": 2134,
+      "at": "2026-09"
+    }
   }
 ]

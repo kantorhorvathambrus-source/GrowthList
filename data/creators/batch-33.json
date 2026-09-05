@@ -13,10 +13,26 @@
     "shortDescription": "A game engine built from nothing over years, in public, by someone who did it professionally at EA.",
     "longDescription": "Thirty of the fifty most recent uploads run over twenty minutes and the median is twenty-four, because the spine of the channel is a multi-year series building a real game engine in C++ from an empty file. That format teaches something a tutorial cannot: the decisions compound, earlier choices turn out wrong, and he goes back and says so — one video is a code review of his own earlier engine series. Alongside it sits genuinely careful C++ material on reference counting, memory safety and the language's traps, and a newer 3D engine series started from scratch. He worked on engines professionally, which shows in what he chooses to worry about. The register is direct and occasionally blunt about other people's code, including his own.",
     "notFor": "Anyone wanting to ship a game soon — this is engine and systems programming, and using an existing engine is faster for almost everyone. Requires real C++ comfort.",
-    "formatTags": ["tutorial", "long-form", "livestream"],
-    "level": ["intermediate", "advanced"],
-    "profile": { "evidenceBased": 3, "practical": 4, "energy": 3, "selfPromotion": 2, "depth": 4 },
-    "signals": ["practitioner", "sells-course"],
+    "formatTags": [
+      "tutorial",
+      "long-form",
+      "livestream"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 3,
+      "selfPromotion": 2,
+      "depth": 4
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
     "categories": [
       {
         "id": "game-development",
@@ -32,7 +48,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Sells a course and the engine work funnels toward it. Deep C++ and systems focus means the advice does not transfer to engine-based game development, which is what most people should actually do."
+    "caveats": "Sells a course and the engine work funnels toward it. Deep C++ and systems focus means the advice does not transfer to engine-based game development, which is what most people should actually do.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 12,
+      "longPct": 60,
+      "medianMin": 24,
+      "videoCount": 923,
+      "at": "2026-09"
+    }
   },
   {
     "id": "devopstoolkit",
@@ -48,10 +72,26 @@
     "shortDescription": "Platform engineering worked through at length, with strong opinions about which tools have actually earned their place.",
     "longDescription": "Twenty-two of the fifty most recent uploads run over twenty minutes and the median is eighteen. Two formats: explainers that place a tool in its history — one traces forty years from Ansible through Terraform and Kubernetes to Crossplane — and long open question-and-answer sessions where he takes real problems from practitioners and argues through them. The Q&As are the honest core of the channel and also its limitation: they run to ninety minutes, wander, and assume you already know the vocabulary. He is opinionated in a way that is useful, because he says when he thinks a widely-adopted tool is the wrong choice and gives his reasoning rather than a verdict.",
     "notFor": "Anyone new to deployment. This assumes containers, pipelines and cloud infrastructure are already familiar, and the Q&A format offers no on-ramp.",
-    "formatTags": ["tutorial", "q-and-a", "long-form"],
-    "level": ["intermediate", "advanced"],
-    "profile": { "evidenceBased": 3, "practical": 4, "energy": 2, "selfPromotion": 2, "depth": 4 },
-    "signals": ["practitioner", "sells-course"],
+    "formatTags": [
+      "tutorial",
+      "q-and-a",
+      "long-form"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 4
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
     "categories": [
       {
         "id": "devops-and-ci",
@@ -67,7 +107,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Mapped to one category deliberately. His cloud and Kubernetes material is real, but it lives inside the same question-and-answer streams as the delivery content — mapping both would be counting one body of work twice, which is what the scope rule exists to prevent. Sells courses; consults for vendors whose tools appear."
+    "caveats": "Mapped to one category deliberately. His cloud and Kubernetes material is real, but it lives inside the same question-and-answer streams as the delivery content — mapping both would be counting one body of work twice, which is what the scope rule exists to prevent. Sells courses; consults for vendors whose tools appear.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 38,
+      "longPct": 44,
+      "medianMin": 18,
+      "videoCount": 580,
+      "at": "2026-09"
+    }
   },
   {
     "id": "sentdex",
@@ -83,10 +131,26 @@
     "shortDescription": "Machine learning built and trained on camera, including the runs that fail and the hardware that turns out not to matter.",
     "longDescription": "Thirty-five of the fifty most recent uploads run over twenty minutes and the median is twenty-five. The distinguishing habit is that he actually runs things: training a robot to walk with reinforcement learning across forty-three minutes, visualising what is happening inside a network's layers, fine-tuning a model with QLoRA end to end, and testing whether a deep-learning laptop is worth buying by using one. That last kind matters in a field where most content is either abstract explanation or vendor enthusiasm. He also analyses new models against their claims rather than repeating them. Nearly thirteen hundred uploads span more than a decade, so older series use frameworks that have moved on — check the date before following any code.",
     "notFor": "Anyone wanting the mathematics rather than the engineering, or a structured curriculum — this is a long trail of projects, not a course. Assumes working Python.",
-    "formatTags": ["tutorial", "long-form", "documentary"],
-    "level": ["intermediate", "advanced"],
-    "profile": { "evidenceBased": 3, "practical": 4, "energy": 2, "selfPromotion": 2, "depth": 4 },
-    "signals": ["practitioner", "sponsor-heavy"],
+    "formatTags": [
+      "tutorial",
+      "long-form",
+      "documentary"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 4
+    },
+    "signals": [
+      "practitioner",
+      "sponsor-heavy"
+    ],
     "categories": [
       {
         "id": "machine-learning-engineering",
@@ -102,6 +166,14 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Sponsored segments are frequent, including tooling he then demonstrates. The back catalogue spans more than a decade and older framework code is stale — check publication dates before following anything."
+    "caveats": "Sponsored segments are frequent, including tooling he then demonstrates. The back catalogue spans more than a decade and older framework code is stale — check publication dates before following anything.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 6,
+      "longPct": 70,
+      "medianMin": 25,
+      "videoCount": 1273,
+      "at": "2026-09"
+    }
   }
 ]

@@ -13,8 +13,15 @@
     "shortDescription": "Long-form analysis of strength programmes and the history of strength sport — programme design taken apart rather than sold.",
     "longDescription": "Bromley's channel runs unusually long for the strength corner of YouTube: of fifty recent uploads, nineteen exceed twenty minutes with an eighteen-minute median, and several pass forty. The useful strand is programme analysis — taking a named training template and working through what it actually does, why its progression is arranged that way, and what claim it is making. A video on a bench programme promising fifty-three pounds in three weeks becomes an explanation of daily undulating periodisation rather than either an endorsement or a dunk. The other strand, and it is large, is the history and biography of strength sport: the greatest deadlifter, the reign of a particular powerlifter, where the squat came from. That is good listening and it is not programme design.",
     "notFor": "Anyone wanting a programme to follow tomorrow, or short answers. The channel has no description, no beginner on-ramp, and expects you to already train.",
-    "formatTags": ["long-form", "video-essay", "documentary"],
-    "level": ["intermediate", "advanced"],
+    "formatTags": [
+      "long-form",
+      "video-essay",
+      "documentary"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
     "profile": {
       "evidenceBased": 2,
       "practical": 3,
@@ -22,7 +29,10 @@
       "selfPromotion": 2,
       "depth": 4
     },
-    "signals": ["practitioner", "sells-course"],
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
     "categories": [
       {
         "id": "powerlifting",
@@ -38,7 +48,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "A large share of the catalogue is strength-sport history rather than training instruction. Sells programming and books, and the channel carries no description at all."
+    "caveats": "A large share of the catalogue is strength-sport history rather than training instruction. Sells programming and books, and the channel carries no description at all.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 30,
+      "longPct": 38,
+      "medianMin": 18,
+      "videoCount": 726,
+      "at": "2026-09"
+    }
   },
   {
     "id": "vo2maxproductions",
@@ -54,8 +72,16 @@
     "shortDescription": "Running advice from a 2:16 marathoner and two-time Olympic Trials qualifier, aimed higher up the ability range than most running content.",
     "longDescription": "Sage Canaday's channel description sets out the credentials precisely — a 2:16 marathon, sixteenth at Boston, two US Olympic Marathon Trials qualifications, and a background in mountain and ultra-trail racing — and that is the level the advice is pitched at. Fourteen hundred videos cover running form, training structure, race-specific preparation and nutrition for runners, though output has gone heavily short-form: thirty-four of fifty recent uploads run two minutes or less. He also uses the channel to argue publicly about doping in marathon and ultra running, which is unusual and creditable but is advocacy rather than coaching. The honest limitation is the ceiling assumption: much of this addresses people already running well.",
     "notFor": "New runners. Much of the framing assumes you are chasing a time rather than trying to establish a habit, and the short-form dominates the recent feed.",
-    "formatTags": ["shorts", "tutorial", "long-form", "vlog"],
-    "level": ["intermediate", "advanced"],
+    "formatTags": [
+      "shorts",
+      "tutorial",
+      "long-form",
+      "vlog"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
     "profile": {
       "evidenceBased": 2,
       "practical": 3,
@@ -63,7 +89,10 @@
       "selfPromotion": 3,
       "depth": 3
     },
-    "signals": ["practitioner", "sells-course"],
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
     "categories": [
       {
         "id": "running",
@@ -79,7 +108,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Pitched above beginner level and now mostly short-form. Sells coaching and plans, and part of the catalogue is doping advocacy rather than training."
+    "caveats": "Pitched above beginner level and now mostly short-form. Sells coaching and plans, and part of the catalogue is doping advocacy rather than training.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 66,
+      "longPct": 4,
+      "medianMin": 1,
+      "videoCount": 1434,
+      "at": "2026-09"
+    }
   },
   {
     "id": "squatuniversity",
@@ -95,8 +132,15 @@
     "shortDescription": "A physical therapist on mobility and pain for people who lift — now almost entirely short-form, with a handful of substantial videos behind it.",
     "longDescription": "Aaron Horschig is a Doctor of Physical Therapy, strength coach and author, and the channel's stated remit is fixing back pain, improving mobility and preparing the body for the gym. The credentials and the framing are strong. The format has changed drastically: of two hundred recent uploads, a hundred and ninety-five run two minutes or less and only one exceeds twenty minutes, so what is now a feed of clips was once a library of explanations. The substantial videos that remain are worth the trip — a thirty-two-minute treatment of persistent knee pain, a full shoulder-exercise selection, a structured approach to neck pain — but they have to be hunted for among thousands of short clips.",
     "notFor": "Anyone who wants a coherent course, or who is looking for a diagnosis. A one-minute clip about your joint is not an assessment of it.",
-    "formatTags": ["shorts", "tutorial", "long-form"],
-    "level": ["beginner", "intermediate"],
+    "formatTags": [
+      "shorts",
+      "tutorial",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
     "profile": {
       "evidenceBased": 3,
       "practical": 4,
@@ -104,7 +148,11 @@
       "selfPromotion": 3,
       "depth": 2
     },
-    "signals": ["credentialed", "practitioner", "sells-course"],
+    "signals": [
+      "credentialed",
+      "practitioner",
+      "sells-course"
+    ],
     "categories": [
       {
         "id": "mobility-and-flexibility",
@@ -132,7 +180,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Now 195 of 200 recent uploads are under two minutes, so the teaching is buried. Sells books, programmes and a paid platform. General education, never a substitute for assessment."
+    "caveats": "Now 195 of 200 recent uploads are under two minutes, so the teaching is buried. Sells books, programmes and a paid platform. General education, never a substitute for assessment.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 96,
+      "longPct": 2,
+      "medianMin": 1,
+      "videoCount": 4887,
+      "at": "2026-09"
+    }
   },
   {
     "id": "yogawithadriene",
@@ -148,8 +204,15 @@
     "shortDescription": "The default entry point to yoga on YouTube — free follow-along classes with an explicit beginner path and no athleticism assumed.",
     "longDescription": "Adriene Mishler's stated mission is connecting people through free yoga videos, welcoming all levels and bodies, and the catalogue is structured to deliver on it: named Yoga For Beginners and Foundations of Yoga series exist as on-ramps rather than as an afterthought. Of fifty recent uploads, twenty-six run three to nineteen minutes and fourteen run longer, with a twelve-minute median, so most items are a complete practice you can do in one sitting. Much of the material is framed around a situation rather than a pose — a practice for people who sit all day, one for recovery days, one for starting a morning. The register is gentle and conversational, which is either the reason it works for eleven million people or the reason it grates.",
     "notFor": "Anyone wanting alignment instruction at a technical level, or a strong physical practice; the emphasis is accessibility and consistency, not intensity or precision.",
-    "formatTags": ["tutorial", "long-form", "course"],
-    "level": ["beginner", "intermediate"],
+    "formatTags": [
+      "tutorial",
+      "long-form",
+      "course"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
     "profile": {
       "evidenceBased": 0,
       "practical": 4,
@@ -157,7 +220,10 @@
       "selfPromotion": 2,
       "depth": 2
     },
-    "signals": ["practitioner", "sells-course"],
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
     "categories": [
       {
         "id": "yoga",
@@ -173,7 +239,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Light on technical alignment cues, so it pairs badly with an existing injury. Sells a membership and an app, though the free catalogue is genuinely usable alone."
+    "caveats": "Light on technical alignment cues, so it pairs badly with an existing injury. Sells a membership and an app, though the free catalogue is genuinely usable alone.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 20,
+      "longPct": 28,
+      "medianMin": 12,
+      "videoCount": 821,
+      "at": "2026-09"
+    }
   },
   {
     "id": "yogawithkassandra",
@@ -189,8 +263,15 @@
     "shortDescription": "Vinyasa and Yin yoga taught in defined lengths and styles, so you can pick a practice by the time you have and the effect you want.",
     "longDescription": "Kassandra's channel is organised around two named styles — Vinyasa, which is active and flowing, and Yin, which is long slow holds — and around duration: practices are titled by their length, from ten minutes to over half an hour, across more than nine hundred classes. Of fifty recent uploads, only two run under two minutes while twenty-seven sit between three and nineteen minutes and twenty-one run longer, with an eighteen-minute median. That is the opposite of most fitness channels and makes it genuinely usable: you choose by what you have available rather than by scrolling. The Yin material is the distinctive part, since slow passive work is under-served elsewhere and is what most people with desk-bound stiffness actually need.",
     "notFor": "Anyone wanting a graded beginner course; the catalogue is broad and browsable rather than sequenced, and it assumes you can pick sensibly for yourself.",
-    "formatTags": ["tutorial", "long-form"],
-    "level": ["beginner", "intermediate", "advanced"],
+    "formatTags": [
+      "tutorial",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
     "profile": {
       "evidenceBased": 0,
       "practical": 4,
@@ -198,7 +279,10 @@
       "selfPromotion": 3,
       "depth": 2
     },
-    "signals": ["practitioner", "sells-course"],
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
     "categories": [
       {
         "id": "yoga",
@@ -226,7 +310,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Sells memberships, courses and teacher training. Browsable rather than sequenced, and no technical instruction on contraindications."
+    "caveats": "Sells memberships, courses and teacher training. Browsable rather than sequenced, and no technical instruction on contraindications.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 4,
+      "longPct": 42,
+      "medianMin": 18,
+      "videoCount": 1026,
+      "at": "2026-09"
+    }
   },
   {
     "id": "tonyjeffries",
@@ -242,8 +334,15 @@
     "shortDescription": "An Olympic bronze medallist teaching boxing fundamentals, explicitly to preserve technique he thinks is no longer taught properly.",
     "longDescription": "Tony Jeffries describes himself as an Olympic bronze medallist from the 2008 games with seven national titles and a European gold, and states the channel's purpose as teaching boxing in a way that does not get taught much any more. That framing shows in the content: the emphasis is on fundamentals — the jab, stance, footwork, the habits that separate a beginner from an intermediate — rather than on highlight combinations. Of fifty recent uploads, thirty-six run three to nineteen minutes with an eight-minute median and none exceed twenty, so the format is a focused single-topic lesson. He also films disagreements with other coaches on camera, which is unusually honest about a field where technique is genuinely contested.",
     "notFor": "Anyone wanting sparring strategy, fight analysis or competition preparation; this is technique for people learning to box, largely for fitness.",
-    "formatTags": ["tutorial", "long-form", "shorts"],
-    "level": ["beginner", "intermediate"],
+    "formatTags": [
+      "tutorial",
+      "long-form",
+      "shorts"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
     "profile": {
       "evidenceBased": 1,
       "practical": 4,
@@ -251,7 +350,11 @@
       "selfPromotion": 3,
       "depth": 2
     },
-    "signals": ["credentialed", "practitioner", "sells-course"],
+    "signals": [
+      "credentialed",
+      "practitioner",
+      "sells-course"
+    ],
     "categories": [
       {
         "id": "boxing-and-striking",
@@ -267,7 +370,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Sells an app, courses and gym programming. Note the handle: `@TonyJeffries` is a 3-video channel and `@tonyjeffrieshindi` is a Hindi-language channel; this is the English one."
+    "caveats": "Sells an app, courses and gym programming. Note the handle: `@TonyJeffries` is a 3-video channel and `@tonyjeffrieshindi` is a Hindi-language channel; this is the English one.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 28,
+      "longPct": 2,
+      "medianMin": 8,
+      "videoCount": 1214,
+      "at": "2026-09"
+    }
   },
   {
     "id": "madfit",
@@ -283,8 +394,15 @@
     "shortDescription": "Real-time follow-along workouts for a small space with no equipment — the practical answer to not having a gym.",
     "longDescription": "The channel's own description is the whole proposition: real-time at-home workouts, aimed at all fitness levels. That real-time framing matters more than it sounds, because a follow-along session removes the two things that stop home training — deciding what to do and keeping to the intervals. The catalogue is large and specific about constraints: low-impact and no-jumping sessions for people with neighbours below, standing-only workouts, sessions built around light dumbbells or none at all, and long runs of practices adapted for pregnancy. Of fifty recent uploads, thirty are under two minutes, so the substantial sessions sit behind a wall of clips. There is no programming or progression — each video is a standalone session.",
     "notFor": "Anyone who needs a plan rather than a session. Nothing here progresses, and there is no guidance on what to do across a week or a month.",
-    "formatTags": ["tutorial", "shorts", "long-form"],
-    "level": ["beginner", "intermediate"],
+    "formatTags": [
+      "tutorial",
+      "shorts",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
     "profile": {
       "evidenceBased": 0,
       "practical": 4,
@@ -292,7 +410,10 @@
       "selfPromotion": 3,
       "depth": 1
     },
-    "signals": ["practitioner", "sells-course"],
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
     "categories": [
       {
         "id": "home-workouts",
@@ -308,6 +429,14 @@
       }
     ],
     "role": "specialist",
-    "caveats": "No progression or programming at all — these are isolated sessions. Sells an app, heavily promoted, and 30 of 50 recent uploads are clips rather than workouts."
+    "caveats": "No progression or programming at all — these are isolated sessions. Sells an app, heavily promoted, and 30 of 50 recent uploads are clips rather than workouts.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 62,
+      "longPct": 10,
+      "medianMin": 1,
+      "videoCount": 1422,
+      "at": "2026-09"
+    }
   }
 ]

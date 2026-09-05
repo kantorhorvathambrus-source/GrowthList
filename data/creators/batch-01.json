@@ -72,7 +72,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Sells communication workshops and masterclasses, which the channel funnels toward; the free material is usable on its own."
+    "caveats": "Sells communication workshops and masterclasses, which the channel funnels toward; the free material is usable on its own.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 80,
+      "longPct": 0,
+      "medianMin": 1,
+      "videoCount": 1480,
+      "at": "2026-09"
+    }
   },
   {
     "id": "charismaoncommand",
@@ -114,7 +122,7 @@
         "why": "The channel's core subject, treated as a set of observable behaviours you can copy rather than a personality you either have or lack.",
         "evidence": "Ten years of long-form videos dissecting how specific people generate warmth, authority and attention, which is the whole editorial premise of the channel.",
         "entryVideo": {
-          "title": "If You Only Watch One Charisma Video, Make It This",
+          "title": "The 7 Charisma Principles Behind Everything I Teach",
           "videoId": "CHvB1qgWAoI",
           "whyThisOne": "Their own attempt at a single summary of the method, so it is the fastest way to decide whether the analytical approach works for you.",
           "durationMin": 14
@@ -146,7 +154,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Sells a paid confidence course, and a slice of the catalogue is framed around masculinity and dating, which sits oddly beside the general-audience material."
+    "caveats": "Sells a paid confidence course, and a slice of the catalogue is framed around masculinity and dating, which sits oddly beside the general-audience material.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 4,
+      "medianMin": 12,
+      "videoCount": 443,
+      "at": "2026-09"
+    }
   },
   {
     "id": "jeffersonfisher",
@@ -208,7 +224,15 @@
         }
       }
     ],
-    "role": "specialist"
+    "role": "specialist",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 32,
+      "longPct": 66,
+      "medianMin": 41,
+      "videoCount": 773,
+      "at": "2026-09"
+    }
   },
   {
     "id": "alexanderlyon",
@@ -282,7 +306,15 @@
         }
       }
     ],
-    "role": "specialist"
+    "role": "specialist",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 76,
+      "longPct": 4,
+      "medianMin": 1,
+      "videoCount": 597,
+      "at": "2026-09"
+    }
   },
   {
     "id": "howcommunicationworks",
@@ -357,7 +389,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Some titles adopt a dating and attraction framing that sits awkwardly next to the academic positioning of the rest of the channel."
+    "caveats": "Some titles adopt a dating and attraction framing that sits awkwardly next to the academic positioning of the rest of the channel.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 72,
+      "longPct": 8,
+      "medianMin": 1,
+      "videoCount": 771,
+      "at": "2026-09"
+    }
   },
   {
     "id": "negotiationmastery",
@@ -420,7 +460,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "The channel is the marketing surface for a paid corporate training business, and the pitch is present in much of the output."
+    "caveats": "The channel is the marketing surface for a paid corporate training business, and the pitch is present in much of the output.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 98,
+      "longPct": 2,
+      "medianMin": 1,
+      "videoCount": 1372,
+      "at": "2026-09"
+    }
   },
   {
     "id": "toastmasters",
@@ -470,7 +518,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "The channel exists partly to recruit members, and the non-competition content is largely organisational marketing."
+    "caveats": "The channel exists partly to recruit members, and the non-competition content is largely organisational marketing.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 14,
+      "longPct": 0,
+      "medianMin": 8,
+      "videoCount": 482,
+      "at": "2026-09"
+    }
   },
   {
     "id": "thespeakerlab",
@@ -521,7 +577,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "The channel is the top of a funnel for paid coaching, and episodes frequently reference the company's own programmes."
+    "caveats": "The channel is the top of a funnel for paid coaching, and episodes frequently reference the company's own programmes.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 98,
+      "longPct": 2,
+      "medianMin": 1,
+      "videoCount": 764,
+      "at": "2026-09"
+    }
   },
   {
     "id": "reasoniocritthinking",
@@ -582,7 +646,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Dormant since August 2015 and the presentation shows its age. The videos solicit donations to fund the author's educational projects."
+    "caveats": "Dormant since August 2015 and the presentation shows its age. The videos solicit donations to fund the author's educational projects.",
+    "catalogue": {
+      "scanned": 33,
+      "shortPct": 3,
+      "longPct": 58,
+      "medianMin": 20,
+      "videoCount": 33,
+      "at": "2026-09"
+    }
   },
   {
     "id": "abbieemmons",
@@ -634,7 +706,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Sells a book and a paid programme that most videos point to. The very long uploads are mostly silent writing sessions, not lessons — check the length before committing an evening."
+    "caveats": "Sells a book and a paid programme that most videos point to. The very long uploads are mostly silent writing sessions, not lessons — check the length before committing an evening.",
+    "catalogue": {
+      "scanned": 49,
+      "shortPct": 55,
+      "longPct": 27,
+      "medianMin": 1,
+      "videoCount": 782,
+      "at": "2026-09"
+    }
   },
   {
     "id": "hellofutureme",
@@ -696,7 +776,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "A large share of recent uploads is criticism of Avatar and Star Wars rather than craft teaching. Sells his own books and runs a Patreon."
+    "caveats": "A large share of recent uploads is criticism of Avatar and Star Wars rather than craft teaching. Sells his own books and runs a Patreon.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 22,
+      "longPct": 72,
+      "medianMin": 27,
+      "videoCount": 522,
+      "at": "2026-09"
+    }
   },
   {
     "id": "shaelinwrites",
@@ -747,7 +835,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "About half the channel is writing vlogs and book roundups rather than instruction, so the craft videos have to be sought out."
+    "caveats": "About half the channel is writing vlogs and book roundups rather than instruction, so the craft videos have to be sought out.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 84,
+      "medianMin": 27,
+      "videoCount": 282,
+      "at": "2026-09"
+    }
   },
   {
     "id": "munecat",
@@ -827,7 +923,15 @@
       }
     ],
     "role": "critic",
-    "caveats": "Explicitly left-wing framing, comedic and often profane register, and dormant since May 2024. The videos are long enough that you should treat one as an evening, not a session."
+    "caveats": "Explicitly left-wing framing, comedic and often profane register, and dormant since May 2024. The videos are long enough that you should treat one as an evening, not a session.",
+    "catalogue": {
+      "scanned": 25,
+      "shortPct": 0,
+      "longPct": 84,
+      "medianMin": 74,
+      "videoCount": 25,
+      "at": "2026-09"
+    }
   },
   {
     "id": "theplottery",
@@ -879,7 +983,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Sells a three-course bundle and collects emails through free planners and workbooks; most descriptions push at least one of them."
+    "caveats": "Sells a three-course bundle and collects emails through free planners and workbooks; most descriptions push at least one of them.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 70,
+      "longPct": 2,
+      "medianMin": 1,
+      "videoCount": 231,
+      "at": "2026-09"
+    }
   },
   {
     "id": "lessonsfromthescreenplay",
@@ -940,7 +1052,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Dormant since November 2022. Almost every video opens with a sponsor read, and the analysis is of films rather than instruction in writing your own."
+    "caveats": "Dormant since November 2022. Almost every video opens with a sponsor read, and the analysis is of films rather than instruction in writing your own.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 4,
+      "longPct": 6,
+      "medianMin": 12,
+      "videoCount": 68,
+      "at": "2026-09"
+    }
   },
   {
     "id": "thecloserlook",
@@ -1001,6 +1121,14 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Carries a recurring writing-software sponsorship in most videos, and part of the catalogue is film criticism rather than craft teaching."
+    "caveats": "Carries a recurring writing-software sponsorship in most videos, and part of the catalogue is film criticism rather than craft teaching.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 68,
+      "medianMin": 26,
+      "videoCount": 88,
+      "at": "2026-09"
+    }
   }
 ]

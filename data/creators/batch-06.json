@@ -13,8 +13,15 @@
     "shortDescription": "A therapist and author on grief who rejects the stages-and-recovery framing outright, and talks about the parts nobody warns you about.",
     "longDescription": "Megan Devine is a therapist and best-selling author whose position on grief is a corrective to almost everything else in the genre: that grief is not a problem to be solved and that most support fails because it treats it as one. The channel follows from that. Rather than stages or timelines, the videos handle specific and often unspoken experiences — the guilt and regret that arrive with loss, anger as an ordinary part of it, emotional numbness treated as something other than denial, how to grieve someone you barely knew, whether to grieve publicly online. A hundred and three of a hundred and seventy-five videos run three to nineteen minutes with a median of four. The register is direct and unsentimental, which is unusual and, for many people, the point.",
     "notFor": "Anyone looking for a process to move through, a timeline, or reassurance that this ends. She argues explicitly against that framing.",
-    "formatTags": ["tutorial", "shorts", "long-form"],
-    "level": ["beginner", "intermediate"],
+    "formatTags": [
+      "tutorial",
+      "shorts",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
     "profile": {
       "evidenceBased": 2,
       "practical": 3,
@@ -22,7 +29,11 @@
       "selfPromotion": 2,
       "depth": 3
     },
-    "signals": ["credentialed", "practitioner", "sells-course"],
+    "signals": [
+      "credentialed",
+      "practitioner",
+      "sells-course"
+    ],
     "categories": [
       {
         "id": "grief-and-loss",
@@ -38,7 +49,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Sells books, courses and training. Small channel with a slow upload rate — the latest video here is from late 2025."
+    "caveats": "Sells books, courses and training. Small channel with a slow upload rate — the latest video here is from late 2025.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 34,
+      "longPct": 0,
+      "medianMin": 6,
+      "videoCount": 175,
+      "at": "2026-09"
+    }
   },
   {
     "id": "examstudyexpert",
@@ -54,8 +73,17 @@
     "shortDescription": "Exam technique built on learning science rather than study aesthetics — the rare channel here that treats sitting an exam as its own distinct skill.",
     "longDescription": "The channel's stated basis is the science of learning and memory applied to exams specifically: retrieval practice, spacing, and the psychology of performing on the day rather than merely knowing the material. That distinction is what makes it worth including — most study content teaches learning and assumes the exam takes care of itself. Eighty-five of the last two hundred uploads run past twenty minutes, largely podcast episodes including interviews with people whose work is high-pressure performance, and twenty-eight sit in the mid-length band. It is a small channel with a modest production budget, and the podcast format means a fair amount of conversation around each idea rather than a tight lesson.",
     "notFor": "Anyone not sitting exams. The material is genuinely exam-specific, and outside that context most of it does not transfer.",
-    "formatTags": ["long-form", "interview", "tutorial", "shorts"],
-    "level": ["beginner", "intermediate", "advanced"],
+    "formatTags": [
+      "long-form",
+      "interview",
+      "tutorial",
+      "shorts"
+    ],
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
     "profile": {
       "evidenceBased": 3,
       "practical": 4,
@@ -63,7 +91,11 @@
       "selfPromotion": 3,
       "depth": 3
     },
-    "signals": ["credentialed", "cites-research", "sells-course"],
+    "signals": [
+      "credentialed",
+      "cites-research",
+      "sells-course"
+    ],
     "categories": [
       {
         "id": "exam-preparation",
@@ -79,7 +111,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Sells coaching and courses. Small channel, podcast-heavy, so ideas arrive wrapped in a lot of conversation."
+    "caveats": "Sells coaching and courses. Small channel, podcast-heavy, so ideas arrive wrapped in a lot of conversation.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 86,
+      "longPct": 10,
+      "medianMin": 1,
+      "videoCount": 305,
+      "at": "2026-09"
+    }
   },
   {
     "id": "perfectionismproject",
@@ -95,8 +135,15 @@
     "shortDescription": "A long-running podcast on perfectionism specifically, strongest on why standard productivity advice fails perfectionists — now aimed largely at business owners.",
     "longDescription": "Sam Laura Brown describes herself as a mindset coach for perfectionists, and the channel is the video arm of a podcast that has run to more than six hundred episodes. Its useful contribution is precision about a failure mode: the stop-start cycle, expecting results without the work, and — the sharpest of them — why the standard procrastination tips do not work when the underlying problem is perfectionism rather than laziness. That is a genuinely different diagnosis, and almost nothing else in this dataset makes it. A hundred and twenty-four of the last two hundred uploads run three to nineteen minutes and seventy-one run longer. The framing has drifted toward business owners and her coaching programme, so a fair share of recent episodes assume you are running a company.",
     "notFor": "Anyone who wants research rather than a coach's framework, or who is not a business owner — recent episodes increasingly assume you are.",
-    "formatTags": ["long-form", "interview", "tutorial"],
-    "level": ["beginner", "intermediate"],
+    "formatTags": [
+      "long-form",
+      "interview",
+      "tutorial"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
     "profile": {
       "evidenceBased": 1,
       "practical": 3,
@@ -104,7 +151,10 @@
       "selfPromotion": 4,
       "depth": 2
     },
-    "signals": ["practitioner", "sells-course"],
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
     "categories": [
       {
         "id": "perfectionism",
@@ -120,7 +170,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "A coaching business drives the channel and recent episodes lean heavily toward entrepreneurs. No research behind the framework — it is one coach's model."
+    "caveats": "A coaching business drives the channel and recent episodes lean heavily toward entrepreneurs. No research behind the framework — it is one coach's model.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 86,
+      "medianMin": 42,
+      "videoCount": 288,
+      "at": "2026-09"
+    }
   },
   {
     "id": "theschooloflife",
@@ -136,8 +194,15 @@
     "shortDescription": "Short, calm animated essays applying philosophy and psychotherapy to ordinary emotional life — insight-shaped rather than instruction-shaped.",
     "longDescription": "The School of Life publishes on self-understanding, calm and emotional maturity, drawing on philosophy and psychotherapeutic ideas and delivering them as short narrated films with a consistent house style and voice. The characteristic form is a question — why we keep loving people who hurt us, why being heard matters so much, what ancient philosophy offers a burnt-out modern life — answered in six to ten minutes without exercises or steps. A hundred and twenty-two of the last two hundred uploads are under two minutes and seventy-seven sit in the mid-length band, with essentially nothing long. It is best treated as a source of framings that make your own situation legible, not as a method. The organisation also sells therapy, books and courses, and the videos are the front of that.",
     "notFor": "Anyone wanting evidence, technique, or anything to do. The tone is authoritative but nothing is sourced, and no video ends with an action.",
-    "formatTags": ["video-essay", "shorts", "tutorial"],
-    "level": ["beginner", "intermediate"],
+    "formatTags": [
+      "video-essay",
+      "shorts",
+      "tutorial"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
     "profile": {
       "evidenceBased": 1,
       "practical": 1,
@@ -145,7 +210,10 @@
       "selfPromotion": 3,
       "depth": 2
     },
-    "signals": ["practitioner", "sells-course"],
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
     "categories": [
       {
         "id": "self-awareness",
@@ -173,6 +241,14 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Nothing is sourced despite a confident tone, and the organisation sells therapy, books and courses behind it. Almost entirely short-form now."
+    "caveats": "Nothing is sourced despite a confident tone, and the organisation sells therapy, books and courses behind it. Almost entirely short-form now.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 66,
+      "longPct": 0,
+      "medianMin": 1,
+      "videoCount": 1236,
+      "at": "2026-09"
+    }
   }
 ]

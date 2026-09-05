@@ -1,0 +1,81 @@
+{
+  "_comment": "THE GENERALISATION SWEEP, run at batch 45 on the owner's instruction after `status` was found shipping stale. The question it started with was 'which displayed fields are written once at research time and never re-queried'. That question turned out to be half wrong, and the record keeps both halves.",
+  "_thePivot": "The project is five days old. Batch 01 was committed 2026-09-01 and every record carries dataAsOf 2026-09, so NOTHING in the dataset has aged. `status` was not stale — it was WRONG THE DAY IT WAS WRITTEN, because the rule that produced it was a binary at 730 days and could not express a channel that had already been silent for eighteen months when we found it. Stronger By Science's last upload was 2025-02-28 and it was researched in batch 36 this month. So the sharper question, and the one this audit actually answers, is: which fields are produced by a rule that cannot express the truth, and which are unfalsifiable by construction?",
+  "auditedAt": "batch 45",
+  "fields": [
+    {
+      "field": "status",
+      "displayed": true,
+      "producedBy": "statusFromLatestUpload, a threshold on the newest upload date",
+      "class": "rule could not express the truth",
+      "verdict": "WAS WRONG",
+      "found": "7 of 233 records disagreed with the API: five shipping `active` for channels silent 12-24 months, two overstating `archive`. A binary at 730 days had no way to say 'quiet for a year and a half'.",
+      "fix": "`dormant` added at 365 days; scripts/audit-status.mjs re-queries the whole dataset; depth counted twice, with the active-only figure named as the honest one."
+    },
+    {
+      "field": "entryVideo.title",
+      "displayed": true,
+      "producedBy": "copied from the API at research time",
+      "class": "moves at the source",
+      "verdict": "WAS WRONG",
+      "found": "2 of 328 entry videos had been renamed by their creators since the record was written. Both were shipping a title that no longer existed.",
+      "fix": "gate-check already compared them, but it accepted ONE file path, so the standing policy 'run it over every batch file before any release' could only have been executed by hand forty-five times and never was. It now takes --all, and the full sweep is 240 units."
+    },
+    {
+      "field": "sizeBucket",
+      "displayed": true,
+      "producedBy": "subscriberCount bucketed, null when the count is hidden",
+      "class": "moves at the source",
+      "verdict": "WAS WRONG",
+      "found": "1 of 233 had outgrown its band (Aswath Damodaran, 500k-1M -> 1M-5M).",
+      "fix": "Caught by gate-check --all, which now actually runs across the dataset."
+    },
+    {
+      "field": "formatTags",
+      "displayed": true,
+      "producedBy": "hand-written editorial judgement about what a channel publishes",
+      "class": "a claim about a moving catalogue, never re-derived",
+      "verdict": "INCOMPLETE, NOT FALSE",
+      "found": "21 records are 40%+ short-form in the recent scan and carry no `shorts` tag; 2 carry it at 6%. formatTags is a FILTER, so the failure is that the shorts filter under-returns and slightly over-returns — a visitor is not told anything untrue, they are just not shown everything.",
+      "fix": "validate.mjs now cross-checks the tag against the stored catalogue measurement and warns. Deliberately a warning: what a channel IS stays a human judgement."
+    },
+    {
+      "field": "shortDescription / longDescription / notFor / caveats / evidence",
+      "displayed": true,
+      "producedBy": "hand-written from an evidence dump",
+      "class": "a claim about a moving catalogue, never re-derived",
+      "verdict": "UNCHECKABLE UNTIL NOW",
+      "found": "231 of 233 records ship a countable claim about a channel's catalogue — 'thirty-four of the fifty most recent uploads are under two minutes', 'median fifteen minutes'. Not one was checkable, because the measurement existed only inside a sentence.",
+      "fix": "scripts/audit-catalogue.mjs stores the measurement the prose was written from — scanned, shortPct, longPct, medianMin, videoCount, dated — next to the record, the same pattern that already catches drift in domain-notes.json. THE BASELINE STARTS TODAY: this does not retroactively verify a single existing sentence, it means the next run can say which channels have changed shape since.",
+      "notDone": "A regex over 233 hand-written sentences was tried and abandoned. It produced 16 flags, and the first two checked (Tara Brach, Dr. Spencer Nadolsky) were both false positives — the Nadolsky record explicitly says the channel is mostly shorts, which is what the detector accused it of hiding. A bad detector is a new source of false claims, not a check on the old ones."
+    },
+    {
+      "field": "dataAsOf",
+      "displayed": false,
+      "producedBy": "written by hand as the research month",
+      "class": "suspected dead field",
+      "verdict": "HYPOTHESIS FAILED — the field is correct",
+      "found": "All 233 records read 2026-09, which looked like a field carrying no information. Git says otherwise: batch-01 was committed 2026-09-01 and today is 2026-09-05. Every record genuinely was measured this month. Recorded because a hypothesis that died on the data is worth as much as one that survived, and this one is what forced the pivot above.",
+      "fix": "none needed. catalogue.at now carries a second, tool-written date so the two can disagree later."
+    },
+    {
+      "field": "level / profile / role",
+      "displayed": true,
+      "producedBy": "editorial judgement",
+      "class": "unfalsifiable by construction",
+      "verdict": "NOT CHECKABLE, AND SHOULD BE SAID SO",
+      "found": "Nothing can verify that a channel is 'intermediate' or that its selfPromotion is 3 rather than 4. These are the fields where the project's honesty rests entirely on the writing, with no instrument behind it.",
+      "fix": "None available. Named here so that the strength of the checked fields is never read as covering these."
+    },
+    {
+      "field": "country / language / channelUrl / handle",
+      "displayed": true,
+      "producedBy": "API at research time",
+      "class": "moves at the source",
+      "verdict": "CLEAN",
+      "found": "gate-check --all resolved all 233 handles and found no country mismatches. A handle change would have surfaced as an unresolved channel; none did.",
+      "fix": "covered by gate-check --all as a pre-release step."
+    }
+  ],
+  "_standingProcedure": "Before any release: node scripts/gate-check.mjs --all, node scripts/audit-status.mjs, node scripts/audit-catalogue.mjs. About 1,600 quota units against a 10,000 daily allowance."
+}

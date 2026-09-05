@@ -59,7 +59,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Selection bias is structural: guests are mostly people willing to talk publicly about their deal, which skews toward those who survived. US-specific on financing throughout. There is a paid community attached."
+    "caveats": "Selection bias is structural: guests are mostly people willing to talk publicly about their deal, which skews toward those who survived. US-specific on financing throughout. There is a paid community attached.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 100,
+      "medianMin": 84,
+      "videoCount": 448,
+      "at": "2026-09"
+    }
   },
   {
     "id": "microconf",
@@ -121,7 +129,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "MicroConf runs paid conferences, a mastermind and a community, so the channel is partly a funnel for those. Only 33 uploads. The bootstrapping case is argued by people invested in it being right."
+    "caveats": "MicroConf runs paid conferences, a mastermind and a community, so the channel is partly a funnel for those. Only 33 uploads. The bootstrapping case is argued by people invested in it being right.",
+    "catalogue": {
+      "scanned": 33,
+      "shortPct": 3,
+      "longPct": 64,
+      "medianMin": 27,
+      "videoCount": 32,
+      "at": "2026-09"
+    }
   },
   {
     "id": "lennyspodcast",
@@ -172,7 +188,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "A large paid newsletter and course business sits behind the podcast, and guests are frequently promoting something. Heavily clipped — most uploads are under two minutes and are not the substance."
+    "caveats": "A large paid newsletter and course business sits behind the podcast, and guests are frequently promoting something. Heavily clipped — most uploads are under two minutes and are not the substance.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 94,
+      "longPct": 6,
+      "medianMin": 1,
+      "videoCount": 1786,
+      "at": "2026-09"
+    }
   },
   {
     "id": "jonloomer",
@@ -235,7 +259,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Sells training and a membership. Single-platform by design, and dependent on Meta's product decisions — older tactical videos date quickly, so check the publication date on anything specific."
+    "caveats": "Sells training and a membership. Single-platform by design, and dependent on Meta's product decisions — older tactical videos date quickly, so check the publication date on anything specific.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 38,
+      "longPct": 2,
+      "medianMin": 5,
+      "videoCount": 1423,
+      "at": "2026-09"
+    }
   },
   {
     "id": "cmx",
@@ -286,7 +318,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "CMX is owned by a community-software company and runs paid events and training, so the channel is both a resource and a funnel. The talks assume a company with a community budget; very little applies to an individual."
+    "caveats": "CMX is owned by a community-software company and runs paid events and training, so the channel is both a resource and a funnel. The talks assume a company with a community budget; very little applies to an individual.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 4,
+      "longPct": 92,
+      "medianMin": 28,
+      "videoCount": 725,
+      "at": "2026-09"
+    }
   },
   {
     "id": "exposureninja",
@@ -350,7 +390,15 @@
       }
     ],
     "role": "generalist",
-    "caveats": "An agency channel. Every video ends at a free website review that is the entry to a sales process, and the recommendations consistently favour work agencies are hired to do. Examples are UK-centric."
+    "caveats": "An agency channel. Every video ends at a free website review that is the entry to a sales process, and the recommendations consistently favour work agencies are hired to do. Examples are UK-centric.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 36,
+      "longPct": 34,
+      "medianMin": 13,
+      "videoCount": 570,
+      "at": "2026-09"
+    }
   },
   {
     "id": "semrush",
@@ -402,6 +450,14 @@
       }
     ],
     "role": "generalist",
-    "caveats": "A software vendor. Most of the catalogue is product workflow, the research is published to sell a subscription, and no comparison with competing tools will ever be neutral here. Included for the data, with the conflict on the record."
+    "caveats": "A software vendor. Most of the catalogue is product workflow, the research is published to sell a subscription, and no comparison with competing tools will ever be neutral here. Included for the data, with the conflict on the record.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 54,
+      "longPct": 6,
+      "medianMin": 1,
+      "videoCount": 743,
+      "at": "2026-09"
+    }
   }
 ]

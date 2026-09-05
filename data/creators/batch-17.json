@@ -62,7 +62,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "The institute sells workshops, therapist certification and consumer products built on this research, so the channel is also a funnel. The research itself is well known but not uncontested — the widely repeated prediction accuracy figures come from small samples and have been criticised for being fitted rather than predictive."
+    "caveats": "The institute sells workshops, therapist certification and consumer products built on this research, so the channel is also a funnel. The research itself is well known but not uncontested — the widely repeated prediction accuracy figures come from small samples and have been criticised for being fitted rather than predictive.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 80,
+      "longPct": 6,
+      "medianMin": 1,
+      "videoCount": 557,
+      "at": "2026-09"
+    }
   },
   {
     "id": "estherperel",
@@ -138,7 +146,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Her framework is clinical and literary rather than empirical — she is not citing trial data, and where she conflicts with the research-based end of couples work she does not usually say so. She sells courses, books and a card game, and runs a large media business around the podcast."
+    "caveats": "Her framework is clinical and literary rather than empirical — she is not citing trial data, and where she conflicts with the research-based end of couples work she does not usually say so. She sells courses, books and a card game, and runs a large media business around the podcast.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 66,
+      "longPct": 28,
+      "medianMin": 1,
+      "videoCount": 357,
+      "at": "2026-09"
+    }
   },
   {
     "id": "goodinside",
@@ -202,7 +218,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Good Inside is a paid membership platform and the channel is its front door, so the free videos are consistently shaped to end at a subscription. Dr. Becky's clinical credentials are real; the specific framework is hers rather than a research consensus."
+    "caveats": "Good Inside is a paid membership platform and the channel is its front door, so the free videos are consistently shaped to end at a subscription. Dr. Becky's clinical credentials are real; the specific framework is hers rather than a research consensus.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 72,
+      "longPct": 16,
+      "medianMin": 1,
+      "videoCount": 925,
+      "at": "2026-09"
+    }
   },
   {
     "id": "sarahockwellsmith",
@@ -266,7 +290,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Gentle parenting is a position in a live argument, not a settled finding, and she presents her side of the sleep-training debate as though it were settled. She sells books and courses. Her credentials are in psychology and antenatal work rather than clinical child psychology."
+    "caveats": "Gentle parenting is a position in a live argument, not a settled finding, and she presents her side of the sleep-training debate as though it were settled. She sells books and courses. Her credentials are in psychology and antenatal work rather than clinical child psychology.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 34,
+      "longPct": 0,
+      "medianMin": 3,
+      "videoCount": 105,
+      "at": "2026-09"
+    }
   },
   {
     "id": "dementiacareblazers",
@@ -318,7 +350,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "She sells a paid caregiver training program and the videos route to it. The practical, financial and legal content assumes the US system and does not transfer."
+    "caveats": "She sells a paid caregiver training program and the videos route to it. The practical, financial and legal content assumes the US system and does not transfer.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 46,
+      "longPct": 4,
+      "medianMin": 8,
+      "videoCount": 917,
+      "at": "2026-09"
+    }
   },
   {
     "id": "heidipriebe",
@@ -366,7 +406,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "She is not a licensed clinician and says so; the authority here is reading and personal work, not practice. Attachment theory is well evidenced in developmental research but its extension to adult romantic style is more contested than this genre generally admits."
+    "caveats": "She is not a licensed clinician and says so; the authority here is reading and personal work, not practice. Attachment theory is well evidenced in developmental research but its extension to adult romantic style is more contested than this genre generally admits.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 4,
+      "longPct": 86,
+      "medianMin": 27,
+      "videoCount": 266,
+      "at": "2026-09"
+    }
   },
   {
     "id": "terricole",
@@ -418,7 +466,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "She sells books and courses and the videos route to them fairly hard. The content is framed for a female audience throughout, and the codependency lens is applied to most problems whether or not it is the best fit."
+    "caveats": "She sells books and courses and the videos route to them fairly hard. The content is framed for a female audience throughout, and the codependency lens is applied to most problems whether or not it is the best fit.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 66,
+      "longPct": 14,
+      "medianMin": 1,
+      "videoCount": 2205,
+      "at": "2026-09"
+    }
   },
   {
     "id": "thematthewhussey",
@@ -481,7 +537,15 @@
       }
     ],
     "role": "generalist",
-    "caveats": "A commercial coaching business — retreats, programmes and a large media operation — and the free videos are the top of that funnel. Everything is experience-derived; there is no research base, and the advice assumes a conventional heterosexual dating context throughout."
+    "caveats": "A commercial coaching business — retreats, programmes and a large media operation — and the free videos are the top of that funnel. Everything is experience-derived; there is no research base, and the advice assumes a conventional heterosexual dating context throughout.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 30,
+      "longPct": 12,
+      "medianMin": 13,
+      "videoCount": 1282,
+      "at": "2026-09"
+    }
   },
   {
     "id": "sexplanations",
@@ -531,7 +595,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Explicit in both language and visuals. The channel has slowed sharply, so some contraception and health specifics may lag current guidance — check anything clinical against a current source. Sponsorships and product reviews appear in the catalogue."
+    "caveats": "Explicit in both language and visuals. The channel has slowed sharply, so some contraception and health specifics may lag current guidance — check anything clinical against a current source. Sponsorships and product reviews appear in the catalogue.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 4,
+      "medianMin": 8,
+      "videoCount": 485,
+      "at": "2026-09"
+    }
   },
   {
     "id": "doctorramani",
@@ -583,7 +655,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "A single explanatory frame applied to everything, on a channel large enough to make that frame feel like the default reading of any painful relationship. She sells programmes and a membership. Her clinical and academic credentials are real; 'narcissist' as used across this catalogue is broader than the clinical diagnosis."
+    "caveats": "A single explanatory frame applied to everything, on a channel large enough to make that frame feel like the default reading of any painful relationship. She sells programmes and a membership. Her clinical and academic credentials are real; 'narcissist' as used across this catalogue is broader than the clinical diagnosis.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 18,
+      "longPct": 40,
+      "medianMin": 17,
+      "videoCount": 2264,
+      "at": "2026-09"
+    }
   },
   {
     "id": "psychologyinseattle",
@@ -634,6 +714,14 @@
       }
     ],
     "role": "specialist",
-    "caveats": "The great majority of the catalogue is reality-television commentary rather than teaching, so the ratio of entertainment to instruction is high. Opinions on public figures and public cases are given freely and are opinions."
+    "caveats": "The great majority of the catalogue is reality-television commentary rather than teaching, so the ratio of entertainment to instruction is high. Opinions on public figures and public cases are given freely and are opinions.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 6,
+      "longPct": 56,
+      "medianMin": 27,
+      "videoCount": 5852,
+      "at": "2026-09"
+    }
   }
 ]

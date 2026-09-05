@@ -1402,3 +1402,72 @@ podcasts — Joe Rogan, NPR, GQ, the Daily Beast — rather than anyone
 teaching podcasting. When the topic word names the medium, the search
 returns instances of the medium. Same family as the audio-product
 limit, and the category stays at 1.
+
+## The generalisation sweep — and the question it corrected
+
+Run at batch 45 rather than at the end of Phase 2, on the owner's
+instruction, after `status` was found shipping wrong.
+
+**The question I was given was half wrong, and finding that out is the
+useful part.** The brief was: which displayed fields were written once
+at research time and never re-queried, and have therefore gone stale?
+The answer is none of them, because nothing has had time to. Batch 01
+was committed on 2026-09-01 and today is 2026-09-05. All 233 records
+read `dataAsOf: 2026-09` — I suspected that meant the field carried no
+information, and git says it is simply true.
+
+So `status` was never stale. **It was wrong the day it was written.**
+Stronger By Science's last upload was February 2025 and it was
+researched this month; the rule was a binary at 730 days and had no way
+to say "silent for a year and a half". That is a different defect from
+ageing, and it needs a different question: not *what has gone out of
+date*, but **what is produced by a rule that cannot express the
+truth** — and separately, what is unfalsifiable by construction.
+
+**What the sweep found wrong.** Seven statuses. Two entry-video titles
+renamed by their creators since we recorded them, both shipping a title
+that no longer existed. One creator who had outgrown their subscriber
+band. All three classes were already covered by checks that existed —
+which is the part worth sitting with.
+
+**A standing policy the tooling made impossible.** CLAUDE.md has said
+since early on: run `gate-check` over *every* batch file before any
+release, not only when a batch is first written. The script accepted
+one file path. Carrying out that policy meant invoking it forty-five
+times by hand, so it was never carried out, and the two renamed titles
+sat there. A rule the tooling makes impractical is not a rule. It takes
+`--all` now, and the full sweep over 328 entry videos costs 240 units.
+
+**The class nothing could check.** 231 of 233 records ship a countable
+claim about a channel's catalogue — "thirty-four of the fifty most
+recent uploads are under two minutes", "median fifteen minutes". Not
+one was verifiable, because the measurement existed only inside a
+sentence. `audit-catalogue.mjs` now stores it beside the prose, the
+same way `domain-notes.json` stores the counts whose drift the
+validator already catches. **The baseline starts today. This verifies
+no existing sentence** — it means the next run can say which channels
+have changed shape since.
+
+**A detector I built and threw away.** I tried to check the prose
+retrospectively with a regex looking for records whose language leans
+long-form while the channel is now mostly short. It produced sixteen
+flags. The first two I checked were both false positives, and one of
+them — Dr. Spencer Nadolsky — was flagged for concealing that his
+channel is mostly shorts, which is a thing his record says outright in
+its second sentence. A bad detector is a new source of false claims,
+not a check on the old ones, so it is recorded in `field-audit.json`
+under what was not done rather than shipped.
+
+**And the fields that no instrument will ever reach.** `level`,
+`profile` and `role` are editorial judgements. Nothing can verify that
+a channel is "intermediate" or that its self-promotion is 3 rather than
+4. They are named in the audit specifically so the rigour of the
+checked fields is never read as covering them.
+
+**Depth is now counted twice.** 98 categories meet the target of 2 on
+paper; **94 meet it with active creators**, and the second is the
+honest one. The four that lose it — `confidence-building`,
+`sports-nutrition`, `building-with-llms`, `video-editing` — each have
+two entries and one live channel. `sports-nutrition` is the one that
+started this: filled to 2 in batch 44, and one of the two had been
+silent since February 2025.

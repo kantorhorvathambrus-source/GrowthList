@@ -59,7 +59,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Very narrow — close to a single-author channel. No credentials are stated and none are claimed; judge it on the reading rather than on authority."
+    "caveats": "Very narrow — close to a single-author channel. No credentials are stated and none are claimed; judge it on the reading rather than on authority.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 48,
+      "longPct": 36,
+      "medianMin": 13,
+      "videoCount": 354,
+      "at": "2026-09"
+    }
   },
   {
     "id": "cosmicskeptic",
@@ -123,7 +131,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "A large share of the catalogue is religion-and-atheism debate rather than philosophy proper, and the channel grew out of that. Heavily sponsored. He is an interviewer and arguer rather than an academic researcher."
+    "caveats": "A large share of the catalogue is religion-and-atheism debate rather than philosophy proper, and the channel grew out of that. Heavily sponsored. He is an interviewer and arguer rather than an academic researcher.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 12,
+      "longPct": 78,
+      "medianMin": 85,
+      "videoCount": 613,
+      "at": "2026-09"
+    }
   },
   {
     "id": "kaneb",
@@ -182,7 +198,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "No stated credentials and no institutional affiliation given; the work stands or falls on the arguments. Production is minimal and there is no on-ramp for a beginner."
+    "caveats": "No stated credentials and no institutional affiliation given; the work stands or falls on the arguments. Production is minimal and there is no on-ramp for a beginner.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 4,
+      "longPct": 82,
+      "medianMin": 45,
+      "videoCount": 581,
+      "at": "2026-09"
+    }
   },
   {
     "id": "partiallyexaminedlife",
@@ -245,7 +269,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Hosts are graduate-trained rather than currently academic, and the format is deliberately unresolved — you get an argument, not a conclusion. There is a paid membership tier."
+    "caveats": "Hosts are graduate-trained rather than currently academic, and the format is deliberately unresolved — you get an argument, not a conclusion. There is a paid membership tier.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 98,
+      "medianMin": 55,
+      "videoCount": 1146,
+      "at": "2026-09"
+    }
   },
   {
     "id": "askamortician",
@@ -297,7 +329,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "An advocate for green burial and funeral reform, not a neutral guide, and she says so. Most of the catalogue is historical death cases rather than anything you can act on. Graphic throughout."
+    "caveats": "An advocate for green burial and funeral reform, not a neutral guide, and she says so. Most of the catalogue is historical death cases rather than anything you can act on. Graphic throughout.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 68,
+      "medianMin": 24,
+      "videoCount": 283,
+      "at": "2026-09"
+    }
   },
   {
     "id": "einzelganger",
@@ -358,7 +398,15 @@
       }
     ],
     "role": "generalist",
-    "caveats": "Popular philosophy rather than scholarship — sources are named but not closely worked. The long compilation uploads are ambient content and are not representative of the better essays. He sells books and courses."
+    "caveats": "Popular philosophy rather than scholarship — sources are named but not closely worked. The long compilation uploads are ambient content and are not representative of the better essays. He sells books and courses.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 24,
+      "longPct": 34,
+      "medianMin": 17,
+      "videoCount": 351,
+      "at": "2026-09"
+    }
   },
   {
     "id": "sisyphus55",
@@ -404,6 +452,14 @@
       }
     ],
     "role": "generalist",
-    "caveats": "Mostly short-form, and the philosophy is used illustratively rather than argued. No credentials claimed. Sponsorship inquiries are the first line of the channel description."
+    "caveats": "Mostly short-form, and the philosophy is used illustratively rather than argued. No credentials claimed. Sponsorship inquiries are the first line of the channel description.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 56,
+      "longPct": 0,
+      "medianMin": 2,
+      "videoCount": 422,
+      "at": "2026-09"
+    }
   }
 ]

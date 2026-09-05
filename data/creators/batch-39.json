@@ -46,7 +46,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Sells instructional products and the videos route to them. The catalogue is dominated by short clips, and some teaching is by guest instructors rather than by him."
+    "caveats": "Sells instructional products and the videos route to them. The catalogue is dominated by short clips, and some teaching is by guest instructors rather than by him.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 80,
+      "longPct": 2,
+      "medianMin": 2,
+      "videoCount": 1434,
+      "at": "2026-09"
+    }
   },
   {
     "id": "fighttips",
@@ -97,6 +105,14 @@
       }
     ],
     "role": "specialist",
-    "caveats": "A large share of the catalogue is workouts, vlogs and career content rather than instruction. Sells courses. No structured path through the material — it is a library, not a curriculum."
+    "caveats": "A large share of the catalogue is workouts, vlogs and career content rather than instruction. Sells courses. No structured path through the material — it is a library, not a curriculum.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 20,
+      "longPct": 36,
+      "medianMin": 14,
+      "videoCount": 1478,
+      "at": "2026-09"
+    }
   }
 ]

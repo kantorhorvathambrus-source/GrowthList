@@ -49,6 +49,14 @@
       }
     ],
     "role": "critic",
-    "caveats": "A critic rather than a guide: the output is mostly about why a claim does not hold, which is valuable and rarely actionable. Cardiology is his specialty and confidence outside it should be read accordingly."
+    "caveats": "A critic rather than a guide: the output is mostly about why a claim does not hold, which is valuable and rarely actionable. Cardiology is his specialty and confidence outside it should be read accordingly.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 48,
+      "longPct": 10,
+      "medianMin": 3,
+      "videoCount": 173,
+      "at": "2026-09"
+    }
   }
 ]

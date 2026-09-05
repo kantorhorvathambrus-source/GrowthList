@@ -51,7 +51,15 @@
     "role": "specialist",
     "caveats": "Education, never assessment or treatment. If you or someone else is in danger, this is not the resource — alcohol and some other withdrawals can be medically serious and need supervision. US policy focus throughout.",
     "jurisdiction": "US",
-    "jurisdictionNote": "A US non-profit; its policy framing, treatment routes and funding discussion are US-specific, though the research interviews transfer."
+    "jurisdictionNote": "A US non-profit; its policy framing, treatment routes and funding discussion are US-specific, though the research interviews transfer.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 6,
+      "longPct": 44,
+      "medianMin": 14,
+      "videoCount": 327,
+      "at": "2026-09"
+    }
   },
   {
     "id": "soberpowered",
@@ -103,7 +111,15 @@
     "role": "specialist",
     "caveats": "A coach, not a clinician — the record says so because the distinction matters here. Alcohol withdrawal can be medically dangerous and needs medical supervision; nothing on this channel substitutes for that. Sells coaching.",
     "jurisdiction": "general",
-    "jurisdictionNote": "Alcohol's effects on the brain and the experience of stopping do not vary by country; she discusses a US Surgeon General warning but the content is not system-specific."
+    "jurisdictionNote": "Alcohol's effects on the brain and the experience of stopping do not vary by country; she discusses a US Surgeon General warning but the content is not system-specific.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 16,
+      "longPct": 14,
+      "medianMin": 6,
+      "videoCount": 127,
+      "at": "2026-09"
+    }
   },
   {
     "id": "abbeysharp",
@@ -168,7 +184,15 @@
       }
     ],
     "role": "critic",
-    "caveats": "Runs a food media business and takes brand work, so read product content accordingly. Much of the channel is recipes rather than the critical material this entry is about. Education, not treatment — disordered eating needs a clinician."
+    "caveats": "Runs a food media business and takes brand work, so read product content accordingly. Much of the channel is recipes rather than the critical material this entry is about. Education, not treatment — disordered eating needs a clinician.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 60,
+      "longPct": 20,
+      "medianMin": 2,
+      "videoCount": 1511,
+      "at": "2026-09"
+    }
   },
   {
     "id": "careervidz",
@@ -219,7 +243,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Sells guides and courses throughout. Model answers are widely watched, so reciting them verbatim is a real risk — adapt rather than memorise."
+    "caveats": "Sells guides and courses throughout. Model answers are widely watched, so reciting them verbatim is a real risk — adapt rather than memorise.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 40,
+      "longPct": 28,
+      "medianMin": 9,
+      "videoCount": 2989,
+      "at": "2026-09"
+    }
   },
   {
     "id": "salarytransparentstreet",
@@ -273,7 +305,15 @@
     "role": "specialist",
     "caveats": "Self-reported and unverified figures, skewed toward people willing to be filmed and heavily US-centric. Advocacy for pay transparency is the explicit mission, which shapes what gets published.",
     "jurisdiction": "US",
-    "jurisdictionNote": "Pay figures collected on US streets, in US dollars, under US disclosure norms. The figures are the product, so they do not transfer at all."
+    "jurisdictionNote": "Pay figures collected on US streets, in US dollars, under US disclosure norms. The figures are the product, so they do not transfer at all.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 86,
+      "longPct": 0,
+      "medianMin": 1,
+      "videoCount": 1145,
+      "at": "2026-09"
+    }
   },
   {
     "id": "thefutur",
@@ -337,6 +377,14 @@
       }
     ],
     "role": "specialist",
-    "caveats": "A training business that sells courses hard, and the free content is the funnel. Excluded from graphic-design in batch 03 for exactly the reason it belongs here: it teaches the business, not the craft."
+    "caveats": "A training business that sells courses hard, and the free content is the funnel. Excluded from graphic-design in batch 03 for exactly the reason it belongs here: it teaches the business, not the craft.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 70,
+      "longPct": 18,
+      "medianMin": 1,
+      "videoCount": 2271,
+      "at": "2026-09"
+    }
   }
 ]

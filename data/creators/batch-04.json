@@ -48,7 +48,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "A share of the channel is memory-sport culture and puzzle content rather than teaching. Promotes his books and courses."
+    "caveats": "A share of the channel is memory-sport culture and puzzle content rather than teaching. Promotes his books and courses.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 40,
+      "longPct": 14,
+      "medianMin": 6,
+      "videoCount": 349,
+      "at": "2026-09"
+    }
   },
   {
     "id": "benjaminkeep",
@@ -122,7 +130,15 @@
       }
     ],
     "role": "critic",
-    "caveats": "Dormant since April 2026. The register is academic and he rarely tells you what to do — the value is in dismantling bad advice, not replacing it."
+    "caveats": "Dormant since April 2026. The register is academic and he rarely tells you what to do — the value is in dismantling bad advice, not replacing it.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 2,
+      "longPct": 14,
+      "medianMin": 10,
+      "videoCount": 115,
+      "at": "2026-09"
+    }
   },
   {
     "id": "justinsung",
@@ -199,7 +215,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "A large coaching business sits behind this and the videos route toward it persistently. Research is invoked more often than it is cited — pair him with Benjamin Keep."
+    "caveats": "A large coaching business sits behind this and the videos route toward it persistently. Research is invoked more often than it is cited — pair him with Benjamin Keep.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 44,
+      "longPct": 42,
+      "medianMin": 18,
+      "videoCount": 888,
+      "at": "2026-09"
+    }
   },
   {
     "id": "linkingyourthinking",
@@ -250,7 +274,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Heavily Obsidian-specific, sells a course, and recent uploads lean strongly toward AI tooling rather than note-taking itself."
+    "caveats": "Heavily Obsidian-specific, sells a course, and recent uploads lean strongly toward AI tooling rather than note-taking itself.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 52,
+      "longPct": 14,
+      "medianMin": 1,
+      "videoCount": 191,
+      "at": "2026-09"
+    }
   },
   {
     "id": "lucalampariello",
@@ -301,7 +333,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Promotes his own courses and coaching. Some uploads are in languages other than English, though the method content is not."
+    "caveats": "Promotes his own courses and coaching. Some uploads are in languages other than English, though the method content is not.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 26,
+      "longPct": 56,
+      "medianMin": 23,
+      "videoCount": 429,
+      "at": "2026-09"
+    }
   },
   {
     "id": "refold",
@@ -365,7 +405,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Evangelical about one method and sells courses and tools around it. The 'faster than any other method in the world' claim in their own description is marketing, not evidence."
+    "caveats": "Evangelical about one method and sells courses and tools around it. The 'faster than any other method in the world' claim in their own description is marketing, not evidence.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 34,
+      "medianMin": 10,
+      "videoCount": 336,
+      "at": "2026-09"
+    }
   },
   {
     "id": "3blue1brown",
@@ -415,7 +463,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "No exercises, no sequence, no syllabus coverage. It repairs understanding; it does not build the ability to solve problems on its own."
+    "caveats": "No exercises, no sequence, no syllabus coverage. It repairs understanding; it does not build the ability to solve problems on its own.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 58,
+      "longPct": 32,
+      "medianMin": 2,
+      "videoCount": 242,
+      "at": "2026-09"
+    }
   },
   {
     "id": "misterwootube",
@@ -478,7 +534,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Classroom audio and framing throughout. The archive is enormous and organised by syllabus, so browsing it without a target topic is unrewarding."
+    "caveats": "Classroom audio and framing throughout. The archive is enormous and organised by syllabus, so browsing it without a target topic is unrewarding.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 2,
+      "longPct": 4,
+      "medianMin": 8,
+      "videoCount": 5042,
+      "at": "2026-09"
+    }
   },
   {
     "id": "themathsorcerer",
@@ -530,7 +594,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Overwhelmingly short-form and heavily motivational. Sells books and courses, and links to textbooks through affiliate storefronts."
+    "caveats": "Overwhelmingly short-form and heavily motivational. Sells books and courses, and links to textbooks through affiliate storefronts.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 62,
+      "longPct": 2,
+      "medianMin": 2,
+      "videoCount": 10413,
+      "at": "2026-09"
+    }
   },
   {
     "id": "drandystapleton",
@@ -594,7 +666,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Heavily AI-tool focused and will date quickly. Sells coaching and courses, and the channel found here is @drandystapleton — @AndyStapleton is a near-empty 2-video channel."
+    "caveats": "Heavily AI-tool focused and will date quickly. Sells coaching and courses, and the channel found here is @drandystapleton — @AndyStapleton is a near-empty 2-video channel.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 72,
+      "longPct": 0,
+      "medianMin": 1,
+      "videoCount": 779,
+      "at": "2026-09"
+    }
   },
   {
     "id": "dreamingspanish",
@@ -647,6 +727,14 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Committed to one method and dismissive of alternatives; sells an app and a subscription. Spanish only — the approach generalises, this channel does not."
+    "caveats": "Committed to one method and dismissive of alternatives; sells an app and a subscription. Spanish only — the approach generalises, this channel does not.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 38,
+      "longPct": 28,
+      "medianMin": 11,
+      "videoCount": 805,
+      "at": "2026-09"
+    }
   }
 ]

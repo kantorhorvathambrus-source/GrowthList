@@ -48,7 +48,15 @@
       }
     ],
     "role": "generalist",
-    "caveats": "Heavily sponsored, and the channel has drifted substantially toward food journalism and general commentary; the cooking-fundamentals material is largely older than the recent uploads."
+    "caveats": "Heavily sponsored, and the channel has drifted substantially toward food journalism and general commentary; the cooking-fundamentals material is largely older than the recent uploads.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 2,
+      "longPct": 28,
+      "medianMin": 10,
+      "videoCount": 727,
+      "at": "2026-09"
+    }
   },
   {
     "id": "internetshaquille",
@@ -97,7 +105,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Uploads are infrequent and mostly short. The deadpan style leaves reasoning implicit more often than a beginner might want."
+    "caveats": "Uploads are infrequent and mostly short. The deadpan style leaves reasoning implicit more often than a beginner might want.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 42,
+      "longPct": 2,
+      "medianMin": 6,
+      "videoCount": 255,
+      "at": "2026-09"
+    }
   },
   {
     "id": "brianlagerstrom",
@@ -159,7 +175,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Sponsor segments are frequent and there is an equipment-recommendation habit that shades into affiliate territory. The bread material is good but secondary to a channel that is mostly savoury cooking."
+    "caveats": "Sponsor segments are frequent and there is an equipment-recommendation habit that shades into affiliate territory. The bread material is good but secondary to a channel that is mostly savoury cooking.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 44,
+      "medianMin": 19,
+      "videoCount": 398,
+      "at": "2026-09"
+    }
   },
   {
     "id": "chainbaker",
@@ -209,7 +233,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Publishing has slowed sharply since mid-2025. Almost entirely bread; very little sweet baking or pastry."
+    "caveats": "Publishing has slowed sharply since mid-2025. Almost entirely bread; very little sweet baking or pastry.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 0,
+      "medianMin": 8,
+      "videoCount": 521,
+      "at": "2026-09"
+    }
   },
   {
     "id": "chrisfix",
@@ -259,7 +291,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Heavily sponsored, with recurring product placement in the repair itself. He is a skilled amateur rather than a certified technician, and the videos are demonstrations on his vehicles, not service procedures for yours."
+    "caveats": "Heavily sponsored, with recurring product placement in the repair itself. He is a skilled amateur rather than a certified technician, and the videos are demonstrations on his vehicles, not service procedures for yours.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 30,
+      "longPct": 42,
+      "medianMin": 14,
+      "videoCount": 414,
+      "at": "2026-09"
+    }
   },
   {
     "id": "thisoldhouse",
@@ -311,7 +351,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "A commercial television brand with substantial sponsorship and product integration. Codes, permits and electrical practice are US-specific and do not transfer."
+    "caveats": "A commercial television brand with substantial sponsorship and product integration. Codes, permits and electrical practice are US-specific and do not transfer.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 2,
+      "longPct": 34,
+      "medianMin": 6,
+      "videoCount": 3262,
+      "at": "2026-09"
+    }
   },
   {
     "id": "charlesdowding",
@@ -364,7 +412,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "No-dig is a position he advocates rather than a neutral survey of methods, and he is its best-known proponent. Timings, pests and varieties are specific to southern England. He sells books and courses."
+    "caveats": "No-dig is a position he advocates rather than a neutral survey of methods, and he is its best-known proponent. Timings, pests and varieties are specific to southern England. He sells books and courses.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 52,
+      "longPct": 10,
+      "medianMin": 2,
+      "videoCount": 829,
+      "at": "2026-09"
+    }
   },
   {
     "id": "jameshoffmann",
@@ -417,7 +473,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "He co-owns a coffee business and reviews equipment supplied by manufacturers — both disclosed, and both worth holding in mind on any recommendation. A large share of the catalogue is gear rather than technique."
+    "caveats": "He co-owns a coffee business and reviews equipment supplied by manufacturers — both disclosed, and both worth holding in mind on any recommendation. A large share of the catalogue is gear rather than technique.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 4,
+      "longPct": 52,
+      "medianMin": 20,
+      "videoCount": 409,
+      "at": "2026-09"
+    }
   },
   {
     "id": "parktool",
@@ -468,7 +532,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "A tool manufacturer teaching you to use its tools. The procedures are sound; the equipment recommendations inside them are not neutral."
+    "caveats": "A tool manufacturer teaching you to use its tools. The procedures are sound; the equipment recommendations inside them are not neutral.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 58,
+      "longPct": 8,
+      "medianMin": 2,
+      "videoCount": 941,
+      "at": "2026-09"
+    }
   },
   {
     "id": "professorpincushion",
@@ -518,7 +590,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Sells a paid membership with additional courses. Most videos are short single techniques, so building a whole skill means assembling a path yourself."
+    "caveats": "Sells a paid membership with additional courses. Most videos are short single techniques, so building a whole skill means assembling a path yourself.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 30,
+      "medianMin": 12,
+      "videoCount": 621,
+      "at": "2026-09"
+    }
   },
   {
     "id": "clutterbug",
@@ -569,7 +649,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "The four-type framework is her own branded model, not a validated typology, and it underpins the books, quizzes and courses she sells. Treat it as a useful way to notice a mismatch rather than as a fact about you."
+    "caveats": "The four-type framework is her own branded model, not a validated typology, and it underpins the books, quizzes and courses she sells. Treat it as a useful way to notice a mismatch rather than as a fact about you.",
+    "catalogue": {
+      "scanned": 49,
+      "shortPct": 65,
+      "longPct": 24,
+      "medianMin": 1,
+      "videoCount": 1599,
+      "at": "2026-09"
+    }
   },
   {
     "id": "howtocookthat",
@@ -633,7 +721,15 @@
       }
     ],
     "role": "critic",
-    "caveats": "Corrective rather than instructional, and the debunking format necessarily gives airtime to the bad content before dismantling it. Her own baking videos are a separate and more ordinary strand."
+    "caveats": "Corrective rather than instructional, and the debunking format necessarily gives airtime to the bad content before dismantling it. Her own baking videos are a separate and more ordinary strand.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 22,
+      "medianMin": 16,
+      "videoCount": 564,
+      "at": "2026-09"
+    }
   },
   {
     "id": "projectfarm",
@@ -696,6 +792,14 @@
       }
     ],
     "role": "critic",
-    "caveats": "Sample sizes are one of each product, so a result is a strong signal rather than a statistical finding. Tests are accelerated and severe by design, which is informative but is not ordinary use."
+    "caveats": "Sample sizes are one of each product, so a result is a strong signal rather than a statistical finding. Tests are accelerated and severe by design, which is informative but is not ordinary use.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 58,
+      "medianMin": 20,
+      "videoCount": 529,
+      "at": "2026-09"
+    }
   }
 ]

@@ -16,16 +16,28 @@
  * Exits non-zero on any failure. ~1 unit per creator plus 1 per 50 videos.
  */
 
-import { readFileSync } from 'node:fs';
+import { readFileSync, readdirSync } from 'node:fs';
 import { getChannelByHandle, getVideos, attributeVideo, quotaUsed, redact } from './lib/youtube.mjs';
 
-const file = process.argv[2];
-if (!file) {
-  console.error('usage: node scripts/gate-check.mjs data/creators/batch-01.json');
-  process.exit(1);
+// MANY FILES, NOT ONE. The standing policy is "run gate-check over EVERY batch
+// file before any release, not only when a batch is first written" — and the
+// tool took a single path, so that policy could only ever have been carried out
+// by hand, forty-five times, which means it never was. A rule the tooling makes
+// impractical is a rule that is not in force.
+//   node scripts/gate-check.mjs data/creators/batch-07.json
+//   node scripts/gate-check.mjs --all
+const argv = process.argv.slice(2);
+let files = argv.filter((a) => a !== '--all');
+if (argv.includes('--all') || !files.length) {
+  const dir = 'data/creators';
+  files = readdirSync(dir).filter((f) => /^batch-\d{2}\.json$/.test(f)).sort().map((f) => `${dir}/${f}`);
+  if (!argv.includes('--all')) {
+    console.error('usage: node scripts/gate-check.mjs <batch file...> | --all');
+    process.exit(1);
+  }
 }
 
-const creators = JSON.parse(readFileSync(file, 'utf8'));
+const creators = files.flatMap((f) => JSON.parse(readFileSync(f, 'utf8')));
 const fails = [];
 const warns = [];
 

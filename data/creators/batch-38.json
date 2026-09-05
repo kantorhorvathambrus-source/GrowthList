@@ -13,10 +13,26 @@
     "shortDescription": "A running coach on the parts of training people skip — plan structure, strength work that suits runners, and injury reduction.",
     "longDescription": "A thousand-odd uploads, clip-heavy on the surface — thirty-six of the fifty most recent are under two minutes — with the substance in a steady stream of ten-to-twenty-minute coaching videos. The subjects are the ones runners get wrong rather than the ones that make good thumbnails: why an aerobic base alone stops producing gains, when to time VO2 max work so the peak lands on race day, whether avoiding zone three is costing you, and a twenty-two minute piece on constructing a plan rather than collecting workouts. He is specific about strength training for endurance athletes being different from strength training generally, which is a distinction most runners never hear. Claims are usually attached to a number or a study, though the sourcing is stated rather than shown.",
     "notFor": "Anyone wanting form analysis or gait work, which is thin here. The framing assumes you are training for a race rather than running for general health.",
-    "formatTags": ["tutorial", "shorts"],
-    "level": ["beginner", "intermediate"],
-    "profile": { "evidenceBased": 3, "practical": 4, "energy": 3, "selfPromotion": 3, "depth": 3 },
-    "signals": ["practitioner", "cites-research", "sells-course"],
+    "formatTags": [
+      "tutorial",
+      "shorts"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 3,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "cites-research",
+      "sells-course"
+    ],
     "categories": [
       {
         "id": "running",
@@ -32,7 +48,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Sells coaching and training plans, and the videos route to them. Heavily clip-shaped, so the substantial material takes finding. Research is cited by claim rather than by link — treat the numbers as coaching summaries, not sourcing."
+    "caveats": "Sells coaching and training plans, and the videos route to them. Heavily clip-shaped, so the substantial material takes finding. Research is cited by claim rather than by link — treat the numbers as coaching summaries, not sourcing.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 72,
+      "longPct": 2,
+      "medianMin": 1,
+      "videoCount": 1067,
+      "at": "2026-09"
+    }
   },
   {
     "id": "trainerroad",
@@ -48,10 +72,27 @@
     "shortDescription": "A weekly hour-plus coaching podcast on cycling physiology, made by a training-software company and much better than it needs to be.",
     "longDescription": "Thirty-eight of the fifty most recent uploads run over twenty minutes and the median is fifty-one, because the channel is essentially the Ask a Cycling Coach podcast in video form. The episodes work through one physiological question at a time with coaches and invited specialists: what cyclists get wrong about zone two, VO2 max training and the common mistakes, whether breath training does anything measurable, how much strength work is the minimum worth doing, altitude protocols that are actually available to amateurs. A hundred-minute episode on constructing workouts is the closest thing to a curriculum. This is a company selling a training platform, and the advice naturally arrives at structured training being worthwhile — but the physiology is discussed honestly, including when the answer is that a popular idea does not hold up.",
     "notFor": "Anyone wanting bike handling, maintenance or racecraft — this is training physiology almost exclusively. The episodes are long and conversational, so the information density is low per minute.",
-    "formatTags": ["long-form", "q-and-a", "interview"],
-    "level": ["intermediate", "advanced"],
-    "profile": { "evidenceBased": 3, "practical": 4, "energy": 2, "selfPromotion": 4, "depth": 4 },
-    "signals": ["practitioner", "cites-research", "commercial-conflict"],
+    "formatTags": [
+      "long-form",
+      "q-and-a",
+      "interview"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 4,
+      "depth": 4
+    },
+    "signals": [
+      "practitioner",
+      "cites-research",
+      "commercial-conflict"
+    ],
     "categories": [
       {
         "id": "cycling",
@@ -67,6 +108,14 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Made by a company selling structured-training software, and the conclusion that structured training is worth paying for is never seriously in doubt. Episodes are long and meandering; the useful content is spread thin across the hour."
+    "caveats": "Made by a company selling structured-training software, and the conclusion that structured training is worth paying for is never seriously in doubt. Episodes are long and meandering; the useful content is spread thin across the hour.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 22,
+      "longPct": 76,
+      "medianMin": 51,
+      "videoCount": 1330,
+      "at": "2026-09"
+    }
   }
 ]

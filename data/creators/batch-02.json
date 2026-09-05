@@ -86,7 +86,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Most uploads are one-minute clips cut from the episodes; the substance is in the long-form versions. Promotes the host's books and Stanford programmes."
+    "caveats": "Most uploads are one-minute clips cut from the episodes; the substance is in the long-form versions. Promotes the host's books and Stanford programmes.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 76,
+      "longPct": 18,
+      "medianMin": 1,
+      "videoCount": 621,
+      "at": "2026-09"
+    }
   },
   {
     "id": "conorneill",
@@ -149,7 +157,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Production is basic and the archive is poorly organised. Promotes his own courses and his executive-coaching work."
+    "caveats": "Production is basic and the archive is poorly organised. Promotes his own courses and his executive-coaching work.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 12,
+      "longPct": 0,
+      "medianMin": 5,
+      "videoCount": 424,
+      "at": "2026-09"
+    }
   },
   {
     "id": "duartedesign",
@@ -224,7 +240,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "This is marketing for a consultancy, and it shows in the framing. Note also that `@duarte` and `@duarteinc` are unrelated channels — this is the real one."
+    "caveats": "This is marketing for a consultancy, and it shows in the framing. Note also that `@duarte` and `@duarteinc` are unrelated channels — this is the real one.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 58,
+      "longPct": 0,
+      "medianMin": 2,
+      "videoCount": 432,
+      "at": "2026-09"
+    }
   },
   {
     "id": "radicalcandor",
@@ -287,7 +311,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "A commercial operation selling books, workshops and certification around a single framework; the free content routes toward all three."
+    "caveats": "A commercial operation selling books, workshops and certification around a single framework; the free content routes toward all three.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 70,
+      "longPct": 24,
+      "medianMin": 1,
+      "videoCount": 662,
+      "at": "2026-09"
+    }
   },
   {
     "id": "managertools",
@@ -401,7 +433,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Sells conferences and a membership; the podcast is the funnel. The archive is enormous and badly navigable, and the format has not changed in years."
+    "caveats": "Sells conferences and a membership; the podcast is the funnel. The archive is enormous and badly navigable, and the format has not changed in years.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 10,
+      "longPct": 90,
+      "medianMin": 27,
+      "videoCount": 2183,
+      "at": "2026-09"
+    }
   },
   {
     "id": "themoth",
@@ -451,7 +491,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Purely a corpus — no craft instruction at all. Stories are selected and staged for live audiences, so they are more polished than anything you will tell first time."
+    "caveats": "Purely a corpus — no craft instruction at all. Stories are selected and staged for live audiences, so they are more polished than anything you will tell first time.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 18,
+      "longPct": 0,
+      "medianMin": 6,
+      "videoCount": 1136,
+      "at": "2026-09"
+    }
   },
   {
     "id": "storycorps",
@@ -513,7 +561,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Mostly an output archive rather than teaching; the instructional videos are a small minority and take finding. The subject matter is frequently about loss."
+    "caveats": "Mostly an output archive rather than teaching; the instructional videos are a small minority and take finding. The subject matter is frequently about loss.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 52,
+      "longPct": 2,
+      "medianMin": 2,
+      "videoCount": 591,
+      "at": "2026-09"
+    }
   },
   {
     "id": "oxfordunion",
@@ -563,7 +619,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Motions are frequently chosen to provoke, and a large share of the channel is celebrity and political interviews unrelated to debating. The institution itself is regularly the subject of controversy."
+    "caveats": "Motions are frequently chosen to provoke, and a large share of the channel is celebrity and political interviews unrelated to debating. The institution itself is regularly the subject of controversy.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 18,
+      "medianMin": 12,
+      "videoCount": 3310,
+      "at": "2026-09"
+    }
   },
   {
     "id": "wirelessphilosophy",
@@ -637,7 +701,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Dormant since May 2023. Deliberately impersonal and abstract; if you need a worked contemporary example, you will have to supply it yourself."
+    "caveats": "Dormant since May 2023. Deliberately impersonal and abstract; if you need a worked contemporary example, you will have to supply it yourself.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 0,
+      "medianMin": 7,
+      "videoCount": 223,
+      "at": "2026-09"
+    }
   },
   {
     "id": "rationalityrules",
@@ -699,7 +771,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Strongly adversarial titles — DESTROY, CRUSH and OWN recur — and a consistent political and anti-religious direction in the choice of targets. Treat the analysis as an argued case from a committed position, not a neutral referee's."
+    "caveats": "Strongly adversarial titles — DESTROY, CRUSH and OWN recur — and a consistent political and anti-religious direction in the choice of targets. Treat the analysis as an argued case from a committed position, not a neutral referee's.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 74,
+      "longPct": 22,
+      "medianMin": 2,
+      "videoCount": 458,
+      "at": "2026-09"
+    }
   },
   {
     "id": "foldingideas",
@@ -749,7 +829,15 @@
       }
     ],
     "role": "critic",
-    "caveats": "Much of the catalogue is film and games criticism unrelated to reasoning. The long videos are genuinely long — treat one as an evening."
+    "caveats": "Much of the catalogue is film and games criticism unrelated to reasoning. The long videos are genuinely long — treat one as an evening.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 2,
+      "longPct": 62,
+      "medianMin": 28,
+      "videoCount": 185,
+      "at": "2026-09"
+    }
   },
   {
     "id": "coffeezilla",
@@ -799,7 +887,15 @@
       }
     ],
     "role": "critic",
-    "caveats": "The register is adversarial and the thumbnails are tabloid. Subjects are chosen partly for how well they perform, so absence from the channel is not evidence of anything."
+    "caveats": "The register is adversarial and the thumbnails are tabloid. Subjects are chosen partly for how well they perform, so absence from the channel is not evidence of anything.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 2,
+      "longPct": 50,
+      "medianMin": 21,
+      "videoCount": 531,
+      "at": "2026-09"
+    }
   },
   {
     "id": "contrapoints",
@@ -848,7 +944,15 @@
       }
     ],
     "role": "critic",
-    "caveats": "Extremely long videos and an explicit political position. Uploads are rare — a few per year — so this is a back catalogue to work through, not a feed."
+    "caveats": "Extremely long videos and an explicit political position. Uploads are rare — a few per year — so this is a back catalogue to work through, not a feed.",
+    "catalogue": {
+      "scanned": 36,
+      "shortPct": 6,
+      "longPct": 86,
+      "medianMin": 32,
+      "videoCount": 36,
+      "at": "2026-09"
+    }
   },
   {
     "id": "skillopedia",
@@ -908,6 +1012,14 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Dormant since September 2024, shallow by design, and no claim here is sourced to anything. The dating-advice videos are a weak spot in an otherwise serviceable beginner catalogue."
+    "caveats": "Dormant since September 2024, shallow by design, and no claim here is sourced to anything. The dating-advice videos are a weak spot in an otherwise serviceable beginner catalogue.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 22,
+      "longPct": 0,
+      "medianMin": 10,
+      "videoCount": 220,
+      "at": "2026-09"
+    }
   }
 ]

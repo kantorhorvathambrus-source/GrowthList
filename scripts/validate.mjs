@@ -238,6 +238,23 @@ for (const c of creators) {
   if (c.dataAsOf && !/^\d{4}-\d{2}$/.test(c.dataAsOf)) fail(where, `dataAsOf must be YYYY-MM, found "${c.dataAsOf}"`);
   if (c.sizeBucket && !SIZE_BUCKETS.includes(c.sizeBucket)) fail(where, `invalid sizeBucket "${c.sizeBucket}"`);
   if (c.status && !STATUSES.includes(c.status)) fail(where, `invalid status "${c.status}"`);
+  // FORMAT TAGS ARE A FILTER INDEX, AND THE CATALOGUE THEY DESCRIBE MOVES.
+  // They are hand-written once and never re-derived, so the `shorts` filter
+  // silently under-returns: 21 records were 40%+ short-form in the recent scan
+  // with no tag, and 2 carried the tag on channels that are barely short-form.
+  // This is a filter that misses things, not a false claim to a reader, and it
+  // warns rather than fails — the judgement of what a channel IS stays human.
+  // The cross-check only became possible once audit-catalogue.mjs stored the
+  // measurement the prose was written from.
+  if (c.catalogue && typeof c.catalogue.shortPct === 'number') {
+    const tagged = (c.formatTags ?? []).includes('shorts');
+    if (!tagged && c.catalogue.shortPct >= 40) {
+      warn(where, `${c.catalogue.shortPct}% of the scanned uploads are under two minutes but there is no "shorts" format tag — the shorts filter will not find this creator`);
+    }
+    if (tagged && c.catalogue.shortPct < 10) {
+      warn(where, `tagged "shorts" but only ${c.catalogue.shortPct}% of the scanned uploads are under two minutes`);
+    }
+  }
   if (c.role && !ROLES.includes(c.role)) fail(where, `invalid role "${c.role}"`);
   if (typeof c.longDescription === 'string' && c.longDescription.length < 200) {
     fail(where, `longDescription is ${c.longDescription.length} chars, minimum 200`);
@@ -421,7 +438,17 @@ if (creators.length > 0) {
     // Depth 2 needs 394 and is reachable. THREE IS NOT ABANDONED — it is
     // earned, and spent deliberately (see DEPTH_3_PRIORITY below) rather than
     // wherever research happens to be pointing.
+    // TWO NUMBERS, AND THE SECOND IS THE HONEST ONE. `sports-nutrition` was
+    // filled to 2 in batch 44 and one of the two had been silent since
+    // February 2025 — the target was met on paper and not in reality, and
+    // nothing in the process could have shown that. A dormant or archived
+    // channel still earns its place in a list (the back catalogue is the
+    // point) but it cannot be counted as live depth.
+    const live = list.filter((c) => c.status === 'active');
     if (list.length < 2) cover(where, `only ${list.length} creators, target 2`);
+    else if (live.length < 2) {
+      cover(where, `${list.length} creators but only ${live.length} active — ${list.filter((c) => c.status !== 'active').map((c) => `${c.name} is ${c.status}`).join(', ')}`);
+    }
 
     // A CRITIC IS A TARGET, NOT A RULE. It was a validator failure until 200
     // creators, at which point 29 of 180 populated categories had one — a

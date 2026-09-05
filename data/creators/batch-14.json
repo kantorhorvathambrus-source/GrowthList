@@ -60,7 +60,15 @@
       }
     ],
     "role": "critic",
-    "caveats": "Release-driven, so it dates fast. Sells a paid membership and promotes his own products, including the benchmark that underpins his authority here."
+    "caveats": "Release-driven, so it dates fast. Sells a paid membership and promotes his own products, including the benchmark that underpins his authority here.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 42,
+      "medianMin": 19,
+      "videoCount": 158,
+      "at": "2026-09"
+    }
   },
   {
     "id": "computerphile",
@@ -124,7 +132,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Carries a named financial sponsor. No sequence or curriculum — it is a library of explanations, and you have to know what to look for."
+    "caveats": "Carries a named financial sponsor. No sequence or curriculum — it is a library of explanations, and you have to know what to look for.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 34,
+      "medianMin": 18,
+      "videoCount": 920,
+      "at": "2026-09"
+    }
   },
   {
     "id": "johnhammond",
@@ -175,7 +191,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Assumes technical comfort and covers offensive security rather than personal safety. Heavily sponsored, and works in the industry he covers."
+    "caveats": "Assumes technical comfort and covers offensive security rather than personal safety. Heavily sponsored, and works in the industry he covers.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 56,
+      "longPct": 36,
+      "medianMin": 1,
+      "videoCount": 1876,
+      "at": "2026-09"
+    }
   },
   {
     "id": "naomibrockwell",
@@ -229,7 +253,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "An explicit civil-liberties position runs through everything, including the choice of topics. US legal framing throughout."
+    "caveats": "An explicit civil-liberties position runs through everything, including the choice of topics. US legal framing throughout.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 42,
+      "medianMin": 18,
+      "videoCount": 703,
+      "at": "2026-09"
+    }
   },
   {
     "id": "lawrencesystems",
@@ -292,7 +324,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Runs an IT services company and recommends tooling it sells and deploys — disclosed on the channel, but weigh product assessments accordingly. Assumes real hardware and prior knowledge."
+    "caveats": "Runs an IT services company and recommends tooling it sells and deploys — disclosed on the channel, but weigh product assessments accordingly. Assumes real hardware and prior knowledge.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 8,
+      "longPct": 52,
+      "medianMin": 25,
+      "videoCount": 1879,
+      "at": "2026-09"
+    }
   },
   {
     "id": "technotim",
@@ -342,7 +382,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Heavily sponsored, and service-specific guides date quickly as the software moves. Assumes containers, terminals and real hardware."
+    "caveats": "Heavily sponsored, and service-specific guides date quickly as the software moves. Assumes containers, terminals and real hardware.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 6,
+      "longPct": 34,
+      "medianMin": 14,
+      "videoCount": 310,
+      "at": "2026-09"
+    }
   },
   {
     "id": "gamersnexus",
@@ -393,7 +441,15 @@
       }
     ],
     "role": "critic",
-    "caveats": "Exhaustively detailed and slow-paced. The investigative pieces are adversarial in tone, and they are reporting rather than purchasing guidance."
+    "caveats": "Exhaustively detailed and slow-paced. The investigative pieces are adversarial in tone, and they are reporting rather than purchasing guidance.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 88,
+      "medianMin": 29,
+      "videoCount": 3308,
+      "at": "2026-09"
+    }
   },
   {
     "id": "networkchuck",
@@ -445,6 +501,14 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Trains for a certification company and sells courses, so recommendations about what to learn are not disinterested. Hype-heavy titles overstate consistently."
+    "caveats": "Trains for a certification company and sells courses, so recommendations about what to learn are not disinterested. Hype-heavy titles overstate consistently.",
+    "catalogue": {
+      "scanned": 49,
+      "shortPct": 45,
+      "longPct": 33,
+      "medianMin": 8,
+      "videoCount": 618,
+      "at": "2026-09"
+    }
   }
 ]

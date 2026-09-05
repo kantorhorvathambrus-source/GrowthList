@@ -13,10 +13,26 @@
     "shortDescription": "Programming decisions rather than exercises — how much volume, when to change it, and which accessory work is actually doing something.",
     "longDescription": "A coaching company's channel, and the useful content is the layer most strength material skips: not how to perform a lift but how to decide what to do across weeks. Videos ask whether you are changing your training too often, whether your volume is too high, why particular accessory choices are holding progress back, and what the common programming mistake actually is. Nineteen of the fifty most recent uploads fall in the three-to-nineteen minute band, and the median is two minutes, so the channel is clip-heavy and the substance takes finding. They also publish honest post-mortems — one video is a coach explaining why his own bench attempt did not go as planned. The register is analytical rather than motivational.",
     "notFor": "Beginners who still need form instruction — this assumes the lifts are learned and the question is now how to organise training. Also heavily clip-shaped; you have to go looking.",
-    "formatTags": ["tutorial", "shorts", "long-form"],
-    "level": ["intermediate", "advanced"],
-    "profile": { "evidenceBased": 3, "practical": 4, "energy": 2, "selfPromotion": 3, "depth": 3 },
-    "signals": ["practitioner", "sells-course"],
+    "formatTags": [
+      "tutorial",
+      "shorts",
+      "long-form"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
     "categories": [
       {
         "id": "strength-training",
@@ -32,7 +48,15 @@
       }
     ],
     "role": "specialist",
-    "caveats": "A coaching and programming business; the channel funnels to paid services. Mapped to one category deliberately — the powerlifting-specific material here is the same body of work under a narrower name, and powerlifting is already served by a channel whose whole catalogue is that sport."
+    "caveats": "A coaching and programming business; the channel funnels to paid services. Mapped to one category deliberately — the powerlifting-specific material here is the same body of work under a narrower name, and powerlifting is already served by a channel whose whole catalogue is that sport.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 60,
+      "longPct": 2,
+      "medianMin": 2,
+      "videoCount": 1836,
+      "at": "2026-09"
+    }
   },
   {
     "id": "minusthegym",
@@ -48,10 +72,25 @@
     "shortDescription": "Bodyweight training taught as a progression, starting from what someone with no equipment and no base can actually do today.",
     "longDescription": "Fifty-six long-form videos in two hundred and fifty uploads, median around seven minutes, and the organising idea is progression rather than feats. The beginner material is genuinely beginner: nine exercises with tutorials for someone starting from nothing, a no-equipment routine that assumes no pull-up bar, and an argument about which single piece of equipment is worth buying if you buy one. That last one is characteristic — the channel is unusually direct about how little you need, which cuts against the equipment-review economics of the genre even though it does run reviews. There is also a mobility strand aimed at desk workers. The register is calm and the demonstrations are unglamorous, which suits a discipline where the failure mode is attempting something three progressions too early.",
     "notFor": "Anyone chasing advanced skills — planches, levers, freestyle — which are barely covered. Also not a strength-programming resource; the emphasis is on movement quality and progression, not load management.",
-    "formatTags": ["tutorial", "long-form"],
-    "level": ["beginner", "intermediate"],
-    "profile": { "evidenceBased": 2, "practical": 4, "energy": 2, "selfPromotion": 2, "depth": 3 },
-    "signals": ["practitioner", "sponsor-heavy"],
+    "formatTags": [
+      "tutorial",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sponsor-heavy"
+    ],
     "categories": [
       {
         "id": "calisthenics",
@@ -67,6 +106,14 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Equipment reviews and sponsored segments appear regularly, which sits in tension with the channel's own argument that you need almost nothing. Advanced skill work is largely absent."
+    "caveats": "Equipment reviews and sponsored segments appear regularly, which sits in tension with the channel's own argument that you need almost nothing. Advanced skill work is largely absent.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 26,
+      "longPct": 0,
+      "medianMin": 7,
+      "videoCount": 285,
+      "at": "2026-09"
+    }
   }
 ]
