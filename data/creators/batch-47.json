@@ -1,0 +1,60 @@
+[
+  {
+    "id": "modernmba",
+    "name": "Modern MBA",
+    "handle": "@ModernMBA",
+    "channelUrl": "https://www.youtube.com/@ModernMBA",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "500k-1M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Long teardowns of why whole industries make or lose money — the unit economics underneath a business, rather than the story of the company that won.",
+    "longDescription": "{{longCountWords|cap}} of the {{scannedWords}} most recent uploads run over twenty minutes and the median is {{medianPhrase}}, across a catalogue of only {{videoCountPhrase}} — this is a channel that publishes rarely and at length. The subject is industry structure: why nobody makes money renting cars, why American airlines stopped competing on service, why cinemas earn almost nothing from the films they show, how a single hedge fund reshaped a restaurant chain, why a cheap Western electric car has not appeared. Each one works from the financials outward — where the margin actually sits, who captures it, and which incentive makes the obvious improvement irrational for the people who would have to make it. The channel states its own premise as going past the surface into financials, dynamics and politics, and the videos do that: they are closer to a case study than to commentary.",
+    "notFor": "Anyone looking for advice they can apply to their own business this week. Nothing here is prescriptive — it explains why industries are shaped as they are, and you have to do the transfer yourself. Every episode opens with a sponsor read.",
+    "formatTags": [
+      "video-essay",
+      "long-form",
+      "documentary"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 2,
+      "energy": 3,
+      "selfPromotion": 2,
+      "depth": 4
+    },
+    "signals": [
+      "sponsor-heavy"
+    ],
+    "categories": [
+      {
+        "id": "business-strategy",
+        "strength": "primary",
+        "why": "Strategy read off the economics rather than off the narrative — the complement to a company-history show, and the half that explains why the same move works in one industry and not another.",
+        "evidence": "31 minutes on why car rental cannot be profitable, 38 on the incentives behind US airline service, 46 on Microsoft's Xbox spending, 35 on why a cheap Western EV has not arrived, and 31 on where cinema revenue actually comes from.",
+        "entryVideo": {
+          "title": "Nobody Makes Money Renting Cars",
+          "videoId": "AM1HJUC7YNg",
+          "whyThisOne": "An industry everyone has used and nobody has thought about, taken apart to the point where the margin actually sits — the method in its clearest form.",
+          "durationMin": 31
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Every episode we sampled opens with a paid sponsor read — NetSuite, BetterHelp, Remitly — and one carries an affiliate code. The analysis is not about the sponsors and we saw no sign of it bending toward them, but the channel is advertising-funded and reads that way for the first minute. No author or credential is named anywhere on the channel.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 98,
+      "medianMin": 38,
+      "videoCount": 82,
+      "at": "2026-09"
+    }
+  }
+]

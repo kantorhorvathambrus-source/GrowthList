@@ -37,6 +37,16 @@
       "why": "1 upload",
       "at": "batch 43"
     },
+    "@HeatherSmithAU": {
+      "status": "collision",
+      "why": "0 uploads",
+      "at": "batch 47"
+    },
+    "@HowMoneyWorks": {
+      "status": "rejected",
+      "why": "economic and current-affairs commentary (Meta, Peter Thiel, oil prices) rather than a personal-finance skill; no money category blurb fits it",
+      "at": "batch 47"
+    },
     "@Physiotutors": {
       "status": "rejected",
       "why": "wrong audience — states it teaches physiotherapy students and professionals; 173 of 198 uploads under 2 minutes, long-form is a clinician podcast",
@@ -57,10 +67,25 @@
       "why": "165 of 200 uploads under 2 minutes, one long-form",
       "at": "batch 43"
     },
+    "@WholesaleTed": {
+      "status": "rejected",
+      "why": "AI side-hustle listicles — \"Making People RICH\", \"If You are BROKE\", dropshipping with AI. Exactly the genre the project exists to filter",
+      "at": "batch 47"
+    },
     "@_johnhammond": {
       "status": "listed",
       "why": "John Hammond",
       "at": "dataset"
+    },
+    "@a16z": {
+      "status": "rejected",
+      "why": "substantial (38 of 50 uploads over 20m, median 42m) but the content is AI-industry trend commentary, not how to raise money — off-target for venture-fundraising, and a VC firm publishing on the market it invests in is the sharpest possible conflict",
+      "at": "batch 47"
+    },
+    "@aakashgupta": {
+      "status": "collision",
+      "why": "1M-5M subscribers, 59 uploads, country IN — identity not established as the product-management writer of the same name, and not pursued on that basis",
+      "at": "batch 47"
     },
     "@abbeysharprd": {
       "status": "listed",
@@ -136,6 +161,11 @@
       "status": "listed",
       "why": "Andrew Huang",
       "at": "dataset"
+    },
+    "@andylacivita": {
+      "status": "rejected",
+      "why": "strong long-form on job search and interviewing (60-70m livestreams) but job-interviewing is already at 2, and the recent window shows no salary-negotiation material; 34 of 46 uploads under two minutes",
+      "at": "batch 47"
     },
     "@aragusea": {
       "status": "listed",
@@ -247,6 +277,11 @@
       "why": "Carl Pullein",
       "at": "dataset"
     },
+    "@carta": {
+      "status": "collision",
+      "why": "4 uploads",
+      "at": "batch 47"
+    },
     "@chainbaker": {
       "status": "listed",
       "why": "ChainBaker",
@@ -291,6 +326,11 @@
       "status": "collision",
       "why": "resolves to a book podcast with 10,150 uploads",
       "at": "batch 02"
+    },
+    "@clearvaluetax": {
+      "status": "collision",
+      "why": "resolves to \"David Capitalize\", 0 uploads",
+      "at": "batch 47"
     },
     "@clutterbug": {
       "status": "listed",
@@ -707,6 +747,11 @@
       "why": "Kane B",
       "at": "dataset"
     },
+    "@keeperTax": {
+      "status": "rejected",
+      "why": "tax-software vendor channel",
+      "at": "batch 47"
+    },
     "@kevinpowell": {
       "status": "listed",
       "why": "Kevin Powell",
@@ -830,6 +875,11 @@
     "@misterwootube": {
       "status": "listed",
       "why": "Eddie Woo",
+      "at": "dataset"
+    },
+    "@modernmba": {
+      "status": "listed",
+      "why": "Modern MBA",
       "at": "dataset"
     },
     "@modernsoftwareengineeringyt": {
@@ -1127,6 +1177,11 @@
       "why": "Skillopedia",
       "at": "dataset"
     },
+    "@slidebean": {
+      "status": "rejected",
+      "why": "reputation drift — known for startup pitch-deck and fundraising content; the channel description now reads \"a show about the everyday technology you use\" and the recent catalogue is consumer-tech explainers (smartwatch accuracy, HDR, battery health)",
+      "at": "batch 47"
+    },
     "@smbsuccess": {
       "status": "collision",
       "why": "resolves to a Korean-language channel",
@@ -1246,6 +1301,11 @@
       "status": "listed",
       "why": "The Futur",
       "at": "dataset"
+    },
+    "@thefuturacademy": {
+      "status": "rejected",
+      "why": "the same organisation as The Futur, already in the dataset — a second mapping would be one body of work counted twice",
+      "at": "batch 47"
     },
     "@thegottmaninstitute": {
       "status": "listed",

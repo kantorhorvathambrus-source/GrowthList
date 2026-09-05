@@ -261,6 +261,27 @@
       "note": "THE MOST CONSEQUENTIAL ENTRY IN THIS LEDGER, and not because the number was far out. It was load-bearing: cited as the reason the bottleneck was prose, it shaped pace and batch-size decisions for weeks. It was never challenged because it sounded like the output of a measurement. That is the signature of this class — the claims that look most settled are the ones nothing produced.",
       "reachedVisitors": false,
       "reachedVisitorsNote": "Internal, and the wrong place to look for its cost. Its cost was in decisions, not in copy."
+    },
+    {
+      "id": "discovery-raises-the-batch-rate",
+      "claim": "Query-based discovery plus batching the reading across categories should support 5-6 creators per batch, cutting the remaining work to roughly 23 batches.",
+      "madeAt": "batch 43",
+      "testedAt": "batch 46",
+      "status": "falsified",
+      "class": "stale-stored-fact",
+      "subAreas": [
+        "whether discovery finds creators recall misses",
+        "whether it finds them FASTER"
+      ],
+      "probedWhenMade": [
+        "whether discovery finds creators recall misses"
+      ],
+      "found": "Discovery-sourced batches 44-45 ran at 2.50 creators/batch. The one purely recall-sourced batch since, 46, ran at 3.00. Batches 33-43 ran at 2.27. There is no rate difference: 5-6/batch was never observed at any point in the project's history under any method, and I offered it as a projection with a mechanism attached rather than a measurement.",
+      "survives": "The narrower and real benefit, which was the part I actually tested. Discovery finds creators recall does not: all three of batch 44 came from it after two prior health batches of recall had not produced them, and it returned @sameerislammd when three recalled handle guesses had all missed. It changes WHICH creators are findable, not HOW MANY per batch.",
+      "correctionIn": "CLAUDE.md now carries one rate — the measured 2.36/batch — and no optimistic figure. The 23-batch target is withdrawn.",
+      "note": "THIRD PACE PROJECTION, THIRD FAILURE, and the pattern across all three is identical: I measured the mechanism (single-target fills yield 1.00; discovery surfaces unseen candidates) and then asserted a rate the mechanism was supposed to produce, without measuring the rate. The mechanism claim was true every time. The rate claim was wrong every time. The owner has discounted each of these on the record; the correct response is to stop offering the optimistic half at all, not to discount it harder.",
+      "reachedVisitors": false,
+      "reachedVisitorsNote": "Internal. Its cost is in planning, like the 79%."
     }
   ],
   "_framing": "How to state this ledger, per the owner: the honest framing is that this project tested N of its own claims and found M wrong — and the alternative was NOT M correct claims, it was M wrong ones nobody checked. BOTH NUMBERS ARE COMPUTED FROM THIS FILE, never typed: the paragraph read \"six\" for eight batches after the count had moved past six, which is the inward-facing class of rule 18 appearing inside rule 18ʼs own report. Report both numbers together: how many were falsified, and how many had REACHED VISITORS before being caught. The second is the difference between an internal process finding its own errors and a dataset that shipped them.",

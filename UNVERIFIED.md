@@ -1828,3 +1828,62 @@ carries its unit and pluralises.
 
 **Depth after this batch: 96 of 197 at target with active creators**,
 100 on paper. 118 mappings still needed.
+
+## Batch 47 — one creator, and the reason is the finding
+
+Modern MBA (`business-strategy`, 1→2). One creator, one mapping.
+
+**Forty-nine of fifty uploads over twenty minutes, median thirty-eight,
+across a catalogue of only eighty-two.** Industry-structure teardowns:
+why nobody makes money renting cars, why US airlines stopped competing
+on service, where cinema revenue actually comes from. It reads the
+financials outward to find where the margin sits and which incentive
+makes the obvious fix irrational — a genuine complement to Acquired,
+which tells the story of the company that won. Every sampled episode
+opens with a paid sponsor read, which is in the caveat, and no author
+or credential is named anywhere on the channel.
+
+**Nine candidates evaluated, one listed.** That ratio is the point of
+the batch, not an aside. In order: Slidebean had pivoted entirely from
+startup fundraising to consumer-tech explainers. a16z is substantial —
+38 of 50 uploads over twenty minutes — but publishes AI trend
+commentary rather than how to raise money, from a firm invested in the
+market it discusses. Wholesale Ted is AI side-hustle listicles. How
+Money Works is current-affairs commentary, not a personal-finance
+skill. Andrew LaCivita is strong on job search, which is already at 2.
+The Futur Academy is the same organisation already listed. Keeper is a
+tax-software vendor. Carta, Heather Smith and ClearValue Tax are
+handle collisions with near-empty channels.
+
+### The rate correction, and I should have made it a batch earlier
+
+The owner asked me to factor recall speed into the next estimate. The
+measurement says something worse than "recall is slower":
+
+| source | batches | creators/batch |
+|---|---|---|
+| discovery-sourced (44–45) | 2 | 2.50 |
+| recall-sourced (46) | 1 | 3.00 |
+| earlier mixed (33–43) | 11 | 2.27 |
+| **all 33–47** | **15** | **2.27** |
+
+**Discovery has not raised the rate at all.** The "5–6 per batch,
+about 23 batches" figure I offered was never observed at any point in
+this project under any method. It was a projection with a mechanism
+attached, and the mechanism was real — discovery does find creators
+recall misses; all three of batch 44 came from it after two prior
+health batches had not produced them. But finding *different*
+candidates is not finding them *faster*, and I asserted the second
+while having measured only the first.
+
+**Third pace projection, third failure, identical shape every time:**
+measure the mechanism, then assert the rate the mechanism was supposed
+to produce. In the ledger as `discovery-raises-the-batch-rate`. The
+right response is not to discount the optimistic figure harder — it is
+to stop producing one. **CLAUDE.md now carries a single rate, the
+measured 2.27, and the 23-batch target is withdrawn.**
+
+**Where that leaves Phase 2: 97 of 197 at target with active creators,
+117 mappings still needed, ≈109 creators, ≈48 batches at the measured
+rate.** No optimistic alternative is offered because there has never
+been evidence for one.

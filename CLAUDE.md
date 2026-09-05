@@ -720,23 +720,29 @@ in `categories.json`-derived output with a computed creator `count`.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research). **Batches 01–46 are
+- **Current phase**: Phase 2 (creator research). **Batches 01–47 are
   written, gated, validated and committed.**
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
 - **PHASE 2 CLOSING ARITHMETIC (measured at 233 creators, against
   ACTIVE creators — the paper count is 4 categories more generous).**
-  Measured again after batch 46: **96 of 197 at target with active
-  creators** (100 on paper). 17 categories have no active creator, 84
-  have one — **118 mappings still needed**, ≈110 creators, leaving ~54
+  Measured after batch 47: **97 of 197 at target with active
+  creators**. **117 mappings still needed**, ≈109 creators, leaving ~54
   of the 400 cap for the depth-3 priority list.
-  At the measured recent rate of **2.31 creators/batch (30 over batches
-  33–45) that is 49 batches**; at the 5/batch that discovery-assisted
-  batches should support, **23**. Treat 23 as the target and 49 as what
-  happens if discovery stops paying.
+  **ONE RATE, MEASURED: 2.27 creators/batch** (34 over batches 33–47).
+  117 mappings ≈ 109 creators ≈ **48 batches.**
+  The "5/batch discovery-assisted, 23 batches" figure is **WITHDRAWN**.
+  It was never observed: discovery-sourced batches 44–45 ran at 2.50,
+  the recall-sourced batch 46 at 3.00, the earlier mixed run at 2.27.
+  **Discovery changes which creators are findable, not how many per
+  batch** — that is the part that was measured, and it is real.
+  Third pace projection, third failure, same shape each time: measure
+  the mechanism, then assert the rate the mechanism was meant to
+  produce. Do not offer an optimistic figure alongside the measured one;
+  there has never been evidence for one.
   The work is not where the depth pass has been: **business 16,
   career 15, mindset 13, money 13, marketing 13** — 70 of the 121 —
   while health, philosophy and programming need 7 between them.
-- **Creator count: 236 of 400.** Taxonomy 197 and **uncapped** (rule 19)
+- **Creator count: 237 of 400.** Taxonomy 197 and **uncapped** (rule 19)
   — a new category may be added whenever it arrives with 3 creators.
 - **Fitness is complete at 2+ across all 14 categories** (3 at depth 3).
 - **182 of 197 categories populated; 15 empty.** Practical is 13/13.
