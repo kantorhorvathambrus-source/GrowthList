@@ -1118,3 +1118,34 @@ change.
 The alternative was leaving `home-workouts` at 1. A shorter list is not a
 better one when the thing being withheld is a free, no-equipment library
 and the reader has been told exactly what is wrong with it.
+
+## Batch 41 — a critic for longevity, and a duplicate the validator caught
+
+Medlife Crisis (`longevity`, **critic**). One creator — the batch was
+meant to be two.
+
+**The validator caught me adding Sleep Doctor twice.** Dr. Michael Breus
+has been in the dataset since batch 11, mapped to `sleep-quality`, and I
+researched and wrote a second full record for him thirty batches later
+without noticing. My pre-write duplicate check has been a manual list of
+handles typed from memory, and `@thesleepdoctor` was not on it. The
+`duplicate handle` rule failed the build; nothing shipped.
+
+This is the second time an automated check has caught something review
+did not, in six batches. Both were the same class of error — a stored
+fact I had stopped querying.
+
+**Medlife Crisis is a genuine critic**, which matters because they are
+the scarcest role in the project: 20 critic creators across 223. Rohin
+Francis is a practising consultant cardiologist whose stated premise is
+that there is a great deal of bad science on YouTube, and 109 of his 173
+uploads run over eight minutes. He turns it inward as readily as outward
+— videos on who is to blame for medical complications, and on a patient
+who taught him humility, are about the limits of his own profession.
+
+**`gut-health` stays empty and unfinished.** Probed: the influencer end,
+where `@gutfeelings` (712 uploads) turned out to be exactly what the
+category blurb warns against — "These Tiny Seeds Repair Your Gut Lining
+Fast", "10-Minute Gut Reset", an argument that FODMAP protocols do not
+work. The gastroenterology and research ends are unprobed, so this is a
+report about my search, not the field.

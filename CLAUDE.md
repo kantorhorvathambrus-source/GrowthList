@@ -703,10 +703,10 @@ in `categories.json`-derived output with a computed creator `count`.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research). **Batches 01–40 are
+- **Current phase**: Phase 2 (creator research). **Batches 01–41 are
   written, gated, validated and committed.**
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
-- **Creator count: 222 of 400.** Taxonomy 197 and **uncapped** (rule 19)
+- **Creator count: 223 of 400.** Taxonomy 197 and **uncapped** (rule 19)
   — a new category may be added whenever it arrives with 3 creators.
 - **Fitness is complete at 2+ across all 14 categories** (3 at depth 3).
 - **180 of 197 categories populated; 17 empty.** Practical is 13/13.
