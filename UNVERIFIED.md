@@ -1093,3 +1093,28 @@ formats, and the teaching either moves behind a paywall or stops.** That
 is a claim about the eleven cases in the file and nothing more — the
 denominator is unknown, since channels that did *not* drift were never
 systematically counted.
+
+## Batch 40 — fitness complete at 2+, and one inclusion that needed a hard caveat
+
+Lattice Training (`rock-climbing`), Chloe Ting (`home-workouts`). **All 14
+fitness categories now hold at least 2 creators**; three are at the target
+of 3.
+
+**Chloe Ting is the difficult one and the reasoning should be visible.**
+The workouts are competent — full-length, no equipment, structured
+intervals, free. The packaging is not: two-week challenges titled around
+a "glow up" and a "snatched waist" promise visible body recomposition on
+a timeline that is not physiologically available to most people, and
+imply spot fat reduction, which does not occur.
+
+Handled under rule 13's logic rather than by exclusion: the content is
+sound, the claim attached to it is not, so it carries `contested-claims`
+and a caveat that names the problem in terms — *"the titles promise what
+the workouts cannot deliver… take the sessions and leave the promises."*
+The `notFor` is written for the person this actually harms: someone who
+will be discouraged when two weeks does not produce the advertised
+change.
+
+The alternative was leaving `home-workouts` at 1. A shorter list is not a
+better one when the thing being withheld is a free, no-equipment library
+and the reader has been told exactly what is wrong with it.
