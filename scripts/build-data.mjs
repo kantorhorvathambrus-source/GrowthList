@@ -164,6 +164,7 @@ if (existsSync(probedPath)) {
 // drift apart.
 const highStakesPath = join(DATA, 'high-stakes.json');
 const subjectNotesOut = { notes: {} };
+let searchedOut = {};
 if (existsSync(highStakesPath)) {
   const hs = readJson(highStakesPath);
   for (const [id, entry] of Object.entries(hs.categories ?? {})) {
@@ -191,6 +192,13 @@ if (existsSync(gapsPath)) {
     }
     subjectNotesOut.notes[id] = entry.visitorNote;
   }
+  // A CATEGORY AT ONE CREATOR HAS TWO POSSIBLE REASONS AND THE PAGE WAS
+  // GIVING ONE. The single-creator line says research went to the most-watched
+  // skills first — true of a deprioritised category, FALSE of one the close
+  // plan funded and searched twice without finding a second voice. These get
+  // the accurate reason instead.
+  const searched = readJson(gapsPath).searchedNotFound ?? {};
+  searchedOut = Object.fromEntries(Object.keys(searched).map((id) => [id, true]));
 }
 
 // Search index: what the search box matches against.
@@ -240,7 +248,7 @@ const kbFull = writeJson('creators.json', creatorsOut);
 const kbIndex = writeJson('index.json', indexOut);
 const kbCats = writeJson('categories-index.json', categoriesIndexOut);
 const kbSearch = writeJson('search-index.json', searchOut);
-writeJson('subject-notes.json', subjectNotesOut);
+writeJson('subject-notes.json', { ...subjectNotesOut, searchedNotFound: searchedOut });
 if (ledgerOut) writeJson('ledger-summary.json', ledgerOut);
 
 // ---------------------------------------------------------------- report

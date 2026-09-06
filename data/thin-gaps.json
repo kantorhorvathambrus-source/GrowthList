@@ -146,5 +146,76 @@
       "visitorNote": "We looked and did not list anyone. Nearly all of it is law firms publishing to attract clients, and legal material has a problem the rest of this site does not: it is only correct in one country. A firm's video is both an advertisement and jurisdiction-specific, and we were not willing to hand you that without being able to say it applies where you are."
     }
   },
-  "_schema": "Each entry: reason (what was searched and found), gapCause (absent-supply | our-criteria | mixed), countUnderLooserStandard, challenged (any reasoning contested and re-examined), and RULE 18 — rule18: { testedAt, subAreas[], probed[], outcome: survived|falsified, whatWasTried }. An entry without a rule18 block is UNFINISHED, not documented: a gap nobody tried to disprove is indistinguishable from a search that stopped early. probed must cover every sub-area listed, because the failure mode caught twice in this project is a finding from one end of a domain applied to ends never searched. A falsified finding keeps a `corrected` field stating what the entry originally claimed and why that was wrong, rather than being quietly rewritten — see first-aid."
+  "_schema": "Each entry: reason (what was searched and found), gapCause (absent-supply | our-criteria | mixed), countUnderLooserStandard, challenged (any reasoning contested and re-examined), and RULE 18 — rule18: { testedAt, subAreas[], probed[], outcome: survived|falsified, whatWasTried }. An entry without a rule18 block is UNFINISHED, not documented: a gap nobody tried to disprove is indistinguishable from a search that stopped early. probed must cover every sub-area listed, because the failure mode caught twice in this project is a finding from one end of a domain applied to ends never searched. A falsified finding keeps a `corrected` field stating what the entry originally claimed and why that was wrong, rather than being quietly rewritten — see first-aid.",
+  "searchedNotFound": {
+    "exam-preparation": {
+      "rounds": [
+        "batch 49",
+        "batch 49 discovery"
+      ],
+      "found": "Two rounds. Discovery returned only creators already listed here plus a productivity-business channel and a memory-technique channel belonging to another category; recall added a medical-careers channel and one whose last upload was March 2022.",
+      "unprobed": [
+        "subject-specific exam channels (medical, legal, actuarial)",
+        "university study-skills departments"
+      ],
+      "at": "batch 55"
+    },
+    "journaling": {
+      "rounds": [
+        "batch 49",
+        "batch 49 therapeutic end"
+      ],
+      "found": "Two rounds, including the therapeutic-writing end that the first round had not touched. The largest channel in the subject is journaling as craft — planner setups, sticker collections — which is what this category's blurb distinguishes against; the therapeutic end returned trauma-recovery podcasts rather than anyone teaching the practice.",
+      "unprobed": [
+        "academic expressive-writing researchers",
+        "non-English traditions"
+      ],
+      "at": "batch 55"
+    },
+    "deep-work-and-focus": {
+      "rounds": [
+        "batch 49",
+        "batch 55"
+      ],
+      "found": "Two rounds returned ambient study music, motivational channels, a documentary strand, and two creators already listed. The subject has an enormous audience and almost no independent teaching.",
+      "unprobed": [
+        "attention researchers publishing directly",
+        "workplace-design and ergonomics"
+      ],
+      "at": "batch 55"
+    },
+    "self-discipline": {
+      "rounds": [
+        "batch 55"
+      ],
+      "found": "Discovery returned Huberman, TEDx, Mel Robbins and a podcast collision — motivation rather than method, which is the shape this subject takes at scale.",
+      "unprobed": [
+        "behaviour-change academics",
+        "military and athletic training traditions"
+      ],
+      "at": "batch 55"
+    },
+    "affiliate-marketing": {
+      "rounds": [
+        "batch 55"
+      ],
+      "found": "Every candidate returned was a make-money-online channel. The one creator listed already carries a caveat that his current catalogue has moved away from the subject.",
+      "unprobed": [
+        "practitioners who publish operating detail rather than income claims"
+      ],
+      "at": "batch 55"
+    },
+    "sleep-quality": {
+      "rounds": [
+        "batch 49",
+        "batch 55"
+      ],
+      "found": "Two rounds. The strongest candidate, IntraBalance, is a Harvard-trained sleep physician — and states it is built specifically for clinicians, with practice-building content alongside the clinical material, which is the ground Physiotutors was rejected on in batch 43. Insomnia Coach is 47 of 50 uploads under two minutes with client testimonials as its long-form.",
+      "unprobed": [
+        "academic sleep laboratories publishing for the public",
+        "CBT-I programmes run by health services"
+      ],
+      "at": "batch 55"
+    }
+  }
 }

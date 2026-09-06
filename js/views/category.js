@@ -273,10 +273,15 @@ export async function renderCategory(app, { params, query }) {
               behind. Saying nothing here lets a reader assume we simply had not
               got round to it, which is the less honest of the two readings. */''}
         ${entries.length === 1
-          ? `<p class="micro" style="margin-bottom: var(--sp-6)">One creator here, on purpose:
-              we list a second only when we find one worth standing behind, and
-              research went to the most-watched thin skills first.
-              <a href="#/how-this-list-was-built">How that was decided</a>.</p>`
+          ? (subjectNotes?.searchedNotFound?.[category.id]
+              ? `<p class="micro" style="margin-bottom: var(--sp-6)">One creator here, and not for
+                  want of looking: this skill was one we prioritised, searched twice, and did not
+                  find a second voice for that we would stand behind.
+                  <a href="#/how-this-list-was-built">How that was decided</a>.</p>`
+              : `<p class="micro" style="margin-bottom: var(--sp-6)">One creator here, on purpose:
+                  we list a second only when we find one worth standing behind, and
+                  research went to the most-watched thin skills first.
+                  <a href="#/how-this-list-was-built">How that was decided</a>.</p>`)
           : ''}
 
         ${subjectNoteMarkup(category.id, subjectNotes)}

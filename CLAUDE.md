@@ -760,7 +760,7 @@ written. What changed is waiting for a yes that was already given.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research). **Batches 01–54 are
+- **Current phase**: Phase 2 (creator research). **Batches 01–55 are
   written, gated, validated and committed.**
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
 - **PHASE 2 CLOSES ON A TARGETED PLAN, NOT UNIFORM COVERAGE.** The owner's
@@ -873,6 +873,21 @@ this section first to know exactly where to resume.)*
   `subject-notes.json` — warning when a gap has no note and no other
   note filling the slot. Four gaps now render; `addiction-recovery` and
   `first-aid` already had high-stakes notes in that slot.
+- **TWO KINDS OF THIN, AND THE PAGE NOW TELLS THEM APART.** A category
+  at one creator was giving every reader the same reason: research went
+  to the most-watched skills first. That is true of a *deprioritised*
+  category and **false of one the close plan funded and searched
+  twice**. Six categories are in the second group —
+  `exam-preparation`, `journaling`, `deep-work-and-focus`,
+  `self-discipline`, `affiliate-marketing`, `sleep-quality` — recorded
+  in `thin-gaps.searchedNotFound` with what was tried and what remains
+  unprobed, and their pages now say *"not for want of looking: this
+  skill was one we prioritised, searched twice, and did not find a
+  second voice we would stand behind."*
+  **The rule that produced them**, proposed at batch 49 and endorsed:
+  a funded category that resists two rounds gets its reason written and
+  the budget moves down the list. Appetite orders value, not
+  availability.
 - **THIN IS A DECISION AND THE SITE SAYS SO.** A category at one creator
   renders a line explaining that depth went to the most-watched thin
   skills first and that a second creator is listed only when one is

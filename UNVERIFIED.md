@@ -2275,3 +2275,46 @@ strongest-looking candidate had drifted to AI tooling, or was a course
 funnel, or was a lead-generation operation. That is the business-buyer
 limit again, and it now accounts for most of the unfilled funded
 categories.
+
+## Batch 55 — the two-rounds rule fires, and a page was giving the wrong reason
+
+No creators listed. The batch applied the rule proposed at batch 49 and
+endorsed: **a funded category that resists two rounds of probing gets
+its reason written, and the budget moves down the list.**
+
+Six categories reached that point — `exam-preparation`, `journaling`,
+`deep-work-and-focus`, `self-discipline`, `affiliate-marketing`,
+`sleep-quality`. Each is recorded in `thin-gaps.searchedNotFound` with
+the rounds run, what came back, and which ends remain unprobed.
+
+**And writing them exposed a visitor-facing inaccuracy.** The
+single-creator line added in batch 47 says research went to the
+most-watched thin skills first. That is true of a category we
+deprioritised. It is **false of these six**, which the close plan
+funded, prioritised and searched twice. Every reader arriving at
+`journaling` — one of the three highest-appetite subjects in the whole
+taxonomy — was being told it had been passed over, when in fact it was
+picked first and the search is what failed.
+
+Fixed rather than escalated, because the fix was obvious: those
+categories now render *"One creator here, and not for want of looking:
+this skill was one we prioritised, searched twice, and did not find a
+second voice for that we would stand behind."* Both variants verified
+in a browser.
+
+**A verification-method error worth noting against myself.** My first
+check reported neither variant rendering. The template literal wraps
+mid-sentence, so `grep "not for want"` could not match text that
+contains a newline between "for" and "want". The code was correct and
+my test was wrong — the same shape as the sixteen-flag regex thrown
+away in the delivery sweep, and a reminder that a negative result from
+a hand-rolled check needs the check verified before the code is.
+
+**IntraBalance was the closest call.** A Harvard-trained sleep
+physician, 27 of 50 uploads over twenty minutes, median 28 — and the
+description states it is built specifically for clinicians, with
+private-practice-building content beside the clinical material. That is
+the ground Physiotutors was rejected on in batch 43. Doc Snipes was
+*listed* on the same question in batch 50 because her long-form is
+mechanism rather than profession; this one leans the other way. Both
+decisions recorded so the line between them stays visible.
