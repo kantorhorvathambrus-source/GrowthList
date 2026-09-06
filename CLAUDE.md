@@ -521,6 +521,24 @@ this file has the rules, schema, and current state.
     them (Cal Newport and Carl Pullein on inbox-and-email-systems) say
     so in their own records rather than dressing the trigger up.
 
+20. **FOR EVERY CHECK: WHAT WOULD IT LOOK LIKE IF IT WERE BROKEN? IF
+    THE ANSWER IS "THE SAME", IT IS NOT A CHECK.** The owner's framing,
+    at batch 63, generalising the circular handle verification.
+    `getChannelByHandle` returned the handle we had asked with, so
+    "the API confirms our handle" was true by construction: a wrong
+    handle, a renamed channel and a correct handle all produced an
+    identical PASS. A verification that reads back its own input
+    reports success unconditionally, which is worse than no check —
+    no check leaves you uncertain, this one leaves you confident.
+    **Apply it before writing the check, not after.** The question is
+    cheap and it is the same question in every case: construct the
+    failure the check exists to catch, and ask what the check would
+    print. Two failures already in this file are the same shape —
+    `catch { ch = null }`, where an API outage and a deleted channel
+    produced the identical domain value, and the contrast claim, where
+    no artifact existed to disagree with the number. **A check needs a
+    reachable way to fail.**
+
 14. **A documented gap must say whose fault it is.** Every entry in
     `data/thin-gaps.json` carries `gapCause` (`absent-supply` |
     `our-criteria` | `mixed`) and `countUnderLooserStandard`, so a
@@ -751,6 +769,39 @@ gets read, not a message.
 first.** Short: what moved, what broke, what was decided, and anything
 that would have been asked about a week ago and was not.
 
+**CONTEXT LENGTH IS A WORKING CONDITION, AND SPLITTING IS FREE.** The
+owner's instruction at batch 63: context management belongs to whoever
+can see the window. **Hand off whenever it helps — update this file,
+start fresh, continue. Five clean sessions beat two thinning ones, and
+"this needs a fresh context" is never a reason to come back and ask.**
+
+**The tells, so the next session can recognise them early.** They are
+not sloppiness and they do not feel like anything from the inside;
+they are all the same failure — not checking a thing that is written
+down:
+- **Working from recall when the dataset holds the answer.**
+  `@ahrefs` was probed from memory while debugging; the record says
+  `@AhrefsCom`. That is chasing a phantom bug inside the tool built
+  because recall is unreliable.
+- **Applying a rule this file already states, backwards.**
+  `audit-stale-channel.mjs` used a person's own name as its own
+  affiliation term — the exact failure documented two sections above
+  where it was written.
+- **Slips in the mechanics rather than the judgement.** A heredoc whose
+  backticks were command-substituted, silently emptying a ledger field
+  that then had to be found and repaired. A syntax check that ran a
+  full 500-unit audit because the check was written as an import.
+None of these produced a wrong record — every one was caught. **The
+rate is the signal, not the severity.** Three in one session is the
+point to hand off, not the point to concentrate harder.
+
+**What is NOT evidence of it:** the three discarded detectors — the
+16-flag prose regex, the token-derived contrast pairs, the
+rejection-reason classifier. Those failed for a different and more
+correctable reason: each was tested against the case it was built for
+rather than against the population. That is rule 20's territory, and
+a fresh session will make the same error unless it asks the question.
+
 **THE STANDARDS DO NOT CHANGE.** The scope rule, rule 18, the ledger,
 the gate, the audits, the close plan — all of it stands exactly as
 written. What changed is waiting for a yes that was already given.
@@ -760,8 +811,32 @@ written. What changed is waiting for a yes that was already given.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research). **Batches 01–60 are
+- **Current phase**: Phase 2 (creator research). **Batches 01–63 are
   written, gated, validated and committed.**
+- **RESUME HERE (handed off at batch 63, mid-close).** 259 creators,
+  355 mappings. **121 of 197 categories at depth 2, 63 at one, 13
+  empty.** The close plan is computed — run
+  `node scripts/coverage-report.mjs` and read the PHASE 2 CLOSE block;
+  do not work from any list written in prose, including this one.
+  At batch 63 it stood at **33 funded categories, 37 mappings**, headed
+  by `ai-fundamentals`, `habit-formation`, `confidence-building`,
+  `ui-ux-design`, `attachment-styles`. Three of the funded set are at
+  zero and need two each: `real-estate-investing`, `insurance-basics`,
+  `operations-and-process`, `making-friends-as-an-adult`.
+  **The only measured rate is 2.36 creators/batch.** Batch 63 produced
+  seven, which is not a new rate — three pace projections have already
+  been falsified here and every one of them generalised from a good
+  run. Do not project.
+  **Before Phase 3 begins, stop and report** (trigger 5 of the working
+  agreement) with the final Phase 2 state, the ledger, the coverage
+  report, remaining gaps, and an honest read on whether the dataset is
+  ready to build on.
+  **Still owed at the close of Phase 2**: rotate the YouTube API key.
+- **Standing checks to run before any release**: `validate.mjs`,
+  `validate.mjs --final`, `check-secrets.mjs`, `audit-status.mjs`
+  (status drift *and* handle aliases), `audit-catalogue.mjs`,
+  `audit-stale-channel.mjs`, `audit-unread-fields.mjs`,
+  `check-contrast.mjs`, `build-data.mjs`.
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
 - **PHASE 2 CLOSES ON A TARGETED PLAN, NOT UNIFORM COVERAGE.** The owner's
   decision at batch 47, after the numbers were laid out both ways.
