@@ -162,6 +162,11 @@
       "why": "Aswath Damodaran",
       "at": "dataset"
     },
+    "@attachmentadam": {
+      "status": "rejected",
+      "why": "39 of 48 uploads under two minutes, median 1m, and the long-form is hooky gendered relationship content (\"7 Brutal Truths Your Husband Won't Tell You\")",
+      "at": "batch 53"
+    },
     "@audreycoyne": {
       "status": "listed",
       "why": "Audrey Coyne",
@@ -497,6 +502,11 @@
       "why": "Dr. Spencer Nadolsky",
       "at": "dataset"
     },
+    "@dropshipunlocked": {
+      "status": "rejected",
+      "why": "probed for ecommerce; dropshipping course funnel",
+      "at": "batch 53"
+    },
     "@DrSameerIslamMD": {
       "status": "collision",
       "why": "1 upload",
@@ -585,6 +595,11 @@
     "@foldingideas": {
       "status": "listed",
       "why": "Folding Ideas (Dan Olson)",
+      "at": "dataset"
+    },
+    "@freecodecamp": {
+      "status": "listed",
+      "why": "freeCodeCamp.org",
       "at": "dataset"
     },
     "@gamersnexus": {
@@ -781,6 +796,11 @@
       "status": "listed",
       "why": "Jack Herrington",
       "at": "dataset"
+    },
+    "@jimmyonrelationships": {
+      "status": "rejected",
+      "why": "probed for attachment-styles; relationship-coaching content rather than the attachment literature the category is named for, and both incumbents already cover that ground",
+      "at": "batch 53"
     },
     "@jonloomer": {
       "status": "listed",
@@ -1002,6 +1022,11 @@
       "why": "NeetCode",
       "at": "dataset"
     },
+    "@negotiateanythingaudio": {
+      "status": "rejected",
+      "why": "50 of 50 uploads over 20m and a 67m median, but the show has drifted to general soft-skills interviewing — hormones, fear, belonging — with negotiation as an occasional topic rather than the subject",
+      "at": "batch 53"
+    },
     "@negotiationmastery": {
       "status": "listed",
       "why": "Chris Voss & The Black Swan Group",
@@ -1210,6 +1235,11 @@
     "@refugeingrief": {
       "status": "listed",
       "why": "Megan Devine",
+      "at": "dataset"
+    },
+    "@religionforbreakfast": {
+      "status": "listed",
+      "why": "ReligionForBreakfast (Dr. Andrew Henry)",
       "at": "dataset"
     },
     "@rexkrueger": {
@@ -1472,6 +1502,11 @@
       "why": "Dr. Will Bulsiewicz, The Gut Health MD",
       "at": "dataset"
     },
+    "@theknowingmind": {
+      "status": "rejected",
+      "why": "probed for habit-formation; 3,954 uploads on a sub-100k channel is a volume operation, not a teaching catalogue",
+      "at": "batch 53"
+    },
     "@thelaststitch": {
       "status": "rejected",
       "why": "strong and credentialed (author of four named sewing books, knits and denim specialist) but Made to Sew matched the fit-and-construction blurb more directly. Reconsider first if sewing-and-mending ever goes to three",
@@ -1491,6 +1526,11 @@
       "status": "rejected",
       "why": "guided-audio library that duplicates what the category already has, with no situational indexing to distinguish it",
       "at": "batch 44"
+    },
+    "@theminimalmom": {
+      "status": "listed",
+      "why": "The Minimal Mom (Dawn Madsen)",
+      "at": "dataset"
     },
     "@themoderncoder": {
       "status": "listed",
@@ -1701,6 +1741,11 @@
       "status": "rejected",
       "why": "a monastic teacher with 2,257 uploads whose recent catalogue is a weekly two-hour Q&A livestream — same refusal as Plum Village, an undifferentiated stream archive with no entry point",
       "at": "batch 44"
+    },
+    "@zikanalytics": {
+      "status": "rejected",
+      "why": "probed for ecommerce; reselling-software vendor channel",
+      "at": "batch 53"
     }
   }
 }

@@ -1,0 +1,183 @@
+[
+  {
+    "id": "theminimalmom",
+    "name": "The Minimal Mom (Dawn Madsen)",
+    "handle": "@theminimalmom",
+    "channelUrl": "https://www.youtube.com/@theminimalmom",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "500k-1M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Decluttering by owning less rather than storing better — the opposite argument to organising, made by someone doing it in a house with four children.",
+    "longDescription": "{{longCountWords|cap}} of the {{scannedWords}} most recent uploads run over twenty minutes, several past half an hour, though the median is {{medianPhrase}} because the channel also posts heavily in short form. The long pieces are where the method is: a thirty-five-minute treatment of the decluttering approach she rates highest, twenty-two minutes on getting started when motivation is the actual obstacle, and a piece on why owning less removes the need for storage rather than improving it. The premise is stated plainly and is worth knowing before you watch — she thinks most organising is managing a problem that should be removed. That is a real disagreement with the other creator here, not a variation, and the two together give you both sides of it.",
+    "notFor": "Anyone who wants to keep their things and arrange them better — that is the opposing view, and this channel argues against it. The framing throughout is a family home in the American Midwest, and a lot of the catalogue is short-form.",
+    "formatTags": [
+      "tutorial",
+      "vlog",
+      "shorts"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 4,
+      "energy": 3,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course",
+      "strong-ideological-frame"
+    ],
+    "categories": [
+      {
+        "id": "decluttering-and-organizing",
+        "strength": "primary",
+        "why": "The reduction argument against the organising argument the category already has — a genuine disagreement about whether the answer is fewer things or better systems.",
+        "evidence": "35 minutes on the decluttering method she rates above the rest, 22 on starting when motivation is the obstacle, 22 on Japanese space-saving approaches, and 21 on why owning less makes storage unnecessary.",
+        "entryVideo": {
+          "title": "Desperate for a Decluttered House? The most underrated decluttering method explained",
+          "videoId": "viasLXfN3K4",
+          "whyThisOne": "Thirty-five minutes on one method rather than a list of tips, and it states the underlying position clearly enough that you can decide whether you agree before spending more time.",
+          "durationMin": 35
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "She sells a decluttering course and the position is ideological — minimalism as the answer, argued rather than tested. Most uploads by count are short-form; the method is in a handful of long videos.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 64,
+      "longPct": 34,
+      "medianMin": 1,
+      "videoCount": 906,
+      "at": "2026-09"
+    },
+    "entity": "individual"
+  },
+  {
+    "id": "freecodecamp",
+    "name": "freeCodeCamp.org",
+    "handle": "@freecodecamp",
+    "channelUrl": "https://www.youtube.com/@freecodecamp",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "5M-20M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A registered charity publishing full-length courses free — including a complete command-line course, with nothing sold anywhere in it.",
+    "longDescription": "A 501(c)(3) charity that publishes complete courses rather than videos: {{longCountWords|cap}} of the {{scannedWords}} most recent uploads run over twenty minutes and the median is {{medianPhrase}}, with individual courses running to two and three hours. For this category the relevant one is a forty-five-minute command-line course for beginners, taken from nothing to a working understanding of the shell in a single sitting, alongside a much longer IT fundamentals course that covers the terminal among networking, hardware and security. The distinguishing feature is what is absent: no sponsor read, no upsell, no membership tier. Courses are contributed by different instructors, so the teaching voice changes between them and the quality is not uniform — but the format is consistently a course, not a clip.",
+    "notFor": "Anyone who wants a personality to follow or a curated path — this is a library of donated courses with different instructors and no through-line, and you have to know what you are looking for. Nothing here is short.",
+    "formatTags": [
+      "course",
+      "long-form",
+      "tutorial"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 1,
+      "selfPromotion": 0,
+      "depth": 4
+    },
+    "signals": [
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "linux-basics",
+        "strength": "primary",
+        "why": "A complete free course against an entertaining sponsor-funded channel — the same subject with none of the commercial pressure, and structured start to finish rather than topic by topic.",
+        "evidence": "A 45-minute command-line course for beginners taken end to end, and a 13-hour IT fundamentals course covering the terminal alongside networking and security. Nothing across the catalogue is sold.",
+        "entryVideo": {
+          "title": "Command Line Basics for Beginners - Full Course",
+          "videoId": "mABpAI-pCw0",
+          "whyThisOne": "The whole subject in one sitting with no prerequisites, which is exactly what a beginner needs and what a topic-by-topic channel cannot give.",
+          "durationMin": 45
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Courses are contributed by many instructors, so quality varies between them and the teaching style changes without warning. The catalogue is enormous and unstructured — arrive with a course title in mind.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 30,
+      "longPct": 58,
+      "medianMin": 60,
+      "videoCount": 2320,
+      "at": "2026-09"
+    },
+    "entity": "institution"
+  },
+  {
+    "id": "religionforbreakfast",
+    "name": "ReligionForBreakfast (Dr. Andrew Henry)",
+    "handle": "@religionforbreakfast",
+    "channelUrl": "https://www.youtube.com/@religionforbreakfast",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "The academic study of religion applied to Buddhist and Daoist traditions — what the texts and the archaeology actually show, rather than what the philosophy is said to teach.",
+    "longDescription": "The channel states its subject as the academic, nonsectarian study of religion, approached anthropologically and archaeologically, and explicitly endorses no tradition. {{longCountWords|cap}} of the {{scannedWords}} most recent uploads run over twenty minutes and the median is {{medianPhrase}}. Twenty-one videos in the last two hundred cover eastern traditions directly: what Zen Buddhism actually is as a school rather than as a mood, how Daoism describes becoming immortal and what that meant to the people practising it, the Jade Emperor's position in the Daoist pantheon, whether Confucius has living descendants, Buddhists in the Roman Empire. The value here is corrective — these traditions reach English-speaking audiences mostly as self-help, and this is what the scholarship says instead.",
+    "notFor": "Anyone looking for practice or for philosophy to live by. This is religious studies: historical, textual, deliberately uncommitted, and it will not tell you what to do with any of it. The channel also ranges far beyond eastern traditions.",
+    "formatTags": [
+      "video-essay",
+      "long-form",
+      "documentary"
+    ],
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 4,
+      "practical": 1,
+      "energy": 2,
+      "selfPromotion": 1,
+      "depth": 4
+    },
+    "signals": [
+      "credentialed",
+      "cites-research"
+    ],
+    "categories": [
+      {
+        "id": "eastern-philosophy",
+        "strength": "primary",
+        "why": "The scholarly account against the essayist's — these traditions reach most readers as self-help, and this is what the texts and the archaeology support.",
+        "evidence": "26 minutes on what Zen Buddhism is as a school, 28 on Daoist immortality practice, 20 on the Jade Emperor, 19 on Buddhists in the Roman Empire, and 19 on Confucian lineage — 21 eastern-tradition videos across the last 200 uploads.",
+        "entryVideo": {
+          "title": "What is Zen Buddhism?",
+          "videoId": "NZBDW8l4wIU",
+          "whyThisOne": "The tradition most distorted in transmission to English, explained as what it historically is — which resets most of what a Western reader has absorbed about it.",
+          "durationMin": 26
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Eastern traditions are one strand of a channel that covers religion generally, so you will be searching rather than browsing. Academic distance is the point and also the limit: it describes practice without teaching it.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 6,
+      "longPct": 62,
+      "medianMin": 23,
+      "videoCount": 370,
+      "at": "2026-09"
+    },
+    "entity": "individual"
+  }
+]

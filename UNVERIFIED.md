@@ -2202,3 +2202,43 @@ Grad Coach separates cleanly from the incumbent: Andy Stapleton teaches
 the craft of academic prose, Grad Coach teaches the shape of a research
 project — scoping a question so it can be finished, when methodology is
 settled enough to start writing. The months are lost in the second one.
+
+## Batch 53 — three categories, three different kinds of second voice
+
+The Minimal Mom (`decluttering-and-organizing`, 1→2), freeCodeCamp
+(`linux-basics`, 1→2) and ReligionForBreakfast (`eastern-philosophy`,
+1→2). **108 of 197 at target with active creators. 250 creators.**
+
+Each is a second voice of a different kind, which is worth noting
+because "a second creator" has meant something different every time.
+
+**The Minimal Mom disagrees with the incumbent.** Clutterbug organises
+what you own; The Minimal Mom argues most organising is managing a
+problem that should be removed instead. That is a real opposition
+rather than a variation, and both records now say so, so a visitor gets
+the argument rather than two people agreeing.
+
+**freeCodeCamp differs commercially.** NetworkChuck is entertaining and
+sponsor-funded; freeCodeCamp is a 501(c)(3) with no sponsor read, no
+upsell and no membership tier anywhere in the catalogue — the only
+creator in this dataset with a `selfPromotion` of zero. Same subject,
+none of the commercial pressure, and a complete forty-five-minute
+course instead of topic-by-topic videos.
+
+**ReligionForBreakfast differs in method.** Einzelgänger reads eastern
+philosophy as an essayist; this is religious studies — textual,
+archaeological, explicitly endorsing nothing. These traditions reach
+English-speaking audiences mostly as self-help, and the corrective is
+the point. **Mapped only after verifying it**: the channel ranges far
+beyond eastern religion, so before writing anything I counted 21
+eastern-tradition videos across the last 200 uploads rather than
+mapping a broad channel on two search hits.
+
+**Six rejections, and two categories that would not fill.**
+`ecommerce` returned dropshipping funnels and a reselling-software
+vendor; `resume-writing` returned nothing usable at all. Both are the
+business-buyer limit — where the audience is a business, the long-form
+is sales. `habit-formation` and `negotiation` also came up empty:
+Negotiate Anything has a 67-minute median and 50 of 50 uploads over
+twenty minutes, and has drifted into general soft-skills interviewing
+with negotiation as an occasional topic.
