@@ -2003,3 +2003,59 @@ so far.
 The other eleven empty categories still have no gap written, because I
 have not searched them and a gap nobody tried to disprove is
 indistinguishable from not having looked.
+
+## Batch 49 — zero creators, and what that says about the plan
+
+No creators listed. Seven candidates evaluated across the three
+highest-appetite thin categories and none was listable. That is the
+first empty batch, and the reason matters more than the result.
+
+**`exam-preparation` (1.5M median).** Discovery returned Justin Sung
+and Exam Study Expert — both already here — then Ali Abdaal's
+productivity-business channel and a memory-technique channel belonging
+to a different category. Recall added Med School Insiders, which is
+medical-career advice, and studyquill, which the status check caught as
+an archive with a last upload in March 2022 before any research was
+spent on it.
+
+**`journaling` (1.2M median).** AmandaRachLee is the largest channel in
+the subject and is journaling as craft: planner setups, sticker
+collections, cyanotype. The category blurb distinguishes journaling
+that produces clarity or a decision from filling pages, and this is
+precisely the second thing. I then probed the end I had *not* probed —
+expressive writing and therapeutic journaling — and got trauma-recovery
+podcasts and self-help rather than anyone teaching the practice.
+
+**`deep-work-and-focus` (1.1M median).** The search returned ambient
+study music, motivational channels, a documentary strand, and two
+creators already in the dataset. Limit 6 exactly: a life-skill topic
+with no profession behind it returns motivation.
+
+### The plan assumed two things aligned that do not
+
+**Appetite ranks where a second creator would be most valuable. It does
+not rank where one exists.** The close plan sorted the thin categories
+by measured demand and I took that ordering as a work queue, which
+quietly assumed supply follows demand. Three of the top five say it
+does not: the most-watched thin subjects here are ones where the
+audience is enormous and the supply is aesthetics, motivation, or
+already listed.
+
+That is not an argument against the plan — the ordering is still the
+right one, because a second creator in `singing` is worth more than a
+second in `remote-work`. It is an argument against reading the ordering
+as a schedule. **Some funded categories will not fill, and the honest
+close will leave high-appetite categories at one creator with a
+documented reason rather than a weak second.**
+
+I am not adjusting the plan on one batch. What I would propose after
+two or three more: for any funded category that resists two rounds of
+probing, write the documented gap and move the budget down the list
+rather than lowering the bar on the category itself.
+
+### Also done
+
+The three hand-filled `catalogue` blocks from batch 48 were overwritten
+by `audit-catalogue` and the tool agreed with the transcription
+exactly — 50/20/7, 70/16/1, 58/2/2. The `source` marker is gone and the
+field is tool-owned again. Zero drift across all 240 records.

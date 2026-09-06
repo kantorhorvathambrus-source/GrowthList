@@ -54,8 +54,7 @@
       "longPct": 20,
       "medianMin": 7,
       "videoCount": 512,
-      "at": "2026-09",
-      "source": "evidence.mjs — daily API quota was exhausted before audit-catalogue could run; the next run overwrites this"
+      "at": "2026-09"
     }
   },
   {
@@ -114,8 +113,7 @@
       "longPct": 16,
       "medianMin": 1,
       "videoCount": 428,
-      "at": "2026-09",
-      "source": "evidence.mjs — daily API quota was exhausted before audit-catalogue could run; the next run overwrites this"
+      "at": "2026-09"
     }
   },
   {
@@ -172,8 +170,7 @@
       "longPct": 2,
       "medianMin": 2,
       "videoCount": 443,
-      "at": "2026-09",
-      "source": "evidence.mjs — daily API quota was exhausted before audit-catalogue could run; the next run overwrites this"
+      "at": "2026-09"
     }
   }
 ]

@@ -65,10 +65,10 @@
     "caveats": "The institute sells workshops, therapist certification and consumer products built on this research, so the channel is also a funnel. The research itself is well known but not uncontested — the widely repeated prediction accuracy figures come from small samples and have been criticised for being fitted rather than predictive.",
     "catalogue": {
       "scanned": 50,
-      "shortPct": 80,
+      "shortPct": 82,
       "longPct": 6,
       "medianMin": 1,
-      "videoCount": 557,
+      "videoCount": 558,
       "at": "2026-09"
     }
   },
@@ -224,7 +224,7 @@
       "shortPct": 72,
       "longPct": 16,
       "medianMin": 1,
-      "videoCount": 925,
+      "videoCount": 920,
       "at": "2026-09"
     },
     "entity": "individual"
@@ -727,7 +727,7 @@
       "shortPct": 6,
       "longPct": 56,
       "medianMin": 27,
-      "videoCount": 5852,
+      "videoCount": 5839,
       "at": "2026-09"
     },
     "entity": "individual"

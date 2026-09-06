@@ -358,9 +358,9 @@
     "catalogue": {
       "scanned": 50,
       "shortPct": 2,
-      "longPct": 34,
+      "longPct": 32,
       "medianMin": 6,
-      "videoCount": 3262,
+      "videoCount": 3263,
       "at": "2026-09"
     }
   },
@@ -657,10 +657,10 @@
     "caveats": "The four-type framework is her own branded model, not a validated typology, and it underpins the books, quizzes and courses she sells. Treat it as a useful way to notice a mismatch rather than as a fact about you.",
     "catalogue": {
       "scanned": 49,
-      "shortPct": 65,
+      "shortPct": 67,
       "longPct": 24,
       "medianMin": 1,
-      "videoCount": 1599,
+      "videoCount": 1601,
       "at": "2026-09"
     },
     "entity": "individual"

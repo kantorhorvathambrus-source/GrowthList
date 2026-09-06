@@ -17,6 +17,11 @@
       "why": "staffing agency channel returned by a hiring-topic search — recruiting-vendor marketing, not teaching",
       "at": "batch 46"
     },
+    "@AmandaRachLee": {
+      "status": "rejected",
+      "why": "journaling as craft and aesthetics — planner setups, sticker collections, cyanotype. The category blurb distinguishes journaling that produces clarity or a decision from filling pages, and this is the second thing",
+      "at": "batch 49"
+    },
     "@AmerGastroAssn": {
       "status": "rejected",
       "why": "professional-association channel — career and leadership content for gastroenterologists, not patients",
@@ -47,10 +52,20 @@
       "why": "economic and current-affairs commentary (Meta, Peter Thiel, oil prices) rather than a personal-finance skill; no money category blurb fits it",
       "at": "batch 47"
     },
+    "@MedSchoolInsiders": {
+      "status": "rejected",
+      "why": "medical-career advice (specialty comparisons, admissions, residency) rather than exam technique; the study-method content is not in the recent window",
+      "at": "batch 49"
+    },
     "@NathanielDrew": {
       "status": "rejected",
       "why": "probed for journaling; an intentional-living video essayist rather than a channel teaching the practice",
       "at": "batch 48"
+    },
+    "@NirEyal": {
+      "status": "collision",
+      "why": "0 uploads",
+      "at": "batch 49"
     },
     "@Physiotutors": {
       "status": "rejected",
@@ -71,6 +86,11 @@
       "status": "collision",
       "why": "category-term name, 2 uploads — not Megan Rossi's channel",
       "at": "batch 43"
+    },
+    "@UnJadedJade": {
+      "status": "rejected",
+      "why": "reputation drift — known for study and exam content, now education-policy essays and PhD life vlogs (Reggio Emilia pre-schools, mid-year goal resets)",
+      "at": "batch 49"
     },
     "@UnifiedMindfulness": {
       "status": "rejected",
@@ -162,6 +182,11 @@
       "why": "Alex Cattoni",
       "at": "dataset"
     },
+    "@aliabdaal": {
+      "status": "rejected",
+      "why": "surfaced by exam-preparation discovery; a 5M-20M productivity and business channel, not exam technique",
+      "at": "batch 49"
+    },
     "@andrejkarpathy": {
       "status": "listed",
       "why": "Andrej Karpathy",
@@ -176,6 +201,11 @@
       "status": "rejected",
       "why": "strong long-form on job search and interviewing (60-70m livestreams) but job-interviewing is already at 2, and the recent window shows no salary-negotiation material; 34 of 46 uploads under two minutes",
       "at": "batch 47"
+    },
+    "@anthonymetiviermmm": {
+      "status": "rejected",
+      "why": "Magnetic Memory Method — memory techniques rather than exam preparation, and memory-techniques is already served",
+      "at": "batch 49"
     },
     "@aragusea": {
       "status": "listed",
@@ -1271,6 +1301,11 @@
       "status": "listed",
       "why": "StudioBinder",
       "at": "dataset"
+    },
+    "@studyquill": {
+      "status": "rejected",
+      "why": "ARCHIVE — last upload 2022-03-18, and the catalogue is student-life vlogs. The status check caught it before any research was spent",
+      "at": "batch 49"
     },
     "@stumpynubs": {
       "status": "listed",
