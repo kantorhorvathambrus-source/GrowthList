@@ -173,6 +173,26 @@ if (existsSync(highStakesPath)) {
   }
 }
 
+// DOCUMENTED GAPS SHIP TOO. They were written, recorded and reported for
+// forty-eight batches and never reached a reader: an empty category rendered
+// "No creators are listed" and nothing else, while the reason sat in
+// thin-gaps.json. Documenting a gap and showing it are different things, and
+// only the second is what an empty shelf needs. Same split as high-stakes —
+// `reason` is research prose full of handles and upload counts, `visitorNote`
+// is the sentence a reader gets.
+const gapsPath = join(DATA, 'thin-gaps.json');
+if (existsSync(gapsPath)) {
+  const gaps = readJson(gapsPath).gaps ?? {};
+  for (const [id, entry] of Object.entries(gaps)) {
+    if (subjectNotesOut.notes[id]) continue; // a high-stakes note already fills the slot
+    if (!entry?.visitorNote) {
+      console.error(`WARNING: documented gap "${id}" has no visitorNote and no other note — its page will show a blank shelf`);
+      continue;
+    }
+    subjectNotesOut.notes[id] = entry.visitorNote;
+  }
+}
+
 // Search index: what the search box matches against.
 const searchOut = {
   categories: categories.map((c) => ({

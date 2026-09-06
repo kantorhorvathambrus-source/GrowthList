@@ -70,7 +70,80 @@
         ],
         "outcome": "survived",
         "whatWasTried": "Written only after the marketing and first-aid corrections, so all four sub-areas were probed before the claim was made rather than after. The behavioural-science end does exist — Nudgestock, Ogilvy's behavioural science festival, has 239 uploads with 20 of 49 over twenty minutes and speakers including Charles Spence and Roger Martin. It is NOT mapped here: behaviour change and creativity are adjacent to conversion optimisation, not the same subject, and mapping it would be the credentialed halo effect in a new dress. Recorded as a near-miss rather than used."
-      }
+      },
+      "visitorNote": "We looked and did not list anyone. The consultancies have either no channel or an empty one, the practitioners we searched for do not publish on video, and the two testing-tool vendors with real catalogues publish webinars about their own products rather than teaching the discipline."
+    },
+    "hiring-and-recruiting": {
+      "count": 0,
+      "gapCause": "absent-supply",
+      "countUnderLooserStandard": 2,
+      "reason": "Probed by topic search for long-form video on hiring, interviewing candidates and recruiting process. What came back was the industry selling to itself: 4 Corner Resources is a staffing agency, Spark Hire is recruiting software, Outmatch/Harver is an assessment platform. The nearest thing to teaching was general business channels covering hiring as one topic among many.",
+      "attribution": "ABSENT SUPPLY, for a structural reason worth naming: in this subject the person who would teach is paid by the employer, so their video is a sales asset. countUnderLooserStandard is 2 because a looser standard would admit two vendor channels whose material is competent and entirely shaped by what they sell — which is exactly the trade this project refuses.",
+      "rule18": {
+        "testedAt": "batch 49",
+        "subAreas": [
+          "recruiting vendors and agencies",
+          "general business channels",
+          "employment lawyers and HR compliance",
+          "academic industrial-organisational psychology",
+          "hiring managers publishing independently"
+        ],
+        "probed": [
+          "recruiting vendors and agencies",
+          "general business channels"
+        ],
+        "outcome": "survived",
+        "whatWasTried": "One topic search on the discipline's own vocabulary. THE CLAIM IS NARROW AND SHOULD BE READ THAT WAY: two of five plausible ends were probed. The I-O psychology end and independent hiring managers are unprobed, and this project's record is that an unprobed end is where the finding usually breaks — six times so far."
+      },
+      "visitorNote": "We looked and did not list anyone. The long-form video on hiring is almost entirely made by the people selling hiring services — staffing agencies, recruiting software, assessment vendors — and we would rather leave this empty than hand you a sales asset. Two ends we have not searched yet: academic work on selection, and hiring managers publishing on their own account."
+    },
+    "career-change": {
+      "count": 0,
+      "gapCause": "mixed",
+      "countUnderLooserStandard": 3,
+      "reason": "Probed by topic search for long-form on changing careers, career transitions and switching industries. The results were media and motivation rather than method: TEDx, Forbes, Udacity, Mel Robbins. Work It Daily was evaluated properly and rejected — genuinely substantial, fourteen of forty-nine uploads over twenty minutes, but its centre is job search and LinkedIn profiles, and both job-search categories here are already served.",
+      "attribution": "MIXED, and mostly our criteria. Supply exists in volume; almost all of it is encouragement, and the part that is method belongs to job search rather than to deciding what to move toward. The category blurb asks specifically about testing a direction before committing, and nothing found addresses that. countUnderLooserStandard is 3 if inspiration counts as teaching.",
+      "rule18": {
+        "testedAt": "batch 49",
+        "subAreas": [
+          "career coaches and job-search channels",
+          "media and conference talks",
+          "people who documented their own transition at length",
+          "occupational psychologists",
+          "industry-specific \"how I moved into X\" channels"
+        ],
+        "probed": [
+          "career coaches and job-search channels",
+          "media and conference talks"
+        ],
+        "outcome": "survived",
+        "whatWasTried": "One topic search plus a full evidence pass on the strongest candidate it returned. Two of five ends probed. The last two — people who documented a transition, and industry-specific accounts — are the ones most likely to contain what the blurb actually asks for, and they are unprobed."
+      },
+      "visitorNote": "We looked and did not list anyone. There is a great deal of video about changing careers and almost all of it is encouragement; the part that is method turns out to be job-search advice, which is a different skill and is covered elsewhere here. What this page is meant to be about — testing a direction before you commit to it — we could not find taught. Not yet searched: people who documented their own transition at length."
+    },
+    "legal-for-founders": {
+      "count": 0,
+      "gapCause": "mixed",
+      "countUnderLooserStandard": 1,
+      "reason": "Probed by topic search for long-form on startup legal basics, incorporation, equity and vesting. The only substantial catalogue was LegalVision, a law firm's own channel. Everything else was thin: StartHub 89 uploads, an individual lawyer at 23, one handle at 5 below the credible floor.",
+      "attribution": "MIXED. Supply exists but it is nearly all firms marketing to founders, and legal content carries a problem no other category here has to the same degree: it is jurisdiction-bound. A firm publishes for the jurisdiction it sells in, so its material is both an advertisement and correct for only some readers. countUnderLooserStandard is 1 — LegalVision would be listable if a conflict and a jurisdiction caveat were judged sufficient, and rule 16 already exists for the second half of that.",
+      "rule18": {
+        "testedAt": "batch 49",
+        "subAreas": [
+          "law firms publishing to founders",
+          "individual lawyers with independent channels",
+          "accelerators and startup programmes",
+          "bar associations and public legal-education bodies",
+          "academic company-law teaching"
+        ],
+        "probed": [
+          "law firms publishing to founders",
+          "individual lawyers with independent channels"
+        ],
+        "outcome": "survived",
+        "whatWasTried": "One topic search covering firms and individuals. Two of five ends probed. Accelerator material — Y Combinator is already in this dataset and publishes on incorporation and equity — is unprobed for this category specifically and is the most likely place this gap breaks."
+      },
+      "visitorNote": "We looked and did not list anyone. Nearly all of it is law firms publishing to attract clients, and legal material has a problem the rest of this site does not: it is only correct in one country. A firm's video is both an advertisement and jurisdiction-specific, and we were not willing to hand you that without being able to say it applies where you are."
     }
   },
   "_schema": "Each entry: reason (what was searched and found), gapCause (absent-supply | our-criteria | mixed), countUnderLooserStandard, challenged (any reasoning contested and re-examined), and RULE 18 — rule18: { testedAt, subAreas[], probed[], outcome: survived|falsified, whatWasTried }. An entry without a rule18 block is UNFINISHED, not documented: a gap nobody tried to disprove is indistinguishable from a search that stopped early. probed must cover every sub-area listed, because the failure mode caught twice in this project is a finding from one end of a domain applied to ends never searched. A falsified finding keeps a `corrected` field stating what the entry originally claimed and why that was wrong, rather than being quietly rewritten — see first-aid."

@@ -121,8 +121,17 @@ const rows = [];
 for (const f of files) {
   const list = JSON.parse(readFileSync(join(DIR, f), 'utf8'));
   for (const rec of list) {
+    // Same distinction as audit-catalogue: a failed call is not an absent
+    // channel. Here the consequence is milder — an empty description flags the
+    // record rather than mislabelling it — but a run during an outage would
+    // silently clear entity values that were correctly derived before.
     let ch;
-    try { ch = await getChannelByHandle(rec.handle); } catch { ch = null; }
+    try {
+      ch = await getChannelByHandle(rec.handle);
+    } catch (err) {
+      console.error(`  API ERROR on ${rec.handle} — left untouched: ${String(err.message).slice(0, 80)}`);
+      continue;
+    }
     const desc = ch?.description ?? '';
     const [entity, why, confident] = classify(rec, desc);
 

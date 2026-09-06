@@ -733,15 +733,28 @@ this section first to know exactly where to resume.)*
   The order is **computed, not remembered** — `scripts/lib/close-plan.mjs`,
   printed by the coverage report, shortening on its own as creators land.
   A plan in prose is a stored fact that stops being queried.
-- **DAILY API QUOTA IS A REAL CONSTRAINT NOW.** Measuring 59 categories
-  cost ~6,000 units and exhausted the day: `search.list` began returning
-  429 mid-batch and `audit-catalogue` hit QUOTA EXCEEDED. Two
-  consequences worth knowing. **The build refuses to ship an unfilled
-  placeholder** — it fatals with the field and the placeholder names
-  rather than emitting `{{medianPhrase}}` to a visitor, which is the
-  guard working. And **`@ByteByteGo` no longer resolves**, reported by
-  `audit-catalogue` before it stopped; unverified and outstanding.
-  Plan a demand sweep and a batch's audits on different days.
+- **`search.list` HAS ITS OWN LIMIT, AND IT OUTLIVES THE DAILY RESET.**
+  The 59-category demand sweep made ~60 search calls and tripped it.
+  The next day, with the unit quota reset and `channels.list` working
+  normally, **every** `search` call still returned 429 — a bare
+  `q=guitar lesson` included. So `discover.mjs`, `topic-demand.mjs` and
+  `resolve-creator`'s fallback path are unavailable for longer than a
+  day after a sweep, while `evidence.mjs`, `check-handles.mjs`,
+  `gate-check.mjs` and both audits keep working. **Never spend a
+  research day's search budget on a measurement sweep**, and expect a
+  sweep to cost the following day's discovery too.
+- **A THROWN ERROR IS NOT A MISSING CHANNEL.** `audit-catalogue` and
+  `derive-entity` both did `catch { ch = null }`, which turns any API
+  failure into "this handle does not resolve". When the quota ran out
+  mid-run it reported **`@ByteByteGo` as gone — a channel with 168
+  uploads that resolves fine** — and with the `unresolvedAt` marker
+  added the same day it would have *written* that into the record.
+  A transient failure becoming a durable confident wrong value, inside
+  the audit built to catch exactly that. Both now let the error through:
+  the record is left untouched, the failure is named, and the run
+  reports how many could not be checked. **`getChannelByHandle` returns
+  null for a handle that does not exist and throws when the call fails;
+  only the first is a finding.**
 - **`data/topic-demand.json` IS THE ORDERING INPUT, AND IT IS NOT
   TRAFFIC.** Median view count of the fifty most relevant YouTube videos
   for each category's name and aliases. This site has no analytics, the
@@ -757,6 +770,19 @@ this section first to know exactly where to resume.)*
   taxonomy — `singing` 3.1M, `exam-preparation` 1.5M, `journaling` 1.2M.
   Eleven categories fell off the budget. Ranking a spend on a
   41-of-100 sample would have been wrong in both directions.
+- **A DOCUMENTED GAP THAT NEVER REACHES A READER IS NOT DOCUMENTED.**
+  Found while writing the first three gaps of the close plan: gaps had
+  been written, recorded and reported for forty-eight batches, and an
+  empty category rendered *"No creators are listed"* and nothing else.
+  The reason sat in `thin-gaps.json`, visible to the coverage report and
+  to nobody else. **Documenting a gap and showing it are different
+  things, and only the second is what an empty shelf needs.**
+  Fixed with the split `high-stakes.json` already used: `reason` stays
+  research prose full of handles and upload counts, `visitorNote` is the
+  sentence a reader gets, and `build-data.mjs` ships it into
+  `subject-notes.json` — warning when a gap has no note and no other
+  note filling the slot. Four gaps now render; `addiction-recovery` and
+  `first-aid` already had high-stakes notes in that slot.
 - **THIN IS A DECISION AND THE SITE SAYS SO.** A category at one creator
   renders a line explaining that depth went to the most-watched thin
   skills first and that a second creator is listed only when one is

@@ -1936,3 +1936,70 @@ before quota stopped the run. A creator in the dataset since batch 07
 whose handle has gone. Unverified and outstanding — it needs a
 `resolve-creator` pass tomorrow, and it is the first live instance of
 the case `audit-status` was made to exit non-zero for.
+
+## The day the quota did not come back
+
+No batch. `search.list` is still returning 429 on every query — a bare
+`q=guitar lesson` included — while `channels.list` answers normally, so
+the 59-category demand sweep tripped a limit that **outlived the daily
+reset**. And the unit quota itself was nearly spent: `audit-catalogue`
+managed two records before QUOTA EXCEEDED. Batch 49 waits.
+
+Three things got done instead, and the first two are corrections.
+
+### `@ByteByteGo` was never missing — I was
+
+Yesterday I reported it as a creator whose handle had gone. It resolves
+fine: 168 uploads. The finding was an artefact of my own code.
+`audit-catalogue` and `derive-entity` both did `catch { ch = null }`,
+which turns *any* API failure into "this handle does not resolve" — so
+when the quota ran out mid-run, a working channel was reported as
+gone. Worse, the `unresolvedAt` marker I added the same day would have
+**written that into the record**: a transient failure becoming a
+durable confident wrong value, inside the audit built to catch exactly
+that.
+
+Both now let the error through — record untouched, failure named, run
+reports how many it could not check. It proved itself on the first run
+after the fix: one API error on `@askvinh`, logged as unchecked, zero
+false unresolveds.
+
+`audit-catalogue` also crashed out of its loop on quota exhaustion,
+discarding a whole file's writes. It now stops cleanly, keeps what it
+measured, and says where it got to.
+
+### A documented gap that nobody sees is not documented
+
+Writing the first three gaps of the close plan, I checked what a
+visitor actually gets on an empty category page. They get *"No
+creators are listed for this skill yet"* and nothing else. **The gaps
+have been written, recorded and reported for forty-eight batches and
+have never once reached a reader.** The reason sat in `thin-gaps.json`
+where the coverage report could see it and nobody else could.
+
+That is a different failure from the ones in the ledger. Nothing was
+false and nothing was stale — the work was done, and then not
+delivered. Fixed with the split `high-stakes.json` already used:
+`reason` stays research prose, `visitorNote` is the sentence a reader
+gets, and the build ships it, warning if a gap has neither.
+
+`career-change` now says, on its own page, that there is a great deal
+of video on the subject, that almost all of it is encouragement, that
+the part which is method is really job-search advice covered elsewhere,
+and that what the page is *meant* to be about — testing a direction
+before committing — could not be found taught.
+
+### Three gaps written, and they are narrow on purpose
+
+`hiring-and-recruiting`, `career-change` and `legal-for-founders`, each
+with a rule 18 block naming **two of five sub-areas probed**. The
+hiring gap rests on a structural claim worth stating plainly — in that
+subject the person who would teach is paid by the employer, so the
+video is a sales asset — but the industrial-organisational psychology
+end and independent hiring managers are unprobed, and this project's
+record is that the unprobed end is where the finding breaks. Six times
+so far.
+
+The other eleven empty categories still have no gap written, because I
+have not searched them and a gap nobody tried to disprove is
+indistinguishable from not having looked.
