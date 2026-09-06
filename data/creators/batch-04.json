@@ -604,10 +604,10 @@
     "caveats": "Overwhelmingly short-form and heavily motivational. Sells books and courses, and links to textbooks through affiliate storefronts.",
     "catalogue": {
       "scanned": 50,
-      "shortPct": 62,
+      "shortPct": 60,
       "longPct": 2,
       "medianMin": 2,
-      "videoCount": 10413,
+      "videoCount": 10418,
       "at": "2026-09"
     },
     "entity": "individual"
@@ -680,7 +680,7 @@
       "shortPct": 72,
       "longPct": 0,
       "medianMin": 1,
-      "videoCount": 779,
+      "videoCount": 773,
       "at": "2026-09"
     },
     "entity": "individual"

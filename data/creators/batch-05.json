@@ -141,10 +141,10 @@
     "caveats": "Sells coaching and a paid programme. The feed is dominated by short clips cut from streams, and some videos analyse named public figures and cases, which is speculation rather than clinical assessment.",
     "catalogue": {
       "scanned": 50,
-      "shortPct": 84,
+      "shortPct": 86,
       "longPct": 10,
       "medianMin": 1,
-      "videoCount": 3049,
+      "videoCount": 3050,
       "at": "2026-09"
     },
     "entity": "individual"
@@ -407,7 +407,7 @@
       "shortPct": 86,
       "longPct": 0,
       "medianMin": 1,
-      "videoCount": 1517,
+      "videoCount": 1518,
       "at": "2026-09"
     },
     "entity": "individual"

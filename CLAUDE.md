@@ -720,7 +720,7 @@ in `categories.json`-derived output with a computed creator `count`.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research). **Batches 01–47 are
+- **Current phase**: Phase 2 (creator research). **Batches 01–48 are
   written, gated, validated and committed.**
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
 - **PHASE 2 CLOSES ON A TARGETED PLAN, NOT UNIFORM COVERAGE.** The owner's
@@ -733,6 +733,15 @@ this section first to know exactly where to resume.)*
   The order is **computed, not remembered** — `scripts/lib/close-plan.mjs`,
   printed by the coverage report, shortening on its own as creators land.
   A plan in prose is a stored fact that stops being queried.
+- **DAILY API QUOTA IS A REAL CONSTRAINT NOW.** Measuring 59 categories
+  cost ~6,000 units and exhausted the day: `search.list` began returning
+  429 mid-batch and `audit-catalogue` hit QUOTA EXCEEDED. Two
+  consequences worth knowing. **The build refuses to ship an unfilled
+  placeholder** — it fatals with the field and the placeholder names
+  rather than emitting `{{medianPhrase}}` to a visitor, which is the
+  guard working. And **`@ByteByteGo` no longer resolves**, reported by
+  `audit-catalogue` before it stopped; unverified and outstanding.
+  Plan a demand sweep and a batch's audits on different days.
 - **`data/topic-demand.json` IS THE ORDERING INPUT, AND IT IS NOT
   TRAFFIC.** Median view count of the fifty most relevant YouTube videos
   for each category's name and aliases. This site has no analytics, the
@@ -761,7 +770,7 @@ this section first to know exactly where to resume.)*
   creators" over one live channel — the `status` defect reaching
   visitor copy. It now reads `2 creators · 1 quiet`, disclosing the
   dormant one rather than dropping it from the tally.
-- **Creator count: 237 of 400.** Taxonomy 197 and **uncapped** (rule 19)
+- **Creator count: 240 of 400.** Taxonomy 197 and **uncapped** (rule 19)
   — a new category may be added whenever it arrives with 3 creators.
 - **Fitness is complete at 2+ across all 14 categories** (3 at depth 3).
 - **182 of 197 categories populated; 15 empty.** Practical is 13/13.

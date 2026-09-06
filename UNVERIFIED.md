@@ -1887,3 +1887,52 @@ measured 2.27, and the 23-batch target is withdrawn.**
 117 mappings still needed, ≈109 creators, ≈48 batches at the measured
 rate.** No optimistic alternative is offered because there has never
 been evidence for one.
+
+## Batch 48 — the close begins, and the quota ran out
+
+Ramsey Voice Studio (`singing`, 1→2), Howard Wimshurst (`animation`,
+**0 active→1**) and Bloop Animation (`animation`, →2). Three creators.
+**99 of 197 at target with active creators.**
+
+`animation` is the first category filled under the close plan that was
+at zero *active* while showing one listed: Alan Becker Tutorials is an
+archive, so the category had a closed collection of the twelve
+principles and nothing live. It now has the two halves that archive
+assumes — a hand-drawn practitioner on timing and spacing as an actual
+calculation, and a tool channel showing where to click.
+
+**Two rejections on fit rather than quality, which is the harder call.**
+Toniko Pantoja is a working story artist who names his credits —
+Cartoon Network, DreamWorks, Netflix, Warner Bros — with a clean
+eleven-minute median and no shorts problem. His teaching subject is
+**storyboarding**, and this category's blurb is timing, spacing and
+weight. Rejected, and recorded as a strong candidate if a storyboarding
+category ever exists. struthless has twenty-one long-form uploads in
+fifty and exactly one journaling video; one video on a topic is not a
+mapping.
+
+**The measurement bill came due.** Measuring 59 categories cost about
+six thousand units, and the day's quota ran out mid-batch:
+`search.list` started returning 429, so there was no discovery for this
+batch, and `audit-catalogue` died with QUOTA EXCEEDED before it could
+measure the three new records.
+
+Two things fell out of that worth keeping.
+
+**The build refused to ship the placeholders.** With no `catalogue`
+block, `build-data.mjs` fatalled naming the record, the field and each
+unresolved placeholder rather than emitting `{{medianPhrase}}` onto a
+page. That is the mechanism doing exactly what it was built for, on its
+first real failure.
+
+**The catalogue values were filled from today's `evidence.mjs` output**
+— queried this session, not recalled — and each block carries a
+`source` field saying so and saying that the next `audit-catalogue` run
+overwrites it. Hand-writing a derived field is the anti-pattern this
+project keeps finding, so it is marked rather than hidden.
+
+**And `@ByteByteGo` no longer resolves.** `audit-catalogue` reported it
+before quota stopped the run. A creator in the dataset since batch 07
+whose handle has gone. Unverified and outstanding — it needs a
+`resolve-creator` pass tomorrow, and it is the first live instance of
+the case `audit-status` was made to exit non-zero for.

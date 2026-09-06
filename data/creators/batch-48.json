@@ -1,0 +1,179 @@
+[
+  {
+    "id": "ramseyvoicestudio",
+    "name": "Ramsey Voice Studio (Matt Ramsey)",
+    "handle": "@ramseyvoicestudio",
+    "channelUrl": "https://www.youtube.com/@ramseyvoicestudio",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "500k-1M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Beginner-facing singing instruction built around exercises for one problem at a time, with a running thread on which popular singing advice is wrong.",
+    "longDescription": "A vocal coach who states over a thousand students taught, working at the level below the technical Q&A this category already has: what to do when high notes strain, which seven habits stall a beginner, whether it is too late to start. {{longCountWords|cap}} of the {{scannedWords}} most recent uploads run over twenty minutes and the median is {{medianPhrase}}, so the substantial lessons sit among a lot of short clips. The strand worth arriving for is corrective — a piece specifically on red flags in singing advice, and another on what AI voice tools do and do not change — because singing is a subject where bad instruction is expensive and confidently delivered. Exercises are demonstrated rather than described, which is the only way this material works on video.",
+    "notFor": "Anyone past the beginner and lower-intermediate stage, who will find the technical Q&A elsewhere in this category more useful. Titles lean on hooks — hacks, mistakes, red flags — more than the lessons themselves do.",
+    "formatTags": [
+      "tutorial",
+      "shorts"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 3,
+      "selfPromotion": 4,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "singing",
+        "strength": "primary",
+        "why": "The on-ramp the category was missing — one problem, a demonstration and four exercises, at a level that assumes no vocabulary, plus a habit of naming which common advice is harmful.",
+        "evidence": "24 minutes on straining at the top of the range with four exercises, 21 on the mistakes that stall beginners, 17 on red flags in singing advice, 16 on choosing songs within your current range, and 13 on whether starting late matters.",
+        "entryVideo": {
+          "title": "Stop Straining on High Notes! (4 Exercises to Fix Them)",
+          "videoId": "ak8P55m3rfw",
+          "whyThisOne": "The problem almost everyone arrives with, answered with exercises to do rather than an explanation of why it happens — and safely, which is what the category blurb is about.",
+          "durationMin": 24
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "The entry video's own description opens with a link to his paid programme, and that funnel runs through most of the catalogue. The student count is self-stated and we have not verified it.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 50,
+      "longPct": 20,
+      "medianMin": 7,
+      "videoCount": 512,
+      "at": "2026-09",
+      "source": "evidence.mjs — daily API quota was exhausted before audit-catalogue could run; the next run overwrites this"
+    }
+  },
+  {
+    "id": "howardwimshurst",
+    "name": "Howard Wimshurst Animation",
+    "handle": "@HowardWimshurst",
+    "channelUrl": "https://www.youtube.com/@HowardWimshurst",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A working hand-drawn animator on the mechanics the craft actually turns on — how many drawings a movement needs, and where they go.",
+    "longDescription": "He describes twelve years as a professional animator and a degree in the subject, working mainly in TVPaint on hand-drawn work. The teaching that matters is about timing and spacing directly: how many drawings a given movement needs and the arithmetic behind that choice, what analogue texture adds and how it is applied, how effects animation is built up close. {{shortCountWords|cap}} of the {{scannedWords}} most recent uploads are under two minutes and the median is {{medianPhrase}}, so the channel reads as short-form at a glance. The long material is mostly recorded livestreams running one to two hours — genuine over-the-shoulder animating with questions answered, but unedited and unstructured, so it rewards a specific question rather than browsing.",
+    "notFor": "Anyone wanting a course. There is no path through this channel, the longest material is unedited livestream, and it assumes you have already decided to animate by hand.",
+    "formatTags": [
+      "tutorial",
+      "livestream",
+      "shorts"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "animation",
+        "strength": "primary",
+        "why": "Timing and spacing treated as the decisions they are, by someone who makes the drawings — the category blurb's exact subject, from the practitioner end rather than the principles end.",
+        "evidence": "16 minutes on how many drawings a movement needs and the tool for working it out, 18 on applying analogue texture, 24 of character-animation livestream highlights, and multi-hour recorded sessions animating effects and characters with questions answered throughout.",
+        "entryVideo": {
+          "title": "How many drawings to make animation? (try this tool)",
+          "videoId": "P_mn4WkGNqc",
+          "whyThisOne": "Timing and spacing as an actual calculation rather than a principle to admire — the shortest route into what separates animation that reads from animation that does not.",
+          "durationMin": 16
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "He runs a paid guild and Patreon, and the entry video links a tool on that platform. The twelve years and the degree are self-described on the channel. Most of the long-form is unedited livestream, so the ratio of watching to learning is poor unless you arrive with a question.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 70,
+      "longPct": 16,
+      "medianMin": 1,
+      "videoCount": 428,
+      "at": "2026-09",
+      "source": "evidence.mjs — daily API quota was exhausted before audit-catalogue could run; the next run overwrites this"
+    }
+  },
+  {
+    "id": "bloopanimation",
+    "name": "Bloop Animation",
+    "handle": "@bloopanimation",
+    "channelUrl": "https://www.youtube.com/@bloopanimation",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Software-by-software animation tutorials from a course company — how to actually make the frames, in the tools people actually use.",
+    "longDescription": "An education company, part of a larger entertainment services group, publishing tool tutorials as the free half of a course business. That shape is the reason to be careful and also why it is useful: the videos answer the question the other channels in this category skip, which is where you click. Frame-by-frame animation in ToonSquid on an iPad, smart bones and smart warp in Moho, building an animatic in Adobe Animate, the Blender timeline. {{shortCountWords|cap}} of the {{scannedWords}} most recent uploads are under two minutes and the median is {{medianPhrase}}, with the real tutorials sitting in the ten-to-twenty-minute band. There is also a thirty-two-minute scriptwriting case study that goes further than the tool material.",
+    "notFor": "Anyone looking for craft or principles — nothing here will teach you why a movement reads well, only how to produce it in a given program. Tool tutorials also date faster than anything else in this list.",
+    "formatTags": [
+      "tutorial",
+      "shorts"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 4,
+      "depth": 2
+    },
+    "signals": [
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "animation",
+        "strength": "primary",
+        "why": "The mechanical half — frame-by-frame technique inside real software — which is where a beginner actually stalls, and which the principles archive and the hand-drawn practitioner both assume you have solved.",
+        "evidence": "10 minutes on frame-by-frame animation in ToonSquid, 18 on the same tool in more depth, 10 on building an animatic in Adobe Animate, 13 and 9 on Moho's smart bones and smart warp, and a 32-minute scriptwriting case study.",
+        "entryVideo": {
+          "title": "ToonSquid Frame-by-Frame Animation | Tutorial | iPad Animation",
+          "videoId": "zlQBm_IVTwA",
+          "whyThisOne": "Frame-by-frame is the technique everything else in this category is about, shown in a cheap tool on hardware people already own — the lowest barrier to making a first moving drawing.",
+          "durationMin": 10
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "This is a course company's channel and the tutorials are the shop window; treat the free material as complete on its own terms and the rest as advertising. Software-specific content ages quickly. Nobody is named as the teacher across the catalogue.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 58,
+      "longPct": 2,
+      "medianMin": 2,
+      "videoCount": 443,
+      "at": "2026-09",
+      "source": "evidence.mjs — daily API quota was exhausted before audit-catalogue could run; the next run overwrites this"
+    }
+  }
+]

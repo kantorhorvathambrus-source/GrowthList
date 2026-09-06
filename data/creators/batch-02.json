@@ -248,7 +248,7 @@
       "shortPct": 58,
       "longPct": 0,
       "medianMin": 2,
-      "videoCount": 432,
+      "videoCount": 428,
       "at": "2026-09"
     },
     "entity": "institution"
@@ -317,10 +317,10 @@
     "caveats": "A commercial operation selling books, workshops and certification around a single framework; the free content routes toward all three.",
     "catalogue": {
       "scanned": 50,
-      "shortPct": 70,
-      "longPct": 24,
+      "shortPct": 72,
+      "longPct": 22,
       "medianMin": 1,
-      "videoCount": 662,
+      "videoCount": 663,
       "at": "2026-09"
     }
   },
@@ -779,10 +779,10 @@
     "caveats": "Strongly adversarial titles — DESTROY, CRUSH and OWN recur — and a consistent political and anti-religious direction in the choice of targets. Treat the analysis as an argued case from a committed position, not a neutral referee's.",
     "catalogue": {
       "scanned": 50,
-      "shortPct": 74,
-      "longPct": 22,
+      "shortPct": 72,
+      "longPct": 24,
       "medianMin": 2,
-      "videoCount": 458,
+      "videoCount": 459,
       "at": "2026-09"
     },
     "entity": "individual"

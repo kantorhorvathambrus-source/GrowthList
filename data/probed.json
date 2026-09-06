@@ -47,6 +47,11 @@
       "why": "economic and current-affairs commentary (Meta, Peter Thiel, oil prices) rather than a personal-finance skill; no money category blurb fits it",
       "at": "batch 47"
     },
+    "@NathanielDrew": {
+      "status": "rejected",
+      "why": "probed for journaling; an intentional-living video essayist rather than a channel teaching the practice",
+      "at": "batch 48"
+    },
     "@Physiotutors": {
       "status": "rejected",
       "why": "wrong audience — states it teaches physiotherapy students and professionals; 173 of 198 uploads under 2 minutes, long-form is a clinician podcast",
@@ -56,6 +61,11 @@
       "status": "collision",
       "why": "resolves to 'Mr. Owen Moore - Adv Practitioner', 2 uploads — not Precision Movement",
       "at": "batch 43"
+    },
+    "@SirWadeNeistadt": {
+      "status": "collision",
+      "why": "0 uploads",
+      "at": "batch 48"
     },
     "@TheGutHealthDoctor": {
       "status": "collision",
@@ -197,6 +207,11 @@
       "why": "Audrey Coyne",
       "at": "dataset"
     },
+    "@aussievocalcoach": {
+      "status": "rejected",
+      "why": "real vocal workouts and a 25-year coach, but 38 of 50 uploads under two minutes and a 1m median; Ramsey Voice Studio covers the same beginner end with far more long-form",
+      "at": "batch 48"
+    },
     "@barbellmedicine": {
       "status": "listed",
       "why": "Barbell Medicine",
@@ -220,6 +235,11 @@
     "@betterideas": {
       "status": "listed",
       "why": "Better Ideas (Joey Schweitzer)",
+      "at": "dataset"
+    },
+    "@bloopanimation": {
+      "status": "listed",
+      "why": "Bloop Animation",
       "at": "dataset"
     },
     "@brandmasteracademy": {
@@ -635,6 +655,11 @@
     "@hoopersbeta": {
       "status": "listed",
       "why": "Hooper's Beta",
+      "at": "dataset"
+    },
+    "@howardwimshurst": {
+      "status": "listed",
+      "why": "Howard Wimshurst Animation",
       "at": "dataset"
     },
     "@howcommunicationworks": {
@@ -1082,6 +1107,11 @@
       "why": "Radical Candor",
       "at": "dataset"
     },
+    "@ramseyvoicestudio": {
+      "status": "listed",
+      "why": "Ramsey Voice Studio (Matt Ramsey)",
+      "at": "dataset"
+    },
     "@rationalityrules": {
       "status": "listed",
       "why": "Rationality Rules (Stephen Woodford)",
@@ -1231,6 +1261,11 @@
       "status": "listed",
       "why": "Stronger By Science",
       "at": "dataset"
+    },
+    "@struthless": {
+      "status": "rejected",
+      "why": "21 of 50 uploads over 20m, but a general video-essay catalogue (dystopia, AI, ADHD, propaganda) with exactly one journaling video. One video on a topic is not a mapping",
+      "at": "batch 48"
     },
     "@studiobinder": {
       "status": "listed",
@@ -1441,6 +1476,11 @@
       "status": "rejected",
       "why": "subscription platform channel — the same vendor shape as Pianote, which the category already carries",
       "at": "batch 45"
+    },
+    "@tonikopantoja": {
+      "status": "rejected",
+      "why": "a working story artist with credits he names (Cartoon Network, DreamWorks, Netflix, Warner Bros) and a good 11m median — but his teaching subject is STORYBOARDING, and the animation blurb is timing, spacing and weight. Rejected on blurb fit rather than quality; a strong candidate if a storyboarding category is ever added",
+      "at": "batch 48"
     },
     "@tony_jeffries": {
       "status": "listed",
