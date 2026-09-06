@@ -1,0 +1,63 @@
+[
+  {
+    "id": "gregorysadler",
+    "name": "Gregory B. Sadler - That Philosophy Guy",
+    "handle": "@gregorybsadler",
+    "channelUrl": "https://www.youtube.com/@gregorybsadler",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A philosophy PhD reading the Stoic texts line by line, including the ancient arguments against them — four thousand videos deep and still posting.",
+    "longDescription": "He describes a decade in academic positions before leaving to do philosophical work in practical contexts, and the catalogue reflects both: {{videoCountPhrase}}, {{longCountWords}} of the {{scannedWords}} most recent over twenty minutes, median {{medianPhrase}}. Sixteen videos in the last two hundred deal with the Stoics directly, and the shape of them is what this category was missing — Seneca's ninetieth letter worked through as a text, Plutarch's criticism of the Stoic account of emotion taken seriously across three separate videos, ancient philosophy applied to anger with the sources named. He teaches the objections as carefully as the doctrine, which almost nothing else in this subject does. There are also long conversation episodes with people who study and practise Stoicism, and an ask-me-anything format that runs to ninety minutes.",
+    "notFor": "Anyone wanting Stoicism as a set of maxims to apply this week. This is textual commentary at academic pace, the argument matters more than the takeaway, and the catalogue is enormous and organised by text rather than by problem.",
+    "formatTags": [
+      "lecture",
+      "long-form",
+      "interview"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 4,
+      "practical": 2,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 4
+    },
+    "signals": [
+      "credentialed",
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "stoicism",
+        "strength": "primary",
+        "why": "The primary texts read as texts, and the ancient criticisms of Stoicism given equal time — the scholarly end of a subject whose visible supply is maxims, merchandise and narration.",
+        "evidence": "16 Stoic-specific videos in the last 200 uploads: Seneca's Letter 90 worked through at 23 minutes, three separate videos on Plutarch's criticism of the Stoic account of emotion, 20 minutes applying ancient philosophy to anger with sources named, and hour-long conversations with people who study the tradition.",
+        "entryVideo": {
+          "title": "Seneca, Letter 90 | Philosophy, Technology, and Wisdom | Philosophy Core Concepts",
+          "videoId": "7Cs7J7lMT9c",
+          "whyThisOne": "One primary text taken slowly, which is the thing this subject is almost never given on video — and it shows whether you want Stoicism as reading or as advice before you commit to a very large catalogue.",
+          "durationMin": 23
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "He sells online courses and the AMA sessions are underwritten. The same author's finished lecture series on logical fallacies is listed separately here under a different, long-dormant channel — this is the active one. Four thousand videos with no obvious entry path: use the playlists or arrive with a text in mind.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 38,
+      "medianMin": 17,
+      "videoCount": 4071,
+      "at": "2026-09"
+    },
+    "entity": "individual"
+  }
+]

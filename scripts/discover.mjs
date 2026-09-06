@@ -52,6 +52,18 @@ const argv = process.argv.slice(2);
 let forCategory = null;
 const at = argv.indexOf('--for');
 if (at !== -1) { forCategory = argv[at + 1] ?? null; argv.splice(at, 2); }
+// --small: hide everything at 500k subscribers and above.
+//
+// Relevance ranking favours the channels that already won, so a category with
+// strong commercial incumbents returns those incumbents however the query is
+// phrased — and a quiet teacher with 12,000 subscribers is invisible behind
+// them. `@sean_nalewanyj` had 672 uploads and was missed entirely while a
+// two-upload handle squatter matched the obvious search. This flag exists to
+// ask a different question of the same results: not "who is biggest on this
+// topic" but "who is here that nobody is promoting".
+const SMALL = argv.includes('--small');
+if (SMALL) argv.splice(argv.indexOf('--small'), 1);
+const BIG = new Set(['500k-1M', '1M-5M', '5M-20M', '>20M']);
 const q = argv.join(' ').trim();
 if (!q) {
   console.error('usage: discover.mjs [--for <category-id>] "<topic query>"');
@@ -93,13 +105,15 @@ for (const c of det.items ?? []) {
   });
 }
 rows.sort((a, b) => b.hits - a.hits || b.vids - a.vids);
+const hidden = SMALL ? rows.filter((r) => BIG.has(r.size)).length : 0;
+const shown = SMALL ? rows.filter((r) => !BIG.has(r.size)) : rows;
 
 const pad = (s, n) => String(s).slice(0, n).padEnd(n);
 console.log(`query: ${q}${forCategory ? `   (for ${forCategory})` : ''}`);
 console.log(`${rows.length} distinct channels behind 50 long videos\n`);
 
 let fresh = 0;
-for (const r of rows) {
+for (const r of shown) {
   const thin = r.vids < MIN_CREDIBLE_UPLOADS;
   let note = '';
   if (r.seen) note = `${r.seen.status.toUpperCase()} (${r.seen.at})`;
@@ -108,5 +122,6 @@ for (const r of rows) {
   console.log(`${String(r.hits).padStart(2)}  ${pad(r.handle, 28)} ${pad(r.title, 26)} ${String(r.vids).padStart(5)} vids  ${pad(r.size, 9)} ${note}`);
 }
 console.log(`\n  ${fresh} unseen channels above the ${MIN_CREDIBLE_UPLOADS}-upload floor.`);
+if (SMALL) console.log(`  ${hidden} channels at 500k+ subscribers hidden by --small.`);
 console.log('  A high hit count means the channel dominates long-form on this topic.');
 console.log('  It does NOT mean the channel is any good — that still takes evidence.mjs.');

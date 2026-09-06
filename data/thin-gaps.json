@@ -242,18 +242,6 @@
       ],
       "at": "batch 55"
     },
-    "stoicism": {
-      "rounds": [
-        "batch 51",
-        "batch 57"
-      ],
-      "found": "Two rounds. Daily Stoic is 45 of 50 uploads under two minutes against a large commercial operation. Stoic Journal is the opposite shape and no better: 721 uploads, every one of the 50 most recent over twenty minutes, a 57-minute median, generic titles and no named teacher anywhere — a volume operation rather than a catalogue.",
-      "unprobed": [
-        "classicists and philosophy departments publishing directly",
-        "translators of the primary texts"
-      ],
-      "at": "batch 57"
-    },
     "prompt-engineering": {
       "rounds": [
         "batch 52",
@@ -313,6 +301,23 @@
       ],
       "note": "Distinct from the other entries here: this category is not empty of a second voice, it is empty of a live one.",
       "at": "batch 58"
+    }
+  },
+  "retiredThenReopened": {
+    "stoicism": {
+      "rounds": [
+        "batch 51",
+        "batch 57"
+      ],
+      "found": "Two rounds. Daily Stoic is 45 of 50 uploads under two minutes against a large commercial operation. Stoic Journal is the opposite shape and no better: 721 uploads, every one of the 50 most recent over twenty minutes, a 57-minute median, generic titles and no named teacher anywhere — a volume operation rather than a catalogue.",
+      "unprobed": [
+        "classicists and philosophy departments publishing directly",
+        "translators of the primary texts"
+      ],
+      "at": "batch 57",
+      "reopenedAt": "batch 60",
+      "whatTheThirdRoundDid": "Searched away from the commercial top — a query in the vocabulary of the primary texts (Epictetus, Seneca, commentary) with channels at 500k+ subscribers hidden. That surfaced Gregory B. Sadler's active channel: 4,071 uploads, 16 Stoic-specific videos in the last 200, Seneca read line by line and Plutarch's criticism of the Stoics given three videos of its own. Relevance ranking had been returning the same commercial incumbents whatever the phrasing.",
+      "conclusion": "RETIRED BY OUR SEARCH METHOD, NOT BY SUPPLY. The two rounds were real and both failed; the third round differed only in refusing to look at the top of the market."
     }
   }
 }

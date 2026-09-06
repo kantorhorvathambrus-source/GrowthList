@@ -760,7 +760,7 @@ written. What changed is waiting for a yes that was already given.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research). **Batches 01–58 are
+- **Current phase**: Phase 2 (creator research). **Batches 01–60 are
   written, gated, validated and committed.**
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
 - **PHASE 2 CLOSES ON A TARGETED PLAN, NOT UNIFORM COVERAGE.** The owner's
@@ -873,6 +873,31 @@ this section first to know exactly where to resume.)*
   `subject-notes.json` — warning when a gap has no note and no other
   note filling the slot. Four gaps now render; `addiction-recovery` and
   `first-aid` already had high-stakes notes in that slot.
+- **SEARCH AWAY FROM THE TOP BEFORE RETIRING A CATEGORY —
+  `discover.mjs --small`.** Relevance ranking returns the channels that
+  already won, so a category with strong commercial incumbents returns
+  those incumbents however the query is phrased. `--small` hides
+  everything at 500k+ subscribers and asks a different question of the
+  same results: not who is biggest, but who is here that nobody is
+  promoting.
+  **It reopened `stoicism` immediately.** Two rounds had failed on
+  Daily Stoic (45 of 50 uploads under two minutes) and a 721-upload
+  content farm. A third round in the vocabulary of the primary texts,
+  with the big channels hidden, surfaced **Gregory B. Sadler's active
+  channel: 4,071 uploads, Seneca read line by line, Plutarch's
+  criticism of the Stoics across three videos.** Retired by our search
+  method, not by supply.
+  **And we already had him — as the wrong channel.** The dataset held
+  `@reasoniocritthinking`, a finished 33-video fallacy series marked
+  archive since 2015, while `@gregorybsadler` posted daily. The record
+  was accurate and the omission was enormous. Same shape as
+  `@sean_nalewanyj`, sitting in the dataset unnoticed for fifty-nine
+  batches. **Run `--small` on any category before writing it off.**
+  `sleep-quality` got the same treatment and produced nothing —
+  12 channels, all sleep-audio products, psychiatry newsletters or
+  dormant — so its retirement stands. The rule is not uniformly wrong;
+  it depends on whether a non-commercial teaching tradition exists in
+  the field at all.
 - **FILL RATE IS NOT SUPPLY — it measures research order too.** The
   domain spread is real and large: fitness 100%, programming 93%,
   health 86% against business 15%, marketing 15%, money 17%. It is
@@ -916,7 +941,7 @@ this section first to know exactly where to resume.)*
   creators" over one live channel — the `status` defect reaching
   visitor copy. It now reads `2 creators · 1 quiet`, disclosing the
   dormant one rather than dropping it from the tally.
-- **Creator count: 251 of 400.** Taxonomy 197 and **uncapped** (rule 19)
+- **Creator count: 252 of 400.** Taxonomy 197 and **uncapped** (rule 19)
   — a new category may be added whenever it arrives with 3 creators.
 - **Fitness is complete at 2+ across all 14 categories** (3 at depth 3).
 - **182 of 197 categories populated; 15 empty.** Practical is 13/13.
