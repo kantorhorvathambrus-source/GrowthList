@@ -42,6 +42,11 @@
       "why": "Abbie Emmons",
       "at": "dataset"
     },
+    "@academicenglishnow": {
+      "status": "rejected",
+      "why": "probed for academic-writing; ESL-focused academic English coaching rather than the craft or structure of research writing",
+      "at": "batch 52"
+    },
     "@acquiredfm": {
       "status": "listed",
       "why": "Acquired",
@@ -617,6 +622,11 @@
       "why": "Good Inside (Dr. Becky Kennedy)",
       "at": "dataset"
     },
+    "@gradcoach": {
+      "status": "listed",
+      "why": "Grad Coach",
+      "at": "dataset"
+    },
     "@gregisenberg": {
       "status": "listed",
       "why": "Greg Isenberg",
@@ -1172,6 +1182,11 @@
       "why": "Radical Candor",
       "at": "dataset"
     },
+    "@ramitsethi": {
+      "status": "rejected",
+      "why": "probed for personal-budgeting; the channel is couples-money interviews and a large course business rather than budgeting instruction",
+      "at": "batch 52"
+    },
     "@ramseyvoicestudio": {
       "status": "listed",
       "why": "Ramsey Voice Studio (Matt Ramsey)",
@@ -1205,6 +1220,11 @@
     "@rjthebikeguy": {
       "status": "listed",
       "why": "RJ The Bike Guy",
+      "at": "dataset"
+    },
+    "@rob_berger": {
+      "status": "listed",
+      "why": "Rob Berger",
       "at": "dataset"
     },
     "@saaspricing": {
@@ -1266,6 +1286,11 @@
       "status": "listed",
       "why": "Simpletivity (Scott Friesen)",
       "at": "dataset"
+    },
+    "@simplilearnofficial": {
+      "status": "collision",
+      "why": "probed for prompt-engineering; a 12,402-upload certification mill returning for any technical query",
+      "at": "batch 52"
     },
     "@SirWadeNeistadt": {
       "status": "collision",

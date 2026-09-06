@@ -2176,3 +2176,29 @@ specialising in knits and denim — genuinely strong, and rejected only
 because Made to Sew matched the blurb's fit-and-construction wording
 more directly. She is the first name to revisit if the category ever
 goes to three.
+
+## Batch 52 — a dissertation service, and the first jurisdiction fill
+
+Grad Coach (`academic-writing`, 1→2) and Rob Berger
+(`retirement-planning`, 1→2). **105 of 197 at target with active
+creators.**
+
+**Rob Berger is the first creator listed specifically to close a
+jurisdiction gap**, and it happened by accident. He surfaced on a
+personal-budgeting search, where he does not fit — his subject is
+retirement income, not budgeting. Checking where he *would* fit found
+`retirement-planning` holding one creator, James Shack, who is UK-only,
+in a category whose blurb turns on "which account structures to use" —
+the most jurisdiction-bound sentence in personal finance. A UK-only
+answer to that question is wrong for most readers.
+
+His `jurisdictionNote` says what transfers and what does not, and it
+renders — verified on the page — which it would not have done a batch
+ago. The field was written eleven times and displayed zero times until
+the delivery sweep found it. This is the first record authored knowing
+the reader will actually see that sentence.
+
+Grad Coach separates cleanly from the incumbent: Andy Stapleton teaches
+the craft of academic prose, Grad Coach teaches the shape of a research
+project — scoping a question so it can be finished, when methodology is
+settled enough to start writing. The months are lost in the second one.

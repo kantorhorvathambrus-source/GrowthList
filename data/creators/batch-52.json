@@ -1,0 +1,123 @@
+[
+  {
+    "id": "gradcoach",
+    "name": "Grad Coach",
+    "handle": "@gradcoach",
+    "channelUrl": "https://www.youtube.com/@gradcoach",
+    "country": "GB",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Dissertation and thesis supervision turned into video — the structural mistakes that cost students months, from a service that has seen thousands of them.",
+    "longDescription": "A dissertation coaching business publishing what it has learned across a stated ten thousand-plus projects. {{longCountWords|cap}} of the {{scannedWords}} most recent uploads pass twenty minutes and those are the substantial ones — thirty-six to thirty-nine minute sessions on the lessons that recur, the questions students actually ask, and the things supervisors wish were understood before the first chapter is written. The median is {{medianPhrase}}, so most of the catalogue is short single-topic answers. What distinguishes it from the other creator here is scope: this is about the shape of a long research project — scoping a question so it can be finished, structuring a literature review, knowing when methodology is settled enough to write — rather than about the sentence-level craft of academic prose.",
+    "notFor": "Anyone outside a formal degree programme. Everything assumes a supervisor, a submission deadline and an institution's requirements, and none of it is about writing better sentences.",
+    "formatTags": [
+      "tutorial",
+      "q-and-a",
+      "long-form"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 4,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "academic-writing",
+        "strength": "primary",
+        "why": "The project rather than the prose — scoping, structure and sequencing across a whole dissertation, which is where the months are actually lost.",
+        "evidence": "37 minutes on the lessons that save students months, 39 on what supervisors wish were understood earlier, 36 answering the questions that recur, and 36 drawing on a stated ten thousand-plus dissertations.",
+        "entryVideo": {
+          "title": "INSIDER Dissertation Advice: 5 Lessons That Can Save You MONTHS of Stress",
+          "videoId": "1ixPQKIOQrk",
+          "whyThisOne": "The failure modes stated up front, which is the one thing worth knowing before you start rather than after — and it shows the register before you commit to the archive.",
+          "durationMin": 37
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "This is a coaching service's channel and the free videos are its shop window; the ten thousand figure is the company's own and we have not verified it. Nobody is named as the teacher across the catalogue.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 14,
+      "longPct": 12,
+      "medianMin": 4,
+      "videoCount": 296,
+      "at": "2026-09"
+    }
+  },
+  {
+    "id": "robberger",
+    "name": "Rob Berger",
+    "handle": "@rob_berger",
+    "channelUrl": "https://www.youtube.com/@rob_berger",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "jurisdiction": "US",
+    "jurisdictionNote": "US account structures throughout — 401(k), IRA, Social Security timing and US tax treatment. The stress-testing method and the questions he asks of a plan transfer anywhere; the accounts, the rules and the numbers do not.",
+    "shortDescription": "Retirement plans taken apart on screen — running a real withdrawal strategy until it breaks, and saying which part broke.",
+    "longDescription": "The useful material is a run of twenty-minute-plus pieces that do something most retirement content avoids: take a specific plan and stress it. A twenty-five-year withdrawal strategy modelled until it fails, with the failure point named. The three kinds of guaranteed retirement income and why almost nobody ends up with all three. A real sixteen-fund portfolio graded holding by holding. There is also a full recorded course on a planning tool, over two hours. The median is {{medianPhrase}} and {{shortCountWords}} of the {{scannedWords}} most recent uploads are under two minutes, so the channel reads as a shorts feed at a glance and the substance has to be sought out.",
+    "notFor": "Anyone outside the United States looking for what to do rather than how to think — the account types are US-specific and the tax treatment more so. Also not for someone at the start of their working life; the framing is people approaching or in retirement.",
+    "formatTags": [
+      "tutorial",
+      "long-form",
+      "shorts"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 4
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "retirement-planning",
+        "strength": "primary",
+        "why": "The US half of a category that had only a UK voice — and the blurb turns on which account structures to use, which is the most jurisdiction-bound thing in personal finance.",
+        "evidence": "19 minutes stress-testing a 25-year withdrawal plan to its breaking point, 22 on the three kinds of guaranteed retirement income, 23 grading a real 16-fund portfolio, and a 144-minute recorded course on retirement modelling.",
+        "entryVideo": {
+          "title": "I Stress-Tested a Real 25-Year Withdrawal Plan. Here's Where It Broke",
+          "videoId": "OfElaO9NhZU",
+          "whyThisOne": "A plan run until it fails, with the failure named — which teaches more about what a retirement plan has to survive than any amount of advice about saving more.",
+          "durationMin": 19
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "He sells courses and tool subscriptions and the long recorded course is one of them. Most of the catalogue by count is short-form; the analysis is in a small number of long videos.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 70,
+      "longPct": 14,
+      "medianMin": 2,
+      "videoCount": 907,
+      "at": "2026-09"
+    },
+    "entity": "individual"
+  }
+]
