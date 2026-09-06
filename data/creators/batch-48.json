@@ -55,7 +55,8 @@
       "medianMin": 7,
       "videoCount": 512,
       "at": "2026-09"
-    }
+    },
+    "entity": "individual"
   },
   {
     "id": "howardwimshurst",
@@ -171,6 +172,7 @@
       "medianMin": 2,
       "videoCount": 443,
       "at": "2026-09"
-    }
+    },
+    "entity": "vendor"
   }
 ]

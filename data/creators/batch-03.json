@@ -1262,10 +1262,10 @@
     "caveats": "The channel carries a named AI-tool partnership in its own description, and AI content now dominates recent uploads. Sells courses.",
     "catalogue": {
       "scanned": 50,
-      "shortPct": 6,
+      "shortPct": 8,
       "longPct": 12,
       "medianMin": 10,
-      "videoCount": 1287,
+      "videoCount": 1288,
       "at": "2026-09"
     }
   }

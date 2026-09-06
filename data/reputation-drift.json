@@ -139,6 +139,19 @@
       ],
       "outcome": "rejected",
       "checkedAt": "batch 39"
+    },
+    {
+      "handle": "@healmytech1",
+      "name": "HealMyTech",
+      "knownFor": "Repair tutorials and practical tech help — \"develop a better relationship with Tech\", stated in the channel description that is still there.",
+      "catalogueNow": "A personal dispute, published at length: an exposé series naming a private individual, a 558-minute audio recording, and general grievance content. Last upload 2025-05-27.",
+      "scan": "50 uploads scanned; the stated purpose survives only in the channel description.",
+      "categoriesAffected": [
+        "pc-building"
+      ],
+      "outcome": "rejected",
+      "checkedAt": "batch 50",
+      "note": "The most extreme case in this file. Every other entry is a creator whose subject shifted commercially; this one abandoned the subject entirely for a private conflict, while the description still promises repair tutorials. It is also the reason the status check earns its keep twice over — dormant AND drifted."
     }
   ],
   "collisions": [

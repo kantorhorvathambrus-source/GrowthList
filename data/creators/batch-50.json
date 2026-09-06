@@ -1,0 +1,183 @@
+[
+  {
+    "id": "lizzorab",
+    "name": "Liz Zorab Gardening",
+    "handle": "@lizzorab",
+    "channelUrl": "https://www.youtube.com/@lizzorab",
+    "country": "GB",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A working smallholding filmed month by month — what is actually producing, what failed, and what that means for the next bed.",
+    "longDescription": "{{longCountWords|cap}} of the {{scannedWords}} most recent uploads run over twenty minutes and the median is {{medianPhrase}}, on a channel that has been documenting the same piece of ground for years. The format is the seasonal tour rather than the tutorial: what the garden looks like in June and what is being harvested, where the soft fruit is abundant and why, how a herb bed was built without digging. That continuity is the thing a single how-to video cannot give you — you see the same beds a year on, including the parts that did not work, because failures are shown alongside the harvests. The framing is food production for a household across a whole year rather than a crop at a time, and it runs into permaculture and self-reliance without becoming ideological about either.",
+    "notFor": "Anyone wanting a technique library to search. This is a garden diary, so the teaching is embedded in tours and you have to watch to extract it. Everything is a temperate British climate on one soil; the method transfers, the calendar does not.",
+    "formatTags": [
+      "vlog",
+      "tutorial",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "gardening",
+        "strength": "primary",
+        "why": "The year-round view a technique channel cannot give — the same ground across seasons, with the failures left in, next to a market-garden specialist who teaches one method very precisely.",
+        "evidence": "28 minutes on what a productive garden actually looks like in June, 20 on building a no-dig herb bed, 15 on the August vegetable tour, 12 on soft fruit and household food security, and 9 on gardening with rather than against the site.",
+        "entryVideo": {
+          "title": "Productive garden in June | Gardening and Seasonal harvests",
+          "videoId": "Yz8W5HeJgQU",
+          "whyThisOne": "Twenty-eight minutes of a real garden mid-season, which tells you more about what growing food is actually like than any list of tips — including how much of it is not photogenic.",
+          "durationMin": 28
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "She sells books, linked from every description. The channel overlaps the no-dig method taught by the other creator here; the difference is scale and continuity rather than technique.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 42,
+      "medianMin": 16,
+      "videoCount": 986,
+      "at": "2026-09"
+    },
+    "entity": "individual"
+  },
+  {
+    "id": "geekawhat",
+    "name": "GeekaWhat (James Cousins)",
+    "handle": "@geekawhat",
+    "channelUrl": "https://www.youtube.com/@geekawhat",
+    "country": "GB",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Full build guides at current prices — which parts go together this year, and the assembly filmed end to end.",
+    "longDescription": "{{longCountWords|cap}} of the {{scannedWords}} most recent uploads run over twenty minutes, and the useful ones are complete builds: a named processor and graphics card in a named case, assembled on camera, with the reasoning for each pairing. Around them sit component-choice guides — how to pick a monitor panel for what you actually do, what a given budget buys this quarter — which is the question a first-time builder gets stuck on long before they get stuck on assembly. The channel is hosted by one named person and states its purpose plainly as taking you through building a first gaming PC. The median is {{medianPhrase}}, so most of the catalogue is short news and roundups; the builds are the reason to be here.",
+    "notFor": "Anyone building for work rather than games — the entire frame is gaming performance. Component recommendations are tied to this quarter's prices and will date fast, and the enthusiasm is unrelenting.",
+    "formatTags": [
+      "tutorial",
+      "long-form",
+      "shorts"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 4,
+      "selfPromotion": 3,
+      "depth": 2
+    },
+    "signals": [
+      "practitioner",
+      "sponsor-heavy"
+    ],
+    "categories": [
+      {
+        "id": "pc-building",
+        "strength": "primary",
+        "why": "The build itself, start to finish, which the category's other creator deliberately does not do — that channel tests and investigates hardware rather than teaching anyone to assemble it.",
+        "evidence": "21 minutes assembling a named CPU and GPU combination in a specific case with the pairing explained, 16 on choosing an OLED monitor by use case, 14 on 1440p monitors across budgets, and 13 on a high-end build.",
+        "entryVideo": {
+          "title": "Best RX 9070 XT Gaming PC Build 2026! 👀 [ft. O11D Mini V2 & Ryzen 7800X3D!]",
+          "videoId": "MAze7THyKSM",
+          "whyThisOne": "One complete build with the part choices justified as they are made — the shape of the task, even after these specific components are superseded.",
+          "durationMin": 21
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Heavily sponsored and the parts featured are often supplied; treat specific recommendations as a starting point for your own price comparison rather than a verdict. Everything dates: a build guide is a snapshot of one quarter's market.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 34,
+      "longPct": 22,
+      "medianMin": 3,
+      "videoCount": 1400,
+      "at": "2026-09"
+    },
+    "entity": "individual"
+  },
+  {
+    "id": "docsnipes",
+    "name": "Doc Snipes (Dr. Dawn-Elise Snipes)",
+    "handle": "@docsnipes",
+    "channelUrl": "https://www.youtube.com/@docsnipes",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A licensed counsellor teaching the mechanism underneath emotional regulation, at hour length, to an audience of other clinicians.",
+    "longDescription": "She states a PhD in counselling, licensure since 2002, and accreditation as a continuing-education provider for therapists — and the long material is exactly that: hour-long sessions on how nervous-system imbalance produces dysregulation, on rebalancing it, on psychological flexibility as a clinical tool. {{longCountWords|cap}} of the {{scannedWords}} most recent uploads pass twenty minutes. Alongside them is a much larger body of shorter, public-facing work — practical vagus-nerve exercises, identity loss in grief — which is where a non-clinician should start. The reason to have her here is that the other creator in this category teaches the skills and this one teaches the model they come from, so between them you can find out not just what to do but why it is supposed to work.",
+    "notFor": "Anyone who wants to be walked through an exercise. The long sessions are professional training, they assume clinical vocabulary, and the channel states plainly that it does not diagnose or treat. If you are in difficulty now, this is the wrong shelf.",
+    "formatTags": [
+      "lecture",
+      "long-form",
+      "tutorial"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 4,
+      "practical": 3,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 4
+    },
+    "signals": [
+      "credentialed",
+      "cites-research",
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "emotional-regulation",
+        "strength": "primary",
+        "why": "The mechanism rather than the technique — why regulation fails physiologically — which is the layer under the skills teaching the category already has.",
+        "evidence": "63 minutes on how nervous-system imbalance causes dysregulation, 62 on rebalancing it, 61 on meaning and health, and shorter public-facing pieces on vagus-nerve exercises and on grief and identity.",
+        "entryVideo": {
+          "title": "How Nervous System Imbalances Cause Emotional Dysregulation",
+          "videoId": "tLYnkSD2pKk",
+          "whyThisOne": "The clearest statement of what this channel adds: an hour on why emotional control fails in the body before it fails in the mind, which reframes every technique you have been told to try.",
+          "durationMin": 63
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "The primary audience is licensed clinicians earning continuing-education credit, and she sells that training; the free videos are a shop window for it. The register is lecture, not conversation, and the long sessions assume vocabulary a general viewer will not have.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 30,
+      "medianMin": 7,
+      "videoCount": 1640,
+      "at": "2026-09"
+    },
+    "entity": "individual"
+  }
+]

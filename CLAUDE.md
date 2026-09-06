@@ -604,6 +604,9 @@ Phase 1 output) — kept in this file's state section once finalized.
   "level": ["beginner", "intermediate"],
 
   "profile": {
+    "_scale": "EVERY VALUE IS AN INTEGER 0-4. Not 0-5. This has been caught by
+               the validator three times — batches 43, 46 and 50 — always as a
+               5 written for something judged excellent. There is no 5.",
     "evidenceBased": 3,
     "practical": 4,
     "energy": 2,
@@ -715,12 +718,49 @@ in `categories.json`-derived output with a computed creator `count`.
 
 ---
 
+## How this project is worked (agreed at batch 50)
+
+**Work continuously. Do not stop for approval on things already approved.**
+The owner's instruction, and the reasoning: over fifteen exchanges the
+defects in this project were found and fixed here, twice by correcting
+the owner, and the approvals had become "continue" with extra words.
+
+**Stop and ask ONLY when one of these is true:**
+
+1. **A scope change.** Adding or removing a category, changing a target
+   number, extending a rule to new cases, dropping or weakening a
+   validator rule, or altering what "done" means. These are direction,
+   not defects, and they are the owner's.
+2. **Something false reached visitors and the fix is not obvious.**
+   If the fix is obvious, make it and record it.
+3. **Genuinely stuck** — the same obstacle has blocked twice and there
+   is no next thing to try.
+4. **Two reasonable paths diverge and picking wrong is expensive to
+   reverse.**
+5. **Phase 2 is complete and Phase 3 is about to begin.** Stop there
+   regardless of anything else, and bring: the final Phase 2 state, the
+   ledger, the coverage report, the remaining gaps, and an honest read
+   on whether the dataset is ready to build on.
+
+**Everything else — defects, tooling fixes, rejections, gaps written,
+rules applied within their existing scope, batches that yield zero —
+just do it and keep going.** Record it as normal; the record is what
+gets read, not a message.
+
+**Written summary every 10 batches or on a trigger, whichever comes
+first.** Short: what moved, what broke, what was decided, and anything
+that would have been asked about a week ago and was not.
+
+**THE STANDARDS DO NOT CHANGE.** The scope rule, rule 18, the ledger,
+the gate, the audits, the close plan — all of it stands exactly as
+written. What changed is waiting for a yes that was already given.
+
 ## State of the project
 
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research). **Batches 01–48 are
+- **Current phase**: Phase 2 (creator research). **Batches 01–50 are
   written, gated, validated and committed.**
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
 - **PHASE 2 CLOSES ON A TARGETED PLAN, NOT UNIFORM COVERAGE.** The owner's
@@ -846,7 +886,7 @@ this section first to know exactly where to resume.)*
   creators" over one live channel — the `status` defect reaching
   visitor copy. It now reads `2 creators · 1 quiet`, disclosing the
   dormant one rather than dropping it from the tally.
-- **Creator count: 240 of 400.** Taxonomy 197 and **uncapped** (rule 19)
+- **Creator count: 243 of 400.** Taxonomy 197 and **uncapped** (rule 19)
   — a new category may be added whenever it arrives with 3 creators.
 - **Fitness is complete at 2+ across all 14 categories** (3 at depth 3).
 - **182 of 197 categories populated; 15 empty.** Practical is 13/13.

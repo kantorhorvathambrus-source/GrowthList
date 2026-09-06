@@ -2099,3 +2099,47 @@ nine stay internal permanently — a reader cannot click through to
 someone we did not list, and publishing the reasons anyway is the
 callout list the owner ruled out. Worth flagging in case the picture
 was of eleven cards rather than two.
+
+## Batch 50 — gardening, PC building, emotional regulation
+
+Liz Zorab (`gardening`, 1→2), GeekaWhat (`pc-building`, 1→2) and Doc
+Snipes (`emotional-regulation`, 1→2). **102 of 197 at target with
+active creators.**
+
+Each pairs against a very different incumbent. Charles Dowding teaches
+one method precisely; Liz Zorab films the same ground across seasons
+with the failures left in. Gamers Nexus tests and investigates hardware
+and deliberately does not teach assembly; GeekaWhat builds a machine
+end to end. Therapy in a Nutshell teaches the skills; Doc Snipes
+teaches the model underneath them.
+
+**Doc Snipes needed a consistency check against an earlier rejection.**
+Physiotutors was rejected in batch 43 for wrong audience — it states it
+teaches physiotherapists. Snipes states she teaches licensed clinicians
+for continuing-education credit. The difference that decided it:
+Physiotutors' long-form was a clinician podcast *about the profession*
+— burnout, careers — while Snipes' is the mechanism itself, which a
+motivated layperson can follow, and her larger short-form body is
+public-facing. Listed with the audience stated plainly in `notFor`.
+
+**`body-language` stays at zero active and is the delicate one.** Its
+only creator ever, münecat, is archived — and is a *critic of
+body-language experts*. Discovery returned exactly what she debunks:
+a four-analyst panel reading famous interrogations as entertainment,
+and an NLP persuasion trainer. Listing either would list the thing the
+category's own dissenting voice exists to correct. Recorded as probed,
+not written up as a gap yet.
+
+**HealMyTech is the most extreme drift case recorded.** A stated repair
+tutorial channel — the description still promises exactly that — whose
+recent uploads are a personal dispute naming a private individual,
+including a 558-minute audio file. Dormant since May 2025. Every other
+entry in that file is a creator whose subject shifted commercially;
+this one abandoned the subject entirely.
+
+**A recurring self-inflicted error got a permanent fix.** The `profile`
+scale is 0–4 and I have now written a 5 three times — batches 43, 46
+and 50 — always for something judged excellent. The validator caught it
+every time, which is the system working, but three identical catches is
+a template problem rather than a vigilance problem. The schema block in
+CLAUDE.md now says so at the point the value is written.

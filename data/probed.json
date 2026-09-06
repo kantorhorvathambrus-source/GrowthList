@@ -457,6 +457,11 @@
       "why": "1 upload — the real channel is @CoachingforLeaders",
       "at": "batch 46"
     },
+    "@davidsnydernlp": {
+      "status": "rejected",
+      "why": "NLP-framed persuasion training; the evidence base is the thing the category needs a check against, not a source",
+      "at": "batch 50"
+    },
     "@declutterthemind": {
       "status": "listed",
       "why": "Declutter The Mind",
@@ -486,6 +491,11 @@
       "status": "collision",
       "why": "resolves to 'Sameer M', 0 uploads",
       "at": "batch 43"
+    },
+    "@docsnipes": {
+      "status": "listed",
+      "why": "Doc Snipes (Dr. Dawn-Elise Snipes)",
+      "at": "dataset"
     },
     "@doctorramani": {
       "status": "listed",
@@ -627,6 +637,11 @@
       "why": "The Gastro Girl Podcast",
       "at": "dataset"
     },
+    "@geekawhat": {
+      "status": "listed",
+      "why": "GeekaWhat (James Cousins)",
+      "at": "dataset"
+    },
     "@gentlemansgazette": {
       "status": "listed",
       "why": "Gentleman's Gazette",
@@ -651,6 +666,11 @@
       "status": "listed",
       "why": "Harvard Business Review",
       "at": "dataset"
+    },
+    "@healmytech1": {
+      "status": "rejected",
+      "why": "DORMANT since 2025-05-27 and completely abandoned: a stated repair-tutorial channel whose recent uploads are a personal dispute, including a 558-minute audio file. Added to reputation-drift as the most extreme case recorded",
+      "at": "batch 50"
     },
     "@healthygamergg": {
       "status": "listed",
@@ -751,6 +771,11 @@
       "status": "collision",
       "why": "returned by a podcasting-topic search: it is a podcast, not teaching about podcasting",
       "at": "batch 45"
+    },
+    "@jayztwocents": {
+      "status": "rejected",
+      "why": "reputation drift — a PC-building channel whose recent long-form is tech news and workshop vlogging (Twitch AI training, CNC upgrades, Micro Center robotics) rather than building",
+      "at": "batch 50"
     },
     "@jeffersonfisher": {
       "status": "listed",
@@ -855,6 +880,11 @@
     "@linkingyourthinking": {
       "status": "listed",
       "why": "Linking Your Thinking (Nick Milo)",
+      "at": "dataset"
+    },
+    "@lizzorab": {
+      "status": "listed",
+      "why": "Liz Zorab Gardening",
       "at": "dataset"
     },
     "@lucalampariello": {
@@ -1346,6 +1376,16 @@
       "status": "listed",
       "why": "Terri Cole",
       "at": "dataset"
+    },
+    "@terrykingsallotmentgardenin": {
+      "status": "rejected",
+      "why": "probed for gardening; 1832 uploads but an allotment diary without teaching structure, and the category needed a second METHOD not a second diary — Liz Zorab was preferred for depth and continuity",
+      "at": "batch 50"
+    },
+    "@thebehaviorpanel": {
+      "status": "rejected",
+      "why": "probed for body-language; four analysts reading famous interrogations as entertainment. The only creator this category has ever had is a critic OF body-language experts, and listing case-reading would list what she debunks",
+      "at": "batch 50"
     },
     "@thecherno": {
       "status": "listed",
