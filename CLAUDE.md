@@ -873,6 +873,21 @@ this section first to know exactly where to resume.)*
   `subject-notes.json` — warning when a gap has no note and no other
   note filling the slot. Four gaps now render; `addiction-recovery` and
   `first-aid` already had high-stakes notes in that slot.
+- **FILL RATE IS NOT SUPPLY — it measures research order too.** The
+  domain spread is real and large: fitness 100%, programming 93%,
+  health 86% against business 15%, marketing 15%, money 17%. It is
+  tempting, and I asserted it, that this shows where YouTube supply
+  fails. **It does not.** Only 10–18% of the below-target categories in
+  the low-fill domains have been searched twice — the rest are
+  unprobed, because fitness was finished in batches 01–31 while
+  business was barely touched. And the 19 categories actually searched
+  and written off are spread across **13 domains**, with health — an
+  86%-filled domain — holding the most at three.
+  Recorded in the ledger as `supply-fails-where-the-money-is`, and it
+  is the **first claim tested before it shipped rather than after**:
+  it was on its way to the colophon and stopped at the measurement.
+  Any future statement about where supply fails must be built on the
+  searched-and-written-off set, never on fill rate.
 - **TWO KINDS OF THIN, AND THE PAGE NOW TELLS THEM APART.** A category
   at one creator was giving every reader the same reason: research went
   to the most-watched skills first. That is true of a *deprioritised*

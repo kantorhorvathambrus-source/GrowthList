@@ -2419,3 +2419,44 @@ use breathing protocols.
 
 Twelve categories are now in `searchedNotFound` and seven have full
 written gaps.
+
+## Batch 59 — a claim stopped on its way to the page
+
+The owner asked for the supply pattern to be stated plainly where a
+reader can see it: fills come from craft, hobby and credentialed
+clinical practice; failures cluster in self-improvement, business and
+consumer finance, because that is where a business model attaches. I
+had asserted the same thing myself a batch earlier.
+
+**Measured on the way to the colophon, it does not hold.**
+
+The domain spread is real: fitness 100% at target, programming 93%,
+health 86%, against business 15%, marketing 15%, money 17%, career 23%.
+But fill rate is not supply. Only 10–18% of the below-target categories
+in those low-fill domains have been searched twice; the rest are
+**unprobed**, because fitness was completed across batches 01–31 while
+business was barely touched until batch 46. The number is measuring
+research order at least as much as it measures YouTube.
+
+And the set that *is* evidence — the 19 categories searched and written
+off — is spread across **13 domains**. Health has the most at three,
+and health is an 86%-filled domain. There is no clustering.
+
+**What survives is the anecdote, and it should be labelled as one.**
+The specific failures in business and consumer finance really were
+disproportionately funnels, volume operations and motivational content.
+That is a true observation across about ten categories. It is not a law
+about the platform, and nothing currently distinguishes it from the
+categories elsewhere that failed for unrelated reasons.
+
+I also tried to build supporting evidence by tallying rejection reasons
+across all 93 rejected handles. A hand-written classifier left 37 of
+them uncategorised, so those proportions are untrustworthy too, and it
+was abandoned rather than reported — the third hand-rolled detector
+thrown away in this project for the same reason.
+
+**Nothing reached a reader.** This is the first entry in the ledger
+tested *before* shipping rather than after; every previous one was
+caught in the data or already on the page, and four had reached
+visitors. The claim was plausible, it matched what the work felt like,
+and it was wrong about causation.

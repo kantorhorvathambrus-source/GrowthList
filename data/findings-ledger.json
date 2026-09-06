@@ -286,6 +286,28 @@
       "note": "THIRD PACE PROJECTION, THIRD FAILURE, and the pattern across all three is identical: I measured the mechanism (single-target fills yield 1.00; discovery surfaces unseen candidates) and then asserted a rate the mechanism was supposed to produce, without measuring the rate. The mechanism claim was true every time. The rate claim was wrong every time. The owner has discounted each of these on the record; the correct response is to stop offering the optimistic half at all, not to discount it harder.",
       "reachedVisitors": false,
       "reachedVisitorsNote": "Internal. Its cost is in planning, like the 79%."
+    },
+    {
+      "id": "supply-fails-where-the-money-is",
+      "claim": "Creators are findable in craft, hobby and credentialed clinical subjects and not in self-improvement, business and consumer finance — because that is where a business model attaches and the content becomes a funnel or motivation. Appetite is highest in exactly the places supply fails.",
+      "madeAt": "batch 58",
+      "testedAt": "batch 59",
+      "status": "falsified",
+      "class": "stale-stored-fact",
+      "subAreas": [
+        "whether fill rate varies by domain",
+        "whether the variation is explained by supply rather than by research order",
+        "where the categories we actually searched and wrote off are"
+      ],
+      "probedWhenMade": [
+        "whether fill rate varies by domain"
+      ],
+      "found": "The domain spread is real and large — fitness 100%, programming 93%, health 86% against business 15%, marketing 15%, money 17%, career 23%. But it does not mean what I said it meant. Only 10-18% of the below-target categories in the low-fill domains have been searched twice; the rest are simply UNPROBED, because fitness was completed in batches 01-31 while business was barely touched. Fill rate is measuring research order at least as much as supply. And the 19 categories actually searched and written off are spread across 13 domains, with HEALTH — an 86%-filled domain — holding the most at three.",
+      "survives": "The narrow, anecdotal version: the specific failures encountered in business and consumer-finance categories were disproportionately funnels, volume operations and motivational content. That is a real observation across roughly ten categories. It is not a law about YouTube, and the data cannot currently distinguish it from the categories in other domains that failed for entirely different reasons.",
+      "correctionIn": "NOT SHIPPED. The claim was going to the colophon on the owner's instruction and was tested first; nothing reached a reader. A rejection-reason tally was also attempted as supporting evidence and abandoned — a hand-written classifier left 37 of 93 rejections uncategorised, so its proportions are not trustworthy either.",
+      "note": "FIRST CLAIM IN THIS LEDGER TESTED BEFORE IT SHIPPED RATHER THAN AFTER. Every previous entry was caught once it was already in the data or on the page; four had reached visitors. This one was measured on the way to the colophon and stopped there. The owner proposed it and I had asserted the same thing a batch earlier in my own summary, which is the more useful detail: it was plausible, it matched what the work felt like, and it was wrong about causation.",
+      "reachedVisitors": false,
+      "reachedVisitorsNote": "Nothing reached a reader. The measurement happened between the instruction and the page."
     }
   ],
   "_framing": "How to state this ledger, per the owner: the honest framing is that this project tested N of its own claims and found M wrong — and the alternative was NOT M correct claims, it was M wrong ones nobody checked. BOTH NUMBERS ARE COMPUTED FROM THIS FILE, never typed: the paragraph read \"six\" for eight batches after the count had moved past six, which is the inward-facing class of rule 18 appearing inside rule 18ʼs own report. Report both numbers together: how many were falsified, and how many had REACHED VISITORS before being caught. The second is the difference between an internal process finding its own errors and a dataset that shipped them.",
