@@ -2358,3 +2358,38 @@ categories in `searchedNotFound` from the funded set and reports them
 separately, so the slots move to `ui-ux-design`, `personal-budgeting`,
 `stock-analysis` and below rather than being held open for searches
 that have already failed twice.
+
+## Batch 57 — third consecutive batch with no creators, and why
+
+Four more categories leave the budget: `stoicism`, `prompt-engineering`
+and `personal-budgeting` at two rounds each, `dating-skills` at one
+because nothing found was close enough to justify a second.
+
+**Two opposite shapes both failed, which is the useful part.** For
+`stoicism`, Daily Stoic is 45 of 50 uploads under two minutes — too
+short. Stoic Journal is the exact inverse: 721 uploads, every one of
+the fifty most recent over twenty minutes, a fifty-seven-minute median
+— and no named teacher anywhere, generic titles, uniform output. Length
+is not the signal. A channel producing 43-to-57-minute videos at that
+volume with nobody's name on them is a volume operation, and the
+uniformity is what gives it away.
+
+**The close plan now also retires categories with a written gap**, not
+just those in `searchedNotFound`. `body-language` and
+`hiring-and-recruiting` were still showing as funded a batch after
+their gaps were written, which would have held slots open for searches
+already concluded.
+
+**Where this leaves the plan: 88 categories below target, 16 written up
+or searched out, 72 still live.** The list is not exhausting — there is
+plenty left to probe — so the three empty batches are about *which*
+categories reached the top of the ordering, not about running out.
+
+The pattern across all three is consistent enough to state: the fills
+of the last ten batches came from craft and hobby subjects (gardening,
+sewing, PC building, animation, singing) and from credentialed clinical
+practice (Doc Snipes, Jordan Sullivan, Grad Coach). The failures are
+self-improvement, business and consumer finance — subjects where the
+supply is motivational, commercial, or produced at volume without an
+author. Appetite is high in exactly those places, which is why they
+keep reaching the top of the ordering and keep failing.

@@ -202,10 +202,10 @@ const totalMaps = retro.length + firstPass;
     console.log(`\n  DEFERRED BY DECISION — ${plan.deferred.length} categories, lower appetite:`);
     console.log('    ' + plan.deferred.map((r) => `${r.id} (${fmt(r.views)})`).join(', '));
     if (plan.searchedOut.length) {
-      console.log(`\n  SEARCHED TWICE, NOT FILLED — ${plan.searchedOut.length} categories out of the budget:`);
+      console.log(`\n  SEARCHED AND WRITTEN UP — ${plan.searchedOut.length} categories out of the budget:`);
       console.log('    ' + plan.searchedOut.map((r) => `${r.id} (${fmt(r.views)})`).join(', '));
-      console.log('    Appetite ordered these high and the search failed anyway. Their pages');
-      console.log('    say so; the slots went to the next categories down.');
+      console.log('    Appetite ordered these high and the search failed anyway. Each has a');
+      console.log('    written reason its own page shows; the slots went to the next down.');
     }
     if (plan.unranked.length) {
       console.log(`\n  UNRANKED — ${plan.unranked.length} not measured, so not ordered:`);

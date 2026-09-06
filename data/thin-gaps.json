@@ -241,6 +241,53 @@
         "CBT-I programmes run by health services"
       ],
       "at": "batch 55"
+    },
+    "stoicism": {
+      "rounds": [
+        "batch 51",
+        "batch 57"
+      ],
+      "found": "Two rounds. Daily Stoic is 45 of 50 uploads under two minutes against a large commercial operation. Stoic Journal is the opposite shape and no better: 721 uploads, every one of the 50 most recent over twenty minutes, a 57-minute median, generic titles and no named teacher anywhere — a volume operation rather than a catalogue.",
+      "unprobed": [
+        "classicists and philosophy departments publishing directly",
+        "translators of the primary texts"
+      ],
+      "at": "batch 57"
+    },
+    "prompt-engineering": {
+      "rounds": [
+        "batch 52",
+        "batch 57"
+      ],
+      "found": "Two rounds returned certification mills (Simplilearn at 12,403 uploads, edureka at 11,895) and two creators already listed here. The subject's independent teaching appears to happen in writing rather than video.",
+      "unprobed": [
+        "model providers own documentation channels",
+        "applied researchers publishing evaluations"
+      ],
+      "at": "batch 57"
+    },
+    "personal-budgeting": {
+      "rounds": [
+        "batch 52",
+        "batch 57"
+      ],
+      "found": "Two rounds. The strongest candidate, The Budget Mom, is 30 of 50 uploads under two minutes with a single long case study; the rest of the field is spending vlogs. The incumbent is an institution doing explainers, and what is missing is a practitioner with a catalogue rather than a feed.",
+      "unprobed": [
+        "non-profit financial counselling services",
+        "debt advice charities"
+      ],
+      "at": "batch 57"
+    },
+    "dating-skills": {
+      "rounds": [
+        "batch 57"
+      ],
+      "found": "One round. The field is dominated by coaching channels at extreme volume — one candidate has 10,537 uploads — in the seduction-advice genre. Recorded at one round because nothing found was close enough to warrant a second.",
+      "unprobed": [
+        "relationship researchers publishing directly",
+        "clinicians working on social anxiety and dating"
+      ],
+      "at": "batch 57"
     }
   }
 }

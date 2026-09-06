@@ -53,7 +53,15 @@ export function closePlan({ categories, creators, demand, gaps, budget = MAPPING
   // has already failed twice just stops the next one being funded. They are
   // reported separately rather than deleted, because the reason is written and
   // the page shows it.
-  const retired = new Set(Object.keys(gaps?.searchedNotFound ?? {}));
+  // A category with a full documented gap has also left the budget — it was
+  // searched, written up, and its page carries the reason. Holding a funded
+  // slot for it would be the same mistake as holding one for a twice-failed
+  // search, and `body-language` and `hiring-and-recruiting` were still showing
+  // as funded a batch after their gaps were written.
+  const retired = new Set([
+    ...Object.keys(gaps?.searchedNotFound ?? {}),
+    ...Object.keys(gaps?.gaps ?? {}),
+  ]);
   const searchedOut = below.filter((r) => retired.has(r.id));
   const live = below.filter((r) => !retired.has(r.id));
 
