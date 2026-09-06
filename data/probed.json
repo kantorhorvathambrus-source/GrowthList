@@ -552,6 +552,11 @@
       "why": "Eat for Endurance (Claire Shorenstein)",
       "at": "dataset"
     },
+    "@edurekain": {
+      "status": "rejected",
+      "why": "probed for ai-fundamentals; an 11,895-upload certification mill",
+      "at": "batch 56"
+    },
     "@effortlessswimming": {
       "status": "listed",
       "why": "Effortless Swimming (Brenton Ford)",
@@ -1112,6 +1117,11 @@
       "why": "Nutrition Made Simple! (Dr. Gil Carvalho)",
       "at": "dataset"
     },
+    "@observeyoutube": {
+      "status": "rejected",
+      "why": "probed for body-language, research end; nonverbal analysis of public figures as entertainment",
+      "at": "batch 56"
+    },
     "@oliviergirard": {
       "status": "listed",
       "why": "Olivier Girard - the Posture Guy",
@@ -1312,6 +1322,11 @@
       "why": "Salary Transparent Street",
       "at": "dataset"
     },
+    "@saltcubeanalytics": {
+      "status": "rejected",
+      "why": "probed for body-language, research end; behaviour analysis of recorded cases rather than teaching",
+      "at": "batch 56"
+    },
     "@santrelmedia": {
       "status": "rejected",
       "why": "affiliate and software-review funnel",
@@ -1506,6 +1521,11 @@
       "status": "rejected",
       "why": "probed for gardening; 1832 uploads but an allotment diary without teaching structure, and the category needed a second METHOD not a second diary — Liz Zorab was preferred for depth and continuity",
       "at": "batch 50"
+    },
+    "@thebehavioralarts": {
+      "status": "rejected",
+      "why": "probed for body-language, research end; the same case-reading genre as The Behavior Panel",
+      "at": "batch 56"
     },
     "@thebehaviorpanel": {
       "status": "rejected",

@@ -2318,3 +2318,43 @@ the ground Physiotutors was rejected on in batch 43. Doc Snipes was
 *listed* on the same question in batch 50 because her long-form is
 mechanism rather than profession; this one leans the other way. Both
 decisions recorded so the line between them stays visible.
+
+## Batch 56 — body-language becomes a documented gap
+
+No creators listed. `body-language` reached two rounds and is now
+written up as a gap, with the reason on its own page.
+
+The second round was aimed at the end the first had missed: academic
+nonverbal-behaviour and deception research. It returned the same genre
+again, harder — The Behavior Panel accounted for 20 of 50 results, with
+three more channels of identical shape behind it. No researcher
+publishing directly was found.
+
+**The reason this category cannot be filled loosely is unusual enough
+to state.** Its only creator ever, münecat, is a *critic of
+body-language experts*, and her channel is archived. Listing a
+case-reading channel would put on the page precisely what the
+category's own dissenting voice existed to correct. The visitor note
+says that plainly: there is a great deal of this content, it is almost
+all confident readings of famous people from video, the research does
+not support that confidence, and we could not find anyone teaching what
+it does support.
+
+Three of five sub-areas probed. The two unprobed — interview-training
+professionals and clinical communication teaching — are named as the
+places this finding would most plausibly break, and both are contexts
+where the subject is taught without the mind-reading claim attached.
+
+**`ai-fundamentals` did not fill, and the near-miss is worth
+recording.** freeCodeCamp is already listed and has three AI courses
+over forty minutes in its recent two hundred uploads — but they are
+fine-tuning, MLOps and running models locally, which is
+`building-with-llms`, not "how does this work" for a beginner. Mapping
+it would have been a second mapping justified by the wrong content.
+That is round one for the category, not two.
+
+**The close plan now routes around the six.** `close-plan.mjs` excludes
+categories in `searchedNotFound` from the funded set and reports them
+separately, so the slots move to `ui-ux-design`, `personal-budgeting`,
+`stock-analysis` and below rather than being held open for searches
+that have already failed twice.

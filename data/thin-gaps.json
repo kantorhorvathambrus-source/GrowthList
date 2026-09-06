@@ -144,6 +144,31 @@
         "whatWasTried": "One topic search covering firms and individuals. Two of five ends probed. Accelerator material — Y Combinator is already in this dataset and publishes on incorporation and equity — is unprobed for this category specifically and is the most likely place this gap breaks."
       },
       "visitorNote": "We looked and did not list anyone. Nearly all of it is law firms publishing to attract clients, and legal material has a problem the rest of this site does not: it is only correct in one country. A firm's video is both an advertisement and jurisdiction-specific, and we were not willing to hand you that without being able to say it applies where you are."
+    },
+    "body-language": {
+      "count": 0,
+      "gapCause": "mixed",
+      "countUnderLooserStandard": 3,
+      "reason": "Two rounds. The general probe (batch 50) returned The Behavior Panel — four analysts reading famous interrogations — and an NLP persuasion trainer. The research probe (batch 56), aimed at academic nonverbal-behaviour and deception work, returned the same genre again: The Behavior Panel accounted for 20 of 50 results, alongside three more channels of the same shape. No researcher publishing directly was found.",
+      "attribution": "MIXED, and the mix is the point. Supply is enormous; almost all of it is case-reading as entertainment, and the evidence base for confident nonverbal inference is weak enough that the confident tone is itself the problem. The only creator this category has ever had, münecat, is a CRITIC of body-language experts — now archived — so listing a case-reading channel would list precisely what the category's own dissenting voice exists to correct. countUnderLooserStandard is 3 if a large, watchable channel counted regardless of whether its claims are supportable.",
+      "visitorNote": "We looked twice and did not list anyone. There is a great deal of body-language content and almost all of it is the same thing: confident readings of famous people from video, presented as expertise. The research on inferring intent from nonverbal behaviour does not support that confidence, and we could not find anyone teaching what it does support. The one creator this page ever had was a critic of the genre rather than a teacher of it, and her channel has stopped.",
+      "rule18": {
+        "testedAt": "batch 56",
+        "subAreas": [
+          "case-reading and analysis channels",
+          "NLP and persuasion training",
+          "academic nonverbal-behaviour researchers publishing directly",
+          "law-enforcement and interview-training professionals",
+          "clinical communication and autism-support teaching"
+        ],
+        "probed": [
+          "case-reading and analysis channels",
+          "NLP and persuasion training",
+          "academic nonverbal-behaviour researchers publishing directly"
+        ],
+        "outcome": "survived",
+        "whatWasTried": "Two topic searches, the second aimed specifically at the research end that the first had not reached. Three of five sub-areas probed. The two unprobed ends — interview-training professionals and clinical communication teaching — are where this finding would most plausibly break, and both are places the subject is taught without the mind-reading claim attached."
+      }
     }
   },
   "_schema": "Each entry: reason (what was searched and found), gapCause (absent-supply | our-criteria | mixed), countUnderLooserStandard, challenged (any reasoning contested and re-examined), and RULE 18 — rule18: { testedAt, subAreas[], probed[], outcome: survived|falsified, whatWasTried }. An entry without a rule18 block is UNFINISHED, not documented: a gap nobody tried to disprove is indistinguishable from a search that stopped early. probed must cover every sub-area listed, because the failure mode caught twice in this project is a finding from one end of a domain applied to ends never searched. A falsified finding keeps a `corrected` field stating what the entry originally claimed and why that was wrong, rather than being quietly rewritten — see first-aid.",
