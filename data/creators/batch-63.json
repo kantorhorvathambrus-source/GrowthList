@@ -1,0 +1,428 @@
+[
+  {
+    "id": "bryanfoltice",
+    "name": "Dr. Bryan Foltice",
+    "handle": "@dr.bryanfoltice",
+    "channelUrl": "https://www.youtube.com/@dr.bryanfoltice",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A finance professor whose research area is behavioural finance, taking one bias at a time and showing the experiment behind it rather than the anecdote.",
+    "longDescription": "An associate professor of finance at Butler University publishing his own research area as a podcast and channel. The substantial work runs twenty minutes and up: algorithm aversion treated as a measured phenomenon rather than a quirk, automation bias alongside it, and a pair of long sessions on the diversification heuristic — why people spread money the way they spread food at a potluck. Alongside those sit shorter pieces on the savings gap and the retirement spending puzzle. {{shortCountWords|cap}} of the {{scannedWords}} most recent uploads are two minutes or less and the median is {{medianPhrase}}, so the channel reads as a stream of short clips with a serious long-form strand running underneath it; the long videos are the reason to be here. The framing is academic throughout — biases are named, the research is cited, and the advice follows from it rather than the other way round.",
+    "notFor": "Anyone wanting stock picks or a portfolio to copy. This is about why people make the decisions they make with money, not about which decision to make.",
+    "formatTags": [
+      "long-form",
+      "shorts",
+      "tutorial"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 4,
+      "practical": 2,
+      "energy": 2,
+      "selfPromotion": 1,
+      "depth": 3
+    },
+    "signals": [
+      "credentialed",
+      "cites-research"
+    ],
+    "categories": [
+      {
+        "id": "behavioral-finance",
+        "strength": "primary",
+        "why": "The biases are taught as findings with the study attached, one per video, by somebody who researches them for a living.",
+        "evidence": "Twenty-three minutes on algorithm aversion, twenty-one on automation bias, two long treatments of the diversification heuristic, and shorter pieces on why people under-save when they know they should not.",
+        "entryVideo": {
+          "title": "Why We Don't Save Money (Even When We Know We Should)",
+          "videoId": "xEhA8wGQ4js",
+          "whyThisOne": "The gap between knowing and doing is the whole subject, and this is the shortest honest statement of it here.",
+          "durationMin": 9
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "A large share of the uploads are short clips cut from the longer episodes, so the catalogue looks bigger than the body of teaching in it. The channel promotes his university programme.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 52,
+      "longPct": 10,
+      "medianMin": 1,
+      "videoCount": 196,
+      "at": "2026-09"
+    },
+    "entity": "individual"
+  },
+  {
+    "id": "biws",
+    "name": "Mergers & Inquisitions / Breaking Into Wall Street",
+    "handle": "@financialmodeling",
+    "channelUrl": "https://www.youtube.com/@financialmodeling",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Valuation worked on real companies with the awkward parts left in — pensions, capitalised R&D, pre-revenue biotech — by a training firm that argues with its own industry's conventions.",
+    "longDescription": "A financial-modelling training business publishing long analytical breakdowns rather than course previews. The median upload runs {{medianPhrase}} and none of the {{scannedWords}} most recent are under two minutes: what is here is fifteen to twenty-seven minutes on one technical problem at a time. Recent work includes the SpaceX valuation treated as a case study in what a pre-IPO number is actually asserting, how pensions move enterprise value and change a DCF, capitalised R&D inside a three-statement model, biotech valuation where there is no revenue to discount, and a piece on how AI companies report CARR against ARR. The tone is unusually argumentative for the genre — the videos regularly say a widely used convention is wrong and show the arithmetic. It is aimed at people heading into investment banking or private equity, which shapes everything: the worked examples are the ones an analyst gets handed.",
+    "notFor": "A retail investor deciding what to hold. This teaches the modelling an analyst is paid to produce, not how to run your own portfolio.",
+    "formatTags": [
+      "long-form",
+      "tutorial",
+      "video-essay"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 4
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "stock-analysis",
+        "strength": "primary",
+        "why": "Valuation is done on named companies with the messy adjustments shown, which is where the difference between a model and a guess actually lives.",
+        "evidence": "Twenty-seven minutes on the SpaceX valuation, seventeen on pensions in enterprise value and their effect on a DCF, twenty on valuing a pre-revenue biotech, and a treatment of capitalised R&D inside a three-statement model.",
+        "entryVideo": {
+          "title": "The SpaceX Valuation: The “Bad Elden Ring Build” of IPOs",
+          "videoId": "E0kxd4imppQ",
+          "whyThisOne": "You will see what a headline valuation is really claiming, and which of its inputs are doing the work.",
+          "durationMin": 27
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "This is the marketing channel of Breaking Into Wall Street, a paid modelling course, and the videos route to it. The audience assumption is a banking or private-equity career, not personal investing.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 16,
+      "medianMin": 16,
+      "videoCount": 215,
+      "at": "2026-09"
+    }
+  },
+  {
+    "id": "headlessheadhunter",
+    "name": "Headless Headhunter",
+    "handle": "@headlessheadhunter",
+    "channelUrl": "https://www.youtube.com/@headlessheadhunter",
+    "country": null,
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A working corporate recruiter reading real submitted résumés on camera for forty minutes at a time and saying, line by line, what made him stop reading.",
+    "longDescription": "The format is one thing done repeatedly and at length: a recruiter opens a viewer's résumé and talks through it in real time. {{longCountWords|cap}} of the {{scannedWords}} most recent uploads pass twenty minutes and the median is {{medianPhrase}}, which is what the format needs — the value is in watching a decision get made, not in a list of rules. The critique is concrete and often unwelcome: bullet points that describe duties rather than outcomes, projects that cannot be distinguished from a tutorial, the ordering that buries the only relevant year of experience. Because the résumés are submitted by viewers, the same mistakes recur across dozens of videos, and the recurrence is itself the lesson. Almost all of the recent material is software engineering, data and AI roles.",
+    "notFor": "Anyone outside technology hiring. The mechanics generalise; the specific judgements about stacks, projects and titles do not.",
+    "formatTags": [
+      "long-form",
+      "tutorial"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 3,
+      "selfPromotion": 1,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "resume-writing",
+        "strength": "primary",
+        "why": "A résumé is judged in seconds by somebody like this, and the channel is forty minutes of that judgement being narrated out loud.",
+        "evidence": "Dozens of full-length recruiter reviews of real submitted résumés — thirty-five to fifty-nine minutes each — for software engineering, data analysis and AI roles, at graduate and experienced level.",
+        "entryVideo": {
+          "title": "Stop Making These Software Engineer Resume MISTAKES to Get Hired | Recruiter Reviews Resume",
+          "videoId": "gk6OyJXvuBI",
+          "whyThisOne": "You will see which lines a recruiter actually reads, and how quickly the rest stops mattering.",
+          "durationMin": 42
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Titles are written for the algorithm and are harsher than the videos, which are more measured than words like “garbage” suggest. The channel takes résumé review bookings.",
+    "catalogue": {
+      "scanned": 48,
+      "shortPct": 13,
+      "longPct": 88,
+      "medianMin": 37,
+      "videoCount": 789,
+      "at": "2026-09"
+    },
+    "jurisdiction": "general",
+    "jurisdictionNote": "Résumé conventions differ by country. The reviews are US-market and the judgements about length, photographs and personal details follow US norms; the reasoning about evidence and ordering transfers anywhere."
+  },
+  {
+    "id": "daviemach",
+    "name": "Davie Mach",
+    "handle": "@daviemach",
+    "channelUrl": "https://www.youtube.com/@daviemach",
+    "country": "AU",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A chartered accountant teaching the money side of running a small business as full courses — structure, cash flow, payroll and tax — with Australian rules throughout.",
+    "longDescription": "The director of a Sydney accounting firm publishing what he normally charges for. The centrepiece is a three-part mini course running well over an hour each: structure and managing cash flow, payroll and tax planning, then asset protection and exit planning. Around it sit long practical pieces — fifty minutes on what the tax office checks before it audits a business, fifty-two on the traps in the current federal budget, an hour on the structure he is moving clients to. {{shortCountWords|cap}} of the {{scannedWords}} most recent uploads are two minutes or less and the median is {{medianPhrase}}, so the short clips dominate the feed while the courses carry the teaching. The advice is specific because it is jurisdictional: superannuation deadlines, ATO audit triggers, Australian company structures.",
+    "notFor": "Anyone outside Australia looking for tax or structure advice. The principles about cash flow travel; nothing about the rules does.",
+    "formatTags": [
+      "long-form",
+      "tutorial",
+      "shorts"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "credentialed",
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "small-business-finance",
+        "strength": "primary",
+        "why": "The money mechanics of a small business are taught as a sequence — structure first, then cash flow, then payroll and tax — rather than as isolated tips.",
+        "evidence": "A three-part mini course of one hundred and forty-three, one hundred and ninety and one hundred and fifteen minutes covering structure and cash flow, payroll and tax planning, and asset protection; plus fifty minutes on what triggers a tax audit.",
+        "entryVideo": {
+          "title": "Business 101: Structure & Managing Cash Flow | Free Mini Course",
+          "videoId": "Y2z2qjxJtDM",
+          "whyThisOne": "It settles the two decisions that constrain everything after them: how the business is structured, and how its cash is tracked.",
+          "durationMin": 143
+        }
+      }
+    ],
+    "role": "specialist",
+    "jurisdiction": "AU",
+    "jurisdictionNote": "Australian rules throughout — ATO audit practice, superannuation deadlines, Australian company and trust structures. The cash-flow reasoning transfers; the compliance does not.",
+    "caveats": "He runs Box Advisory Services and the videos are a route to it. Tax and structure content dates quickly and is tied to the current Australian budget.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 68,
+      "longPct": 18,
+      "medianMin": 1,
+      "videoCount": 804,
+      "at": "2026-09"
+    },
+    "entity": "individual"
+  },
+  {
+    "id": "sellbetter",
+    "name": "Sell Better",
+    "handle": "@sellbetterxyz",
+    "channelUrl": "https://www.youtube.com/@sellbetterxyz",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A daily show that puts working sellers on camera to run their actual prospecting method, including live cold calls that are not roleplay.",
+    "longDescription": "A sales training company running a daily show, which produces an unusual shape: {{shortCountWords|cap}} of the {{scannedWords}} most recent uploads are clips of two minutes or less, and underneath them sit full sessions of thirty-four to forty-two minutes. Those sessions are the channel. Each brings in a named practitioner to walk through one mechanic — cold-call frameworks, multi-channel prospecting sequences, how buying signals are actually used, account tiering, what to do with intent data — with the screen shared and the sequence visible. One recent episode is live cold calling with the dials made on camera, explicitly framed against roleplay. The orientation is B2B throughout: named accounts, longer cycles, a pipeline to manage.",
+    "notFor": "Anyone selling to consumers, or anyone who wants the theory of persuasion rather than the mechanics of getting a meeting booked.",
+    "formatTags": [
+      "long-form",
+      "interview",
+      "shorts"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 3,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "sales-fundamentals",
+        "strength": "primary",
+        "why": "The basic motions — opening a call, handling the first objection, qualifying — are shown being performed rather than described.",
+        "evidence": "Live cold calling recorded on camera and framed against roleplay, plus thirty-nine-minute sessions on cold-call frameworks and on the prospecting mistakes that keep meetings from being booked.",
+        "entryVideo": {
+          "title": "What Real Cold Calls Actually Sound Like (Live Calling, Not Roleplay)",
+          "videoId": "F0IpQu5ET4s",
+          "whyThisOne": "Hearing real calls, including the ones that go nowhere, resets what a good one is supposed to sound like.",
+          "durationMin": 12
+        }
+      },
+      {
+        "id": "cold-email-outreach",
+        "strength": "primary",
+        "why": "Outreach is treated as a sequence across email and LinkedIn with the timing and the triggers shown, not as a template to copy.",
+        "evidence": "Forty-two minutes on combined email and LinkedIn outreach, thirty-nine on a LinkedIn prospecting playbook, thirty-eight on using intent signals, and a session distinguishing signals from triggers.",
+        "entryVideo": {
+          "title": "Cold Outreach That Actually Books Meetings | Modern Email + LinkedIn Strategy",
+          "videoId": "vhl5fWFUgf0",
+          "whyThisOne": "It gives you the sequence and the reasoning behind each touch, which is the part a template leaves out.",
+          "durationMin": 42
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Sell Better is a paid training and community business and the show is its front door. Guests are usually promoting their own practice, and tooling gets discussed alongside method.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 70,
+      "longPct": 24,
+      "medianMin": 1,
+      "videoCount": 1121,
+      "at": "2026-09"
+    }
+  },
+  {
+    "id": "darrentaylordigital",
+    "name": "Darren Taylor",
+    "handle": "@darrentaylordigital",
+    "channelUrl": "https://www.youtube.com/@darrentaylordigital",
+    "country": "GB",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Google Ads explained at the level of the machinery — how the auction and the bidding actually behave — with no shorts and no account-teardown theatre.",
+    "longDescription": "A rare shape for the paid-advertising genre: not one of the {{scannedWords}} most recent uploads is under two minutes, the median is {{medianPhrase}}, and the whole catalogue sits in the twelve-to-twenty-minute band where an explanation can finish. The subjects are mechanical rather than motivational — which bidding strategy suits which situation, what the algorithm is optimising and what it ignores, server-side tagging without the jargon, where spend leaks on search terms nobody audited, and what changes when Google retires a campaign type. The advice is consistently framed for service businesses and lead generation rather than for large ecommerce accounts, and the platform-change videos are explicit that they will date.",
+    "notFor": "Anyone looking for a first-campaign walkthrough, or for social advertising — this is Google's ecosystem and it assumes you have an account already running.",
+    "formatTags": [
+      "long-form",
+      "tutorial"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 1,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "paid-ads",
+        "strength": "primary",
+        "why": "The platform is taught as a system with rules, so a campaign decision follows from how the auction behaves rather than from a checklist.",
+        "evidence": "Twenty minutes on what the Google Ads algorithm is actually optimising, sixteen on matching a bidding strategy to a situation, seventeen on wasted spend in search terms, and eighteen collecting the mistakes that recur across accounts.",
+        "entryVideo": {
+          "title": "The Google Ads Algorithm Explained",
+          "videoId": "Ca2szVa4t30",
+          "whyThisOne": "Once you know what the system is rewarding, most of the tactical advice elsewhere sorts itself into sense and nonsense.",
+          "durationMin": 20
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "He runs a Google Ads practice and takes client work. A meaningful share of the catalogue is platform-change news that will be out of date within a year.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 6,
+      "medianMin": 14,
+      "videoCount": 214,
+      "at": "2026-09"
+    }
+  },
+  {
+    "id": "ethanevans",
+    "name": "Ethan Evans",
+    "handle": "@ethanevansvp",
+    "channelUrl": "https://www.youtube.com/@ethanevansvp",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A retired Amazon vice-president explaining, from the other side of the table, how promotion decisions and visibility actually work inside a large company.",
+    "longDescription": "{{longCountWords|cap}} of the {{scannedWords}} most recent uploads run past twenty minutes and the median is {{medianPhrase}} — this is a masterclass channel, not a clip channel. The recurring subject is the part of a corporate career that is never written down: who gets promoted and on what evidence, how credit is assigned in a room, what a reorganisation does to a promotion case, how somebody uncomfortable with public speaking builds presence anyway. Because he sat on the promotion committees, the material is specific about mechanism rather than encouraging in general — the questions asked, the evidence required, the failure modes at each level. A recent strand covers AI-native product work, which is a different subject on the same channel.",
+    "notFor": "Anyone outside a large organisation with formal levels and promotion cycles. Very little of this maps onto a small company or freelance work.",
+    "formatTags": [
+      "long-form",
+      "tutorial",
+      "shorts"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 4
+    },
+    "signals": [
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "workplace-politics",
+        "strength": "primary",
+        "why": "Visibility, credit and promotion are treated as a system with rules somebody has actually operated, rather than as something distasteful to be avoided.",
+        "evidence": "A hundred-and-forty-minute masterclass on executive presence and getting credit, forty-seven minutes on building presence without being a natural speaker, and repeated sessions on who executives promote and why, including what a reorganisation does to a case.",
+        "entryVideo": {
+          "title": "Executive Presence for Poor Public Speakers",
+          "videoId": "k3ojRgSKqN8",
+          "whyThisOne": "It separates presence from performance, which is the assumption that stops most people trying.",
+          "durationMin": 47
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "He sells a paid career course and coaching, and the channel routes to it. The perspective is Amazon's promotion culture generalised; other large companies differ.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 26,
+      "longPct": 72,
+      "medianMin": 37,
+      "videoCount": 459,
+      "at": "2026-09"
+    }
+  }
+]

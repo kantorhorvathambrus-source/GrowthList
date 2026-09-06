@@ -996,6 +996,38 @@ this section first to know exactly where to resume.)*
   it was on its way to the colophon and stopped at the measurement.
   Any future statement about where supply fails must be built on the
   searched-and-written-off set, never on fill rate.
+- **THE LOW-FILL PROBE: SIX OF EIGHT FILLED, AND THE NARROW CLAIM DIED
+  TOO.** `data/low-fill-probe.json`. The positive test the fill-rate
+  measurement could not do. **The selection rule was stated before any
+  searching** — the two highest-demand below-target, non-retired
+  categories in each of business, money, marketing and career, ranked
+  by `topic-demand.json`, no substitutions — because a sample chosen
+  after seeing results proves nothing. Each got what a craft category
+  gets: a discovery round on a query written for the craft, a `--small`
+  round where the first found nothing, `evidence.mjs` on every
+  plausible candidate.
+  **Six filled, five of them on the first round.** `behavioral-finance`
+  (a finance professor whose research area it is), `stock-analysis`,
+  `resume-writing` (a recruiter reading real résumés for forty minutes,
+  11 of 50 search results on his own), `sales-fundamentals`,
+  `small-business-finance`, `paid-ads` — seven creators, plus
+  `cold-email-outreach` and `workplace-politics` filled on the way.
+  `ecommerce` and `salary-negotiation` missed after two rounds each.
+  **So fill rate was measuring research order, confirmed from the other
+  side.** The domains looked empty because nobody had looked.
+  **And then the narrow version failed as well, on the way to the
+  file.** Six of the seven new creators carry a disclosed commercial
+  interest, and I was about to write that the money domains are short
+  of people teaching who are not also selling. Measured first:
+  `sells-course`/`sponsor-heavy` puts money at **24/43 (56%)** against
+  craft and clinical at **68/103 (66%)** — real, and the wrong way
+  round. A regex over the caveats prose puts money at 60% and craft at
+  48% — the opposite sign. **Two measures disagreeing in direction is
+  not evidence**, and the regex is the weaker one; three hand-rolled
+  detectors have already been discarded here for false positives. The
+  impression stays an impression and does not reach a page.
+  **Second claim in two batches measured before shipping rather than
+  after.** Both failed. That is the mechanism working.
 - **TWO KINDS OF THIN, AND THE PAGE NOW TELLS THEM APART.** A category
   at one creator was giving every reader the same reason: research went
   to the most-watched skills first. That is true of a *deprioritised*

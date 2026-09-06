@@ -50,10 +50,10 @@
     "caveats": "The McKinsey background is self-described on the channel and we have not verified it independently. He sells courses, and the recent catalogue drifts toward AI-and-consulting commentary that is not teaching.",
     "catalogue": {
       "scanned": 50,
-      "shortPct": 74,
-      "longPct": 0,
+      "shortPct": 72,
+      "longPct": 2,
       "medianMin": 1,
-      "videoCount": 573,
+      "videoCount": 576,
       "at": "2026-09"
     },
     "entity": "individual"

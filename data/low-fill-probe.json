@@ -1,0 +1,100 @@
+{
+  "_comment": "The low-fill domain probe. batch 63. The claim under test is `supply-fails-where-the-money-is` in the findings ledger, already falsified once on the ground that fill rate measures research order. This is the positive test: give categories in the money domains the same effort a craft category got, and see whether creators are there.",
+  "at": "batch 63",
+  "selectionRule": "Stated before any searching, so the sample could not be chosen after seeing results: the two highest-demand below-target, non-retired categories in each of business, money, marketing and career, ranked by data/topic-demand.json. No substitutions were made.",
+  "effort": "Per category: one discovery round on a query written for the craft, then a --small round where the first found nothing, then evidence.mjs on every plausible candidate. Same as a craft category gets.",
+  "categories": [
+    {
+      "id": "behavioral-finance",
+      "domain": "money",
+      "demand": 406000,
+      "before": 1,
+      "after": 2,
+      "filled": true,
+      "with": "@dr.bryanfoltice",
+      "note": "A finance professor whose research area is the subject. Found on the first round."
+    },
+    {
+      "id": "stock-analysis",
+      "domain": "money",
+      "demand": 315000,
+      "before": 1,
+      "after": 2,
+      "filled": true,
+      "with": "@financialmodeling",
+      "note": "Valuation on named companies. A training business, so the commercial interest is disclosed rather than disqualifying."
+    },
+    {
+      "id": "resume-writing",
+      "domain": "career",
+      "demand": 269000,
+      "before": 1,
+      "after": 2,
+      "filled": true,
+      "with": "@headlessheadhunter",
+      "note": "A working recruiter reading real resumes for forty minutes. Dominated the first round outright with 11 of 50 results."
+    },
+    {
+      "id": "ecommerce",
+      "domain": "business",
+      "demand": 242000,
+      "before": 1,
+      "after": 1,
+      "filled": false,
+      "note": "Two rounds including --small. Dropshipping funnels, a fulfilment vendor and course businesses. Not scarcity of channels — scarcity of teaching."
+    },
+    {
+      "id": "salary-negotiation",
+      "domain": "career",
+      "demand": 226000,
+      "before": 1,
+      "after": 1,
+      "filled": false,
+      "note": "Two rounds including --small. Career generalists and recruiting-agency channels. The one strong find, Ethan Evans, has ~20 negotiation videos in a 459-video catalogue and was listed where his body of work actually is."
+    },
+    {
+      "id": "sales-fundamentals",
+      "domain": "marketing",
+      "demand": 191000,
+      "before": 1,
+      "after": 2,
+      "filled": true,
+      "with": "@sellbetterxyz",
+      "note": "Live cold calling and 35-42 minute prospecting sessions. Also fills cold-email-outreach."
+    },
+    {
+      "id": "small-business-finance",
+      "domain": "business",
+      "demand": 129000,
+      "before": 1,
+      "after": 2,
+      "filled": true,
+      "with": "@daviemach",
+      "note": "A chartered accountant publishing three mini courses of 115-190 minutes. Australian jurisdiction, noted on the card."
+    },
+    {
+      "id": "paid-ads",
+      "domain": "marketing",
+      "demand": 86000,
+      "before": 1,
+      "after": 2,
+      "filled": true,
+      "with": "@darrentaylordigital",
+      "note": "Not one upload under two minutes in the recent window, median fourteen. The rarest shape in this genre."
+    }
+  ],
+  "result": {
+    "sampled": 8,
+    "filled": 6,
+    "hitRate": "6 of 8",
+    "creatorsAdded": 7,
+    "alsoFilled": [
+      "cold-email-outreach (from @sellbetterxyz)",
+      "workplace-politics (from @ethanevansvp, found while probing salary-negotiation)"
+    ],
+    "comparison": "The craft and clinical categories that produced the original impression were filled at roughly one creator per category per round of comparable effort. This sample matched that."
+  },
+  "conclusion": "The supply claim does not survive the positive test either. Six of eight money-domain categories filled on the same effort a craft category gets, and five of the six filled on the FIRST round. Fill rate in these domains was measuring research order, exactly as the ledger entry said.",
+  "whatSurvives": "Nothing measurable, and the attempt to rescue it failed on the way to this file. Six of the seven creators added carry a disclosed commercial interest, and I was about to write that the money domains are short of people teaching who are not also selling — a disclosure-load claim rather than a supply one. Measured first: by the `sells-course` and `sponsor-heavy` signals, the money domains run at 24 of 43 creators (56%) against the craft and clinical domains at 68 of 103 (66%). The gap is real and it goes the WRONG WAY. A second measure, a regex over the caveats prose, puts money at 60% and craft at 48% — the opposite direction from the first. Two measures disagreeing in sign means neither is evidence, and the regex is the weaker of the two: this project has already discarded three hand-rolled detectors for false positives. So the narrow version is unsupported as well, and the impression that money-domain creators are more commercial is left as an impression.",
+  "limits": "Eight categories is a sample, not a census, and the selection rule ranked by demand — so this says nothing about the low-demand tail of these domains, where 15 of the 36 below-target categories sit. The two misses are also the two subjects most saturated with course-selling, which is consistent with a commercial-crowding effect and with several other explanations; the measurement above does not distinguish them."
+}

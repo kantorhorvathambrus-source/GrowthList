@@ -313,6 +313,38 @@
       ],
       "note": "Distinct from the other entries here: this category is not empty of a second voice, it is empty of a live one.",
       "at": "batch 58"
+    },
+    "salary-negotiation": {
+      "rounds": [
+        "batch 47",
+        "batch 63 discovery",
+        "batch 63 (--small)"
+      ],
+      "found": "Discovery on negotiation scripts and counter-offers returned career-advice generalists, university careers offices and recruiting-agency channels. The two closest were Sonal Bahl, whose long-form is a weekly career AMA rather than negotiation teaching and whose 200 most recent uploads are 78% under two minutes, and Recruiter Preston, whose subject is running a recruiting agency rather than negotiating as a candidate.",
+      "unprobed": [
+        "negotiation academics teaching outside a business-school channel",
+        "compensation consultants and levelling specialists"
+      ],
+      "at": "batch 63",
+      "smallRound": "A --small round on job offers and counter-offers surfaced Ethan Evans, a retired Amazon vice-president — but his negotiation material is roughly twenty videos in a 459-video catalogue about promotion and executive presence, so he is listed under workplace-politics where the body of work actually is, not here.",
+      "conclusion": "One creator stands. Two rounds, the second deliberately below the commercial top.",
+      "visitorNote": "We searched this one twice, including a round aimed deliberately below the biggest channels. What came back was general career advice and recruiter-business content rather than anyone teaching negotiation itself at length, so one entry stands rather than a second we would not defend."
+    },
+    "ecommerce": {
+      "rounds": [
+        "batch 53",
+        "batch 63 discovery",
+        "batch 63 (--small)"
+      ],
+      "found": "Two discovery rounds on store operations and on building and converting a store. Both returned dropshipping funnels, fulfilment vendors and agency channels: EcommOps is a third-party logistics company and its recent long-form is tariff webinars rather than teaching; Learn With Shopify is the vendor's own channel with a one-minute median; Davie Fogarty Mentors and The Ecom Academy are both course businesses whose recent long-form is AI-tooling tutorials.",
+      "unprobed": [
+        "operators publishing post-mortems of their own stores",
+        "warehouse, returns and customer-service practice as its own subject"
+      ],
+      "at": "batch 63",
+      "smallRound": "The --small round, with everything above 500k subscribers hidden, changed the names and not the kind: smaller store-builder channels and coaching funnels. The pattern here is not scarcity of channels but scarcity of teaching — the subject is dominated by people selling a way to start a store.",
+      "conclusion": "One creator stands. Two rounds, the second deliberately below the commercial top.",
+      "visitorNote": "We searched this twice, including a round with the biggest channels hidden. Almost everything found was selling a course or a service rather than teaching the work, so one entry stands rather than a second we would not defend."
     }
   },
   "retiredThenReopened": {

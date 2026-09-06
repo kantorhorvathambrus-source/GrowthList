@@ -487,6 +487,11 @@
       "why": "45 of 50 uploads under two minutes, median 1m, against a large commercial operation. The applied-practice angle is real but the channel is a shorts feed",
       "at": "batch 51"
     },
+    "@darrentaylordigital": {
+      "status": "listed",
+      "why": "Darren Taylor",
+      "at": "dataset"
+    },
     "@databasestar": {
       "status": "listed",
       "why": "Database Star (Ben Brumm)",
@@ -506,6 +511,11 @@
       "status": "rejected",
       "why": "NLP-framed persuasion training; the evidence base is the thing the category needs a check against, not a source",
       "at": "batch 50"
+    },
+    "@daviemach": {
+      "status": "listed",
+      "why": "Davie Mach",
+      "at": "dataset"
     },
     "@declutterthemind": {
       "status": "listed",
@@ -555,6 +565,11 @@
     "@doctorramani": {
       "status": "listed",
       "why": "Dr. Ramani Durvasula",
+      "at": "dataset"
+    },
+    "@dr.bryanfoltice": {
+      "status": "listed",
+      "why": "Dr. Bryan Foltice",
       "at": "dataset"
     },
     "@drandystapleton": {
@@ -652,6 +667,11 @@
       "why": "Esther Perel",
       "at": "dataset"
     },
+    "@ethanevansvp": {
+      "status": "listed",
+      "why": "Ethan Evans",
+      "at": "dataset"
+    },
     "@examstudyexpert": {
       "status": "listed",
       "why": "Exam Study Expert (William Wadsworth)",
@@ -670,6 +690,11 @@
     "@filmriot": {
       "status": "listed",
       "why": "Film Riot",
+      "at": "dataset"
+    },
+    "@financialmodeling": {
+      "status": "listed",
+      "why": "Mergers & Inquisitions / Breaking Into Wall Street",
       "at": "dataset"
     },
     "@firmlearning": {
@@ -760,6 +785,11 @@
     "@harvardbusinessreview": {
       "status": "listed",
       "why": "Harvard Business Review",
+      "at": "dataset"
+    },
+    "@headlessheadhunter": {
+      "status": "listed",
+      "why": "Headless Headhunter",
       "at": "dataset"
     },
     "@healmytech1": {
@@ -1420,6 +1450,11 @@
     "@selfmademillennial": {
       "status": "listed",
       "why": "Self Made Millennial (Madeline Mann)",
+      "at": "dataset"
+    },
+    "@sellbetterxyz": {
+      "status": "listed",
+      "why": "Sell Better",
       "at": "dataset"
     },
     "@semrush": {
