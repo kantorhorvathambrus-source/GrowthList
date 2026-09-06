@@ -200,6 +200,14 @@
         "That number is not our traffic and could not be. This site has no analytics, the home page lists every skill equally, and we have no idea which page you arrived at. It measures appetite for a subject among people already watching video about it — a real number, with a narrow meaning, and a gap between it and you that we cannot close. It is one input to a judgement, and you are reading the judgement.",
         "Two skills, teaching and explaining, and first aid, could not be measured at all because the search kept failing. They are absent from the ranking rather than ranked last."
       ]
+    },
+    "theOtherSide": {
+      "title": "Why most skills here have no dissenting voice",
+      "paras": [
+        "Some skill pages carry a section called The other side: someone who criticises the field rather than selling it. Most do not, and the reason is not that we stopped looking.",
+        "Across {{creatorsWords}} creators we found {{criticsWords}} we would call critics, covering {{criticCatsWords}} of the {{populatedWords}} skills that have anyone listed at all. A genuine critic of a field — someone who knows it well enough to be worth reading and is not selling the thing they are assessing — is perhaps ten times rarer than a good teacher of it.",
+        "We considered putting a line on every page without one, and decided against it. A warning that appears on four pages in five stops being read, and the warnings that matter here are the ones about a specific creator. So the absence is stated once, here: if a skill page has no other side, we did not find one, and you should assume the case against was not made."
+      ]
     }
   },
   "open": [

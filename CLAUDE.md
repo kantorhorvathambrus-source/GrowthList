@@ -770,6 +770,30 @@ this section first to know exactly where to resume.)*
   taxonomy — `singing` 3.1M, `exam-preparation` 1.5M, `journaling` 1.2M.
   Eleven categories fell off the budget. Ranking a spend on a
   41-of-100 sample would have been wrong in both directions.
+- **AN ERROR HANDLER THAT MAPS EVERY FAILURE TO A DOMAIN VALUE IS A
+  FACT-MANUFACTURING MACHINE, NOT A SAFETY NET.** `catch { ch = null }`
+  reads as defensive and is the opposite: it converts "the call failed"
+  into "this channel does not exist", which is a *finding*. The worst
+  instance in the whole ledger family — a transient quota error becoming
+  a durable confident wrong value, inside the audit written to catch
+  exactly that, on the day the marker that would have persisted it was
+  added. **Before writing a catch, ask what domain claim the fallback
+  value makes.** If it makes one, the handler must distinguish the
+  failure from the claim: leave the record untouched, name what could
+  not be checked, and where the schema cannot express the doubt, exit
+  non-zero.
+- **THE DELIVERY SWEEP — `data/delivery-audit.json`.** Every data file
+  against the six the client loads, every field against every reference
+  in `js/`, then the rendered DOM checked directly. **Five things were
+  real work delivered nowhere**, and every internal check passed on all
+  five, which is what makes the class invisible: the documented gaps,
+  eleven `jurisdictionNote` sentences, `dormant` on the creator card,
+  `entity` on the card, and critic scarcity anywhere at all. All five
+  now ship. The audit also records what is *correctly* internal, and
+  three open proposals that are the owner's call — publishing the
+  findings ledger, per-category appetite numbers, and reputation drift.
+  **Ask of any new field: which surface renders this, and has that been
+  checked in a browser?** "It is in the data" is not delivery.
 - **A DOCUMENTED GAP THAT NEVER REACHES A READER IS NOT DOCUMENTED.**
   Found while writing the first three gaps of the close plan: gaps had
   been written, recorded and reported for forty-eight batches, and an

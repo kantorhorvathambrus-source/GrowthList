@@ -41,9 +41,17 @@ function meta(creator) {
   const parts = [sizeLabel(creator.sizeBucket), sizeClass(creator.sizeBucket)];
   if (creator.role === 'critic') parts.push('Critic');
   else if (creator.role === 'generalist') parts.push('Generalist');
+  // BOTH non-active states, on the card as on the detail page. `dormant` was
+  // added to the schema and wired into the creator page and the home-page
+  // counts, and not to this card — so on a category page, the place a visitor
+  // actually chooses from, a channel silent for over a year looked identical
+  // to one that posted this morning. Half-shipped is its own failure.
   if (creator.status === 'archive') parts.push('Archive');
+  if (creator.status === 'dormant') parts.push('Quiet for over a year');
   // Only shown when it constrains the viewer. A "general" creator transfers,
   // so saying so would be noise on every card in every other category.
+  if (creator.entity === 'vendor') parts.push('Company channel');
+  else if (creator.entity === 'institution') parts.push('Organisation');
   if (creator.jurisdiction && creator.jurisdiction !== 'general') parts.push(`${creator.jurisdiction} only`);
 
   return parts
@@ -112,6 +120,7 @@ export function creatorCard(creator, mapping, { showEmbed = true } = {}) {
       ${claim('fit', 'Why here', mapping?.why ?? creator.shortDescription)}
       ${creator.languageNote ? claim('caveat', 'Language', creator.languageNote) : ''}
       ${claim('caveat', 'Not for', creator.notFor)}
+      ${creator.jurisdictionNote ? claim('caveat', 'Where this applies', creator.jurisdictionNote) : ''}
       ${creator.caveats ? claim('caveat', 'Note', creator.caveats) : ''}
 
       ${badges(creator)}

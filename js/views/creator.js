@@ -159,6 +159,17 @@ export async function renderCreator(app, { params }) {
           <i aria-hidden="true"></i>
           <div><p class="micro claim__label">Note</p><p>${esc(creator.caveats)}</p></div>
         </div>` : ''}
+        ${/* THE FIELD THAT WAS WRITTEN AND NEVER WIRED UP. Eleven creators carry
+              a jurisdictionNote saying exactly what transfers across borders and
+              what does not — "the modelling method transfers; none of the numbers
+              do" — authored in the same shape as languageNote, caveats and
+              scopeNote, all three of which render right here. This one never
+              did. For a reader outside the creator's country it is the single
+              most useful sentence on the page. */''}
+        ${creator.jurisdictionNote ? `<div class="claim claim--caveat" style="margin-bottom: var(--sp-6)">
+          <i></i>
+          <div><p class="micro claim__label">Where this applies</p><p>${esc(creator.jurisdictionNote)}</p></div>
+        </div>` : ''}
         ${creator.scopeNote ? `<div class="claim" style="margin-bottom: var(--sp-6)">
           <i aria-hidden="true"></i>
           <div><p class="micro claim__label">Scope</p><p>${esc(creator.scopeNote)}</p></div>

@@ -106,6 +106,31 @@ function floorFacts(creators) {
   const n = creators.filter((c) => !(c.signals ?? []).some((s) => COMMERCIAL.includes(s))).length;
   return { noCommercial: String(n), noCommercialWords: numberToWords(n) };
 }
+
+// Critic scarcity, computed. Rule 11 settled that this must never be a
+// per-page warning — it would appear on four pages in five and train a reader
+// to skim the warnings that matter — so the whole fact is stated once, here,
+// and the numbers come from the data rather than a sentence someone typed.
+function otherSideFacts(creators) {
+  const critics = creators.filter((c) => c.role === 'critic');
+  const criticCats = new Set(critics.flatMap((c) => (c.categories ?? []).map((m) => m.id)));
+  const populated = new Set(creators.flatMap((c) => (c.categories ?? []).map((m) => m.id)));
+  const f = {
+    creators: creators.length, critics: critics.length,
+    criticCats: criticCats.size, populated: populated.size,
+  };
+  for (const [k, n] of Object.entries(f)) f[`${k}Words`] = numberToWords(n);
+  for (const k of Object.keys(f)) f[k] = String(f[k]);
+  return f;
+}
+
+function otherSideMarkup(notes, creators) {
+  const sec = notes?.buildPage?.theOtherSide;
+  if (!sec) return '';
+  const facts = otherSideFacts(creators);
+  return `<div class="sec-head"><span class="num">05</span><h2 id="other-side-heading">${esc(sec.title)}</h2></div>
+    ${(sec.paras ?? []).map((p) => `<p>${esc(fillFacts(p, facts))}</p>`).join('')}`;
+}
 function fillFacts(text, facts) {
   return text.replace(/\{\{\s*([A-Za-z]+)\s*(?:\|\s*(cap)\s*)?\}\}/g, (whole, key, mod) => {
     if (facts[key] === undefined) return whole;
@@ -230,6 +255,13 @@ export async function renderColophon(app) {
       <div class="rail"><span>Depth</span></div>
       <div class="band-body">
         ${depthMarkup(notes)}
+      </div>
+    </section>
+
+    <section class="band band--paper" aria-labelledby="other-side-heading">
+      <div class="rail"><span>Dissent</span></div>
+      <div class="band-body">
+        ${otherSideMarkup(notes, creators)}
       </div>
     </section>
   `;

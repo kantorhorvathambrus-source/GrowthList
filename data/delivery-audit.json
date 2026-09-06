@@ -1,0 +1,68 @@
+{
+  "_comment": "WHAT EXISTS IN THIS REPO THAT A VISITOR NEVER SEES. Swept at batch 49 after finding that documented gaps had been written, recorded and reported for forty-eight batches and had never once reached a reader. That is a class of its own: nothing false, nothing stale, no schema that could not carry the truth — work completed and then not delivered. It leaves no trace, because every internal check passes.",
+  "auditedAt": "batch 49",
+  "method": "Every file in data/ against the six the client actually loads; every creator and mapping field against every reference in js/; then the rendered DOM checked directly for each field that claimed to ship.",
+  "found": [
+    {
+      "what": "thin-gaps.json — the reason an empty category is empty",
+      "reached": "NO, for 48 batches",
+      "cost": "An empty category rendered \"No creators are listed for this skill yet\" and nothing else, while the reason sat where the coverage report could see it.",
+      "fixed": "visitorNote added and shipped via subject-notes.json; build warns when a gap has neither that nor a high-stakes note."
+    },
+    {
+      "what": "creator.jurisdictionNote — eleven sentences on what transfers across borders",
+      "reached": "NO",
+      "cost": "The most useful sentence on the page for any reader outside the creator's country. James Shack: \"UK pensions, tax wrappers and state provision throughout. The modelling method transfers; none of the numbers do.\" It was authored in the same shape as languageNote, caveats and scopeNote — all three of which render from adjacent lines in creator.js — and the render for this one was simply never written.",
+      "fixed": "Renders on the creator page and the card as \"Where this applies\"."
+    },
+    {
+      "what": "status: dormant on the creator CARD",
+      "reached": "NO — the detail page had it, the card did not",
+      "cost": "On a category page, which is where a visitor actually chooses, a channel silent for over a year looked identical to one that posted this morning. Half-shipped is its own failure: the schema change, the audit, the home-page counts and the detail page all landed, and the one surface between them did not.",
+      "fixed": "Card meta now shows both non-active states."
+    },
+    {
+      "what": "creator.entity on the card",
+      "reached": "NO — detail page only",
+      "cost": "Smaller, same shape. The vendor/institution distinction matters most in a list where a reader is comparing.",
+      "fixed": "Card now shows Company channel / Organisation."
+    },
+    {
+      "what": "Critic scarcity — 21 critics across 240 creators, 30 of 183 populated skills",
+      "reached": "NO, anywhere",
+      "cost": "A page with no dissenting voice simply omits the section, so the two cases are indistinguishable: no critic exists, and we never looked. The project reports this internally with its denominator every run and told a reader nothing.",
+      "fixed": "Colophon section 05, with the numbers computed at render. DELIBERATELY NOT per-page: rule 11 settled that a notice appearing on four pages in five trains a reader to skim the warnings that matter."
+    }
+  ],
+  "correctlyInternal": {
+    "_note": "Not everything unshipped is a failure. These are records of how the work was done, and a reader is owed the conclusion rather than the method.",
+    "probed.json": "267 handles with rejection reasons — a research ledger.",
+    "handle-rescues.json": "Which creators the fallback search had to rescue.",
+    "field-audit.json / procedure-audit.json / claim-artifacts.json / schema-expressiveness.json": "Audits of our own process and schema.",
+    "critic-gaps.json": "Empty by design until the end of Phase 2.",
+    "domain-notes.retired / .corrected / .open": "The arc of measurements written, confirmed and falsified.",
+    "thin-gaps rule18 blocks": "Which sub-areas were probed. The conclusion ships as visitorNote; the method is ours.",
+    "creator.catalogue": "The measurement the prose is interpolated from — it reaches the page as the sentence, which is the point.",
+    "creator.addedLater / language": "Provenance and a field that is 'en' for every record."
+  },
+  "openProposals": [
+    {
+      "what": "findings-ledger.json — 14 claims tested about our own work, 10 falsified, 4 of them live on the site before being caught",
+      "case": "The most on-brand thing this site could publish and the strongest evidence its method is real. A section saying plainly that we test our own claims, that most did not survive, and that four were wrong in public before we caught them.",
+      "against": "It is a page about us on a site meant to be about skills, and the numbers are unflattering in a way a reader has no way to calibrate.",
+      "status": "OWNER'S CALL — not shipped."
+    },
+    {
+      "what": "topic-demand.json per-category numbers",
+      "case": "Section 04 explains that depth was allocated by measured appetite but shows no number, so a reader cannot check the reasoning against any particular skill.",
+      "against": "A view count on a skill page invites it to be read as a recommendation.",
+      "status": "OWNER'S CALL — not shipped."
+    },
+    {
+      "what": "reputation-drift.json — 11 creators whose current catalogue no longer matches their reputation",
+      "case": "Genuinely useful to a reader who arrives expecting the old channel.",
+      "against": "It is a public judgement about named people who are not listed here and cannot answer it.",
+      "status": "DEFERRED BY THE OWNER at batch 33 — 'make sure the data exists in a usable shape, decide at the end of Phase 2'. Still pending."
+    }
+  ]
+}
