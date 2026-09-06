@@ -2511,3 +2511,50 @@ written to catch a different one.
 caveat that one of the two methods used to establish that is
 demonstrably weak, and the other only catches creators who announce the
 move themselves.
+
+### The unread-data sweep: what the API hands us that nothing reads
+
+Batch 62. Every free part of `channels.list` and `videos.list` across
+all 252 records, including the parts `lib/youtube.mjs` never asks for.
+Full output in `data/unread-data-audit.json`; re-runnable with
+`scripts/audit-unread-fields.mjs`.
+
+**Measured but NOT published, because the field cannot carry the
+claim.** `contentDetails.caption` reports `false` on 274 of the 347
+entry videos we send readers to — 79%. The obvious sentence, "four in
+five of our starting videos have no captions", is not supportable: the
+field is documented as whether captions are *available*, it behaves
+inconsistently for auto-generated tracks, and this sweep has no way to
+tell "no caption track" from "auto-captions not reported". A 79% figure
+about accessibility, published wrongly, would be worse than saying
+nothing. Verifying it properly needs `captions.list`, which is 50 units
+a video and authorisation-gated. Unverified; left unverified.
+
+**Present, checked, and it says nothing.** `topicDetails.topicCategories`
+is YouTube's own classification of a channel, on 250 of 252 records. It
+was the most promising candidate for contradicting a category mapping.
+Cross-tabbed against our domains it agrees everywhere it can — fitness
+→ Physical fitness 24/26, health → Health 23/24, programming →
+Technology 23/25, philosophy → Knowledge 9/9 — and the top label,
+"Lifestyle (sociology)", is on 195 of 252. Thirty-one labels cannot
+adjudicate a 197-category taxonomy. Two channels classify as
+entertainment only (`charismaoncommand`, `themoth`); both readings are
+defensible and neither contradicts anything we say. **Recorded so the
+next person does not spend the quota expecting an answer.**
+
+**A flag that is not a defect.** Six records' prose cites a year
+predating the channel's creation: `duartedesign` (1988 / 2007),
+`coachingforleaders` (2011 / 2024), `themoth` (1997 / 2010),
+`docsnipes`, `jonloomer`, `pensioncraft`. All six correctly cite a
+practice or organisation older than its YouTube presence. The 13-year
+gap on `coachingforleaders` was checked with a search: there is no
+older channel, the podcast simply predates the video feed. The check
+stays because it is the cheap detector for the Sadler shape — a record
+accurate about the person, pointing at the wrong channel of theirs.
+
+**Still unread, deliberately.** Self-set channel keywords (229 of 252
+set them), video tags, `snippet.categoryId`, per-video view, like and
+comment counts, `contentDetails.licensedContent`, video-level topic
+categories. None of them bears on a claim the site makes. They are
+listed in the audit file with what each could support, so the next
+sweep starts from a list rather than from scratch.

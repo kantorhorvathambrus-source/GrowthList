@@ -53,6 +53,12 @@ export const getSubjectNotes = () =>
 export const getLedgerSummary = () =>
   load('ledger-summary.json').catch(() => null);
 
+// Measured facts about how the list is made, not about any creator. Absent
+// rather than zeroed when the audit has never run, so the colophon can omit
+// the sentences instead of printing a nought as if it meant something.
+export const getMethodFacts = () =>
+  load('method-facts.json').catch(() => null);
+
 /** Search index: categories (name + aliases) and creators (name + handle). */
 export const getSearchIndex = () => load('search-index.json');
 

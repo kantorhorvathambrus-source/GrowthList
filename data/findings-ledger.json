@@ -308,6 +308,50 @@
       "note": "FIRST CLAIM IN THIS LEDGER TESTED BEFORE IT SHIPPED RATHER THAN AFTER. Every previous entry was caught once it was already in the data or on the page; four had reached visitors. This one was measured on the way to the colophon and stopped there. The owner proposed it and I had asserted the same thing a batch earlier in my own summary, which is the more useful detail: it was plausible, it matched what the work felt like, and it was wrong about causation.",
       "reachedVisitors": false,
       "reachedVisitorsNote": "Nothing reached a reader. The measurement happened between the instruction and the page."
+    },
+    {
+      "id": "entry-video-is-the-best-starting-point",
+      "claim": "The video on each card is the place to start with that creator — the card says \"Start here\", and nothing qualified where the choice came from.",
+      "madeAt": "batch 01 (the card component)",
+      "testedAt": "batch 62",
+      "status": "falsified",
+      "class": "data-we-hold-and-never-read",
+      "subAreas": [
+        "whether the video belongs to the channel",
+        "whether it is the best introduction the channel offers",
+        "what the creator themselves puts at their front door"
+      ],
+      "probedWhenMade": [
+        "whether the video belongs to the channel"
+      ],
+      "found": "The pick only ever comes from the 50 most recent uploads (200 when long-form is scarce), so most of a large catalogue is invisible to it. brandingSettings.channel.unsubscribedTrailer — the video the creator themselves shows to non-subscribers — was never requested. 191 of 252 creators set one; 132 of those are older than our 50-upload window, so we could not have chosen them. Two agree with our pick.",
+      "survives": "The attribution half, which is the part that was actually tested: every entry video is verified through snippet.channelId to belong to the channel it is shown on. And the trailer is not a better source than our pick — 51 of 191 run under three minutes and read as channel promos, not introductions to a subject. It is a candidate list, not a correction.",
+      "correctionIn": "The colophon now carries the selection method as its own rule, with the measured window figure. scripts/audit-unread-fields.mjs produces it; build-data ships it as method-facts.json so the number cannot decay in the copy.",
+      "note": "The claim was never written down anywhere, which is why nothing checked it: it was made by two words in a component eyebrow. \"Start here\" is a superlative to a reader and was a default to us.",
+      "reachedVisitors": true,
+      "reachedVisitorsNote": "Live on every creator card since the first batch.",
+      "visitorSummary": "Each card says \"Start here\" over one video. We chose it from the creator's recent uploads, not from their whole catalogue, so it is a good place to begin rather than the best thing they have ever made — and where a creator has picked their own opening video, two thirds of the time it is older than anything we looked at."
+    },
+    {
+      "id": "the-api-confirms-the-handle",
+      "claim": "Every channel is confirmed through the YouTube Data API before it is written down, handle included.",
+      "madeAt": "batch 01",
+      "testedAt": "batch 62",
+      "status": "falsified",
+      "class": "data-we-hold-and-never-read",
+      "subAreas": [
+        "whether the channel exists",
+        "whether the handle we store is the channel's own canonical handle"
+      ],
+      "probedWhenMade": [
+        "whether the channel exists"
+      ],
+      "found": "getChannelByHandle returned the handle we asked with, echoed straight back into the record. snippet.customUrl — the channel's own canonical handle, present in every response — was discarded. So the confirmation was circular for that one field: a handle changed by its owner still resolves through the old one, and our stored value could never be contradicted by the source.",
+      "survives": "Everything else in the sentence. The channel, the id, the size band, the upload history and the entry video were all confirmed against the API and still are.",
+      "correctionIn": "getChannelByHandle now returns customUrl; audit-status.mjs compares it against the stored handle on every run and reports aliases without auto-correcting them, since a handle change is a fact about the creator. Run across all 252 records: zero disagreements.",
+      "note": "A check that reads back your own input is worse than no check, because it reports success. Same family as the error handler that mapped every failure to a domain value.",
+      "reachedVisitors": false,
+      "reachedVisitorsNote": "No wrong link ever shipped — the audit found zero mismatches. The defect was in the guarantee, not in the data."
     }
   ],
   "_framing": "How to state this ledger, per the owner: the honest framing is that this project tested N of its own claims and found M wrong — and the alternative was NOT M correct claims, it was M wrong ones nobody checked. BOTH NUMBERS ARE COMPUTED FROM THIS FILE, never typed: the paragraph read \"six\" for eight batches after the count had moved past six, which is the inward-facing class of rule 18 appearing inside rule 18ʼs own report. Report both numbers together: how many were falsified, and how many had REACHED VISITORS before being caught. The second is the difference between an internal process finding its own errors and a dataset that shipped them.",
@@ -321,6 +365,7 @@
     "_comment": "Three distinct failures live in this ledger and they need different defences. Named at batch 45 on the owner's instruction, after the third was found.",
     "stale-stored-fact": "A fact was true when written and stopped being queried. Defence: re-query it on a schedule. Six instances — the handle list, the badge shares, five drifted domain measurements, the duplicate record, entry-video titles, size bands.",
     "schema-cannot-express-it": "The value was wrong the DAY it was written, because the field's shape could not carry the truth. Defence: write the truest sentence about a real subject, then try to say it in the schema. Two instances — `status` could not say 'quiet for eighteen months'; `role` could not say 'this is a company'.",
-    "never-even-wrong": "A claim that no process ever produced. Not stale, not mis-shaped — there was never an artifact behind it, so it could not have been checked, and its specific number came from nowhere at all. Defence: for every measurement asserted about ourselves, name the artifact that computes it, or delete the number. See data/claim-artifacts.json. THIS IS THE HARDEST OF THE THREE, and the owner's framing is the right one: the other instances were checkable and unchecked, this one had nothing to check against. Rule 18 looks for claims that were tested and failed, so a claim no process ever produced is invisible to it by construction — it took changing the question, to 'which rules require manual repetition', to surface this one at all. The defence cannot be a better test; it has to be a requirement at the point of writing: name the artifact in the same sentence as the number."
+    "never-even-wrong": "A claim that no process ever produced. Not stale, not mis-shaped — there was never an artifact behind it, so it could not have been checked, and its specific number came from nowhere at all. Defence: for every measurement asserted about ourselves, name the artifact that computes it, or delete the number. See data/claim-artifacts.json. THIS IS THE HARDEST OF THE THREE, and the owner's framing is the right one: the other instances were checkable and unchecked, this one had nothing to check against. Rule 18 looks for claims that were tested and failed, so a claim no process ever produced is invisible to it by construction — it took changing the question, to 'which rules require manual repetition', to surface this one at all. The defence cannot be a better test; it has to be a requirement at the point of writing: name the artifact in the same sentence as the number.",
+    "data-we-hold-and-never-read": "A field arrives in a response we fetch on every run, and nothing has ever looked at it. Not stale (it is current on every fetch), not mis-shaped (it says exactly what it says), and not unproduced (the artifact exists and runs) — simply unread. Named at batch 62 after the Sadler miss, whose evidence sat in the channel description that audit-catalogue fetched fifty-nine times. Defence: the sweep in scripts/audit-unread-fields.mjs asks the API for every free part and reports, per field, what claim it could contradict and whether anything reads it. The trap is that a field only becomes evidence once someone decides what it would contradict, so a sweep that lists fields without naming the claim is not a defence."
   }
 }

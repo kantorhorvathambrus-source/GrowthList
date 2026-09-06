@@ -241,6 +241,32 @@ if (existsSync(ledgerPath)) {
   };
 }
 
+// TWO FACTS ABOUT OUR OWN METHOD, MEASURED RATHER THAN ASSERTED.
+//
+// Both come out of the unread-data sweep, and both exist because a number in
+// the colophon has to name its artifact. The entry video is chosen from a
+// window of recent uploads, which the page said nothing about while the card
+// said "Start here"; and the size label is a subscriber band, which is not the
+// same thing as how many people watch. `scripts/audit-unread-fields.mjs`
+// produces these; if it has never run, the colophon simply omits the
+// sentences rather than inventing them.
+const unreadPath = join(DATA, 'unread-data-audit.json');
+let methodOut = null;
+if (existsSync(unreadPath)) {
+  const u = readJson(unreadPath);
+  const trailer = u.findings?.creatorChosenTrailer ?? {};
+  const reach = u.findings?.reachVsBucket ?? {};
+  methodOut = {
+    at: u.at ?? null,
+    creatorsMeasured: u.channelsExamined ?? null,
+    entryVideoWindow: 50,
+    trailersMeasured: trailer.windowMeasured ?? 0,
+    trailersOlderThanWindow: trailer.olderThanOurFiftyUploadWindow ?? 0,
+    bigBucketLowReach: reach.bigBucketUnder50kAvgViews ?? 0,
+    bigBucketLowReachThreshold: 50_000,
+  };
+}
+
 // ---------------------------------------------------------------- write
 
 console.log('Writing:');
@@ -250,6 +276,7 @@ const kbCats = writeJson('categories-index.json', categoriesIndexOut);
 const kbSearch = writeJson('search-index.json', searchOut);
 writeJson('subject-notes.json', { ...subjectNotesOut, searchedNotFound: searchedOut });
 if (ledgerOut) writeJson('ledger-summary.json', ledgerOut);
+if (methodOut) writeJson('method-facts.json', methodOut);
 
 // ---------------------------------------------------------------- report
 

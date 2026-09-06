@@ -929,6 +929,58 @@ this section first to know exactly where to resume.)*
   dormant — so its retirement stands. The rule is not uniformly wrong;
   it depends on whether a non-commercial teaching tradition exists in
   the field at all.
+- **DATA WE ALREADY HOLD AND HAVE NEVER LOOKED AT — the fourth class,
+  `scripts/audit-unread-fields.mjs`.** The Sadler evidence sat in a
+  channel description that `audit-catalogue` fetched on every run for
+  fifty-nine batches. That is not a stale fact, not a schema that
+  cannot say it, and not an unproduced number: it is a field arriving
+  in a response nobody reads. Swept the whole API surface across all
+  252 records — every free part of `channels.list` and `videos.list`,
+  including the parts the library never asks for.
+  **The sweep only works if each field is paired with a claim it could
+  contradict.** A list of unread fields is not a defence; the question
+  is what each one would falsify.
+  **Two defects, both now fixed:**
+  **1. The confirmation was circular for the handle.**
+  `getChannelByHandle` returned the handle we asked with, so a stored
+  handle could never be contradicted by the source, while
+  `snippet.customUrl` — the channel's own canonical handle, in every
+  response — was discarded. A check that reads back its own input
+  reports success unconditionally. Now returned and compared by
+  `audit-status.mjs` on every run. **Zero mismatches across 252**, so
+  no wrong link ever shipped; the defect was in the guarantee.
+  **2. "Start here" was a superlative to the reader and a default to
+  us.** The entry video is picked from the 50 most recent uploads, and
+  the page said nothing about it. `brandingSettings.channel.unsubscribedTrailer`
+  — the video the creator puts in front of non-subscribers — was never
+  requested at all. **191 of 252 set one; 132 of those are older than
+  our window, and 2 agree with our pick.** The trailer is *not* a
+  better source: 51 of 191 run under three minutes and are channel
+  promos. It is a candidate list. The colophon now carries the
+  selection method as its own rule, with the figure shipped through
+  `method-facts.json` so the copy cannot decay.
+  **Four checks run and clean:** canonical handle (0 of 252), live
+  subscriber band against the stored one (0 drift), API country against
+  ours (0), `status.madeForKids` (0). **One flag, no defect:** six
+  records whose prose cites a year predating the channel — all of them
+  correctly citing a practice or organisation older than its YouTube
+  presence, `coachingforleaders` (2011, channel 2024) checked by a
+  search that found no older channel.
+  **One field measured and deliberately not shipped:** `contentDetails.caption`
+  reports no caption track on 274 of 347 entry videos, but the field
+  does not reliably distinguish "no captions" from "auto-captions not
+  counted", so the number is not usable and is not published. Logged in
+  UNVERIFIED.md rather than rounded into a claim.
+  **One signal too coarse to bear on anything:** `topicDetails.topicCategories`
+  is present on 250 of 252 channels and *agrees* with our domains
+  wherever it can (fitness → Physical fitness 24/26, health → Health
+  23/24, programming → Technology 23/25). 31 labels cannot contradict a
+  197-category taxonomy in either direction. Recorded so nobody probes
+  it again expecting an answer.
+  **Still unread, and making no claim:** self-set channel keywords (229
+  of 252), video tags, `categoryId`, per-video view/like/comment counts,
+  `licensedContent`, video-level topics. Each is in
+  `data/unread-data-audit.json` with what it could support.
 - **FILL RATE IS NOT SUPPLY — it measures research order too.** The
   domain spread is real and large: fitness 100%, programming 93%,
   health 86% against business 15%, marketing 15%, money 17%. It is

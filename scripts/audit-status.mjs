@@ -39,6 +39,11 @@ console.log(`re-querying ${rows.length} creators across ${files.length} batch fi
 
 const changes = [];
 const gone = [];
+// A second stale-fact check on the same responses. The handle is what every
+// link on the site is built from; the API returns the channel's own canonical
+// handle alongside it, and a handle that has been changed still resolves
+// through the old one, so a disagreement here is silent by construction.
+const aliases = [];
 for (const { file, rec } of rows) {
   let ch;
   try {
@@ -52,6 +57,9 @@ for (const { file, rec } of rows) {
   // surviving a failed re-derivation — and here it cannot be expressed as a gap
   // instead. So it escalates: the run exits non-zero and names the record.
   if (!ch) { gone.push({ file, rec }); continue; }
+  if (ch.customUrl && ch.customUrl.toLowerCase() !== String(rec.handle).toLowerCase()) {
+    aliases.push({ file, name: rec.name, stored: rec.handle, canonical: ch.customUrl });
+  }
   const ups = await getUploads(ch.uploadsPlaylist, { max: 1 });
   const latest = ups[0]?.publishedAt ?? null;
   const actual = statusFromLatestUpload(latest);
@@ -64,6 +72,12 @@ if (gone.length) {
   console.log(`CHANNELS THAT NO LONGER RESOLVE (${gone.length}) — these need a human decision:`);
   for (const g of gone) console.log(`  ${g.rec.handle}  ${g.rec.name}  [${g.file}]`);
   console.log('');
+}
+
+if (aliases.length) {
+  console.log(`HANDLE IS AN ALIAS (${aliases.length}) — the channel's own canonical handle differs from ours:`);
+  for (const a of aliases) console.log(`  ${a.stored} -> ${a.canonical}   ${a.name}  [${a.file}]`);
+  console.log('  Not auto-corrected: a handle change is a fact about the creator, not a typo.\n');
 }
 
 console.log(`STATUS DRIFT: ${changes.length} of ${rows.length} records disagree with the API.`);

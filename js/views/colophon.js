@@ -7,7 +7,7 @@
 // never written into the copy, so the page cannot claim a coverage figure the
 // dataset has moved past.
 
-import { getDomainNotes, getCategoryIndex, getCreators, getLedgerSummary } from '../data.js';
+import { getDomainNotes, getCategoryIndex, getCreators, getLedgerSummary, getMethodFacts } from '../data.js';
 import { esc, setTitle, statePage, domainLabel, SIGNAL_LABELS } from '../utils.js';
 
 // Every number that appears in visitor-facing prose carries its provenance
@@ -37,9 +37,25 @@ const RULES = (facts) => [
     being excellent at one thing is not evidence about the next thing, and the
     temptation to let it count is the single easiest way for a list like this
     to go soft.`],
+  ['The starting video is a recommendation, not the best in the catalogue',
+   // MEASURED by scripts/audit-unread-fields.mjs; the sentence disappears
+   // rather than hedging if that audit has never run.
+   `Each card carries one video to start with, verified to belong to that
+    channel. It is picked from the creator's recent uploads, so a good
+    introduction published years ago is one we will not have seen.${facts.method
+      ? ` Of the ${facts.method.trailersMeasured} creators here who set their own
+         channel trailer, ${facts.method.trailersOlderThanWindow} chose one older
+         than the window we look at.`
+      : ''}`],
   ['Ranges, not numbers',
    `Subscriber figures are shown as broad bands with the month they were taken,
-    because an exact count is out of date the day it is published.`],
+    because an exact count is out of date the day it is published. A band is a
+    count of subscribers and not of viewers: a channel can carry a million of
+    the first and a small fraction of that watching any given video.${facts.method
+      ? ` On ${facts.method.bigBucketLowReach} of the ${facts.method.creatorsMeasured}
+         channels listed, the gap between the two is wide enough to be worth
+         saying out loud.`
+      : ''}`],
   ['Commercial interest is disclosed, not hidden',
    `Someone who sells a course, takes sponsorships, or profits from the
     decision they are discussing can still be worth watching. Those facts are
@@ -178,13 +194,13 @@ function floorMarkup(notes, creators) {
 }
 
 // The numbers the copy above needs, derived rather than written down.
-function measuredFacts(creators) {
+function measuredFacts(creators, method) {
   const counts = creators.map((c) => c.categories?.length ?? 0);
   const tally = new Map();
   for (const n of counts) tally.set(n, (tally.get(n) ?? 0) + 1);
   const modal = [...tally.entries()].sort((a, b) => b[1] - a[1])[0]?.[0] ?? 0;
   const WORDS = ['none', 'one', 'two', 'three', 'four', 'five', 'six'];
-  return { modal: WORDS[modal] ?? String(modal) };
+  return { modal: WORDS[modal] ?? String(modal), method: method ?? null };
 }
 
 // Coverage, stated plainly. A directory that shows only its filled shelves is
@@ -224,9 +240,10 @@ export async function renderColophon(app) {
   let categories;
   let creators;
   let ledger;
+  let method;
   try {
-    [notes, categories, creators, ledger] = await Promise.all([
-      getDomainNotes(), getCategoryIndex(), getCreators(), getLedgerSummary(),
+    [notes, categories, creators, ledger, method] = await Promise.all([
+      getDomainNotes(), getCategoryIndex(), getCreators(), getLedgerSummary(), getMethodFacts(),
     ]);
   } catch (err) {
     app.setAttribute('aria-busy', 'false');
@@ -252,7 +269,7 @@ export async function renderColophon(app) {
       <div class="rail"><span>The rules</span></div>
       <div class="band-body">
         <div class="sec-head"><span class="num">01</span><h2 id="rules-heading">What it takes to be listed</h2></div>
-        ${rulesMarkup(measuredFacts(creators))}
+        ${rulesMarkup(measuredFacts(creators, method))}
       </div>
     </section>
 

@@ -187,6 +187,12 @@ export async function getChannelByHandle(handle) {
     channelId: item.id,
     title: item.snippet?.title ?? null,
     handle: `@${clean}`,
+    // The API's own canonical handle, which arrives in every response and used
+    // to be thrown away — the function returned the handle we asked with, so
+    // the stored handle could never be contradicted by the source. It usually
+    // agrees; when it does not, we are linking through an alias and the
+    // creator's canonical address is this one. `audit-status.mjs` compares them.
+    customUrl: item.snippet?.customUrl ?? null,
     channelUrl: `https://www.youtube.com/@${clean}`,
     country: item.snippet?.country ?? null,
     publishedAt: item.snippet?.publishedAt ?? null,

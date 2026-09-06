@@ -1,0 +1,683 @@
+{
+  "at": "2026-09-06T10:32:00.939Z",
+  "channelsExamined": 252,
+  "findings": {
+    "handleMismatch": {
+      "count": 0,
+      "cases": []
+    },
+    "channelAge": {
+      "measured": 252,
+      "youngerThanThreeYears": 2,
+      "youngest": [
+        {
+          "id": "microconf",
+          "publishedAt": "2025-11-17T16:18:58.307401Z",
+          "years": 0.8
+        },
+        {
+          "id": "coachingforleaders",
+          "publishedAt": "2024-07-14T19:03:29.81845Z",
+          "years": 2.1
+        },
+        {
+          "id": "aijason",
+          "publishedAt": "2023-04-22T03:48:19.921869Z",
+          "years": 3.4
+        },
+        {
+          "id": "aiexplained",
+          "publishedAt": "2023-01-03T15:41:34.351116Z",
+          "years": 3.7
+        },
+        {
+          "id": "theplottery",
+          "publishedAt": "2022-11-13T11:00:25.171347Z",
+          "years": 3.8
+        },
+        {
+          "id": "bytebytego",
+          "publishedAt": "2022-06-08T16:34:19.815645Z",
+          "years": 4.2
+        },
+        {
+          "id": "salarytransparentstreet",
+          "publishedAt": "2022-04-19T19:35:59.859002Z",
+          "years": 4.4
+        },
+        {
+          "id": "philomatics",
+          "publishedAt": "2022-02-22T17:12:06.68572Z",
+          "years": 4.5
+        }
+      ],
+      "oldest": [
+        {
+          "id": "internetshaquille",
+          "publishedAt": "2006-01-10T03:46:59Z",
+          "years": 20.7
+        },
+        {
+          "id": "kevinpowell",
+          "publishedAt": "2006-03-20T04:44:57Z",
+          "years": 20.5
+        },
+        {
+          "id": "filmriot",
+          "publishedAt": "2006-04-16T23:53:53Z",
+          "years": 20.4
+        },
+        {
+          "id": "coreyms",
+          "publishedAt": "2006-05-31T22:49:22Z",
+          "years": 20.3
+        },
+        {
+          "id": "crashcourse",
+          "publishedAt": "2006-05-20T02:43:42Z",
+          "years": 20.3
+        }
+      ]
+    },
+    "proseOlderThanChannel": {
+      "count": 6,
+      "note": "A flag, not a defect: prose that cites a practice or organisation older than the channel is usually correct. Each one has to be looked at.",
+      "cases": [
+        {
+          "id": "duartedesign",
+          "channelCreated": 2007,
+          "citedInOurProse": [
+            1988
+          ],
+          "gapYears": 19
+        },
+        {
+          "id": "coachingforleaders",
+          "channelCreated": 2024,
+          "citedInOurProse": [
+            2011
+          ],
+          "gapYears": 13
+        },
+        {
+          "id": "themoth",
+          "channelCreated": 2010,
+          "citedInOurProse": [
+            1997
+          ],
+          "gapYears": 13
+        },
+        {
+          "id": "docsnipes",
+          "channelCreated": 2009,
+          "citedInOurProse": [
+            2002
+          ],
+          "gapYears": 7
+        },
+        {
+          "id": "jonloomer",
+          "channelCreated": 2009,
+          "citedInOurProse": [
+            2007
+          ],
+          "gapYears": 2
+        },
+        {
+          "id": "pensioncraft",
+          "channelCreated": 2017,
+          "citedInOurProse": [
+            2016
+          ],
+          "gapYears": 1
+        }
+      ]
+    },
+    "reachVsBucket": {
+      "measured": 252,
+      "bigBucketUnder50kAvgViews": 11,
+      "cases": [
+        {
+          "id": "lennyspodcast",
+          "bucket": "500k-1M",
+          "avgViews": 11642,
+          "videos": 1786
+        },
+        {
+          "id": "themathsorcerer",
+          "bucket": "1M-5M",
+          "avgViews": 16921,
+          "videos": 10418
+        },
+        {
+          "id": "aswathdamodaran",
+          "bucket": "1M-5M",
+          "avgViews": 23147,
+          "videos": 1411
+        },
+        {
+          "id": "docsnipes",
+          "bucket": "1M-5M",
+          "avgViews": 27010,
+          "videos": 1645
+        },
+        {
+          "id": "hnasr",
+          "bucket": "500k-1M",
+          "avgViews": 27997,
+          "videos": 1034
+        },
+        {
+          "id": "thesleepdoctor",
+          "bucket": "500k-1M",
+          "avgViews": 30543,
+          "videos": 1394
+        },
+        {
+          "id": "misterwootube",
+          "bucket": "1M-5M",
+          "avgViews": 37555,
+          "videos": 5042
+        },
+        {
+          "id": "tomofujita",
+          "bucket": "500k-1M",
+          "avgViews": 42851,
+          "videos": 2135
+        },
+        {
+          "id": "dreamingspanish",
+          "bucket": "500k-1M",
+          "avgViews": 44839,
+          "videos": 805
+        },
+        {
+          "id": "gregisenberg",
+          "bucket": "500k-1M",
+          "avgViews": 47038,
+          "videos": 810
+        },
+        {
+          "id": "johnhammond",
+          "bucket": "1M-5M",
+          "avgViews": 48286,
+          "videos": 1876
+        }
+      ]
+    },
+    "sizeBucketDrift": {
+      "count": 0,
+      "cases": []
+    },
+    "topicCategories": {
+      "channelsWithAny": 250,
+      "pct": 99,
+      "distinctTopics": 31,
+      "top": [
+        "Lifestyle (sociology) (195)",
+        "Knowledge (130)",
+        "Health (69)",
+        "Technology (60)",
+        "Society (47)",
+        "Physical fitness (26)",
+        "Entertainment (21)",
+        "Hobby (20)",
+        "Film (13)",
+        "Sport (13)",
+        "Food (8)",
+        "Music (8)",
+        "Religion (8)",
+        "Business (5)",
+        "Vehicle (5)",
+        "Fashion (4)",
+        "Video game culture (4)",
+        "Tourism (4)",
+        "Mixed martial arts (3)",
+        "Jazz (3)"
+      ]
+    },
+    "selfSetKeywords": {
+      "channels": 229,
+      "pct": 91
+    },
+    "madeForKids": {
+      "count": 0,
+      "cases": []
+    },
+    "countryDisagreement": {
+      "count": 0,
+      "cases": []
+    },
+    "creatorChosenTrailer": {
+      "channelsWithTrailer": 191,
+      "durationBands": {
+        "under3": 51,
+        "3to9": 37,
+        "10to29": 71,
+        "30plus": 32,
+        "unknown": 0
+      },
+      "shorterThanOurThreeMinuteFloor": 51,
+      "windowMeasured": 191,
+      "insideOurFiftyUploadWindow": 58,
+      "olderThanOurFiftyUploadWindow": 132,
+      "pct": 76,
+      "agreesWithOurEntryVideo": 2,
+      "trailerVideoUnavailable": 0,
+      "cases": [
+        {
+          "id": "30mpc",
+          "trailer": "Wzyq2u2-M3E",
+          "trailerTitle": "I Cold Called a Product I’ve Never Sold. Here’s What Happened.",
+          "trailerMin": 17,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 2
+        },
+        {
+          "id": "abbeysharp",
+          "trailer": "PqnF2HYvt4g",
+          "trailerTitle": "Crush Cravings. Reclaim Hunger & Fullness. Never Diet Again. (Click for HUGE ANNOUNCEMENT!!!)",
+          "trailerMin": 18,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 2
+        },
+        {
+          "id": "abbieemmons",
+          "trailer": "4VInEeGFkrs",
+          "trailerTitle": "You don’t need more writing advice. You need this.",
+          "trailerMin": 6,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 1
+        },
+        {
+          "id": "acquired",
+          "trailer": "TW-uf9EvEB0",
+          "trailerTitle": "Trailer: What is Acquired?",
+          "trailerMin": 2,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 1
+        },
+        {
+          "id": "ahrefs",
+          "trailer": "uza9GX0E2mw",
+          "trailerTitle": "AI SEO Course for Beginners: Complete AEO Tutorial",
+          "trailerMin": 87,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 1
+        },
+        {
+          "id": "aijason",
+          "trailer": "dSX5eoD4-u4",
+          "trailerTitle": "“Wait, this Agent can Scrape ANYTHING?!” - Build universal web scraping agent",
+          "trailerMin": 29,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 1
+        },
+        {
+          "id": "alanbeckertutorials",
+          "trailer": "kHOQkooK0qY",
+          "trailerTitle": "ALAN BECKER - Flash Basics (revamped)",
+          "trailerMin": 6,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 1
+        },
+        {
+          "id": "alexanderbromley",
+          "trailer": "ZRUeOgiiptk",
+          "trailerTitle": "Louis Cyr: The Most OVERRATED Strongman in History",
+          "trailerMin": 28,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 1
+        },
+        {
+          "id": "alexanderlyon",
+          "trailer": "YJXUOJKtn8o",
+          "trailerTitle": "How to Communicate Clearly and Concisely (Free Mini-Training)",
+          "trailerMin": 42,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 3
+        },
+        {
+          "id": "alexcattoni",
+          "trailer": "M9EogrtT6F4",
+          "trailerTitle": "Real Marketing For Rad Humans. Let's De-Douchify The Internet...",
+          "trailerMin": 1,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 2
+        },
+        {
+          "id": "andrejkarpathy",
+          "trailer": "7xTGNNLPyMI",
+          "trailerTitle": "Deep Dive into LLMs like ChatGPT",
+          "trailerMin": 211,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 2
+        },
+        {
+          "id": "andrewhuang",
+          "trailer": "m6OgNpTjuBs",
+          "trailerTitle": "The 5 best ways to start a song",
+          "trailerMin": 25,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 1
+        },
+        {
+          "id": "aragusea",
+          "trailer": "NcGGvGVIJr0",
+          "trailerTitle": "Learning beef cuts through human muscles",
+          "trailerMin": 14,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 1
+        },
+        {
+          "id": "arjancodes",
+          "trailer": "eZ9RqnkJxsk",
+          "trailerTitle": "10 Powerful Python Modules You’re Probably Not Using",
+          "trailerMin": 16,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 2
+        },
+        {
+          "id": "askamortician",
+          "trailer": "_LJSEZ_pl3Y",
+          "trailerTitle": "Let's Visit the Human Composting Facility!",
+          "trailerMin": 28,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 1
+        },
+        {
+          "id": "askvinh",
+          "trailer": "ikbcrpowlIs",
+          "trailerTitle": "How to Talk to ANYONE (Once You Know Their Color!)",
+          "trailerMin": 17,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 3
+        },
+        {
+          "id": "barbellmedicine",
+          "trailer": "Hsn-6HDsuV0",
+          "trailerTitle": "I Get My 73-Year Old Dad To Lift After A Knee Replacement (First Session)",
+          "trailerMin": 27,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 2
+        },
+        {
+          "id": "beabetterdev",
+          "trailer": "LTH9m4HkeYY",
+          "trailerTitle": "How I Would Learn AWS Today (after 10 years of cloud experience)",
+          "trailerMin": 40,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 1
+        },
+        {
+          "id": "benjaminkeep",
+          "trailer": "jcMk3e7u7zM",
+          "trailerTitle": "The Five Biggest Myths About Learning",
+          "trailerMin": 15,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 3
+        },
+        {
+          "id": "betterideas",
+          "trailer": "n3MbJHVjKCA",
+          "trailerTitle": "The fastest way to destroy your mind",
+          "trailerMin": 5,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 2
+        },
+        {
+          "id": "bloopanimation",
+          "trailer": "k2lEbwS-uI0",
+          "trailerTitle": "The Future of Bloop Animation",
+          "trailerMin": 1,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 1
+        },
+        {
+          "id": "brandmasteracademy",
+          "trailer": "zYPLRuBLqEo",
+          "trailerTitle": "The Brand OS Behind Every Scalable Strategy (Nobody Teaches This)",
+          "trailerMin": 26,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 1
+        },
+        {
+          "id": "bulletjournal",
+          "trailer": "fm15cmYU0IM",
+          "trailerTitle": "How to Bullet Journal",
+          "trailerMin": 4,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 1
+        },
+        {
+          "id": "buzzsprout",
+          "trailer": "Tm4OkDZyCaU",
+          "trailerTitle": "How to Use Buzzsprout in Less Than 5 Minutes",
+          "trailerMin": 3,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 1
+        },
+        {
+          "id": "bytebytego",
+          "trailer": "eHEHE2fpnWQ",
+          "trailerTitle": "What Are AI Agents Really About?",
+          "trailerMin": 6,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 1
+        },
+        {
+          "id": "calgarybarbell",
+          "trailer": "JBJqZKx7MLI",
+          "trailerTitle": "How to Train for Powerlifting - PoP Ep.1",
+          "trailerMin": 12,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 1
+        },
+        {
+          "id": "calnewport",
+          "trailer": "0G7Wu4DnDaw",
+          "trailerTitle": "How To Reinvent Your Life In 4 Months (My Full Step-By-Step Process) | Cal Newport",
+          "trailerMin": 78,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 3
+        },
+        {
+          "id": "careervidz",
+          "trailer": "W2_08tLMmyI",
+          "trailerTitle": "TELL ME ABOUT YOURSELF | How to INTRODUCE YOURSELF in a JOB INTERVIEW | (SEAT METHOD) BEST ANSWER!",
+          "trailerMin": 15,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 1
+        },
+        {
+          "id": "carlpullein",
+          "trailer": "5gUdjV_BYaU",
+          "trailerTitle": "Welcome To My Channel.",
+          "trailerMin": 2,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 3
+        },
+        {
+          "id": "chandoo",
+          "trailer": "UD6bTzR083c",
+          "trailerTitle": "Welcome to Chandoo.org on YouTube 👋",
+          "trailerMin": 1,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 1
+        },
+        {
+          "id": "charismaoncommand",
+          "trailer": "wHHwE8Y-pqk",
+          "trailerTitle": "How To Look Extremely Confident (Even If You’re Quiet)",
+          "trailerMin": 13,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 3
+        },
+        {
+          "id": "charlesdowding",
+          "trailer": "LTTB0au5070",
+          "trailerTitle": "Welcome to Homeacres: A Channel Dedicated to Organic Gardening",
+          "trailerMin": 3,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 1
+        },
+        {
+          "id": "chloeting",
+          "trailer": "RVTvOh1jD00",
+          "trailerTitle": "Full Body HIIT - Sweat Guaranteed - 20 Min No Equipment",
+          "trailerMin": 21,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 1
+        },
+        {
+          "id": "chrisfix",
+          "trailer": "T0E7BhoBfT8",
+          "trailerTitle": "How to Finish Your Abandoned Project Car (Turbo Del Sol)",
+          "trailerMin": 31,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 1
+        },
+        {
+          "id": "clutterbug",
+          "trailer": "AOPat9DJ_A0",
+          "trailerTitle": "Clutterbug Channel Trailer",
+          "trailerMin": 1,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 1
+        },
+        {
+          "id": "coffeezilla",
+          "trailer": "04FRAsU0za0",
+          "trailerTitle": "Exposing a $300,000,000 Scam",
+          "trailerMin": 32,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 1
+        },
+        {
+          "id": "computerphile",
+          "trailer": "lypcC79k-gg",
+          "trailerTitle": "Implementing Passkeys in Practice - Computerphile",
+          "trailerMin": 15,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 2
+        },
+        {
+          "id": "conorneill",
+          "trailer": "-_oYjnvXhpc",
+          "trailerTitle": "4 Ways to Stop Self-Sabotaging Your Success | Conor Neill",
+          "trailerMin": 14,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 2
+        },
+        {
+          "id": "coreyms",
+          "trailer": "vRapY8xJwn8",
+          "trailerTitle": "Welcome to my Channel",
+          "trailerMin": 1,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 2
+        },
+        {
+          "id": "cosmicskeptic",
+          "trailer": "Bu-7IHp3oGQ",
+          "trailerTitle": "Debate: Did Jesus Rise From the Dead? - Trent Horn vs Alex O'Connor",
+          "trailerMin": 89,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 2
+        }
+      ]
+    },
+    "captions": {
+      "entryVideosMeasured": 347,
+      "withoutCaptions": 274,
+      "withoutCaptionsPct": 79,
+      "cases": [
+        "FAm9HLkhVsI",
+        "xe0MqfuKAZk",
+        "u1DE6uipFEk",
+        "ZVbwsP0CxLQ",
+        "uyKFeRyyT48",
+        "Sof42S1icXg",
+        "t1gV8fzGKm0",
+        "m1OEvY7gEuQ",
+        "14qA3gvP2TQ",
+        "RyJYGpVyl0o",
+        "Tf1nooXtUHE",
+        "2_DPnzoiHaY",
+        "iWRmtPdFbGw",
+        "HwYOcCg4jm4",
+        "VMj-3S1tku0",
+        "EWvNQjAaOHw",
+        "Z07NWhI2oQQ",
+        "F5Av5yDGSQs",
+        "UEqk0njCuQo",
+        "HYNXzKU92Qs"
+      ]
+    },
+    "declaredLanguage": {
+      "distribution": [
+        "en: 219",
+        "en-US: 73",
+        "en-GB: 46",
+        "en-AU: 4",
+        "en-CA: 3",
+        "en-IN: 1",
+        "es: 1"
+      ],
+      "declaredNonEnglish": [
+        {
+          "id": "6HXYi_VEfvI",
+          "lang": "es",
+          "title": "Spanish Story for Beginners | \"The Angry Artist\" | Level: Easy"
+        }
+      ]
+    },
+    "licence": {
+      "distribution": [
+        "youtube: 342",
+        "creativeCommon: 5"
+      ]
+    }
+  },
+  "fields": []
+}
