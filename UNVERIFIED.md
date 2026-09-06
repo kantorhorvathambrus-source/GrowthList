@@ -2242,3 +2242,36 @@ is sales. `habit-formation` and `negotiation` also came up empty:
 Negotiate Anything has a 67-minute median and 50 of 50 uploads over
 twenty minutes, and has drifted into general soft-skills interviewing
 with negotiation as an occasional topic.
+
+## Batch 54 — one creator, four categories that would not fill
+
+Jordan Sullivan (`sports-nutrition`, 1→2 active). **109 of 197 at
+target with active creators. 251 creators.**
+
+The weight-class end of sports nutrition against the endurance end
+already listed — same discipline, opposite constraint. Thirty-five of
+fifty uploads over twenty minutes, seminar-length, on the problem with
+the worst folk practice attached to it. The caveat says plainly that
+weight-cutting protocols shown for supervised athletes should not be
+copied unsupervised.
+
+**Rule 5 did real work.** The Valuation School has 23 of 50 uploads
+over twenty minutes and 500k–1M subscribers — a strong catalogue,
+rejected because its declared audio languages are Hindi and English and
+the long-form titles say so. Out of scope on language, not on quality,
+and recorded that way.
+
+**Logan Allec is the sharpest conflict declined so far.** A CPA, which
+is exactly the credential `tax-basics` wants — and the channel is
+notice-by-notice IRS explainers and software reviews with promo codes,
+funnelling to the tax-debt relief company he founded. Rule 13 asks
+whether it would be included if a non-profit ran it: a non-profit would
+not publish this, because the content exists to generate cases. Wrong
+level for a basics category on top of that.
+
+**`ui-ux-design`, `tax-basics`, `stock-analysis` and `ecommerce` all
+declined to fill**, and three of the four failed the same way: the
+strongest-looking candidate had drifted to AI tooling, or was a course
+funnel, or was a lead-generation operation. That is the business-buyer
+limit again, and it now accounts for most of the unfilled funded
+categories.

@@ -432,6 +432,11 @@
       "why": "Dementia Careblazers (Dr. Natali Edmonds)",
       "at": "dataset"
     },
+    "@designcourse": {
+      "status": "rejected",
+      "why": "drifted — a UI/UX course channel whose recent long-form is AI-tool demos (\"Using Claude Design 2.0\", \"KIMI 3 Design Tests\")",
+      "at": "batch 54"
+    },
     "@devopstoolkit": {
       "status": "listed",
       "why": "DevOps Toolkit (Viktor Farcic)",
@@ -591,6 +596,11 @@
       "status": "listed",
       "why": "FitnessFAQs (Daniel Vadnal)",
       "at": "dataset"
+    },
+    "@fluxacademy": {
+      "status": "rejected",
+      "why": "probed for ui-ux-design; design-business course funnel rather than design teaching",
+      "at": "batch 54"
     },
     "@foldingideas": {
       "status": "listed",
@@ -807,6 +817,11 @@
       "why": "Jon Loomer",
       "at": "dataset"
     },
+    "@jordansullivandietitian": {
+      "status": "listed",
+      "why": "Jordan Sullivan Dietitian (The Fight Dietitian)",
+      "at": "dataset"
+    },
     "@joshwrightpiano": {
       "status": "listed",
       "why": "Josh Wright",
@@ -891,6 +906,11 @@
       "status": "listed",
       "why": "Liz Zorab Gardening",
       "at": "dataset"
+    },
+    "@loganallec": {
+      "status": "rejected",
+      "why": "a CPA, but the content is IRS notice-by-notice explainers and software reviews with promo codes, funnelling to his own tax-debt relief company. Wrong level for a basics category and the sharpest kind of commercial conflict — he profits from the decision the content advises on",
+      "at": "batch 54"
     },
     "@lucalampariello": {
       "status": "listed",
@@ -1352,6 +1372,11 @@
       "why": "Sober Powered (Gill Tietz)",
       "at": "dataset"
     },
+    "@soicfinance": {
+      "status": "rejected",
+      "why": "probed for stock-analysis; Indian-market equity research channel, and the incumbent already covers valuation method generally",
+      "at": "batch 54"
+    },
     "@sparkhire": {
       "status": "rejected",
       "why": "recruiting-software vendor channel",
@@ -1601,6 +1626,11 @@
       "status": "rejected",
       "why": "Adam Meakins, found only via the 320-unit fallback search: 7 uploads",
       "at": "batch 43"
+    },
+    "@thevaluationschool": {
+      "status": "rejected",
+      "why": "RULE 5 — declared audio languages are hi and en, and the long-form titles say \"in Simple Hindi\". Strong catalogue (23 of 50 uploads over 20m) and out of scope on language, not quality",
+      "at": "batch 54"
     },
     "@thinkfasttalksmart": {
       "status": "listed",

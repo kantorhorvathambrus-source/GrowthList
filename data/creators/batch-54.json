@@ -1,0 +1,63 @@
+[
+  {
+    "id": "jordansullivan",
+    "name": "Jordan Sullivan Dietitian (The Fight Dietitian)",
+    "handle": "@jordansullivandietitian",
+    "channelUrl": "https://www.youtube.com/@jordansullivandietitian",
+    "country": "AU",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Combat-sport nutrition at seminar length — making weight without wrecking the performance you made it for.",
+    "longDescription": "An Australian performance-nutrition practice that names the athletes it has worked with, several of them current or former UFC champions. {{longCountWords|cap}} of the {{scannedWords}} most recent uploads run over twenty minutes and the median is {{medianPhrase}}, which is unusual density: these are seminars rather than clips. The specialism is the hardest problem in the subject — cutting to a weight class and arriving able to fight — treated as a physiological process with named failure modes rather than as willpower. Around it sits more general work on losing weight without the crash-and-rebound pattern, and on what a practitioner in this field actually eats. It sits against the endurance-fuelling voice already here: same discipline, opposite end of the sport, and the constraints could not be more different.",
+    "notFor": "Anyone not competing in a weight-class sport will find much of the specialism irrelevant, and some of it actively unwise to copy — cutting weight is a supervised process, not a diet. Everything is seminar-length.",
+    "formatTags": [
+      "lecture",
+      "long-form",
+      "interview"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 4
+    },
+    "signals": [
+      "credentialed",
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "sports-nutrition",
+        "strength": "primary",
+        "why": "The weight-class end of the discipline, where the constraint is making a number on a scale and still performing — the opposite problem from fuelling a long effort, and the one with the worst folk practice around it.",
+        "evidence": "A 56-minute seminar on making weight without losing performance, naming the three failure modes that recur in fight camps; 36 minutes on losing weight without the crash-and-rebound cycle; 18 on what a practising fight dietitian eats.",
+        "entryVideo": {
+          "title": "Make Weight Without Killing Performance - Jordan Sullivan AKA The Fight Dietitian",
+          "videoId": "aEDzbXVvjOw",
+          "whyThisOne": "The specialism at full length, and the clearest demonstration that weight cutting is a physiological process with predictable failure points rather than a test of discipline.",
+          "durationMin": 56
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "This is a nutrition company's channel and the seminars are its shop window; the athlete list is the company's own and we have not verified it. Weight-cutting protocols are demonstrated for supervised athletes and should not be copied unsupervised.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 28,
+      "longPct": 70,
+      "medianMin": 41,
+      "videoCount": 318,
+      "at": "2026-09"
+    },
+    "entity": "individual"
+  }
+]
