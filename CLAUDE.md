@@ -873,8 +873,28 @@ this section first to know exactly where to resume.)*
   `subject-notes.json` — warning when a gap has no note and no other
   note filling the slot. Four gaps now render; `addiction-recovery` and
   `first-aid` already had high-stakes notes in that slot.
-- **SEARCH AWAY FROM THE TOP BEFORE RETIRING A CATEGORY —
-  `discover.mjs --small`.** Relevance ranking returns the channels that
+- **A CORRECT RECORD CAN POINT AT THE WRONG CHANNEL —
+  `scripts/audit-stale-channel.mjs`.** The Sadler record was accurate in
+  every field and honestly marked archive, while the same author posted
+  daily elsewhere. **No validator could catch it, because nothing in it
+  was false.** Swept all 13 archive and dormant records two ways:
+  **The channel's own description is the good check.** Sadler's says
+  *"new channel"* — text this project had fetched on every audit run
+  and never read. One hit across 13 records, no false positives, the
+  case it was written for, detectable from data already in hand.
+  **A name search is the weak backstop.** Four hits across the same 13,
+  three of them false: a Chinese RSS-digest channel named after Andrej
+  Karpathy, a shorts channel using the mCoding name, and münecat's own
+  inactive side channel. Using a person's name as its own affiliation
+  term passes channels merely *named after* them — the failure this
+  file already warns about, committed inside the tool written to catch
+  a different one.
+  **Conclusion: Sadler was a single miss, not a pattern** — and it was
+  visible in data we held. Run this before any release.
+- **NO CATEGORY IS RETIRED UNTIL A `--small` ROUND HAS RUN.** The rule,
+  replacing round-counting: the count was never the calibration —
+  whether the search reached past the commercial top is.
+  `discover.mjs --small` hides everything at 500k+ subscribers. Relevance ranking returns the channels that
   already won, so a category with strong commercial incumbents returns
   those incumbents however the query is phrased. `--small` hides
   everything at 500k+ subscribers and asks a different question of the
@@ -893,6 +913,17 @@ this section first to know exactly where to resume.)*
   was accurate and the omission was enormous. Same shape as
   `@sean_nalewanyj`, sitting in the dataset unnoticed for fifty-nine
   batches. **Run `--small` on any category before writing it off.**
+  **Run on all six retired categories, it reopened exactly one.**
+  `journaling`, `exam-preparation`, `self-discipline` and
+  `deep-work-and-focus` all found nothing below the top of the market
+  either — and **the prediction was wrong in both directions.** I argued
+  for running it only on `journaling` and `exam-preparation`, on the
+  grounds that I could not name a profession that would teach the other
+  two quietly. Those two found nothing; the one that reopened was
+  `stoicism`, which I had already retired twice. **Naming which fields
+  have a quiet teaching tradition is predicting supply, which is the
+  thing this project is repeatedly bad at.** Run the round; do not
+  reason about whether it is worth running.
   `sleep-quality` got the same treatment and produced nothing —
   12 channels, all sleep-audio products, psychiatry newsletters or
   dormant — so its retirement stands. The rule is not uniformly wrong;

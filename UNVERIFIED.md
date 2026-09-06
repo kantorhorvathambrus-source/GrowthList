@@ -2460,3 +2460,54 @@ tested *before* shipping rather than after; every previous one was
 caught in the data or already on the page, and four had reached
 visitors. The claim was plausible, it matched what the work felt like,
 and it was wrong about causation.
+
+## Batch 61 — four --small rounds, and a sweep that found one miss
+
+### The --small rounds: one reopened out of six, and I predicted wrong
+
+`journaling`, `exam-preparation`, `self-discipline` and
+`deep-work-and-focus` all got a third round below the commercial top.
+All four found nothing. With `stoicism` (reopened) and `sleep-quality`
+(nothing) that is **one reopened out of six**.
+
+**My prediction was wrong in both directions.** I argued for running it
+only on `journaling` and `exam-preparation`, because I could not name a
+profession that would teach self-discipline or deep work quietly. Those
+two found nothing. The one that reopened was `stoicism` — which I had
+already retired twice, and which I had not proposed re-running at all.
+
+The owner's correction was the right one and worth keeping in terms:
+naming which fields have a quiet teaching tradition is *predicting
+supply*, which is precisely what this project has now been wrong about
+three times. **The rule is now: no category is retired until a
+`--small` round has run.** Round count was never the calibration —
+whether the search reached past the commercial top is.
+
+`exam-preparation` produced the closest thing to a candidate: Mr Salles
+Teaches English, a working teacher with 1,472 uploads. Rejected because
+the subject is AQA GCSE English rather than exam method, locked to one
+board in one country.
+
+### The stale-channel sweep: one real miss, and it was already visible
+
+All 13 archive and dormant records checked two ways.
+
+**The channel's own description is the good check.** Sadler's says
+**"new channel"**. That text was fetched on every `audit-catalogue` run
+this project has ever done. Nobody read it. Across 13 records the check
+produced exactly one hit and no false positives — the case it was
+written for, detectable from data we already held.
+
+**A name search is the weak backstop, and it embarrassed itself.** Four
+hits across the same 13, three false: a Chinese-language RSS-digest
+channel *about* Andrej Karpathy's reading list, a shorts channel using
+the mCoding name, and münecat's own side channel — which is real, hers,
+and also inactive, so not a correction either. Using a person's name as
+its own affiliation term passes channels merely named after them. That
+is the failure CLAUDE.md already warns about, committed inside the tool
+written to catch a different one.
+
+**So Sadler looks like a single miss rather than a pattern** — with the
+caveat that one of the two methods used to establish that is
+demonstrably weak, and the other only catches creators who announce the
+move themselves.

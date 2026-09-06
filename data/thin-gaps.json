@@ -176,49 +176,61 @@
     "exam-preparation": {
       "rounds": [
         "batch 49",
-        "batch 49 discovery"
+        "batch 49 discovery",
+        "batch 61 (--small)"
       ],
       "found": "Two rounds. Discovery returned only creators already listed here plus a productivity-business channel and a memory-technique channel belonging to another category; recall added a medical-careers channel and one whose last upload was March 2022.",
       "unprobed": [
         "subject-specific exam channels (medical, legal, actuarial)",
         "university study-skills departments"
       ],
-      "at": "batch 55"
+      "at": "batch 55",
+      "smallRound": "A --small round aimed at examiners and revision technique returned subject tutors: the strongest, Mr Salles Teaches English, is a working teacher with 1,472 uploads, but the subject is AQA GCSE English rather than exam method, and it is locked to one exam board in one country.",
+      "conclusion": "Retirement stands. Three rounds, the last one deliberately below the commercial top."
     },
     "journaling": {
       "rounds": [
         "batch 49",
-        "batch 49 therapeutic end"
+        "batch 49 therapeutic end",
+        "batch 61 (--small)"
       ],
       "found": "Two rounds, including the therapeutic-writing end that the first round had not touched. The largest channel in the subject is journaling as craft — planner setups, sticker collections — which is what this category's blurb distinguishes against; the therapeutic end returned trauma-recovery podcasts rather than anyone teaching the practice.",
       "unprobed": [
         "academic expressive-writing researchers",
         "non-English traditions"
       ],
-      "at": "batch 55"
+      "at": "batch 55",
+      "smallRound": "A --small round in the vocabulary of the practice — morning pages, notebook method, writing teacher — returned audio libraries, general lifestyle vlogs and a manuscript institute. No teacher of the practice at any size.",
+      "conclusion": "Retirement stands. Three rounds, the last one deliberately below the commercial top."
     },
     "deep-work-and-focus": {
       "rounds": [
         "batch 49",
-        "batch 55"
+        "batch 55",
+        "batch 61 (--small)"
       ],
       "found": "Two rounds returned ambient study music, motivational channels, a documentary strand, and two creators already listed. The subject has an enormous audience and almost no independent teaching.",
       "unprobed": [
         "attention researchers publishing directly",
         "workplace-design and ergonomics"
       ],
-      "at": "batch 55"
+      "at": "batch 55",
+      "smallRound": "A --small round on attention training and sustained concentration returned meditation music, an English-practice channel and a medical college. Nothing on the subject.",
+      "conclusion": "Retirement stands. Three rounds, the last one deliberately below the commercial top."
     },
     "self-discipline": {
       "rounds": [
-        "batch 55"
+        "batch 55",
+        "batch 61 (--small)"
       ],
       "found": "Discovery returned Huberman, TEDx, Mel Robbins and a podcast collision — motivation rather than method, which is the shape this subject takes at scale.",
       "unprobed": [
         "behaviour-change academics",
         "military and athletic training traditions"
       ],
-      "at": "batch 55"
+      "at": "batch 55",
+      "smallRound": "A --small round in the research vocabulary — implementation intentions, self-control — returned a psychology podcast, reuploaded Jim Rohn seminars, and one creator already listed here.",
+      "conclusion": "Retirement stands. Three rounds, the last one deliberately below the commercial top."
     },
     "affiliate-marketing": {
       "rounds": [

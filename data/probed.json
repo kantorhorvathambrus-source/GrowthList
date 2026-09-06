@@ -302,6 +302,11 @@
       "why": "Brand Master Academy",
       "at": "dataset"
     },
+    "@briandenton3": {
+      "status": "rejected",
+      "why": "archive since January 2023, and the catalogue is a War and Peace reading project rather than Stoicism",
+      "at": "batch 61"
+    },
     "@brianlagerstrom": {
       "status": "listed",
       "why": "Brian Lagerstrom",
@@ -1107,6 +1112,11 @@
       "why": "Moz (Whiteboard Friday)",
       "at": "dataset"
     },
+    "@mrsallesteachesenglish": {
+      "status": "rejected",
+      "why": "a working teacher with 1,472 uploads, surfaced by the exam-preparation --small round — but the subject is AQA GCSE English rather than exam method, locked to one exam board in one country",
+      "at": "batch 61"
+    },
     "@munecat": {
       "status": "listed",
       "why": "münecat",
@@ -1457,6 +1467,11 @@
       "why": "Skillopedia",
       "at": "dataset"
     },
+    "@sleepystoicvids": {
+      "status": "rejected",
+      "why": "37 uploads of stoicism narration for sleep",
+      "at": "batch 61"
+    },
     "@slidebean": {
       "status": "rejected",
       "why": "reputation drift — known for startup pitch-deck and fundraising content; the channel description now reads \"a show about the everyday technology you use\" and the recent catalogue is consumer-tech explainers (smartwatch accuracy, HDR, battery health)",
@@ -1596,6 +1611,11 @@
       "status": "rejected",
       "why": "probed for body-language; four analysts reading famous interrogations as entertainment. The only creator this category has ever had is a critic OF body-language experts, and listing case-reading would list what she debunks",
       "at": "batch 50"
+    },
+    "@thebrainwavehub": {
+      "status": "rejected",
+      "why": "archive since June 2024; brainwave-entrainment sleep audio — a listening product, not teaching",
+      "at": "batch 61"
     },
     "@thebudgetmom": {
       "status": "rejected",
@@ -1826,6 +1846,11 @@
       "status": "listed",
       "why": "Vo2maxProductions (Sage Canaday)",
       "at": "dataset"
+    },
+    "@voxstoica": {
+      "status": "rejected",
+      "why": "archive since June 2024; audiobook narrations of primary texts sold on Audible rather than teaching",
+      "at": "batch 61"
     },
     "@webdevsimplified": {
       "status": "listed",
