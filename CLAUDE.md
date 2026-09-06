@@ -782,6 +782,32 @@ this section first to know exactly where to resume.)*
   failure from the claim: leave the record untouched, name what could
   not be checked, and where the schema cannot express the doubt, exit
   non-zero.
+- **THE LEDGER IS PUBLISHED — colophon section 06, "What we got wrong".**
+  The owner's call on the delivery sweep's first proposal, and the
+  reasoning is worth keeping: *a directory that lists what it got wrong
+  about itself is doing something no competitor does, and it is the
+  strongest signal the rest of the numbers were checked.*
+  Counts are **computed** by `build-data.mjs` into `ledger-summary.json`
+  and interpolated at render — a page about our own errors carrying a
+  hardcoded number would be the joke writing itself, and the count in
+  this ledger's own framing paragraph *was* hardcoded for eight batches.
+  Only a summary ships: the three numbers, plus the four claims a reader
+  actually saw, each with a `visitorSummary` written for them rather
+  than the internal claim text. The build warns if a falsified claim
+  that reached visitors has no such line.
+- **PER-CATEGORY APPETITE NUMBERS: DECLINED.** They would read as a
+  popularity ranking of skills, which is not what they measure, and
+  would quietly tell a visitor their interest is niche. The colophon's
+  section 04 explanation of *why* some skills have more creators is
+  where that reasoning belongs and where it stays.
+- **REPUTATION DRIFT: ON THE AFFECTED CREATOR'S CARD ONLY, NEVER AS A
+  LIST.** A standalone page becomes a callout list of people who are not
+  here and cannot answer it. **This required no build: only 2 of the 11
+  drift cases are creators we list** — Adam Ragusea and Pat Flynn — and
+  both already carry the drift in `caveats`, which renders on the card
+  and the detail page. The other nine were *rejected* for drift, so
+  there is nothing for a reader to click through to, and by this rule
+  they stay internal permanently.
 - **THE DELIVERY SWEEP — `data/delivery-audit.json`.** Every data file
   against the six the client loads, every field against every reference
   in `js/`, then the rendered DOM checked directly. **Five things were

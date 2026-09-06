@@ -209,6 +209,30 @@ const searchOut = {
   })),
 };
 
+// THE LEDGER SHIPS. Fourteen claims this project made about its own data and
+// method were tested; ten did not survive, and four of those were live on the
+// site before being caught. The owner's call: a directory that publishes what
+// it got wrong about itself is doing something a reader cannot get elsewhere,
+// and it is the strongest evidence the rest of the numbers were checked.
+// Only a summary goes to the client — counts computed here rather than typed,
+// and the four a reader actually saw, each with a line written for them.
+const ledgerPath = join(DATA, 'findings-ledger.json');
+let ledgerOut = null;
+if (existsSync(ledgerPath)) {
+  const led = readJson(ledgerPath);
+  const claims = led.claims ?? [];
+  const wrong = claims.filter((c) => c.status === 'falsified');
+  const seen = wrong.filter((c) => c.reachedVisitors);
+  const missing = seen.filter((c) => !c.visitorSummary).map((c) => c.id);
+  if (missing.length) console.error(`WARNING: falsified claims that reached visitors with no visitorSummary: ${missing.join(', ')}`);
+  ledgerOut = {
+    tested: claims.length,
+    falsified: wrong.length,
+    reachedReaders: seen.length,
+    shown: seen.filter((c) => c.visitorSummary).map((c) => ({ id: c.id, summary: c.visitorSummary })),
+  };
+}
+
 // ---------------------------------------------------------------- write
 
 console.log('Writing:');
@@ -217,6 +241,7 @@ const kbIndex = writeJson('index.json', indexOut);
 const kbCats = writeJson('categories-index.json', categoriesIndexOut);
 const kbSearch = writeJson('search-index.json', searchOut);
 writeJson('subject-notes.json', subjectNotesOut);
+if (ledgerOut) writeJson('ledger-summary.json', ledgerOut);
 
 // ---------------------------------------------------------------- report
 

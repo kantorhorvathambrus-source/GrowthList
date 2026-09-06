@@ -7,7 +7,7 @@
 // never written into the copy, so the page cannot claim a coverage figure the
 // dataset has moved past.
 
-import { getDomainNotes, getCategoryIndex, getCreators } from '../data.js';
+import { getDomainNotes, getCategoryIndex, getCreators, getLedgerSummary } from '../data.js';
 import { esc, setTitle, statePage, domainLabel, SIGNAL_LABELS } from '../utils.js';
 
 // Every number that appears in visitor-facing prose carries its provenance
@@ -124,6 +124,25 @@ function otherSideFacts(creators) {
   return f;
 }
 
+// The ledger, rendered from the summary the build computes. Numbers are
+// interpolated, never typed — a page about our own errors that carried a
+// hardcoded count would be the joke writing itself, and the count in this
+// project's own ledger framing WAS hardcoded for eight batches.
+function wrongMarkup(notes, ledger) {
+  const sec = notes?.buildPage?.whatWeGotWrong;
+  if (!sec || !ledger) return '';
+  const f = {
+    tested: String(ledger.tested), falsified: String(ledger.falsified), reached: String(ledger.reachedReaders),
+    testedWords: numberToWords(ledger.tested), falsifiedWords: numberToWords(ledger.falsified),
+    reachedWords: numberToWords(ledger.reachedReaders),
+  };
+  const items = (ledger.shown ?? [])
+    .map((c) => `<li><p>${esc(c.summary)}</p></li>`).join('');
+  return `<div class="sec-head"><span class="num">06</span><h2 id="wrong-heading">${esc(sec.title)}</h2></div>
+    ${(sec.paras ?? []).map((p) => `<p>${esc(fillFacts(p, f))}</p>`).join('')}
+    ${items ? `<ul class="wrong-list">${items}</ul>` : ''}`;
+}
+
 function otherSideMarkup(notes, creators) {
   const sec = notes?.buildPage?.theOtherSide;
   if (!sec) return '';
@@ -204,9 +223,10 @@ export async function renderColophon(app) {
   let notes;
   let categories;
   let creators;
+  let ledger;
   try {
-    [notes, categories, creators] = await Promise.all([
-      getDomainNotes(), getCategoryIndex(), getCreators(),
+    [notes, categories, creators, ledger] = await Promise.all([
+      getDomainNotes(), getCategoryIndex(), getCreators(), getLedgerSummary(),
     ]);
   } catch (err) {
     app.setAttribute('aria-busy', 'false');
@@ -262,6 +282,13 @@ export async function renderColophon(app) {
       <div class="rail"><span>Dissent</span></div>
       <div class="band-body">
         ${otherSideMarkup(notes, creators)}
+      </div>
+    </section>
+
+    <section class="band band--ink" aria-labelledby="wrong-heading">
+      <div class="rail rail--ink"><span>Errors</span></div>
+      <div class="band-body">
+        ${wrongMarkup(notes, ledger)}
       </div>
     </section>
   `;

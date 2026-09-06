@@ -48,6 +48,11 @@ export const getDomainNotes = () =>
 export const getSubjectNotes = () =>
   load('subject-notes.json').catch(() => ({ notes: {} }));
 
+// What this project got wrong about itself. Absent rather than empty when the
+// file is missing, so the colophon renders nothing instead of claiming zero.
+export const getLedgerSummary = () =>
+  load('ledger-summary.json').catch(() => null);
+
 /** Search index: categories (name + aliases) and creators (name + handle). */
 export const getSearchIndex = () => load('search-index.json');
 

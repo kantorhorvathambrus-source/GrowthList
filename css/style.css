@@ -1037,3 +1037,9 @@ pre, table { overflow-x: auto; max-width: 100%; }
   margin: 0 0 var(--sp-2);
 }
 .subject-note p { font-size: var(--fs-small); margin: 0; }
+
+/* The errors section on the colophon. Plain list, no icons, no colour coding —
+   these are our mistakes stated flatly, and decorating them would soften them. */
+.wrong-list { list-style: none; padding: 0; margin: var(--sp-6) 0 0; }
+.wrong-list li { padding-block: var(--sp-4); border-top: 1px solid var(--wine-400); }
+.wrong-list li:last-child { border-bottom: 1px solid var(--wine-400); }

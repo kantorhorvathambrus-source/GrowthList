@@ -208,6 +208,13 @@
         "Across {{creatorsWords}} creators we found {{criticsWords}} we would call critics, covering {{criticCatsWords}} of the {{populatedWords}} skills that have anyone listed at all. A genuine critic of a field — someone who knows it well enough to be worth reading and is not selling the thing they are assessing — is perhaps ten times rarer than a good teacher of it.",
         "We considered putting a line on every page without one, and decided against it. A warning that appears on four pages in five stops being read, and the warnings that matter here are the ones about a specific creator. So the absence is stated once, here: if a skill page has no other side, we did not find one, and you should assume the case against was not made."
       ]
+    },
+    "whatWeGotWrong": {
+      "title": "What we got wrong",
+      "paras": [
+        "This project keeps a list of the claims it has made about its own data and method, and tests them. {{testedWords|cap}} have been tested so far. {{falsifiedWords|cap}} did not survive, and {{reachedWords}} of those were live on this site before anyone caught them.",
+        "That second number is the one that matters. The alternative to finding {{falsifiedWords}} wrong claims was never {{falsifiedWords}} correct ones — it was {{falsifiedWords}} wrong ones nobody checked. What separates a list that finds its own errors from one that simply ships them is how many reached you first, so here are the {{reachedWords}} that did."
+      ]
     }
   },
   "open": [

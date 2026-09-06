@@ -23,7 +23,8 @@
       "survives": "The narrow form: Harry Dry has 4 uploads, Seth Godin 7, copyhackers and backlinko unresolvable, and the SEO end really is vendor-hosted.",
       "correctionIn": "data/domain-notes.json retired[]",
       "reachedVisitors": true,
-      "reachedVisitorsNote": "The standing note rendered on every marketing category page; verified live in a browser check at the time."
+      "reachedVisitorsNote": "The standing note rendered on every marketing category page; verified live in a browser check at the time.",
+      "visitorSummary": "Every marketing page said the good independent teaching in that field happens in newsletters rather than video. We had searched one corner of marketing. When we searched the rest we found several people teaching at length on video, and took the note down."
     },
     {
       "id": "first-aid-absent-supply",
@@ -84,7 +85,8 @@
       "correctionIn": "data/domain-notes.json corrected — 15 entries reclassified and moved to category pages; the colophon section rewritten",
       "note": "The worst of the four: never probed at all when made, repeated in every batch report from 17 to 25, and shipped to visitors as a claim about our own rigour.",
       "reachedVisitors": true,
-      "reachedVisitorsNote": "On the colophon, as a statement about our own rigour, for several weeks."
+      "reachedVisitorsNote": "On the colophon, as a statement about our own rigour, for several weeks.",
+      "visitorSummary": "The badges on each creator were described as reflecting our own admission rules — that we do not list someone explaining a skill they have never practised. Measured, 29 of 196 creators carried no practitioner badge, so it was not a rule at all. The badges describe the subject, not our standards."
     },
     {
       "id": "addiction-recovery-gap",
@@ -180,7 +182,8 @@
       "correctionIn": "js/views/colophon.js — the rule now says most appear under one, and the coverage section computes the median rather than asserting it",
       "note": "Second inward-facing claim to fail, and the same shape as the badge one: cheap to query, never queried.",
       "reachedVisitors": true,
-      "reachedVisitorsNote": "On the colophon, in the inclusion rules a visitor reads to decide whether to trust the list."
+      "reachedVisitorsNote": "On the colophon, in the inclusion rules a visitor reads to decide whether to trust the list.",
+      "visitorSummary": "This page said a creator typically appears under two to four skills. The real median was one, and had been for weeks. The number came from a planning document and was never checked against the list."
     },
     {
       "id": "footer-two-things-stored",
@@ -200,7 +203,8 @@
       "correctionIn": "index.html footer now names the kinds and states no count; validate.mjs holds a registry and fails on any undisclosed store",
       "note": "Caught by the enforcement written in the same batch, not by review. The check found its author's error within minutes of existing.",
       "reachedVisitors": true,
-      "reachedVisitorsNote": "In the site footer, in the paragraph about what we collect."
+      "reachedVisitorsNote": "In the site footer, in the paragraph about what we collect.",
+      "visitorSummary": "The footer said we keep two things in your browser. The code kept five. Nothing sensitive, and nothing left your device, but the count was wrong and stayed wrong until it was measured."
     },
     {
       "id": "depth-pass-raises-the-ratio",

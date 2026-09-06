@@ -2059,3 +2059,43 @@ The three hand-filled `catalogue` blocks from batch 48 were overwritten
 by `audit-catalogue` and the tool agreed with the transcription
 exactly — 50/20/7, 70/16/1, 58/2/2. The `source` marker is gone and the
 field is tool-owned again. Zero drift across all 240 records.
+
+## The three proposals, resolved
+
+**The ledger is published.** Colophon section 06, *What we got wrong*:
+fourteen claims tested, ten falsified, four live on the site before
+anyone caught them — then the four themselves, each written for a
+reader rather than for us. The footer that said we keep two things in
+your browser when the code kept five. The line claiming creators
+typically appear under two to four skills when the median was one, a
+number that came from a planning document and was never checked. The
+badges described as our own admission rules when 29 of 196 creators
+carried no practitioner badge. The marketing note that said the good
+teaching in that field happens in newsletters, written after searching
+one corner of it.
+
+Every number in that section is computed at render. A page about our
+own errors carrying a hardcoded count would be the joke writing itself
+— and the count in this ledger's own framing paragraph *was* hardcoded
+for eight batches after the number moved past it.
+
+**Per-category appetite numbers: declined**, on the owner's reasoning.
+A view count on a skill page reads as a popularity ranking and would
+quietly tell a visitor their interest is niche, which is neither what
+the number measures nor anything we want to say.
+
+**Reputation drift needed no build, and that is worth stating rather
+than quietly claiming a delivery.** The rule — on the affected
+creator's own card, never as a list — turns out to apply to **2 of the
+11 cases**, because the other nine were *rejected* for drift and have
+no card to appear on. Adam Ragusea and Pat Flynn both already carry it
+in `caveats`, verified rendering on the page: *"the channel has drifted
+substantially toward food journalism and general commentary; the
+cooking-fundamentals material is largely older than the recent
+uploads."*
+
+So the decision is already satisfied, and by its own logic the other
+nine stay internal permanently — a reader cannot click through to
+someone we did not list, and publishing the reasons anyway is the
+callout list the owner ruled out. Worth flagging in case the picture
+was of eleven cards rather than two.
