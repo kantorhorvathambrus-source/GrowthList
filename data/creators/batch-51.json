@@ -1,0 +1,117 @@
+[
+  {
+    "id": "madetosew",
+    "name": "Made to Sew",
+    "handle": "@madetosew",
+    "channelUrl": "https://www.youtube.com/@madetosew",
+    "country": "AU",
+    "language": "en",
+    "sizeBucket": "500k-1M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Professional dressmaking technique — construction, fit and the finishes that separate a home-made garment from a made one.",
+    "longDescription": "The channel states its subject as professional sewing and dressmaking: construction, fit, and couture-inspired finishing, using the methods of a working studio. {{longCountWords|cap}} of the {{scannedWords}} most recent uploads run over twenty minutes and the median is {{medianPhrase}}, which suits the material — a full garment sewn start to finish at thirty-four minutes, then short precise pieces on the individual operations that garment needed. A patch pocket done the way a shirt factory does it. A baby hem that stays flat on difficult fabric. How to assemble a printed pattern without the pieces drifting. The teaching is at the level of the operation rather than the project, which is what lets it transfer: the pocket method works on any shirt you ever make.",
+    "notFor": "Anyone whose problem is a torn seam or a hem that needs taking up — this is garment construction, not repair, and the other creator here is the better first stop for mending. It also assumes a machine you are comfortable with.",
+    "formatTags": [
+      "tutorial",
+      "long-form"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 4
+    },
+    "signals": [
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "sewing-and-mending",
+        "strength": "primary",
+        "why": "The 'making garments that actually fit' half of this category, taught at the level of the individual operation so it transfers beyond the project being demonstrated.",
+        "evidence": "34 minutes sewing a complete garment step by step, 10 on a professional patch pocket, 8 on a baby hem that holds on difficult fabric, and 8 on assembling a printed pattern accurately.",
+        "entryVideo": {
+          "title": "How to Sew a Tie Neck Halterneck Top | Step-by-Step Sewing Tutorial",
+          "videoId": "L1jJVJKH1xU",
+          "whyThisOne": "A whole garment in one sitting, so you see how the separate operations sequence into something wearable — which no single-technique video can show you.",
+          "durationMin": 34
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Studio-standard methods, which sometimes means more steps than a home sewer needs; the channel does not distinguish the essential from the refined. No teacher is named anywhere on the channel.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 22,
+      "longPct": 26,
+      "medianMin": 8,
+      "videoCount": 217,
+      "at": "2026-09"
+    }
+  },
+  {
+    "id": "rjthebikeguy",
+    "name": "RJ The Bike Guy",
+    "handle": "@rjthebikeguy",
+    "channelUrl": "https://www.youtube.com/@rjthebikeguy",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "500k-1M",
+    "status": "dormant",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "An independent mechanic's repair archive — the jobs filmed as they actually go, on old bikes worth fixing rather than new ones worth selling.",
+    "longDescription": "The channel has not posted since July 2025 and is listed for its back catalogue, which is a repair library rather than a broadcast. {{longCountWords|cap}} of the {{scannedWords}} most recent uploads pass twenty minutes and the median is {{medianPhrase}}. The jobs are the ones that actually strand people: overhauling a bottom bracket with sealed cartridge bearings, servicing a suspension fork down to disassembly and re-lubrication, replacing a recalled fork with a rigid one, and a fifty-nine-minute full overhaul of a free mountain bike from the state it was found in. Nothing is sponsored into the frame and nothing is new — the bikes are second-hand, the parts are what fits, and the reasoning includes when a repair is not worth doing.",
+    "notFor": "Anyone with a current high-end bike looking for manufacturer-correct procedure; the other creator here is a tool maker and publishes exactly that. Also expect no updates — this is a closed archive, and components have moved on since.",
+    "formatTags": [
+      "tutorial",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 1,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "bike-maintenance",
+        "strength": "primary",
+        "why": "An independent mechanic working on ordinary second-hand bikes, against a tool manufacturer's channel — the same jobs, without the assumption that you own the right tool or a bike worth the right tool.",
+        "evidence": "59 minutes overhauling a found mountain bike end to end, 24 replacing a recalled suspension fork, 14 servicing a fork through disassembly and re-lubrication, 10 rebuilding a bottom bracket, and 15 stripping a frame-damaged bike for usable parts.",
+        "entryVideo": {
+          "title": "Overhaul/Rebuild Bottom Bracket With Sealed Cartridge Bearings",
+          "videoId": "meErJdr_fUI",
+          "whyThisOne": "One of the routine jobs the category is named for, on the kind of bike most people actually own, in ten minutes and without a workshop.",
+          "durationMin": 10
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "QUIET SINCE JULY 2025 — this is an archive and will not answer a question about a current component. It is listed because the back catalogue teaches the routine jobs well and nothing is sold anywhere in it.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 18,
+      "longPct": 14,
+      "medianMin": 5,
+      "videoCount": 638,
+      "at": "2026-09"
+    },
+    "entity": "individual"
+  }
+]

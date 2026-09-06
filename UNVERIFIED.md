@@ -2143,3 +2143,36 @@ and 50 — always for something judged excellent. The validator caught it
 every time, which is the system working, but three identical catches is
 a template problem rather than a vigilance problem. The schema block in
 CLAUDE.md now says so at the point the value is written.
+
+## Batch 51 — sewing, and a dormant archive listed on purpose
+
+Made to Sew (`sewing-and-mending`, 1→2) and RJ The Bike Guy
+(`bike-maintenance`, 1→2 listed, still 1 active).
+
+**RJ The Bike Guy is listed while dormant, and that is a deliberate
+departure from the close plan's metric.** He stopped posting in July
+2025. The close plan counts active depth, so listing him moves nothing
+on that number — and the page is still better for it, because the
+category's only other creator is Park Tool, a tool manufacturer. An
+independent mechanic overhauling second-hand bikes with whatever parts
+fit, including the judgement of when a repair is not worth doing, is a
+different thing from a manufacturer's procedure library. The card
+discloses "Quiet for over a year" and the caveat leads with it.
+
+The metric serves the reader; where they disagree the reader wins.
+Recorded here because it is the first time I have listed against the
+plan's own measure rather than for it.
+
+**Four rejections on catalogue drift or format**, all from channels
+that look right by reputation: BikeFarmer's own description says it is
+"Watch Me Work" rather than how-to; I Know A Guy Bicycles is a
+thirty-year mechanic whose recent long-form is livestream and industry
+commentary; DistroTube's Linux tutorials have given way to community
+game nights; Daily Stoic is 45 of 50 uploads under two minutes.
+
+**One rejection that was a close call worth recording as such.** The
+Last Stitch is Johanna Lundström, author of four named sewing books,
+specialising in knits and denim — genuinely strong, and rejected only
+because Made to Sew matched the blurb's fit-and-construction wording
+more directly. She is the first name to revisit if the category ever
+goes to three.

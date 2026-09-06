@@ -2,6 +2,11 @@
   "_comment": "Every handle this project has probed and what came of it. Built at batch 42 after the validator caught a complete second record being written for a creator already in the dataset — the fourth instance of a stored fact being checked against memory instead of queried. check-handles.mjs cross-references this automatically, so the check happens at the moment of probing rather than depending on recall.",
   "_schema": "handle -> { status: listed | rejected | collision, why, at }. Listed entries are derived from the dataset at build time and need no maintenance; rejected and collision entries are appended when the rejection is made.",
   "probed": {
+    "@_johnhammond": {
+      "status": "listed",
+      "why": "John Hammond",
+      "at": "dataset"
+    },
     "@30mpc": {
       "status": "listed",
       "why": "30 Minutes to President's Club",
@@ -16,96 +21,6 @@
       "status": "rejected",
       "why": "staffing agency channel returned by a hiring-topic search — recruiting-vendor marketing, not teaching",
       "at": "batch 46"
-    },
-    "@AmandaRachLee": {
-      "status": "rejected",
-      "why": "journaling as craft and aesthetics — planner setups, sticker collections, cyanotype. The category blurb distinguishes journaling that produces clarity or a decision from filling pages, and this is the second thing",
-      "at": "batch 49"
-    },
-    "@AmerGastroAssn": {
-      "status": "rejected",
-      "why": "professional-association channel — career and leadership content for gastroenterologists, not patients",
-      "at": "batch 43"
-    },
-    "@Biolayne1": {
-      "status": "rejected",
-      "why": "a genuine critic, but fat-loss already has one in Abbey Sharp and the catalogue is 12 videos over 8 minutes in 200, median 3m",
-      "at": "batch 43"
-    },
-    "@ConorHarris": {
-      "status": "rejected",
-      "why": "every long-form description is a single link to one of his own programs, the channel asserts no credential, and a title claiming 'evidence-based' carries no citation. Would have been the second strong-ideological-frame voice in a two-creator category",
-      "at": "batch 43"
-    },
-    "@DrSameerIslamMD": {
-      "status": "collision",
-      "why": "1 upload",
-      "at": "batch 43"
-    },
-    "@HeatherSmithAU": {
-      "status": "collision",
-      "why": "0 uploads",
-      "at": "batch 47"
-    },
-    "@HowMoneyWorks": {
-      "status": "rejected",
-      "why": "economic and current-affairs commentary (Meta, Peter Thiel, oil prices) rather than a personal-finance skill; no money category blurb fits it",
-      "at": "batch 47"
-    },
-    "@MedSchoolInsiders": {
-      "status": "rejected",
-      "why": "medical-career advice (specialty comparisons, admissions, residency) rather than exam technique; the study-method content is not in the recent window",
-      "at": "batch 49"
-    },
-    "@NathanielDrew": {
-      "status": "rejected",
-      "why": "probed for journaling; an intentional-living video essayist rather than a channel teaching the practice",
-      "at": "batch 48"
-    },
-    "@NirEyal": {
-      "status": "collision",
-      "why": "0 uploads",
-      "at": "batch 49"
-    },
-    "@Physiotutors": {
-      "status": "rejected",
-      "why": "wrong audience — states it teaches physiotherapy students and professionals; 173 of 198 uploads under 2 minutes, long-form is a clinician podcast",
-      "at": "batch 43"
-    },
-    "@PrecisionMovement": {
-      "status": "collision",
-      "why": "resolves to 'Mr. Owen Moore - Adv Practitioner', 2 uploads — not Precision Movement",
-      "at": "batch 43"
-    },
-    "@SirWadeNeistadt": {
-      "status": "collision",
-      "why": "0 uploads",
-      "at": "batch 48"
-    },
-    "@TheGutHealthDoctor": {
-      "status": "collision",
-      "why": "category-term name, 2 uploads — not Megan Rossi's channel",
-      "at": "batch 43"
-    },
-    "@UnJadedJade": {
-      "status": "rejected",
-      "why": "reputation drift — known for study and exam content, now education-policy essays and PhD life vlogs (Reggio Emilia pre-schools, mid-year goal resets)",
-      "at": "batch 49"
-    },
-    "@UnifiedMindfulness": {
-      "status": "rejected",
-      "why": "165 of 200 uploads under 2 minutes, one long-form",
-      "at": "batch 43"
-    },
-    "@WholesaleTed": {
-      "status": "rejected",
-      "why": "AI side-hustle listicles — \"Making People RICH\", \"If You are BROKE\", dropshipping with AI. Exactly the genre the project exists to filter",
-      "at": "batch 47"
-    },
-    "@_johnhammond": {
-      "status": "listed",
-      "why": "John Hammond",
-      "at": "dataset"
     },
     "@a16z": {
       "status": "rejected",
@@ -187,6 +102,16 @@
       "why": "surfaced by exam-preparation discovery; a 5M-20M productivity and business channel, not exam technique",
       "at": "batch 49"
     },
+    "@AmandaRachLee": {
+      "status": "rejected",
+      "why": "journaling as craft and aesthetics — planner setups, sticker collections, cyanotype. The category blurb distinguishes journaling that produces clarity or a decision from filling pages, and this is the second thing",
+      "at": "batch 49"
+    },
+    "@AmerGastroAssn": {
+      "status": "rejected",
+      "why": "professional-association channel — career and leadership content for gastroenterologists, not patients",
+      "at": "batch 43"
+    },
     "@andrejkarpathy": {
       "status": "listed",
       "why": "Andrej Karpathy",
@@ -262,10 +187,25 @@
       "why": "Benjamin Keep",
       "at": "dataset"
     },
+    "@bernadettebanner": {
+      "status": "rejected",
+      "why": "costume history and historical dressmaking as entertainment; the sewing-and-mending blurb is repairing, altering and fitting clothes you wear",
+      "at": "batch 51"
+    },
     "@betterideas": {
       "status": "listed",
       "why": "Better Ideas (Joey Schweitzer)",
       "at": "dataset"
+    },
+    "@Biolayne1": {
+      "status": "rejected",
+      "why": "a genuine critic, but fat-loss already has one in Abbey Sharp and the catalogue is 12 videos over 8 minutes in 200, median 3m",
+      "at": "batch 43"
+    },
+    "@bkefrmr": {
+      "status": "rejected",
+      "why": "44 of 50 uploads over 20m but its own description says it is 'Watch Me Work' rather than a how-to channel, and the recent catalogue is bike-show coverage and travel",
+      "at": "batch 51"
     },
     "@bloopanimation": {
       "status": "listed",
@@ -412,6 +352,11 @@
       "why": "Computerphile",
       "at": "dataset"
     },
+    "@ConorHarris": {
+      "status": "rejected",
+      "why": "every long-form description is a single link to one of his own programs, the channel asserts no credential, and a title claiming 'evidence-based' carries no citation. Would have been the second strong-ideological-frame voice in a two-creator category",
+      "at": "batch 43"
+    },
     "@conorneill": {
       "status": "listed",
       "why": "Conor Neill",
@@ -441,6 +386,11 @@
       "status": "collision",
       "why": "resolves to an unrelated Arabic-language channel with 4,529 uploads",
       "at": "batch 25"
+    },
+    "@dailystoic": {
+      "status": "rejected",
+      "why": "45 of 50 uploads under two minutes, median 1m, against a large commercial operation. The applied-practice angle is real but the channel is a shorts feed",
+      "at": "batch 51"
     },
     "@databasestar": {
       "status": "listed",
@@ -481,6 +431,11 @@
       "status": "collision",
       "why": "2 uploads",
       "at": "batch 43"
+    },
+    "@distrotube": {
+      "status": "rejected",
+      "why": "drifted — a Linux tutorial channel whose recent long-form is community game nights and voice-message episodes",
+      "at": "batch 51"
     },
     "@docjenfit": {
       "status": "rejected",
@@ -536,6 +491,11 @@
       "status": "listed",
       "why": "Dr. Spencer Nadolsky",
       "at": "dataset"
+    },
+    "@DrSameerIslamMD": {
+      "status": "collision",
+      "why": "1 upload",
+      "at": "batch 43"
     },
     "@drtraceymarks": {
       "status": "listed",
@@ -677,6 +637,11 @@
       "why": "HealthyGamerGG (Dr. Alok Kanojia)",
       "at": "dataset"
     },
+    "@HeatherSmithAU": {
+      "status": "collision",
+      "why": "0 uploads",
+      "at": "batch 47"
+    },
     "@heidipriebe1": {
       "status": "listed",
       "why": "Heidi Priebe",
@@ -717,6 +682,11 @@
       "why": "How Communication Works",
       "at": "dataset"
     },
+    "@HowMoneyWorks": {
+      "status": "rejected",
+      "why": "economic and current-affairs commentary (Meta, Peter Thiel, oil prices) rather than a personal-finance skill; no money category blurb fits it",
+      "at": "batch 47"
+    },
     "@howtoadhd": {
       "status": "listed",
       "why": "How to ADHD (Jessica McCabe)",
@@ -726,6 +696,11 @@
       "status": "listed",
       "why": "How To Cook That (Ann Reardon)",
       "at": "dataset"
+    },
+    "@iknowaguybicycles": {
+      "status": "rejected",
+      "why": "a 30-year professional mechanic, but the recent long-form is livestream and industry commentary (80m, 138m) rather than repair teaching",
+      "at": "batch 51"
     },
     "@impactpricing": {
       "status": "listed",
@@ -897,6 +872,11 @@
       "why": "strong catalogue — 50 of 50 uploads in the 3-19m band, median 13m, all technique — but the last upload is 2024-12-01. Dormant, and the reason the status audit got written",
       "at": "batch 45"
     },
+    "@madetosew": {
+      "status": "listed",
+      "why": "Made to Sew",
+      "at": "dataset"
+    },
     "@madfit": {
       "status": "listed",
       "why": "MadFit (Maddie Lymburner)",
@@ -936,6 +916,11 @@
       "status": "listed",
       "why": "Medlife Crisis (Dr. Rohin Francis)",
       "at": "dataset"
+    },
+    "@MedSchoolInsiders": {
+      "status": "rejected",
+      "why": "medical-career advice (specialty comparisons, admissions, residency) rather than exam technique; the study-method content is not in the recent window",
+      "at": "batch 49"
     },
     "@menno.henselmans": {
       "status": "rejected",
@@ -997,6 +982,11 @@
       "why": "Naomi Brockwell TV",
       "at": "dataset"
     },
+    "@NathanielDrew": {
+      "status": "rejected",
+      "why": "probed for journaling; an intentional-living video essayist rather than a channel teaching the practice",
+      "at": "batch 48"
+    },
     "@neetcode": {
       "status": "listed",
       "why": "NeetCode",
@@ -1026,6 +1016,11 @@
       "status": "listed",
       "why": "Nigel Danson",
       "at": "dataset"
+    },
+    "@NirEyal": {
+      "status": "collision",
+      "why": "0 uploads",
+      "at": "batch 49"
     },
     "@nngroup": {
       "status": "listed",
@@ -1112,6 +1107,11 @@
       "why": "Physionic (Nicolas Verhoeven)",
       "at": "dataset"
     },
+    "@Physiotutors": {
+      "status": "rejected",
+      "why": "wrong audience — states it teaches physiotherapy students and professionals; 173 of 198 uploads under 2 minutes, long-form is a clinician podcast",
+      "at": "batch 43"
+    },
     "@pianoteofficial": {
       "status": "listed",
       "why": "Pianote",
@@ -1126,6 +1126,11 @@
       "status": "collision",
       "why": "resolves to a British creator, not Amy McCready's US organisation",
       "at": "batch 17"
+    },
+    "@PrecisionMovement": {
+      "status": "collision",
+      "why": "resolves to 'Mr. Owen Moore - Adv Practitioner', 2 uploads — not Precision Movement",
+      "at": "batch 43"
     },
     "@premiumbeat": {
       "status": "listed",
@@ -1197,6 +1202,11 @@
       "why": "Rex Krueger",
       "at": "dataset"
     },
+    "@rjthebikeguy": {
+      "status": "listed",
+      "why": "RJ The Bike Guy",
+      "at": "dataset"
+    },
     "@saaspricing": {
       "status": "rejected",
       "why": "a pricing consultancy clip channel — 43 of 50 uploads under two minutes, three long-form in the recent window",
@@ -1256,6 +1266,11 @@
       "status": "listed",
       "why": "Simpletivity (Scott Friesen)",
       "at": "dataset"
+    },
+    "@SirWadeNeistadt": {
+      "status": "collision",
+      "why": "0 uploads",
+      "at": "batch 48"
     },
     "@sisyphus55": {
       "status": "listed",
@@ -1422,10 +1437,20 @@
       "why": "The Gottman Institute",
       "at": "dataset"
     },
+    "@TheGutHealthDoctor": {
+      "status": "collision",
+      "why": "category-term name, 2 uploads — not Megan Rossi's channel",
+      "at": "batch 43"
+    },
     "@theguthealthmd": {
       "status": "listed",
       "why": "Dr. Will Bulsiewicz, The Gut Health MD",
       "at": "dataset"
+    },
+    "@thelaststitch": {
+      "status": "rejected",
+      "why": "strong and credentialed (author of four named sewing books, knits and denim specialist) but Made to Sew matched the fit-and-construction blurb more directly. Reconsider first if sewing-and-mending ever goes to three",
+      "at": "batch 51"
     },
     "@themathsorcerer": {
       "status": "listed",
@@ -1572,6 +1597,16 @@
       "why": "Two Cents (PBS)",
       "at": "dataset"
     },
+    "@UnifiedMindfulness": {
+      "status": "rejected",
+      "why": "165 of 200 uploads under 2 minutes, one long-form",
+      "at": "batch 43"
+    },
+    "@UnJadedJade": {
+      "status": "rejected",
+      "why": "reputation drift — known for study and exam content, now education-policy essays and PhD life vlogs (Reggio Emilia pre-schools, mid-year goal resets)",
+      "at": "batch 49"
+    },
     "@uprighthealth": {
       "status": "listed",
       "why": "Upright Health",
@@ -1601,6 +1636,11 @@
       "status": "listed",
       "why": "Weltgeist",
       "at": "dataset"
+    },
+    "@WholesaleTed": {
+      "status": "rejected",
+      "why": "AI side-hustle listicles — \"Making People RICH\", \"If You are BROKE\", dropshipping with AI. Exactly the genre the project exists to filter",
+      "at": "batch 47"
     },
     "@wirelessphilosophy": {
       "status": "listed",
