@@ -760,7 +760,7 @@ written. What changed is waiting for a yes that was already given.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **Current phase**: Phase 2 (creator research). **Batches 01–57 are
+- **Current phase**: Phase 2 (creator research). **Batches 01–58 are
   written, gated, validated and committed.**
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
 - **PHASE 2 CLOSES ON A TARGETED PLAN, NOT UNIFORM COVERAGE.** The owner's

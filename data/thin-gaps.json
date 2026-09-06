@@ -288,6 +288,31 @@
         "clinicians working on social anxiety and dating"
       ],
       "at": "batch 57"
+    },
+    "breathwork": {
+      "rounds": [
+        "batch 44",
+        "batch 58"
+      ],
+      "found": "Two rounds. The first returned the Buteyko tradition the listed creator already represents, plus physiology-lecture channels for medical students. The second, aimed at respiratory physiotherapy and clinical breathing work, returned the same medical-lecture channels again — Ninja Nerd, Dr Najeeb, Medicosis — which teach the physiology to students rather than the practice to anyone.",
+      "unprobed": [
+        "singing and wind-instrument breath training",
+        "clinical anxiety programmes using breathing protocols"
+      ],
+      "at": "batch 58"
+    },
+    "bike-maintenance": {
+      "rounds": [
+        "batch 51",
+        "batch 58"
+      ],
+      "found": "Two rounds for an ACTIVE second voice. The category does have a second listing — RJ The Bike Guy, whose repair archive is strong — but he stopped posting in July 2025, so the page shows one live channel and one archive. The second round returned bike-tech news and product coverage (GCN Tech is 33 of 50 uploads under two minutes) rather than maintenance teaching.",
+      "unprobed": [
+        "bike co-ops and community workshops publishing their teaching",
+        "framebuilders and independent shops"
+      ],
+      "note": "Distinct from the other entries here: this category is not empty of a second voice, it is empty of a live one.",
+      "at": "batch 58"
     }
   }
 }

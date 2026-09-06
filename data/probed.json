@@ -707,6 +707,11 @@
       "why": "The Gastro Girl Podcast",
       "at": "dataset"
     },
+    "@gcntech": {
+      "status": "rejected",
+      "why": "bike-tech news and product coverage rather than maintenance teaching; 33 of 50 uploads under two minutes",
+      "at": "batch 58"
+    },
     "@geekawhat": {
       "status": "listed",
       "why": "GeekaWhat (James Cousins)",
@@ -716,6 +721,11 @@
       "status": "listed",
       "why": "Gentleman's Gazette",
       "at": "dataset"
+    },
+    "@gmbntech": {
+      "status": "rejected",
+      "why": "same network, same shape — mountain-bike tech news rather than teaching",
+      "at": "batch 58"
     },
     "@gmtk": {
       "status": "listed",
@@ -1042,6 +1052,11 @@
       "why": "mCoding (James Murphy)",
       "at": "dataset"
     },
+    "@medicosisperfectionalis": {
+      "status": "rejected",
+      "why": "probed for breathwork; medical-student exam preparation",
+      "at": "batch 58"
+    },
     "@medlifecrisis": {
       "status": "listed",
       "why": "Medlife Crisis (Dr. Rohin Francis)",
@@ -1141,6 +1156,11 @@
       "status": "listed",
       "why": "Nigel Danson",
       "at": "dataset"
+    },
+    "@ninjanerdofficial": {
+      "status": "rejected",
+      "why": "probed for breathwork; medical-school physiology lectures — the mechanism taught to students, not the practice taught to anyone",
+      "at": "batch 58"
     },
     "@nngroup": {
       "status": "listed",

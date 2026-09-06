@@ -2393,3 +2393,29 @@ self-improvement, business and consumer finance — subjects where the
 supply is motivational, commercial, or produced at volume without an
 author. Appetite is high in exactly those places, which is why they
 keep reaching the top of the ordering and keep failing.
+
+## Batch 58 — two more out, and one of them is a different shape
+
+`breathwork` and `bike-maintenance` leave the budget at two rounds each.
+
+**`bike-maintenance` is not empty of a second voice — it is empty of a
+live one.** RJ The Bike Guy was listed in batch 51 knowing he was
+dormant, because the alternative was a category held only by a tool
+manufacturer. The second round went looking for someone still posting
+and found bike-tech news instead: GCN Tech is 33 of 50 uploads under
+two minutes and covers products rather than repair. So the page shows
+one live channel and one archive, which is an honest state and a
+different one from the rest of this list. Recorded with that
+distinction rather than filed alongside categories that have nothing.
+
+**`breathwork` failed twice in the same direction.** The first round
+returned the Buteyko tradition the listed creator already represents.
+The second, aimed at respiratory physiotherapy, returned medical-school
+physiology lectures — Ninja Nerd, Dr Najeeb, Medicosis — which teach
+the mechanism to students rather than the practice to anyone. Two
+unprobed ends are named and both are plausible: singing and
+wind-instrument breath training, and clinical anxiety programmes that
+use breathing protocols.
+
+Twelve categories are now in `searchedNotFound` and seven have full
+written gaps.
