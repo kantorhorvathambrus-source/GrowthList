@@ -185,7 +185,12 @@ const totalMaps = retro.length + firstPass;
 {
   const dp = join(ROOT, 'data/topic-demand.json');
   if (existsSync(dp)) {
-    const plan = closePlan({ categories: cats, creators, demand: read('data/topic-demand.json') });
+    const gapsFile = join(ROOT, 'data/thin-gaps.json');
+    const plan = closePlan({
+      categories: cats, creators,
+      demand: read('data/topic-demand.json'),
+      gaps: existsSync(gapsFile) ? read('data/thin-gaps.json') : null,
+    });
     const fmt = (n) => n >= 1e6 ? `${(n / 1e6).toFixed(1)}M` : n >= 1e3 ? `${Math.round(n / 1e3)}k` : String(n);
     console.log('\n\nPHASE 2 CLOSE — where the remaining creators go');
     console.log('='.repeat(72));
@@ -196,6 +201,12 @@ const totalMaps = retro.length + firstPass;
     for (const r of plan.funded) console.log(`    ${pad(r.id, 30)} ${String(fmt(r.views)).padStart(7)}   at ${r.active} (+${r.need})`);
     console.log(`\n  DEFERRED BY DECISION — ${plan.deferred.length} categories, lower appetite:`);
     console.log('    ' + plan.deferred.map((r) => `${r.id} (${fmt(r.views)})`).join(', '));
+    if (plan.searchedOut.length) {
+      console.log(`\n  SEARCHED TWICE, NOT FILLED — ${plan.searchedOut.length} categories out of the budget:`);
+      console.log('    ' + plan.searchedOut.map((r) => `${r.id} (${fmt(r.views)})`).join(', '));
+      console.log('    Appetite ordered these high and the search failed anyway. Their pages');
+      console.log('    say so; the slots went to the next categories down.');
+    }
     if (plan.unranked.length) {
       console.log(`\n  UNRANKED — ${plan.unranked.length} not measured, so not ordered:`);
       console.log('    ' + plan.unranked.map((r) => r.id).join(', '));

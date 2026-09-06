@@ -21,7 +21,7 @@
 
 export const MAPPING_BUDGET = 37;
 
-export function closePlan({ categories, creators, demand, budget = MAPPING_BUDGET }) {
+export function closePlan({ categories, creators, demand, gaps, budget = MAPPING_BUDGET }) {
   const active = new Map();
   const listed = new Map();
   for (const c of creators) {
@@ -47,8 +47,18 @@ export function closePlan({ categories, creators, demand, budget = MAPPING_BUDGE
 
   // An unmeasured category cannot be ranked and must not be silently sorted to
   // the bottom as if it scored zero — that would turn a gap into a low score.
-  const ranked = below.filter((r) => typeof r.views === 'number').sort((a, b) => b.views - a.views);
-  const unranked = below.filter((r) => typeof r.views !== 'number');
+  // THE TWO-ROUNDS RULE. A funded category searched across two rounds without
+  // producing a listable second voice leaves the budget — appetite orders
+  // value, not availability, and holding a slot open for a category the search
+  // has already failed twice just stops the next one being funded. They are
+  // reported separately rather than deleted, because the reason is written and
+  // the page shows it.
+  const retired = new Set(Object.keys(gaps?.searchedNotFound ?? {}));
+  const searchedOut = below.filter((r) => retired.has(r.id));
+  const live = below.filter((r) => !retired.has(r.id));
+
+  const ranked = live.filter((r) => typeof r.views === 'number').sort((a, b) => b.views - a.views);
+  const unranked = live.filter((r) => typeof r.views !== 'number');
 
   const funded = [];
   let spent = 0;
@@ -60,5 +70,5 @@ export function closePlan({ categories, creators, demand, budget = MAPPING_BUDGE
   const fundedIds = new Set(funded.map((r) => r.id));
   const deferred = ranked.filter((r) => !fundedIds.has(r.id));
 
-  return { funded, deferred, unranked, spent, budget, belowTarget: below.length };
+  return { funded, deferred, unranked, searchedOut, spent, budget, belowTarget: below.length };
 }
