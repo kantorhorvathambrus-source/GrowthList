@@ -191,6 +191,15 @@
         "We got this wrong at first and said so on these pages for several weeks: we described these badges as our own inclusion rules showing up in the data. They are not. The correction, and the measurement that forced it, is on the record in the project's own files.",
         "One limitation worth stating outright, because the shape of the badges hides it. A badge that is absent means we did not find that thing — not that we looked and found nothing. {{noCommercialWords|cap}} of the creators here carry no commercial badge at all, and the list gives you no way to tell which of those were checked and came back clean. Read an absent badge as silence, not as a clean bill of health."
       ]
+    },
+    "howDepthWasChosen": {
+      "title": "Why some skills have more creators than others",
+      "paras": [
+        "Every skill here was meant to reach at least two creators. Not all of them did, and which ones did was a decision rather than an accident — so here is the basis.",
+        "We measured how much each subject is actually watched on YouTube: the median view count of the fifty most relevant videos for the skill and its common names. Then the remaining research went to the thin categories with the largest audiences first. A skill left with one creator is one where either the subject is watched far less, or we searched and did not find a second source we would stand behind.",
+        "That number is not our traffic and could not be. This site has no analytics, the home page lists every skill equally, and we have no idea which page you arrived at. It measures appetite for a subject among people already watching video about it — a real number, with a narrow meaning, and a gap between it and you that we cannot close. It is one input to a judgement, and you are reading the judgement.",
+        "Two skills, teaching and explaining, and first aid, could not be measured at all because the search kept failing. They are absent from the ranking rather than ranked last."
+      ]
     }
   },
   "open": [

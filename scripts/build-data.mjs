@@ -88,11 +88,22 @@ console.log(`Read ${categories.length} categories and ${creators.length} creator
 
 // ---------------------------------------------------------------- derive
 
-/** categoryId -> creator count, used for the home page counts */
+/** categoryId -> creator counts for the home page.
+ *
+ * TWO NUMBERS, AND THE CARD SHOWS THE LIVE ONE. This counted every mapping
+ * regardless of status, so four categories advertised "2 creators" on the home
+ * page while one of the two had not uploaded in over a year. That is the
+ * `status` defect reaching visitor-facing copy: a number that was true of the
+ * records and false of the thing the reader is about to rely on. The card now
+ * counts active channels, and carries the total separately so a dormant
+ * creator is disclosed rather than silently dropped from the tally. */
 const counts = new Map(categories.map((c) => [c.id, 0]));
+const activeCounts = new Map(categories.map((c) => [c.id, 0]));
 for (const c of creators) {
   for (const m of c.categories ?? []) {
-    if (counts.has(m.id)) counts.set(m.id, counts.get(m.id) + 1);
+    if (!counts.has(m.id)) continue;
+    counts.set(m.id, counts.get(m.id) + 1);
+    if (c.status === 'active') activeCounts.set(m.id, activeCounts.get(m.id) + 1);
   }
 }
 
@@ -121,7 +132,8 @@ const categoriesIndexOut = categories.map((c) => ({
   domain: c.domain,
   blurb: c.blurb,
   aliases: c.aliases,
-  count: counts.get(c.id) ?? 0,
+  count: activeCounts.get(c.id) ?? 0,
+  listed: counts.get(c.id) ?? 0,
 }));
 
 // Keep the probe ledger's "listed" half derived rather than maintained. A

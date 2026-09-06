@@ -114,6 +114,16 @@ function fillFacts(text, facts) {
   });
 }
 
+// Why some skills got a second creator and others did not. This shaped the
+// list a reader is looking at, so the basis belongs on the page — including
+// the part where the number we used is explicitly not our own traffic.
+function depthMarkup(notes) {
+  const sec = notes?.buildPage?.howDepthWasChosen;
+  if (!sec) return '';
+  return `<div class="sec-head"><span class="num">04</span><h2 id="depth-heading">${esc(sec.title)}</h2></div>
+    ${(sec.paras ?? []).map((p) => `<p>${esc(p)}</p>`).join('')}`;
+}
+
 function floorMarkup(notes, creators) {
   const sec = notes?.buildPage?.whatTheBadgesTrack;
   if (!sec) return '';
@@ -213,6 +223,13 @@ export async function renderColophon(app) {
       <div class="rail"><span>Badges</span></div>
       <div class="band-body">
         ${floorMarkup(notes, creators)}
+      </div>
+    </section>
+
+    <section class="band band--alt" aria-labelledby="depth-heading">
+      <div class="rail"><span>Depth</span></div>
+      <div class="band-body">
+        ${depthMarkup(notes)}
       </div>
     </section>
   `;

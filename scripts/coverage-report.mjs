@@ -14,6 +14,7 @@ import { readFileSync, existsSync, readdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { depth3Priority } from './lib/depth3.mjs';
+import { closePlan } from './lib/close-plan.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const read = (p) => JSON.parse(readFileSync(join(ROOT, p), 'utf8'));
@@ -179,6 +180,30 @@ const totalMaps = retro.length + firstPass;
 // widely, which is either the data having been under-mapped or the bar
 // drifting. If the second-or-later share rises FASTER than the ratio, it is
 // the bar.
+// THE CLOSE PLAN. Which thin categories the remaining creators are actually
+// going to, in order, and which are deferred by decision rather than oversight.
+{
+  const dp = join(ROOT, 'data/topic-demand.json');
+  if (existsSync(dp)) {
+    const plan = closePlan({ categories: cats, creators, demand: read('data/topic-demand.json') });
+    const fmt = (n) => n >= 1e6 ? `${(n / 1e6).toFixed(1)}M` : n >= 1e3 ? `${Math.round(n / 1e3)}k` : String(n);
+    console.log('\n\nPHASE 2 CLOSE — where the remaining creators go');
+    console.log('='.repeat(72));
+    console.log(`${plan.belowTarget} categories are below depth 2. The budget is ${plan.budget} mappings,`);
+    console.log('ordered by appetite for the subject on YouTube (data/topic-demand.json —');
+    console.log('NOT our traffic; read that file before treating it as such).\n');
+    console.log(`  FUNDED — ${plan.funded.length} categories, ${plan.spent} mappings:`);
+    for (const r of plan.funded) console.log(`    ${pad(r.id, 30)} ${String(fmt(r.views)).padStart(7)}   at ${r.active} (+${r.need})`);
+    console.log(`\n  DEFERRED BY DECISION — ${plan.deferred.length} categories, lower appetite:`);
+    console.log('    ' + plan.deferred.map((r) => `${r.id} (${fmt(r.views)})`).join(', '));
+    if (plan.unranked.length) {
+      console.log(`\n  UNRANKED — ${plan.unranked.length} not measured, so not ordered:`);
+      console.log('    ' + plan.unranked.map((r) => r.id).join(', '));
+      console.log('    Absent from the ranking, NOT scored zero. Measure before deciding.');
+    }
+  }
+}
+
 // DEPTH, COUNTED TWICE. "At target" and "at target with active creators" are
 // different numbers and the second is the honest one — see validate.mjs.
 {

@@ -11,8 +11,16 @@ import { navigate } from '../router.js';
 import { rings } from '../components/ornament.js';
 
 function categoryCard(cat) {
+  // `count` is ACTIVE creators; `listed` is everyone, including channels that
+  // have gone quiet. The card leads with the live number because that is what
+  // a reader is about to act on, and names the difference rather than hiding
+  // it — a card reading "2 creators" over one live channel was the status
+  // defect surfacing in visitor copy.
   const zero = cat.count === 0;
-  const countText = zero ? 'None listed yet' : `${cat.count} creator${cat.count === 1 ? '' : 's'}`;
+  const dormant = (cat.listed ?? cat.count) - cat.count;
+  const countText = zero
+    ? (dormant ? `${dormant} listed, none still posting` : 'None listed yet')
+    : `${cat.count} creator${cat.count === 1 ? '' : 's'}${dormant ? ` · ${dormant} quiet` : ''}`;
   return `<li>
     <a class="cat-card" href="#/category/${esc(cat.id)}">
       <span class="cat-card__name">${esc(cat.name)}</span>

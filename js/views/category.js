@@ -261,8 +261,22 @@ export async function renderCategory(app, { params, query }) {
               'empty',
               'No creators are listed for this skill yet.',
               `The guidance below still applies, but we would rather show you nothing
-               than a list we have not verified. <a href="#/">Browse other skills</a>.`
+               than a list we have not verified. <a href="#/how-this-list-was-built">How
+               we decided which skills got depth</a>, or <a href="#/">browse other skills</a>.`
             )}</div>`
+          : ''}
+
+        ${/* A SINGLE CREATOR IS A DECISION, NOT AN OVERSIGHT — and it should read
+              that way. Depth went to the thin skills with the largest audiences
+              first; a skill left at one is one where the subject is watched far
+              less, or where we looked and found nothing else we would stand
+              behind. Saying nothing here lets a reader assume we simply had not
+              got round to it, which is the less honest of the two readings. */''}
+        ${entries.length === 1
+          ? `<p class="micro" style="margin-bottom: var(--sp-6)">One creator here, on purpose:
+              we list a second only when we find one worth standing behind, and
+              research went to the most-watched thin skills first.
+              <a href="#/how-this-list-was-built">How that was decided</a>.</p>`
           : ''}
 
         ${subjectNoteMarkup(category.id, subjectNotes)}

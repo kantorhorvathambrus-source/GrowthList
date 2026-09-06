@@ -723,25 +723,44 @@ this section first to know exactly where to resume.)*
 - **Current phase**: Phase 2 (creator research). **Batches 01–47 are
   written, gated, validated and committed.**
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
-- **PHASE 2 CLOSING ARITHMETIC (measured at 233 creators, against
-  ACTIVE creators — the paper count is 4 categories more generous).**
-  Measured after batch 47: **97 of 197 at target with active
-  creators**. **117 mappings still needed**, ≈109 creators, leaving ~54
-  of the 400 cap for the depth-3 priority list.
-  **ONE RATE, MEASURED: 2.27 creators/batch** (34 over batches 33–47).
-  117 mappings ≈ 109 creators ≈ **48 batches.**
-  The "5/batch discovery-assisted, 23 batches" figure is **WITHDRAWN**.
-  It was never observed: discovery-sourced batches 44–45 ran at 2.50,
-  the recall-sourced batch 46 at 3.00, the earlier mixed run at 2.27.
-  **Discovery changes which creators are findable, not how many per
-  batch** — that is the part that was measured, and it is real.
-  Third pace projection, third failure, same shape each time: measure
-  the mechanism, then assert the rate the mechanism was meant to
-  produce. Do not offer an optimistic figure alongside the measured one;
-  there has never been evidence for one.
-  The work is not where the depth pass has been: **business 16,
-  career 15, mindset 13, money 13, marketing 13** — 70 of the 121 —
-  while health, philosophy and programming need 7 between them.
+- **PHASE 2 CLOSES ON A TARGETED PLAN, NOT UNIFORM COVERAGE.** The owner's
+  decision at batch 47, after the numbers were laid out both ways.
+  Uniform close was 109 creators and ~48 batches at the measured rate,
+  and the last third of it bought the subjects almost nobody searches
+  for. **The plan instead: ~34 creators over ~12 batches spent on the
+  thin categories with the most appetite, plus 3 batches writing
+  documented gaps for the 14 empty categories that have none.**
+  The order is **computed, not remembered** — `scripts/lib/close-plan.mjs`,
+  printed by the coverage report, shortening on its own as creators land.
+  A plan in prose is a stored fact that stops being queried.
+- **`data/topic-demand.json` IS THE ORDERING INPUT, AND IT IS NOT
+  TRAFFIC.** Median view count of the fifty most relevant YouTube videos
+  for each category's name and aliases. This site has no analytics, the
+  home page lists all 197 categories equally, and nothing here knows
+  which page a visitor arrives at — a "most likely visited" ranking
+  would be judgement wearing a number's clothes. It measures appetite
+  for the SUBJECT among people already watching video about it. **98 of
+  the 100 categories below depth 2 measured**; `teaching-and-explaining`
+  and `first-aid` failed on rate limiting and are **absent from the
+  ranking rather than scored zero.**
+  **Measuring the last 59 changed the plan: 18 of the 34 funded targets
+  came from that batch**, including the top three in the whole
+  taxonomy — `singing` 3.1M, `exam-preparation` 1.5M, `journaling` 1.2M.
+  Eleven categories fell off the budget. Ranking a spend on a
+  41-of-100 sample would have been wrong in both directions.
+- **THIN IS A DECISION AND THE SITE SAYS SO.** A category at one creator
+  renders a line explaining that depth went to the most-watched thin
+  skills first and that a second creator is listed only when one is
+  worth standing behind. The colophon carries section 04, *Why some
+  skills have more creators than others*, with the proxy described as
+  what it is and the gap to real traffic named. **Silence here would let
+  a reader assume we had not got round to it, which is the less honest
+  of the two readings.**
+- **HOME-PAGE COUNTS ARE ACTIVE CREATORS.** The card counted every
+  mapping regardless of status, so four categories advertised "2
+  creators" over one live channel — the `status` defect reaching
+  visitor copy. It now reads `2 creators · 1 quiet`, disclosing the
+  dormant one rather than dropping it from the tally.
 - **Creator count: 237 of 400.** Taxonomy 197 and **uncapped** (rule 19)
   — a new category may be added whenever it arrives with 3 creators.
 - **Fitness is complete at 2+ across all 14 categories** (3 at depth 3).
