@@ -287,6 +287,28 @@ for (const c of creators) {
       warn(where, `tagged "shorts" but only ${c.catalogue.shortPct}% of the scanned uploads are under two minutes`);
     }
   }
+  // PROFILE vs SIGNALS -- the one place a taste judgement meets an observable
+  // fact, and so the only axis where a well-formed-but-wrong profile value can
+  // be caught by machine.
+  //
+  // `sells-course` is a fact about the creator (they sell their own product,
+  // and it was checked). `profile.selfPromotion` is our judgement of how much
+  // the content pushes it. Someone selling their own course while never
+  // mentioning it does not exist, and the data agrees: all 131 records
+  // carrying `sells-course` sit at 2 or above, while 48 records sit at 0-1
+  // WITHOUT it. The low end is well populated -- this is a real regularity,
+  // not an artefact of nobody ever writing a low number.
+  //
+  // `sponsor-heavy` is deliberately NOT in this test, and the exclusion is the
+  // load-bearing part. It means a THIRD PARTY pays for advertising, which says
+  // nothing about the creator promoting themselves. A first draft of this
+  // check included it and flagged Computerphile and This Old House -- both
+  // correct records, both `sponsor-heavy` with selfPromotion 1. A check that
+  // fires on correct records is worse than none, because it reads as coverage.
+  if ((c.signals ?? []).includes('sells-course') && Number.isInteger(c.profile?.selfPromotion)
+      && c.profile.selfPromotion < 2) {
+    fail(where, `carries "sells-course" but profile.selfPromotion is ${c.profile.selfPromotion} — a creator selling their own product while never mentioning it is a contradiction; one of the two is wrong`);
+  }
   if (c.role && !ROLES.includes(c.role)) fail(where, `invalid role "${c.role}"`);
   if (c.entity && !ENTITIES.includes(c.entity)) fail(where, `invalid entity "${c.entity}"`);
   if (typeof c.longDescription === 'string' && c.longDescription.length < 200) {

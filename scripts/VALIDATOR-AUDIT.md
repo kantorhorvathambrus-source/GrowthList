@@ -189,3 +189,58 @@ unrelated: 22 is the count of real defects the new checks find in old data, 23
 is an artifact of `tail -25`. Two numbers one apart, from entirely different
 causes — which is precisely the kind of coincidence that invites a wrong story
 if the decomposition is not run.
+
+---
+
+# Appendix B — the unfalsifiable three
+
+The table above closes with `level`, `profile` and `role` being unfalsifiable
+by construction. That was a hole, not a finding. Each was probed for a real
+check; three of four candidates died on measurement, which is recorded here so
+nobody rebuilds them.
+
+| Field | Candidate check | Outcome |
+|---|---|---|
+| `role` | `generalist` mapped to only one category | **rejected** — describes 8 of our 11 generalists, so it is the norm |
+| `role` | `specialist` spanning >2 domains | **rejected** — one record, `wirelessphilosophy`, which already carries the required `scopeNote` |
+| `level` | `advanced`-only with `profile.depth <= 1` | **rejected as coverage** — fires on 0 records, and can only catch a writer contradicting themselves; `level` and `depth` are written together, so their errors correlate |
+| `profile` | `evidenceBased: 4` without `cites-research` | **rejected** — 8 records, all legitimate; a gardener can be evidence-based through trials without citing papers |
+| `profile` | commercial signal with `selfPromotion <= 1` | **rejected as drafted** — flagged Computerphile and This Old House, both correct: `sponsor-heavy` means a third party pays, which is orthogonal to self-promotion |
+| `profile` | **`sells-course` with `selfPromotion < 2`** | **adopted** — see below |
+
+## The one check that survived (47, line 290)
+
+| # | Check | Failure it catches | Seen fail? |
+|---|---|---|---|
+| 47 | `sells-course` vs `selfPromotion` (290) | a creator recorded as selling their own product while rated as never mentioning it — one of the two fields is wrong | **yes** — fires at 0 and at 1; quiet at 2; quiet on the `sponsor-heavy` shape that broke the first draft |
+
+```
+signals=["sells-course","practitioner"] selfPromotion=0
+  x creator askvinh: carries "sells-course" but profile.selfPromotion is 0 —
+    a creator selling their own product while never mentioning it is a
+    contradiction; one of the two is wrong
+signals=["sells-course"]                selfPromotion=1  -> 1 failure
+signals=["sells-course"]                selfPromotion=2  -> 0 failures
+signals=["sponsor-heavy","credentialed"] selfPromotion=1 -> 0 failures
+```
+
+**Why this one is real and the others were not.** `signals` is a closed
+vocabulary tied to an observable fact that was checked at research time;
+`profile` is a taste judgement. This is the only place in the schema where the
+two meet, so it is the only place a wrong profile value can contradict
+something recorded independently of it. The constraint is not vacuous: 131
+records carry `sells-course` and all sit at 2 or above, while 48 records sit at
+0–1 without it — the low end is populated, just never by someone selling.
+
+## What remains human-only
+
+`level`, `role`, and four of the five `profile` axes. The review step is
+written into **CLAUDE.md**, under *The three fields nothing can check*, rather
+than into a comment here — a procedure in a script's comment is not in force.
+
+One consequence belongs with the Step C work specifically: the coverage check
+prints `no creator flagged "beginner"` 151 times, and the cheapest way to clear
+a line is to add the flag. **A coverage failure is not evidence about a
+creator.** Clearing it by relabelling turns a visible gap into an invisible
+falsehood. The instruction in CLAUDE.md is to leave the field unset and let the
+line stand.

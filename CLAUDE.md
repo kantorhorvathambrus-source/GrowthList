@@ -722,6 +722,68 @@ role, categories, shortDescription), `data/search-index.json`
 (searchable fields for categories + creators). Also stamps each category
 in `categories.json`-derived output with a computed creator `count`.
 
+## The three fields nothing can check — `level`, `profile`, `role`
+
+Every other field on a record is defended by something: the API confirms the
+channel, `gate-check` re-fetches the video, the validator holds the closed
+vocabularies, `audit-status` re-queries what drifts. **These three are
+defended by nothing, and a wrong value in them is well-formed.** The validator
+checks their SHAPE — an integer in 0–4, a value in the vocabulary — and cannot
+check their JUDGEMENT. Do not let the rigour of the checked fields be read as
+covering these.
+
+**What a wrong value looks like, and whether anything would notice:**
+
+- **`level`** — a channel of graduate lectures flagged `["beginner"]`. Nothing
+  notices. Every field that might contradict it — `profile.depth`, `notFor`,
+  both descriptions — is written by the same person in the same sitting, so the
+  errors are *correlated*: whoever misjudged the level misjudges the depth the
+  same way. A `level`-versus-`depth` check therefore catches only a writer
+  contradicting themselves within one record, which is the rarer error, and it
+  currently fires on zero records. **No machine check. Human reading only.**
+
+- **`profile`** — `energy: 1` on a high-energy presenter, `depth: 4` on a
+  surface-level channel. Four of the five axes are pure taste and nothing can
+  see them. **One axis is an exception and is now checked**: `selfPromotion`
+  against the `sells-course` signal, because that signal is a fact about the
+  creator rather than a judgement about them. All 131 records carrying it sit
+  at 2 or above while 48 records sit at 0–1 without it, so the constraint is
+  real rather than vacuous. `sponsor-heavy` is deliberately excluded — it means
+  a third party pays, which says nothing about self-promotion, and including it
+  flagged two correct records. **The other four axes: human reading only.**
+
+- **`role`** — a `specialist` who is really a generalist; worse, a `critic` who
+  teaches rather than dissents, which inflates the dissent count the colophon
+  publishes. Three structural checks were tried and all three failed on
+  measurement: `generalist` mapped to one category describes **8 of our 11
+  generalists**, so it is the norm and not a contradiction; `specialist`
+  spanning three domains matches one record, which already carries the required
+  `scopeNote`; and a critic's stance appears nowhere except in prose we wrote.
+  **No machine check. Human reading only.**
+
+### The review step, since no check will do it
+
+Before a batch is committed, read each record's own words back and ask:
+
+1. **`level`** — does the entry video, at the duration recorded, actually land
+   for someone flagged at this level? Name the level from the CATALOGUE, never
+   from the category's need. **This is the one to watch**, because the coverage
+   check reports `no creator flagged "beginner"` and the cheapest way to clear
+   that line is to add the flag. **A coverage failure is not evidence about a
+   creator.** Clearing it by relabelling converts a visible gap into an
+   invisible falsehood, which is the worse of the two. Leave it unset and let
+   the line stand.
+2. **`profile`** — read the five integers without the prose, then the prose
+   without the integers, and check they describe the same channel. Numbers
+   written straight after admiring prose drift upward together.
+3. **`role`** — `critic` means their body of work argues AGAINST the field's
+   popular claims from a defensible position. Not a rival seller, not a
+   contrarian, not someone who merely qualifies their advice. If the evidence
+   string would read the same for a good teacher, it is `specialist`.
+
+Any of the three that cannot be settled from the evidence in hand is **left
+unset**. An unset field the owner can see beats a guessed one nobody can.
+
 ## Working style reminders
 
 - Batches of 25 creators at a time in Phase 2. After each: write file →
