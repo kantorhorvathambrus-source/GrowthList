@@ -5,188 +5,110 @@
     "saturated": 0.7,
     "minCreators": 4
   },
-  "dataAsOf": "2026-09",
-  "measuredAtCreators": 222,
   "entries": [
     {
       "domain": "fitness",
       "signal": "sells-course",
-      "basis": "measured",
-      "measured": {
-        "n": 21,
-        "of": 26
-      }
+      "basis": "measured"
     },
     {
       "domain": "programming",
       "signal": "sells-course",
       "basis": "measured",
-      "measured": {
-        "n": 15,
-        "of": 25
-      },
       "watch": "Drifted from 83% to 71% between batches 16 and 22 as the domain filled out. One more creator without the badge drops it below the 70% threshold and this note should come down. Recorded because a note that survives only by a rounding margin is worth watching, not defending."
     },
     {
       "domain": "productivity",
       "signal": "sells-course",
-      "basis": "measured",
-      "measured": {
-        "n": 6,
-        "of": 8
-      }
+      "basis": "measured"
     },
     {
       "domain": "relationships",
       "signal": "sells-course",
-      "basis": "measured",
-      "measured": {
-        "n": 7,
-        "of": 10
-      }
+      "basis": "measured"
     },
     {
       "domain": "fitness",
       "signal": "practitioner",
-      "basis": "measured",
-      "measured": {
-        "n": 26,
-        "of": 26
-      }
+      "basis": "measured"
     },
     {
       "domain": "programming",
       "signal": "practitioner",
-      "basis": "measured",
-      "measured": {
-        "n": 25,
-        "of": 25
-      }
+      "basis": "measured"
     },
     {
       "domain": "productivity",
       "signal": "practitioner",
-      "basis": "measured",
-      "measured": {
-        "n": 8,
-        "of": 8
-      }
+      "basis": "measured"
     },
     {
       "domain": "creativity",
       "signal": "practitioner",
-      "basis": "measured",
-      "measured": {
-        "n": 25,
-        "of": 27
-      }
+      "basis": "measured"
     },
     {
       "domain": "tech",
       "signal": "practitioner",
-      "basis": "measured",
-      "measured": {
-        "n": 10,
-        "of": 12
-      }
+      "basis": "measured"
     },
     {
       "domain": "career",
       "signal": "practitioner",
-      "basis": "measured",
-      "measured": {
-        "n": 6,
-        "of": 7
-      }
+      "basis": "measured"
     },
     {
       "domain": "money",
       "signal": "practitioner",
-      "basis": "measured",
-      "measured": {
-        "n": 6,
-        "of": 7
-      }
+      "basis": "measured"
     },
     {
       "domain": "mindset",
       "signal": "practitioner",
-      "basis": "measured",
-      "measured": {
-        "n": 12,
-        "of": 14
-      }
+      "basis": "measured"
     },
     {
       "domain": "relationships",
       "signal": "practitioner",
-      "basis": "measured",
-      "measured": {
-        "n": 9,
-        "of": 10
-      }
+      "basis": "measured"
     },
     {
       "domain": "relationships",
       "signal": "credentialed",
-      "basis": "measured",
-      "measured": {
-        "n": 7,
-        "of": 10
-      }
+      "basis": "measured"
     },
     {
       "domain": "practical",
       "signal": "practitioner",
-      "basis": "measured",
-      "measured": {
-        "n": 18,
-        "of": 19
-      }
+      "basis": "measured"
     },
     {
       "domain": "philosophy",
       "signal": "cites-research",
-      "basis": "measured",
-      "measured": {
-        "n": 5,
-        "of": 7
-      }
+      "basis": "measured"
     },
     {
       "domain": "business",
       "signal": "practitioner",
-      "basis": "measured",
-      "measured": {
-        "n": 7,
-        "of": 7
-      }
+      "basis": "measured"
     },
     {
       "domain": "marketing",
       "signal": "practitioner",
-      "basis": "measured",
-      "measured": {
-        "n": 10,
-        "of": 10
-      }
+      "basis": "measured"
     },
     {
       "domain": "marketing",
       "signal": "sells-course",
-      "basis": "measured",
-      "measured": {
-        "n": 7,
-        "of": 10
-      }
+      "basis": "measured"
     }
   ],
   "buildPage": {
     "whatTheBadgesTrack": {
       "title": "What the badges actually track",
       "paras": [
-        "Some badges are on almost every card in a subject and almost none in another. The “practitioner” badge — meaning the person does this work outside of teaching it — is on every creator we list in marketing, business, fitness, programming and productivity, and on one in seven in philosophy.",
-        "That spread is the interesting part. It is not a rule we apply: 29 of the creators here carry no practitioner badge at all, and several of the best of them never practise what they explain. What it reflects is that skills you perform are usually taught by people who perform them, while subjects you reason about are more often taught by explainers, essayists and academics. Neither is better. They fail differently, which is worth knowing before you pick who to learn from.",
+        "Some badges are on almost every card in a subject and almost none in another. The “practitioner” badge — meaning the person does this work outside of teaching it — is on every creator we list in {{practitionerEverywhere}}, and on {{practitionerRarestShare}} in {{practitionerRarest}}.",
+        "That spread is the interesting part. It is not a rule we apply: {{noPractitionerWords}} of the creators here carry no practitioner badge at all, and several of the best of them never practise what they explain. What it reflects is that skills you perform are usually taught by people who perform them, while subjects you reason about are more often taught by explainers, essayists and academics. Neither is better. They fail differently, which is worth knowing before you pick who to learn from.",
         "The other two behave the same way. A professional qualification is common in relationships and health, where the subject sits near clinical practice, and absent in marketing and business, where no licence exists to hold. Citing sources is the norm in philosophy and rare in programming — not because programmers are careless, but because the claims are checked by running the code instead.",
         "We got this wrong at first and said so on these pages for several weeks: we described these badges as our own inclusion rules showing up in the data. They are not. The correction, and the measurement that forced it, is on the record in the project's own files.",
         "One limitation worth stating outright, because the shape of the badges hides it. A badge that is absent means we did not find that thing — not that we looked and found nothing. {{noCommercialWords|cap}} of the creators here carry no commercial badge at all, and the list gives you no way to tell which of those were checked and came back clean. Read an absent badge as silence, not as a clean bill of health."

@@ -23,6 +23,9 @@ import { readFileSync, readdirSync, writeFileSync, existsSync, statSync } from '
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { fillCatalogue, PROSE_FIELDS } from './lib/catalogue-prose.mjs';
+import { measureSaturation, saturatedRows, SATURATED, MIN_N } from './lib/saturation.mjs';
+import { numberToWords, joinWords } from '../js/number-words.js';
+import { domainLabel } from '../js/utils.js';
 
 const ROOT = process.argv[2] || join(dirname(fileURLToPath(import.meta.url)), '..');
 const DATA = join(ROOT, 'data');
@@ -267,6 +270,106 @@ if (existsSync(unreadPath)) {
   };
 }
 
+// THE BADGE SECTION'S NUMBERS, DERIVED -- NEVER STORED.
+//
+// domain-notes.json used to carry a `measured: {n, of}` on every entry, and
+// the colophon rendered those stored values straight into a table. They
+// decayed, as stored derived numbers do: 10 of 19 rows disagreed with the
+// data, three rows had dropped below the saturation threshold and were still
+// on the page (one of them carrying a `watch` note that predicted exactly
+// that), and two genuinely saturated pairs were missing because nobody had
+// added them by hand.
+//
+// So the row LIST and the row NUMBERS are both computed here, from
+// saturation.mjs -- the same library validate.mjs measures with. What stays in
+// domain-notes.json is the part that is genuinely editorial and cannot be
+// derived: `basis` (was this note written from a measurement or ahead of one)
+// and `watch` (what would make it come down). Those are matched on by
+// domain+signal, so an entry for a pair that is no longer saturated simply
+// stops being rendered instead of lingering.
+const badgeRows = saturatedRows(measureSaturation(categories, creatorsOut).rows);
+const editorial = new Map(
+  (existsSync(join(DATA, 'domain-notes.json'))
+    ? readJson(join(DATA, 'domain-notes.json')).entries ?? []
+    : []).map((e) => [`${e.domain}/${e.signal}`, e])
+);
+
+// A stored count surviving anywhere in domain-notes.json means the old
+// duplicate is back. Fail the build rather than let two copies of one number
+// drift apart again.
+for (const [key, e] of editorial) {
+  if (e.measured !== undefined) {
+    console.error(`FATAL: domain-notes.json ${key} still stores a measured count. These are derived now — delete the "measured" block.`);
+    process.exit(1);
+  }
+}
+
+const badgeFactsOut = {
+  generatedBy: 'scripts/build-data.mjs via scripts/lib/saturation.mjs',
+  // The table's "as of" was a stored string in domain-notes.json, describing
+  // numbers that are now recomputed on every build — so it could go stale
+  // against its own table. Taken from the records the table is measured from.
+  dataAsOf: [...new Set(creatorsOut.map((c) => c.dataAsOf).filter(Boolean))].sort().pop() ?? null,
+  thresholds: { saturatedAt: SATURATED, minCreators: MIN_N },
+  rows: badgeRows.map((r) => {
+    const e = editorial.get(`${r.domain}/${r.signal}`);
+    return {
+      domain: r.domain, signal: r.signal, n: r.n, of: r.of,
+      ...(e?.basis ? { basis: e.basis } : {}),
+      ...(e?.watch ? { watch: e.watch } : {}),
+    };
+  }),
+  facts: {},
+};
+
+{
+  // Every number the badge prose needs, as a string and as words. A sentence
+  // that wants a count takes the `...Words` form; nothing in that copy is
+  // allowed to be a literal.
+  const f = badgeFactsOut.facts;
+  const put = (key, n) => { f[key] = String(n); f[`${key}Words`] = numberToWords(n); };
+
+  const COMMERCIAL = ['sells-course', 'sponsor-heavy', 'commercial-conflict'];
+  put('noCommercial', creatorsOut.filter((c) => !(c.signals ?? []).some((s) => COMMERCIAL.includes(s))).length);
+  put('noPractitioner', creatorsOut.filter((c) => !(c.signals ?? []).includes('practitioner')).length);
+
+  // The two ends of the practitioner spread, both derived. The copy used to
+  // name the domains itself -- "every creator we list in marketing, business,
+  // fitness, programming and productivity, and one in seven in philosophy" --
+  // and both halves went false: business fell to 9 of 10, and philosophy is
+  // 2 of 9, which is nearer one in four than one in seven. Neither the list
+  // nor the ratio is written down any more.
+  const { perDomain } = measureSaturation(categories, creatorsOut);
+  const spread = [...perDomain.entries()]
+    .filter(([, rec]) => rec.n >= MIN_N)
+    .map(([domain, rec]) => ({ domain, n: rec.signals.get('practitioner') ?? 0, of: rec.n }))
+    .sort((a, b) => b.n / b.of - a.n / a.of || b.of - a.of);
+
+  const everywhere = spread.filter((r) => r.n === r.of).map((r) => domainLabel(r.domain));
+  f.practitionerEverywhere = joinWords(everywhere);
+
+  // The rarest end, as a raw "N of M" in words. Deliberately NOT rounded to
+  // "one in seven": a rounded phrasing decays differently from a count, and
+  // the project's own instruction is to drop a claim rather than invent a
+  // rounding filter.
+  const rarest = spread[spread.length - 1];
+  if (rarest) {
+    f.practitionerRarest = domainLabel(rarest.domain);
+    f.practitionerRarestShare = `${numberToWords(rarest.n)} of ${numberToWords(rarest.of)}`;
+  }
+}
+
+// A placeholder that resolves to an empty string would leave a sentence like
+// "on every creator we list in ." on the page. fillFacts leaves an UNKNOWN
+// placeholder visibly intact, so that case is self-announcing; an empty one
+// is not, so it is caught here instead.
+for (const [key, value] of Object.entries(badgeFactsOut.facts)) {
+  if (value === '') {
+    console.error(`FATAL: badge fact "${key}" resolved to an empty string — a sentence using it would render broken.`);
+    process.exit(1);
+  }
+}
+
 // ---------------------------------------------------------------- write
 
 console.log('Writing:');
@@ -277,6 +380,7 @@ const kbSearch = writeJson('search-index.json', searchOut);
 writeJson('subject-notes.json', { ...subjectNotesOut, searchedNotFound: searchedOut });
 if (ledgerOut) writeJson('ledger-summary.json', ledgerOut);
 if (methodOut) writeJson('method-facts.json', methodOut);
+writeJson('badge-facts.json', badgeFactsOut);
 
 // ---------------------------------------------------------------- report
 

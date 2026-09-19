@@ -36,9 +36,22 @@ export const getCreators = () => load('creators.json');
  * Standing notes for signals that are near-universal within a domain.
  * Optional file — an empty object is the correct answer before any signal
  * has saturated, so a missing file is not an error.
+ *
+ * This carries the colophon PROSE and the editorial metadata only. The badge
+ * numbers and the list of rows that saturate are NOT here: they are derived
+ * by build-data.mjs into badge-facts.json. They used to be stored alongside
+ * the prose and they decayed — see getBadgeFacts below.
  */
 export const getDomainNotes = () =>
   load('domain-notes.json').catch(() => ({ notes: {} }));
+
+/**
+ * The badge section's numbers, computed at build time from saturation.mjs.
+ * Absent rather than empty when missing, so the colophon omits the table and
+ * the sentences that need it instead of rendering a zero or a broken clause.
+ */
+export const getBadgeFacts = () =>
+  load('badge-facts.json').catch(() => null);
 
 /**
  * Rule 12 subject notes: categories where we held a higher bar, and the short

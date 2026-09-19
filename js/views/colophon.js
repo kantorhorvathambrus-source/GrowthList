@@ -7,8 +7,9 @@
 // never written into the copy, so the page cannot claim a coverage figure the
 // dataset has moved past.
 
-import { getDomainNotes, getCategoryIndex, getCreators, getLedgerSummary, getMethodFacts } from '../data.js';
+import { getDomainNotes, getCategoryIndex, getCreators, getLedgerSummary, getMethodFacts, getBadgeFacts } from '../data.js';
 import { esc, setTitle, statePage, domainLabel, SIGNAL_LABELS } from '../utils.js';
+import { numberToWords } from '../number-words.js';
 
 // Every number that appears in visitor-facing prose carries its provenance
 // here, because the project has now shipped two false claims of exactly this
@@ -78,15 +79,16 @@ function rulesMarkup(facts) {
 
 // The measured evidence for the section above it. Rendered as a table because
 // the claim is a set of counts, and prose would only obscure them.
-function floorTable(entries, dataAsOf) {
-  // The spread is the point, so show every measured entry rather than only
-  // the ones that happen to sit on this page. An earlier version filtered to
-  // build-page rows; after the badges were reclassified there were none, and
-  // the table silently emptied — which is exactly how a page starts lying.
-  const rows = entries
-    .filter((e) => e.measured)
-    .sort((a, b) => b.measured.n / b.measured.of - a.measured.n / a.measured.of);
-  if (!rows.length) return '';
+//
+// `rows` arrives already derived, from badge-facts.json. It used to be read
+// from domain-notes.json, where each row carried a hand-written
+// `measured: {n, of}`: 10 of 19 had drifted from the data, three rows had
+// fallen below the saturation threshold and were still being rendered, and
+// two saturated pairs were missing because nobody added them. Both the row
+// LIST and its numbers are now computed at build time, so the table cannot
+// disagree with the dataset and cannot go stale between batches.
+function floorTable(rows, dataAsOf) {
+  if (!rows?.length) return '';
   const names = [...new Set(rows.map((e) => e.signal))].map((s) => SIGNAL_LABELS[s] ?? s);
   // Reads as a sentence whether one badge saturates or five do.
   const signals = names.length > 1
@@ -100,7 +102,7 @@ function floorTable(entries, dataAsOf) {
         ${rows.map((e) => `<tr>
           <th scope="row">${esc(domainLabel(e.domain))}</th>
           <td>${esc(SIGNAL_LABELS[e.signal] ?? e.signal)}</td>
-          <td>${e.measured.n} of ${e.measured.of} <span class="colophon-pct">(${Math.round(100 * e.measured.n / e.measured.of)}%)</span></td>
+          <td>${e.n} of ${e.of} <span class="colophon-pct">(${Math.round(100 * e.n / e.of)}%)</span></td>
         </tr>`).join('')}
       </tbody>
     </table>
@@ -110,18 +112,6 @@ function floorTable(entries, dataAsOf) {
 // Counts inside this section's copy are filled at render, never typed. The
 // sentence about absent badges names a number about our own data, which is the
 // category of claim that has gone wrong most often here.
-const COMMERCIAL = ['sells-course', 'sponsor-heavy', 'commercial-conflict'];
-const NW = ['zero','one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve','thirteen','fourteen','fifteen','sixteen','seventeen','eighteen','nineteen'];
-const NT = ['', '', 'twenty','thirty','forty','fifty','sixty','seventy','eighty','ninety'];
-function numberToWords(n) {
-  if (n < 20) return NW[n];
-  if (n < 100) { const u = n % 10; return u ? `${NT[Math.floor(n / 10)]}-${NW[u]}` : NT[Math.floor(n / 10)]; }
-  return String(n);
-}
-function floorFacts(creators) {
-  const n = creators.filter((c) => !(c.signals ?? []).some((s) => COMMERCIAL.includes(s))).length;
-  return { noCommercial: String(n), noCommercialWords: numberToWords(n) };
-}
 
 // Critic scarcity, computed. Rule 11 settled that this must never be a
 // per-page warning — it would appear on four pages in five and train a reader
@@ -184,13 +174,15 @@ function depthMarkup(notes) {
     ${(sec.paras ?? []).map((p) => `<p>${esc(p)}</p>`).join('')}`;
 }
 
-function floorMarkup(notes, creators) {
+// Every number in this section comes from badge-facts.json, which build-data
+// computes from saturation.mjs. Nothing here is typed, and with the facts
+// missing the section is omitted rather than rendered with holes in it.
+function floorMarkup(notes, badge) {
   const sec = notes?.buildPage?.whatTheBadgesTrack;
-  if (!sec) return '';
-  const facts = floorFacts(creators);
+  if (!sec || !badge) return '';
   return `<div class="sec-head"><span class="num">03</span><h2 id="floor-heading">${esc(sec.title)}</h2></div>
-    ${(sec.paras ?? []).map((p) => `<p>${esc(fillFacts(p, facts))}</p>`).join('')}
-    ${floorTable(notes.entries ?? [], notes.dataAsOf)}`;
+    ${(sec.paras ?? []).map((p) => `<p>${esc(fillFacts(p, badge.facts ?? {}))}</p>`).join('')}
+    ${floorTable(badge.rows ?? [], badge.dataAsOf)}`;
 }
 
 // The numbers the copy above needs, derived rather than written down.
@@ -241,9 +233,11 @@ export async function renderColophon(app) {
   let creators;
   let ledger;
   let method;
+  let badge;
   try {
-    [notes, categories, creators, ledger, method] = await Promise.all([
+    [notes, categories, creators, ledger, method, badge] = await Promise.all([
       getDomainNotes(), getCategoryIndex(), getCreators(), getLedgerSummary(), getMethodFacts(),
+      getBadgeFacts(),
     ]);
   } catch (err) {
     app.setAttribute('aria-busy', 'false');
@@ -284,7 +278,7 @@ export async function renderColophon(app) {
     <section class="band band--paper" aria-labelledby="floor-heading">
       <div class="rail"><span>Badges</span></div>
       <div class="band-body">
-        ${floorMarkup(notes, creators)}
+        ${floorMarkup(notes, badge)}
       </div>
     </section>
 
