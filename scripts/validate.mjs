@@ -2,9 +2,10 @@
 /**
  * GrowthList data validator. Zero dependencies, plain node.
  *
- *   node scripts/validate.mjs [rootDir]
+ *   node scripts/validate.mjs [rootDir] [--final]
  *
- * Exits 0 if the dataset is valid, 1 if any FAIL-level rule is broken.
+ * Exits 0 if the dataset is valid, 1 if any FAIL-level rule is broken,
+ * 2 if the invocation itself is wrong (unknown flag).
  * Warnings never change the exit code; they are for human review.
  *
  * Reads:  <root>/data/categories.json
@@ -15,7 +16,29 @@ import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const ROOT = process.argv[2] || join(dirname(fileURLToPath(import.meta.url)), '..');
+// Arguments are parsed ONCE, here, and flags are told apart from the root by
+// their leading dash. Reading the root as a bare `process.argv[2]` meant that
+// `validate.mjs --final` -- the invocation CLAUDE.md documents as the
+// definition-of-done check -- set ROOT to the string "--final" and died with
+// "data/categories.json not found", which reads as a broken environment rather
+// than a bad flag. It had never once run in its documented form.
+//
+// An UNKNOWN flag exits non-zero instead of being ignored. A silently skipped
+// `--fnal` would run the non-final validation and exit 0, which is the same
+// defect wearing a typo: a check that looks like it ran and did not.
+const KNOWN_FLAGS = new Set(['--final']);
+const ARGS = process.argv.slice(2);
+const FLAGS = new Set(ARGS.filter((a) => a.startsWith('-')));
+
+for (const flag of FLAGS) {
+  if (!KNOWN_FLAGS.has(flag)) {
+    console.error(`FATAL: unknown flag ${flag}`);
+    console.error(`usage: node scripts/validate.mjs [rootDir] [${[...KNOWN_FLAGS].join('] [')}]`);
+    process.exit(2);
+  }
+}
+
+const ROOT = ARGS.find((a) => !a.startsWith('-')) || join(dirname(fileURLToPath(import.meta.url)), '..');
 const DATA = join(ROOT, 'data');
 
 // ---------------------------------------------------------------- vocabularies
@@ -403,7 +426,7 @@ for (const c of creators) {
 // While batches are landing, a category with three creators is a category
 // still being filled, so these report as warnings. Run with --final (the
 // definition-of-done check) to make them failures again.
-const FINAL = process.argv.includes('--final');
+const FINAL = FLAGS.has('--final');
 const cover = FINAL ? fail : warn;
 
 // Categories that will ship without a critic, on purpose. Project rule 11:
