@@ -102,3 +102,90 @@ Rule 20: *for every check, what would it look like if it were broken?* If the
 answer is "the same", it is not a check. The two defects that prompted this
 file both answered "the same". Every row above now has a constructed input
 that makes it answer differently.
+
+---
+
+# Appendix A — the 23 → 231 discrepancy
+
+An earlier report put `--final` at **23** coverage failures; it now reports
+**231**. Three explanations were possible: 23 was never real, 231 is inflated by
+the new checks, or both are right and the delta is legitimately new. This
+settles it by measurement rather than argument.
+
+**Method.** `ee9fe94` (the commit immediately before the positional-arg fix) was
+extracted with `git archive` and run four ways, crossing validator against data.
+`. --final` is used on the old tree because the documented form dies there —
+that is the bug being controlled for.
+
+| | validator | data | coverage failures |
+|---|---|---|---|
+| **A** | pre-fix (`ee9fe94`) | pre-fix | **231** |
+| **B** | today | today | **231** |
+| **C** | pre-fix | today | **231** |
+| **D** | today | pre-fix | **253** |
+
+**A and B are byte-for-byte identical** across all 231 lines. Not merely equal
+in count — the same failures, in the same categories.
+
+## Verdict: (a). 23 was never a real number.
+
+The coverage failure set has not moved. C = B shows the data did not change it;
+A = B shows the validator did not either.
+
+**Where 23 came from, reproduced exactly.** The original audit ran:
+
+```
+node scripts/validate.mjs . --final 2>&1 | tail -25
+```
+
+`tail -25` returns 25 lines: 23 failure lines, a blank, and `FAILED`. The 23
+visible lines were read as the total. Running that same pipe today still prints
+23 — against a true total of 231.
+
+This is the project's own recurring failure in miniature, and it belongs in the
+record for that reason: **a number was taken from a truncated view of the
+output and then used as a measurement.** It is the same shape as the badge
+claim and the mapping-range claim — cheap to check, and nobody checked it. The
+defence is the one already written down: a number about our own data names the
+artifact that produced it. `tail -25` is not an artifact, it is a window.
+
+## Classification of all 231
+
+| Bucket | Count | |
+|---|---|---|
+| New check firing correctly | **0** | on current data |
+| **New check firing on a fine record** | **0** | the bucket that would have mattered — it is empty |
+| Pre-existing failure, previously unseen | **231** | every one |
+
+All 231 are coverage, and 0 are non-coverage. The step-3 validator changes add
+nothing to this count: on today's data they are silent.
+
+Today's 231:
+
+| Failure | Count |
+|---|---|
+| `no creator flagged "<level>"` | 151 |
+| `only N creators, target 2` | 76 |
+| `N creators but only M active` | 4 |
+
+Across 134 distinct categories: 76 need new creators, 58 fail only on a missing
+level flag.
+
+## What D proves
+
+D (today's validator, pre-fix data) = 253, which is A + 22. Those 22 are exactly
+the defects this work was commissioned to fix:
+
+- **19** stored `measured` counts in `domain-notes.json`
+- **3** typed literals in visitor copy — `"29"`, `"one in seven"`, and
+  `"four pages in five"`
+
+Every one is a true positive against the pre-fix data, and every one is now
+resolved, which is why B shows none of them. The new checks were run against
+the data they were written for and caught exactly it, no more.
+
+**Note the near-collision.** D − A = 22 and the reported figure was 23. They are
+unrelated: 22 is the count of real defects the new checks find in old data, 23
+is an artifact of `tail -25`. Two numbers one apart, from entirely different
+causes — which is precisely the kind of coincidence that invites a wrong story
+if the decomposition is not run.
