@@ -544,11 +544,28 @@ if (creators.length > 0) {
   const colophonPath = join(ROOT, 'js/views/colophon.js');
   if (existsSync(colophonPath)) {
     const src = readFileSync(colophonPath, 'utf8');
-    // rule 4's hard cap is the one spec number in the rules prose.
-    const capSentence = /never under more than six/.test(src);
-    const hedged = /never under more than six/.test(src);
-    if (capSentence && !hedged) {
-      fail('copy-provenance', 'the mapping cap appears in visitor copy without a hedge — a spec number stated flat reads as a measurement');
+    // Rule 4's hard cap is the one spec number in the rules prose: a creator
+    // may appear under at most six categories. Stated flat it reads as a
+    // measurement, which is how "typically two to four skills" survived for
+    // months at a real median of one. So the copy must hedge it.
+    //
+    // The two halves MUST come from different expressions. This guard was
+    //     const capSentence = /never under more than six/.test(src);
+    //     const hedged      = /never under more than six/.test(src);
+    //     if (capSentence && !hedged)
+    // -- one regex assigned to both names, so the condition was `X && !X` and
+    // had no reachable failure path for 33 batches. Rule 20: construct the
+    // failure the check exists to catch and ask what it would print.
+    //
+    //   claim = the cap number, inside the sentence about how many skills a
+    //           creator appears under (scoped, so the number-word arrays
+    //           further down this file cannot trip it)
+    //   hedge = the phrase marking that number as a bound, not a count
+    const CAP_CLAIM = /appears? under[^.]*?\bsix\b/i;
+    const CAP_HEDGE = /\bnever (?:under )?more than\b|\bno more than\b|\bat most\b|\bwe aim for\b/i;
+    const capSentence = src.match(CAP_CLAIM);
+    if (capSentence && !CAP_HEDGE.test(capSentence[0])) {
+      fail('copy-provenance', `the mapping cap appears in visitor copy without a hedge — a spec number stated flat reads as a measurement: "${capSentence[0].replace(/\s+/g, ' ').trim()}"`);
     }
     // A number written as a literal where a measurement is implied is the
     // exact failure. "most appear under <n>" must be interpolated, not typed.
