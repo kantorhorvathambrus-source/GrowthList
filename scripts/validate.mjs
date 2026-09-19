@@ -644,22 +644,106 @@ if (existsSync(join(DATA, 'high-stakes.json'))) {
 }
 
 // ------------------------------------------------------ domain notes
-// Rule 17's classification machinery was retired at 200 creators. What is
-// left is a measurement, so the only thing worth enforcing is that the stored
-// counts still match the data — a stale number in a report is the same class
-// of error as a stale number in visitor copy, just cheaper.
+// Rule 17's classification machinery was retired at 200 creators, and the
+// measured counts that survived it are now DERIVED, by build-data.mjs into
+// badge-facts.json. Nothing here should store one any more.
+//
+// The comment this replaced said a stale number here was "the same class of
+// error as a stale number in visitor copy, just cheaper". That was wrong on
+// the facts: js/data.js loads this file and colophon.js renders it, so these
+// WERE visitor copy, and they were shipped stale -- 10 of 19 rows disagreeing
+// with the data, 3 rows no longer saturated at all. A warn() let that sit.
+//
+// So a surviving stored count is now a failure, not a warning: with the
+// numbers derived there is no legitimate reason for one to exist, and leaving
+// both a stored and a derived copy of the same number is the defect itself.
 if (existsSync(join(DATA, 'domain-notes.json'))) {
   const dn = JSON.parse(readFileSync(join(DATA, 'domain-notes.json'), 'utf8'));
-  const { measureSaturation } = await import('./lib/saturation.mjs');
-  const { rows: satRows, perDomain } = measureSaturation(categories, creators);
   for (const e of dn.entries ?? []) {
-    const where = `domain-notes.json ${e.domain}/${e.signal}`;
-    if (!e.measured) continue;
-    const live = satRows.find((r) => r.domain === e.domain && r.signal === e.signal);
-    const n = live?.n ?? 0;
-    const of = perDomain.get(e.domain)?.n ?? 0;
-    if (n !== e.measured.n || of !== e.measured.of) {
-      warn(where, `stored ${e.measured.n}/${e.measured.of} but the data now says ${n}/${of} — restate it`);
+    if (e.measured === undefined) continue;
+    fail(`domain-notes.json ${e.domain}/${e.signal}`,
+      'stores a measured count — these are derived into badge-facts.json now, so a stored copy can only drift out of agreement with it');
+  }
+}
+
+// -------------------------------------------- numbers in visitor-facing copy
+// A measurement typed into a sentence decays as the data moves under it. This
+// project shipped "29 of the creators here carry no practitioner badge" while
+// the real figure walked to 35, "every creator we list in ... business" while
+// business fell to 9 of 10, and "one in seven in philosophy" against 2 of 9.
+// None was caught, for two reasons, and both are fixed here:
+//
+//   1. the check only ever read js/views/colophon.js, while roughly half the
+//      colophon's prose lives in data/domain-notes.json and was never opened;
+//   2. it looked for two specific sentences rather than for the SHAPE of a
+//      typed measurement.
+//
+// A count in this copy must come from a {{placeholder}}, resolved at build
+// time from the data. The patterns below are deliberately narrow: a standalone
+// number word in prose is ordinary English ("the other two behave the same
+// way", "one limitation worth stating") and must not fire. What fires is a
+// number in a RATIO or COUNT construction, which is what a measurement looks
+// like. Calibrated against the current copy, which produces zero hits.
+{
+  const UNITS = 'one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen';
+  const TENS = '(?:twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety)(?:-(?:one|two|three|four|five|six|seven|eight|nine))?';
+  const NUM = `(?:${TENS}|${UNITS})`;
+  // "one of the" is idiomatic English, so a count construction excludes it.
+  const COUNTABLE = `(?:${TENS}|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen)`;
+
+  const LITERAL_RULES = [
+    ['a bare integer', /\b\d+\b/],
+    ['an "N of M" ratio', new RegExp(`\\b${NUM}\\s+of\\s+(?:the\\s+)?${NUM}\\b`, 'i')],
+    ['a "one in N" ratio', new RegExp(`\\bone\\s+in\\s+${NUM}\\b`, 'i')],
+    ['an "N <noun> in M" ratio', new RegExp(`\\b${NUM}\\s+\\w+\\s+in\\s+${NUM}\\b`, 'i')],
+    ['a spelled-out count', new RegExp(`\\b${COUNTABLE}\\s+of\\s+(?:the|our|these|those)\\b`, 'i')],
+  ];
+
+  // An interpolation is the correct form, so it is removed before scanning --
+  // {{noPractitionerWords}} and ${facts.modal} are the fix, not the defect.
+  const stripSafe = (t) => String(t)
+    .replace(/\{\{[^}]*\}\}/g, ' ')
+    .replace(/\$\{[^}]*\}/g, ' ');
+
+  const scan = (where, text) => {
+    const clean = stripSafe(text);
+    for (const [label, re] of LITERAL_RULES) {
+      const hit = clean.match(re);
+      if (hit) {
+        fail('copy-provenance', `${where} states ${label} as a literal ("${hit[0].trim()}") — a measurement in visitor copy must be interpolated from the data, or it decays as the data moves`);
+        return;
+      }
+    }
+  };
+
+  // (1) the colophon prose that lives in the data file
+  const dnPath = join(DATA, 'domain-notes.json');
+  if (existsSync(dnPath)) {
+    const bp = JSON.parse(readFileSync(dnPath, 'utf8')).buildPage ?? {};
+    for (const [section, sec] of Object.entries(bp)) {
+      if (sec?.title) scan(`domain-notes.json buildPage.${section}.title`, sec.title);
+      (sec?.paras ?? []).forEach((para, i) => scan(`domain-notes.json buildPage.${section}.paras[${i}]`, para));
+    }
+  }
+
+  // (2) the colophon prose that lives in the view. Template literals only,
+  // with markup stripped, and only those long enough to be a sentence -- the
+  // section eyebrows (<span class="num">03</span>) are ordinals, not
+  // measurements, and must not fire.
+  const cPath = join(ROOT, 'js/views/colophon.js');
+  if (existsSync(cPath)) {
+    const js = readFileSync(cPath, 'utf8');
+    for (const lit of js.match(/`[^`]*`/g) ?? []) {
+      const prose = stripSafe(lit.slice(1, -1))
+        // The design system's ordinal eyebrow (<span class="num">03</span>)
+        // numbers the SECTIONS of the page. It is furniture, not a claim
+        // about the data, so it is removed with its content rather than left
+        // behind as a bare integer once tags are stripped.
+        .replace(/<span class="num">[^<]*<\/span>/g, ' ')
+        .replace(/<[^>]*>/g, ' ');
+      if (prose.split(/\s+/).filter(Boolean).length < 6) continue;
+      if (!/[a-z]{4,}\s+[a-z]{3,}/i.test(prose)) continue;
+      scan('js/views/colophon.js prose', prose);
     }
   }
 }
