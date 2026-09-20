@@ -547,6 +547,28 @@ this file has the rules, schema, and current state.
     The owner's requirement, and it is the difference between a limit
     of the field and a limit of ours.
 
+21. **BEFORE REWRITING HISTORY, CHECK WHAT IS ALREADY PUSHED. The scope of
+    the fix is the scope of the problem, not the scope of the file.**
+    A stop hook reported ONE unsigned commit. The response rewrote all
+    NINE on the branch with `rebase --exec`, which was right in mechanism
+    and wrong in extent: the flagged commit was the only **unpushed** one,
+    which is precisely why it was the only one flagged. One read of
+    `origin/<branch>` would have turned a nine-commit rewrite — needing a
+    force-push and the owner's permission — into a single `--amend` and a
+    fast-forward.
+    **The error underneath it came first and is the more general one.**
+    Every commit that session carried `-c commit.gpgsign=false`, an
+    override of a working repository setting that nobody had asked for and
+    nothing needed. The repo had SSH signing configured and functioning —
+    the pre-existing history is signed. **Do not suppress a configured
+    safety mechanism as a reflex.** A setting already in the config is a
+    fact to read, not a default to switch off on the way past.
+    The test before any rewrite, and it is two questions rather than one:
+    *how many commits does the reported problem actually touch, and how
+    many of those has anyone else already seen?* A rewrite reaching past
+    the second number is a different operation from the one that was
+    asked for, and it needs saying out loud before it runs.
+
 ## Naming conventions
 
 - **Category id**: kebab-case of the English name (`public-speaking`,
