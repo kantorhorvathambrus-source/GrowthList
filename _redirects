@@ -1,0 +1,18 @@
+# Netlify redirects.
+#
+# THIS FILE CANNOT CATCH THE URLS THAT MATTER, AND THAT IS NOT A CONFIGURATION
+# MISTAKE. The site uses hash routes (#/category/:id). A URL fragment is never
+# transmitted to the server, so Netlify cannot see or match it — a rule for
+# /#/category/resilience is unreachable by construction, and writing one would
+# be a check that looks like it works and never fires (rule 20).
+#
+# The retired-slug redirects that actually fire are CLIENT-SIDE, in
+# js/views/category.js, driven by data/retired-categories.json.
+#
+# The rules below cover the PATH form only — what an external tool, a crawler
+# or a hand-typed link may produce. Those are real requests, they do reach the
+# server, and they are cheap to handle.
+
+/category/remote-work   /#/category/deep-work-and-focus    301
+/category/resilience    /#/category/emotional-regulation   301
+/category/delegation    /#/category/people-management      301

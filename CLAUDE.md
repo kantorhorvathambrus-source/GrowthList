@@ -569,6 +569,39 @@ this file has the rules, schema, and current state.
     the second number is a different operation from the one that was
     asked for, and it needs saying out loud before it runs.
 
+22. **A CATEGORY IS A PRACTICE — A THING A VISITOR WATCHES AND THEN DOES.**
+    Not a **setting** (where you work), not an **outcome** (what you hope to
+    become). The test is a sentence: *after watching, the visitor can go and
+    do ____.* If the blank cannot be filled with an action, the entry is not
+    a category however real the subject is.
+    - **A setting** is a context other practices are performed in.
+      `remote-work` named one: everything teachable under it already had a
+      home — protecting attention in `deep-work-and-focus`, running a
+      meeting without a room in `meeting-facilitation`, cutting coordination
+      overhead in `workflow-automation`.
+    - **An outcome** is a state you hope the practices produce.
+      `resilience` named one. Nobody watches a video and then does
+      resilience; they do the practices that tend to produce it, and those
+      are `emotional-regulation`, `anxiety-management` and
+      `self-discipline`.
+
+    **Outcome categories are not merely empty — they actively attract the
+    worst supply**, and this is the part worth remembering because it is not
+    obvious. An outcome has no profession behind it, so nobody teaches it
+    for a living; what fills the search results instead is motivational
+    long-form, which is exactly the material group D of the worklist is
+    already struggling against (`discover.mjs` limit 6 — `career-change`
+    returned TEDx, Forbes, Udacity and a motivational speaker). So an
+    outcome category does not just fail to fill: **it fills badly if
+    anyone tries.** The pull toward staffing it with something is strongest
+    precisely where the something would be worst.
+
+    A category failing this test is resolved under the three-way rule —
+    **documented gap, merged, or retired** — and never swapped for an
+    easier subject. A retirement is a deletion; the slot is not backfilled
+    to keep a count up, and a new category enters only on its own merit,
+    proposed to the owner with the reason.
+
 ## Naming conventions
 
 - **Category id**: kebab-case of the English name (`public-speaking`,

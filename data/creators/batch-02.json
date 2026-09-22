@@ -387,7 +387,7 @@
         "id": "people-management",
         "strength": "primary",
         "why": "Treats the one-to-one as the core mechanism of managing rather than an optional check-in, and is specific about what belongs in one.",
-        "evidence": "A two-thousand-episode management archive with extended treatments of one-to-one meetings, including how to handle personal disclosure in them.",
+        "evidence": "A two-thousand-episode management archive with extended treatments of one-to-one meetings, including how to handle personal disclosure in them, and a two-part episode on delegating tasks as a named, repeatable sequence rather than a one-off favour.",
         "entryVideo": {
           "title": "How to Handle Personal Topics in One-on-One Meetings",
           "videoId": "rBrzjxpVmPg",
@@ -398,23 +398,6 @@
           "batch": 13,
           "trigger": "people-management was empty, and Manager Tools was the obvious place to look — a two-thousand-episode management archive already on file.",
           "whyNotAtFirstPass": "Its batch-02 record was written during a COMMUNICATION pass, so the mapping stopped at giving-feedback and difficult-conversations. The management material was always the bulk of that archive; it was outside the domain being researched, not newly discovered."
-        }
-      },
-      {
-        "id": "delegation",
-        "strength": "primary",
-        "why": "Handles handing work over as a repeatable procedure with a named sequence, which is why it survives the manager who is bad at letting go.",
-        "evidence": "A two-part episode on delegating tasks to free up time, within an archive built on procedural management guidance.",
-        "entryVideo": {
-          "title": "How to Delegate Tasks & Free Up Your Time at Work - Part 1",
-          "videoId": "ZV-2dpjnZfM",
-          "whyThisOne": "Part one of the sequence, which starts with what to delegate rather than how — the step people skip.",
-          "durationMin": 24
-        },
-        "addedLater": {
-          "batch": 13,
-          "trigger": "delegation was empty, and a two-part episode on it was already in the evidence gathered for batch 02.",
-          "whyNotAtFirstPass": "Out of scope during a communication pass, for the same reason. The episode was in the upload scan at the time."
         }
       },
       {

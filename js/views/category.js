@@ -2,7 +2,7 @@
 // the critic in a visually distinct ink band, and the four-week plan as a
 // numbered sequence with a connecting line.
 
-import { getCategory, getCreatorsForCategory, getCategoryIndex, getSubjectNotes } from '../data.js';
+import { getCategory, getCreatorsForCategory, getCategoryIndex, getSubjectNotes, getRetiredCategories } from '../data.js';
 import { esc, stateBlock, statePage, setTitle, LEVELS, SIZE_BUCKETS, domainLabel } from '../utils.js';
 
 // Named rather than coded, because "No AU creator" reads as a database error
@@ -216,6 +216,19 @@ export async function renderCategory(app, { params, query }) {
   }
 
   if (!category) {
+    // A RETIRED OR MERGED SLUG WAS ONCE A LIVE URL. Someone may have linked
+    // it, and a generic not-found page throws away the intent that brought
+    // them. This runs client-side because the site uses hash routes and a
+    // fragment is never sent to the server — a Netlify rule for
+    // #/category/:id cannot match, so _redirects covers only the path form.
+    const retired = await getRetiredCategories().catch(() => null);
+    const moved = retired?.redirects?.[params.id];
+    if (moved?.to) {
+      // replace, not assign: the dead slug should not sit in history for the
+      // back button to walk into a second time.
+      location.replace(`#/category/${encodeURIComponent(moved.to)}`);
+      return;
+    }
     app.setAttribute('aria-busy', 'false');
     setTitle('Skill not found');
     app.innerHTML = `<div class="wrap" style="padding-block: var(--sp-12)">${statePage(

@@ -136,8 +136,7 @@
     ],
     "relatedCategories": [
       "self-awareness",
-      "charisma-and-presence",
-      "resilience"
+      "charisma-and-presence"
     ],
     "levels": {
       "beginner": "Separate confidence from self-esteem and from arrogance. Start collecting evidence you can actually do things by taking small actions you have been avoiding.",
@@ -266,47 +265,6 @@
       "beginner": "Attach a very small behaviour to an existing cue and repeat it in a stable context. Consistency of context matters more than size or intensity at this stage.",
       "intermediate": "Design for disruption: travel, illness, and schedule changes are what actually break habits. Work on breaking unwanted habits by changing cues and increasing friction.",
       "advanced": "Understand what the research does and does not support about automaticity and timelines, and build habit systems that survive major life changes rather than ideal weeks."
-    },
-    "plan": {
-      "week1": {
-        "watch": [],
-        "do": ""
-      },
-      "week2": {
-        "watch": [],
-        "do": ""
-      },
-      "week3": {
-        "watch": [],
-        "do": ""
-      },
-      "week4": {
-        "watch": [],
-        "do": ""
-      }
-    }
-  },
-  {
-    "id": "resilience",
-    "name": "Resilience after setbacks",
-    "domain": "mindset",
-    "blurb": "Recovering function and perspective after failure, rejection, or loss without pretending it didn't hurt.",
-    "aliases": [
-      "bouncing back",
-      "mental toughness",
-      "coping",
-      "adversity",
-      "failure"
-    ],
-    "relatedCategories": [
-      "grief-and-loss",
-      "emotional-regulation",
-      "burnout-recovery"
-    ],
-    "levels": {
-      "beginner": "Learn the difference between resilience and suppression. Restore the basics first — sleep, movement, contact with people — before trying to reframe anything.",
-      "intermediate": "Work on the explanatory habits that extend a setback: treating a specific failure as permanent, pervasive, and personal. Practise extracting the usable lesson without self-attack.",
-      "advanced": "Build the capacity to take repeated, meaningful risks over years, and to distinguish resilience worth having from stubbornly enduring a situation you should leave."
     },
     "plan": {
       "week1": {
@@ -504,7 +462,7 @@
       "grieving"
     ],
     "relatedCategories": [
-      "resilience",
+      "emotional-regulation",
       "mortality-and-death",
       "therapy-literacy"
     ],
@@ -1489,8 +1447,7 @@
     ],
     "relatedCategories": [
       "back-pain-management",
-      "mobility-and-flexibility",
-      "remote-work"
+      "mobility-and-flexibility"
     ],
     "levels": {
       "beginner": "Set up monitor height, chair, and input devices adequately, and build movement breaks in — position variety matters more than one ideal posture.",
@@ -2190,8 +2147,7 @@
     ],
     "relatedCategories": [
       "difficult-conversations",
-      "people-management",
-      "delegation"
+      "people-management"
     ],
     "levels": {
       "beginner": "Be specific and behavioural rather than characterological, and separate observation from interpretation before you open your mouth.",
@@ -2436,7 +2392,6 @@
     ],
     "relatedCategories": [
       "people-management",
-      "delegation",
       "meeting-facilitation"
     ],
     "levels": {
@@ -2473,7 +2428,13 @@
       "team lead",
       "one on ones",
       "performance management",
-      "supervising"
+      "supervising",
+      "delegation",
+      "handing off work",
+      "letting go",
+      "empowering teams",
+      "outsourcing tasks",
+      "assigning work"
     ],
     "relatedCategories": [
       "leadership",
@@ -2482,49 +2443,8 @@
     ],
     "levels": {
       "beginner": "Run useful one-to-ones, set clear expectations, and resist the pull to keep doing the individual contributor work you were good at.",
-      "intermediate": "Handle performance problems early and fairly, develop people toward what they want, and manage across differing levels of experience.",
+      "intermediate": "Handle performance problems early and fairly, develop people toward what they want, hand work over as a repeatable sequence rather than a one-off favour, and manage across differing levels of experience.",
       "advanced": "Manage managers, handle restructures and terminations humanely, and build a team that performs without your constant presence."
-    },
-    "plan": {
-      "week1": {
-        "watch": [],
-        "do": ""
-      },
-      "week2": {
-        "watch": [],
-        "do": ""
-      },
-      "week3": {
-        "watch": [],
-        "do": ""
-      },
-      "week4": {
-        "watch": [],
-        "do": ""
-      }
-    }
-  },
-  {
-    "id": "remote-work",
-    "name": "Remote work",
-    "domain": "career",
-    "blurb": "Working effectively at a distance — communication, visibility, and keeping work from filling the day.",
-    "aliases": [
-      "work from home",
-      "distributed teams",
-      "async work",
-      "hybrid work",
-      "wfh"
-    ],
-    "relatedCategories": [
-      "posture-and-ergonomics",
-      "inbox-and-email-systems",
-      "meeting-facilitation"
-    ],
-    "levels": {
-      "beginner": "Set up a workable space and routine, and learn to communicate in writing with enough context that no follow-up call is needed.",
-      "intermediate": "Work asynchronously on purpose, make your work visible without performing busyness, and protect boundaries between work and home.",
-      "advanced": "Lead distributed teams across time zones, build culture without proximity, and handle the career risks of being remote in a hybrid organisation."
     },
     "plan": {
       "week1": {
@@ -2600,7 +2520,6 @@
     ],
     "relatedCategories": [
       "leadership",
-      "remote-work",
       "business-writing"
     ],
     "levels": {
@@ -2730,47 +2649,6 @@
       "beginner": "Learn to see how decisions actually get made in your organisation, and stop assuming good work speaks for itself.",
       "intermediate": "Build influence without authority, manage upward deliberately, and handle credit, blame, and visibility fairly.",
       "advanced": "Operate at levels where resource allocation is genuinely contested, and decide when a political environment is one you should leave."
-    },
-    "plan": {
-      "week1": {
-        "watch": [],
-        "do": ""
-      },
-      "week2": {
-        "watch": [],
-        "do": ""
-      },
-      "week3": {
-        "watch": [],
-        "do": ""
-      },
-      "week4": {
-        "watch": [],
-        "do": ""
-      }
-    }
-  },
-  {
-    "id": "delegation",
-    "name": "Delegation",
-    "domain": "career",
-    "blurb": "Handing work over so it's genuinely off your plate and the other person grows from it.",
-    "aliases": [
-      "handing off work",
-      "letting go",
-      "empowering teams",
-      "outsourcing tasks",
-      "assigning work"
-    ],
-    "relatedCategories": [
-      "people-management",
-      "prioritization",
-      "giving-feedback"
-    ],
-    "levels": {
-      "beginner": "Delegate outcomes with context rather than step-by-step instructions, and accept that a different method producing the result is fine.",
-      "intermediate": "Match the level of autonomy to the person and the risk, set check-ins that aren't micromanagement, and delegate work you enjoy, not only work you dislike.",
-      "advanced": "Build capability deliberately across a team so delegation scales, and handle the cases where delegated work genuinely goes wrong."
     },
     "plan": {
       "week1": {
@@ -6548,7 +6426,7 @@
     "relatedCategories": [
       "business-writing",
       "task-management-systems",
-      "remote-work"
+      "deep-work-and-focus"
     ],
     "levels": {
       "beginner": "Process in batches rather than continuously, and use a simple rule set: reply, defer to your task system, delegate, or archive.",
@@ -6710,7 +6588,7 @@
     ],
     "relatedCategories": [
       "goal-setting",
-      "delegation",
+      "people-management",
       "deep-work-and-focus"
     ],
     "levels": {

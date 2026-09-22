@@ -1,0 +1,23 @@
+{
+  "_comment": "Slugs that were once live URLs and no longer resolve. A merged or retired category is a page somebody may have linked to, so it redirects rather than 404s. The destination is the most useful PRACTICE for someone who arrived on the old slug, not the home page -- dumping a visitor at the index loses the intent that brought them. NOTE: these fire CLIENT-SIDE, from js/views/category.js, because the site uses hash routes and a URL fragment is never transmitted to the server; a Netlify rule for #/category/x cannot match by construction. netlify _redirects covers only the path form.",
+  "redirects": {
+    "remote-work": {
+      "to": "deep-work-and-focus",
+      "retiredAt": "2026-09",
+      "reason": "A setting, not a practice (rule 22). Its teachable parts were already covered by deep-work-and-focus, meeting-facilitation and workflow-automation.",
+      "why-this-destination": "Of the three, protecting attention is what someone arriving on 'remote work' is most likely after — the complaint that sends people looking is usually that the day is fragmented, not that meetings or tooling are wrong."
+    },
+    "resilience": {
+      "to": "emotional-regulation",
+      "retiredAt": "2026-09",
+      "reason": "An outcome, not a practice (rule 22). Nobody watches a video and then does resilience; they do the practices that tend to produce it.",
+      "why-this-destination": "The nearest practice to the outcome, and the one grief-and-loss now points at in its place — so the two references agree rather than sending the same visitor to different pages."
+    },
+    "delegation": {
+      "to": "people-management",
+      "retiredAt": "2026-09",
+      "reason": "Merged. A chapter of people-management rather than its own subject; its one creator and that creator's two-part episode carried over.",
+      "why-this-destination": "Not a judgement call — the subject and its evidence are literally there now."
+    }
+  }
+}

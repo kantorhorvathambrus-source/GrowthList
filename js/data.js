@@ -54,6 +54,14 @@ export const getBadgeFacts = () =>
   load('badge-facts.json').catch(() => null);
 
 /**
+ * Slugs that were once live URLs and no longer resolve. A retired or merged
+ * category is a page somebody may have linked to, so it redirects rather than
+ * 404s. Client-side, because hash fragments never reach the server.
+ */
+export const getRetiredCategories = () =>
+  load('retired-categories.json').catch(() => null);
+
+/**
  * Rule 12 subject notes: categories where we held a higher bar, and the short
  * factual reason. Generated from the research file, so only the visitor-facing
  * half ships. Optional — a missing file means no category has one.
