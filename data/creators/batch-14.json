@@ -45,18 +45,6 @@
           "whyThisOne": "A complete technical report read properly and tested against his own benchmark — the method on full display rather than described.",
           "durationMin": 27
         }
-      },
-      {
-        "id": "ai-ethics-and-risk",
-        "strength": "secondary",
-        "why": "Treats capability claims as things to be checked, which is the prerequisite for any serious argument about what these systems can and cannot be trusted with.",
-        "evidence": "Sustained coverage of benchmark contamination and of capability claims outrunning their evidence, including on reasoning claims made by major labs.",
-        "entryVideo": {
-          "title": "Gemini 3.1 Pro and the Downfall of Benchmarks: Welcome to the Vibe Era of AI",
-          "videoId": "2_DPnzoiHaY",
-          "whyThisOne": "Argues that the measurement itself has broken down, which matters more than any individual model claim.",
-          "durationMin": 19
-        }
       }
     ],
     "role": "critic",

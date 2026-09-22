@@ -111,18 +111,6 @@
           "whyThisOne": "A strategic argument about where a small company can actually compete, which is the first real question rather than the tactics that follow it.",
           "durationMin": 29
         }
-      },
-      {
-        "id": "venture-fundraising",
-        "strength": "secondary",
-        "why": "The people teaching it are the ones on the other side of the table, which is worth more than any founder's account of how they raised.",
-        "evidence": "Investor-side advice sessions and founder interviews covering the raise, from a firm that invests in every company it admits.",
-        "entryVideo": {
-          "title": "Blake Scholl: How 50 People Built a Supersonic Jet",
-          "videoId": "byAj35QlGbs",
-          "whyThisOne": "A capital-intensive company told end to end, where the funding decisions are inseparable from the engineering ones.",
-          "durationMin": 50
-        }
       }
     ],
     "role": "specialist",
