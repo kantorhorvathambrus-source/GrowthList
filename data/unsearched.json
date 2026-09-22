@@ -1,6 +1,6 @@
 {
   "_comment": "Categories with no creators that NOBODY HAS SEARCHED. This is deliberately a separate state from a documented gap in thin-gaps.json, and the two must never be merged: a gap says we looked and could not staff it, which is a finding; this says we have not looked, which is a fact about our own progress and supports no finding at all. Writing a gap note for a category with zero probes would be a conclusion from no evidence -- rule 18's failure mode, in visitor copy. The note is ONE shared sentence rather than eleven written by hand, because eleven hand-written variants of 'we have not got to this yet' would decay independently and say nothing a shared line does not.",
-  "note": "Nobody is listed here yet, and the reason is simply that we have not searched this subject. That is different from having looked and found nothing we would stand behind — where that is what happened, the page says so instead. We are not putting a date on when this one gets done.",
+  "note": "Nobody is listed here yet because we haven't searched this subject — not because we looked and found nothing worth recommending. We're not putting a date on it.",
   "categories": [
     "ai-ethics-and-risk",
     "decision-making",
