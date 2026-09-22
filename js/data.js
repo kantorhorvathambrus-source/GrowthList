@@ -54,6 +54,14 @@ export const getBadgeFacts = () =>
   load('badge-facts.json').catch(() => null);
 
 /**
+ * Categories with no creators that NOBODY HAS SEARCHED. Deliberately separate
+ * from a documented gap: a gap says we looked and could not staff it, which is
+ * a finding; this says we have not looked, which supports no finding at all.
+ */
+export const getUnsearched = () =>
+  load('unsearched.json').catch(() => null);
+
+/**
  * Slugs that were once live URLs and no longer resolve. A retired or merged
  * category is a page somebody may have linked to, so it redirects rather than
  * 404s. Client-side, because hash fragments never reach the server.

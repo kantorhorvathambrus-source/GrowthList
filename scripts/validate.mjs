@@ -688,6 +688,71 @@ if (existsSync(join(DATA, 'domain-notes.json'))) {
   }
 }
 
+// ------------------------------------- the two states of an empty category
+// A category with no creators tells a visitor one of exactly two things, and
+// they are not interchangeable:
+//   documented gap  — we searched and could not staff it. A FINDING, and it
+//                     carries its reasoning and a rule 18 disconfirmation test.
+//   not yet searched — we have not looked. A fact about our progress, and it
+//                     supports no finding at all.
+// Nine categories shipped as neither: a bare "No creators are listed" and
+// nothing else, which tells a visitor which of the two is true by leaving
+// them to guess. Writing a gap note for a category with zero probes would be
+// the opposite error and the worse one — a conclusion drawn from no evidence,
+// in visitor copy, which is rule 18's failure mode exactly.
+{
+  const unsearchedPath = join(DATA, 'unsearched.json');
+  const unsearched = existsSync(unsearchedPath) ? readJson(unsearchedPath) : { categories: [] };
+  const unsearchedSet = new Set(unsearched.categories ?? []);
+
+  let thin = { gaps: {}, searchedNotFound: {} };
+  const thinPath2 = join(DATA, 'thin-gaps.json');
+  if (existsSync(thinPath2)) thin = readJson(thinPath2);
+  const gapSet = new Set(Object.keys(thin.gaps ?? {}));
+  const searchedSet = new Set(Object.keys(thin.searchedNotFound ?? {}));
+
+  let hsSet = new Set();
+  const hsPath2 = join(DATA, 'high-stakes.json');
+  if (existsSync(hsPath2)) hsSet = new Set(Object.keys((readJson(hsPath2).categories ?? {})));
+
+  for (const id of unsearchedSet) {
+    if (!categoryIds.has(id)) fail('unsearched.json', `"${id}" is not a real category id`);
+  }
+  if (unsearchedSet.size && !String(unsearched.note ?? '').trim()) {
+    fail('unsearched.json', 'categories are listed but there is no note for a visitor to read');
+  }
+
+  for (const cat of categories) {
+    const list = byCategory.get(cat.id) ?? [];
+    if (list.length > 0) {
+      // A category that HAS been staffed cannot still be waiting to be searched.
+      if (unsearchedSet.has(cat.id)) {
+        fail(`unsearched.json ${cat.id}`, `is listed as not yet searched but has ${list.length} creator(s) — remove it`);
+      }
+      continue;
+    }
+    const states = [
+      gapSet.has(cat.id) && 'documented gap',
+      hsSet.has(cat.id) && 'high-stakes note',
+      unsearchedSet.has(cat.id) && 'not yet searched',
+    ].filter(Boolean);
+    if (states.length === 0) {
+      fail(`category ${cat.id}`, 'has no creators and no state — a visitor is told nothing. Add it to unsearched.json, or document the gap in thin-gaps.json if it was actually searched');
+    } else if (states.length > 1) {
+      fail(`category ${cat.id}`, `has no creators and ${states.length} states at once (${states.join(', ')}) — it can only be one`);
+    }
+  }
+
+  // THE STATE MUST MOVE WHEN THE WORK HAPPENS. "Not yet searched" on a
+  // category with probes in the ledger is a stale fact of exactly the kind
+  // this project keeps finding: true when written, false afterwards, and
+  // nothing would notice.
+  for (const id of unsearchedSet) {
+    if (gapSet.has(id)) fail(`unsearched.json ${id}`, 'is listed as not yet searched but has a documented gap — it has been searched');
+    if (searchedSet.has(id)) fail(`unsearched.json ${id}`, 'is listed as not yet searched but appears in thin-gaps.searchedNotFound — it has been searched');
+  }
+}
+
 // -------------------------------------------- numbers in visitor-facing copy
 // A measurement typed into a sentence decays as the data moves under it. This
 // project shipped "29 of the creators here carry no practitioner badge" while

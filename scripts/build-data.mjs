@@ -377,7 +377,25 @@ const kbFull = writeJson('creators.json', creatorsOut);
 const kbIndex = writeJson('index.json', indexOut);
 const kbCats = writeJson('categories-index.json', categoriesIndexOut);
 const kbSearch = writeJson('search-index.json', searchOut);
-writeJson('subject-notes.json', { ...subjectNotesOut, searchedNotFound: searchedOut });
+// The "not yet searched" state ships beside the documented gaps but under its
+// own key, so the client cannot render one as the other. Kept as the raw file
+// (shared note + id list) rather than expanded per category: one sentence that
+// cannot drift beats nine that can.
+const unsearchedPath = join(DATA, 'unsearched.json');
+const unsearchedOut = existsSync(unsearchedPath) ? readJson(unsearchedPath) : null;
+if (unsearchedOut) {
+  for (const id of unsearchedOut.categories ?? []) {
+    if (subjectNotesOut.notes[id]) {
+      console.error(`FATAL: ${id} is listed as not-yet-searched AND carries a documented gap note. It cannot be both.`);
+      process.exit(1);
+    }
+  }
+}
+writeJson('subject-notes.json', {
+  ...subjectNotesOut,
+  searchedNotFound: searchedOut,
+  ...(unsearchedOut ? { unsearched: { note: unsearchedOut.note, categories: unsearchedOut.categories ?? [] } } : {}),
+});
 if (ledgerOut) writeJson('ledger-summary.json', ledgerOut);
 if (methodOut) writeJson('method-facts.json', methodOut);
 writeJson('badge-facts.json', badgeFactsOut);

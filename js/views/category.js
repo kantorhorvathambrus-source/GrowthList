@@ -111,12 +111,26 @@ function filtersMarkup(entries, filters) {
 // Rendered even on an empty category: "we would rather list nobody here" is
 // exactly the thing worth saying when the list is empty.
 function subjectNoteMarkup(categoryId, subjectNotes) {
+  // TWO STATES, AND THEY MUST NEVER READ AS ONE. A documented gap says we
+  // searched and could not staff it — a finding, with reasoning behind it.
+  // "Not yet searched" says we have not looked, which supports no finding at
+  // all. Writing the first where only the second is true would be a
+  // conclusion drawn from zero probes, in visitor copy.
   const note = subjectNotes?.notes?.[categoryId];
-  if (!note) return '';
-  return `<aside class="subject-note" aria-labelledby="subject-note-heading">
-    <h2 id="subject-note-heading" class="subject-note__head">A note on this skill</h2>
-    <p>${esc(note)}</p>
-  </aside>`;
+  if (note) {
+    return `<aside class="subject-note" aria-labelledby="subject-note-heading">
+      <h2 id="subject-note-heading" class="subject-note__head">A note on this skill</h2>
+      <p>${esc(note)}</p>
+    </aside>`;
+  }
+  const unsearched = subjectNotes?.unsearched;
+  if (unsearched?.categories?.includes(categoryId) && unsearched.note) {
+    return `<aside class="subject-note subject-note--unsearched" aria-labelledby="subject-note-heading">
+      <h2 id="subject-note-heading" class="subject-note__head">Why this page is empty</h2>
+      <p>${esc(unsearched.note)}</p>
+    </aside>`;
+  }
+  return '';
 }
 
 function planMarkup(category, creatorsById) {
