@@ -80,7 +80,7 @@
     "country": "US",
     "language": "en",
     "sizeBucket": "100k-500k",
-    "status": "dormant",
+    "status": "archive",
     "verified": true,
     "dataAsOf": "2026-09",
     "shortDescription": "Precise, unhurried explanations of how Python actually behaves, including the corners that surprise experienced people.",

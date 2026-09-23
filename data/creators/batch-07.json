@@ -270,7 +270,7 @@
     "channelUrl": "https://www.youtube.com/@DatabaseStar",
     "country": "AU",
     "language": "en",
-    "sizeBucket": "<100k",
+    "sizeBucket": "100k-500k",
     "status": "active",
     "verified": true,
     "dataAsOf": "2026-09",
