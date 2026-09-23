@@ -256,7 +256,7 @@
     "verified": true,
     "dataAsOf": "2026-09",
     "shortDescription": "A tool vendor's channel, but the long-running Whiteboard Friday series is a rotating platform for independent practitioners rather than product content.",
-    "longDescription": "Moz sells SEO software, and most of what a tool vendor publishes is about the tool. The exception here is substantial: Whiteboard Friday is a long-running weekly series in which a different named practitioner explains one topic at a whiteboard — Tom Capper on how search behaviour is shifting, Crystal Carter and Chima Mmeje on specific techniques, Phil Nottingham on video. The guests are independent professionals rather than staff, which makes the series closer to a rolling conference than to marketing. Nineteen of fifty recent uploads run three to nineteen minutes and twelve run past twenty, with a six-minute median. Product videos sit in the same feed and are easy to tell apart by title.",
+    "longDescription": "Moz sells SEO software, and most of what a tool vendor publishes is about the tool. The exception here is substantial: Whiteboard Friday is a long-running series in which a different named practitioner explains one topic at a whiteboard — Tom Capper on how search behaviour is shifting, Crystal Carter and Chima Mmeje on specific techniques, Phil Nottingham on video. The guests are independent professionals rather than staff, which makes the series closer to a rolling conference than to marketing. Each episode is built around one explained idea and runs to that idea rather than to a target length, so the series is short-form by design. Product and conference clips sit in the same feed and are easy to tell apart by title.",
     "notFor": "Anyone wanting a beginner's path into SEO — the series assumes working knowledge and each episode is a self-contained topic with no sequence.",
     "formatTags": [
       "tutorial",
@@ -296,10 +296,10 @@
     "caveats": "An SEO software company owns the channel, and product videos share the feed with the guest series — check the title. Episodes are one-off topics with no beginner path through them.",
     "catalogue": {
       "scanned": 50,
-      "shortPct": 40,
-      "longPct": 24,
-      "medianMin": 5,
-      "videoCount": 1131,
+      "shortPct": 66,
+      "longPct": 0,
+      "medianMin": 1,
+      "videoCount": 1144,
       "at": "2026-09"
     },
     "entity": "individual"
