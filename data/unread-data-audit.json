@@ -1,13 +1,13 @@
 {
-  "at": "2026-09-06T10:32:00.939Z",
-  "channelsExamined": 252,
+  "at": "2026-09-23T09:59:06.572Z",
+  "channelsExamined": 259,
   "findings": {
     "handleMismatch": {
       "count": 0,
       "cases": []
     },
     "channelAge": {
-      "measured": 252,
+      "measured": 259,
       "youngerThanThreeYears": 2,
       "youngest": [
         {
@@ -18,12 +18,22 @@
         {
           "id": "coachingforleaders",
           "publishedAt": "2024-07-14T19:03:29.81845Z",
-          "years": 2.1
+          "years": 2.2
+        },
+        {
+          "id": "bryanfoltice",
+          "publishedAt": "2023-06-06T13:24:44.697826Z",
+          "years": 3.3
         },
         {
           "id": "aijason",
           "publishedAt": "2023-04-22T03:48:19.921869Z",
           "years": 3.4
+        },
+        {
+          "id": "headlessheadhunter",
+          "publishedAt": "2023-01-24T00:11:41.634524Z",
+          "years": 3.7
         },
         {
           "id": "aiexplained",
@@ -33,22 +43,12 @@
         {
           "id": "theplottery",
           "publishedAt": "2022-11-13T11:00:25.171347Z",
-          "years": 3.8
+          "years": 3.9
         },
         {
           "id": "bytebytego",
           "publishedAt": "2022-06-08T16:34:19.815645Z",
-          "years": 4.2
-        },
-        {
-          "id": "salarytransparentstreet",
-          "publishedAt": "2022-04-19T19:35:59.859002Z",
-          "years": 4.4
-        },
-        {
-          "id": "philomatics",
-          "publishedAt": "2022-02-22T17:12:06.68572Z",
-          "years": 4.5
+          "years": 4.3
         }
       ],
       "oldest": [
@@ -68,13 +68,13 @@
           "years": 20.4
         },
         {
-          "id": "coreyms",
-          "publishedAt": "2006-05-31T22:49:22Z",
+          "id": "chewjitsu",
+          "publishedAt": "2006-06-08T14:55:17Z",
           "years": 20.3
         },
         {
-          "id": "crashcourse",
-          "publishedAt": "2006-05-20T02:43:42Z",
+          "id": "coreyms",
+          "publishedAt": "2006-05-31T22:49:22Z",
           "years": 20.3
         }
       ]
@@ -134,110 +134,116 @@
       ]
     },
     "reachVsBucket": {
-      "measured": 252,
+      "measured": 259,
       "bigBucketUnder50kAvgViews": 11,
       "cases": [
         {
           "id": "lennyspodcast",
           "bucket": "500k-1M",
-          "avgViews": 11642,
-          "videos": 1786
+          "avgViews": 11907,
+          "videos": 1808
         },
         {
           "id": "themathsorcerer",
           "bucket": "1M-5M",
-          "avgViews": 16921,
-          "videos": 10418
+          "avgViews": 17172,
+          "videos": 10440
         },
         {
           "id": "aswathdamodaran",
           "bucket": "1M-5M",
-          "avgViews": 23147,
-          "videos": 1411
+          "avgViews": 23371,
+          "videos": 1413
         },
         {
           "id": "docsnipes",
           "bucket": "1M-5M",
-          "avgViews": 27010,
-          "videos": 1645
+          "avgViews": 26968,
+          "videos": 1660
         },
         {
           "id": "hnasr",
           "bucket": "500k-1M",
-          "avgViews": 27997,
+          "avgViews": 28240,
           "videos": 1034
         },
         {
           "id": "thesleepdoctor",
           "bucket": "500k-1M",
-          "avgViews": 30543,
-          "videos": 1394
+          "avgViews": 31993,
+          "videos": 1413
         },
         {
           "id": "misterwootube",
           "bucket": "1M-5M",
-          "avgViews": 37555,
-          "videos": 5042
+          "avgViews": 37654,
+          "videos": 5043
         },
         {
           "id": "tomofujita",
           "bucket": "500k-1M",
-          "avgViews": 42851,
-          "videos": 2135
+          "avgViews": 42800,
+          "videos": 2159
         },
         {
           "id": "dreamingspanish",
           "bucket": "500k-1M",
-          "avgViews": 44839,
-          "videos": 805
-        },
-        {
-          "id": "gregisenberg",
-          "bucket": "500k-1M",
-          "avgViews": 47038,
-          "videos": 810
+          "avgViews": 45871,
+          "videos": 817
         },
         {
           "id": "johnhammond",
           "bucket": "1M-5M",
-          "avgViews": 48286,
-          "videos": 1876
+          "avgViews": 48635,
+          "videos": 1889
+        },
+        {
+          "id": "gregisenberg",
+          "bucket": "500k-1M",
+          "avgViews": 49482,
+          "videos": 817
         }
       ]
     },
     "sizeBucketDrift": {
-      "count": 0,
-      "cases": []
+      "count": 1,
+      "cases": [
+        {
+          "id": "databasestar",
+          "stored": "<100k",
+          "now": "100k-500k"
+        }
+      ]
     },
     "topicCategories": {
-      "channelsWithAny": 250,
+      "channelsWithAny": 256,
       "pct": 99,
       "distinctTopics": 31,
       "top": [
-        "Lifestyle (sociology) (195)",
-        "Knowledge (130)",
+        "Lifestyle (sociology) (197)",
+        "Knowledge (136)",
         "Health (69)",
-        "Technology (60)",
-        "Society (47)",
+        "Technology (61)",
+        "Society (52)",
         "Physical fitness (26)",
-        "Entertainment (21)",
-        "Hobby (20)",
+        "Hobby (21)",
+        "Entertainment (20)",
         "Film (13)",
         "Sport (13)",
         "Food (8)",
         "Music (8)",
         "Religion (8)",
-        "Business (5)",
+        "Business (6)",
         "Vehicle (5)",
         "Fashion (4)",
         "Video game culture (4)",
         "Tourism (4)",
         "Mixed martial arts (3)",
-        "Jazz (3)"
+        "Politics (3)"
       ]
     },
     "selfSetKeywords": {
-      "channels": 229,
+      "channels": 235,
       "pct": 91
     },
     "madeForKids": {
@@ -249,27 +255,27 @@
       "cases": []
     },
     "creatorChosenTrailer": {
-      "channelsWithTrailer": 191,
+      "channelsWithTrailer": 198,
       "durationBands": {
-        "under3": 51,
-        "3to9": 37,
-        "10to29": 71,
-        "30plus": 32,
+        "under3": 55,
+        "3to9": 38,
+        "10to29": 69,
+        "30plus": 36,
         "unknown": 0
       },
-      "shorterThanOurThreeMinuteFloor": 51,
-      "windowMeasured": 191,
-      "insideOurFiftyUploadWindow": 58,
-      "olderThanOurFiftyUploadWindow": 132,
+      "shorterThanOurThreeMinuteFloor": 55,
+      "windowMeasured": 0,
+      "insideOurFiftyUploadWindow": 0,
+      "olderThanOurFiftyUploadWindow": 0,
       "pct": 76,
       "agreesWithOurEntryVideo": 2,
       "trailerVideoUnavailable": 0,
       "cases": [
         {
           "id": "30mpc",
-          "trailer": "Wzyq2u2-M3E",
-          "trailerTitle": "I Cold Called a Product I’ve Never Sold. Here’s What Happened.",
-          "trailerMin": 17,
+          "trailer": "GNxxd_mOy5g",
+          "trailerTitle": "My SDRs Each Booked 20+ Meetings Every Month. Here's Exactly How",
+          "trailerMin": 44,
           "trailerExists": true,
           "agrees": false,
           "ourEntries": 2
@@ -304,7 +310,7 @@
         {
           "id": "ahrefs",
           "trailer": "uza9GX0E2mw",
-          "trailerTitle": "AI SEO Course for Beginners: Complete AEO Tutorial",
+          "trailerTitle": "Complete AI SEO Course for Beginners: Learn AEO in 86 Minutes",
           "trailerMin": 87,
           "trailerExists": true,
           "agrees": false,
@@ -348,9 +354,9 @@
         },
         {
           "id": "alexcattoni",
-          "trailer": "M9EogrtT6F4",
-          "trailerTitle": "Real Marketing For Rad Humans. Let's De-Douchify The Internet...",
-          "trailerMin": 1,
+          "trailer": "jPaXgW1Q4WI",
+          "trailerTitle": "Real Marketing For Rad Humans. Let's De-Douchify The Internet.",
+          "trailerMin": 2,
           "trailerExists": true,
           "agrees": false,
           "ourEntries": 2
@@ -446,6 +452,15 @@
           "ourEntries": 2
         },
         {
+          "id": "biws",
+          "trailer": "ApoHiJixKO0",
+          "trailerTitle": "Subscribe Now Breaking Into Wall Street & Mergers and Inquisitions",
+          "trailerMin": 1,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 1
+        },
+        {
           "id": "bloopanimation",
           "trailer": "k2lEbwS-uI0",
           "trailerTitle": "The Future of Bloop Animation",
@@ -459,6 +474,15 @@
           "trailer": "zYPLRuBLqEo",
           "trailerTitle": "The Brand OS Behind Every Scalable Strategy (Nobody Teaches This)",
           "trailerMin": 26,
+          "trailerExists": true,
+          "agrees": false,
+          "ourEntries": 1
+        },
+        {
+          "id": "bryanfoltice",
+          "trailer": "Knd2Fns7kBM",
+          "trailerTitle": "What is Money Strong?",
+          "trailerMin": 1,
           "trailerExists": true,
           "agrees": false,
           "ourEntries": 1
@@ -606,30 +630,12 @@
           "trailerExists": true,
           "agrees": false,
           "ourEntries": 2
-        },
-        {
-          "id": "coreyms",
-          "trailer": "vRapY8xJwn8",
-          "trailerTitle": "Welcome to my Channel",
-          "trailerMin": 1,
-          "trailerExists": true,
-          "agrees": false,
-          "ourEntries": 2
-        },
-        {
-          "id": "cosmicskeptic",
-          "trailer": "Bu-7IHp3oGQ",
-          "trailerTitle": "Debate: Did Jesus Rise From the Dead? - Trent Horn vs Alex O'Connor",
-          "trailerMin": 89,
-          "trailerExists": true,
-          "agrees": false,
-          "ourEntries": 2
         }
       ]
     },
     "captions": {
-      "entryVideosMeasured": 347,
-      "withoutCaptions": 274,
+      "entryVideosMeasured": 352,
+      "withoutCaptions": 278,
       "withoutCaptionsPct": 79,
       "cases": [
         "FAm9HLkhVsI",
@@ -643,7 +649,6 @@
         "14qA3gvP2TQ",
         "RyJYGpVyl0o",
         "Tf1nooXtUHE",
-        "2_DPnzoiHaY",
         "iWRmtPdFbGw",
         "HwYOcCg4jm4",
         "VMj-3S1tku0",
@@ -651,15 +656,16 @@
         "Z07NWhI2oQQ",
         "F5Av5yDGSQs",
         "UEqk0njCuQo",
-        "HYNXzKU92Qs"
+        "HYNXzKU92Qs",
+        "sbNc5eL7xNA"
       ]
     },
     "declaredLanguage": {
       "distribution": [
         "en: 219",
-        "en-US: 73",
+        "en-US: 77",
         "en-GB: 46",
-        "en-AU: 4",
+        "en-AU: 5",
         "en-CA: 3",
         "en-IN: 1",
         "es: 1"
@@ -674,7 +680,7 @@
     },
     "licence": {
       "distribution": [
-        "youtube: 342",
+        "youtube: 347",
         "creativeCommon: 5"
       ]
     }
