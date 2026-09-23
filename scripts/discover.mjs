@@ -63,15 +63,36 @@ if (at !== -1) { forCategory = argv[at + 1] ?? null; argv.splice(at, 2); }
 // topic" but "who is here that nobody is promoting".
 const SMALL = argv.includes('--small');
 if (SMALL) argv.splice(argv.indexOf('--small'), 1);
+// --medium: search 4-20 minute videos instead of 20+.
+//
+// The default is `long`, which the API defines as OVER TWENTY MINUTES, and
+// that default encodes an assumption about where good teaching lives. It is
+// right for a lecture, a workshop or a deep-dive, and it is WRONG FOR AN
+// ENTRY TIER. A creator whose job is to get someone from nothing to their
+// first squat, first join or first server publishes eight-to-twenty minute
+// explainers, because that is how long the explanation takes; twenty minutes
+// on a first lesson is usually a sign the video is for somebody else.
+//
+// So a search for beginner material under the long default is not a weak
+// search for beginners — it is a search that structurally cannot return them,
+// and a zero result from it says nothing about supply (rule 18). Group A of
+// the worklist is nineteen categories defined entirely by a missing beginner
+// tier, which is the case this exists for.
+//
+// The long default is unchanged. This is a second question to ask, not a
+// replacement for the first.
+const MEDIUM = argv.includes('--medium');
+if (MEDIUM) argv.splice(argv.indexOf('--medium'), 1);
 const BIG = new Set(['500k-1M', '1M-5M', '5M-20M', '>20M']);
 const q = argv.join(' ').trim();
 if (!q) {
-  console.error('usage: discover.mjs [--for <category-id>] "<topic query>"');
+  console.error('usage: discover.mjs [--for <category-id>] [--small] [--medium] "<topic query>"');
   process.exit(2);
 }
 
+const DURATION = MEDIUM ? 'medium' : 'long';
 const search = await api('search', {
-  part: 'snippet', q, type: 'video', videoDuration: 'long',
+  part: 'snippet', q, type: 'video', videoDuration: DURATION,
   maxResults: '50', relevanceLanguage: 'en',
 });
 
@@ -82,7 +103,8 @@ for (const it of search.items ?? []) {
   hits.set(id, (hits.get(id) ?? 0) + 1);
 }
 if (!hits.size) {
-  console.log(`query: ${q}\n  no channels — the search returned nothing usable.`);
+  console.log(`query: ${q}   [duration band: ${DURATION}]\n  no channels — the search returned nothing usable.`);
+  console.log('  A zero here is a fact about this query and this band, not about the field (rule 18).');
   process.exit(0);
 }
 
@@ -109,8 +131,10 @@ const hidden = SMALL ? rows.filter((r) => BIG.has(r.size)).length : 0;
 const shown = SMALL ? rows.filter((r) => !BIG.has(r.size)) : rows;
 
 const pad = (s, n) => String(s).slice(0, n).padEnd(n);
+const BAND = MEDIUM ? '4-20 minute' : 'over-20-minute';
 console.log(`query: ${q}${forCategory ? `   (for ${forCategory})` : ''}`);
-console.log(`${rows.length} distinct channels behind 50 long videos\n`);
+console.log(`duration band: ${DURATION} (${BAND} videos)`);
+console.log(`${rows.length} distinct channels behind 50 ${BAND} videos\n`);
 
 let fresh = 0;
 for (const r of shown) {
