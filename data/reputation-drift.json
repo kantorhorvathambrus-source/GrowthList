@@ -152,6 +152,18 @@
       "outcome": "rejected",
       "checkedAt": "batch 50",
       "note": "The most extreme case in this file. Every other entry is a creator whose subject shifted commercially; this one abandoned the subject entirely for a private conflict, while the description still promises repair tutorials. It is also the reason the status check earns its keep twice over — dormant AND drifted."
+    },
+    {
+      "handle": "@jeffgeerling",
+      "name": "Jeff Geerling",
+      "knownFor": "Ansible teaching — author of \"Ansible for DevOps\" and the Ansible 101 series — and Raspberry Pi cluster and Kubernetes work.",
+      "catalogueNow": "Hardware experiments, restoration projects and industry commentary. Vintage computing, IP-KVM comparisons, CNC, a modded GPS time server, laptop teardowns.",
+      "scan": "200 uploads scanned for ansible, kubernetes, k3s, k8s, automat, tutorial, how to, step-by-step, guide, explained, getting started, basics, self-host. 3 of 143 long-form uploads matched — \"Raspberry Pi 5: Getting Started\", \"You don’t need a Raspberry Pi! (Getting started with Microcontrollers)\", and \"How to photograph a Total Solar eclipse\". The Ansible work, which is what the name is known for, does not appear in the window at all.",
+      "categoriesAffected": [
+        "self-hosting"
+      ],
+      "outcome": "rejected",
+      "checkedAt": "batch 64 (group A, self-hosting round 1)"
     }
   ],
   "collisions": [

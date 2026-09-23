@@ -542,6 +542,11 @@
       "why": "2 uploads",
       "at": "batch 43"
     },
+    "@digitalspaceport": {
+      "status": "rejected",
+      "why": "local-LLM benchmarking on home hardware — Qwen, GLM, GPU rankings. Self-hosting terms match on the hardware, not on running services for yourself",
+      "at": "batch 64"
+    },
     "@distrotube": {
       "status": "rejected",
       "why": "drifted — a Linux tutorial channel whose recent long-form is community game nights and voice-message episodes",
@@ -782,6 +787,11 @@
       "why": "Gregory B. Sadler - That Philosophy Guy",
       "at": "dataset"
     },
+    "@hardwarehaven": {
+      "status": "rejected",
+      "why": "budget hardware bargain-hunting, not self-hosting practice. 70 of 173 long-form mention server/NAS terms but only 3 intersect any teaching framing, and the catalogue is what to buy rather than how to run it",
+      "at": "batch 64"
+    },
     "@harvardbusinessreview": {
       "status": "listed",
       "why": "Harvard Business Review",
@@ -921,6 +931,11 @@
       "status": "listed",
       "why": "Jefferson Fisher",
       "at": "dataset"
+    },
+    "@jeffgeerling": {
+      "status": "rejected",
+      "why": "reputation drift — known for Ansible teaching, but 3 of 143 long-form uploads in a 200-upload scan match any teaching or automation term, and one of those is eclipse photography. See reputation-drift.json",
+      "at": "batch 64"
     },
     "@jeffnippard": {
       "status": "listed",
@@ -1357,6 +1372,11 @@
       "why": "Radical Candor",
       "at": "dataset"
     },
+    "@raidowl": {
+      "status": "rejected",
+      "why": "homelab gear reviews, visibly sponsor-dense. 79 of 172 long-form match self-hosting terms but only 3 intersect teaching framing",
+      "at": "batch 64"
+    },
     "@ramitsethi": {
       "status": "rejected",
       "why": "probed for personal-budgeting; the channel is couples-money interviews and a large course business rather than budgeting instruction",
@@ -1611,6 +1631,11 @@
       "status": "listed",
       "why": "Tara Brach",
       "at": "dataset"
+    },
+    "@techbymattb": {
+      "status": "rejected",
+      "why": "novelty PC builds — PS4 and NES turned into servers, budget gaming rigs. 15 of 188 long-form match self-hosting terms, the lowest of the round",
+      "at": "batch 64"
     },
     "@technotim": {
       "status": "listed",
@@ -1901,6 +1926,11 @@
       "status": "listed",
       "why": "Wireless Philosophy",
       "at": "dataset"
+    },
+    "@wolfgangschannel": {
+      "status": "rejected",
+      "why": "home-server hardware and power efficiency rather than running services. 3 of 81 long-form intersect teaching framing, and the channel has not uploaded since 2025-12-08",
+      "at": "batch 64"
     },
     "@workitdaily": {
       "status": "rejected",
