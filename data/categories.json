@@ -123,46 +123,6 @@
     }
   },
   {
-    "id": "confidence-building",
-    "name": "Confidence building",
-    "domain": "mindset",
-    "blurb": "Building justified self-trust through evidence and competence rather than affirmation.",
-    "aliases": [
-      "self-esteem",
-      "self-confidence",
-      "self-belief",
-      "insecurity",
-      "self-doubt"
-    ],
-    "relatedCategories": [
-      "self-awareness",
-      "charisma-and-presence"
-    ],
-    "levels": {
-      "beginner": "Separate confidence from self-esteem and from arrogance. Start collecting evidence you can actually do things by taking small actions you have been avoiding.",
-      "intermediate": "Work on the gap between competence and felt confidence: how you interpret failure, how you talk to yourself, and how much you calibrate your worth to other people's reactions.",
-      "advanced": "Develop confidence that survives genuine failure and public criticism, and learn to hold accurate self-assessment without either inflation or collapse."
-    },
-    "plan": {
-      "week1": {
-        "watch": [],
-        "do": ""
-      },
-      "week2": {
-        "watch": [],
-        "do": ""
-      },
-      "week3": {
-        "watch": [],
-        "do": ""
-      },
-      "week4": {
-        "watch": [],
-        "do": ""
-      }
-    }
-  },
-  {
     "id": "emotional-regulation",
     "name": "Emotional regulation",
     "domain": "mindset",
@@ -339,7 +299,7 @@
       "know yourself"
     ],
     "relatedCategories": [
-      "confidence-building",
+      "journaling",
       "emotional-regulation",
       "giving-feedback"
     ],
@@ -381,7 +341,7 @@
     ],
     "relatedCategories": [
       "procrastination",
-      "confidence-building",
+      "anxiety-management",
       "deliberate-practice"
     ],
     "levels": {
@@ -2096,7 +2056,7 @@
     "id": "charisma-and-presence",
     "name": "Charisma and presence",
     "domain": "communication",
-    "blurb": "Being someone people attend to and trust, through warmth and steadiness rather than performance.",
+    "blurb": "Adjusting the observable behaviours people read as warmth and authority — where your attention goes, how you take up space, and what you do when a room turns to you.",
     "aliases": [
       "executive presence",
       "gravitas",
@@ -2105,7 +2065,7 @@
       "likability"
     ],
     "relatedCategories": [
-      "confidence-building",
+      "conversation-skills",
       "body-language",
       "public-speaking"
     ],
@@ -6670,7 +6630,7 @@
     ],
     "relatedCategories": [
       "conversation-skills",
-      "confidence-building",
+      "charisma-and-presence",
       "attachment-styles"
     ],
     "levels": {
@@ -7655,7 +7615,7 @@
     ],
     "relatedCategories": [
       "skincare",
-      "confidence-building",
+      "charisma-and-presence",
       "decluttering-and-organizing"
     ],
     "levels": {

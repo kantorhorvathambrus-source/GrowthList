@@ -18,6 +18,12 @@
       "retiredAt": "2026-09",
       "reason": "Merged. A chapter of people-management rather than its own subject; its one creator and that creator's two-part episode carried over.",
       "why-this-destination": "Not a judgement call — the subject and its evidence are literally there now."
+    },
+    "confidence-building": {
+      "to": "charisma-and-presence",
+      "retiredAt": "2026-09",
+      "reason": "An outcome, not a practice (rule 22) — and confirmed by what it held rather than asserted from the name: two secondary mappings, one of them dormant, and no creator whose main work it was.",
+      "why-this-destination": "charismaoncommand held the only live mapping here and is still listed, as the primary creator of charisma-and-presence — so a visitor arriving on the old slug lands on the creator they would have found, rather than on a topic index."
     }
   }
 }

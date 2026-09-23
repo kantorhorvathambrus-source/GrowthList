@@ -140,18 +140,6 @@
           "whyThisOne": "Covers openings, sustaining and exits in one pass, so you get the whole shape of a conversation rather than a single trick.",
           "durationMin": 8
         }
-      },
-      {
-        "id": "confidence-building",
-        "strength": "secondary",
-        "why": "Separates looking confident from being confident, and argues the performance is the weaker of the two — a useful corrective in this genre.",
-        "evidence": "Several long-form videos specifically about performed versus actual confidence, including material arguing against the channel's own earlier framing.",
-        "entryVideo": {
-          "title": "Real Confidence Looks Nothing Like You Think",
-          "videoId": "AcTYrpe__Y0",
-          "whyThisOne": "The clearest statement of their position that confidence signalling backfires, which is worth hearing before you copy any technique.",
-          "durationMin": 11
-        }
       }
     ],
     "role": "specialist",
