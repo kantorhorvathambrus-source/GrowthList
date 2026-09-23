@@ -610,9 +610,12 @@ this file has the rules, schema, and current state.
     of those were `search.list` at 100 units each — **the scarcest budget
     this project has**, the one CLAUDE.md already records as outliving the
     daily reset.
-    The path was three lines of reading away. `audit-stale-channel` imports
-    `resolveCreator` and calls it with an **empty** `handles` array, so path 1
-    is skipped and every record goes straight to path 2, the 100-unit search.
+    The path was three lines of reading away. `audit-stale-channel` imported
+    `resolveCreator` and called it with an **empty** `handles` array, so path 1
+    was skipped and every record went straight to path 2, the 100-unit search.
+    (Past tense since 2026-09-23: that path has been deleted, so the file no
+    longer shows the defect this rule was written from. The lesson is the
+    reading, not the file.)
     **The proof that this was avoidable rather than unlucky: I then read the
     imports of the other four and got all four right.** Same repository, same
     minute, same question — the difference was reading rather than recalling.
@@ -931,7 +934,8 @@ down:
 - **Applying a rule this file already states, backwards.**
   `audit-stale-channel.mjs` used a person's own name as its own
   affiliation term — the exact failure documented two sections above
-  where it was written.
+  where it was written. (That path was deleted on 2026-09-23 for
+  non-reproducibility; the example stands, the code no longer does.)
 - **Slips in the mechanics rather than the judgement.** A heredoc whose
   backticks were command-substituted, silently emptying a ledger field
   that then had to be found and repaired. A syntax check that ran a
@@ -1102,30 +1106,36 @@ this section first to know exactly where to resume.)*
   *"new channel"* — text this project had fetched on every audit run
   and never read. One hit across 13 records, no false positives, the
   case it was written for, detectable from data already in hand.
-  **A name search is the weak backstop.** Four hits across the same 13,
-  three of them false: a Chinese RSS-digest channel named after Andrej
-  Karpathy, a shorts channel using the mCoding name, and münecat's own
-  inactive side channel. Using a person's name as its own affiliation
-  term passes channels merely *named after* them — the failure this
-  file already warns about, committed inside the tool written to catch
-  a different one.
   **Conclusion: Sadler was a single miss, not a pattern** — and it was
   visible in data we held.
-  **QUARANTINED — DO NOT RUN IN ITS CURRENT FORM** (owner's decision).
-  Its expensive path is the check this entry already calls the weak one,
-  and it has got worse: **5 of 6 hits are now false positives**, up from 3
-  of 4. It costs ~2,600 units per run and spends **search allowance**,
-  which is the scarcest budget here. The cheap half — reading the
-  channel's own description — is what found Sadler, costs nothing, and
-  should keep running before every release.
-  **Pending: put path 2 behind an opt-in flag** so the free check runs
-  always and the name search only when asked. Until that lands this script
-  is not part of the pre-release set.
-  **Also pending: suppress a hit whose other channel is already `listed` in
-  `probed.json`.** The Sadler flag fires every run against a case that is
-  resolved — both records exist, `@gregorybsadler` active on stoicism and
-  `@reasoniocritthinking` archive on critical-thinking — and the audit has
-  the lookup it needs to know that.
+  **THE NAME-SEARCH BACKSTOP HAS BEEN DELETED (2026-09-23), AND NOT FOR
+  COST.** It was quarantined as expensive — ~2,600 units and ~26 search
+  calls per run, against the budget that outlives the daily reset — and
+  the plan was to gate it behind an opt-in flag and suppress hits already
+  `listed` in `probed.json`. Both were abandoned. **The disqualifying
+  fact is that its output is not reproducible.** Two identical
+  `search.list` queries for "Alan Becker" four minutes apart returned
+  different channel sets: seven channels in the first were absent from
+  the second and seven vice versa; run one surfaced five single-upload
+  channels, run two surfaced one, and a different one.
+  **So the false-positive figures this file carried were never rates.**
+  "Four hits, three false", then "5 of 6 hits are now false positives" —
+  each was ONE DRAW from a distribution nobody had characterised, quoted
+  as a measurement and used to justify a decision. The apparent worsening
+  from 3-of-4 to 5-of-6 measured nothing; two draws of a shuffled deck
+  differ without the deck changing.
+  **An unreproducible check cannot be evaluated at all**: its error rate
+  is unmeasurable, a hit cannot be confirmed by re-running it, and a
+  clean run is evidence of nothing. That defeats the flag (an
+  unreproducible check behind a flag is still unreproducible) and it
+  defeats the `probed.json` suppression, which would have silenced the
+  one false positive we could name while doing nothing about noise drawn
+  from a different set of strangers every run.
+  **The quarantine is lifted and the script is back in the pre-release
+  set**, now 13 calls and 13 units with no search allowance — verified by
+  its import list, which no longer contains `resolveCreator`. It also now
+  distinguishes a thrown error from a missing channel and exits non-zero
+  naming any record it could not check, rather than reporting a clean run.
 - **NO CATEGORY IS RETIRED UNTIL A `--small` ROUND HAS RUN.** The rule,
   replacing round-counting: the count was never the calibration —
   whether the search reached past the commercial top is.
