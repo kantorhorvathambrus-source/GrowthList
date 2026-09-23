@@ -41,9 +41,21 @@ const RULES = (facts) => [
   ['The starting video is a recommendation, not the best in the catalogue',
    // MEASURED by scripts/audit-unread-fields.mjs; the sentence disappears
    // rather than hedging if that audit has never run.
+   //
+   // THE GUARD TESTS THE MEASUREMENT, NOT THE AUDIT. It used to ask only
+   // whether `facts.method` existed, which is whether the audit RAN -- and
+   // the window comparison sits behind that audit's own --windows flag, so a
+   // run without it produced trailersMeasured: 0 and this rendered "Of the 0
+   // creators here who set their own channel trailer, 0 chose one older...".
+   // A measurement that did not happen and a measurement of zero must not
+   // read the same. trailersMeasured falsy => nothing was counted => say
+   // nothing. trailersOlderThanWindow may legitimately BE zero once the
+   // count is real, so it is checked for null rather than for truth.
    `Each card carries one video to start with, verified to belong to that
     channel. It is picked from the creator's recent uploads, so a good
     introduction published years ago is one we will not have seen.${facts.method
+      && facts.method.trailersMeasured
+      && facts.method.trailersOlderThanWindow != null
       ? ` Of the ${facts.method.trailersMeasured} creators here who set their own
          channel trailer, ${facts.method.trailersOlderThanWindow} chose one older
          than the window we look at.`

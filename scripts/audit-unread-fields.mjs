@@ -293,9 +293,18 @@ function analyse() {
       channelsWithTrailer: trailerRows.length,
       durationBands: bands,
       shorterThanOurThreeMinuteFloor: trailerRows.filter((t) => t.trailerMin != null && t.trailerMin < 3).length,
-      windowMeasured: windows.length,
-      insideOurFiftyUploadWindow: windows.filter((w) => w.inWindow).length,
-      olderThanOurFiftyUploadWindow: windows.filter((w) => w.olderThanWindow).length,
+      // NOT MEASURED AND MEASURED-ZERO MUST NOT LOOK THE SAME. The window
+      // comparison is behind --windows (1 unit per channel), so a run without
+      // that flag leaves `windows` empty. Writing 0 here said "259 channels
+      // checked, none had a trailer in the window" -- a finding -- when the
+      // truth was "nobody checked". build-data then coerced it with `?? 0` and
+      // the colophon rendered it, because its guard asked whether the audit
+      // had RUN rather than whether it had MEASURED anything. null is the
+      // honest value and every consumer must handle it.
+      windowMeasured: windows.length ? windows.length : null,
+      insideOurFiftyUploadWindow: windows.length ? windows.filter((w) => w.inWindow).length : null,
+      olderThanOurFiftyUploadWindow: windows.length ? windows.filter((w) => w.olderThanWindow).length : null,
+      windowsFlagPassed: WINDOWS,
       pct: pct(trailerRows.length, rows.length),
       agreesWithOurEntryVideo: trailerRows.filter((t) => t.agrees).length,
       trailerVideoUnavailable: trailerRows.filter((t) => !t.trailerExists).length,

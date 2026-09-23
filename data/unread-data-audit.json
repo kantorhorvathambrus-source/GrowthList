@@ -1,5 +1,5 @@
 {
-  "at": "2026-09-23T09:59:06.572Z",
+  "at": "2026-09-23T15:21:31.583Z",
   "channelsExamined": 259,
   "findings": {
     "handleMismatch": {
@@ -140,8 +140,8 @@
         {
           "id": "lennyspodcast",
           "bucket": "500k-1M",
-          "avgViews": 11907,
-          "videos": 1808
+          "avgViews": 11900,
+          "videos": 1809
         },
         {
           "id": "themathsorcerer",
@@ -158,8 +158,8 @@
         {
           "id": "docsnipes",
           "bucket": "1M-5M",
-          "avgViews": 26968,
-          "videos": 1660
+          "avgViews": 26936,
+          "videos": 1662
         },
         {
           "id": "hnasr",
@@ -188,14 +188,14 @@
         {
           "id": "dreamingspanish",
           "bucket": "500k-1M",
-          "avgViews": 45871,
-          "videos": 817
+          "avgViews": 45815,
+          "videos": 818
         },
         {
           "id": "johnhammond",
           "bucket": "1M-5M",
-          "avgViews": 48635,
-          "videos": 1889
+          "avgViews": 48610,
+          "videos": 1890
         },
         {
           "id": "gregisenberg",
@@ -206,14 +206,8 @@
       ]
     },
     "sizeBucketDrift": {
-      "count": 1,
-      "cases": [
-        {
-          "id": "databasestar",
-          "stored": "<100k",
-          "now": "100k-500k"
-        }
-      ]
+      "count": 0,
+      "cases": []
     },
     "topicCategories": {
       "channelsWithAny": 256,
@@ -264,9 +258,10 @@
         "unknown": 0
       },
       "shorterThanOurThreeMinuteFloor": 55,
-      "windowMeasured": 0,
-      "insideOurFiftyUploadWindow": 0,
-      "olderThanOurFiftyUploadWindow": 0,
+      "windowMeasured": 198,
+      "insideOurFiftyUploadWindow": 60,
+      "olderThanOurFiftyUploadWindow": 135,
+      "windowsFlagPassed": true,
       "pct": 76,
       "agreesWithOurEntryVideo": 2,
       "trailerVideoUnavailable": 0,

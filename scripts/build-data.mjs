@@ -263,8 +263,12 @@ if (existsSync(unreadPath)) {
     at: u.at ?? null,
     creatorsMeasured: u.channelsExamined ?? null,
     entryVideoWindow: 50,
-    trailersMeasured: trailer.windowMeasured ?? 0,
-    trailersOlderThanWindow: trailer.olderThanOurFiftyUploadWindow ?? 0,
+    // null, not 0, when the audit's --windows pass did not run. `?? 0` here
+    // turned "not measured" into "measured none", which the colophon then
+    // rendered as a sentence about zero creators. A count the reader sees must
+    // be able to say it does not exist.
+    trailersMeasured: trailer.windowMeasured ?? null,
+    trailersOlderThanWindow: trailer.olderThanOurFiftyUploadWindow ?? null,
     bigBucketLowReach: reach.bigBucketUnder50kAvgViews ?? 0,
     bigBucketLowReachThreshold: 50_000,
   };
