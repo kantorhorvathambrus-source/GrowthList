@@ -602,6 +602,34 @@ this file has the rules, schema, and current state.
     to keep a count up, and a new category enters only on its own merit,
     proposed to the owner with the reason.
 
+23. **BEFORE QUOTING A SCRIPT'S COST OR WHAT IT TOUCHES, READ ITS IMPORTS.
+    AN ESTIMATE FROM HABIT IS NOT AN ESTIMATE.**
+    Asked which budget the five pre-release audits would draw on, I said
+    `audit-stale-channel` would cost ~50 units and that none of the audits
+    spend search allowance. It cost **2,761 units on 187 calls**, and ~2,600
+    of those were `search.list` at 100 units each — **the scarcest budget
+    this project has**, the one CLAUDE.md already records as outliving the
+    daily reset.
+    The path was three lines of reading away. `audit-stale-channel` imports
+    `resolveCreator` and calls it with an **empty** `handles` array, so path 1
+    is skipped and every record goes straight to path 2, the 100-unit search.
+    **The proof that this was avoidable rather than unlucky: I then read the
+    imports of the other four and got all four right.** Same repository, same
+    minute, same question — the difference was reading rather than recalling.
+    **Two budgets, and conflating them is the specific error.** Units and
+    search allowance are not the same resource and do not refill the same
+    way. Report them separately, always: "2,761 units, ~26 search calls" says
+    something "2,761 units" does not.
+    This is the **third instance in one session** of the same failure, which
+    is the point rather than the severity: a number taken from a truncated
+    `tail -25` and used as a measurement; `@aiexplained` probed from memory
+    when the record says `@AIExplained-official`; and this. None produced a
+    wrong record. All three had the answer sitting in the repository, and all
+    three were caught by looking it up afterwards rather than before.
+    **The rule is not "estimates can be wrong".** It is that a cost or a
+    dependency is a FACT ABOUT A FILE, and there is no such thing as
+    estimating one. Open the file.
+
 ## Naming conventions
 
 - **Category id**: kebab-case of the English name (`public-speaking`,
@@ -1082,7 +1110,22 @@ this section first to know exactly where to resume.)*
   file already warns about, committed inside the tool written to catch
   a different one.
   **Conclusion: Sadler was a single miss, not a pattern** — and it was
-  visible in data we held. Run this before any release.
+  visible in data we held.
+  **QUARANTINED — DO NOT RUN IN ITS CURRENT FORM** (owner's decision).
+  Its expensive path is the check this entry already calls the weak one,
+  and it has got worse: **5 of 6 hits are now false positives**, up from 3
+  of 4. It costs ~2,600 units per run and spends **search allowance**,
+  which is the scarcest budget here. The cheap half — reading the
+  channel's own description — is what found Sadler, costs nothing, and
+  should keep running before every release.
+  **Pending: put path 2 behind an opt-in flag** so the free check runs
+  always and the name search only when asked. Until that lands this script
+  is not part of the pre-release set.
+  **Also pending: suppress a hit whose other channel is already `listed` in
+  `probed.json`.** The Sadler flag fires every run against a case that is
+  resolved — both records exist, `@gregorybsadler` active on stoicism and
+  `@reasoniocritthinking` archive on critical-thinking — and the audit has
+  the lookup it needs to know that.
 - **NO CATEGORY IS RETIRED UNTIL A `--small` ROUND HAS RUN.** The rule,
   replacing round-counting: the count was never the calibration —
   whether the search reached past the commercial top is.
