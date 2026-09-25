@@ -147,6 +147,11 @@
       "why": "Acquiring Minds",
       "at": "dataset"
     },
+    "@acumenlearning": {
+      "status": "rejected",
+      "why": "stock-analysis beginner tier (group A round 8): high subject density (46 of 56 long-form) and 0 of 56 intersect teaching framing",
+      "at": "batch 64"
+    },
     "@adamenfroy": {
       "status": "rejected",
       "why": "make-money-online affiliate content",
@@ -211,6 +216,11 @@
       "status": "rejected",
       "why": "surfaced by exam-preparation discovery; a 5M-20M productivity and business channel, not exam technique",
       "at": "batch 49"
+    },
+    "@amsa-online": {
+      "status": "rejected",
+      "why": "stock-analysis beginner tier (group A round 8): 26 of 73 long-form on accounting, 2 of 73 intersect teaching framing on reading statements",
+      "at": "batch 64"
     },
     "@andrejkarpathy": {
       "status": "listed",
@@ -762,6 +772,11 @@
       "why": "Ethan Evans",
       "at": "dataset"
     },
+    "@everythingmoney": {
+      "status": "rejected",
+      "why": "stock-analysis beginner tier (group A round 8): 1 of 200 long-form match financial-statement terms in the 200 most recent uploads",
+      "at": "batch 64"
+    },
     "@examstudyexpert": {
       "status": "listed",
       "why": "Exam Study Expert (William Wadsworth)",
@@ -976,6 +991,11 @@
       "status": "listed",
       "why": "How To Cook That (Ann Reardon)",
       "at": "dataset"
+    },
+    "@ifb_podcast": {
+      "status": "rejected",
+      "why": "stock-analysis beginner tier (group A round 8): 5 of 152 long-form teaching-framed on statements, as 29–42 minute podcast episodes",
+      "at": "batch 64"
     },
     "@iknowaguybicycles": {
       "status": "rejected",
@@ -1201,6 +1221,11 @@
       "status": "listed",
       "why": "Learn Linux TV",
       "at": "dataset"
+    },
+    "@learntoinvest": {
+      "status": "rejected",
+      "why": "stock-analysis beginner tier (group A round 8): 10 of 171 long-form match financial-statement terms",
+      "at": "batch 64"
     },
     "@legalvisionlaw": {
       "status": "rejected",
@@ -1882,6 +1907,11 @@
       "why": "Stumpy Nubs (James Hamilton)",
       "at": "dataset"
     },
+    "@superinvestor": {
+      "status": "rejected",
+      "why": "stock-analysis beginner tier (group A round 8): 12 of 197 long-form match financial-statement terms",
+      "at": "batch 64"
+    },
     "@svpg": {
       "status": "collision",
       "why": "resolves to 'Thomas Traveler', 0 uploads",
@@ -1937,6 +1967,11 @@
       "why": "seduction-advice genre",
       "at": "batch 57"
     },
+    "@theaccountingprofessor": {
+      "status": "rejected",
+      "why": "stock-analysis beginner tier (group A round 8): 5 of 109 long-form match financial-statement terms",
+      "at": "batch 64"
+    },
     "@thebehavioralarts": {
       "status": "rejected",
       "why": "probed for body-language, research end; the same case-reading genre as The Behavior Panel",
@@ -1975,6 +2010,11 @@
     "@thecodingtrain": {
       "status": "listed",
       "why": "The Coding Train (Daniel Shiffman)",
+      "at": "dataset"
+    },
+    "@thefinancestoryteller": {
+      "status": "listed",
+      "why": "The Finance Storyteller (Philip de Vroe)",
       "at": "dataset"
     },
     "@thefutur": {
@@ -2221,6 +2261,11 @@
       "status": "listed",
       "why": "Wireless Philosophy",
       "at": "dataset"
+    },
+    "@wisesheets": {
+      "status": "rejected",
+      "why": "stock-analysis beginner tier (group A round 8): 0 of 21 long-form match financial-statement terms",
+      "at": "batch 64"
     },
     "@wolfgangschannel": {
       "status": "rejected",

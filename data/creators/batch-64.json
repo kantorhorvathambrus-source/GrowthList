@@ -400,5 +400,62 @@
       "videoCount": 2574,
       "at": "2026-09"
     }
+  },
+  {
+    "id": "thefinancestoryteller",
+    "name": "The Finance Storyteller (Philip de Vroe)",
+    "handle": "@thefinancestoryteller",
+    "channelUrl": "https://www.youtube.com/@thefinancestoryteller",
+    "country": "NL",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A finance trainer who explains the income statement, balance sheet, cash flow statement and common ratios by walking through the published accounts of real companies.",
+    "longDescription": "Philip de Vroe runs finance training through classroom sessions and webinars as well as this channel, and the channel's method is consistent: take one real company's published statements — Microsoft, Walmart, Airbus, Uber — and read them line by line, naming each item and what it tells you. The core set covers each of the three financial statements separately, how to read all three together, and single ratios such as price-to-earnings and the current ratio, each explained on actual figures. Descriptions carry the full written explanation and timestamps, so a video can be followed as a text afterwards. Across the {{scannedWords}} most recent uploads the median runs {{medianPhrase}}, with short clips mixed in.",
+    "notFor": "Anyone looking for stock picks, a valuation model or an investing strategy — the channel teaches how to read accounts and what the numbers mean, and stops before telling you what to buy or whether you can beat the market.",
+    "formatTags": [
+      "tutorial",
+      "shorts"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 1,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "stock-analysis",
+        "strength": "primary",
+        "why": "Teaches how to read the three financial statements and the common ratios on real companies' accounts, the step the category's two existing creators take for granted before they start valuing a business.",
+        "evidence": "Separate explainers on the income statement, the balance sheet and reading all three statements together, ratio explainers for price-to-earnings and the current ratio, and a full analysis of a company's quarterly results, each built on a named company's published figures.",
+        "entryVideo": {
+          "title": "How to read financial statements",
+          "videoId": "nzi-jfktScM",
+          "whyThisOne": "Reads Microsoft's income statement, balance sheet and cash flow statement for one year in turn and shows how they connect, which is the whole of the beginner level applied to a real company.",
+          "durationMin": 22
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "The channel invites paid YouTube channel memberships for bonus content; no third-party sponsorship or affiliate placement appears in the descriptions of the 73 most recent long-form uploads, and the entry video carries none. Some of the core explainers date from 2018 to 2020 and use those years' figures; the method has not changed but the numbers have.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 36,
+      "longPct": 10,
+      "medianMin": 5,
+      "videoCount": 300,
+      "at": "2026-09"
+    }
   }
 ]
