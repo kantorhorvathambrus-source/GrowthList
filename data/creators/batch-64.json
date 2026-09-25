@@ -374,6 +374,7 @@
     "signals": [
       "sells-course",
       "practitioner",
+      "contested-claims",
       "strong-ideological-frame"
     ],
     "categories": [
@@ -391,7 +392,7 @@
       }
     ],
     "role": "specialist",
-    "caveats": "This is a commercial method with its own coaches, gyms and network, and every description links to them; no third-party sponsorship appears in the descriptions of the 45 most recent long-form uploads, and the entry video carries none. The method is presented as the right way rather than one way, so read it alongside the category's critic. Fewer than one upload in fifty, by title, turns to politics, medicine or hormone therapy rather than training.",
+    "caveats": "This is a commercial method with its own coaches, gyms and network, and every description links to them; no third-party sponsorship appears in the descriptions of the 45 most recent long-form uploads, and the entry video carries none. The method is presented as the right way rather than one way, so read it alongside the category's critic. Three specific positions on the channel run against mainstream evidence: rating how hard a set felt (RPE) is dismissed as useless, where this category's intermediate level recommends learning exactly that; a gallon of milk a day is advised for lifters trying to gain weight; and a guest episode argues that the medical consensus on cholesterol and heart disease is wrong. Fewer than one upload in fifty, by title, turns to politics, medicine or hormone therapy rather than training.",
     "catalogue": {
       "scanned": 50,
       "shortPct": 28,
