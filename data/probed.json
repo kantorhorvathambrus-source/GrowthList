@@ -302,6 +302,11 @@
       "why": "strength-training beginner tier (group A round 7): archive since 2024",
       "at": "batch 64"
     },
+    "@bbs77777": {
+      "status": "rejected",
+      "why": "habit-formation second voice (funded list): 5 of 24 long-form match habit terms; 83-upload catalogue",
+      "at": "batch 64"
+    },
     "@beabetterdev": {
       "status": "listed",
       "why": "Be A Better Dev",
@@ -802,6 +807,11 @@
       "why": "Exam Study Expert (William Wadsworth)",
       "at": "dataset"
     },
+    "@explorepsych": {
+      "status": "rejected",
+      "why": "habit-formation second voice (funded list): 1 of 73 long-form match habit terms",
+      "at": "batch 64"
+    },
     "@exposureninja": {
       "status": "listed",
       "why": "Exposure Ninja",
@@ -952,6 +962,11 @@
       "why": "testing-and-quality beginner tier (group A round 4): densest testing channel in the round (23 of 104 long-form match test terms) but 4 of 104 are teaching-framed, all .NET-specific and intermediate — xUnit lifecycle, Testcontainers, integration tests. Not a beginner tier; a possible intermediate candidate if that tier is ever funded",
       "at": "batch 64"
     },
+    "@habitsbackedbyscience": {
+      "status": "rejected",
+      "why": "habit-formation second voice (funded list): content farm: the same title uploaded two or three times (micro-breaks x2, hydration x2, nature exposure x3), all 200 scanned uploads 3-19 minutes with a median of six, topics drifting to fasting, finance and posture, no named person; its 71-of-71 habit density is the brand name in every title",
+      "at": "batch 64"
+    },
     "@hardwarehaven": {
       "status": "rejected",
       "why": "budget hardware bargain-hunting, not self-hosting practice. 70 of 173 long-form mention server/NAS terms but only 3 intersect any teaching framing, and the catalogue is what to buy rather than how to run it",
@@ -1031,6 +1046,11 @@
       "status": "listed",
       "why": "How To Cook That (Ann Reardon)",
       "at": "dataset"
+    },
+    "@hubermanlab": {
+      "status": "rejected",
+      "why": "habit-formation second voice (funded list): 2 of 156 long-form match habit terms; long-form is multi-topic interviews",
+      "at": "batch 64"
     },
     "@ifb_podcast": {
       "status": "rejected",
@@ -1702,6 +1722,11 @@
       "why": "Proko (Stan Prokopenko)",
       "at": "dataset"
     },
+    "@psycacademy": {
+      "status": "rejected",
+      "why": "habit-formation second voice (funded list): 2 long-form uploads among the 200 most recent",
+      "at": "batch 64"
+    },
     "@psychologyinseattle": {
       "status": "listed",
       "why": "Psychology In Seattle (Dr. Kirk Honda)",
@@ -1866,6 +1891,11 @@
       "status": "listed",
       "why": "Shopify Masters",
       "at": "dataset"
+    },
+    "@sidwarrier": {
+      "status": "rejected",
+      "why": "habit-formation second voice (funded list): 0 of 61 long-form match habit terms",
+      "at": "batch 64"
     },
     "@simnettnutrition": {
       "status": "rejected",
@@ -2142,6 +2172,11 @@
       "why": "Matthew Hussey",
       "at": "dataset"
     },
+    "@thementalwellbeingcollege": {
+      "status": "rejected",
+      "why": "habit-formation second voice (funded list): dormant since 2025-01; 4 of 85 long-form match habit terms",
+      "at": "batch 64"
+    },
     "@themindfulmovement": {
       "status": "rejected",
       "why": "guided-audio library that duplicates what the category already has, with no situational indexing to distinguish it",
@@ -2241,6 +2276,11 @@
       "status": "rejected",
       "why": "RULE 5 — declared audio languages are hi and en, and the long-form titles say \"in Simple Hindi\". Strong catalogue (23 of 50 uploads over 20m) and out of scope on language, not quality",
       "at": "batch 54"
+    },
+    "@theweekenduniversity": {
+      "status": "rejected",
+      "why": "habit-formation second voice (funded list): 1 of 84 long-form match habit terms; a lecture series of rotating speakers",
+      "at": "batch 64"
     },
     "@thinkfasttalksmart": {
       "status": "listed",
