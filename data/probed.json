@@ -262,6 +262,11 @@
       "why": "Aswath Damodaran",
       "at": "dataset"
     },
+    "@athleanx": {
+      "status": "rejected",
+      "why": "strength-training beginner tier (group A round 7): 3 of 84 long-form match barbell-strength terms",
+      "at": "batch 64"
+    },
     "@attachmentadam": {
       "status": "rejected",
       "why": "39 of 48 uploads under two minutes, median 1m, and the long-form is hooky gendered relationship content (\"7 Brutal Truths Your Husband Won't Tell You\")",
@@ -281,6 +286,11 @@
       "status": "listed",
       "why": "Barbell Medicine",
       "at": "dataset"
+    },
+    "@barbend": {
+      "status": "rejected",
+      "why": "strength-training beginner tier (group A round 7): archive since 2024",
+      "at": "batch 64"
     },
     "@beabetterdev": {
       "status": "listed",
@@ -331,6 +341,11 @@
       "status": "listed",
       "why": "Brian Lagerstrom",
       "at": "dataset"
+    },
+    "@brusselsbarbell924": {
+      "status": "rejected",
+      "why": "strength-training beginner tier (group A round 7): 1 long-form upload among 156",
+      "at": "batch 64"
     },
     "@buffer": {
       "status": "collision",
@@ -1062,6 +1077,11 @@
       "why": "DSA lectures but framed on placements and interviews (\"Quick Sort Explained for Placements\"), which is the framing this category brief excludes; 24 of 118 long-form match in the scanned window",
       "at": "batch 64"
     },
+    "@jeremyethier": {
+      "status": "rejected",
+      "why": "strength-training beginner tier (group A round 7): 7 of 160 long-form match barbell-strength terms in the 200 most recent uploads",
+      "at": "batch 64"
+    },
     "@jessewarden": {
       "status": "rejected",
       "why": "testing-and-quality beginner tier (group A round 4): 6 of 45 long-form match test terms and 0 of 45 intersect teaching framing — mutation, property and effect-based testing for people who already test",
@@ -1262,6 +1282,11 @@
       "why": "Marco Bucci",
       "at": "dataset"
     },
+    "@markwildman": {
+      "status": "rejected",
+      "why": "strength-training beginner tier (group A round 7): 1 of 20 long-form match barbell-strength terms",
+      "at": "batch 64"
+    },
     "@mattdavella": {
       "status": "listed",
       "why": "Matt D'Avella",
@@ -1352,6 +1377,11 @@
       "why": "Naomi Brockwell TV",
       "at": "dataset"
     },
+    "@naomikong": {
+      "status": "rejected",
+      "why": "strength-training beginner tier (group A round 7): 5 of 80 long-form match barbell-strength terms",
+      "at": "batch 64"
+    },
     "@naturalathleteclinic": {
       "status": "rejected",
       "why": "sports-nutrition beginner tier (group A round 6): 1 of 24 long-form match nutrition terms",
@@ -1441,6 +1471,11 @@
       "status": "listed",
       "why": "Olivier Girard - the Posture Guy",
       "at": "dataset"
+    },
+    "@omarisuf": {
+      "status": "rejected",
+      "why": "strength-training beginner tier (group A round 7): archive since 2024; 10 of 128 long-form teaching-framed, beginner deadlift guide dated 2020",
+      "at": "batch 64"
     },
     "@oxfordunion": {
       "status": "listed",
@@ -1787,6 +1822,11 @@
       "why": "Squat University (Dr. Aaron Horschig)",
       "at": "dataset"
     },
+    "@startingstrength": {
+      "status": "listed",
+      "why": "Starting Strength",
+      "at": "dataset"
+    },
     "@statquest": {
       "status": "listed",
       "why": "StatQuest with Josh Starmer",
@@ -2126,6 +2166,11 @@
       "status": "listed",
       "why": "TrainerRoad",
       "at": "dataset"
+    },
+    "@trainerwinny": {
+      "status": "rejected",
+      "why": "strength-training beginner tier (group A round 7): 1 of 124 long-form match barbell-strength terms",
+      "at": "batch 64"
     },
     "@twocentspbs": {
       "status": "listed",

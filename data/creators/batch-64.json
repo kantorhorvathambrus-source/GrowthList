@@ -342,5 +342,63 @@
       "videoCount": 349,
       "at": "2026-09"
     }
+  },
+  {
+    "id": "startingstrength",
+    "name": "Starting Strength",
+    "handle": "@startingstrength",
+    "channelUrl": "https://www.youtube.com/@startingstrength",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "The channel of the Starting Strength method: coaching videos on the squat, deadlift, press and bench press, and a simple novice linear progression for someone who has never lifted.",
+    "longDescription": "Starting Strength is a single named method — five barbell lifts, each taught through its own set progression, and a novice linear progression to run them in — and this channel is its video arm, alongside the method's own coaches and affiliated gyms. The teaching sits in the back catalogue: Mark Rippetoe coaching the squat, deadlift, press and bench press on lifters of varying size and build, taken from the method's 2010 instructional DVD, then shorter coach-led explanations of common errors and of how to run the first month of the progression. The recent output is mostly clipped previews from the Starting Strength Network, and {{shortPctWords}} per cent of the {{scannedWords}} most recent uploads are under two minutes. A beginner who wants one coherent answer rather than a survey of options will find it here.",
+    "notFor": "Anyone who wants several approaches weighed against each other — everything here is taught as the one correct way, and the recent uploads are podcast clips rather than lessons, so the useful material has to be found in the older catalogue.",
+    "formatTags": [
+      "tutorial",
+      "shorts"
+    ],
+    "level": [
+      "beginner"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "sells-course",
+      "practitioner",
+      "strong-ideological-frame"
+    ],
+    "categories": [
+      {
+        "id": "strength-training",
+        "strength": "primary",
+        "why": "Teaches the first four barbell lifts from nothing and a novice programme you can run the next day, where the category's other creators start at periodisation, autoregulation and training blocks.",
+        "evidence": "Full coaching videos for the squat, deadlift, bench press and press with Mark Rippetoe, later coach-led videos on fixing common deadlift and press errors, and explainers on running the novice linear progression through its first month.",
+        "entryVideo": {
+          "title": "The Novice Linear Progression: Your First 30 Days",
+          "videoId": "wqsZ7DE9fw8",
+          "whyThisOne": "Lays out how to run the first month of a simple progression on your own — what to lift, how to add weight, what to expect — which is the whole of the beginner level in eleven minutes.",
+          "durationMin": 11
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "This is a commercial method with its own coaches, gyms and network, and every description links to them; no third-party sponsorship appears in the descriptions of the 45 most recent long-form uploads, and the entry video carries none. The method is presented as the right way rather than one way, so read it alongside the category's critic. Fewer than one upload in fifty, by title, turns to politics, medicine or hormone therapy rather than training.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 28,
+      "longPct": 2,
+      "medianMin": 5,
+      "videoCount": 2574,
+      "at": "2026-09"
+    }
   }
 ]
