@@ -457,5 +457,63 @@
       "videoCount": 300,
       "at": "2026-09"
     }
+  },
+  {
+    "id": "drbradstanfield",
+    "name": "Dr Brad Stanfield",
+    "handle": "@drbradstanfield",
+    "channelUrl": "https://www.youtube.com/@drbradstanfield",
+    "country": "NZ",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A New Zealand GP summarising recent trials on blood pressure, exercise, sleep, cholesterol and supplements for people who want to age well, with the papers linked under every video.",
+    "longDescription": "Brad Stanfield is a primary care physician in New Zealand, and the channel turns new studies and guideline changes into short explainers on what they mean for someone trying to stay healthy for longer. Much of it is the unglamorous core — blood pressure targets, how much exercise and of what kind, sleep, cholesterol and statins — alongside debunkings of anti-ageing products and a steady strand on supplements. Each description lists the research papers the video draws on, and the credits name a separate scriptwriter and editor. Across the {{scannedWords}} most recent uploads the median runs {{medianPhrase}}.",
+    "notFor": "Anyone who wants the biology of ageing or the frontier of longevity research — this is a clinician's reading of trials for everyday decisions, and the supplement coverage sits beside a supplement the channel sells.",
+    "formatTags": [
+      "tutorial"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 2
+    },
+    "signals": [
+      "cites-research",
+      "practitioner",
+      "commercial-conflict"
+    ],
+    "categories": [
+      {
+        "id": "longevity",
+        "strength": "primary",
+        "why": "Covers the established interventions — blood pressure, exercise, sleep — as practical explainers built on current trials, where every creator already in the category is pitched at intermediate and advanced.",
+        "evidence": "Recurring explainers on blood pressure targets and lowering it without medication, the best exercise for blood pressure and for longevity, fitting exercise into a busy week, sleep quality, and cholesterol and statins, each description listing the studies cited.",
+        "entryVideo": {
+          "title": "Naturally Lower YOUR Blood Pressure",
+          "videoId": "szMdop7aBxw",
+          "whyThisOne": "Goes through the lifestyle measures with trial evidence for lowering blood pressure, one of the well-established levers the beginner level starts from, and its description lists sixteen sources and no products.",
+          "durationMin": 13
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "The channel sells its own multivitamin, linked from several 2025 videos, and from 2020 to 2023 over a hundred descriptions carried personal discount codes for three supplement retailers — while supplements are a regular topic of the videos. That is a direct commercial interest in one of the decisions the channel advises on; weigh the supplement videos accordingly. The blood-pressure, exercise and sleep material, including the entry video, links research papers rather than products. Every description carries a standing affiliate notice whether or not it contains product links. His medical registration is linked from the channel and was not independently checked. General information, not individual medical advice, as the channel itself says.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 4,
+      "medianMin": 12,
+      "videoCount": 358,
+      "at": "2026-09"
+    }
   }
 ]

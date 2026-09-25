@@ -672,6 +672,11 @@
       "why": "Andy Stapleton",
       "at": "dataset"
     },
+    "@drbradstanfield": {
+      "status": "listed",
+      "why": "Dr Brad Stanfield",
+      "at": "dataset"
+    },
     "@drdrayzday": {
       "status": "listed",
       "why": "Dr Dray",
@@ -812,6 +817,11 @@
       "why": "Firm Learning (Heinrich Rusche)",
       "at": "dataset"
     },
+    "@fitand50formula": {
+      "status": "rejected",
+      "why": "longevity beginner tier (group A round 9): 0 long-form uploads among the 200 most recent",
+      "at": "batch 64"
+    },
     "@fitnessfaqs": {
       "status": "listed",
       "why": "FitnessFAQs (Daniel Vadnal)",
@@ -826,6 +836,11 @@
       "status": "listed",
       "why": "Folding Ideas (Dan Olson)",
       "at": "dataset"
+    },
+    "@foundmyfitness": {
+      "status": "rejected",
+      "why": "longevity beginner tier (group A round 9): 22 of 117 long-form teaching-framed, as 40–220 minute interviews and deep dives — not a beginner tier",
+      "at": "batch 64"
     },
     "@freecodecamp": {
       "status": "listed",
@@ -1086,6 +1101,11 @@
       "status": "listed",
       "why": "Jeff Nippard",
       "at": "dataset"
+    },
+    "@jeffreypengmd": {
+      "status": "rejected",
+      "why": "longevity beginner tier (group A round 9): 2 of 57 long-form match longevity and risk-factor terms",
+      "at": "batch 64"
     },
     "@jeffsu": {
       "status": "rejected",
@@ -1356,6 +1376,11 @@
       "status": "listed",
       "why": "Eddie Woo",
       "at": "dataset"
+    },
+    "@modernhealthspan": {
+      "status": "rejected",
+      "why": "longevity beginner tier (group A round 9): 4 of 102 long-form teaching-framed, guest interviews",
+      "at": "batch 64"
     },
     "@modernmba": {
       "status": "listed",
@@ -1687,6 +1712,11 @@
       "why": "ReligionForBreakfast (Dr. Andrew Henry)",
       "at": "dataset"
     },
+    "@reverseagingrevolution": {
+      "status": "rejected",
+      "why": "longevity beginner tier (group A round 9): 18 of 158 long-form teaching-framed and all on exotic interventions — peptides, senescent cells, mitochondrial therapy, \"reverse aging\" — the opposite of a beginner tier built on established interventions",
+      "at": "batch 64"
+    },
     "@rexkrueger": {
       "status": "listed",
       "why": "Rex Krueger",
@@ -1746,6 +1776,11 @@
       "status": "rejected",
       "why": "reputation drift — A weekly iOS news roundup. The teaching moved into paid courses, which the channel descrip",
       "at": "batch 34"
+    },
+    "@seanhashmimd": {
+      "status": "rejected",
+      "why": "longevity beginner tier (group A round 9): 7 of 106 long-form match longevity and risk-factor terms",
+      "at": "batch 64"
     },
     "@selfmademillennial": {
       "status": "listed",
@@ -2126,6 +2161,11 @@
       "status": "listed",
       "why": "The School of Life",
       "at": "dataset"
+    },
+    "@thesheekeyscienceshow": {
+      "status": "rejected",
+      "why": "longevity beginner tier (group A round 9): ageing-biology research interviews and breakthroughs reviews — an advanced-tier voice, not a beginner tier",
+      "at": "batch 64"
     },
     "@thesleepdoctor": {
       "status": "listed",
