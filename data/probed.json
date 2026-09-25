@@ -567,6 +567,11 @@
       "why": "resolves to an unrelated Arabic-language channel with 4,529 uploads",
       "at": "batch 25"
     },
+    "@dailypracticalinsights": {
+      "status": "rejected",
+      "why": "habit-formation --small round (batch 64): no long-form uploads; 59-upload advice channel",
+      "at": "batch 64"
+    },
     "@dailystoic": {
       "status": "rejected",
       "why": "45 of 50 uploads under two minutes, median 1m, against a large commercial operation. The applied-practice angle is real but the channel is a shorts feed",
@@ -721,6 +726,11 @@
       "status": "listed",
       "why": "Dr. Spencer Nadolsky",
       "at": "dataset"
+    },
+    "@drnasaraliyps": {
+      "status": "rejected",
+      "why": "habit-formation --small round (batch 64): no long-form uploads among the 200 most recent",
+      "at": "batch 64"
     },
     "@dropshipunlocked": {
       "status": "rejected",
@@ -1072,6 +1082,11 @@
       "why": "In Depth Cine",
       "at": "dataset"
     },
+    "@insideourminds88": {
+      "status": "rejected",
+      "why": "habit-formation --small round (batch 64): book-summary channel; 0 of 179 long-form match habit terms",
+      "at": "batch 64"
+    },
     "@insomniacoach": {
       "status": "rejected",
       "why": "47 of 50 uploads under two minutes; the three long-form videos are client success-story interviews for a coaching programme",
@@ -1251,6 +1266,11 @@
       "status": "listed",
       "why": "Kevin Powell",
       "at": "dataset"
+    },
+    "@knocknoggin": {
+      "status": "rejected",
+      "why": "habit-formation --small round (batch 64): 1 of 96 long-form match habit terms",
+      "at": "batch 64"
     },
     "@kodekloud": {
       "status": "listed",
@@ -1725,6 +1745,11 @@
     "@psycacademy": {
       "status": "rejected",
       "why": "habit-formation second voice (funded list): 2 long-form uploads among the 200 most recent",
+      "at": "batch 64"
+    },
+    "@psychleadership": {
+      "status": "rejected",
+      "why": "habit-formation --small round (batch 64): 1 of 36 long-form match habit terms; a leadership podcast",
       "at": "batch 64"
     },
     "@psychologyinseattle": {

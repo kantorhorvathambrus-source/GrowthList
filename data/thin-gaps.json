@@ -345,6 +345,22 @@
       "smallRound": "The --small round, with everything above 500k subscribers hidden, changed the names and not the kind: smaller store-builder channels and coaching funnels. The pattern here is not scarcity of channels but scarcity of teaching — the subject is dominated by people selling a way to start a store.",
       "conclusion": "One creator stands. Two rounds, the second deliberately below the commercial top.",
       "visitorNote": "We searched this twice, including a round with the biggest channels hidden. Almost everything found was selling a course or a service rather than teaching the work, so one entry stands rather than a second we would not defend."
+    },
+    "habit-formation": {
+      "rounds": [
+        "batch 64 discovery (medium band, explainer end)",
+        "batch 64 discovery (long band, academic-lecture end)",
+        "batch 64 (--small, behavioural-literature vocabulary)",
+        "batch 64 discovery (medium band, clinical habit-reversal end)"
+      ],
+      "found": "Four rounds across four ends. The explainer end returned one habit-dense channel, Habits Backed by Science, which is a content farm: the same titles uploaded two and three times, uniform nine-minute videos drifting into fasting and finance, no named person, its density coming from the brand name in every title. The academic end returned one-off institutional lectures; its one named individual, Nir Eyal, teaches habit-forming product design and attention rather than building your own habits. The --small round returned book-summary, audiobook and motivation channels, none with more than one long-form habit video. The clinical end was dominated by Therapy in a Nutshell (11 of 50 results), already listed, whose habit titles are practices for depression, anxiety and regulation — the same body of work as its emotional-regulation mapping, so a second mapping would count it twice (rule 4).",
+      "unprobed": [
+        "behaviour-change researchers publishing talks under their own names rather than through institutions",
+        "occupational therapy and health-coaching professions"
+      ],
+      "at": "batch 64",
+      "smallRound": "A --small round in the vocabulary of the literature (implementation intentions, habit stacking, cue and routine) returned 49 channels, 38 above the upload floor, none holding more than two results: book summaries of Atomic Habits, audiobook narration and motivation. The five that were not obviously summaries scored at most one long-form habit video each.",
+      "conclusion": "Stays at one creator. The search failed to find a second voice from the behavioural literature at any of four ends, and the most habit-dense channel found was a content farm — the outcome-category pattern rule 22 describes, though habit-formation passes rule 22 itself: a visitor can go and attach a small behaviour to a cue."
     }
   },
   "retiredThenReopened": {
