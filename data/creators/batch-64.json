@@ -171,5 +171,61 @@
       "videoCount": 640,
       "at": "2026-09"
     }
+  },
+  {
+    "id": "netninja",
+    "name": "Net Ninja (Shaun Pelling)",
+    "handle": "@netninja",
+    "channelUrl": "https://www.youtube.com/@netninja",
+    "country": "GB",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A long-running web-development tutorial channel whose numbered series include a fourteen-part beginner course on unit testing with Vitest.",
+    "longDescription": "Net Ninja is a web-development teaching channel built almost entirely from numbered tutorial series — JavaScript, React, Node, Firebase and a long list of tools, each taught in sequential episodes with the course files on GitHub. Its unit-testing series starts from what a unit test is and why you would write one, then covers a first test, matchers, what makes a test readable, test-driven development, async code, mocks and spies, in episodes that run from a few minutes to about twenty. The channel as a whole favours short lessons: across the {{scannedWords}} most recent uploads the median is {{medianPhrase}}. The testing material is JavaScript-specific; the ideas transfer, the syntax does not.",
+    "notFor": "Anyone past their first test suite — the series stops at mocks and spies and does not reach test boundaries, integration testing or how to keep a large suite fast, and outside that one series the channel is general web development rather than testing.",
+    "formatTags": [
+      "tutorial"
+    ],
+    "level": [
+      "beginner"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 2
+    },
+    "signals": [
+      "sells-course",
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "testing-and-quality",
+        "strength": "secondary",
+        "why": "Starts from what a unit test is and walks through writing the first one, where the category's other two creators assume you already test and argue about how to do it better.",
+        "evidence": "A fourteen-part \"Unit Testing (Vitest) Tutorial\" series from late 2025: what unit testing is, writing a first test, matchers, writing better tests, test-driven development, async functions, mock functions and spies.",
+        "entryVideo": {
+          "title": "Unit Testing (Vitest) Tutorial #1 - What is Unit Testing?",
+          "videoId": "XdDZKeM5_pQ",
+          "whyThisOne": "Opens the series by explaining what a unit test checks and setting up a project to run one, so the next episode can go straight to writing it.",
+          "durationMin": 11
+        }
+      }
+    ],
+    "role": "generalist",
+    "caveats": "Every description in the series links to the creator's own paid site, where the same course is released early and a testing bundle is sold; the YouTube episodes are complete without it. No third-party sponsorship was found in the descriptions of the 110 most recent long-form uploads. The examples are JavaScript with Vitest, so a Python or C# learner will need to translate the syntax.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 2,
+      "longPct": 0,
+      "medianMin": 7,
+      "videoCount": 2812,
+      "at": "2026-09"
+    }
   }
 ]

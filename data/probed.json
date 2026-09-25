@@ -457,6 +457,11 @@
       "why": "Coaching for Leaders (Dr. Dave Stachowiak)",
       "at": "dataset"
     },
+    "@codecourse": {
+      "status": "rejected",
+      "why": "testing-and-quality beginner tier (group A round 4): 3 of 66 long-form match test terms in the 200 most recent uploads — too thin on the subject to judge further",
+      "at": "batch 64"
+    },
     "@codeio": {
       "status": "rejected",
       "why": "not English — Tamil-language teaching channel (rule 5)",
@@ -466,6 +471,16 @@
       "status": "rejected",
       "why": "reputation drift — Unity Asset Store roundups and Steam-marketing interviews; teaching largely moved to paid ",
       "at": "batch 33"
+    },
+    "@codingcodes": {
+      "status": "rejected",
+      "why": "testing-and-quality beginner tier (group A round 4): 7 long-form uploads among the 200 most recent, none matching test terms",
+      "at": "batch 64"
+    },
+    "@codyengelcodes": {
+      "status": "rejected",
+      "why": "testing-and-quality beginner tier (group A round 4): 5 of 97 long-form match test terms in its whole 125-upload catalogue — too thin on the subject to judge further",
+      "at": "batch 64"
     },
     "@coffeezilla": {
       "status": "listed",
@@ -837,6 +852,11 @@
       "why": "Gregory B. Sadler - That Philosophy Guy",
       "at": "dataset"
     },
+    "@gui.ferreira": {
+      "status": "rejected",
+      "why": "testing-and-quality beginner tier (group A round 4): densest testing channel in the round (23 of 104 long-form match test terms) but 4 of 104 are teaching-framed, all .NET-specific and intermediate — xUnit lifecycle, Testcontainers, integration tests. Not a beginner tier; a possible intermediate candidate if that tier is ever funded",
+      "at": "batch 64"
+    },
     "@hardwarehaven": {
       "status": "rejected",
       "why": "budget hardware bargain-hunting, not self-hosting practice. 70 of 173 long-form mention server/NAS terms but only 3 intersect any teaching framing, and the catalogue is what to buy rather than how to run it",
@@ -972,6 +992,11 @@
       "why": "sleep and ambient meditation audio — a listening product rather than a practice",
       "at": "batch 44"
     },
+    "@javaguides": {
+      "status": "rejected",
+      "why": "testing-and-quality beginner tier (group A round 4): 0 of 60 long-form match test terms in the 200 most recent uploads",
+      "at": "batch 64"
+    },
     "@jayshettypodcast.": {
       "status": "collision",
       "why": "returned by a podcasting-topic search: it is a podcast, not teaching about podcasting",
@@ -1007,6 +1032,11 @@
       "why": "DSA lectures but framed on placements and interviews (\"Quick Sort Explained for Placements\"), which is the framing this category brief excludes; 24 of 118 long-form match in the scanned window",
       "at": "batch 64"
     },
+    "@jessewarden": {
+      "status": "rejected",
+      "why": "testing-and-quality beginner tier (group A round 4): 6 of 45 long-form match test terms and 0 of 45 intersect teaching framing — mutation, property and effect-based testing for people who already test",
+      "at": "batch 64"
+    },
     "@jherr": {
       "status": "listed",
       "why": "Jack Herrington",
@@ -1020,6 +1050,11 @@
     "@joeyblue1": {
       "status": "rejected",
       "why": "SQL-dense (23 of 25 long-form) but the catalogue is only 25 long-form videos with a four-minute median, and the beginner material is SQL Server Management Studio rather than SQL",
+      "at": "batch 64"
+    },
+    "@johannesfrey": {
+      "status": "rejected",
+      "why": "testing-and-quality beginner tier (group A round 4): 4 of 39 long-form match test terms; small catalogue, testing not its subject",
       "at": "batch 64"
     },
     "@jonloomer": {
@@ -1076,6 +1111,11 @@
       "status": "listed",
       "why": "KodeKloud",
       "at": "dataset"
+    },
+    "@krisjordan": {
+      "status": "rejected",
+      "why": "testing-and-quality beginner tier (group A round 4): 4 of 152 long-form match test terms in its whole 179-upload catalogue — too thin on the subject to judge further",
+      "at": "batch 64"
     },
     "@labmuffinbeautyscience": {
       "status": "listed",
@@ -1291,6 +1331,11 @@
       "status": "rejected",
       "why": "5 of 200 long-form match DSA terms — but that is a fact about the window, not the channel: 3,060 uploads across many course series, so the DSA playlist sits outside the 200 most recent. Not assessed either way",
       "at": "batch 64"
+    },
+    "@netninja": {
+      "status": "listed",
+      "why": "Net Ninja (Shaun Pelling)",
+      "at": "dataset"
     },
     "@networkchuck": {
       "status": "listed",
@@ -1886,6 +1931,11 @@
       "status": "listed",
       "why": "The Plottery",
       "at": "dataset"
+    },
+    "@thepragmaticprogrammer": {
+      "status": "rejected",
+      "why": "testing-and-quality beginner tier (group A round 4): 3 of 64 long-form match test terms",
+      "at": "batch 64"
     },
     "@theramseyshow": {
       "status": "listed",
