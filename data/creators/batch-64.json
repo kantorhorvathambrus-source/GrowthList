@@ -116,5 +116,60 @@
       "videoCount": 165,
       "at": "2026-09"
     }
+  },
+  {
+    "id": "simplesnippets",
+    "name": "Simple Snippets (Tanmay Sakpal)",
+    "handle": "@simplesnippets",
+    "channelUrl": "https://www.youtube.com/@simplesnippets",
+    "country": "IN",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Diagram-led computer-science teaching whose data-structures videos ask what each structure is for before showing any code.",
+    "longDescription": "Simple Snippets is a broad computer-science teaching channel — its own description lists programming, databases, networking, computer architecture, operating systems and mathematics — and roughly half its long-form output is data structures. The distinguishing habit is in the titles: \"What is HASHING? Why do we NEED it?\", \"What is Balancing a binary tree and why do we need balancing\", \"What is Infix Prefix & Postfix Expressions in Data Structures | Why do we need them?\". Each one names the problem the structure solves before the structure, which is the opposite order from interview-pattern teaching. Explanations are built on hand-drawn diagrams with code following afterwards rather than leading. {{longCountWords|cap}} of the {{scannedWords}} most recent uploads run past twenty minutes, with a median of {{medianPhrase}}.",
+    "notFor": "Anyone drilling for interviews or contests — there are no pattern catalogues or timed problem sets here, and the pace assumes you want the concept rather than the trick. Recent uploads have moved to computer graphics and competitive programming, so the data-structures material is a back catalogue rather than something still growing.",
+    "formatTags": [
+      "tutorial",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 3,
+      "energy": 2,
+      "selfPromotion": 1,
+      "depth": 3
+    },
+    "signals": [],
+    "categories": [
+      {
+        "id": "algorithms-and-data-structures",
+        "strength": "primary",
+        "why": "Asks what problem each structure solves before showing it, where the category's other two creators start from interview patterns and contest technique and assume you already know why a hash table exists.",
+        "evidence": "Roughly half the long-form catalogue is data structures, built around explicitly comparative explanations — hashing introduced as array against hash table, trees against graphs, balanced against unbalanced — with diagrams first and code second.",
+        "entryVideo": {
+          "title": "What is a Tree? | Introduction to Tree Data Structure (diagram) | Important Tree Terms & Properties",
+          "videoId": "URRNruf2yVk",
+          "whyThisOne": "Defines a structure and its vocabulary from nothing, which is the step both existing creators skip. It carries no sponsorship, unlike the channel's hashing video.",
+          "durationMin": 32
+        }
+      }
+    ],
+    "role": "generalist",
+    "caveats": "About one long-form upload in twenty carries a sponsorship, in the cases named for Unacademy, an exam-coaching platform — none of them is the data-structures material listed here, and the entry video carries none. The channel's recent output is computer graphics and competitive programming, so the data-structures videos date from 2020 to 2023; the concepts have not moved but the on-screen tooling has.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 18,
+      "longPct": 28,
+      "medianMin": 12,
+      "videoCount": 640,
+      "at": "2026-09"
+    }
   }
 ]

@@ -17,6 +17,11 @@
       "why": "staffing agency channel returned by a hiring-topic search — recruiting-vendor marketing, not teaching",
       "at": "batch 46"
     },
+    "@5minutesengineering": {
+      "status": "rejected",
+      "why": "GATE exam-preparation channel, same reason as gatesmashers",
+      "at": "batch 64"
+    },
     "@AmandaRachLee": {
       "status": "rejected",
       "why": "journaling as craft and aesthetics — planner setups, sticker collections, cyanotype. The category blurb distinguishes journaling that produces clarity or a decision from filling pages, and this is the second thing",
@@ -226,6 +231,11 @@
       "status": "rejected",
       "why": "Magnetic Memory Method — memory techniques rather than exam preparation, and memory-techniques is already served",
       "at": "batch 49"
+    },
+    "@apnacollegeofficial": {
+      "status": "rejected",
+      "why": "placement-training company channel, 1,060 uploads of interview and course content",
+      "at": "batch 64"
     },
     "@aragusea": {
       "status": "listed",
@@ -491,6 +501,11 @@
       "status": "listed",
       "why": "CrashCourse",
       "at": "dataset"
+    },
+    "@csdojo": {
+      "status": "rejected",
+      "why": "15 of 87 long-form match DSA terms; the catalogue has moved to career and general-tech content and the last upload was 2025-12-21",
+      "at": "batch 64"
     },
     "@cxl": {
       "status": "collision",
@@ -767,6 +782,11 @@
       "why": "The Gastro Girl Podcast",
       "at": "dataset"
     },
+    "@gatesmashers": {
+      "status": "rejected",
+      "why": "GATE exam-preparation channel — syllabus coverage for an Indian postgraduate entrance exam rather than teaching a practice",
+      "at": "batch 64"
+    },
     "@gcntech": {
       "status": "rejected",
       "why": "bike-tech news and product coverage rather than maintenance teaching; 33 of 50 uploads under two minutes",
@@ -776,6 +796,11 @@
       "status": "listed",
       "why": "GeekaWhat (James Cousins)",
       "at": "dataset"
+    },
+    "@geeksforgeeksvideos": {
+      "status": "rejected",
+      "why": "content-platform channel, 4,146 uploads — article-to-video pipeline rather than a teaching catalogue",
+      "at": "batch 64"
     },
     "@gentlemansgazette": {
       "status": "listed",
@@ -976,6 +1001,11 @@
       "status": "rejected",
       "why": "reputation drift — Short-form AI tool tips.",
       "at": "batch 30"
+    },
+    "@jennyslecturescsit": {
+      "status": "rejected",
+      "why": "DSA lectures but framed on placements and interviews (\"Quick Sort Explained for Placements\"), which is the framing this category brief excludes; 24 of 118 long-form match in the scanned window",
+      "at": "batch 64"
     },
     "@jherr": {
       "status": "listed",
@@ -1217,6 +1247,11 @@
       "why": "münecat",
       "at": "dataset"
     },
+    "@mycodeschool": {
+      "status": "rejected",
+      "why": "the canonical why-does-this-structure-exist channel and a real loss — 69 of 101 long-form match DSA terms with titles like \"Data structures: Introduction to stack\" — but archived since 2016-10-24 and its declared audio languages include Hindi as well as English. Held rather than closed: worth revisiting if the category ever needs a third and an archive creator is acceptable",
+      "at": "batch 64"
+    },
     "@mywifequitherjob": {
       "status": "rejected",
       "why": "reputation drift — Opportunity listicles: '8 Claude AI Side Hustles That Each Make $100K/Yr', '9 UNSEXY Produ",
@@ -1251,6 +1286,11 @@
       "status": "listed",
       "why": "Nelson Dellis",
       "at": "dataset"
+    },
+    "@nesoacademy": {
+      "status": "rejected",
+      "why": "5 of 200 long-form match DSA terms — but that is a fact about the window, not the channel: 3,060 uploads across many course series, so the DSA playlist sits outside the 200 most recent. Not assessed either way",
+      "at": "batch 64"
     },
     "@networkchuck": {
       "status": "listed",
@@ -1555,6 +1595,11 @@
     "@shopifymasters": {
       "status": "listed",
       "why": "Shopify Masters",
+      "at": "dataset"
+    },
+    "@simplesnippets": {
+      "status": "listed",
+      "why": "Simple Snippets (Tanmay Sakpal)",
       "at": "dataset"
     },
     "@simpletivity": {
