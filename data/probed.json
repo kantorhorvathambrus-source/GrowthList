@@ -137,6 +137,11 @@
       "why": "probed for academic-writing; ESL-focused academic English coaching rather than the craft or structure of research writing",
       "at": "batch 52"
     },
+    "@accessibleweb": {
+      "status": "rejected",
+      "why": "ui-ux-design practising-designer slot (funded list): vendor: the channel description names its flagship product, the RAMP accessibility testing suite — the worklist asks for a non-vendor here",
+      "at": "batch 64"
+    },
     "@acquiredfm": {
       "status": "listed",
       "why": "Acquired",
@@ -337,6 +342,11 @@
       "why": "44 of 50 uploads over 20m but its own description says it is 'Watch Me Work' rather than a how-to channel, and the recent catalogue is bike-show coverage and travel",
       "at": "batch 51"
     },
+    "@blinkux": {
+      "status": "rejected",
+      "why": "ui-ux-design practising-designer slot (funded list): agency channel, archive since 2020; 12 of 62 long-form on research terms",
+      "at": "batch 64"
+    },
     "@bloopanimation": {
       "status": "listed",
       "why": "Bloop Animation",
@@ -351,6 +361,11 @@
       "status": "rejected",
       "why": "archive since January 2023, and the catalogue is a War and Peace reading project rather than Stoicism",
       "at": "batch 61"
+    },
+    "@briandesign": {
+      "status": "rejected",
+      "why": "ui-ux-design practising-designer slot (funded list): WordPress and hosting tutorials rather than UX",
+      "at": "batch 64"
     },
     "@brianlagerstrom": {
       "status": "listed",
@@ -560,6 +575,11 @@
     "@csdojo": {
       "status": "rejected",
       "why": "15 of 87 long-form match DSA terms; the catalogue has moved to career and general-tech content and the last upload was 2025-12-21",
+      "at": "batch 64"
+    },
+    "@cuttingedgeschool": {
+      "status": "rejected",
+      "why": "ui-ux-design practising-designer slot (funded list): 1 of 27 long-form match UX terms; a course school",
       "at": "batch 64"
     },
     "@cxl": {
@@ -1182,6 +1202,11 @@
       "why": "strength-training beginner tier (group A round 7): 7 of 160 long-form match barbell-strength terms in the 200 most recent uploads | hypertrophy-training (round 10): evaluated on its own terms and not taken — 18 of 160 long-form are beginner-framed hypertrophy teaching, but descriptions sell the creator's own programmes, app and protein powder, a direct commercial conflict on protein advice; House of Hypertrophy chosen instead. NOT a channel-wide rejection",
       "at": "batch 64"
     },
+    "@jesseshowalter": {
+      "status": "rejected",
+      "why": "ui-ux-design practising-designer slot (funded list): 4 of 84 long-form teaching-framed, mostly Framer site-building",
+      "at": "batch 64"
+    },
     "@jessewarden": {
       "status": "rejected",
       "why": "testing-and-quality beginner tier (group A round 4): 6 of 45 long-form match test terms and 0 of 45 intersect teaching framing — mutation, property and effect-based testing for people who already test",
@@ -1262,6 +1287,11 @@
       "why": "tax-software vendor channel",
       "at": "batch 47"
     },
+    "@kerevdesign": {
+      "status": "rejected",
+      "why": "ui-ux-design practising-designer slot (funded list): dormant since 2025-04; 0 of 6 long-form on research terms",
+      "at": "batch 64"
+    },
     "@kevinpowell": {
       "status": "listed",
       "why": "Kevin Powell",
@@ -1276,6 +1306,11 @@
       "status": "listed",
       "why": "KodeKloud",
       "at": "dataset"
+    },
+    "@kolejain": {
+      "status": "rejected",
+      "why": "ui-ux-design practising-designer slot (funded list): visual redesigns (dashboards, website makeovers) rather than research-grounded design, 25 long-form uploads; the \"every UI/UX concept\" video opens with a discount link for Mobbin, a UI-pattern library — the subject being taught (rule 24)",
+      "at": "batch 64"
     },
     "@krishnaik06": {
       "status": "rejected",
@@ -1356,6 +1391,11 @@
       "status": "listed",
       "why": "Luca Lampariello",
       "at": "dataset"
+    },
+    "@lucilalizano": {
+      "status": "rejected",
+      "why": "ui-ux-design practising-designer slot (funded list): archive since 2015; 0 of 77 uploads on UX terms",
+      "at": "batch 64"
     },
     "@lukebarousse": {
       "status": "rejected",
@@ -2381,6 +2421,16 @@
       "status": "listed",
       "why": "Upright Health",
       "at": "dataset"
+    },
+    "@usefulusability": {
+      "status": "rejected",
+      "why": "ui-ux-design practising-designer slot (funded list): archive since 2018; 29 uploads",
+      "at": "batch 64"
+    },
+    "@uxanudeep": {
+      "status": "rejected",
+      "why": "ui-ux-design practising-designer slot (funded list): a career and mentorship channel: descriptions open with an application link for paid mentorship, reviews are \"a UX recruiter reviews a portfolio\" ending in hiring scores; research terms in 1 of 90 long-form titles against career terms in 19",
+      "at": "batch 64"
     },
     "@vanessalau": {
       "status": "rejected",
