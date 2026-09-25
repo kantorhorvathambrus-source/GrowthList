@@ -682,6 +682,45 @@ this file has the rules, schema, and current state.
     a separate read of the descriptions of the specific videos being
     considered.
 
+    **THE LIMIT OF THE CHECK: A SPONSORSHIP REGEX FINDS SPONSORSHIP THAT
+    IS DISCLOSED, NOT EVERY PLACEMENT.** Round 2 of group A
+    (`databases-sql`) found techTFQ's "Learn Basic SQL in 3.5 hrs"
+    opening its description with *"Get a 30-day free trial of Brilliant
+    using the link"*. It matched none of `sponsor`, `#ad`,
+    `paid promotion`, `brought to you by` — because the description never
+    uses the vocabulary of disclosure. Reading the description caught
+    it. Counting would have passed it as clean. **So a zero from the
+    regex means "nothing was DISCLOSED", never "nothing is PLACED",** and
+    a report that says "sponsor-free" on the strength of a regex alone
+    says more than the check can.
+    **What a researcher reads for instead — in the full description, top
+    to bottom, of every candidate entry video:**
+    - **A third-party brand name next to a call to action** — "free
+      trial", "sign up", "get N% off", "use code", "first N people",
+      "using my link", "check out". The brand plus the imperative is the
+      placement; no disclosure word is needed for it to be one.
+    - **Tracked or shortened links to someone else's product** —
+      `bit.ly`, `?ref=`, `utm_`, `/go/`, a vanity subdomain. The
+      creator's own course or newsletter link is `sells-course`
+      boilerplate, a different finding (see above); a tracked link to a
+      third party is a placement.
+    - **Affiliate language** — "I earn a commission", "affiliate link",
+      Amazon Associates, a gear list of products with links.
+    - **Position.** A placement in the first two lines, above the
+      summary of what the video teaches, is written for the viewer's
+      first glance — that is where Brilliant sat.
+    - **Chapter markers** — a `0:00 Sponsor` or `Sponsored segment`
+      timestamp states a read the description text may not.
+    **And what the description cannot show at all:** a spoken ad read
+    with nothing written about it. A description that is clean on every
+    point above is evidence about the description, not proof about the
+    video. Say "no placement in the description" when that is what was
+    checked, and keep "sponsor-free" for when it is the whole claim.
+    The rule 24 exclusion test is unchanged — a placement for the thing
+    being taught still disqualifies the video; a placement for something
+    else still only needs disclosing, and choosing a clean alternative
+    where one exists.
+
 ## Naming conventions
 
 - **Category id**: kebab-case of the English name (`public-speaking`,
