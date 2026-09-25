@@ -232,6 +232,11 @@
       "why": "Andrej Karpathy",
       "at": "dataset"
     },
+    "@andresthedesigner": {
+      "status": "rejected",
+      "why": "ui-ux-design practising-designer slot, third round (funded list): 5 of 21 long-form match UX terms",
+      "at": "batch 64"
+    },
     "@andrewhuang": {
       "status": "listed",
       "why": "Andrew Huang",
@@ -632,6 +637,11 @@
       "why": "NLP-framed persuasion training; the evidence base is the thing the category needs a check against, not a source",
       "at": "batch 50"
     },
+    "@davidtravis": {
+      "status": "listed",
+      "why": "David Travis",
+      "at": "dataset"
+    },
     "@daviemach": {
       "status": "listed",
       "why": "Davie Mach",
@@ -846,6 +856,11 @@
       "status": "listed",
       "why": "Exposure Ninja",
       "at": "dataset"
+    },
+    "@femkedesign": {
+      "status": "rejected",
+      "why": "ui-ux-design practising-designer slot, third round (funded list): 2 of 52 long-form on design process",
+      "at": "batch 64"
     },
     "@fightsciencecollective": {
       "status": "rejected",
@@ -1487,10 +1502,20 @@
       "why": "Minus The Gym",
       "at": "dataset"
     },
+    "@missangielu": {
+      "status": "rejected",
+      "why": "ui-ux-design practising-designer slot, third round (funded list): 0 of 179 uploads match UX terms",
+      "at": "batch 64"
+    },
     "@misterwootube": {
       "status": "listed",
       "why": "Eddie Woo",
       "at": "dataset"
+    },
+    "@mizko": {
+      "status": "rejected",
+      "why": "ui-ux-design practising-designer slot, third round (funded list): reputation drift: the research-led design work (a real project from data to UI, user interviews, the design process) is 8 of 152 long-form, dated 2021 to 2024, and the three most clearly research-led are all from 2021; recent long-form is founder vlogs, side hustles and tech news, and every description opens with his own course and UI-kit sales",
+      "at": "batch 64"
     },
     "@modernhealthspan": {
       "status": "rejected",
@@ -1796,6 +1821,11 @@
       "status": "listed",
       "why": "Psychology In Seattle (Dr. Kirk Honda)",
       "at": "dataset"
+    },
+    "@punitchawla": {
+      "status": "rejected",
+      "why": "ui-ux-design practising-designer slot, third round (funded list): 48 of 68 long-form on UX terms and 0 of 68 intersect research-led process framing",
+      "at": "batch 64"
     },
     "@radicalcandor": {
       "status": "listed",
@@ -2146,6 +2176,11 @@
       "status": "rejected",
       "why": "seduction-advice genre",
       "at": "batch 57"
+    },
+    "@the_happy_path": {
+      "status": "rejected",
+      "why": "ui-ux-design practising-designer slot, third round (funded list): process videos are portfolio-building for job applications — 6 of 33 long-form, all portfolio case studies",
+      "at": "batch 64"
     },
     "@theaccountingprofessor": {
       "status": "rejected",

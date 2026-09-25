@@ -164,6 +164,18 @@
       ],
       "outcome": "rejected",
       "checkedAt": "batch 64 (group A, self-hosting round 1)"
+    },
+    {
+      "handle": "@mizko",
+      "name": "Mizko",
+      "knownFor": "UX and UI design teaching from a working designer and agency owner — design process, user interviews, Figma.",
+      "catalogueNow": "Founder and creator-economy content: startup vlogs, side hustles, tech news, the future of design, and launches of his own Figma course and UI kit.",
+      "scan": "200 uploads scanned for research-led process terms (user research, interviews, testing, usability, case study, design process, wireframes, prototype) intersected with walkthrough framing. 8 of 152 long-form matched, dated 2021 to 2024, four of them from 2021 — \"Real UX Project: From Data, Wireframes to UI Design Process\", \"How to Conduct a User Interview for UX Designers\", \"UX Design Process Explained\". The recent long-form does not show design work.",
+      "categoriesAffected": [
+        "ui-ux-design"
+      ],
+      "outcome": "rejected",
+      "at": "batch 64"
     }
   ],
   "collisions": [

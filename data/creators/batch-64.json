@@ -572,5 +572,61 @@
       "videoCount": 186,
       "at": "2026-09"
     }
+  },
+  {
+    "id": "davidtravis",
+    "name": "David Travis",
+    "handle": "@davidtravis",
+    "channelUrl": "https://www.youtube.com/@davidtravis",
+    "country": "GB",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "archive",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Short answers from a UX researcher to the practical questions of running user research: how to moderate a usability test, how to choose participants, which methods to trust.",
+    "longDescription": "David Travis describes himself as a user experience strategist at the consultancy Userfocus and the author of three books, the latest on thinking like a UX researcher. The channel is a finished set of five-minute answers to single questions — which usability testing method to choose, a moderation checklist, how to take notes in a test, how to pick participants, how to avoid bias — plus a six-part series on how researchers think. Several take a clear position against common practice, arguing for example that focus groups and preference testing mislead more than they inform. Across the {{scannedWords}} uploads scanned the median runs {{medianPhrase}}.",
+    "notFor": "Anyone wanting to see a design made — this is research method, not interface design, and nobody opens a design file here; and anyone wanting current tooling, since the channel stopped in 2020.",
+    "formatTags": [
+      "tutorial"
+    ],
+    "level": [
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 3,
+      "energy": 1,
+      "selfPromotion": 2,
+      "depth": 3
+    },
+    "signals": [
+      "sells-course",
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "ui-ux-design",
+        "strength": "secondary",
+        "why": "Answers the practical questions of running usability tests and user research one at a time, from a working consultant, where the category's other creator publishes research summaries as an institution.",
+        "evidence": "Around sixty short videos on user research practice — choosing a usability testing method, a test moderation checklist, note taking in tests, choosing participants, avoiding bias, field visits against surveys — and a six-part series on how UX researchers think.",
+        "entryVideo": {
+          "title": "UX Tea Break: Usability Test Moderation Checklist",
+          "videoId": "RVxianIudKk",
+          "whyThisOne": "Walks through what to do before, during and after moderating a usability test, with a checklist to download, which is the step between having a design and watching a real person use it.",
+          "durationMin": 8
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "The channel has not posted since December 2020; the methods have not changed but anything about tools or the job market has. Every description lists his paid training courses and book. He works from the same research-first position as the category's other creator, so the two agree more than they differ — neither is a designer showing interface work from start to finish, which is the view this category still lacks.",
+    "catalogue": {
+      "scanned": 49,
+      "shortPct": 0,
+      "longPct": 4,
+      "medianMin": 5,
+      "videoCount": 67,
+      "at": "2026-09"
+    }
   }
 ]
