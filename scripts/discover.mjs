@@ -140,7 +140,11 @@ let fresh = 0;
 for (const r of shown) {
   const thin = r.vids < MIN_CREDIBLE_UPLOADS;
   let note = '';
-  if (r.seen) note = `${r.seen.status.toUpperCase()} (${r.seen.at})`;
+  // A rejection is usually scoped to one category's tier, and the scope lives
+  // only in `why`. Printing the status alone made a strength-training
+  // rejection read as a channel-wide one in the hypertrophy round (batch 64),
+  // so the reason travels with the label.
+  if (r.seen) note = `${r.seen.status.toUpperCase()} (${r.seen.at})${r.seen.status === 'rejected' && r.seen.why ? ` — ${String(r.seen.why).slice(0, 70)}` : ''}`;
   else if (thin) note = `only ${r.vids} uploads — below the credible floor`;
   else fresh++;
   console.log(`${String(r.hits).padStart(2)}  ${pad(r.handle, 28)} ${pad(r.title, 26)} ${String(r.vids).padStart(5)} vids  ${pad(r.size, 9)} ${note}`);

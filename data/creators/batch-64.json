@@ -515,5 +515,62 @@
       "videoCount": 358,
       "at": "2026-09"
     }
+  },
+  {
+    "id": "houseofhypertrophy",
+    "name": "House of Hypertrophy",
+    "handle": "@houseofhypertrophy",
+    "channelUrl": "https://www.youtube.com/@houseofhypertrophy",
+    "country": null,
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Research reviews on the basic questions of building muscle — how many sets, how many reps, how much protein, what muscle growth actually is — with every study listed underneath.",
+    "longDescription": "House of Hypertrophy describes itself simply as research-backed videos on muscle and strength gain, and the format holds throughout: take one practical question, walk through the meta-analyses and individual trials that bear on it, then say what the evidence does and does not settle. The recurring questions are the ones a newer lifter asks first — sets per muscle, rep ranges, protein intake, training frequency — alongside long single-muscle guides such as a fifty-minute one on the chest. Most long-form descriptions carry timestamps and a reference list, often a dozen or more studies. Across the {{scannedWords}} most recent uploads the median runs {{medianPhrase}}.",
+    "notFor": "Anyone who wants a programme handed to them — the channel answers questions about training variables and leaves the building of a routine to you, and the study-by-study pace suits someone who wants the reasoning rather than just the answer.",
+    "formatTags": [
+      "tutorial",
+      "video-essay"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 4,
+      "practical": 3,
+      "energy": 1,
+      "selfPromotion": 1,
+      "depth": 4
+    },
+    "signals": [
+      "cites-research"
+    ],
+    "categories": [
+      {
+        "id": "hypertrophy-training",
+        "strength": "primary",
+        "why": "Answers the first questions about building muscle — how many sets, how many reps, how much protein — one at a time against the published studies, where every creator already in the category is pitched at intermediate and advanced.",
+        "evidence": "Evidence reviews on weekly sets per muscle, rep ranges for growth, protein requirements while bulking and cutting, the best exercises for hypertrophy, and what physically happens inside a muscle as it grows, each with its reference list in the description.",
+        "entryVideo": {
+          "title": "The Science of What Muscle Growth Actually Is",
+          "videoId": "-Gw6Y-aw4hs",
+          "whyThisOne": "Explains what actually gets bigger when a muscle grows, which makes every later question about sets, reps and protein easier to follow; its description carries references and music credits and no product links.",
+          "durationMin": 13
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Since 2023 most descriptions open with a personalised link to a third-party workout-tracking app, with no statement of whether it is paid; the entry video predates this and carries none. The channel does not name the person presenting it.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 2,
+      "longPct": 16,
+      "medianMin": 13,
+      "videoCount": 186,
+      "at": "2026-09"
+    }
   }
 ]

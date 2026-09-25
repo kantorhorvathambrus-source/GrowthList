@@ -672,6 +672,11 @@
       "why": "Andy Stapleton",
       "at": "dataset"
     },
+    "@drbenpetersen": {
+      "status": "rejected",
+      "why": "hypertrophy-training beginner tier (group A round 10): 2 of 16 long-form match hypertrophy terms",
+      "at": "batch 64"
+    },
     "@drbradstanfield": {
       "status": "listed",
       "why": "Dr Brad Stanfield",
@@ -912,6 +917,11 @@
       "why": "Grad Coach",
       "at": "dataset"
     },
+    "@gregdoucette": {
+      "status": "rejected",
+      "why": "hypertrophy-training beginner tier (group A round 10): 4 of 198 long-form match hypertrophy terms",
+      "at": "batch 64"
+    },
     "@gregisenberg": {
       "status": "listed",
       "why": "Greg Isenberg",
@@ -985,6 +995,11 @@
     "@hoopersbeta": {
       "status": "listed",
       "why": "Hooper's Beta",
+      "at": "dataset"
+    },
+    "@houseofhypertrophy": {
+      "status": "listed",
+      "why": "House of Hypertrophy",
       "at": "dataset"
     },
     "@howardwimshurst": {
@@ -1119,7 +1134,7 @@
     },
     "@jeremyethier": {
       "status": "rejected",
-      "why": "strength-training beginner tier (group A round 7): 7 of 160 long-form match barbell-strength terms in the 200 most recent uploads",
+      "why": "strength-training beginner tier (group A round 7): 7 of 160 long-form match barbell-strength terms in the 200 most recent uploads | hypertrophy-training (round 10): evaluated on its own terms and not taken — 18 of 160 long-form are beginner-framed hypertrophy teaching, but descriptions sell the creator's own programmes, app and protein powder, a direct commercial conflict on protein advice; House of Hypertrophy chosen instead. NOT a channel-wide rejection",
       "at": "batch 64"
     },
     "@jessewarden": {
@@ -1327,6 +1342,11 @@
       "why": "Marco Bucci",
       "at": "dataset"
     },
+    "@mariotomicofficial": {
+      "status": "rejected",
+      "why": "hypertrophy-training beginner tier (group A round 10): 10 of 108 long-form match hypertrophy terms",
+      "at": "batch 64"
+    },
     "@markwildman": {
       "status": "rejected",
       "why": "strength-training beginner tier (group A round 7): 1 of 20 long-form match barbell-strength terms",
@@ -1430,6 +1450,11 @@
     "@naomikong": {
       "status": "rejected",
       "why": "strength-training beginner tier (group A round 7): 5 of 80 long-form match barbell-strength terms",
+      "at": "batch 64"
+    },
+    "@natachaoceane": {
+      "status": "rejected",
+      "why": "hypertrophy-training beginner tier (group A round 10): archive since 2024-06",
       "at": "batch 64"
     },
     "@naturalathleteclinic": {
@@ -1602,6 +1627,11 @@
       "why": "Pianote",
       "at": "dataset"
     },
+    "@picturefit": {
+      "status": "rejected",
+      "why": "hypertrophy-training beginner tier (group A round 10): dormant since 2025-06; 8 of 37 long-form on hypertrophy terms",
+      "at": "batch 64"
+    },
     "@plumvillageonline": {
       "status": "rejected",
       "why": "substantial — median 80m, nothing sold — but it is a monastery archive of retreat talks, ceremonies and panels, with no entry point for someone learning to meditate",
@@ -1711,6 +1741,11 @@
       "status": "listed",
       "why": "ReligionForBreakfast (Dr. Andrew Henry)",
       "at": "dataset"
+    },
+    "@renaissanceperiodization": {
+      "status": "rejected",
+      "why": "hypertrophy-training beginner tier (group A round 10): 1 of 43 long-form match hypertrophy terms in the 200 most recent uploads",
+      "at": "batch 64"
     },
     "@reverseagingrevolution": {
       "status": "rejected",
