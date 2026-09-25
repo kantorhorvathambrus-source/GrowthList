@@ -214,6 +214,18 @@
           "videoId": "XdDZKeM5_pQ",
           "whyThisOne": "Opens the series by explaining what a unit test checks and setting up a project to run one, so the next episode can go straight to writing it.",
           "durationMin": 11
+        },
+        "selection": {
+          "field": "thin",
+          "pick": "only-found",
+          "alternatives": [
+            "@gui.ferreira",
+            "@jessewarden",
+            "@javaguides",
+            "@codecourse",
+            "@codyengelcodes"
+          ],
+          "note": "The only channel we found teaching unit testing from the first test upward. The other testing channels we looked at assumed you already write tests, or taught one language's tools at an intermediate level. The series itself is squarely what a beginner needs; it is the choice around it that is thin."
         }
       }
     ],
@@ -271,6 +283,18 @@
           "videoId": "oAoPdjsCpzU",
           "whyThisOne": "Plans an essay from a thesis statement down to each body paragraph with one repeatable outline, which is the structure a beginner needs before anything about style.",
           "durationMin": 14
+        },
+        "selection": {
+          "field": "thin",
+          "pick": "only-found",
+          "alternatives": [
+            "@kaelynthehistorian",
+            "@professormarkegan",
+            "@eapfoundation",
+            "@scribbr-us",
+            "@uomacademicskills"
+          ],
+          "note": "The only active channel we found teaching a first undergraduate essay step by step. The others we looked at were study vlogs, sentence-level English for non-native writers, or channels that no longer post. The lessons themselves are on target; it is the choice around them that is thin."
         }
       }
     ],
@@ -329,6 +353,18 @@
           "videoId": "55iC16xXgaI",
           "whyThisOne": "Works out how much protein an endurance athlete needs per day, set against the higher figures promoted by prominent voices and companies — the adequacy question the beginner level starts from.",
           "durationMin": 9
+        },
+        "selection": {
+          "field": "thin",
+          "pick": "best-of-thin",
+          "alternatives": [
+            "@simnettnutrition",
+            "@nickbarefitness",
+            "@kristi_oconnell",
+            "@thesportsnutritionplaybook",
+            "@gtn"
+          ],
+          "note": "The best of a thin field rather than a clear choice. The other channels we found were plant-based cooking, general fitness or short clips; this one does answer the first questions about eating enough, but mostly in short clips, for triathletes, and alongside affiliate links. Searched once, with one query aimed at beginners; we would revisit this if a stronger beginner voice turned up."
         }
       }
     ],
@@ -503,6 +539,18 @@
           "videoId": "szMdop7aBxw",
           "whyThisOne": "Goes through the lifestyle measures with trial evidence for lowering blood pressure, one of the well-established levers the beginner level starts from, and its description lists sixteen sources and no products.",
           "durationMin": 13
+        },
+        "selection": {
+          "field": "thin",
+          "pick": "best-of-thin",
+          "alternatives": [
+            "@reverseagingrevolution",
+            "@thesheekeyscienceshow",
+            "@foundmyfitness",
+            "@modernhealthspan",
+            "@seanhashmimd"
+          ],
+          "note": "The best of a thin field rather than a clear choice. The other channels we found dealt mainly in experimental anti-ageing interventions, ageing-biology research or multi-hour interviews; this one covers the established basics, but it also sells a supplement while advising on supplements. Searched once, with one query aimed at beginners; we would revisit this if a beginner voice without that conflict turned up."
         }
       }
     ],
