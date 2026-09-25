@@ -1123,6 +1123,19 @@ this section first to know exactly where to resume.)*
   reverse error: its "not sponsored" disclaimer matched `sponsor`.
   **Next: nothing queued in prose.** Run `coverage-report.mjs` and read
   the PHASE 2 CLOSE block for what is funded next.
+  **FUNDED LIST, batch 64 (after group A):** `ai-fundamentals` →
+  3Blue1Brown (rule 15 later mapping) · `habit-formation` → searched-not-
+  found after four ends · `ui-ux-design` → David Travis (archive; the
+  practising-designer slot is recorded OPEN, searches 44-46) ·
+  `attachment-styles` → Dr. Maika Steinborn · `tax-basics` → Brian Winrow
+  (US). **Search allowance at 48 when this session stopped; the owner's
+  ceiling is 50 — stop there and report.** Next funded: `negotiation`.
+  **`selection` is live on mappings** (see the schema note): set only for
+  a thin field, alternatives validated against `probed.json`, four
+  mappings carry it. New rounds should decide it per mapping.
+  **Measure a claim across the channel before writing "every" or
+  "all"** — twice this session a caveat generalised from the two
+  descriptions read in full (Steinborn's quiz was 156 of 200, not all).
 - **Standing checks to run before any release**: `validate.mjs`,
   `validate.mjs --final`, `check-secrets.mjs`, `audit-status.mjs`
   (status drift *and* handle aliases), `audit-catalogue.mjs`,
