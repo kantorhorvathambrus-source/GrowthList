@@ -437,7 +437,8 @@
     "formatTags": [
       "video-essay",
       "long-form",
-      "tutorial"
+      "tutorial",
+      "shorts"
     ],
     "level": [
       "intermediate",
@@ -464,6 +465,23 @@
           "videoId": "KuXjwB4LzSA",
           "whyThisOne": "A concept most people first meet as an intimidating integral, made visual and obvious — a fair sample of what the channel does to everything.",
           "durationMin": 23
+        }
+      },
+      {
+        "id": "ai-fundamentals",
+        "strength": "secondary",
+        "why": "Builds the mental model of a neural network from the ground up — what a neuron and a layer are, how gradient descent trains the weights, how attention works inside a transformer — where the category's other creator tracks model releases and benchmarks.",
+        "evidence": "A numbered Deep Learning series: what a neural network is, gradient descent, backpropagation intuitively and in calculus, transformers, attention step by step, and how language models might store facts, plus a short general-audience introduction to large language models.",
+        "entryVideo": {
+          "title": "Large Language Models explained briefly",
+          "videoId": "LPZh9BOjkQs",
+          "whyThisOne": "Explains in eight minutes what pretraining is, what a model is doing when it predicts the next word, and where transformers fit — made for a museum exhibit, so it assumes no mathematics. Its description states the lessons are viewer-funded rather than sponsored.",
+          "durationMin": 8
+        },
+        "addedLater": {
+          "batch": 64,
+          "trigger": "The ai-fundamentals discovery round (group A funded list) returned three of its Deep Learning chapters for \"how neural networks learn explained from scratch\", and the worklist names the gap as a teacher building the mental model rather than a release-tracker.",
+          "whyNotAtFirstPass": "Its batch-04 record was written during a learning-domain pass for self-teaching-math, and the evidence there is convolution, entropy, the central limit theorem and Laplace transforms. The Deep Learning chapters are different videos in a tech category that pass never covered — out of scope then, not newly found. The fill-pull is real and stated: a new creator, Art of the Problem, was evaluated in the same round and is the weaker teacher on this brief."
         }
       }
     ],
@@ -666,7 +684,7 @@
         "why": "Its most useful contribution to writing is negative — showing what an automated literature review actually produces and why it will not pass.",
         "evidence": "Videos examining AI-produced literature reviews and their specific deficiencies, within a catalogue on publishing and thesis work.",
         "entryVideo": {
-          "title": "This Free AI Wrote My Entire Literature Review in Minutes (Why That's a Problem)",
+          "title": "Every PhD Student Is Using AI for Literature Reviews - This Is the Real Danger",
           "videoId": "1PSMmwQkqME",
           "whyThisOne": "Demonstrates the shortcut and then dismantles it, which is more persuasive than being told not to take it.",
           "durationMin": 15

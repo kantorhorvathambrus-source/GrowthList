@@ -487,6 +487,11 @@
       "why": "Coaching for Leaders (Dr. Dave Stachowiak)",
       "at": "dataset"
     },
+    "@codebasics": {
+      "status": "rejected",
+      "why": "ai-fundamentals teacher slot (funded list): 43 of 77 long-form on AI terms, 2 of 77 teaching-framed — a 325-minute course and one LLM explainer",
+      "at": "batch 64"
+    },
     "@codecourse": {
       "status": "rejected",
       "why": "testing-and-quality beginner tier (group A round 4): 3 of 66 long-form match test terms in the 200 most recent uploads — too thin on the subject to judge further",
@@ -766,6 +771,11 @@
       "status": "collision",
       "why": "resolves to 'Thijs Geritz', 10 uploads",
       "at": "batch 19"
+    },
+    "@emergentgarden": {
+      "status": "rejected",
+      "why": "ai-fundamentals teacher slot (funded list): 18 of 48 long-form on AI terms, 2 of 48 teaching-framed",
+      "at": "batch 64"
     },
     "@errichto": {
       "status": "listed",
@@ -1226,6 +1236,11 @@
       "status": "listed",
       "why": "KodeKloud",
       "at": "dataset"
+    },
+    "@krishnaik06": {
+      "status": "rejected",
+      "why": "ai-fundamentals teacher slot (funded list): densest AI channel in the round (103 of 180 long-form) but 5 of 180 intersect teaching framing, and those are explainers of new tools and terms rather than how models work",
+      "at": "batch 64"
     },
     "@krisjordan": {
       "status": "rejected",
