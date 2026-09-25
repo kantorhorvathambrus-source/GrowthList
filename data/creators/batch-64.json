@@ -734,5 +734,65 @@
       "videoCount": 408,
       "at": "2026-09"
     }
+  },
+  {
+    "id": "winrowtax",
+    "name": "Brian Winrow",
+    "handle": "@winrowtax",
+    "channelUrl": "https://www.youtube.com/@winrowtax",
+    "country": null,
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A US tax attorney and university tax lecturer explaining how the federal income tax system works, from how brackets apply to your pay to deductions, credits and filing status.",
+    "longDescription": "Brian Winrow describes himself as a tax attorney and educator who teaches tax and accounting, and his descriptions address accounting students, CPA and enrolled-agent candidates, and ordinary taxpayers together. The catalogue explains the system rather than giving filing tips: a beginner strand on how tax brackets actually apply, marginal against effective and average rates, whether a raise can cost you money, and reading your first pay stub; then deductions, credits, filing status and the W-4 form line by line; and full-length lectures from his introductory university tax course. Across the {{scannedWords}} most recent uploads the median runs {{medianPhrase}}, with {{longCountWords}} past twenty minutes.",
+    "notFor": "Anyone outside the United States looking for their own rules, and anyone wanting a quick filing checklist — the channel teaches the reasoning behind US federal tax, some of it at university-course length, and a strand of recent videos is onboarding advice for new tax-firm staff.",
+    "formatTags": [
+      "tutorial",
+      "lecture",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 1,
+      "selfPromotion": 1,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner"
+    ],
+    "jurisdiction": "US",
+    "jurisdictionNote": "US federal income tax throughout. How brackets work and the difference between marginal and effective rates carry over to most countries; the forms, figures, deductions and credits do not.",
+    "categories": [
+      {
+        "id": "tax-basics",
+        "strength": "primary",
+        "why": "Explains how the US income tax system works from brackets upward, a second jurisdiction beside the category's Canadian creator, and the system rather than filing tips.",
+        "evidence": "A beginner series on how tax brackets apply, marginal against effective and average tax rates, whether a raise can lower take-home pay, beginner tax terms and reading a first pay stub; plus explainers on standard against itemised deductions, filing status, education credits and line-by-line W-4 walkthroughs.",
+        "entryVideo": {
+          "title": "Marginal vs Effective vs Average Tax Rate (How to Understand Your Real Return)",
+          "videoId": "ZtRKDzhRK8Y",
+          "whyThisOne": "Works through one example to show what the marginal rate on your next dollar is, what your overall tax burden is, and which of the two matters for which decision — the beginner level's first lesson.",
+          "durationMin": 12
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "His qualifications are as the channel states them and were not independently confirmed. Descriptions link to his own tax practice; no third-party sponsorship or software placement appears in the descriptions of the most recent long-form uploads, and the entry video carries none. Several recent videos are aimed at new staff in tax firms rather than at taxpayers.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 64,
+      "medianMin": 22,
+      "videoCount": 442,
+      "at": "2026-09"
+    }
   }
 ]

@@ -1002,6 +1002,11 @@
       "why": "Grad Coach",
       "at": "dataset"
     },
+    "@gregactoncpa": {
+      "status": "rejected",
+      "why": "tax-basics second-jurisdiction slot (funded list): 11 of 55 long-form on tax; real-estate investing focus",
+      "at": "batch 64"
+    },
     "@gregdoucette": {
       "status": "rejected",
       "why": "hypertrophy-training beginner tier (group A round 10): 4 of 198 long-form match hypertrophy terms",
@@ -1492,6 +1497,11 @@
       "why": "strength-training beginner tier (group A round 7): 1 of 20 long-form match barbell-strength terms",
       "at": "batch 64"
     },
+    "@martinlewis": {
+      "status": "rejected",
+      "why": "tax-basics second-jurisdiction slot (funded list): 1 of 12 long-form on tax in the recent window",
+      "at": "batch 64"
+    },
     "@mattdavella": {
       "status": "listed",
       "why": "Matt D'Avella",
@@ -1587,6 +1597,11 @@
       "why": "the canonical why-does-this-structure-exist channel and a real loss — 69 of 101 long-form match DSA terms with titles like \"Data structures: Introduction to stack\" — but archived since 2016-10-24 and its declared audio languages include Hindi as well as English. Held rather than closed: worth revisiting if the category ever needs a third and an archive creator is acceptable",
       "at": "batch 64"
     },
+    "@mytaxaccountant": {
+      "status": "rejected",
+      "why": "tax-basics second-jurisdiction slot (funded list): UK accountancy firm podcast addressed to business owners (89 of 121 long-form on tax) — a firm selling its services, not an explainer of the system",
+      "at": "batch 64"
+    },
     "@mywifequitherjob": {
       "status": "rejected",
       "why": "reputation drift — Opportunity listicles: '8 Claude AI Side Hustles That Each Make $100K/Yr', '9 UNSEXY Produ",
@@ -1615,6 +1630,11 @@
     "@naturalathleteclinic": {
       "status": "rejected",
       "why": "sports-nutrition beginner tier (group A round 6): 1 of 24 long-form match nutrition terms",
+      "at": "batch 64"
+    },
+    "@navimarajcpa": {
+      "status": "rejected",
+      "why": "tax-basics second-jurisdiction slot (funded list): the whole channel description is a course enrolment link; 43 of 73 long-form on tax, framed around saving on taxes rather than how the system works",
       "at": "batch 64"
     },
     "@neetcode": {
@@ -1681,6 +1701,11 @@
       "status": "listed",
       "why": "Nomadic Matt",
       "at": "dataset"
+    },
+    "@notyourdadscpa": {
+      "status": "rejected",
+      "why": "tax-basics second-jurisdiction slot (funded list): reseller and online-seller business taxes; 8 of 18 long-form",
+      "at": "batch 64"
     },
     "@nutritionmadesimple": {
       "status": "listed",
@@ -1841,6 +1866,11 @@
       "status": "listed",
       "why": "Proko (Stan Prokopenko)",
       "at": "dataset"
+    },
+    "@protaxaccountantuk": {
+      "status": "rejected",
+      "why": "tax-basics second-jurisdiction slot (funded list): UK accountancy firm channel for freelancers, landlords and small businesses (88 of 128 long-form on tax) — a firm selling its services",
+      "at": "batch 64"
     },
     "@psycacademy": {
       "status": "rejected",
@@ -2540,6 +2570,11 @@
     "@weltgeistyt": {
       "status": "listed",
       "why": "Weltgeist",
+      "at": "dataset"
+    },
+    "@winrowtax": {
+      "status": "listed",
+      "why": "Brian Winrow",
       "at": "dataset"
     },
     "@wirelessphilosophy": {
