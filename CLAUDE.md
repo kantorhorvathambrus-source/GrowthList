@@ -1069,36 +1069,48 @@ this section first to know exactly where to resume.)*
   report, remaining gaps, and an honest read on whether the dataset is
   ready to build on.
   **Still owed at the close of Phase 2**: rotate the YouTube API key.
-- **GROUP A DISCOVERY IS RUNNING — 3 of 10 rounds done (batch 64).**
-  The batch-1 plan and its band split are the owner's, approved:
-  **`long`** for `self-hosting` and `databases-sql` (the entry-tier
-  artefact is itself long there — a first-server walkthrough, a full
-  course); **`medium`** for the other eight, because "what is a join",
-  "your first unit test", "how to squat" are 8-20 minute explanations and
-  the `long` default structurally cannot return them.
-  **Done, one creator each, all gated and committed:**
+- **GROUP A DISCOVERY IS DONE — 10 of 10 rounds (batch 64).** One
+  creator per round, every one gated and committed. The band split was
+  the owner's: `long` for `self-hosting` and `databases-sql`, `medium`
+  for the other eight.
   `self-hosting` → Learn Linux TV · `databases-sql` → techTFQ ·
-  `algorithms-and-data-structures` → Simple Snippets.
-  **REMAINING SEVEN, in order, with the query and band:**
-  4. `testing-and-quality` — "writing your first unit test tutorial", medium
-  5. `academic-writing` — "how to write an undergraduate essay structure", medium
-  6. `sports-nutrition` — "what to eat around training beginner athlete", medium
-  7. `strength-training` — "how to squat and deadlift for absolute beginners", medium
-  8. `stock-analysis` — "how to read a 10-K annual report for beginners", medium
-  9. `longevity` — "what actually extends lifespan evidence explained", medium
-  10. `hypertrophy-training` — "how muscle growth works explained beginner", medium
-  **Per round: `discover.mjs` (1 search call, ~101 units) → `evidence.mjs
-  --grep` to triage on subject density → a second `--grep` intersecting
-  subject with teaching framing → rule 24 description check on the
-  candidate entry videos → record + `gate-check` + rejections into
-  `probed.json` + commit.**
-  **Subject density is not teaching, and this is the trap of the whole
-  exercise.** In `self-hosting`, density alone ranked Raid Owl first (79
-  of 172 long-form) and Learn Linux TV LAST of the serious candidates (13
-  of 176), because "NAS" and "server" appear in every gear-review title.
-  The intersect with teaching framing is what inverts it. Run both.
-  **Report the search allowance separately from units after every query,
-  and stop on any rate-limit signal rather than retrying.**
+  `algorithms-and-data-structures` → Simple Snippets ·
+  `testing-and-quality` → Net Ninja · `academic-writing` → David Taylor ·
+  `sports-nutrition` → Nutrition Triathlon · `strength-training` →
+  Starting Strength · `stock-analysis` → The Finance Storyteller ·
+  `longevity` → Dr Brad Stanfield (`commercial-conflict`) ·
+  `hypertrophy-training` → House of Hypertrophy.
+  **Session search allowance at the end: 38 calls** (~60 has tripped the
+  limit once). No rate-limit signal in rounds 4–10.
+  **Per round, as run: `discover.mjs` → `evidence.mjs --grep` for
+  subject density → a second `--grep` intersecting subject with teaching
+  framing → rule 24 read of full descriptions → record + `gate-check` +
+  rejections into `probed.json` + commit.**
+  **Subject density is not teaching** — it inverted the order in six of
+  the seven rounds (Gui Ferreira, Kaelyn Grace Apple, Simnett, Acumen,
+  Reverse Aging Revolution, Sheekey all dense and not teaching).
+  **Four lessons from rounds 4–10, each caught before it shipped:**
+  1. **A brand name can satisfy both halves of an intersect grep.**
+     "Starting Strength" matched subject ("Strength") and framing
+     ("Starting"), giving 33 of 45 that were podcast previews. Strip
+     the channel's own name from both patterns (rule 20).
+  2. **The 200-upload window is a sample, not the channel.** It hid
+     Starting Strength's whole teaching catalogue, Brian Feroldi's 21
+     statement explainers and Sean Nalewanyj's 21 beginner videos. Run
+     a full title scan before rejecting a channel whose search hits say
+     it teaches the subject. Feroldi, Nalewanyj and Barbell Logic are
+     **deferred in UNVERIFIED.md, not rejected.**
+  3. **The long-form floor (8m) contradicts the medium band (4–20m).**
+     A rejection on "0 long-form" was written and pulled in round 10.
+  4. **A rejection is scoped to a tier; `discover.mjs` now prints the
+     `why` beside the status** so it does not read as channel-wide.
+  **The rule 24 addition earned itself at once:** House of Hypertrophy's
+  Alpha Progression link (87 of 186 descriptions, no disclosure word)
+  and Stanfield's supplement codes (116 videos) were both invisible to
+  the patterns and found by reading. Nutrition Triathlon showed the
+  reverse error: its "not sponsored" disclaimer matched `sponsor`.
+  **Next: nothing queued in prose.** Run `coverage-report.mjs` and read
+  the PHASE 2 CLOSE block for what is funded next.
 - **Standing checks to run before any release**: `validate.mjs`,
   `validate.mjs --final`, `check-secrets.mjs`, `audit-status.mjs`
   (status drift *and* handle aliases), `audit-catalogue.mjs`,
