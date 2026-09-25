@@ -57,5 +57,64 @@
       "videoCount": 1054,
       "at": "2026-09"
     }
+  },
+  {
+    "id": "techtfq",
+    "name": "techTFQ (Thoufiq)",
+    "handle": "@techtfq",
+    "channelUrl": "https://www.youtube.com/@techtfq",
+    "country": "PL",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A channel that is almost entirely SQL, teaching query writing from the first SELECT through window functions and recursion, with downloadable practice data for each lesson.",
+    "longDescription": "Thoufiq's channel is unusually narrow for its size: nearly every long-form upload is about SQL, database concepts or data modelling, and the beginner end is fully built out rather than implied. There are separate lessons on what a database is, writing a first query, and a two-part tutorial on joins that works through inner, left, right, full outer, cross, natural and self joins with queries on screen. The upper end is real too — window functions with frame clauses, recursive queries, GROUPING SETS against ROLLUP and CUBE. {{longCountWords|cap}} of the {{scannedWords}} most recent uploads run past twenty minutes, with a median of {{medianPhrase}}, and each lesson links downloadable scripts and datasets so the queries can be run rather than watched. He also sells a SQL practice platform and live bootcamps, promoted in every description.",
+    "notFor": "Anyone wanting database internals or performance engineering — this is about writing SQL, not about how the engine executes it. The pace is deliberate and repeats itself, which is slow going if you already write queries.",
+    "formatTags": [
+      "tutorial",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "databases-sql",
+        "strength": "primary",
+        "why": "Teaches the first query and the first join as their own lessons, where the category's other two creators start at internals and performance and assume you can already write SQL.",
+        "evidence": "A catalogue in which nearly every long-form upload is SQL: separate tutorials on what a database is, SQL basics with practice queries, and a two-part joins series covering inner, left, right, full outer, cross, natural and self joins, each with downloadable scripts and datasets.",
+        "entryVideo": {
+          "title": "SQL Basics Tutorial for Beginners (Practice SQL Queries)",
+          "videoId": "Hl4NZB1XR9c",
+          "whyThisOne": "Starts at writing a first query rather than at schema design or tuning, and the practice queries are downloadable so you can type them rather than watch them. It carries no sponsorship, which the channel's more recent beginner course does.",
+          "durationMin": 70
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Sells a SQL practice platform and live bootcamps of his own, linked from every description — treat the recommendations to buy them as advertising. Roughly one long-form upload in ten carries a third-party sponsorship, in each case for an unrelated product such as Skillshare or Brilliant rather than for a database tool, and the video listed here carries none. Several videos are five or six years old; SQL syntax has not moved, but the surrounding tooling shots have.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 4,
+      "longPct": 36,
+      "medianMin": 16,
+      "videoCount": 165,
+      "at": "2026-09"
+    }
   }
 ]

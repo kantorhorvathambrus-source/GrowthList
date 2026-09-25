@@ -157,6 +157,11 @@
       "why": "Ahrefs",
       "at": "dataset"
     },
+    "@aicoachjohn": {
+      "status": "rejected",
+      "why": "not English — Tamil-language teaching channel (rule 5)",
+      "at": "batch 64"
+    },
     "@aiexplained-official": {
       "status": "listed",
       "why": "AI Explained",
@@ -191,6 +196,11 @@
       "status": "listed",
       "why": "Alex Cattoni",
       "at": "dataset"
+    },
+    "@alextheanalyst": {
+      "status": "rejected",
+      "why": "data-analyst generalist, 28 of 135 long-form match SQL terms — bootcamp-style career path rather than SQL teaching",
+      "at": "batch 64"
     },
     "@aliabdaal": {
       "status": "rejected",
@@ -437,6 +447,11 @@
       "why": "Coaching for Leaders (Dr. Dave Stachowiak)",
       "at": "dataset"
     },
+    "@codeio": {
+      "status": "rejected",
+      "why": "not English — Tamil-language teaching channel (rule 5)",
+      "at": "batch 64"
+    },
     "@codemonkeyunity": {
       "status": "rejected",
       "why": "reputation drift — Unity Asset Store roundups and Steam-marketing interviews; teaching largely moved to paid ",
@@ -492,10 +507,20 @@
       "why": "Darren Taylor",
       "at": "dataset"
     },
+    "@data_with_chandoo": {
+      "status": "rejected",
+      "why": "not English — Telugu-language channel (rule 5)",
+      "at": "batch 64"
+    },
     "@databasestar": {
       "status": "listed",
       "why": "Database Star (Ben Brumm)",
       "at": "dataset"
+    },
+    "@datawithbaraa": {
+      "status": "rejected",
+      "why": "data-engineering channel but shorts-led (76 of 200 uploads under two minutes); 16 of 116 long-form match SQL terms",
+      "at": "batch 64"
     },
     "@davegray": {
       "status": "collision",
@@ -882,6 +907,11 @@
       "why": "47 of 50 uploads under two minutes; the three long-form videos are client success-story interviews for a coaching programme",
       "at": "batch 55"
     },
+    "@intellipaat": {
+      "status": "rejected",
+      "why": "multi-topic training-company channel, 6137 uploads across every tech subject — course marketing rather than a teaching catalogue",
+      "at": "batch 64"
+    },
     "@internetshaquille": {
       "status": "listed",
       "why": "Internet Shaquille",
@@ -957,6 +987,11 @@
       "why": "probed for attachment-styles; relationship-coaching content rather than the attachment literature the category is named for, and both incumbents already cover that ground",
       "at": "batch 53"
     },
+    "@joeyblue1": {
+      "status": "rejected",
+      "why": "SQL-dense (23 of 25 long-form) but the catalogue is only 25 long-form videos with a four-minute median, and the beginner material is SQL Server Management Studio rather than SQL",
+      "at": "batch 64"
+    },
     "@jonloomer": {
       "status": "listed",
       "why": "Jon Loomer",
@@ -986,6 +1021,11 @@
       "status": "listed",
       "why": "Justin Sung",
       "at": "dataset"
+    },
+    "@kaarthikforu": {
+      "status": "rejected",
+      "why": "5 of 35 long-form match SQL terms; mostly short-form",
+      "at": "batch 64"
     },
     "@kaneb": {
       "status": "listed",
@@ -1066,6 +1106,11 @@
       "status": "listed",
       "why": "Luca Lampariello",
       "at": "dataset"
+    },
+    "@lukebarousse": {
+      "status": "rejected",
+      "why": "data-analyst career channel — 7 of 93 long-form match SQL terms, and the catalogue is tooling and job-market content",
+      "at": "batch 64"
     },
     "@madeleineharveyvoice": {
       "status": "rejected",
@@ -1427,6 +1472,11 @@
       "why": "Rex Krueger",
       "at": "dataset"
     },
+    "@rishabhmishraofficial": {
+      "status": "rejected",
+      "why": "22 of 89 long-form match SQL terms within a broader data-analytics career catalogue",
+      "at": "batch 64"
+    },
     "@rjthebikeguy": {
       "status": "listed",
       "why": "RJ The Bike Guy",
@@ -1645,6 +1695,11 @@
     "@technotim": {
       "status": "listed",
       "why": "Techno Tim",
+      "at": "dataset"
+    },
+    "@techtfq": {
+      "status": "listed",
+      "why": "techTFQ (Thoufiq)",
       "at": "dataset"
     },
     "@techworldwithnana": {
