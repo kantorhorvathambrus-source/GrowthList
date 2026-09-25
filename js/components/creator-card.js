@@ -118,6 +118,7 @@ export function creatorCard(creator, mapping, { showEmbed = true } = {}) {
       <div class="hair"></div>
 
       ${claim('fit', 'Why here', mapping?.why ?? creator.shortDescription)}
+      ${mapping?.selection?.note ? claim('caveat', 'How this was chosen', mapping.selection.note) : ''}
       ${creator.languageNote ? claim('caveat', 'Language', creator.languageNote) : ''}
       ${claim('caveat', 'Not for', creator.notFor)}
       ${creator.jurisdictionNote ? claim('caveat', 'Where this applies', creator.jurisdictionNote) : ''}

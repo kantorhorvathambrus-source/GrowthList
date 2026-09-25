@@ -848,6 +848,18 @@ Phase 1 output) — kept in this file's state section once finalized.
 - `entryVideo.videoId` must be a real, verified YouTube video id (11
   chars, from the actual channel). Embeds always use
   `https://www.youtube-nocookie.com/embed/{videoId}`.
+- `categories[].selection` — **optional**, set ONLY when the field this
+  mapping was chosen from was thin: `{ field: "thin", pick, alternatives[],
+  note }`. `pick` is `only-found` (the only on-brief channel found; a strong
+  pick on its own terms) or `best-of-thin` (chosen from a weak field, with
+  weaknesses the caveat names) — two different statements, and the `note`
+  must make the one it is. **Mappings before batch 64 predate this field, so
+  its absence means "not recorded", never "the field was strong"**, and the
+  client renders nothing for it. The judgement is human; what
+  `validate.mjs` enforces is the evidence — every `alternatives` handle must
+  be in `probed.json`, never the creator's own, and the visitor `note` may
+  not name a handle. `build-data.mjs` strips `alternatives` before shipping:
+  rejected channels stay internal.
 - `entryVideo.durationMin` — **optional** integer, whole minutes. The design
   calls for a "START HERE · 18 MIN" eyebrow; with the field absent the
   eyebrow degrades to "START HERE" rather than inventing a runtime. Only

@@ -89,6 +89,7 @@ export async function renderCreator(app, { params }) {
         </div>
         <p>${esc(m.why)}</p>
         <p class="mapping__evidence"><strong>Why them:</strong> ${esc(m.evidence)}</p>
+        ${m.selection?.note ? `<p class="mapping__evidence"><strong>How this was chosen:</strong> ${esc(m.selection.note)}</p>` : ''}
         ${m.entryVideo ? embedMarkup(m.entryVideo, { creatorName: creator.name }) : ''}
       </article>`;
     })

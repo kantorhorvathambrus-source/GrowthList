@@ -82,6 +82,13 @@ for (const file of batchFiles) {
         }
         m[f] = text;
       }
+      // selection.alternatives names the channels a thin field was judged
+      // against — mostly rejections. It is evidence for validate.mjs, not
+      // visitor data: rejected channels stay internal, so it never ships.
+      if (m.selection && typeof m.selection === 'object') {
+        const { alternatives, ...shown } = m.selection;
+        m.selection = shown;
+      }
     }
     creators.push(c);
   }

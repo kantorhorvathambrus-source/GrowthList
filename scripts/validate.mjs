@@ -123,6 +123,17 @@ const readJson = (p) => {
 
 const categories = readJson(join(DATA, 'categories.json'));
 
+// selection.pick: "only-found" — the only on-brief channel the search turned
+// up, and a strong pick on its own terms; "best-of-thin" — chosen from a weak
+// field, with weaknesses of its own that the caveat names.
+const SELECTION_PICKS = ['only-found', 'best-of-thin'];
+// Every handle ever probed, lower-cased. `selection.alternatives` must resolve
+// here, which is what makes a "thin field" claim checkable at all.
+const PROBED = new Set(
+  Object.keys((existsSync(join(DATA, 'probed.json')) ? readJson(join(DATA, 'probed.json')).probed : null) ?? {})
+    .map((h) => h.toLowerCase()),
+);
+
 const creatorDir = join(DATA, 'creators');
 const batchFiles = existsSync(creatorDir)
   ? readdirSync(creatorDir).filter((f) => /^batch-\d{2}\.json$/.test(f)).sort()
@@ -416,6 +427,44 @@ for (const c of creators) {
         if (String(a.whyNotAtFirstPass ?? '').trim().length < 30) {
           fail(mWhere, 'addedLater.whyNotAtFirstPass must say why the evidence was not obvious at first pass (30+ chars)');
         }
+      }
+    }
+
+    // SELECTION — how strong was the field this mapping was chosen from.
+    // Mapping-level, not creator-level: the same creator can be the clear pick
+    // in one category and the only option in another. Set ONLY when the field
+    // was thin; mappings older than batch 64 predate the field entirely, so its
+    // absence says nothing — the client renders nothing for it, never "strong".
+    //
+    // The judgement ("thin") is human and cannot be checked. What CAN fail is
+    // the evidence behind it: every alternative named must be a channel this
+    // project actually probed. "The field was thin" with alternatives nobody
+    // looked at is the unverifiable-claim class this check exists to stop.
+    if (m.selection != null) {
+      const s = m.selection;
+      if (typeof s !== 'object' || Array.isArray(s)) {
+        fail(mWhere, 'selection must be an object { field, pick, alternatives, note }');
+      } else {
+        if (s.field !== 'thin') fail(mWhere, `selection.field must be "thin" (absence already means "not recorded"), got "${s.field}"`);
+        if (!SELECTION_PICKS.includes(s.pick)) fail(mWhere, `selection.pick must be one of ${SELECTION_PICKS.join(', ')}`);
+        const alts = Array.isArray(s.alternatives) ? s.alternatives : [];
+        if (!alts.length) fail(mWhere, 'selection.alternatives must name the channels weighed — a thin field with none named is an unchecked claim');
+        const own = String(c.handle ?? '').toLowerCase();
+        const seenAlt = new Set();
+        for (const h of alts) {
+          const key = String(h).toLowerCase();
+          if (seenAlt.has(key)) fail(mWhere, `selection.alternatives lists ${h} twice`);
+          seenAlt.add(key);
+          if (key === own) fail(mWhere, `selection.alternatives names the creator's own handle ${h}`);
+          else if (!PROBED.has(key)) fail(mWhere, `selection.alternatives names ${h}, which is not in data/probed.json — an alternative nobody probed cannot make a field thin`);
+        }
+        const note = String(s.note ?? '');
+        if (note.trim().length < 60) fail(mWhere, 'selection.note is the visitor sentence and must say what was found (60+ chars)');
+        if (/@\w/.test(note)) fail(mWhere, 'selection.note names a handle — it is visitor copy; rejected channels stay internal');
+        // The two picks are different statements and the note must make the
+        // one it is: "the only one we found" is not "the best of a thin field".
+        if (s.pick === 'only-found' && !/\bonly\b/i.test(note)) fail(mWhere, 'selection.pick is only-found but the note never says "only"');
+        if (s.pick === 'best-of-thin' && !/\bbest\b/i.test(note)) fail(mWhere, 'selection.pick is best-of-thin but the note never says "best"');
       }
     }
 

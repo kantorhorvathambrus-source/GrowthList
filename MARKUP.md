@@ -355,6 +355,10 @@ class change, never different markup:
     <div class="claim">
       <i></i><div><p class="micro claim__label">Why here</p><p>…</p></div>
     </div>
+    <!-- only when mapping.selection.note is set -->
+    <div class="claim claim--caveat">
+      <i></i><div><p class="micro claim__label">How this was chosen</p><p>…</p></div>
+    </div>
     <div class="claim claim--caveat">
       <i></i><div><p class="micro claim__label">Not for</p><p>…</p></div>
     </div>
@@ -378,6 +382,11 @@ embed. Used for similar-creators and the stack generalist.
 - **States:** `.cc-name a` hover/focus. The two `.claim` markers differ by
   colour **and** label ("Why here" / "Not for"), so they don't rely on colour
   alone.
+- **"How this was chosen"** renders only when the mapping carries
+  `selection` (a thin field, batch 64 onward). Its absence renders nothing —
+  older mappings predate the field, so no card may imply the field was
+  strong. The creator page carries the same sentence as a second
+  `.mapping__evidence` paragraph under "Why them".
 - **Avatars:** the dataset has **no avatar field yet**, so every card renders
   `.avatar--monogram` (initials, wine fill). `.avatar--alt` (warm-200 fill,
   warm-800 text) alternates by a hash of the creator id — stable per creator
