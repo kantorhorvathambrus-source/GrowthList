@@ -676,5 +676,63 @@
       "videoCount": 67,
       "at": "2026-09"
     }
+  },
+  {
+    "id": "drmaikasteinborn",
+    "name": "Dr. Maika Steinborn",
+    "handle": "@drmaikasteinborn",
+    "channelUrl": "https://www.youtube.com/@drmaikasteinborn",
+    "country": "DE",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A clinical psychologist explaining attachment patterns in adult relationships — what each style does and does not describe, and how anxious and avoidant partners set each other off.",
+    "longDescription": "Maika Steinborn describes herself as a clinical and educational psychologist, and a steady share of her long-form work is attachment in adult relationships. The videos work at the level of behaviour: what an avoidant shutdown is and what is happening underneath it, how to answer an anxiously attached partner's implicit accusations, how two insecure styles escalate each other, and what securely attached people do differently in conflict. Several push directly against reading the styles as fixed types — separating avoidant attachment from an ordinary conflict response, or listing the common misreadings of avoidant people. Some are two-psychologist conversations; across the {{scannedWords}} most recent uploads the median runs {{medianPhrase}}.",
+    "notFor": "Anyone after the research itself — the channel applies attachment ideas to relationships rather than examining the studies or their limits, and a few older videos use the 'signs you are' format the rest of the channel argues against.",
+    "formatTags": [
+      "tutorial",
+      "interview"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "sells-course",
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "attachment-styles",
+        "strength": "primary",
+        "why": "Works through attachment as behaviour between two people — shutdowns, accusations, how styles escalate each other — from a clinical psychologist, where the category's existing creator writes long essays on the individual mechanics of each style.",
+        "evidence": "Around thirty long-form videos in the most recent two hundred on adult attachment: avoidant shutdowns, supporting an anxious partner, compatibility between styles, fearful-avoidant attachment, what secure partners do in disagreement, and common misreadings of avoidant people.",
+        "entryVideo": {
+          "title": "Psychologist On: Do You Have Avoidant Attachment—or Just a Common Conflict Response?",
+          "videoId": "N8HUNVYlB8w",
+          "whyThisOne": "Separates what actually counts as an avoidant attachment pattern from ordinary ways of handling conflict, which is the beginner level's first lesson — what the labels describe and what they do not.",
+          "durationMin": 13
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Every description opens with a link to the channel's own attachment-style quiz, which leads into a paid programme for avoidant men, and both videos checked in full, the entry video among them, end with a chapter promoting that programme. A quiz that sorts you into a style is the use of the labels this category warns against, even though the videos themselves argue against treating the styles as fixed types. Her qualifications are as the channel states them and were not independently confirmed. No third-party sponsorship appears in the descriptions of the most recent long-form uploads.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 4,
+      "medianMin": 12,
+      "videoCount": 408,
+      "at": "2026-09"
+    }
   }
 ]

@@ -362,6 +362,11 @@
       "why": "Brand Master Academy",
       "at": "dataset"
     },
+    "@brianamacwilliam.attachment": {
+      "status": "rejected",
+      "why": "attachment-styles clinician slot (funded list): dense on attachment (21 of 35 long-form) but a coaching channel for \"professional women\" seeking relationships, not a clinician",
+      "at": "batch 64"
+    },
     "@briandenton3": {
       "status": "rejected",
       "why": "archive since January 2023, and the catalogue is a War and Peace reading project rather than Stoicism",
@@ -712,6 +717,11 @@
       "why": "Dr. Bryan Foltice",
       "at": "dataset"
     },
+    "@dr.lauriebruce": {
+      "status": "rejected",
+      "why": "attachment-styles clinician slot (funded list): 3 of 35 long-form match attachment terms",
+      "at": "batch 64"
+    },
     "@drandystapleton": {
       "status": "listed",
       "why": "Andy Stapleton",
@@ -746,6 +756,16 @@
       "status": "rejected",
       "why": "dead channel — last upload 2022-10-30, and the catalogue is a COVID-era daily anxiety series, not meditation instruction",
       "at": "batch 43"
+    },
+    "@drkimsage": {
+      "status": "rejected",
+      "why": "attachment-styles clinician slot (funded list): 7 of 60 long-form match attachment terms",
+      "at": "batch 64"
+    },
+    "@drmaikasteinborn": {
+      "status": "listed",
+      "why": "Dr. Maika Steinborn",
+      "at": "dataset"
     },
     "@drmaryclaire": {
       "status": "listed",
@@ -1297,6 +1317,16 @@
       "why": "Kane B",
       "at": "dataset"
     },
+    "@katimorton": {
+      "status": "rejected",
+      "why": "attachment-styles clinician slot (funded list): a licensed therapist, but 0 of 23 long-form in the recent window match attachment terms",
+      "at": "batch 64"
+    },
+    "@kaylilarkin": {
+      "status": "rejected",
+      "why": "attachment-styles clinician slot (funded list): dense on attachment (53 of 68 long-form) but a certified attachment coach selling coaching to singles, and the worklist asks for a clinician",
+      "at": "batch 64"
+    },
     "@keeperTax": {
       "status": "rejected",
       "why": "tax-software vendor channel",
@@ -1471,6 +1501,11 @@
       "status": "listed",
       "why": "mCoding (James Murphy)",
       "at": "dataset"
+    },
+    "@medcircle": {
+      "status": "rejected",
+      "why": "attachment-styles clinician slot (funded list): 0 of 4 long-form in the recent window match attachment terms; an expert-interview company",
+      "at": "batch 64"
     },
     "@medicosisperfectionalis": {
       "status": "rejected",
@@ -1810,6 +1845,11 @@
     "@psycacademy": {
       "status": "rejected",
       "why": "habit-formation second voice (funded list): 2 long-form uploads among the 200 most recent",
+      "at": "batch 64"
+    },
+    "@psychalive": {
+      "status": "rejected",
+      "why": "attachment-styles clinician slot (funded list): non-profit interview channel; 2 of 34 long-form match attachment terms",
       "at": "batch 64"
     },
     "@psychleadership": {
@@ -2320,6 +2360,11 @@
     "@thepragmaticprogrammer": {
       "status": "rejected",
       "why": "testing-and-quality beginner tier (group A round 4): 3 of 64 long-form match test terms",
+      "at": "batch 64"
+    },
+    "@thequietmindcounseling": {
+      "status": "rejected",
+      "why": "attachment-styles clinician slot (funded list): 3 of 30 long-form match attachment terms",
       "at": "batch 64"
     },
     "@theramseyshow": {
