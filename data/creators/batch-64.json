@@ -284,5 +284,63 @@
       "videoCount": 819,
       "at": "2026-09"
     }
+  },
+  {
+    "id": "nutritiontriathlon",
+    "name": "Nutrition Triathlon (James LeBaigue)",
+    "handle": "@nutritiontriathlon",
+    "channelUrl": "https://www.youtube.com/@nutritiontriathlon",
+    "country": "GB",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A sports nutritionist working with amateur triathletes, explaining how much to eat, how much protein is enough and how to fuel long training and race days.",
+    "longDescription": "James LeBaigue introduces himself as a sports nutritionist with an MSc who works one-to-one with amateur and professional triathletes, and the long-form covers the questions those athletes tend to start with: how much protein a triathlete needs, why calorie tracking may not be worth it, what people get wrong about fuelling, and how to carb-load and fuel a long race. His descriptions present the material as drawn from current research rather than personal advice, and the protein video pushes back on high figures promoted by prominent voices and companies. Most of the channel's recent output is short clips — {{shortPctWords}} per cent of the {{scannedWords}} most recent uploads run under two minutes — with the long-form explainers sitting between them. Everything is framed for triathlon and endurance training.",
+    "notFor": "Strength and team-sport athletes looking for sport-specific plans — the examples, numbers and race scenarios are triathlon and endurance throughout, and the long-form explainers are outnumbered by short clips.",
+    "formatTags": [
+      "tutorial",
+      "shorts"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 3,
+      "energy": 3,
+      "selfPromotion": 3,
+      "depth": 2
+    },
+    "signals": [
+      "sells-course",
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "sports-nutrition",
+        "strength": "primary",
+        "why": "Answers the adequacy questions a newer endurance athlete has first — total intake, protein per day, whether to track — where the category's other creators start at periodised fuelling and performance research.",
+        "evidence": "Long-form explainers on daily protein needs for triathletes, dropping calorie tracking, common nutrition mistakes, a complete triathlon nutrition guide, and carbohydrate loading and race fuelling for 70.3 and Ironman distances.",
+        "entryVideo": {
+          "title": "STOP Following Wrong Protein Advice — What Triathletes Need",
+          "videoId": "55iC16xXgaI",
+          "whyThisOne": "Works out how much protein an endurance athlete needs per day, set against the higher figures promoted by prominent voices and companies — the adequacy question the beginner level starts from.",
+          "durationMin": 9
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "His qualification is as the channel states it and was not independently confirmed. Every description promotes his own paid coaching, community and fuelling guides. Some descriptions carry affiliate links — a calorie-tracking app, running gear on Amazon, a training-software discount — and one video builds race plans entirely from a single sports-nutrition brand's products without a sponsorship disclosure; the entry video carries none of these. Two recent videos compare branded electrolyte and recovery drinks. General information rather than individual dietary advice, as his own descriptions say.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 60,
+      "longPct": 0,
+      "medianMin": 1,
+      "videoCount": 349,
+      "at": "2026-09"
+    }
   }
 ]

@@ -432,6 +432,11 @@
       "why": "resolves to a book podcast with 10,150 uploads",
       "at": "batch 02"
     },
+    "@citizenathletics": {
+      "status": "rejected",
+      "why": "sports-nutrition beginner tier (group A round 6): 0 of 20 long-form match nutrition terms",
+      "at": "batch 64"
+    },
     "@clearvaluetax": {
       "status": "collision",
       "why": "resolves to \"David Capitalize\", 0 uploads",
@@ -752,6 +757,11 @@
       "why": "Exposure Ninja",
       "at": "dataset"
     },
+    "@fightsciencecollective": {
+      "status": "rejected",
+      "why": "sports-nutrition beginner tier (group A round 6): 3 of 26 long-form match nutrition terms",
+      "at": "batch 64"
+    },
     "@fighttips": {
       "status": "listed",
       "why": "fightTIPS (Shane Fazen)",
@@ -796,6 +806,11 @@
       "status": "listed",
       "why": "Gamers Nexus",
       "at": "dataset"
+    },
+    "@garagestrength": {
+      "status": "rejected",
+      "why": "sports-nutrition beginner tier (group A round 6): 0 of 65 long-form match nutrition terms",
+      "at": "batch 64"
     },
     "@garethdavidstudio": {
       "status": "listed",
@@ -861,6 +876,11 @@
       "status": "listed",
       "why": "Gregory B. Sadler - That Philosophy Guy",
       "at": "dataset"
+    },
+    "@gtn": {
+      "status": "rejected",
+      "why": "sports-nutrition beginner tier (group A round 6): 0 of 61 long-form match nutrition terms in the 200 most recent uploads",
+      "at": "batch 64"
     },
     "@gui.ferreira": {
       "status": "rejected",
@@ -1137,6 +1157,11 @@
       "why": "testing-and-quality beginner tier (group A round 4): 4 of 152 long-form match test terms in its whole 179-upload catalogue — too thin on the subject to judge further",
       "at": "batch 64"
     },
+    "@kristi_oconnell": {
+      "status": "rejected",
+      "why": "sports-nutrition beginner tier (group A round 6): 7 of 37 long-form match nutrition terms, 1 of 37 teaching-framed",
+      "at": "batch 64"
+    },
     "@labmuffinbeautyscience": {
       "status": "listed",
       "why": "Lab Muffin Beauty Science (Michelle Wong)",
@@ -1327,6 +1352,11 @@
       "why": "Naomi Brockwell TV",
       "at": "dataset"
     },
+    "@naturalathleteclinic": {
+      "status": "rejected",
+      "why": "sports-nutrition beginner tier (group A round 6): 1 of 24 long-form match nutrition terms",
+      "at": "batch 64"
+    },
     "@neetcode": {
       "status": "listed",
       "why": "NeetCode",
@@ -1367,6 +1397,11 @@
       "why": "New York Vocal Coaching (Justin Stoney)",
       "at": "dataset"
     },
+    "@nickbarefitness": {
+      "status": "rejected",
+      "why": "sports-nutrition beginner tier (group A round 6): 9 of 102 long-form match nutrition terms and 0 of 102 intersect teaching framing",
+      "at": "batch 64"
+    },
     "@nigeldanson": {
       "status": "listed",
       "why": "Nigel Danson",
@@ -1390,6 +1425,11 @@
     "@nutritionmadesimple": {
       "status": "listed",
       "why": "Nutrition Made Simple! (Dr. Gil Carvalho)",
+      "at": "dataset"
+    },
+    "@nutritiontriathlon": {
+      "status": "listed",
+      "why": "Nutrition Triathlon (James LeBaigue)",
       "at": "dataset"
     },
     "@observeyoutube": {
@@ -1681,6 +1721,11 @@
       "status": "listed",
       "why": "Shopify Masters",
       "at": "dataset"
+    },
+    "@simnettnutrition": {
+      "status": "rejected",
+      "why": "sports-nutrition beginner tier (group A round 6): high subject density (73 of 152 long-form) but 5 of 152 intersect teaching framing, and those are general plant-based eating and a full day of eating — not eating for training",
+      "at": "batch 64"
     },
     "@simplesnippets": {
       "status": "listed",
@@ -2011,6 +2056,11 @@
       "status": "listed",
       "why": "The Speaker Lab",
       "at": "dataset"
+    },
+    "@thesportsnutritionplaybook": {
+      "status": "rejected",
+      "why": "sports-nutrition beginner tier (group A round 6): 123 of 200 uploads match nutrition terms but only 15 are long-form, 3 of them on the subject — a short-form channel",
+      "at": "batch 64"
     },
     "@thesportsphysio": {
       "status": "rejected",
