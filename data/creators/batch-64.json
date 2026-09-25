@@ -1,0 +1,61 @@
+[
+  {
+    "id": "learnlinuxtv",
+    "name": "Learn Linux TV",
+    "handle": "@learnlinuxtv",
+    "channelUrl": "https://www.youtube.com/@learnlinuxtv",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A Linux and system-administration channel whose self-hosting guides start from an empty server, with separate step-by-step builds for Docker, Nextcloud, TrueNAS and Tailscale.",
+    "longDescription": "Learn Linux TV is a Linux and system-administration channel whose host introduces himself as Jay and states over twenty years of Linux and sysadmin experience. Self-hosting is a minority of the catalogue, but it is the part built for someone with nothing running yet: separate walkthroughs for installing Docker and starting a first container, building Nextcloud on Debian from scratch, TrueNAS Scale, and Tailscale, plus a numbered multi-part series on server monitoring. {{longCountWords|cap}} of the {{scannedWords}} most recent uploads run past twenty minutes, with a median of {{medianPhrase}}, and the format is a screen-recorded walkthrough with time codes rather than a talk to camera. Some tutorials are paid for by the company whose product they teach, disclosed in the description each time.",
+    "notFor": "Anyone after a homelab hardware channel, or a single ordered curriculum — the self-hosting material is scattered through a much larger Linux catalogue and has to be picked out by title.",
+    "formatTags": [
+      "tutorial",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "sells-course",
+      "sponsor-heavy"
+    ],
+    "categories": [
+      {
+        "id": "self-hosting",
+        "strength": "secondary",
+        "why": "Starts from an empty machine — installing the container runtime and getting one service up — where the category's other two creators assume storage and networking are already configured.",
+        "evidence": "Step-by-step self-hosting builds that begin at an empty server: a Docker install-and-first-container walkthrough, Nextcloud on Debian from scratch, TrueNAS Scale, and a numbered multi-part series on server monitoring.",
+        "entryVideo": {
+          "title": "Easily Install Docker on Linux and Run Your First Container",
+          "videoId": "FvdlwyMwrzg",
+          "whyThisOne": "The exact step this category was missing: putting the runtime on a machine with nothing on it and getting one container running. It is also sponsor-free, which several of the channel's other build guides are not.",
+          "durationMin": 16
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Some tutorials are sponsored by the company whose product they teach — Teleport, Kestra, Icinga, ThinLinc, RamNode and Tailscale among them — and although each says so in its own description, treat those recommendations as advertising rather than assessment. Every description also carries a standing block promoting the host's own courses, book and paid assistance; that block is boilerplate rather than per-video selling. The video listed here carries no sponsorship.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 6,
+      "longPct": 34,
+      "medianMin": 16,
+      "videoCount": 1054,
+      "at": "2026-09"
+    }
+  }
+]

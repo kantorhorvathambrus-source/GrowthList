@@ -94,7 +94,16 @@ for (const handle of handles) {
     console.log(`scan: ${scanned} uploads${escalated ? ' (escalated from 50 — long-form was scarce)' : QUICK ? ' (quick, no escalation)' : ''}`);
     console.log(`duration mix of ${durs.length}: <=2m ${shorts} | 3-19m ${mid} | >=20m ${long} | median ${durs.sort((a,b)=>a-b)[Math.floor(durs.length/2)] ?? '?'}m`);
     console.log(`declared audio langs: ${langs.join(', ') || 'none declared'}`);
-    console.log(`desc: ${c.description.replace(/\s+/g, ' ').slice(0, 320)}`);
+    // THE WHOLE DESCRIPTION, NEVER A PREFIX OF IT. This was capped at 320
+    // characters, which is the field the Sadler case turned on: @reasoniocritthinking
+    // says "new channel" in its own description, we had fetched that text on
+    // every audit run for fifty-nine batches, and nobody read it. Learn Linux
+    // TV's description is 998 characters, so a researcher judging that
+    // candidate from this output was reading a third of it and could not tell.
+    // The length is printed so the absence of truncation is checkable rather
+    // than assumed.
+    const desc = c.description.replace(/\s+/g, ' ');
+    console.log(`desc (${desc.length} chars, in full): ${desc}`);
     const allLong = vids.filter((v) => (v.durationMin ?? 0) >= 8);
     console.log(`long-form candidates (>=8m), newest first — showing ${Math.min(12, allLong.length)} of ${allLong.length}:`);
     for (const v of allLong.slice(0, 12)) {

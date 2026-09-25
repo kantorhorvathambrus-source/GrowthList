@@ -633,6 +633,55 @@ this file has the rules, schema, and current state.
     dependency is a FACT ABOUT A FILE, and there is no such thing as
     estimating one. Open the file.
 
+24. **SPONSORSHIP IS JUDGED PER VIDEO, NOT PER CHANNEL — AND THE ENTRY
+    VIDEO IS WHERE IT BITES.** The owner's rule, set during group A's
+    self-hosting round. It refines rule 13 rather than replacing it:
+    commercial interest is still disclosed rather than silently excluded.
+
+    **A sponsored video where THE SPONSOR IS THE THING BEING TAUGHT is
+    not usable as an `entryVideo`.** Not because sponsorship is
+    disqualifying, but because the viewer cannot tell which part of the
+    recommendation survived the cheque. "Teleport: How to Secure SSH
+    Access", sponsored by Teleport, teaches a tool and advertises it in
+    the same breath, and the visitor we send there has no way to separate
+    the two. The entry video is the one thing this project puts in front
+    of a person as "start here", so it carries a standard the rest of the
+    catalogue does not.
+
+    **A channel that produces such videos is NOT thereby disqualified**,
+    as long as a sponsor-free video exists that is genuinely the brief.
+    Learn Linux TV carries an explicit sponsorship disclosure on 35 of
+    176 long-form uploads (20%), and several of those are tutorials about
+    the sponsor's own product — and it is still the right creator for
+    `self-hosting`'s beginner tier, because "Easily Install Docker on
+    Linux and Run Your First Container" is clean and is exactly what the
+    category was missing.
+
+    **If no sponsor-free video fits the brief, the creator does not go
+    in** — and that is a documented gap under rule 18, with the scan
+    recorded, not a silent omission.
+
+    **`sells-course` stays a signal, not a bar, when it is standing
+    boilerplate rather than per-video pushing — and the record must say
+    which it is.** This distinction has to be written down because it was
+    nearly misreported: a regex over descriptions put Learn Linux TV at
+    98% "affiliate", which read as relentless commercial pressure. It is
+    one fixed promo block — courses, a book, swag, a newsletter — pasted
+    into every description. Reading ONE FULL DESCRIPTION settled it, and
+    counting alone never would have. A percentage over boilerplate
+    measures the boilerplate.
+
+    **Both signals still go on the record, and the caveat names the
+    sponsored-tutorial pattern explicitly**, in the visitor's words
+    rather than ours. A visitor should learn from the card that some
+    tutorials on the channel are paid for by the tool being taught.
+
+    **Check descriptions, never titles.** A title does not disclose
+    sponsorship; the description does. `evidence.mjs --grep` searches
+    titles, so it cannot answer this question — the sponsorship check is
+    a separate read of the descriptions of the specific videos being
+    considered.
+
 ## Naming conventions
 
 - **Category id**: kebab-case of the English name (`public-speaking`,

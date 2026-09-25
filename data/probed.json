@@ -1022,6 +1022,11 @@
       "why": "Lawrence Systems",
       "at": "dataset"
     },
+    "@learnlinuxtv": {
+      "status": "listed",
+      "why": "Learn Linux TV",
+      "at": "dataset"
+    },
     "@legalvisionlaw": {
       "status": "rejected",
       "why": "a law firms own channel; legal content is jurisdiction-bound and this is a firm selling services in its own jurisdiction",
