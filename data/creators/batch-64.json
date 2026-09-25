@@ -227,5 +227,62 @@
       "videoCount": 2812,
       "at": "2026-09"
     }
+  },
+  {
+    "id": "peakdavid",
+    "name": "David Taylor",
+    "handle": "@peakdavid",
+    "channelUrl": "https://www.youtube.com/@peakdavid",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A college writing instructor teaching the mechanics of student essays and research papers: thesis, paragraph structure, when and how to cite, and APA and MLA formatting.",
+    "longDescription": "David Taylor describes himself as a college writing and communications instructor of two decades' standing, currently teaching at the University of Maryland Global Campus and Parker University. The channel is organised around what a first-year student has to produce: an essay with a thesis and body paragraphs, a research paper in APA or MLA format, citations that are neither missing nor excessive. Short explanations sit alongside recordings of his own course sessions, and the descriptions link to his own templates, sample papers and playlists. Across the {{scannedWords}} most recent uploads the median runs {{medianPhrase}}. A smaller strand teaches English grammar and test-essay technique to non-native writers.",
+    "notFor": "Graduate students and anyone writing for publication — the material stops at the undergraduate paper, and about one long-form upload in six is a recorded class session for a specific nursing-college course rather than a standalone lesson.",
+    "formatTags": [
+      "tutorial",
+      "lecture"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 1,
+      "depth": 2
+    },
+    "signals": [
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "academic-writing",
+        "strength": "primary",
+        "why": "Teaches the first essay and the first cited paper step by step, where the category's two existing creators start at the thesis, the literature review and journal publication.",
+        "evidence": "Long-form lessons on writing an essay step by step, writing an APA research paper from introduction to reference list, when a source needs citing, avoiding plagiarism, and improving academic prose.",
+        "entryVideo": {
+          "title": "How to Write an Essay Step-by-Step | The 4-Sentence Method",
+          "videoId": "oAoPdjsCpzU",
+          "whyThisOne": "Plans an essay from a thesis statement down to each body paragraph with one repeatable outline, which is the structure a beginner needs before anything about style.",
+          "durationMin": 14
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "His credentials are as the channel states them and were not independently confirmed. The long-form catalogue mixes standalone lessons with recorded live sessions from courses he teaches, which assume that course's assignments. No sponsorship disclosure appears in the descriptions of the 67 most recent long-form uploads; their links are labelled as his own templates, sample papers and playlists. One video walks through a free citation generator, which is a tutorial on the tool rather than an endorsement disclosed as paid.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 14,
+      "longPct": 14,
+      "medianMin": 4,
+      "videoCount": 819,
+      "at": "2026-09"
+    }
   }
 ]

@@ -627,6 +627,11 @@
       "why": "Dr. Ramani Durvasula",
       "at": "dataset"
     },
+    "@doctorshaene": {
+      "status": "rejected",
+      "why": "academic-writing beginner tier (group A round 5): archive since 2024; 5 of 44 long-form match essay terms",
+      "at": "batch 64"
+    },
     "@dr.bryanfoltice": {
       "status": "listed",
       "why": "Dr. Bryan Foltice",
@@ -691,6 +696,11 @@
       "status": "listed",
       "why": "E3 Rehab",
       "at": "dataset"
+    },
+    "@eapfoundation": {
+      "status": "rejected",
+      "why": "academic-writing beginner tier (group A round 5): 7 of 20 long-form on academic writing, all sentence-level English-for-academic-purposes (hedging, reporting verbs, transition signals) rather than essay structure — a possible intermediate-tier candidate, not the beginner tier sought",
+      "at": "batch 64"
     },
     "@eatforendurance": {
       "status": "listed",
@@ -1037,6 +1047,11 @@
       "why": "testing-and-quality beginner tier (group A round 4): 6 of 45 long-form match test terms and 0 of 45 intersect teaching framing — mutation, property and effect-based testing for people who already test",
       "at": "batch 64"
     },
+    "@jesuscollegeoxford1571": {
+      "status": "rejected",
+      "why": "academic-writing beginner tier (group A round 5): college institutional channel; 3 of 45 long-form match essay terms",
+      "at": "batch 64"
+    },
     "@jherr": {
       "status": "listed",
       "why": "Jack Herrington",
@@ -1090,6 +1105,11 @@
     "@kaarthikforu": {
       "status": "rejected",
       "why": "5 of 35 long-form match SQL terms; mostly short-form",
+      "at": "batch 64"
+    },
+    "@kaelynthehistorian": {
+      "status": "rejected",
+      "why": "academic-writing beginner tier (group A round 5): highest subject density in the round (29 of 147 long-form) but the intersect with teaching framing leaves 8, every one a PhD vlog, dissertation diary or study-with-me stream — density is not teaching",
       "at": "batch 64"
     },
     "@kaneb": {
@@ -1412,6 +1432,11 @@
       "why": "Patrick Teahan",
       "at": "dataset"
     },
+    "@peakdavid": {
+      "status": "listed",
+      "why": "David Taylor",
+      "at": "dataset"
+    },
     "@pensioncraft": {
       "status": "listed",
       "why": "PensionCraft (Ramin Nakisa)",
@@ -1481,6 +1506,16 @@
       "status": "collision",
       "why": "already recorded in batch 20; re-probed and still resolves to Werner Muller, 1 upload",
       "at": "batch 46"
+    },
+    "@professorkorten": {
+      "status": "rejected",
+      "why": "academic-writing beginner tier (group A round 5): 0 of 113 long-form match essay, thesis, citation or argument terms",
+      "at": "batch 64"
+    },
+    "@professormarkegan": {
+      "status": "rejected",
+      "why": "academic-writing beginner tier (group A round 5): archive since 2023, 60 uploads; 3 of 18 long-form are teaching-framed essay videos — too small a catalogue for the tier",
+      "at": "batch 64"
     },
     "@professorpincushion": {
       "status": "listed",
@@ -1601,6 +1636,11 @@
       "status": "listed",
       "why": "Satori Graphics",
       "at": "dataset"
+    },
+    "@scribbr-us": {
+      "status": "rejected",
+      "why": "academic-writing beginner tier (group A round 5): archive since 2021, 0 long-form uploads among 60",
+      "at": "batch 64"
     },
     "@seanallen": {
       "status": "rejected",
@@ -2042,6 +2082,11 @@
       "why": "Two Cents (PBS)",
       "at": "dataset"
     },
+    "@uomacademicskills": {
+      "status": "rejected",
+      "why": "academic-writing beginner tier (group A round 5): archive since 2023; 4 of 18 long-form match essay terms",
+      "at": "batch 64"
+    },
     "@uprighthealth": {
       "status": "listed",
       "why": "Upright Health",
@@ -2091,6 +2136,11 @@
       "status": "rejected",
       "why": "real long-form (14 of 49 over 20m, several 36-52m) but its centre is job search and LinkedIn profiles; job-interviewing is already at 2 and the resume-writing blurb is about the document itself. Reconsider for a job-search category, not career-change",
       "at": "batch 46"
+    },
+    "@writingcentereducation3253": {
+      "status": "rejected",
+      "why": "academic-writing beginner tier (group A round 5): archive since 2014, 22 uploads",
+      "at": "batch 64"
     },
     "@writingwithandrew": {
       "status": "listed",
