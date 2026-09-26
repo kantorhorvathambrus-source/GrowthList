@@ -917,6 +917,11 @@
       "why": "ai-fundamentals teacher slot (funded list): 18 of 48 long-form on AI terms, 2 of 48 teaching-framed",
       "at": "batch 64"
     },
+    "@engineeringmanagement": {
+      "status": "rejected",
+      "why": "people-management: engineering-career channel, 10 of 142 long-form match managing people",
+      "at": "batch 64"
+    },
     "@errichto": {
       "status": "listed",
       "why": "Errichto (Kamil Dębowski)",
@@ -951,6 +956,11 @@
       "status": "listed",
       "why": "Exposure Ninja",
       "at": "dataset"
+    },
+    "@fellow-ai": {
+      "status": "rejected",
+      "why": "people-management: meeting-software vendor channel (title \"Fellow - AI Meeting Assist\"); not scanned",
+      "at": "batch 64"
     },
     "@femkedesign": {
       "status": "rejected",
@@ -1287,6 +1297,11 @@
       "why": "James Shack",
       "at": "dataset"
     },
+    "@janelandersonphd": {
+      "status": "rejected",
+      "why": "people-management: 9 of 147 long-form uploads match managing people; the channel is about other things",
+      "at": "batch 64"
+    },
     "@jasonstephensonmeditation": {
       "status": "rejected",
       "why": "sleep and ambient meditation audio — a listening product rather than a practice",
@@ -1350,6 +1365,11 @@
     "@jessewarden": {
       "status": "rejected",
       "why": "testing-and-quality beginner tier (group A round 4): 6 of 45 long-form match test terms and 0 of 45 intersect teaching framing — mutation, property and effect-based testing for people who already test",
+      "at": "batch 64"
+    },
+    "@jessicabreitenfeld": {
+      "status": "rejected",
+      "why": "people-management: social-experiment channel, 169 of 200 uploads at two minutes or less and 0 of 10 long-form on managing",
       "at": "batch 64"
     },
     "@jesuscollegeoxford1571": {
@@ -1607,9 +1627,19 @@
       "why": "Mama Doctor Jones (Dr. Danielle Jones)",
       "at": "dataset"
     },
+    "@management101withmax": {
+      "status": "rejected",
+      "why": "people-management: archive since 2024-01 and 122 of 147 uploads run two minutes or less — clips, not teaching",
+      "at": "batch 64"
+    },
     "@managementcourses": {
       "status": "rejected",
       "why": "negotiation second-school slot (funded list): 6 of 114 long-form match negotiation terms",
+      "at": "batch 64"
+    },
+    "@managementcues": {
+      "status": "rejected",
+      "why": "people-management: 9 of 70 long-form match the subject, most of them workshop session recordings; own description claims performance up 235% and stress down 243%",
       "at": "batch 64"
     },
     "@managertools": {
@@ -2082,6 +2112,11 @@
       "why": "probed for personal-budgeting; the channel is couples-money interviews and a large course business rather than budgeting instruction",
       "at": "batch 52"
     },
+    "@ramonashawleadership": {
+      "status": "listed",
+      "why": "Ramona Shaw",
+      "at": "dataset"
+    },
     "@ramseyvoicestudio": {
       "status": "listed",
       "why": "Ramsey Voice Studio (Matt Ramsey)",
@@ -2541,6 +2576,11 @@
       "status": "rejected",
       "why": "strong and credentialed (author of four named sewing books, knits and denim specialist) but Made to Sew matched the fit-and-construction blurb more directly. Reconsider first if sewing-and-mending ever goes to three",
       "at": "batch 51"
+    },
+    "@themadeleader": {
+      "status": "rejected",
+      "why": "people-management: interview podcast, 138 of 200 uploads two minutes or less; 10 of 58 long-form match teaching framing — weaker than the pick on density and mostly guests",
+      "at": "batch 64"
     },
     "@themathsorcerer": {
       "status": "listed",

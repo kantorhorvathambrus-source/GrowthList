@@ -1299,5 +1299,63 @@
       "videoCount": 80,
       "at": "2026-09"
     }
+  },
+  {
+    "id": "ramonashawleadership",
+    "name": "Ramona Shaw",
+    "handle": "@ramonashawleadership",
+    "channelUrl": "https://www.youtube.com/@ramonashawleadership",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A leadership coach’s podcast for new and first-time managers, each episode taking one situation — a one-to-one, a feedback conversation, an inherited team — and breaking it into steps.",
+    "longDescription": "The channel carries The Manager Track, a podcast by Ramona Shaw, author of The Confident & Competent New Manager, addressed almost entirely to people in their first years of managing. Recent episodes are solo and built around a single situation: one-to-ones that have drifted into status meetings, feedback held back until it becomes a performance problem, taking over a team you did not build, a hire that is not working out, managing former peers, delegating. Most name a small framework — three conversations, four diagnostic questions — and give the wording to use. Across the {{scannedWords}} most recent uploads the median runs {{medianPhrase}}, and {{longCountWords}} run twenty minutes or more.",
+    "notFor": "Anyone managing managers or handling restructures and terminations — the recent catalogue stays with the first years of the job — and anyone wanting research rather than a practitioner’s method, since few episodes cite studies.",
+    "formatTags": [
+      "podcast",
+      "long-form",
+      "shorts"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 3
+    },
+    "signals": [
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "people-management",
+        "strength": "primary",
+        "why": "Teaches the everyday mechanics of a first management job — one-to-ones, early feedback, an inherited team, a hire going wrong — as named steps with the words to say, which is the beginner and intermediate ground of this category.",
+        "evidence": "Solo episodes of 20–50 minutes on one-to-ones turning into status meetings, a three-conversation feedback method, leading an inherited team, what to do when you regret a hire, managing former peers, and delegating; 33 of the 34 long-form descriptions in the latest 50 uploads address new or first-time managers.",
+        "entryVideo": {
+          "title": "Giving Feedback as a Manager: The 3-Conversation Method",
+          "videoId": "yy78c87rXhs",
+          "whyThisOne": "How to raise a small problem in ninety seconds before it becomes a performance issue, and how to recover when you have already let it slide — the habit most new managers skip.",
+          "durationMin": 29
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Every episode description carries the same block of links to her firm’s paid courses and 12-week programme, her book and a booking page for a coaching call; the one-to-ones episode points to a paid course on that same subject, which is why a different episode is the starting point here. No third-party sponsor placement appears in the descriptions of the 50 most recent uploads; spoken ad reads were not checked. Shorts make up a little over a quarter of recent uploads.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 28,
+      "longPct": 60,
+      "medianMin": 25,
+      "videoCount": 513,
+      "at": "2026-09"
+    }
   }
 ]
