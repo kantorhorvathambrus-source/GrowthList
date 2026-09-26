@@ -726,6 +726,27 @@ this file has the rules, schema, and current state.
     else still only needs disclosing, and choosing a clean alternative
     where one exists.
 
+25. **AN INACTIVE CHANNEL MAY BE LISTED; IT MAY NOT CLOSE A CATEGORY, AND
+    IT NEVER BEATS A COMPARABLE ACTIVE ONE.** The owner's rule, written in
+    batch 64 after the pattern was noticed rather than decided: four
+    funded rounds in a row — `ui-ux-design`, `negotiation`,
+    `couples-communication`, and `video-editing`'s original holder — ended
+    with an `archive` or `dormant` channel in the slot. Each pick was
+    defensible alone. Together they were a drift nobody had chosen.
+    - **Listing is allowed** when the teaching is evergreen and squarely on
+      brief — usability-test moderation, the interest-based school of
+      negotiation, emotionally focused therapy do not date — and the
+      caveat says in plain words that the channel no longer posts.
+    - **It does not close the category.** The close plan counts active
+      creators, deliberately, so a category whose second voice is inactive
+      stays on the funded list. That is not a defect in the report; it is
+      the report being honest that a visitor has one live voice.
+    - **An active candidate of comparable quality is taken instead.** When
+      the pick is inactive, the round report carries one sentence saying
+      no active candidate was comparable, and why — named, not assumed. A
+      pick that cannot produce that sentence is the drift this rule exists
+      to stop.
+
 ## Naming conventions
 
 - **Category id**: kebab-case of the English name (`public-speaking`,
