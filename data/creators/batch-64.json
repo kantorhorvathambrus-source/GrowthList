@@ -1239,5 +1239,65 @@
       "videoCount": 137,
       "at": "2026-09"
     }
+  },
+  {
+    "id": "drsuejohnson",
+    "name": "Dr. Sue Johnson",
+    "handle": "@drsuejohnson",
+    "channelUrl": "https://www.youtube.com/@drsuejohnson",
+    "country": "CA",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "dormant",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "The channel of the creator of Emotionally Focused Therapy, with short research-based episodes for couples on conflict, repair and emotional responsiveness.",
+    "longDescription": "The channel describes Sue Johnson, who died in 2024, as the creator of Emotionally Focused Therapy, an attachment-based approach to couples therapy that treats conflict as a cycle driven by fear of disconnection. For couples, its core is Science with Sue: short episodes on what most defines a couple's relationship, shifting out of blame during conflict, the self-defeating strategies partners fall into, and naming the emotion underneath an argument, each listing the studies it draws on. Around them sit an explanation of the therapy itself, talks and conference plenaries, and longer conversations. {{shortPctWords|cap}} per cent of the {{scannedWords}} most recent uploads run under two minutes.",
+    "notFor": "Anyone wanting a course of lessons or new material — the couple-facing teaching is a handful of short episodes from 2019, the channel no longer adds teaching, and a share of it is talks addressed to therapists.",
+    "formatTags": [
+      "tutorial",
+      "lecture",
+      "shorts"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 3,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 3
+    },
+    "signals": [
+      "cites-research",
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "couples-communication",
+        "strength": "primary",
+        "why": "Teaches conflict between partners as a cycle driven by fear of disconnection and repaired through emotional responsiveness — the emotionally focused school, a different method from the category's other creator.",
+        "evidence": "Short research-citing episodes for couples on the key factors in a relationship, changing channels out of blame during conflict, self-defeating strategies in love relationships and pinpointing emotions, plus an explanation of emotionally focused therapy and talks on attachment in adult relationships.",
+        "entryVideo": {
+          "title": "Science with Sue, Episode 2:  Changing Channels during Conflict",
+          "videoId": "uCuljC2UUO0",
+          "whyThisOne": "Shows how keeping your own emotional balance lets a couple step out of the blame game in the middle of a fight, with the studies behind it listed underneath — conflict and repair in six minutes.",
+          "durationMin": 6
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Sue Johnson died in 2024, as the channel's own description records; its uploads since then are a series of conversations about her life and work, released until April 2025, and the channel has been quiet since. Descriptions link to her book and her paid Hold Me Tight Online programme; no sponsorship or discount-code placement appears in the descriptions of any of its 80 uploads. Her credentials are as the channel states them and were not independently checked.",
+    "catalogue": {
+      "scanned": 49,
+      "shortPct": 49,
+      "longPct": 10,
+      "medianMin": 3,
+      "videoCount": 80,
+      "at": "2026-09"
+    }
   }
 ]

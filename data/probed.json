@@ -447,6 +447,11 @@
       "why": "4 uploads",
       "at": "batch 47"
     },
+    "@centericc": {
+      "status": "rejected",
+      "why": "couples-communication non-Gottman slot (funded list, batch 64): a local therapy practice's marketing channel: 38 of 134 descriptions offer a consultation, descriptions carry search-engine FAQ blocks for Baltimore and Maryland, and at least one description's chapter markers belong to an unrelated video about gray-market peptides — metadata that cannot be relied on; 103 of 134 uploads are shorts",
+      "at": "batch 64"
+    },
     "@chainbaker": {
       "status": "listed",
       "why": "ChainBaker",
@@ -500,6 +505,11 @@
     "@citizenathletics": {
       "status": "rejected",
       "why": "sports-nutrition beginner tier (group A round 6): 0 of 20 long-form match nutrition terms",
+      "at": "batch 64"
+    },
+    "@clarerosoman": {
+      "status": "rejected",
+      "why": "couples-communication non-Gottman slot (funded list, batch 64): archive since 2024; addressed to couples therapists (\"For Couples Therapists\", \"Tracking the Cycle in Stage 1 EFT\")",
       "at": "batch 64"
     },
     "@clearvaluetax": {
@@ -596,6 +606,11 @@
       "status": "listed",
       "why": "Alex O'Connor (CosmicSkeptic)",
       "at": "dataset"
+    },
+    "@couplescounselingatl": {
+      "status": "rejected",
+      "why": "couples-communication non-Gottman slot (funded list, batch 64): self-described Gottman couples therapists — the same frame as the existing creator, which the worklist rules out",
+      "at": "batch 64"
     },
     "@craigdacy": {
       "status": "rejected",
@@ -837,6 +852,11 @@
       "why": "probed for ecommerce; dropshipping course funnel",
       "at": "batch 53"
     },
+    "@drsuejohnson": {
+      "status": "listed",
+      "why": "Dr. Sue Johnson",
+      "at": "dataset"
+    },
     "@drtraceymarks": {
       "status": "listed",
       "why": "Dr. Tracey Marks",
@@ -946,6 +966,11 @@
       "status": "listed",
       "why": "fightTIPS (Shane Fazen)",
       "at": "dataset"
+    },
+    "@figsandteale": {
+      "status": "rejected",
+      "why": "couples-communication non-Gottman slot (funded list, batch 64): no long-form uploads in the 200 most recent; a branded method",
+      "at": "batch 64"
     },
     "@filmeditingpro": {
       "status": "listed",
@@ -2307,6 +2332,11 @@
       "why": "Stephan Kesting",
       "at": "dataset"
     },
+    "@stephanya": {
+      "status": "rejected",
+      "why": "couples-communication non-Gottman slot (funded list, batch 64): mostly addressed to therapists and therapy careers; couples teaching is a minor strand",
+      "at": "batch 64"
+    },
     "@stoicdirections": {
       "status": "rejected",
       "why": "same shape as Stoic Journal — high-volume unattributed stoicism narration",
@@ -2471,6 +2501,11 @@
       "status": "listed",
       "why": "The Coding Train (Daniel Shiffman)",
       "at": "dataset"
+    },
+    "@theeftcafe": {
+      "status": "rejected",
+      "why": "couples-communication non-Gottman slot (funded list, batch 64): addressed to therapists learning the EFT model; 4 of 11 long-form",
+      "at": "batch 64"
     },
     "@thefinancestoryteller": {
       "status": "listed",
