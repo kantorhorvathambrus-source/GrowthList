@@ -642,6 +642,11 @@
       "why": "couples-communication non-Gottman slot (funded list, batch 64): self-described Gottman couples therapists — the same frame as the existing creator, which the worklist rules out",
       "at": "batch 64"
     },
+    "@craigbigelow": {
+      "status": "rejected",
+      "why": "insurance-basics AU slot (batch 65): archive since 2023-02; 85 uploads, 25 long-form",
+      "at": "batch 65"
+    },
     "@craigdacy": {
       "status": "rejected",
       "why": "debt-payoff non-ideological slot (funded list): 2 of 33 long-form match debt terms",
@@ -1877,6 +1882,11 @@
       "why": "real-estate-investing (funded list, batch 64): 4 of 23 long-form on property terms; a general personal-finance channel",
       "at": "batch 64"
     },
+    "@morningstaraus": {
+      "status": "rejected",
+      "why": "insurance-basics AU slot (batch 65): 0 of 23 long-form in the latest 200 on insurance",
+      "at": "batch 65"
+    },
     "@moz": {
       "status": "listed",
       "why": "Moz (Whiteboard Friday)",
@@ -2417,6 +2427,11 @@
       "why": "Shaelin Bishop (ShaelinWrites)",
       "at": "dataset"
     },
+    "@shesonthemoney": {
+      "status": "rejected",
+      "why": "insurance-basics AU slot (batch 65): 171 of 200 recent uploads two minutes or less; 2 of 26 long-form on insurance",
+      "at": "batch 65"
+    },
     "@shopifymasters": {
       "status": "listed",
       "why": "Shopify Masters",
@@ -2455,6 +2470,11 @@
     "@skillopedia": {
       "status": "listed",
       "why": "Skillopedia",
+      "at": "dataset"
+    },
+    "@skyewealth": {
+      "status": "listed",
+      "why": "Skye Wealth",
       "at": "dataset"
     },
     "@sleepystoicvids": {
@@ -2561,6 +2581,11 @@
       "status": "listed",
       "why": "Stumpy Nubs (James Hamilton)",
       "at": "dataset"
+    },
+    "@superguideaustralia": {
+      "status": "rejected",
+      "why": "insurance-basics AU slot (batch 65): 2 of 73 long-form on insurance",
+      "at": "batch 65"
     },
     "@superinvestor": {
       "status": "rejected",
@@ -2677,6 +2702,11 @@
       "why": "30 of 50 uploads under two minutes and only two over twenty; personal spending vlogs with one genuine long case study",
       "at": "batch 57"
     },
+    "@thecheckouttv": {
+      "status": "rejected",
+      "why": "insurance-basics AU slot (batch 65): archive since 2018-04; 1 of 34 long-form in the latest 200 on insurance",
+      "at": "batch 65"
+    },
     "@thecherno": {
       "status": "listed",
       "why": "The Cherno (Yan Chernikov)",
@@ -2706,6 +2736,11 @@
       "status": "listed",
       "why": "The Finance Storyteller (Philip de Vroe)",
       "at": "dataset"
+    },
+    "@thefineprintau": {
+      "status": "rejected",
+      "why": "insurance-basics AU slot (batch 65): a production line, not a teacher — channel started 2026-06-15 with 217 uploads since (108 in July 2026 alone), all 3-19 minutes, and its own channel description still carries the placeholder '[your-link-here]'",
+      "at": "batch 65"
     },
     "@thefutur": {
       "status": "listed",
@@ -2856,6 +2891,11 @@
       "status": "rejected",
       "why": "Adam Meakins, found only via the 320-unit fallback search: 7 uploads",
       "at": "batch 43"
+    },
+    "@thestrategystacker": {
+      "status": "rejected",
+      "why": "insurance-basics AU slot (batch 65): 4 of 195 long-form in the latest 200 on insurance",
+      "at": "batch 65"
     },
     "@theukmarketwrap": {
       "status": "rejected",

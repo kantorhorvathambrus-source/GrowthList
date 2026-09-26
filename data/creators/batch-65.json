@@ -178,5 +178,66 @@
       "videoCount": 220,
       "at": "2026-09"
     }
+  },
+  {
+    "id": "skyewealth",
+    "name": "Skye Wealth",
+    "handle": "@skyewealth",
+    "channelUrl": "https://www.youtube.com/@skyewealth",
+    "country": "AU",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "An Australian personal-insurance advice firm whose advisers explain how life, TPD, trauma and income-protection policies behave at claim time, in long conversational episodes and many short clips.",
+    "longDescription": "Skye Wealth describes itself as an insurance advice business operating under an Australian financial services licence, and its long-form videos are its advisers working through how cover actually behaves: what starts and resets an income-protection waiting period, benefit periods after a second claim, own- against any-occupation TPD definitions, underwriting loadings and declines, pre-existing conditions, and whether to hold cover inside or outside superannuation. Many are built around a claim scenario, and a weekly “This Week at Skye” episode covers regulator actions and industry news. Most uploads are short clips: {{shortCountWords}} of the {{scannedWords}} most recent run two minutes or less.",
+    "notFor": "Anyone outside Australia — the products, super rules and regulators are Australian throughout — and anyone who wants insurance explained by someone who does not also arrange it for a living.",
+    "formatTags": [
+      "long-form",
+      "interview",
+      "shorts"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 4
+    },
+    "signals": [
+      "practitioner",
+      "commercial-conflict"
+    ],
+    "jurisdiction": "AU",
+    "jurisdictionNote": "Australian products and law throughout — insurance inside superannuation, the 2020 income-protection reforms, APRA, ASIC and AFCA. The questions to ask of a definition, a waiting period or a benefit period transfer to any market; the products, tax treatment and super rules do not.",
+    "categories": [
+      {
+        "id": "insurance-basics",
+        "strength": "primary",
+        "why": "Explains how a policy behaves at claim time — definitions, waiting and benefit periods, underwriting — which is the category’s intermediate step of comparing cover on exclusions and claim behaviour rather than premium.",
+        "evidence": "Across all 1,721 uploads, 109 of the 188 videos of eight minutes or more are titled on insurance, running 13 to 49 minutes: TPD definitions and why claims are denied, income-protection waiting periods and benefit periods, underwriting loadings and declines, pre-existing conditions, cover inside against outside super, trauma against private health cover, and a 49-minute episode on whether adviser commissions inflate premiums.",
+        "entryVideo": {
+          "title": "Why TPD Gets Denied: The Definitions No One Explains",
+          "videoId": "9vr9ZCS3Tjc",
+          "whyThisOne": "Own occupation, any occupation, home duties and daily-living definitions of total and permanent disability, and how the one that applies can shift between applying and claiming — reading a policy for claim behaviour rather than price.",
+          "durationMin": 18
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Skye Wealth is an insurance advice firm: it earns when a viewer arranges cover through it, which is a commercial interest in the decisions the videos discuss. The descriptions rarely sell directly — 5 of the 188 long-form descriptions invite the viewer to book a consultation with the firm — and the entry video’s carries no offer or link. No third-party sponsor or affiliate placement was found in the long-form descriptions. Everything is Australian; check how it maps to your own country.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 88,
+      "longPct": 4,
+      "medianMin": 1,
+      "videoCount": 1721,
+      "at": "2026-09"
+    }
   }
 ]
