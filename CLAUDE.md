@@ -769,8 +769,11 @@ this file has the rules, schema, and current state.
       64, when `ui-ux-design`, `negotiation` and `couples-communication`
       were first skipped for this reason. *Held open* is derived, not
       stored: two or more creators listed, fewer than two active.
-      (The coverage report does not yet order them this way — the change
-      is in `scripts/lib/close-plan.mjs` and awaits owner approval.)
+      `scripts/lib/close-plan.mjs` orders them this way (owner-approved,
+      batch 64): funding is untouched, held-open rows are listed after the
+      not-yet-worked ones, and `coverage-report.mjs` tags each
+      "held open (rule 25)". Verified: same 31 funded categories before and
+      after; only those four rows moved.
 
 ## Naming conventions
 
