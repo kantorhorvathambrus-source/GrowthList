@@ -912,6 +912,11 @@
       "why": "video-editing (funded list, batch 64): dormant since 2025-08",
       "at": "batch 64"
     },
+    "@edrempel": {
+      "status": "rejected",
+      "why": "financial-independence: 5 of 162 long-form on withdrawal, FI or early-retirement terms",
+      "at": "batch 64"
+    },
     "@edurekain": {
       "status": "rejected",
       "why": "probed for ai-fundamentals; an 11,895-upload certification mill",
@@ -940,6 +945,11 @@
     "@engineeringmanagement": {
       "status": "rejected",
       "why": "people-management: engineering-career channel, 10 of 142 long-form match managing people",
+      "at": "batch 64"
+    },
+    "@erintalksmoney": {
+      "status": "rejected",
+      "why": "financial-independence: 166 of 200 uploads two minutes or less; 1 of 34 long-form on FI or withdrawal terms",
       "at": "batch 64"
     },
     "@errichto": {
@@ -971,6 +981,11 @@
       "status": "listed",
       "why": "Exam Study Expert (William Wadsworth)",
       "at": "dataset"
+    },
+    "@excessreturns": {
+      "status": "rejected",
+      "why": "financial-independence: long-form investing interviews, 4 of 171 on FI or withdrawal terms",
+      "at": "batch 64"
     },
     "@explorepsych": {
       "status": "rejected",
@@ -2551,6 +2566,11 @@
       "status": "rejected",
       "why": "probed for body-language; four analysts reading famous interrogations as entertainment. The only creator this category has ever had is a critic OF body-language experts, and listing case-reading would list what she debunks",
       "at": "batch 50"
+    },
+    "@thebestinterestpodcast": {
+      "status": "listed",
+      "why": "The Best Interest (Jesse Cramer)",
+      "at": "dataset"
     },
     "@thebrainwavehub": {
       "status": "rejected",

@@ -1475,5 +1475,66 @@
       "videoCount": 385,
       "at": "2026-09"
     }
+  },
+  {
+    "id": "thebestinterestpodcast",
+    "name": "The Best Interest (Jesse Cramer)",
+    "handle": "@thebestinterestpodcast",
+    "channelUrl": "https://www.youtube.com/@thebestinterestpodcast",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "jurisdiction": "US",
+    "jurisdictionNote": "The reasoning about withdrawal rates, Monte Carlo modelling and sequence risk transfers anywhere; the account rules — Roth conversion ladders, Rule 72(t), the Rule of 55, Social Security timing, health savings accounts — are US-only.",
+    "shortDescription": "A podcast by a US fee-only financial planner, formerly an engineer, working through retirement and early-retirement questions with the numbers and models shown rather than rules of thumb.",
+    "longDescription": "Jesse Cramer’s podcast treats retirement and financial independence as modelling problems: what a Monte Carlo success rate does and does not mean, why a fixed 4% rule misses the uneven spending of the years before Social Security, how much cash protects against sequence-of-returns risk and what it costs, and how to draw from several account types in order. Episodes include solo explainers, question-and-answer sessions and interviews with people who have retired early. By title, 33 of the 134 long-form episodes are about retirement and 10 about early retirement or FI specifically; the rest cover investing and personal finance more broadly. Across the {{scannedWords}} most recent uploads the median runs {{medianPhrase}}.",
+    "notFor": "Anyone starting from zero on savings rate and the arithmetic of time to independence — 3 of 134 episode titles touch saving at all, and two of those argue for saving less — and anyone outside the US wanting account-by-account detail.",
+    "formatTags": [
+      "podcast",
+      "long-form",
+      "interview"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 3,
+      "energy": 1,
+      "selfPromotion": 2,
+      "depth": 4
+    },
+    "signals": [
+      "practitioner",
+      "commercial-conflict"
+    ],
+    "categories": [
+      {
+        "id": "financial-independence",
+        "strength": "primary",
+        "why": "Models the withdrawal side of independence — success rates, sequence risk, early-retirement access to money — with the assumptions stated, from outside the UK market and in an analytical rather than lifestyle register.",
+        "evidence": "10 of 134 long-form episodes are specifically about early retirement or FI — FIRE misconceptions, Coast FI, retiring before state pensions, interviews with early retirees — supported by technical episodes on Monte Carlo analysis, withdrawal frameworks and sequence-of-returns risk; 33 of 134 address retirement more broadly.",
+        "entryVideo": {
+          "title": "Even Financial Advisors Misunderstand Monte Carlo Retirement Analysis (E134)",
+          "videoId": "Zh5Xn1fmytk",
+          "whyThisOne": "What a Monte Carlo retirement simulation actually does, why a headline success rate can mislead, and how to read the failure scenarios instead — the tool behind most withdrawal-rate claims, taken apart.",
+          "durationMin": 56
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "He is a fee-only financial planner, and 16 of the 50 most recent descriptions link his paid planning service — so the channel advises on the same decisions he is paid to advise on, though his fees do not depend on which way a listener decides. One of those descriptions, on early-retirement misconceptions, leads with it, which is why a different episode is the starting point here. Episodes run close to an hour.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 100,
+      "medianMin": 51,
+      "videoCount": 134,
+      "at": "2026-09"
+    }
   }
 ]
