@@ -1133,12 +1133,13 @@ this section first to know exactly where to resume.)*
   (archive; second school) · `debt-payoff` → Debt Free Dana (US) ·
   `mortality-and-death` → YaleCourses' Death course · `real-estate-
   investing` → Rich on Money (US) + Property Hub (UK, commercial-conflict).
-  **Search allowance at 5 when that session handed off.** Next funded:
-  `grief-and-loss` — HIGH-STAKES (rule 12): expect `credentialed` or say
-  why not, education-not-assessment in notFor/caveats, prefer a gap to an
-  adjacent creator. **Pending owner decision:** proposed `selection` notes
-  for Debt Free Dana and the two real-estate creators (visitor copy — show
-  before committing). Archive picks (Travis, Ury) do not close a funded
+  Then `grief-and-loss` → The Grief Channel (University of Bristol team;
+  institutional standing stated in place of a credential). The three
+  `selection` notes (Dana, Rich on Money, Property Hub) are committed,
+  owner-approved. **Search allowance at 6.** **Pending owner decision:**
+  Dr. B (`@cristibundukamara`) — a clinician on brief for grief, deferred
+  under rule 12 because 217 of 412 descriptions sell programmes to a
+  bereaved audience. Next funded: run `coverage-report.mjs`. Archive picks (Travis, Ury) do not close a funded
   slot: the close plan counts active creators, deliberately.
   **Handed off on the tells, not on context:** a zero-filled `catalogue`
   block written before the measurement landed (twice), and a "Kagan"
