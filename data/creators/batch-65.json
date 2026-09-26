@@ -57,5 +57,68 @@
       "videoCount": 186,
       "at": "2026-09"
     }
+  },
+  {
+    "id": "thewhitecoatinvestor",
+    "name": "The White Coat Investor",
+    "handle": "@thewhitecoatinvestor",
+    "channelUrl": "https://www.youtube.com/@thewhitecoatinvestor",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A personal-finance channel for doctors and other high earners, run by a practising emergency physician, whose insurance teaching argues for buying cover against catastrophe and against mixing insurance with investing.",
+    "longDescription": "The channel carries a weekly podcast, a shorter “Financial Boot Camp” series pitched as a first course in money, interview episodes with listeners who reached financial milestones, and a large number of short clips cut from them. Insurance is one recurring subject among investing, student loans and tax: whole life against term cover, what to do with a whole life or indexed universal life policy already bought, disability cover and its definitions, how much home and car insurance to carry, and employer health plans. The host’s stated position is that most working professionals need term life and disability cover and should keep insurance and investing apart. Everything is framed for physicians and similar high earners. {{shortCountWords|cap}} of the {{scannedWords}} most recent uploads run two minutes or less.",
+    "notFor": "Anyone who wants examples at an ordinary income — the audience is doctors, and malpractice cover and own-occupation disability policies come up constantly — and anyone outside the US wanting product-level detail.",
+    "formatTags": [
+      "podcast",
+      "long-form",
+      "shorts"
+    ],
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 2,
+      "depth": 4
+    },
+    "signals": [
+      "practitioner",
+      "sells-course",
+      "commercial-conflict"
+    ],
+    "jurisdiction": "US",
+    "jurisdictionNote": "US products and rules throughout — employer health plans, HSAs, state malpractice markets and US tax treatment of policy loans. The reasoning about when cover is worth buying, why term usually beats whole life, and what to check in a disability definition transfers; the products, prices and tax rules do not.",
+    "categories": [
+      {
+        "id": "insurance-basics",
+        "strength": "primary",
+        "why": "Teaches insurance from the buyer’s side — cover for catastrophe first, and a sustained argument against products that bundle insurance with investment, which is the category’s advanced question.",
+        "evidence": "Across all 3,066 uploads, 44 of the 1,097 videos of eight minutes or more are titled on insurance: a 13-minute Boot Camp episode and a 45-minute podcast on whole life against term, a 51-minute episode on why mixing insurance and investing causes problems, how to surrender an indexed universal life policy, how much homeowners and car insurance to carry, own-occupation against any-occupation disability cover, and employer health plans compared.",
+        "entryVideo": {
+          "title": "Whole Life Insurance: What Doctors Need to Know - WCI Financial Boot Camp",
+          "videoId": "yuqc_GunVE0",
+          "whyThisOne": "How whole life differs from term, what happens to the cash value, why the early returns disappoint, and the narrow cases where permanent cover makes sense — the beginner’s question of which policies you actually need, and the advanced one of when insurance and investing are bundled against you.",
+          "durationMin": 13
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "The channel takes sponsorship from an independent disability-insurance agent: 101 of the 3,066 video descriptions say so, from 2019 to this month, including 5 of the 44 insurance videos — a commercial interest in one of the decisions it advises on. Other episodes are sponsored by banks and student-loan lenders, and 1,462 descriptions link the channel’s own paid courses in a standing block. The entry video carries no sponsor or third-party placement. The advice is written for US physicians; check how it maps to your own income and country.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 54,
+      "longPct": 16,
+      "medianMin": 1,
+      "videoCount": 3066,
+      "at": "2026-09"
+    }
   }
 ]

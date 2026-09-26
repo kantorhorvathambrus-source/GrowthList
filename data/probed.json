@@ -17,6 +17,11 @@
       "why": "staffing agency channel returned by a hiring-topic search — recruiting-vendor marketing, not teaching",
       "at": "batch 46"
     },
+    "@5-minute-finance": {
+      "status": "rejected",
+      "why": "insurance-basics (batch 65): a vendor's channel (ET Money, India), dormant; 0 of 37 long-form on insurance",
+      "at": "batch 65"
+    },
     "@5minutesengineering": {
       "status": "rejected",
       "why": "GATE exam-preparation channel, same reason as gatesmashers",
@@ -812,6 +817,11 @@
       "why": "academic-writing beginner tier (group A round 5): archive since 2024; 5 of 44 long-form match essay terms",
       "at": "batch 64"
     },
+    "@dollarbureau": {
+      "status": "rejected",
+      "why": "insurance-basics (batch 65): Singapore-specific; 155 of 200 uploads two minutes or less",
+      "at": "batch 65"
+    },
     "@dr.bryanfoltice": {
       "status": "listed",
       "why": "Dr. Bryan Foltice",
@@ -1327,6 +1337,11 @@
       "why": "47 of 50 uploads under two minutes; the three long-form videos are client success-story interviews for a coaching programme",
       "at": "batch 55"
     },
+    "@insurancewise": {
+      "status": "rejected",
+      "why": "insurance-basics (batch 65): lead generation — 114 of 176 descriptions open with an insurance quote-matching link, 13 book a call with a life-insurance team; anonymous presenter, descriptions call the videos 'for entertainment purposes only'",
+      "at": "batch 65"
+    },
     "@intellipaat": {
       "status": "rejected",
       "why": "multi-topic training-company channel, 6137 uploads across every tech subject — course marketing rather than a teaching catalogue",
@@ -1626,6 +1641,11 @@
       "status": "rejected",
       "why": "stock-analysis beginner tier (group A round 8): 10 of 171 long-form match financial-statement terms",
       "at": "batch 64"
+    },
+    "@lecturepal": {
+      "status": "rejected",
+      "why": "insurance-basics (batch 65): archive since 2023-12, 48 uploads, 8 of eight minutes or more",
+      "at": "batch 65"
     },
     "@legalvisionlaw": {
       "status": "rejected",
@@ -2207,6 +2227,11 @@
       "why": "Ramona Shaw",
       "at": "dataset"
     },
+    "@ramseytalksinsurance": {
+      "status": "rejected",
+      "why": "insurance-basics (batch 65): 59 of 78 uploads two minutes or less, none of eight minutes or more",
+      "at": "batch 65"
+    },
     "@ramseyvoicestudio": {
       "status": "listed",
       "why": "Ramsey Voice Studio (Matt Ramsey)",
@@ -2451,6 +2476,11 @@
       "status": "listed",
       "why": "StatQuest with Josh Starmer",
       "at": "dataset"
+    },
+    "@stephandden": {
+      "status": "rejected",
+      "why": "insurance-basics (batch 65): 1 of 49 long-form on insurance",
+      "at": "batch 65"
     },
     "@stephankesting": {
       "status": "listed",
@@ -2817,6 +2847,11 @@
       "why": "habit-formation second voice (funded list): 1 of 84 long-form match habit terms; a lecture series of rotating speakers",
       "at": "batch 64"
     },
+    "@thewhitecoatinvestor": {
+      "status": "listed",
+      "why": "The White Coat Investor",
+      "at": "dataset"
+    },
     "@thinkfasttalksmart": {
       "status": "listed",
       "why": "Think Fast Talk Smart (Matt Abrahams)",
@@ -2941,6 +2976,11 @@
       "status": "rejected",
       "why": "archive since June 2024; audiobook narrations of primary texts sold on Audible rather than teaching",
       "at": "batch 61"
+    },
+    "@wealthnation": {
+      "status": "rejected",
+      "why": "insurance-basics (batch 65): content, not conflict — 63 of 197 long-form on insurance, centred on infinite banking and whole life as a wealth tool, the bundled product the advanced level warns against; presenters describe themselves as life-insurance agents",
+      "at": "batch 65"
     },
     "@webdevsimplified": {
       "status": "listed",
