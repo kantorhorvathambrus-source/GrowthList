@@ -1128,8 +1128,22 @@ this section first to know exactly where to resume.)*
   found after four ends · `ui-ux-design` → David Travis (archive; the
   practising-designer slot is recorded OPEN, searches 44-46) ·
   `attachment-styles` → Dr. Maika Steinborn · `tax-basics` → Brian Winrow
-  (US). **Search allowance at 48 when this session stopped; the owner's
-  ceiling is 50 — stop there and report.** Next funded: `negotiation`.
+  (US). The allowance then RESET (verified by a successful first call).
+  **Session of 2026-09-26, counting from 0:** `negotiation` → William Ury
+  (archive; second school) · `debt-payoff` → Debt Free Dana (US) ·
+  `mortality-and-death` → YaleCourses' Death course · `real-estate-
+  investing` → Rich on Money (US) + Property Hub (UK, commercial-conflict).
+  **Search allowance at 5 when that session handed off.** Next funded:
+  `grief-and-loss` — HIGH-STAKES (rule 12): expect `credentialed` or say
+  why not, education-not-assessment in notFor/caveats, prefer a gap to an
+  adjacent creator. **Pending owner decision:** proposed `selection` notes
+  for Debt Free Dana and the two real-estate creators (visitor copy — show
+  before committing). Archive picks (Travis, Ury) do not close a funded
+  slot: the close plan counts active creators, deliberately.
+  **Handed off on the tells, not on context:** a zero-filled `catalogue`
+  block written before the measurement landed (twice), and a "Kagan"
+  filter that matched two different Kagans. Write the catalogue block
+  FROM the measurement output, never before it.
   **`selection` is live on mappings** (see the schema note): set only for
   a thin field, alternatives validated against `probed.json`, four
   mappings carry it. New rounds should decide it per mapping.
