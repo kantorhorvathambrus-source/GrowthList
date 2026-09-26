@@ -897,6 +897,19 @@
           "videoId": "0SbXp4H_7cE",
           "whyThisOne": "Walks through the practical habits that got one family out of debt on an ordinary income, which is where the beginner level starts: stop adding to the balance and pick an order you will stick to.",
           "durationMin": 9
+        },
+        "selection": {
+          "field": "thin",
+          "pick": "best-of-thin",
+          "alternatives": [
+            "@vanntasticfinances",
+            "@debtfreemillennials",
+            "@moneyguyshow",
+            "@humphrey",
+            "@whiteboardfinance",
+            "@clevergirlfinance"
+          ],
+          "note": "The best of a thin field rather than a clear choice. The other channels we found either followed a single prescribed method, promoted contested mortgage strategies, or had little on debt; this one teaches first steps from experience without committing to one system, but it mixes debt with frugal living and is one family's story rather than a method. Searched once, with one query aimed at payoff methods; we would revisit this if a stronger voice turned up."
         }
       }
     ],
@@ -1013,6 +1026,19 @@
           "videoId": "mTbe4bhVMz8",
           "whyThisOne": "Shows how to estimate every running cost of a rental — repairs by four different formulas and the capital expenditure most investors leave out — so you can tell when an advertised return does not survive the real expenses. That is the beginner level exactly.",
           "durationMin": 10
+        },
+        "selection": {
+          "field": "thin",
+          "pick": "best-of-thin",
+          "alternatives": [
+            "@rentalpropertygurus",
+            "@landlordcoach",
+            "@proformamodels",
+            "@ryaningram",
+            "@trevorcalton",
+            "@commercialrealestateexplained"
+          ],
+          "note": "The best of a thin field rather than a clear choice. Most channels we found on rental property were brokers, lenders, property managers or course sellers; this one teaches the expense and cash-flow arithmetic honestly, but in a small set of videos inside a channel of mostly short clips. Searched twice — once for deal analysis, once for UK buy-to-let; we would revisit this if a fuller teacher turned up."
         }
       }
     ],
@@ -1072,6 +1098,17 @@
           "videoId": "1pT46D8TsWw",
           "whyThisOne": "Takes one real buy-to-let purchase and lists every starting cost against the returns it produced, with a template to do the same for your own deal — the beginner level's honest underwriting, on UK numbers.",
           "durationMin": 7
+        },
+        "selection": {
+          "field": "thin",
+          "pick": "best-of-thin",
+          "alternatives": [
+            "@samuelleeds",
+            "@theukmarketwrap",
+            "@kevinwrightproperty",
+            "@moneytothemasses"
+          ],
+          "note": "The best of a thin field rather than a clear choice. The UK channels we found were mostly property-training businesses; this one works through real deal numbers and its own mistakes, but the business behind it gains when viewers buy property: 350 of its 426 video descriptions offer a consultation about building a portfolio, and 14 offer discounted properties from developers. Searched twice — once for deal analysis, once for UK buy-to-let; we would revisit this if a voice without that stake turned up."
         }
       }
     ],
