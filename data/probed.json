@@ -387,6 +387,11 @@
       "why": "Brand Master Academy",
       "at": "dataset"
     },
+    "@breakingbaddebt": {
+      "status": "rejected",
+      "why": "credit-and-loans (batch 65): Canadian medical-school finance lectures; 8 of 81 long-form on credit or loans, mostly tax credits and student loans",
+      "at": "batch 65"
+    },
     "@brianamacwilliam.attachment": {
       "status": "rejected",
       "why": "attachment-styles clinician slot (funded list): dense on attachment (21 of 35 long-form) but a coaching channel for \"professional women\" seeking relationships, not a clinician",
@@ -1117,6 +1122,11 @@
       "why": "freeCodeCamp.org",
       "at": "dataset"
     },
+    "@frostywisdom": {
+      "status": "rejected",
+      "why": "credit-and-loans (batch 65): Singapore, dormant since 2025-08; 9 of 192 long-form on credit or loans",
+      "at": "batch 65"
+    },
     "@gamersnexus": {
       "status": "listed",
       "why": "Gamers Nexus",
@@ -1426,6 +1436,11 @@
       "status": "rejected",
       "why": "reputation drift — a PC-building channel whose recent long-form is tech news and workshop vlogging (Twitch AI training, CNC upgrades, Micro Center robotics) rather than building",
       "at": "batch 50"
+    },
+    "@jebsmith": {
+      "status": "rejected",
+      "why": "credit-and-loans (batch 65): a realtor's channel; 38 of 114 long-form on mortgages, mostly 40-60 minute rate-news streams rather than teaching",
+      "at": "batch 65"
     },
     "@jeffersonfisher": {
       "status": "listed",
@@ -1837,6 +1852,11 @@
       "why": "MicroConf",
       "at": "dataset"
     },
+    "@millennialmike": {
+      "status": "rejected",
+      "why": "credit-and-loans (batch 65): 166 of 200 recent uploads two minutes or less; 3 of 31 long-form on credit",
+      "at": "batch 65"
+    },
     "@minusthegym": {
       "status": "listed",
       "why": "Minus The Gym",
@@ -1966,6 +1986,11 @@
       "status": "listed",
       "why": "Nelson Dellis",
       "at": "dataset"
+    },
+    "@nerdwallet": {
+      "status": "rejected",
+      "why": "credit-and-loans (batch 65): a comparison vendor; 127 of 200 recent uploads two minutes or less, 9 of 43 long-form on credit or loans",
+      "at": "batch 65"
     },
     "@nesoacademy": {
       "status": "rejected",
@@ -2727,10 +2752,20 @@
       "why": "The Coding Train (Daniel Shiffman)",
       "at": "dataset"
     },
+    "@thedavelowell": {
+      "status": "listed",
+      "why": "Dave Lowell, CFP®",
+      "at": "dataset"
+    },
     "@theeftcafe": {
       "status": "rejected",
       "why": "couples-communication non-Gottman slot (funded list, batch 64): addressed to therapists learning the EFT model; 4 of 11 long-form",
       "at": "batch 64"
+    },
+    "@theexplaineroffice": {
+      "status": "rejected",
+      "why": "credit-and-loans (batch 65): a production line — 1,543 uploads since 2026-01-24, with identical titles re-uploaded at two lengths a month apart",
+      "at": "batch 65"
     },
     "@thefinancestoryteller": {
       "status": "listed",
@@ -2811,6 +2846,11 @@
       "status": "listed",
       "why": "The Moth",
       "at": "dataset"
+    },
+    "@theopeneducator": {
+      "status": "rejected",
+      "why": "credit-and-loans (batch 65): 2 of 49 long-form in the latest 200 on credit or loans",
+      "at": "batch 65"
     },
     "@theoperationsroom": {
       "status": "collision",

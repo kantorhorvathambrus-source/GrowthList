@@ -239,5 +239,65 @@
       "videoCount": 1721,
       "at": "2026-09"
     }
+  },
+  {
+    "id": "thedavelowell",
+    "name": "Dave Lowell, CFP®",
+    "handle": "@thedavelowell",
+    "channelUrl": "https://www.youtube.com/@thedavelowell",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A Certified Financial Planner explaining personal-finance mechanics — mortgages, credit scores, interest rates, debt payoff, tax — in short sequenced lessons of eight to fifteen minutes.",
+    "longDescription": "Dave Lowell describes himself on the channel as a Certified Financial Planner who has worked with clients from new graduates to the very wealthy. The channel began in April 2026, and its long-form catalogue — 89 videos, all posted between April and July 2026 — is built as short sequenced lessons: one on how mortgages work leads into one on rates, closing costs and amortization, then one on paying off the mortgage against investing. Credit and borrowing sit beside tax, estate planning, investing and real estate. Since August the channel has posted short clips: {{shortCountWords}} of the {{scannedWords}} most recent uploads run two minutes or less.",
+    "notFor": "Anyone outside the US — the mortgages, PMI, credit bureaus and scores described are American — and anyone repairing damaged credit, which no lesson title covers.",
+    "formatTags": [
+      "tutorial",
+      "shorts"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 1,
+      "depth": 2
+    },
+    "signals": [
+      "credentialed",
+      "practitioner"
+    ],
+    "jurisdiction": "US",
+    "jurisdictionNote": "US lending throughout — FICO scores, the three US credit bureaus, PMI, escrow, 15- and 30-year fixed mortgages. How lenders price risk, how amortization front-loads interest and how to read the total cost of a loan transfer anywhere; the products, scores and consumer rights do not.",
+    "categories": [
+      {
+        "id": "credit-and-loans",
+        "strength": "primary",
+        "why": "Takes a borrower from how a score is built to how a mortgage is priced and amortized, in lessons short enough to follow in order — the category’s intermediate step of comparing loan structures rather than monthly payments.",
+        "evidence": "Across all 253 uploads, 14 of the 89 videos of eight minutes or more are titled on credit, loans, mortgages or debt, running 8 to 15 minutes: credit reports and scores, how lenders set interest rates from risk and debt-to-income, how mortgages work, rates, closing costs and amortization, HELOCs, paying off a mortgage against investing, and the order to pay debts off in.",
+        "entryVideo": {
+          "title": "Understanding Mortgage Rates, Closing Costs, and Amortization Explained",
+          "videoId": "03ycqqKHzB0",
+          "whyThisOne": "Fixed against variable rates, what closing costs and PMI add, how to read an amortization table and why early payments are mostly interest, and 15 against 30 years, worked on a live example — comparing a loan’s structure and total cost rather than its monthly payment.",
+          "durationMin": 11
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "A young channel: it began in April 2026, and its long-form lessons were all posted between April and July 2026; since August it has posted short clips only. Descriptions carry almost no outside links — 3 of the 89 long-form descriptions link anywhere off YouTube — and no sponsor, affiliate or product placement was found in them.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 96,
+      "longPct": 0,
+      "medianMin": 1,
+      "videoCount": 253,
+      "at": "2026-09"
+    }
   }
 ]
