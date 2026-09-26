@@ -42,6 +42,10 @@ export function closePlan({ categories, creators, demand, gaps, budget = MAPPING
       need: Math.max(0, 2 - (active.get(c.id) ?? 0)),
       views: views[c.id],
       unmeasured: unmeasured.has(c.id),
+      // RULE 25 — HELD OPEN. Two or more creators listed but fewer than two
+      // active: the second voice is archive or dormant. Derived here, never
+      // stored, so it cannot outlive a status change.
+      heldOpen: (listed.get(c.id) ?? 0) >= 2 && (active.get(c.id) ?? 0) < 2,
     }))
     .filter((r) => r.need > 0);
 
@@ -78,5 +82,12 @@ export function closePlan({ categories, creators, demand, gaps, budget = MAPPING
   const fundedIds = new Set(funded.map((r) => r.id));
   const deferred = ranked.filter((r) => !fundedIds.has(r.id));
 
-  return { funded, deferred, unranked, searchedOut, spent, budget, belowTarget: below.length };
+  // WORK ORDER, NOT FUNDING. Funding was decided above in demand order and is
+  // not touched here. Held-open categories (rule 25) are then listed after the
+  // ones not yet worked, each group still by demand, so a category already
+  // searched without finding an active second voice does not sit at the top
+  // being skipped by every session. Owner-approved, batch 64.
+  const workOrder = [...funded.filter((r) => !r.heldOpen), ...funded.filter((r) => r.heldOpen)];
+
+  return { funded: workOrder, deferred, unranked, searchedOut, spent, budget, belowTarget: below.length };
 }

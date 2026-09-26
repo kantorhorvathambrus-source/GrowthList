@@ -198,7 +198,9 @@ const totalMaps = retro.length + firstPass;
     console.log('ordered by appetite for the subject on YouTube (data/topic-demand.json —');
     console.log('NOT our traffic; read that file before treating it as such).\n');
     console.log(`  FUNDED — ${plan.funded.length} categories, ${plan.spent} mappings:`);
-    for (const r of plan.funded) console.log(`    ${pad(r.id, 30)} ${String(fmt(r.views)).padStart(7)}   at ${r.active} (+${r.need})`);
+    for (const r of plan.funded) console.log(`    ${pad(r.id, 30)} ${String(fmt(r.views)).padStart(7)}   at ${r.active} (+${r.need})${r.heldOpen ? '   held open (rule 25)' : ''}`);
+    const held = plan.funded.filter((r) => r.heldOpen).length;
+    if (held) console.log(`    ${held} held open under rule 25 — listed after the rest; re-search only with a new angle.`);
     console.log(`\n  DEFERRED BY DECISION — ${plan.deferred.length} categories, lower appetite:`);
     console.log('    ' + plan.deferred.map((r) => `${r.id} (${fmt(r.views)})`).join(', '));
     if (plan.searchedOut.length) {
