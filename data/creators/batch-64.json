@@ -1415,5 +1415,65 @@
       "videoCount": 1389,
       "at": "2026-09"
     }
+  },
+  {
+    "id": "lancehedrick",
+    "name": "Lance Hedrick",
+    "handle": "@lancehedrick",
+    "channelUrl": "https://www.youtube.com/@lancehedrick",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A former competition barista and barista coach who tests brewing variables one at a time and explains what each does to extraction and taste, alongside equipment reviews.",
+    "longDescription": "Lance Hedrick’s channel runs in two strands. One is teaching: a series that changes a single variable at a time — water temperature, grind size, ratio — and taste what it does; guides to dialling in pour-over and espresso; and an espresso masterclass series. The other is equipment: grinder, dripper and machine reviews and price-bracket comparisons, which account for 58 of the 193 long-form uploads in his latest 200. He argues positions of his own rather than restating a standard method — “The 9 Bar Fallacy” and “10 Purchases That Won’t Improve Your Coffee” are two of his titles. Across the {{scannedWords}} most recent uploads the median runs {{medianPhrase}}, and {{longCountWords}} run twenty minutes or more.",
+    "notFor": "Anyone who wants a short answer — more than half of recent videos run twenty minutes or more — and anyone who wants brewing advice kept apart from equipment talk, since reviews and buying guides sit alongside the teaching.",
+    "formatTags": [
+      "tutorial",
+      "long-form",
+      "review"
+    ],
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 3,
+      "selfPromotion": 2,
+      "depth": 4
+    },
+    "signals": [
+      "practitioner",
+      "sponsor-heavy"
+    ],
+    "categories": [
+      {
+        "id": "coffee-brewing",
+        "strength": "primary",
+        "why": "Teaches brewing by isolating one variable at a time and tasting the result, and argues his own conclusions — a second voice that is not built on the category’s existing creator.",
+        "evidence": "Of the 193 long-form uploads in his latest 200, 21 are framed as teaching a brewing variable or method: a three-part series on water temperature, grind size and ratio; two dialling-in guides for pour-over; espresso dialling-in guides and a masterclass series; and a beginner’s grinder guide. 58 are framed as reviews or comparisons.",
+        "entryVideo": {
+          "title": "The Water Ratio Mistake Ruining Your Coffee",
+          "videoId": "9DDCHrHCc30",
+          "whyThisOne": "What changing the coffee-to-water ratio actually does to extraction and taste, tested on its own — the first variable the beginner level asks you to control. Two earlier parts cover temperature and grind size.",
+          "durationMin": 15
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "Of his 50 most recent uploads, 21 open their description with a paid placement — a website builder, a budgeting app or a coffee magazine, none of them coffee equipment — and only 6 of those use a word like “sponsor” or “partner”; the entry video carries none. 43 of the 50 link an Amazon storefront of the gear he uses, which pays him a commission on purchases, and the descriptions do not say how reviewed equipment was obtained. Treat buying advice with that in mind; the brewing teaching stands apart from it.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 10,
+      "longPct": 58,
+      "medianMin": 22,
+      "videoCount": 385,
+      "at": "2026-09"
+    }
   }
 ]

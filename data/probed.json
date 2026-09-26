@@ -582,6 +582,11 @@
       "why": "testing-and-quality beginner tier (group A round 4): 5 of 97 long-form match test terms in its whole 125-upload catalogue — too thin on the subject to judge further",
       "at": "batch 64"
     },
+    "@coffeewithapril": {
+      "status": "rejected",
+      "why": "coffee-brewing: a roastery channel; 2 of 156 long-form framed as teaching a brewing variable or method",
+      "at": "batch 64"
+    },
     "@coffeezilla": {
       "status": "listed",
       "why": "Coffeezilla",
@@ -952,6 +957,11 @@
       "why": "Ethan Evans",
       "at": "dataset"
     },
+    "@europeancoffeetrip": {
+      "status": "rejected",
+      "why": "coffee-brewing: 170 of 200 uploads two minutes or less; 11 of 24 long-form on brewing",
+      "at": "batch 64"
+    },
     "@everythingmoney": {
       "status": "rejected",
       "why": "stock-analysis beginner tier (group A round 8): 1 of 200 long-form match financial-statement terms in the 200 most recent uploads",
@@ -1036,6 +1046,11 @@
       "status": "listed",
       "why": "Folding Ideas (Dan Olson)",
       "at": "dataset"
+    },
+    "@foodgeek": {
+      "status": "rejected",
+      "why": "coffee-brewing: general food and bread channel — its brewing-term hits are mostly dough and recipes, not coffee",
+      "at": "batch 64"
     },
     "@foundmyfitness": {
       "status": "rejected",
@@ -1540,6 +1555,11 @@
     "@labmuffinbeautyscience": {
       "status": "listed",
       "why": "Lab Muffin Beauty Science (Michelle Wong)",
+      "at": "dataset"
+    },
+    "@lancehedrick": {
+      "status": "listed",
+      "why": "Lance Hedrick",
       "at": "dataset"
     },
     "@landlordcoach": {
@@ -2460,6 +2480,11 @@
     "@taekimfinancialtortoise": {
       "status": "rejected",
       "why": "debt-payoff non-ideological slot (funded list): 2 of 200 long-form match debt terms",
+      "at": "batch 64"
+    },
+    "@talescoffee": {
+      "status": "rejected",
+      "why": "coffee-brewing: 134 of 200 uploads two minutes or less, and describes itself as a newcomer sharing experiments",
       "at": "batch 64"
     },
     "@tarabrach": {
