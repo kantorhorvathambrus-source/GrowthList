@@ -299,5 +299,63 @@
       "videoCount": 253,
       "at": "2026-09"
     }
+  },
+  {
+    "id": "ericandrews",
+    "name": "Eric Andrews",
+    "handle": "@eric_andrews",
+    "channelUrl": "https://www.youtube.com/@eric_andrews",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Spreadsheet walkthroughs of startup finance — how to calculate churn, cohort retention, net revenue retention, CAC payback and unit economics, and how to build a financial model around them.",
+    "longDescription": "Eric Andrews teaches the finance of technology businesses by building the numbers on screen: a metric is defined, calculated in a spreadsheet from sample data, and interpreted. For subscription software that means churn rate, cohort retention tables, net revenue and net dollar retention, customer acquisition cost and its payback, lifetime value, and full SaaS financial models; other videos apply the same method to marketplaces, ecommerce and subscription boxes. 55 of the 63 long-form descriptions offer a downloadable template. The channel posts rarely now — two uploads since July 2024 — and across the {{scannedWords}} most recent uploads the median runs {{medianPhrase}}.",
+    "notFor": "Anyone looking for the product and go-to-market side of running a SaaS company — this is the finance and metrics layer — and anyone who does not want to work in a spreadsheet alongside the video.",
+    "formatTags": [
+      "tutorial",
+      "long-form"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 4
+    },
+    "signals": [
+      "practitioner",
+      "sells-course"
+    ],
+    "categories": [
+      {
+        "id": "saas-business",
+        "strength": "primary",
+        "why": "Calculates the subscription metrics that predict survival — churn, cohort retention, net revenue retention, payback — from sample data, step by step, beside the category’s founder talks on strategy and growth.",
+        "evidence": "Across all 98 uploads, 15 of the 63 videos of eight minutes or more are titled on SaaS or retention metrics, running 8 to 98 minutes: churn rate, cohort retention analysis, net revenue and net dollar retention, CAC and CAC payback for subscription businesses, the seven SaaS metrics for an investor update, a SaaS unit-economics tutorial, and SaaS financial models built from scratch.",
+        "entryVideo": {
+          "title": "Customer Retention & Cohort Analysis | How VCs Calculate Customer Retention",
+          "videoId": "OwCATJh4lNg",
+          "whyThisOne": "How to lay out a cohort table, calculate customer and revenue retention by cohort, net revenue retention, and lifetime value against acquisition cost — the intermediate level’s cohort retention, expansion revenue and payback in one worked example.",
+          "durationMin": 18
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "82 of the 98 descriptions promote his own paid finance course — in 54 of them as the second link after a free template, in 15 as the first. Five videos from January to May 2024 — including the churn-rate and CAC-payback lessons — are sponsored by a subscription-retention software company, and one of them says he worked there; the entry video is not among them and carries no third-party placement in its description. The channel has posted twice since July 2024.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 26,
+      "longPct": 40,
+      "medianMin": 18,
+      "videoCount": 98,
+      "at": "2026-09"
+    }
   }
 ]

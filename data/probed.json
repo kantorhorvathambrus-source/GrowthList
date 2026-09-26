@@ -672,6 +672,11 @@
       "why": "15 of 87 long-form match DSA terms; the catalogue has moved to career and general-tech content and the last upload was 2025-12-21",
       "at": "batch 64"
     },
+    "@csmpractice": {
+      "status": "rejected",
+      "why": "saas-business (batch 65): customer-success management for CS leaders, a consultant's channel; 19 of 121 long-form on SaaS or retention terms",
+      "at": "batch 65"
+    },
     "@cuttingedgeschool": {
       "status": "rejected",
       "why": "ui-ux-design practising-designer slot (funded list): 1 of 27 long-form match UX terms; a course school",
@@ -695,6 +700,11 @@
     "@damientalksmoney": {
       "status": "rejected",
       "why": "insurance-basics UK slot (batch 65): 0 of 190 long-form in the latest 200 on insurance or protection",
+      "at": "batch 65"
+    },
+    "@danielmc99999": {
+      "status": "rejected",
+      "why": "saas-business (batch 65): 24 long-form of 92, no channel description, no country; 11 on subscription terms",
       "at": "batch 65"
     },
     "@darrentaylordigital": {
@@ -991,6 +1001,11 @@
       "status": "rejected",
       "why": "people-management: engineering-career channel, 10 of 142 long-form match managing people",
       "at": "batch 64"
+    },
+    "@eric_andrews": {
+      "status": "listed",
+      "why": "Eric Andrews",
+      "at": "dataset"
     },
     "@erintalksmoney": {
       "status": "rejected",
@@ -2082,6 +2097,11 @@
       "why": "travel-planning second voice (batch 65): 151 of 200 uploads two minutes or less; 6 of 47 long-form pair a planning subject with how-to framing, mostly gear",
       "at": "batch 65"
     },
+    "@paddlestudios": {
+      "status": "rejected",
+      "why": "saas-business (batch 65): a billing vendor's channel, dormant since 2025-06; 169 of 197 uploads two minutes or less",
+      "at": "batch 65"
+    },
     "@paramedic": {
       "status": "collision",
       "why": "resolves to a Russian-language travel channel",
@@ -2902,6 +2922,11 @@
       "why": "reputation drift — Race recaps, personal vlogs and challenge videos — a marathon recap, a 30-day cold plunge,",
       "at": "batch 37"
     },
+    "@thesaascfo": {
+      "status": "rejected",
+      "why": "saas-business (batch 65): the metrics teaching is in shorts (137 of 200 recent uploads two minutes or less); long-form is founder funding interviews — 11 of 276 long-form titles name a metric",
+      "at": "batch 65"
+    },
     "@theschooloflifetv": {
       "status": "listed",
       "why": "The School of Life",
@@ -3066,6 +3091,11 @@
       "status": "rejected",
       "why": "debt-payoff non-ideological slot (funded list): dense on debt (29 of 78 long-form) but promotes velocity banking and infinite banking, contested strategies — not the non-ideological voice sought; 101 of 200 recent uploads are shorts",
       "at": "batch 64"
+    },
+    "@vcpete": {
+      "status": "rejected",
+      "why": "saas-business (batch 65): venture-capital channel; 123 of 200 recent uploads two minutes or less, 12 of 73 long-form on SaaS or subscription terms",
+      "at": "batch 65"
     },
     "@vipassanameditation": {
       "status": "rejected",
