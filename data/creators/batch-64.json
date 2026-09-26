@@ -910,5 +910,62 @@
       "videoCount": 384,
       "at": "2026-09"
     }
+  },
+  {
+    "id": "yalecourses",
+    "name": "YaleCourses",
+    "handle": "@yalecourses",
+    "channelUrl": "https://www.youtube.com/@yalecourses",
+    "country": null,
+    "language": "en",
+    "sizeBucket": "1M-5M",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "entity": "institution",
+    "shortDescription": "A channel of recorded Yale University lecture courses; for this category, a complete twenty-six-lecture undergraduate philosophy course on death.",
+    "longDescription": "YaleCourses publishes full semester-length university courses as recorded lectures across many subjects. The one listed here is Professor Kagan's philosophy course Death (PHIL 176), recorded in spring 2007: whether there is a soul and what survives the body, Plato's arguments for immortality, what makes a person the same person over time, what death is, why death might be bad for the one who dies — including the deprivation account and Epicurus's objection to it — whether immortality would be desirable, fear of death, how to live knowing you will die, and three lectures on suicide. Each lecture is a single classroom session of between thirty-six and fifty-two minutes, with chapter markers in the description.",
+    "notFor": "Anyone looking for the practical side — wills, end-of-life care, talking with family — or for a short introduction; this is a full university course of hour-long classroom lectures, found inside a channel that holds thousands of unrelated ones.",
+    "formatTags": [
+      "lecture",
+      "long-form",
+      "course"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 1,
+      "energy": 2,
+      "selfPromotion": 0,
+      "depth": 4
+    },
+    "signals": [],
+    "categories": [
+      {
+        "id": "mortality-and-death",
+        "strength": "secondary",
+        "why": "Works through the philosophical arguments about death — whether it is bad for the one who dies, whether immortality would be better, how fear of it should shape a life — where the category's other creator works from inside the funeral industry.",
+        "evidence": "A twenty-six-lecture philosophy course on death: the soul and personal identity, Plato on immortality, the nature of death, the badness of death and the deprivation account, immortality and the value of life, fear of death, living with mortality, and the rationality and morality of suicide.",
+        "entryVideo": {
+          "title": "17. The badness of death, Part II: The deprivation account",
+          "videoId": "t7knGxL5DaU",
+          "whyThisOne": "Sets out the most widely held explanation of why death is bad for the person who dies — that it takes away the good things life would have held — and tests it against Epicurus's argument that death cannot harm anyone. It stands on its own without the earlier lectures.",
+          "durationMin": 52
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "The course was recorded in 2007 in a lecture hall and is presented as it was taught, so it moves at a classroom pace. The lectures on suicide treat it as a philosophical question about rationality and morality, not as support; anyone in crisis should look to a helpline rather than a lecture.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 10,
+      "longPct": 72,
+      "medianMin": 24,
+      "videoCount": 2428,
+      "at": "2026-09"
+    }
   }
 ]
