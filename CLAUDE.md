@@ -1271,6 +1271,30 @@ this section first to know exactly where to resume.)*
   brief (17 of 218 long-form, 11–22 minutes, the whole interpersonal
   module; DBT & Me's shortest on-brief episode is 59 minutes), so rule 25
   was decided by activity. Recommendation made in chat; record unchanged.
+  **Continued, same day (owner's decisions applied):** branches unified on
+  `lucid-lamport` (see "One branch holds the whole project").
+  `setting-boundaries`: Jennifer May listed (dormant, rule 25 caveat,
+  entry "Saying No" 16m); DBT & Me entry → "Episode 33 - FAST" (59m,
+  chosen from its description); the "comparable" note corrected in
+  UNVERIFIED.md. The category is NOT held open — 3 listed, 2 active.
+  `insurance-basics` → Skye Wealth (AU, on the owner's Australian-angle
+  search; MeaningfulMoney DECLINED). `credit-and-loans` → Dave Lowell, CFP
+  (US). `saas-business` → Eric Andrews. `podcasting` → Podcasting with
+  Hiwi G (`sells-course` left unset: the accelerator's price is not
+  measured). **Search allowance at 20**, no rate-limit signal.
+  **Two production-line channels rejected** — The Fine Print AU (217
+  uploads in 3.5 months, `[your-link-here]` in its own description) and
+  The Explainer Office (1,543 since January). The shape is now common in
+  money topics: check upload cadence before reading titles.
+  **Open for the owner:** Eric Andrews' paid course sits second, below a
+  summary line, in the entry video's description — it does not "lead" by
+  rule 24's stated definition, but it is high. A reading of the rule, not
+  settled by it.
+  **Handed off on the tells:** "around a quarter" written for 55 of 69,
+  a surname taken from an Instagram handle, and two regex counts inflated
+  by the pattern (16 for 44 ad placements; 76 "offers" that were mostly
+  "Facebook"). All caught before commit. **Next: `rebuilding-trust`**, then
+  down the PHASE 2 CLOSE block.
 - **Standing checks to run before any release**: `validate.mjs`,
   `validate.mjs --final`, `check-secrets.mjs`, `audit-status.mjs`
   (status drift *and* handle aliases), `audit-catalogue.mjs`,
