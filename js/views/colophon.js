@@ -42,23 +42,29 @@ const RULES = (facts) => [
    // MEASURED by scripts/audit-unread-fields.mjs; the sentence disappears
    // rather than hedging if that audit has never run.
    //
-   // THE GUARD TESTS THE MEASUREMENT, NOT THE AUDIT. It used to ask only
-   // whether `facts.method` existed, which is whether the audit RAN -- and
-   // the window comparison sits behind that audit's own --windows flag, so a
-   // run without it produced trailersMeasured: 0 and this rendered "Of the 0
-   // creators here who set their own channel trailer, 0 chose one older...".
-   // A measurement that did not happen and a measurement of zero must not
-   // read the same. trailersMeasured falsy => nothing was counted => say
-   // nothing. trailersOlderThanWindow may legitimately BE zero once the
-   // count is real, so it is checked for null rather than for truth.
+   // THE TRAILER SENTENCE WAS REMOVED (batch 64). It counted creator-chosen
+   // trailers older than the newest 50 uploads, which supported the old
+   // blind-spot claim; with that claim gone the number had no conclusion for
+   // a reader. The measurement stays internal, in unread-data-audit.json.
+   // PRESENT MEASUREMENT ONLY (scripts/audit-entry-window.mjs). The count says
+   // how many entry videos are outside their channel's newest 50 TODAY; it
+   // cannot say how any was found, because a busy channel pushes a pick out of
+   // that window over time. So the copy states the count and the fact that
+   // some are chosen from the full catalogue on purpose -- no blind spot, and
+   // nothing about method at the time. The earlier sentence ("picked from the
+   // creator's recent uploads, so a good introduction published years ago is
+   // one we will not have seen") was false when measured: 109 of 373.
+   // entryVideosMeasured null => nothing was counted => say nothing; the
+   // outside count may legitimately be zero, so it is checked for null.
    `Each card carries one video to start with, verified to belong to that
-    channel. It is picked from the creator's recent uploads, so a good
-    introduction published years ago is one we will not have seen.${facts.method
-      && facts.method.trailersMeasured
-      && facts.method.trailersOlderThanWindow != null
-      ? ` Of the ${facts.method.trailersMeasured} creators here who set their own
-         channel trailer, ${facts.method.trailersOlderThanWindow} chose one older
-         than the window we look at.`
+    channel. Some are chosen on purpose from a channel's full catalogue rather
+    than its recent uploads, where an older video is the better place to
+    begin.${facts.method
+      && facts.method.entryVideosMeasured
+      && facts.method.entryVideosOutsideWindow != null
+      ? ` Of the ${facts.method.entryVideosMeasured} start-here videos listed,
+         ${facts.method.entryVideosOutsideWindow} are not among their
+         channel's ${facts.method.entryVideoWindow} newest uploads today.`
       : ''}`],
   ['Ranges, not numbers',
    `Subscriber figures are shown as broad bands with the month they were taken,

@@ -264,18 +264,14 @@ const unreadPath = join(DATA, 'unread-data-audit.json');
 let methodOut = null;
 if (existsSync(unreadPath)) {
   const u = readJson(unreadPath);
-  const trailer = u.findings?.creatorChosenTrailer ?? {};
   const reach = u.findings?.reachVsBucket ?? {};
   methodOut = {
     at: u.at ?? null,
     creatorsMeasured: u.channelsExamined ?? null,
     entryVideoWindow: 50,
-    // null, not 0, when the audit's --windows pass did not run. `?? 0` here
-    // turned "not measured" into "measured none", which the colophon then
-    // rendered as a sentence about zero creators. A count the reader sees must
-    // be able to say it does not exist.
-    trailersMeasured: trailer.windowMeasured ?? null,
-    trailersOlderThanWindow: trailer.olderThanOurFiftyUploadWindow ?? null,
+    // The trailer-window counts are no longer shipped: the colophon sentence
+    // they fed was removed in batch 64, and the measurement stays internal in
+    // unread-data-audit.json.
     bigBucketLowReach: reach.bigBucketUnder50kAvgViews ?? 0,
     bigBucketLowReachThreshold: 50_000,
   };
@@ -284,7 +280,7 @@ if (existsSync(unreadPath)) {
 // HOW MANY ENTRY VIDEOS SIT OUTSIDE THEIR CHANNEL'S NEWEST 50 TODAY
 // (scripts/audit-entry-window.mjs). A present measurement only -- it cannot
 // say how a video was found, so the colophon states the count and nothing
-// about method at the time. Same null-versus-zero rule as the trailer figures:
+// about method at the time. Null-versus-zero, as for every shipped count:
 // the audit stores null when its run was incomplete, and a missing file is
 // null too, so "not measured" can never render as "measured none".
 const windowPath = join(DATA, 'entry-window-audit.json');

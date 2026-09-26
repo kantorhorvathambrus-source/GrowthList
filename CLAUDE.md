@@ -1198,15 +1198,19 @@ this section first to know exactly where to resume.)*
   release-engineering end unsearched; Karin Prater and iOS Insights
   deferred). `goal-setting` entered the funded list. **Search allowance
   at 10.**
-  **PENDING OWNER APPROVAL — visitor copy, do not commit without it:**
-  `pending/colophon-entry-window.patch` rewrites the colophon's
-  entry-video sentence, which was false (it said picks come from recent
-  uploads and older introductions go unseen; measured, 109 of 373 entry
-  videos sit outside their channel's newest 50 today). The measurement is
-  committed as `scripts/audit-entry-window.mjs` → `data/entry-window-audit.json`
-  → `method-facts.json`, null when a run is incomplete. Once approved:
-  `git apply pending/colophon-entry-window.patch`, delete the patch file,
-  commit. **Until then the false sentence is still live.**
+  **Colophon entry-video sentence: APPLIED (owner-approved).** It had
+  said picks come from recent uploads and older introductions go unseen;
+  measured, 109 of 373 entry videos sit outside their channel's newest 50
+  today. The new sentence states that count (from
+  `scripts/audit-entry-window.mjs` → `data/entry-window-audit.json` →
+  `method-facts.json`, null when a run is incomplete) and that some are
+  chosen from the full catalogue on purpose — nothing about method at the
+  time, which the data cannot back. **The trailer sentence was REMOVED**,
+  not reworded: with the blind-spot claim gone, "135 of 198 trailers are
+  older than the newest 50" had no conclusion for a reader, and the only
+  clause that would have given it one rests on a different measurement.
+  The trailer counts no longer ship; the measurement stays internal in
+  `unread-data-audit.json`. **Entry-video origin field: agreed, not built.**
   **The tells this time:** `getUploads(playlist, 200)` passed the limit
   positionally, so it fetched 50 (the record said 50, so nothing false
   shipped — it takes `{ max }`); and Hudson's lesson count was first
@@ -1443,9 +1447,11 @@ this section first to know exactly where to resume.)*
   requested at all. **191 of 252 set one; 132 of those are older than
   our window, and 2 agree with our pick.** The trailer is *not* a
   better source: 51 of 191 run under three minutes and are channel
-  promos. It is a candidate list. The colophon now carries the
+  promos. It is a candidate list. The colophon carried the
   selection method as its own rule, with the figure shipped through
-  `method-facts.json` so the copy cannot decay.
+  `method-facts.json` — **superseded in batch 64**: that sentence was
+  itself false (109 of 373 entry videos sit outside the window), and it
+  and the trailer figure were replaced; see the batch 64 state entry.
   **Four checks run and clean:** canonical handle (0 of 252), live
   subscriber band against the stored one (0 drift), API country against
   ours (0), `status.madeForKids` (0). **One flag, no defect:** six
