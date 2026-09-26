@@ -281,6 +281,23 @@ if (existsSync(unreadPath)) {
   };
 }
 
+// HOW MANY ENTRY VIDEOS SIT OUTSIDE THEIR CHANNEL'S NEWEST 50 TODAY
+// (scripts/audit-entry-window.mjs). A present measurement only -- it cannot
+// say how a video was found, so the colophon states the count and nothing
+// about method at the time. Same null-versus-zero rule as the trailer figures:
+// the audit stores null when its run was incomplete, and a missing file is
+// null too, so "not measured" can never render as "measured none".
+const windowPath = join(DATA, 'entry-window-audit.json');
+if (existsSync(windowPath)) {
+  const w = readJson(windowPath);
+  methodOut = {
+    ...(methodOut ?? { entryVideoWindow: w.window ?? 50 }),
+    entryVideoWindowAt: w.at ?? null,
+    entryVideosMeasured: w.entryVideosMeasured ?? null,
+    entryVideosOutsideWindow: w.entryVideosOutsideWindow ?? null,
+  };
+}
+
 // THE BADGE SECTION'S NUMBERS, DERIVED -- NEVER STORED.
 //
 // domain-notes.json used to carry a `measured: {n, of}` on every entry, and

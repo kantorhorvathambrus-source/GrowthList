@@ -1,0 +1,445 @@
+{
+  "at": "2026-09-26T10:24:29.594Z",
+  "window": 50,
+  "entryVideosMeasured": 373,
+  "entryVideosOutsideWindow": 109,
+  "couldNotCheck": [],
+  "outside": [
+    {
+      "id": "askvinh",
+      "videoId": "HYNXzKU92Qs"
+    },
+    {
+      "id": "askvinh",
+      "videoId": "sbNc5eL7xNA"
+    },
+    {
+      "id": "askvinh",
+      "videoId": "IpWjOUnOTFc"
+    },
+    {
+      "id": "negotiationmastery",
+      "videoId": "1tieMR6nb-4"
+    },
+    {
+      "id": "negotiationmastery",
+      "videoId": "JfH28d9794g"
+    },
+    {
+      "id": "thespeakerlab",
+      "videoId": "1e5Q5O6RPLQ"
+    },
+    {
+      "id": "thinkfasttalksmart",
+      "videoId": "LrlgUJbgryM"
+    },
+    {
+      "id": "thinkfasttalksmart",
+      "videoId": "3DRe_yANNZE"
+    },
+    {
+      "id": "conorneill",
+      "videoId": "9zObANZkqoQ"
+    },
+    {
+      "id": "conorneill",
+      "videoId": "_1cZNjZiV1I"
+    },
+    {
+      "id": "radicalcandor",
+      "videoId": "tET6asxFDE8"
+    },
+    {
+      "id": "radicalcandor",
+      "videoId": "beTX3XfNpg0"
+    },
+    {
+      "id": "managertools",
+      "videoId": "6kcufEhlN7Q"
+    },
+    {
+      "id": "managertools",
+      "videoId": "rBrzjxpVmPg"
+    },
+    {
+      "id": "storycorps",
+      "videoId": "OgyK-clXOFc"
+    },
+    {
+      "id": "storycorps",
+      "videoId": "ckxRoIAYc2k"
+    },
+    {
+      "id": "wirelessphilosophy",
+      "videoId": "U-_f8RQIIiw"
+    },
+    {
+      "id": "wirelessphilosophy",
+      "videoId": "VDGp04CfM4M"
+    },
+    {
+      "id": "wirelessphilosophy",
+      "videoId": "NFiDdbquWJY"
+    },
+    {
+      "id": "rationalityrules",
+      "videoId": "JcUZszps8LA"
+    },
+    {
+      "id": "rationalityrules",
+      "videoId": "a9_jv5Nc9iM"
+    },
+    {
+      "id": "studiobinder",
+      "videoId": "z9l8snZR8Gs"
+    },
+    {
+      "id": "studiobinder",
+      "videoId": "zhhJIkpnvsE"
+    },
+    {
+      "id": "andrewhuang",
+      "videoId": "Z07NWhI2oQQ"
+    },
+    {
+      "id": "rexkrueger",
+      "videoId": "rBWNwxu7iNY"
+    },
+    {
+      "id": "buzzsprout",
+      "videoId": "TMH6VMIf06I"
+    },
+    {
+      "id": "benjaminkeep",
+      "videoId": "WbUOY9ioIqw"
+    },
+    {
+      "id": "justinsung",
+      "videoId": "HU7oP5VeXoM"
+    },
+    {
+      "id": "justinsung",
+      "videoId": "eauQac_23R0"
+    },
+    {
+      "id": "refold",
+      "videoId": "Jo4ds4mxuhU"
+    },
+    {
+      "id": "refold",
+      "videoId": "KxLRp1yd8Ro"
+    },
+    {
+      "id": "3blue1brown",
+      "videoId": "KuXjwB4LzSA"
+    },
+    {
+      "id": "3blue1brown",
+      "videoId": "LPZh9BOjkQs"
+    },
+    {
+      "id": "misterwootube",
+      "videoId": "_jFWu_whDjI"
+    },
+    {
+      "id": "misterwootube",
+      "videoId": "ptbMFsa8B7w"
+    },
+    {
+      "id": "healthygamergg",
+      "videoId": "hQRjSn7_BKY"
+    },
+    {
+      "id": "healthygamergg",
+      "videoId": "OfPOtN51MpM"
+    },
+    {
+      "id": "theschooloflife",
+      "videoId": "hnQwaVnv-FA"
+    },
+    {
+      "id": "coreyms",
+      "videoId": "Qu3dThVy6KQ"
+    },
+    {
+      "id": "neetcode",
+      "videoId": "8wysIxzqgPI"
+    },
+    {
+      "id": "modernsoftwareengineering",
+      "videoId": "p1xZ-Ni2t8Q"
+    },
+    {
+      "id": "modernsoftwareengineering",
+      "videoId": "uHatwKrYY_c"
+    },
+    {
+      "id": "carlpullein",
+      "videoId": "1aXKbT8nvrE"
+    },
+    {
+      "id": "carlpullein",
+      "videoId": "-RwA6rvRhog"
+    },
+    {
+      "id": "calnewport",
+      "videoId": "3dad6I146kw"
+    },
+    {
+      "id": "calnewport",
+      "videoId": "ZyvvKhSeYHQ"
+    },
+    {
+      "id": "tiagoforte",
+      "videoId": "9QDu6wpR59o"
+    },
+    {
+      "id": "jeffnippard",
+      "videoId": "3ryh7PNhz3E"
+    },
+    {
+      "id": "jeffnippard",
+      "videoId": "OqRvmJ2eyBA"
+    },
+    {
+      "id": "barbellmedicine",
+      "videoId": "WHbJS4gBdQI"
+    },
+    {
+      "id": "barbellmedicine",
+      "videoId": "hAEk1l5jEPY"
+    },
+    {
+      "id": "fitnessfaqs",
+      "videoId": "oHqAwhhnUxg"
+    },
+    {
+      "id": "e3rehab",
+      "videoId": "sKZcTjlxk-Q"
+    },
+    {
+      "id": "chewjitsu",
+      "videoId": "Kcn78sJtPpo"
+    },
+    {
+      "id": "squatuniversity",
+      "videoId": "B3lGOPPBRFg"
+    },
+    {
+      "id": "squatuniversity",
+      "videoId": "4p0RW6AIYt8"
+    },
+    {
+      "id": "tonyjeffries",
+      "videoId": "xOeEqDjkaVE"
+    },
+    {
+      "id": "nutritionmadesimple",
+      "videoId": "k_WqysSAZnY"
+    },
+    {
+      "id": "nutritionmadesimple",
+      "videoId": "VNKCtkRDDws"
+    },
+    {
+      "id": "drmaryclaire",
+      "videoId": "bJqikVPm6Bc"
+    },
+    {
+      "id": "salarytransparentstreet",
+      "videoId": "4s3cJR4asyU"
+    },
+    {
+      "id": "thefutur",
+      "videoId": "nTthfof409U"
+    },
+    {
+      "id": "thefutur",
+      "videoId": "IG0mgfkRz1Q"
+    },
+    {
+      "id": "harvardbusinessreview",
+      "videoId": "iwCq-Eu7D0Y"
+    },
+    {
+      "id": "aiexplained",
+      "videoId": "Tf1nooXtUHE"
+    },
+    {
+      "id": "gamersnexus",
+      "videoId": "KhfqhCxqpQ8"
+    },
+    {
+      "id": "networkchuck",
+      "videoId": "6P-vjgPx9ww"
+    },
+    {
+      "id": "twocents",
+      "videoId": "2yWDKDm-ZD8"
+    },
+    {
+      "id": "twocents",
+      "videoId": "VrOB35_7QCE"
+    },
+    {
+      "id": "theramseyshow",
+      "videoId": "eCP77zWc2u8"
+    },
+    {
+      "id": "gottmaninstitute",
+      "videoId": "1xBCYkvoMAg"
+    },
+    {
+      "id": "estherperel",
+      "videoId": "nK_SVh1zW1Q"
+    },
+    {
+      "id": "goodinside",
+      "videoId": "pVcdYFQlzuM"
+    },
+    {
+      "id": "goodinside",
+      "videoId": "lZHeaplTGvI"
+    },
+    {
+      "id": "sarahockwellsmith",
+      "videoId": "jffokwXQjn0"
+    },
+    {
+      "id": "sarahockwellsmith",
+      "videoId": "qo6I1njNdLw"
+    },
+    {
+      "id": "terricole",
+      "videoId": "uiADfj6Kc4Y"
+    },
+    {
+      "id": "sexplanations",
+      "videoId": "KfU-F3Dfd3s"
+    },
+    {
+      "id": "aragusea",
+      "videoId": "ibgnYejxRww"
+    },
+    {
+      "id": "chainbaker",
+      "videoId": "1GgRJ1Ye-2U"
+    },
+    {
+      "id": "thisoldhouse",
+      "videoId": "s3vRj2f9z8I"
+    },
+    {
+      "id": "professorpincushion",
+      "videoId": "wBDQFn8H0cM"
+    },
+    {
+      "id": "cosmicskeptic",
+      "videoId": "Gs7fBx-zURw"
+    },
+    {
+      "id": "partiallyexaminedlife",
+      "videoId": "-U30Mzj0-qM"
+    },
+    {
+      "id": "partiallyexaminedlife",
+      "videoId": "zvGAW7y2wSk"
+    },
+    {
+      "id": "sisyphus55",
+      "videoId": "-YozLIQQmNo"
+    },
+    {
+      "id": "lennyspodcast",
+      "videoId": "ruvis-VWg2s"
+    },
+    {
+      "id": "hikingguy",
+      "videoId": "4hXO9Uu8qrA"
+    },
+    {
+      "id": "gentlemansgazette",
+      "videoId": "VMD4HAJDa0U"
+    },
+    {
+      "id": "patflynn",
+      "videoId": "WojN98qLmJQ"
+    },
+    {
+      "id": "stephankesting",
+      "videoId": "QgbQuTq0psI"
+    },
+    {
+      "id": "drnadolsky",
+      "videoId": "RoEDCdq13Uk"
+    },
+    {
+      "id": "gastrogirl",
+      "videoId": "X8U5cgcOPoY"
+    },
+    {
+      "id": "religionforbreakfast",
+      "videoId": "NZBDW8l4wIU"
+    },
+    {
+      "id": "gregorysadler",
+      "videoId": "7Cs7J7lMT9c"
+    },
+    {
+      "id": "techtfq",
+      "videoId": "Hl4NZB1XR9c"
+    },
+    {
+      "id": "simplesnippets",
+      "videoId": "URRNruf2yVk"
+    },
+    {
+      "id": "netninja",
+      "videoId": "XdDZKeM5_pQ"
+    },
+    {
+      "id": "nutritiontriathlon",
+      "videoId": "55iC16xXgaI"
+    },
+    {
+      "id": "startingstrength",
+      "videoId": "wqsZ7DE9fw8"
+    },
+    {
+      "id": "drbradstanfield",
+      "videoId": "szMdop7aBxw"
+    },
+    {
+      "id": "houseofhypertrophy",
+      "videoId": "-Gw6Y-aw4hs"
+    },
+    {
+      "id": "winrowtax",
+      "videoId": "ZtRKDzhRK8Y"
+    },
+    {
+      "id": "urygty",
+      "videoId": "HXWjnV73zgs"
+    },
+    {
+      "id": "yalecourses",
+      "videoId": "t7knGxL5DaU"
+    },
+    {
+      "id": "richonmoney",
+      "videoId": "mTbe4bhVMz8"
+    },
+    {
+      "id": "propertyhubuk",
+      "videoId": "1pT46D8TsWw"
+    },
+    {
+      "id": "griefchannel",
+      "videoId": "h93fgAfXPQY"
+    },
+    {
+      "id": "filmeditingpro",
+      "videoId": "Wcxw3BPSt3A"
+    }
+  ]
+}
