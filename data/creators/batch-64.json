@@ -1537,5 +1537,62 @@
       "videoCount": 134,
       "at": "2026-09"
     }
+  },
+  {
+    "id": "dbtandmepodcast",
+    "name": "DBT & Me Podcast",
+    "handle": "@dbtandmepodcast",
+    "channelUrl": "https://www.youtube.com/@dbtandmepodcast",
+    "country": null,
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Two Seattle therapists who teach Dialectical Behaviour Therapy skills groups, working through the DBT skills one episode at a time in long conversational podcast episodes.",
+    "longDescription": "Kate and Michelle, who describe themselves as mental health therapists teaching DBT groups together in Seattle, run a podcast that takes the skills of Dialectical Behaviour Therapy one at a time — for boundaries, the interpersonal-effectiveness module: DEAR MAN for making a request or refusing one, GIVE for keeping the relationship, FAST for keeping self-respect. Episodes explain a skill and troubleshoot where it breaks down, and one acts out examples in role play; recent uploads also include question-and-answer episodes, re-recordings of early topics and guest conversations. Across the {{scannedWords}} most recent uploads the median runs {{medianPhrase}}.",
+    "notFor": "Anyone wanting a short lesson — episodes run close to an hour or more — and anyone looking for treatment: this explains DBT skills and is not a substitute for a DBT programme with a therapist.",
+    "formatTags": [
+      "podcast",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 1,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "setting-boundaries",
+        "strength": "primary",
+        "why": "Brings a second therapeutic frame: DBT’s interpersonal-effectiveness skills, which treat asking and refusing as scripted steps you practise, beside the category’s codependency-centred first voice.",
+        "evidence": "Long-form episodes on boundary setting (102 minutes), DEAR MAN, interpersonal-effectiveness myths, troubleshooting those skills, role-played examples of DEAR MAN, GIVE and FAST, and DBT and codependency — six of the 187 long-form uploads in its latest 199 on boundaries, assertiveness or saying no, within a catalogue that works through the DBT skills more widely.",
+        "entryVideo": {
+          "title": "DBT & Me Podcast: Episode 37 - Boundary Setting",
+          "videoId": "ozRx0PUZLuU",
+          "whyThisOne": "The different kinds of boundaries and concrete ways to set them with other people, from two therapists who teach the skill in groups — the category’s beginner step of treating a boundary as your own action rather than a demand on someone else.",
+          "durationMin": 102
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "The boundary episode runs 102 minutes, and its description flags two stretches with material that may be distressing (28:15–30:10 and 47:00–1:00:20). The episodes teach skills from a therapy that is normally delivered in a structured programme; they explain it rather than deliver it. Descriptions link the hosts’ own book, a low-cost workbook in their Etsy shop and a Patreon, below the episode summary; no third-party placement was found in the descriptions of the 50 most recent uploads.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 100,
+      "medianMin": 63,
+      "videoCount": 199,
+      "at": "2026-09"
+    }
   }
 ]

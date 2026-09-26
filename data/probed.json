@@ -232,6 +232,11 @@
       "why": "stock-analysis beginner tier (group A round 8): 26 of 73 long-form on accounting, 2 of 73 intersect teaching framing on reading statements",
       "at": "batch 64"
     },
+    "@anapsychology": {
+      "status": "rejected",
+      "why": "setting-boundaries: 155 of 200 uploads two minutes or less; 1 of 44 long-form on boundaries, assertiveness or saying no",
+      "at": "batch 64"
+    },
     "@andrejkarpathy": {
       "status": "listed",
       "why": "Andrej Karpathy",
@@ -710,6 +715,11 @@
     "@daviemach": {
       "status": "listed",
       "why": "Davie Mach",
+      "at": "dataset"
+    },
+    "@dbtandmepodcast": {
+      "status": "listed",
+      "why": "DBT & Me Podcast",
       "at": "dataset"
     },
     "@deanmujtaba": {
@@ -2475,6 +2485,11 @@
     "@superinvestor": {
       "status": "rejected",
       "why": "stock-analysis beginner tier (group A round 8): 12 of 197 long-form match financial-statement terms",
+      "at": "batch 64"
+    },
+    "@suzettebraylmft": {
+      "status": "rejected",
+      "why": "setting-boundaries: a borderline-personality channel, 124 of 194 uploads two minutes or less and 1 of 63 long-form on boundaries",
       "at": "batch 64"
     },
     "@svpg": {
