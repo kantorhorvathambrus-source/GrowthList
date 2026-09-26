@@ -312,6 +312,11 @@
       "why": "real vocal workouts and a 25-year coach, but 38 of 50 uploads under two minutes and a 1m median; Ramsey Voice Studio covers the same beginner end with far more long-form",
       "at": "batch 48"
     },
+    "@awaytogether": {
+      "status": "rejected",
+      "why": "travel-planning second voice (batch 65): 8 of 162 long-form in the latest 200 pair a planning subject with how-to framing; the rest are vlogs and destination content",
+      "at": "batch 65"
+    },
     "@azamsharp": {
       "status": "rejected",
       "why": "mobile-development iOS slot: 7 of 112 long-form framed as tutorials or courses; 0 of 112 on shipping or release",
@@ -1192,6 +1197,11 @@
       "why": "habit-formation second voice (funded list): content farm: the same title uploaded two or three times (micro-breaks x2, hydration x2, nature exposure x3), all 200 scanned uploads 3-19 minutes with a median of six, topics drifting to fasting, finance and posture, no named person; its 71-of-71 habit density is the brand name in every title",
       "at": "batch 64"
     },
+    "@happytowander": {
+      "status": "listed",
+      "why": "Happy to Wander",
+      "at": "dataset"
+    },
     "@hardwarehaven": {
       "status": "rejected",
       "why": "budget hardware bargain-hunting, not self-hosting practice. 70 of 173 long-form mention server/NAS terms but only 3 intersect any teaching framing, and the catalogue is what to buy rather than how to run it",
@@ -1987,6 +1997,11 @@
       "why": "Oxygen Advantage (Patrick McKeown)",
       "at": "dataset"
     },
+    "@packhacker": {
+      "status": "rejected",
+      "why": "travel-planning second voice (batch 65): 151 of 200 uploads two minutes or less; 6 of 47 long-form pair a planning subject with how-to framing, mostly gear",
+      "at": "batch 65"
+    },
     "@paramedic": {
       "status": "collision",
       "why": "resolves to a Russian-language travel channel",
@@ -2067,6 +2082,11 @@
       "why": "substantial — median 80m, nothing sold — but it is a monastery archive of retreat talks, ceremonies and panels, with no entry point for someone learning to meditate",
       "at": "batch 43"
     },
+    "@portableprofessional": {
+      "status": "rejected",
+      "why": "travel-planning second voice (batch 65): 160 of 200 uploads two minutes or less; 7 of 40 long-form on planning subjects",
+      "at": "batch 65"
+    },
     "@positiveparentingsolutions": {
       "status": "collision",
       "why": "resolves to a British creator, not Amy McCready's US organisation",
@@ -2121,6 +2141,11 @@
       "status": "listed",
       "why": "Project Farm",
       "at": "dataset"
+    },
+    "@projectuntethered": {
+      "status": "rejected",
+      "why": "travel-planning second voice (batch 65), scoped to this slot: 28 of 171 long-form pair a planning subject with how-to framing, but framed as mistakes, scams and 'secrets' listicles; Happy to Wander taken for step-by-step planning walkthroughs",
+      "at": "batch 65"
     },
     "@prokotv": {
       "status": "listed",

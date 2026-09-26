@@ -1,0 +1,61 @@
+[
+  {
+    "id": "happytowander",
+    "name": "Happy to Wander",
+    "handle": "@happytowander",
+    "channelUrl": "https://www.youtube.com/@happytowander",
+    "country": "CA",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A Vancouver-based travel channel that walks first-time travellers through planning a trip step by step — flights, accommodation, documents and packing — mostly for Europe.",
+    "longDescription": "The channel’s planning videos are built as chaptered walkthroughs: how to plan a Europe trip from the Schengen rules through flights, accommodation, getting around and packing; how to use Google Flights’ date grid and price history; how to travel cheaply; how to pack carry-on only. Around them sits a larger body of destination guides — 102 of the 167 long-form titles are framed for a named place or for “first timers” there — and packing videos, twelve of them sponsored by a merino clothing brand. 110 of the 167 long-form descriptions carry chapter markers, and most link a longer written guide on the presenter’s own site. Across the {{scannedWords}} most recent uploads the median runs {{medianPhrase}}.",
+    "notFor": "Anyone planning long-term, multi-country or off-the-beaten-track travel — the planning advice is pitched at a first trip, largely to Europe — and anyone who wants booking advice kept apart from the booking services the presenter earns from.",
+    "formatTags": [
+      "tutorial",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 3,
+      "selfPromotion": 2,
+      "depth": 2
+    },
+    "signals": [
+      "practitioner",
+      "sponsor-heavy",
+      "commercial-conflict"
+    ],
+    "categories": [
+      {
+        "id": "travel-planning",
+        "strength": "primary",
+        "why": "Teaches the planning sequence of a first trip in order — documents, flights, where to stay, getting around, packing — in chaptered videos a beginner can follow step by step, beside the category’s hour-long sessions on airfare and insurance.",
+        "evidence": "Of the 167 long-form uploads in a catalogue of 186, 29 pair a planning subject — booking flights or hotels, budgeting, itineraries, visas, packing — with a how-to or step-by-step framing: a step-by-step Europe trip plan, a Google Flights walkthrough, a guide to travelling cheaply, carry-on packing for first timers, and when to use third-party booking sites.",
+        "entryVideo": {
+          "title": "HOW TO PLAN A TRIP TO EUROPE (STEP BY STEP) FOR FIRST TIMERS | Flights, Accommodation & More!",
+          "videoId": "v1EelA5RgW4",
+          "whyThisOne": "The whole planning sequence for a first trip in eighteen minutes — Schengen rules, how long to go, where to go, visas and documents, booking flights and accommodation, getting around and what to pack — the beginner level’s research, budget and pack-light steps in one pass.",
+          "durationMin": 18
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "The presenter earns from the booking choices the videos advise on: 145 of the 186 video descriptions carry an affiliate link to Booking.com, 132 a paid link to a travel-insurance provider, and 165 at least one commission-paying link to a transport, tour, car-hire or eSIM service. Separately, 44 of the 186 open with a placement marked as an ad — 26 an eSIM discount code, 12 a merino clothing brand’s sponsorship of the video, the rest luggage, electronics or a tour-booking site — and one eSIM set-up tutorial is sponsored by the eSIM provider it teaches. The entry video carries no ad placement; its description opens with a free planning workbook and puts the affiliate block below the chapters. The Europe focus means visa and entry rules are given for a Europe trip; check them for your own passport.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 10,
+      "longPct": 38,
+      "medianMin": 17,
+      "videoCount": 186,
+      "at": "2026-09"
+    }
+  }
+]
