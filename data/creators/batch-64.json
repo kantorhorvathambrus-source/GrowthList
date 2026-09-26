@@ -794,5 +794,63 @@
       "videoCount": 442,
       "at": "2026-09"
     }
+  },
+  {
+    "id": "urygty",
+    "name": "William Ury",
+    "handle": "@urygty",
+    "channelUrl": "https://www.youtube.com/@urygty",
+    "country": null,
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "archive",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "An archive of talks, lectures and interviews by a co-founder of the Harvard Program on Negotiation, teaching the interest-based approach to reaching agreement.",
+    "longDescription": "The channel describes William Ury as an author, negotiator and mediator and a co-founder of the Harvard Program on Negotiation, and it collects his recorded appearances rather than lessons made for YouTube: book talks on getting to agreement and on getting past a refusal, a four-part lecture series, executive-education seminars, a TEDx talk, and long conversations about negotiating peace in Venezuela, the Middle East and between Russia and Ukraine. The approach is the interest-based one — look past the stated position to what each side needs, and know your walk-away alternative — which is a different school from tactical, empathy-led negotiation. Across the {{scannedWords}} uploads scanned the median runs {{medianPhrase}}, and the channel has not posted since early 2024.",
+    "notFor": "Anyone wanting step-by-step lessons or a preparation checklist — these are recorded talks and interviews, about one in five running forty-five minutes or more, and a handful of uploads are in Portuguese, Spanish or Italian.",
+    "formatTags": [
+      "lecture",
+      "interview",
+      "long-form"
+    ],
+    "level": [
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 3,
+      "energy": 2,
+      "selfPromotion": 1,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "negotiation",
+        "strength": "primary",
+        "why": "Teaches the interest-based school of negotiation — separating what people demand from what they need, and knowing your alternative to a deal — which is a different method from the category's other creator.",
+        "evidence": "A four-part lecture on getting past a refusal, executive-education seminars on negotiating to win and on family-business negotiations, talks on reaching sustainable agreements from the Harvard Negotiation Project, and long discussions of multi-party diplomatic negotiations.",
+        "entryVideo": {
+          "title": "Getting Past No Part 1 (Spanish Subtitles)",
+          "videoId": "HXWjnV73zgs",
+          "whyThisOne": "Opens a four-part lecture on what to do when the other side says no — staying in a hard conversation without either conceding or escalating. English audio; the subtitles in the title are Spanish.",
+          "durationMin": 14
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "The channel has not posted since February 2024, and it is a collection of recorded appearances rather than a course, so there is no single place to start, and about one upload in five runs forty-five minutes or more. 8 of its 99 uploads are declared in Portuguese, Spanish or Italian. His affiliations are as the channel states them and were not independently confirmed. The descriptions carry no product or sponsor links.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 8,
+      "longPct": 38,
+      "medianMin": 9,
+      "videoCount": 99,
+      "at": "2026-09"
+    }
   }
 ]

@@ -402,6 +402,11 @@
       "why": "the same Buteyko tradition Oxygen Advantage already carries — doubling the frame, not adding a second voice",
       "at": "batch 44"
     },
+    "@buyingexcellence": {
+      "status": "rejected",
+      "why": "negotiation second-school slot (funded list): archive since 2017; 40 uploads, empty channel description",
+      "at": "batch 64"
+    },
     "@buzzsprout": {
       "status": "listed",
       "why": "Buzzsprout",
@@ -652,6 +657,11 @@
       "why": "Davie Mach",
       "at": "dataset"
     },
+    "@deanmujtaba": {
+      "status": "rejected",
+      "why": "negotiation second-school slot (funded list): 0 of 77 long-form match negotiation terms",
+      "at": "batch 64"
+    },
     "@declutterthemind": {
       "status": "listed",
       "why": "Declutter The Mind",
@@ -661,6 +671,11 @@
       "status": "listed",
       "why": "Dementia Careblazers (Dr. Natali Edmonds)",
       "at": "dataset"
+    },
+    "@derekarden": {
+      "status": "rejected",
+      "why": "negotiation second-school slot (funded list): 22 of 183 long-form match negotiation terms",
+      "at": "batch 64"
     },
     "@designcourse": {
       "status": "rejected",
@@ -1137,6 +1152,11 @@
       "why": "Impact Pricing",
       "at": "dataset"
     },
+    "@imperiumnegotiations": {
+      "status": "rejected",
+      "why": "negotiation second-school slot (funded list): dense on negotiation (30 of 35 long-form) but its teaching-framed titles are B2B procurement and margin protection — a sales practice, not a second school of negotiation",
+      "at": "batch 64"
+    },
     "@indepthcine": {
       "status": "listed",
       "why": "In Depth Cine",
@@ -1387,6 +1407,11 @@
       "why": "Lattice Training",
       "at": "dataset"
     },
+    "@lauramcharrie": {
+      "status": "rejected",
+      "why": "negotiation second-school slot (funded list): archive since 2020; 0 of 84 long-form match negotiation terms",
+      "at": "batch 64"
+    },
     "@lawrencesystems": {
       "status": "listed",
       "why": "Lawrence Systems",
@@ -1477,6 +1502,11 @@
       "why": "Mama Doctor Jones (Dr. Danielle Jones)",
       "at": "dataset"
     },
+    "@managementcourses": {
+      "status": "rejected",
+      "why": "negotiation second-school slot (funded list): 6 of 114 long-form match negotiation terms",
+      "at": "batch 64"
+    },
     "@managertools": {
       "status": "listed",
       "why": "Manager Tools",
@@ -1515,6 +1545,11 @@
     "@medcircle": {
       "status": "rejected",
       "why": "attachment-styles clinician slot (funded list): 0 of 4 long-form in the recent window match attachment terms; an expert-interview company",
+      "at": "batch 64"
+    },
+    "@mediatoracademy": {
+      "status": "rejected",
+      "why": "negotiation second-school slot (funded list): dispute-resolution education company (24 of 34 long-form on mediation terms); professional mediation training rather than personal negotiation",
       "at": "batch 64"
     },
     "@medicosisperfectionalis": {
@@ -2257,6 +2292,11 @@
       "why": "stock-analysis beginner tier (group A round 8): 5 of 109 long-form match financial-statement terms",
       "at": "batch 64"
     },
+    "@theartofnegotiation": {
+      "status": "rejected",
+      "why": "negotiation second-school slot (funded list): dormant since 2025-01; 38 uploads, no named presenter in the description",
+      "at": "batch 64"
+    },
     "@thebehavioralarts": {
       "status": "rejected",
       "why": "probed for body-language, research end; the same case-reading genre as The Behavior Panel",
@@ -2530,6 +2570,11 @@
     "@uprighthealth": {
       "status": "listed",
       "why": "Upright Health",
+      "at": "dataset"
+    },
+    "@urygty": {
+      "status": "listed",
+      "why": "William Ury",
       "at": "dataset"
     },
     "@usefulusability": {
