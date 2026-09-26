@@ -760,6 +760,17 @@ this file has the rules, schema, and current state.
       no active candidate was comparable, and why — named, not assumed. A
       pick that cannot produce that sentence is the drift this rule exists
       to stop.
+    - **A category held open this way is re-searched only with a new
+      angle** — a sub-area, vocabulary or duration band its earlier rounds
+      did not try, named in the round report — never by re-running the
+      search that already failed. **It is worked after funded categories
+      not yet worked**, so a held-open category does not sit at the top of
+      the list being skipped by every session. The owner's ruling at batch
+      64, when `ui-ux-design`, `negotiation` and `couples-communication`
+      were first skipped for this reason. *Held open* is derived, not
+      stored: two or more creators listed, fewer than two active.
+      (The coverage report does not yet order them this way — the change
+      is in `scripts/lib/close-plan.mjs` and awaits owner approval.)
 
 ## Naming conventions
 

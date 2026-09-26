@@ -1449,7 +1449,8 @@
     },
     "signals": [
       "practitioner",
-      "sponsor-heavy"
+      "sponsor-heavy",
+      "commercial-conflict"
     ],
     "categories": [
       {
@@ -1466,7 +1467,7 @@
       }
     ],
     "role": "specialist",
-    "caveats": "Of his 50 most recent uploads, 21 open their description with a paid placement — a website builder, a budgeting app or a coffee magazine, none of them coffee equipment — and only 6 of those use a word like “sponsor” or “partner”; the entry video carries none. 43 of the 50 link an Amazon storefront of the gear he uses, which pays him a commission on purchases, and the descriptions do not say how reviewed equipment was obtained. Treat buying advice with that in mind; the brewing teaching stands apart from it.",
+    "caveats": "He earns from viewers buying the equipment he evaluates: 58 of the 193 long-form uploads in his latest 200 are reviews or comparisons, 43 of his 50 most recent descriptions link an Amazon storefront of the gear he uses, which pays him a commission on purchases, and none of those 50 says how reviewed equipment was obtained. Separately, 21 of the 50 open their description with a paid placement — a website builder, a budgeting app or a coffee magazine, none of them coffee equipment — and only 6 of those use a word like “sponsor” or “partner”; the entry video carries none. The brewing teaching stands apart from the buying advice; weigh the second with the first in mind.",
     "catalogue": {
       "scanned": 50,
       "shortPct": 10,
