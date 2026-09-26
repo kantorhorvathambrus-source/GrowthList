@@ -120,5 +120,63 @@
       "videoCount": 3066,
       "at": "2026-09"
     }
+  },
+  {
+    "id": "jennifermay",
+    "name": "Jennifer May, Ph.D.",
+    "handle": "@jennifermayph.d.2761",
+    "channelUrl": "https://www.youtube.com/@jennifermayph.d.2761",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "dormant",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A licensed clinical psychologist and DBT programme coordinator teaching Dialectical Behaviour Therapy skills as short recorded lessons, one skill per video; the channel has not posted since February 2025.",
+    "longDescription": "Jennifer May describes herself on the channel as a New York licensed clinical psychologist who has practised Dialectical Behaviour Therapy since 2001 and coordinates a DBT programme at a psychiatric centre. The catalogue is organised as courses rather than episodes: 89 of the 220 titles are DBT skills lessons, 33 are Radically Open DBT, and 37 belong to a series on sensorimotor psychotherapy. For boundaries, the relevant course is DBT’s interpersonal-effectiveness module, taught skill by skill — asking, refusing, keeping the relationship, keeping self-respect. Across the {{scannedWords}} most recent uploads the median runs {{medianPhrase}}.",
+    "notFor": "Anyone who needs current or live material — the channel stopped posting in February 2025 — and anyone looking for treatment: these lessons explain DBT skills and are not a substitute for a DBT programme with a therapist.",
+    "formatTags": [
+      "tutorial",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 0,
+      "depth": 3
+    },
+    "signals": [
+      "credentialed",
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "setting-boundaries",
+        "strength": "primary",
+        "why": "Teaches refusing and asking as short, separate DBT lessons of 11 to 22 minutes — the category’s beginner step of declining without over-explaining, in a length a first-timer will finish.",
+        "evidence": "17 of the 218 videos of eight minutes or more across all 220 uploads are titled on boundaries, assertiveness, saying no or the interpersonal-effectiveness skills: the whole module as lessons of 11 to 22 minutes (its goals and obstacles, DEAR MAN, tips for asking assertively, GIVE, FAST, saying no, building and ending relationships, and a review of all of them), a 22-minute lesson on an expanded-DBT boundary skill, a 36-minute Radically Open DBT lesson on assertive asking, and two 47- and 55-minute lectures on boundary styles.",
+        "entryVideo": {
+          "title": "DBT - Interpersonal Effectiveness - Saying \"No\"",
+          "videoId": "GIhz5zr8cyw",
+          "whyThisOne": "Why saying no goes wrong — the automatic refusal and the fear of refusing — and the skills for moving to a considered no, in sixteen minutes: the beginner level’s practice of declining small things without over-explaining.",
+          "durationMin": 16
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "The channel has not posted since February 2025, and its boundary lessons date from 2020 to 2023. The lessons teach skills from a therapy normally delivered in a structured programme; they explain it rather than deliver it. None of the 220 video descriptions carries a sponsor, affiliate link or paid product.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 80,
+      "medianMin": 26,
+      "videoCount": 220,
+      "at": "2026-09"
+    }
   }
 ]
