@@ -1185,6 +1185,33 @@ this section first to know exactly where to resume.)*
   Dr. Sue Johnson (EFT; dormant). **Search allowance at 8.** Next funded:
   run `coverage-report.mjs`. Archive picks (Travis, Ury) do not close a funded
   slot: the close plan counts active creators, deliberately.
+  **Same session, continued (handed off again, on the tells):**
+  rule 25 written (inactive channels: listed, never closing a category,
+  never beating a comparable active one) and a rule 24 addendum (the
+  creator's own paid product leading a description counts as a sponsor
+  for entry videos — from `people-management`). **4 funded categories
+  are on the list only because their second creator is inactive**:
+  `ui-ux-design`, `negotiation`, `couples-communication`,
+  `building-with-llms`. `people-management` → Ramona Shaw (Nash
+  Consulting deferred, depth 3) · `mobile-development` → Paul Hudson
+  (iOS; **shipping-and-release voice still OPEN**, six channels scanned,
+  release-engineering end unsearched; Karin Prater and iOS Insights
+  deferred). `goal-setting` entered the funded list. **Search allowance
+  at 10.**
+  **PENDING OWNER APPROVAL — visitor copy, do not commit without it:**
+  `pending/colophon-entry-window.patch` rewrites the colophon's
+  entry-video sentence, which was false (it said picks come from recent
+  uploads and older introductions go unseen; measured, 109 of 373 entry
+  videos sit outside their channel's newest 50 today). The measurement is
+  committed as `scripts/audit-entry-window.mjs` → `data/entry-window-audit.json`
+  → `method-facts.json`, null when a run is incomplete. Once approved:
+  `git apply pending/colophon-entry-window.patch`, delete the patch file,
+  commit. **Until then the false sentence is still live.**
+  **The tells this time:** `getUploads(playlist, 200)` passed the limit
+  positionally, so it fetched 50 (the record said 50, so nothing false
+  shipped — it takes `{ max }`); and Hudson's lesson count was first
+  written as "the current series" when the measurement covered every
+  non-old recording 2019–2024, caught before commit.
   **Handed off on the tells, not on context:** a zero-filled `catalogue`
   block written before the measurement landed (twice), and a "Kagan"
   filter that matched two different Kagans. Write the catalogue block
@@ -1199,6 +1226,7 @@ this section first to know exactly where to resume.)*
   `validate.mjs --final`, `check-secrets.mjs`, `audit-status.mjs`
   (status drift *and* handle aliases), `audit-catalogue.mjs`,
   `audit-stale-channel.mjs`, `audit-unread-fields.mjs`,
+  `audit-entry-window.mjs --write`,
   `check-contrast.mjs`, `build-data.mjs`.
 - **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
 - **PHASE 2 CLOSES ON A TARGETED PLAN, NOT UNIFORM COVERAGE.** The owner's
