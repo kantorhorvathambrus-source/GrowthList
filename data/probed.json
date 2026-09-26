@@ -682,6 +682,11 @@
       "why": "45 of 50 uploads under two minutes, median 1m, against a large commercial operation. The applied-practice angle is real but the channel is a shorts feed",
       "at": "batch 51"
     },
+    "@damientalksmoney": {
+      "status": "rejected",
+      "why": "insurance-basics UK slot (batch 65): 0 of 190 long-form in the latest 200 on insurance or protection",
+      "at": "batch 65"
+    },
     "@darrentaylordigital": {
       "status": "listed",
       "why": "Darren Taylor",
@@ -856,6 +861,11 @@
       "status": "listed",
       "why": "Dreaming Spanish",
       "at": "dataset"
+    },
+    "@drewberryinsurancecouk": {
+      "status": "rejected",
+      "why": "insurance-basics UK slot (batch 65): an insurance broker's channel, archive since 2024-01; 43 of 57 uploads two minutes or less, 4 long-form",
+      "at": "batch 65"
     },
     "@drgrande": {
       "status": "rejected",
@@ -1201,6 +1211,11 @@
       "status": "rejected",
       "why": "testing-and-quality beginner tier (group A round 4): densest testing channel in the round (23 of 104 long-form match test terms) but 4 of 104 are teaching-framed, all .NET-specific and intermediate — xUnit lifecycle, Testcontainers, integration tests. Not a beginner tier; a possible intermediate candidate if that tier is ever funded",
       "at": "batch 64"
+    },
+    "@guidedinvestor": {
+      "status": "rejected",
+      "why": "insurance-basics UK slot (batch 65): Australian; 2 of 57 long-form in the latest 200 on insurance",
+      "at": "batch 65"
     },
     "@habitsbackedbyscience": {
       "status": "rejected",
@@ -1681,6 +1696,11 @@
       "status": "rejected",
       "why": "a CPA, but the content is IRS notice-by-notice explainers and software reviews with promo codes, funnelling to his own tax-debt relief company. Wrong level for a basics category and the sharpest kind of commercial conflict — he profits from the decision the content advises on",
       "at": "batch 54"
+    },
+    "@louise.fitzgerald_ifa": {
+      "status": "rejected",
+      "why": "insurance-basics UK slot (batch 65): 189 of 200 recent uploads two minutes or less; 0 long-form on insurance",
+      "at": "batch 65"
     },
     "@lucalampariello": {
       "status": "listed",
@@ -2976,6 +2996,11 @@
       "status": "rejected",
       "why": "archive since June 2024; audiobook narrations of primary texts sold on Audible rather than teaching",
       "at": "batch 61"
+    },
+    "@warrenshute": {
+      "status": "rejected",
+      "why": "insurance-basics UK slot (batch 65): 3 of 149 long-form in the latest 198 on insurance or protection",
+      "at": "batch 65"
     },
     "@wealthnation": {
       "status": "rejected",

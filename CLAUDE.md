@@ -1240,6 +1240,23 @@ this section first to know exactly where to resume.)*
   **Measure a claim across the channel before writing "every" or
   "all"** — twice this session a caveat generalised from the two
   descriptions read in full (Steinborn's quiz was 156 of 200, not all).
+- **Session of 2026-09-26, second session (batch 65).** Search allowance
+  counted from the owner's 13 at session start: **16 at hand-off**, no
+  rate-limit signal. Close-plan held-open ordering confirmed owner-approved
+  (rule 25 text updated). `travel-planning` → Happy to Wander (CA;
+  `sponsor-heavy`, `commercial-conflict` — a first disclosure regex found
+  16 ad placements, the `[Ad]` tag found 44; the record carries 44).
+  `insurance-basics` → The White Coat Investor (US; empty to one;
+  `commercial-conflict` for a disability-insurance agent's sponsorship).
+  **Stopped on the owner's rule**, insurance's second slot: the UK round's
+  only candidate, MeaningfulMoney, is blocked by rule 24 on every recent
+  insurance video (LifeSearch, 217 of 713 descriptions) and clean only on
+  2010–2011 clips — in UNVERIFIED.md, awaiting the owner.
+  **Also awaiting the owner:** the setting-boundaries re-examination —
+  measured, Jennifer May is not comparable to DBT & Me but better on
+  brief (17 of 218 long-form, 11–22 minutes, the whole interpersonal
+  module; DBT & Me's shortest on-brief episode is 59 minutes), so rule 25
+  was decided by activity. Recommendation made in chat; record unchanged.
 - **Standing checks to run before any release**: `validate.mjs`,
   `validate.mjs --final`, `check-secrets.mjs`, `audit-status.mjs`
   (status drift *and* handle aliases), `audit-catalogue.mjs`,
