@@ -967,5 +967,123 @@
       "videoCount": 2428,
       "at": "2026-09"
     }
+  },
+  {
+    "id": "richonmoney",
+    "name": "Rich on Money",
+    "handle": "@richonmoney",
+    "channelUrl": "https://www.youtube.com/@richonmoney",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A retired military member who invests in rental property, teaching how to estimate a rental's real expenses and cash flow before buying, and what goes wrong once you own it.",
+    "longDescription": "The channel describes itself as real estate and investing advice from a retired military member, pitched against the hype of people selling courses. Its longer videos teach the arithmetic a first rental depends on: estimating repairs and capital expenditure rather than accepting a seller's figures, calculating cash flow properly and how it differs from return on investment and cap rate, and calculating rental income without the common mistakes. Around them sit landlord practicalities — screening tenants, self-managing while working full-time — and plain accounts of what went wrong, including a rental that burned down. Most of the channel is short clips: {{shortPctWords}} per cent of the {{scannedWords}} most recent uploads run under two minutes.",
+    "notFor": "Anyone wanting a full course or deep financial modelling — the teaching videos are a small set of five-to-twenty-minute explainers inside a channel that is overwhelmingly short clips, and nothing here covers commercial property or syndications.",
+    "formatTags": [
+      "tutorial",
+      "shorts"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 1,
+      "depth": 2
+    },
+    "signals": [
+      "practitioner"
+    ],
+    "jurisdiction": "US",
+    "jurisdictionNote": "US rentals throughout. The expense and cash-flow arithmetic transfers anywhere; financing, tenancy law and tax treatment are American.",
+    "categories": [
+      {
+        "id": "real-estate-investing",
+        "strength": "primary",
+        "why": "Teaches the arithmetic of a rental before you buy it — every expense including capital expenditure, and cash flow worked out honestly — in a field where most channels are selling a deal or a course.",
+        "evidence": "Explainers on estimating rental expenses with four repair formulas and capital expenditure, calculating cash flow and how it differs from return on investment and cap rate, and calculating rental income accurately; plus tenant screening, self-management and first-hand accounts of mistakes and a property fire.",
+        "entryVideo": {
+          "title": "Estimate Rental Expenses Like the Best Investors",
+          "videoId": "mTbe4bhVMz8",
+          "whyThisOne": "Shows how to estimate every running cost of a rental — repairs by four different formulas and the capital expenditure most investors leave out — so you can tell when an advertised return does not survive the real expenses. That is the beginner level exactly.",
+          "durationMin": 10
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "The arithmetic videos date from 2020 to 2022; the recent long-form is landlord practice and first-hand stories, and almost all recent uploads are short clips. Descriptions link mainly to his own blog; no sponsorship or affiliate placement appears in the descriptions of any of its 1,167 uploads, and where the word \"commission\" appears it is the subject of the video.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 94,
+      "longPct": 2,
+      "medianMin": 1,
+      "videoCount": 1167,
+      "at": "2026-09"
+    }
+  },
+  {
+    "id": "propertyhubuk",
+    "name": "Property Hub",
+    "handle": "@propertyhubuk",
+    "channelUrl": "https://www.youtube.com/@propertyhubuk",
+    "country": "GB",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "Two UK property investors explaining buy-to-let on the numbers — deal analysis, costs, mortgages, tax structure — and the mistakes they have made themselves.",
+    "longDescription": "Property Hub is a UK property-investing business run by two investors who present the channel together, and the videos lean on their own figures: walking through the full purchase costs and returns of a real deal with a downloadable template, analysing a deal quickly, buy-to-let mortgages, whether to buy through a limited company, and what the numbers look like when rates rise. A recurring strand is what went wrong — the biggest mistakes they have made as investors, a single mistake that cost them twenty-two thousand pounds, property myths that lose money — and one early video asks whether property investment courses are worth paying for at all. Across the {{scannedWords}} most recent uploads the median runs {{medianPhrase}}.",
+    "notFor": "Anyone outside the UK, and anyone wanting a view with no stake in the outcome — the business behind the channel offers portfolio-building consultations and access to developers' properties, so it gains when viewers buy.",
+    "formatTags": [
+      "tutorial"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner",
+      "commercial-conflict"
+    ],
+    "jurisdiction": "UK",
+    "jurisdictionNote": "UK property throughout: stamp duty, buy-to-let mortgages, limited-company ownership and landlord tax rules are British. The habit of costing a deal in full before buying transfers anywhere.",
+    "categories": [
+      {
+        "id": "real-estate-investing",
+        "strength": "primary",
+        "why": "Works through the full costs and returns of real UK buy-to-let deals and the investors' own expensive mistakes — the arithmetic and failure modes from the British side, where the category's other creator is American.",
+        "evidence": "Videos breaking down the numbers of a real deal with a cost template, analysing any deal quickly, buy-to-let mortgages and limited-company ownership, the biggest mistakes they have made as investors, a mistake that cost £22,000, and property myths that lose money.",
+        "entryVideo": {
+          "title": "Breaking down the numbers of a REAL property deal (+ free template) | Property Hub",
+          "videoId": "1pT46D8TsWw",
+          "whyThisOne": "Takes one real buy-to-let purchase and lists every starting cost against the returns it produced, with a template to do the same for your own deal — the beginner level's honest underwriting, on UK numbers.",
+          "durationMin": 7
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "The business behind the channel sells the decision it teaches about: 350 of its 426 descriptions invite you to book a consultation or strategy meeting about building a portfolio, and 14 offer discounted properties from developers — from a channel that also warns about buying off-plan. Treat its deal analysis as sound arithmetic from people who gain when you buy. No sponsorship or affiliate placement appears in the descriptions; the links are to its own website, tools, forum and podcast.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 10,
+      "medianMin": 12,
+      "videoCount": 425,
+      "at": "2026-09"
+    }
   }
 ]

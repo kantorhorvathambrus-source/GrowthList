@@ -562,6 +562,11 @@
       "why": "Coffeezilla",
       "at": "dataset"
     },
+    "@commercialrealestateexplained": {
+      "status": "rejected",
+      "why": "real-estate-investing (funded list, batch 64): archive since 2023; addressed to business owners leasing office space, not to investors",
+      "at": "batch 64"
+    },
     "@computerphile": {
       "status": "listed",
       "why": "Computerphile",
@@ -1392,6 +1397,11 @@
       "why": "Kevin Powell",
       "at": "dataset"
     },
+    "@kevinwrightproperty": {
+      "status": "rejected",
+      "why": "real-estate-investing (funded list, batch 64): property finance broker; 4 of 25 long-form on the subject",
+      "at": "batch 64"
+    },
     "@knocknoggin": {
       "status": "rejected",
       "why": "habit-formation --small round (batch 64): 1 of 96 long-form match habit terms",
@@ -1426,6 +1436,11 @@
       "status": "listed",
       "why": "Lab Muffin Beauty Science (Michelle Wong)",
       "at": "dataset"
+    },
+    "@landlordcoach": {
+      "status": "rejected",
+      "why": "real-estate-investing (funded list, batch 64): archive since 2023; a daily-show format in which deal arithmetic is a small part (9 of 191 long-form titles on numbers, mistakes or CAPEX)",
+      "at": "batch 64"
     },
     "@latticetraining": {
       "status": "listed",
@@ -1642,6 +1657,11 @@
       "why": "debt-payoff non-ideological slot (funded list): 1 of 67 long-form match debt terms in the recent window",
       "at": "batch 64"
     },
+    "@moneytothemasses": {
+      "status": "rejected",
+      "why": "real-estate-investing (funded list, batch 64): 4 of 23 long-form on property terms; a general personal-finance channel",
+      "at": "batch 64"
+    },
     "@moz": {
       "status": "listed",
       "why": "Moz (Whiteboard Friday)",
@@ -1817,6 +1837,11 @@
       "why": "Park Tool",
       "at": "dataset"
     },
+    "@passiveproperty-ab": {
+      "status": "rejected",
+      "why": "real-estate-investing (funded list, batch 64): no long-form uploads in the 200 most recent; empty channel description",
+      "at": "batch 64"
+    },
     "@patflynn": {
       "status": "listed",
       "why": "Pat Flynn",
@@ -1922,6 +1947,11 @@
       "why": "Professor Pincushion",
       "at": "dataset"
     },
+    "@proformamodels": {
+      "status": "rejected",
+      "why": "real-estate-investing (funded list, batch 64): vendor of pre-built financial models; archive since 2023",
+      "at": "batch 64"
+    },
     "@projectfarm": {
       "status": "listed",
       "why": "Project Farm",
@@ -1930,6 +1960,11 @@
     "@prokotv": {
       "status": "listed",
       "why": "Proko (Stan Prokopenko)",
+      "at": "dataset"
+    },
+    "@propertyhubuk": {
+      "status": "listed",
+      "why": "Property Hub",
       "at": "dataset"
     },
     "@protaxaccountantuk": {
@@ -2017,6 +2052,11 @@
       "why": "hypertrophy-training beginner tier (group A round 10): 1 of 43 long-form match hypertrophy terms in the 200 most recent uploads",
       "at": "batch 64"
     },
+    "@rentalpropertygurus": {
+      "status": "rejected",
+      "why": "real-estate-investing (funded list, batch 64): no long-form uploads (8 minutes or more) in the 200 most recent",
+      "at": "batch 64"
+    },
     "@reverseagingrevolution": {
       "status": "rejected",
       "why": "longevity beginner tier (group A round 9): 18 of 158 long-form teaching-framed and all on exotic interventions — peptides, senescent cells, mitochondrial therapy, \"reverse aging\" — the opposite of a beginner tier built on established interventions",
@@ -2025,6 +2065,11 @@
     "@rexkrueger": {
       "status": "listed",
       "why": "Rex Krueger",
+      "at": "dataset"
+    },
+    "@richonmoney": {
+      "status": "listed",
+      "why": "Rich on Money",
       "at": "dataset"
     },
     "@rishabhmishraofficial": {
@@ -2042,6 +2087,11 @@
       "why": "Rob Berger",
       "at": "dataset"
     },
+    "@ryaningram": {
+      "status": "rejected",
+      "why": "real-estate-investing (funded list, batch 64): dormant since 2025-07",
+      "at": "batch 64"
+    },
     "@saaspricing": {
       "status": "rejected",
       "why": "a pricing consultancy clip channel — 43 of 50 uploads under two minutes, three long-form in the recent window",
@@ -2056,6 +2106,11 @@
       "status": "rejected",
       "why": "probed for body-language, research end; behaviour analysis of recorded cases rather than teaching",
       "at": "batch 56"
+    },
+    "@samuelleeds": {
+      "status": "rejected",
+      "why": "real-estate-investing (funded list, batch 64): property-training company; 3 of 24 long-form on the subject in the recent window",
+      "at": "batch 64"
     },
     "@santrelmedia": {
       "status": "rejected",
@@ -2522,6 +2577,11 @@
       "why": "Adam Meakins, found only via the 320-unit fallback search: 7 uploads",
       "at": "batch 43"
     },
+    "@theukmarketwrap": {
+      "status": "rejected",
+      "why": "real-estate-investing (funded list, batch 64): a buying service for expat investors — profits from each purchase; 7 of 41 long-form on the subject",
+      "at": "batch 64"
+    },
     "@thevaluationschool": {
       "status": "rejected",
       "why": "RULE 5 — declared audio languages are hi and en, and the long-form titles say \"in Simple Hindi\". Strong catalogue (23 of 50 uploads over 20m) and out of scope on language, not quality",
@@ -2590,6 +2650,11 @@
     "@trainerwinny": {
       "status": "rejected",
       "why": "strength-training beginner tier (group A round 7): 1 of 124 long-form match barbell-strength terms",
+      "at": "batch 64"
+    },
+    "@trevorcalton": {
+      "status": "rejected",
+      "why": "real-estate-investing (funded list, batch 64): dormant since 2025-09; 5 of 16 long-form on the subject",
       "at": "batch 64"
     },
     "@twocentspbs": {
