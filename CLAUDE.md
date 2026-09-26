@@ -1105,6 +1105,20 @@ correctable reason: each was tested against the case it was built for
 rather than against the population. That is rule 20's territory, and
 a fresh session will make the same error unless it asks the question.
 
+**ONE BRANCH HOLDS THE WHOLE PROJECT: `claude/lucid-lamport-p8y073`.**
+The owner's ruling, 2026-09-26, after work split across two branches
+when a session was assigned `claude/growthlist-coverage-boundaries-u3360e`.
+- Work on `lucid-lamport` directly when the session allows it.
+- **If the system assigns a different branch, start it from
+  `origin/claude/lucid-lamport-p8y073`'s head**, never from `main` —
+  `main` is far behind.
+- **Before handing off, fast-forward `lucid-lamport` to the assigned
+  branch and push it**, then confirm both remote refs name the same
+  commit (`git rev-parse origin/<assigned> origin/claude/lucid-lamport-p8y073`).
+  A fast-forward needs no merge because the assigned branch started from
+  lucid-lamport; if `merge --ff-only` refuses, something else pushed to
+  lucid-lamport in between — stop and say so rather than merging blind.
+
 **THE STANDARDS DO NOT CHANGE.** The scope rule, rule 18, the ledger,
 the gate, the audits, the close plan — all of it stands exactly as
 written. What changed is waiting for a yes that was already given.
@@ -1263,7 +1277,9 @@ this section first to know exactly where to resume.)*
   `audit-stale-channel.mjs`, `audit-unread-fields.mjs`,
   `audit-entry-window.mjs --write`,
   `check-contrast.mjs`, `build-data.mjs`.
-- **Repo**: `kantorhorvathambrus-source/GrowthList`, on `main`.
+- **Repo**: `kantorhorvathambrus-source/GrowthList`. **The working branch is
+  `claude/lucid-lamport-p8y073`**, which holds the whole project; `main` is
+  far behind. See "One branch holds the whole project" above.
 - **PHASE 2 CLOSES ON A TARGETED PLAN, NOT UNIFORM COVERAGE.** The owner's
   decision at batch 47, after the numbers were laid out both ways.
   Uniform close was 109 creators and ~48 batches at the measured rate,
