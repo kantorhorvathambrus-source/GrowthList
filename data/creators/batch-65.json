@@ -357,5 +357,63 @@
       "videoCount": 98,
       "at": "2026-09"
     }
+  },
+  {
+    "id": "emergingvoicesstudio",
+    "name": "Podcasting with Hiwi G",
+    "handle": "@emergingvoicesstudio",
+    "channelUrl": "https://www.youtube.com/@emergingvoicesstudio",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A podcast producer teaching independent podcasters the craft — preparing and interviewing guests, storytelling, planning a season, starting and growing a show — alongside long conversations with podcasters about how they began.",
+    "longDescription": "Hiwote, who goes by Hiwi, describes herself on the channel as a podcast producer whose credits include Esther Perel’s “Where Should We Begin?”, “This Is Dating” and projects with The New York Times and TED. The channel teaches the editorial side of podcasting more than the equipment: how to research and prepare for an interview, which questions open a guest up, a three-part storytelling structure, planning a season so publishing stays consistent, intros, and launching and growing a small show. 55 of the 69 long-form videos are lessons of this kind at eight to thirty-six minutes; eleven are conversations of forty minutes or more with independent podcasters about how they built their shows. Across the {{scannedWords}} most recent uploads the median runs {{medianPhrase}}.",
+    "notFor": "Anyone wanting detailed audio engineering or gear testing — the lessons are about content, interviewing and consistency rather than sound — and anyone who wants teaching without a course pitch alongside it.",
+    "formatTags": [
+      "tutorial",
+      "long-form",
+      "interview"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 3,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "podcasting",
+        "strength": "primary",
+        "why": "Teaches the interviewing and story structure that decide whether listeners finish an episode, from a working producer, beside the category’s hosting-platform channel on launch, equipment and promotion.",
+        "evidence": "Across all 162 uploads, 66 of the 69 videos of eight minutes or more are on podcasting, with the channel’s own name removed from the titles before counting: 55 lessons of 8 to 36 minutes — preparing for and conducting guest interviews, a storytelling framework, planning a season, intros, sounding natural on mic, launching and growing a show — and 11 conversations of 40 minutes or more with independent podcasters.",
+        "entryVideo": {
+          "title": "How the Best Podcasters Prepare to Interview Guests",
+          "videoId": "7ovEacmePqI",
+          "whyThisOne": "Five steps before recording — research, choosing the story thread, questions that open a guest up rather than close them down, preparing the guest without over-preparing them, and preparing yourself — the intermediate level’s interviewing skill in sixteen minutes.",
+          "durationMin": 16
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "70 of the 162 descriptions promote her own podcasting accelerator, which takes applications, and in 21 of the 66 on-brief long-form videos it is the first link. 8 carry affiliate links to podcast tools — hosting, editing and music services — including a comparison of hosting platforms whose description opens with an affiliate link to one of them. The entry video’s description offers only a free launch guide and carries no affiliate or course link.",
+    "catalogue": {
+      "scanned": 48,
+      "shortPct": 15,
+      "longPct": 38,
+      "medianMin": 15,
+      "videoCount": 159,
+      "at": "2026-09"
+    }
   }
 ]

@@ -357,6 +357,11 @@
       "why": "Benjamin Keep",
       "at": "dataset"
     },
+    "@benleavitt": {
+      "status": "rejected",
+      "why": "podcasting (batch 65): social-media agency channel; 19 of 109 long-form on podcast or recording terms, mostly YouTube growth",
+      "at": "batch 65"
+    },
     "@bernadettebanner": {
       "status": "rejected",
       "why": "costume history and historical dressmaking as entertainment; the sewing-and-mending blurb is repairing, altering and fitting clothes you wear",
@@ -997,6 +1002,11 @@
       "why": "ai-fundamentals teacher slot (funded list): 18 of 48 long-form on AI terms, 2 of 48 teaching-framed",
       "at": "batch 64"
     },
+    "@emergingvoicesstudio": {
+      "status": "listed",
+      "why": "Podcasting with Hiwi G",
+      "at": "dataset"
+    },
     "@engineeringmanagement": {
       "status": "rejected",
       "why": "people-management: engineering-career channel, 10 of 142 long-form match managing people",
@@ -1206,6 +1216,11 @@
       "status": "listed",
       "why": "Grad Coach",
       "at": "dataset"
+    },
+    "@grahamcochrane": {
+      "status": "rejected",
+      "why": "podcasting (batch 65): now a business-coaching channel; 0 of 22 long-form in the latest 200 on podcast terms",
+      "at": "batch 65"
     },
     "@gregactoncpa": {
       "status": "rejected",
@@ -1722,6 +1737,11 @@
       "why": "Lessons from the Screenplay",
       "at": "dataset"
     },
+    "@liftpodcasting": {
+      "status": "rejected",
+      "why": "podcasting (batch 65): a production company's channel, archive since 2022-09; no long-form",
+      "at": "batch 65"
+    },
     "@linkingyourthinking": {
       "status": "listed",
       "why": "Linking Your Thinking (Nick Milo)",
@@ -1866,6 +1886,11 @@
       "status": "listed",
       "why": "MicroConf",
       "at": "dataset"
+    },
+    "@mikerussell": {
+      "status": "rejected",
+      "why": "podcasting (batch 65): 83 of 613 long-form on podcasting across all 2,034 uploads, mostly tool reviews and software round-ups; states he is a Riverside.fm evangelist",
+      "at": "batch 65"
     },
     "@millennialmike": {
       "status": "rejected",
@@ -2376,6 +2401,11 @@
       "status": "rejected",
       "why": "22 of 89 long-form match SQL terms within a broader data-analytics career catalogue",
       "at": "batch 64"
+    },
+    "@riversidefm": {
+      "status": "rejected",
+      "why": "podcasting (batch 65): a recording-platform vendor's channel — the same position as the hosting vendor already listed",
+      "at": "batch 65"
     },
     "@rjthebikeguy": {
       "status": "listed",
@@ -2986,6 +3016,11 @@
       "status": "listed",
       "why": "Think Fast Talk Smart (Matt Abrahams)",
       "at": "dataset"
+    },
+    "@thinkmediatv": {
+      "status": "rejected",
+      "why": "podcasting (batch 65): a YouTube-growth channel; 11 of 82 long-form in the latest 200 on podcast terms",
+      "at": "batch 65"
     },
     "@thisguyedits": {
       "status": "listed",
