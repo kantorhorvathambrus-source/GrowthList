@@ -704,6 +704,11 @@ this file has the rules, schema, and current state.
       creator's own course or newsletter link is `sells-course`
       boilerplate, a different finding (see above); a tracked link to a
       third party is a placement.
+      **Including vanity paths on the creator's OWN domain** (found in
+      batch 64): Film Editing Pro sends a music library through
+      `filmeditingpro.com/alibi/` in 24 of 137 descriptions. It reads as
+      an own link and no host-based count will flag it — read what the
+      label next to an own-domain link is actually offering.
     - **Affiliate language** — "I earn a commission", "affiliate link",
       Amazon Associates, a gear list of products with links.
     - **Position.** A placement in the first two lines, above the
@@ -1139,7 +1144,11 @@ this section first to know exactly where to resume.)*
   owner-approved. **Search allowance at 6.** **Pending owner decision:**
   Dr. B (`@cristibundukamara`) — a clinician on brief for grief, deferred
   under rule 12 because 217 of 412 descriptions sell programmes to a
-  bereaved audience. Next funded: run `coverage-report.mjs`. Archive picks (Travis, Ury) do not close a funded
+  bereaved audience — **decided: HELD out under rule 12 for commercial
+  conflict** (owner). Then `video-editing` → Film Editing Pro
+  (intermediate; vanity-path placements) and `couples-communication` →
+  Dr. Sue Johnson (EFT; dormant). **Search allowance at 8.** Next funded:
+  run `coverage-report.mjs`. Archive picks (Travis, Ury) do not close a funded
   slot: the close plan counts active creators, deliberately.
   **Handed off on the tells, not on context:** a zero-filled `catalogue`
   block written before the measurement landed (twice), and a "Kagan"
