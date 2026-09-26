@@ -1182,5 +1182,62 @@
       "videoCount": 284,
       "at": "2026-09"
     }
+  },
+  {
+    "id": "filmeditingpro",
+    "name": "Film Editing Pro",
+    "handle": "@filmeditingpro",
+    "channelUrl": "https://www.youtube.com/@filmeditingpro",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "An online editing school whose tutorials, made by working film and trailer editors, teach the craft of a cut — sound design, music editing, pacing — rather than which buttons to press.",
+    "longDescription": "Film Editing Pro describes itself as an online training school staffed by professional Hollywood editors, with the stated aim of teaching the art of creative editing rather than a single piece of software. Its tutorials take an edit and improve it on screen: rebuilding weak sound design step by step, the music-editing mistakes that undermine a cut, what it takes to polish an edit, and practical guides for editors on audio channels, multicam and aspect ratio. Most recent uploads are short clips — {{shortPctWords}} per cent of the {{scannedWords}} most recent run under two minutes — and the long tutorials are spread across several years.",
+    "notFor": "A complete beginner looking for how to use an editing program from the start — the tutorials assume you can already cut and focus on what makes an edit work, and most recent uploads are short clips that point to the school's paid courses.",
+    "formatTags": [
+      "tutorial",
+      "shorts"
+    ],
+    "level": [
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 3,
+      "depth": 3
+    },
+    "signals": [
+      "sells-course",
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "video-editing",
+        "strength": "primary",
+        "why": "Teaches sound, music and pacing as editorial craft through before-and-after tutorials from working editors, filling the live tutorial slot beside the category's one active creator, who recuts films rather than teaching technique step by step.",
+        "evidence": "Tutorials on timing a cut to build drama, whether spectacle or story drives a cut, rebuilding a cut's sound design step by step, music-editing mistakes that undermine an edit, polishing an edit behind the scenes, mono against stereo audio for editors, multicam editing and aspect ratio.",
+        "entryVideo": {
+          "title": "How to SOUND DESIGN a Video | Step-By-Step Tutorial",
+          "videoId": "Wcxw3BPSt3A",
+          "whyThisOne": "Takes an edit with passable sound and rebuilds it until it works, showing why sound carries a cut as much as the pictures do — the intermediate level's sound balance, taught by doing it.",
+          "durationMin": 17
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "This is a training school's channel, and most descriptions link to its paid courses. Some also recommend third-party products through links on the school's own website — a music library in 24 of 137 descriptions and a free month of a video-review tool in one — which read like the school's own links but are not; the entry video carries only the school's own course link. Its long tutorials date from 2018 to 2026.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 66,
+      "longPct": 10,
+      "medianMin": 1,
+      "videoCount": 137,
+      "at": "2026-09"
+    }
   }
 ]

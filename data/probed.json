@@ -132,6 +132,11 @@
       "why": "Abbie Emmons",
       "at": "dataset"
     },
+    "@abhaypsrajawat": {
+      "status": "rejected",
+      "why": "video-editing (funded list, batch 64): affiliate wording in 153 of 155 descriptions and Epidemic Sound discount codes in 29 — a music library placed in sound and music editing videos (rule 24); 31 of 155 titles are about earning as an editor",
+      "at": "batch 64"
+    },
     "@academicenglishnow": {
       "status": "rejected",
       "why": "probed for academic-writing; ESL-focused academic English coaching rather than the craft or structure of research writing",
@@ -862,6 +867,11 @@
       "why": "Eat for Endurance (Claire Shorenstein)",
       "at": "dataset"
     },
+    "@editingpodcast": {
+      "status": "rejected",
+      "why": "video-editing (funded list, batch 64): dormant since 2025-08",
+      "at": "batch 64"
+    },
     "@edurekain": {
       "status": "rejected",
       "why": "probed for ai-fundamentals; an 11,895-upload certification mill",
@@ -935,6 +945,11 @@
     "@fighttips": {
       "status": "listed",
       "why": "fightTIPS (Shane Fazen)",
+      "at": "dataset"
+    },
+    "@filmeditingpro": {
+      "status": "listed",
+      "why": "Film Editing Pro",
       "at": "dataset"
     },
     "@filmriot": {
@@ -1342,10 +1357,25 @@
       "why": "Jon Loomer",
       "at": "dataset"
     },
+    "@jonnyduncanedits": {
+      "status": "rejected",
+      "why": "video-editing (funded list, batch 64): 6 long-form uploads in a 50-upload catalogue",
+      "at": "batch 64"
+    },
     "@jordansullivandietitian": {
       "status": "listed",
       "why": "Jordan Sullivan Dietitian (The Fight Dietitian)",
       "at": "dataset"
+    },
+    "@jorishermans": {
+      "status": "rejected",
+      "why": "video-editing (funded list, batch 64): 4 of 83 long-form teaching-framed editing videos, DaVinci Resolve tips",
+      "at": "batch 64"
+    },
+    "@josephvideoediting": {
+      "status": "rejected",
+      "why": "video-editing (funded list, batch 64): dense on editing but the teaching is viral-reels and AI editing sold as a side income (\"Edit Like Iman Gadzhi\", \"$2,000 Reel … Using Envato\") — not pacing, sound and story",
+      "at": "batch 64"
     },
     "@joshwrightpiano": {
       "status": "listed",
@@ -1926,6 +1956,11 @@
       "status": "rejected",
       "why": "probed for behavioral-finance; an Indian asset manager’s own channel",
       "at": "batch 55"
+    },
+    "@premierebasics": {
+      "status": "rejected",
+      "why": "video-editing (funded list, batch 64): single-program Premiere Pro tutorials; software rather than editorial craft",
+      "at": "batch 64"
     },
     "@premiumbeat": {
       "status": "listed",
