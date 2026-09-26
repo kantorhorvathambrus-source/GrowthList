@@ -1122,5 +1122,65 @@
       "videoCount": 425,
       "at": "2026-09"
     }
+  },
+  {
+    "id": "griefchannel",
+    "name": "The Grief Channel (Good Grief Festival)",
+    "handle": "@griefchannel",
+    "channelUrl": "https://www.youtube.com/@griefchannel",
+    "country": "GB",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "entity": "institution",
+    "shortDescription": "Conversations and research seminars on grief from a festival run by a University of Bristol team, with psychotherapists, bereavement researchers and people speaking from their own loss.",
+    "longDescription": "The channel carries the talks of the Good Grief Festival, which its description says is run by a team at the University of Bristol, and it mixes two kinds of material. Short segments from festival conversations — a psychotherapist on why grief needs to be spoken, how families respond to traumatic loss, feeling cut off from the world while grieving, how to support someone who is bereaved — sit beside hour-long research seminars on the unacknowledged aspects of grief, what bereavement support actually achieves, bereavement by suicide, grief after coroners' inquests, and fairer bereavement care. Speakers are mostly clinicians, researchers and writers, and the channel sells nothing to its viewers. Across the {{scannedWords}} most recent uploads the median runs {{medianPhrase}}.",
+    "notFor": "Anyone who needs support rather than understanding — this is education about grief, not counselling, and anyone struggling should look to a bereavement service; and anyone wanting one structured course, since the channel is a collection of conversations and seminars from different speakers.",
+    "formatTags": [
+      "interview",
+      "lecture",
+      "long-form"
+    ],
+    "level": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "profile": {
+      "evidenceBased": 3,
+      "practical": 2,
+      "energy": 2,
+      "selfPromotion": 0,
+      "depth": 3
+    },
+    "signals": [
+      "cites-research"
+    ],
+    "categories": [
+      {
+        "id": "grief-and-loss",
+        "strength": "primary",
+        "why": "Brings bereavement researchers and psychotherapists together on what grief is actually like and what helps, from a university-run festival rather than a single therapist's practice — a second frame beside the category's existing creator.",
+        "evidence": "Festival conversations with psychotherapists and writers on voicing grief, family responses to traumatic loss, feeling separate from the world while grieving and supporting bereaved people; and a University of Bristol research seminar series on bereavement support, suicide bereavement, inquests and equitable bereavement care.",
+        "entryVideo": {
+          "title": "'Grief needs to be voiced.' Julia Samuel and Cariad Lloyd on facing the pain of grief",
+          "videoId": "h93fgAfXPQY",
+          "whyThisOne": "A psychotherapist and a writer who has interviewed bereaved people on her podcast since 2016, on why grief has to be faced and put into words rather than managed away, and on finding support — where the beginner level starts.",
+          "durationMin": 11
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "This is education about grief, not support: the channel describes and discusses grief, and anyone struggling after a loss should look to a bereavement service or their doctor, and the channel has its own video on finding the bereavement support that fits. Its standing is institutional — a University of Bristol team with invited clinicians and researchers — rather than one qualified presenter. Some shorter videos are excerpts from longer talks, and the research seminars run close to an hour.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 30,
+      "longPct": 30,
+      "medianMin": 5,
+      "videoCount": 284,
+      "at": "2026-09"
+    }
   }
 ]
