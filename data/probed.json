@@ -502,6 +502,11 @@
       "why": "resolves to \"David Capitalize\", 0 uploads",
       "at": "batch 47"
     },
+    "@clevergirlfinance": {
+      "status": "rejected",
+      "why": "debt-payoff non-ideological slot (funded list): 3 of 59 long-form match debt terms",
+      "at": "batch 64"
+    },
     "@clutterbug": {
       "status": "listed",
       "why": "Clutterbug (Cassandra Aarssen)",
@@ -582,6 +587,11 @@
       "why": "Alex O'Connor (CosmicSkeptic)",
       "at": "dataset"
     },
+    "@craigdacy": {
+      "status": "rejected",
+      "why": "debt-payoff non-ideological slot (funded list): 2 of 33 long-form match debt terms",
+      "at": "batch 64"
+    },
     "@crashcourse": {
       "status": "listed",
       "why": "CrashCourse",
@@ -660,6 +670,16 @@
     "@deanmujtaba": {
       "status": "rejected",
       "why": "negotiation second-school slot (funded list): 0 of 77 long-form match negotiation terms",
+      "at": "batch 64"
+    },
+    "@debtfreedana": {
+      "status": "listed",
+      "why": "Debt Free Dana",
+      "at": "dataset"
+    },
+    "@debtfreemillennials": {
+      "status": "rejected",
+      "why": "debt-payoff non-ideological slot (funded list): 38 of 164 long-form on debt, 7 teaching-framed; recent long-form is a call-in format (\"This Mom Has $35k Credit Card Debt\") structurally close to the existing creator",
       "at": "batch 64"
     },
     "@declutterthemind": {
@@ -1137,6 +1157,11 @@
       "why": "habit-formation second voice (funded list): 2 of 156 long-form match habit terms; long-form is multi-topic interviews",
       "at": "batch 64"
     },
+    "@humphrey": {
+      "status": "rejected",
+      "why": "debt-payoff non-ideological slot (funded list): 1 of 51 long-form match debt terms",
+      "at": "batch 64"
+    },
     "@ifb_podcast": {
       "status": "rejected",
       "why": "stock-analysis beginner tier (group A round 8): 5 of 152 long-form teaching-framed on statements, as 29–42 minute podcast episodes",
@@ -1611,6 +1636,11 @@
       "status": "listed",
       "why": "Modern Software Engineering (Dave Farley)",
       "at": "dataset"
+    },
+    "@moneyguyshow": {
+      "status": "rejected",
+      "why": "debt-payoff non-ideological slot (funded list): 1 of 67 long-form match debt terms in the recent window",
+      "at": "batch 64"
     },
     "@moz": {
       "status": "listed",
@@ -2242,6 +2272,11 @@
       "why": "reputation drift — AI model commentary and reaction — 'NVIDIA Just Lost Their Lead', 'Which AI Models Are Wor",
       "at": "batch 32"
     },
+    "@taekimfinancialtortoise": {
+      "status": "rejected",
+      "why": "debt-payoff non-ideological slot (funded list): 2 of 200 long-form match debt terms",
+      "at": "batch 64"
+    },
     "@tarabrach": {
       "status": "listed",
       "why": "Tara Brach",
@@ -2592,6 +2627,11 @@
       "why": "reputation drift — Founder vlogs and travel diaries. She states the pivot herself in the channel description.",
       "at": "batch 32"
     },
+    "@vanntasticfinances": {
+      "status": "rejected",
+      "why": "debt-payoff non-ideological slot (funded list): dense on debt (29 of 78 long-form) but promotes velocity banking and infinite banking, contested strategies — not the non-ideological voice sought; 101 of 200 recent uploads are shorts",
+      "at": "batch 64"
+    },
     "@vipassanameditation": {
       "status": "rejected",
       "why": "organisation channel for a specific retreat network rather than teaching a visitor can use",
@@ -2616,6 +2656,11 @@
       "status": "listed",
       "why": "Weltgeist",
       "at": "dataset"
+    },
+    "@whiteboardfinance": {
+      "status": "rejected",
+      "why": "debt-payoff non-ideological slot (funded list): 13 of 181 long-form match debt terms",
+      "at": "batch 64"
     },
     "@winrowtax": {
       "status": "listed",

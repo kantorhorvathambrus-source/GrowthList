@@ -852,5 +852,63 @@
       "videoCount": 99,
       "at": "2026-09"
     }
+  },
+  {
+    "id": "debtfreedana",
+    "name": "Debt Free Dana",
+    "handle": "@debtfreedana",
+    "channelUrl": "https://www.youtube.com/@debtfreedana",
+    "country": "US",
+    "language": "en",
+    "sizeBucket": "<100k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "A mother of four who works in corporate finance and paid off a household's consumer debt, explaining the habits and first steps of getting out of debt on an ordinary income.",
+    "longDescription": "Dana describes herself as working full-time in corporate finance and, with her husband, paying off over $98,000 of consumer debt while raising four children. Her debt videos are practical and first-person: what to cut first, what to do when there is no spare money to put toward debt, mistakes made while paying it off, which kinds of debt are worst, and what popular debt-free advice gets wrong. She followed a well-known debt-payoff method early on and later explained on camera why she stopped following it, so the channel does not commit to a single system. It sits beside frugal-living and budgeting videos in roughly equal measure; across the {{scannedWords}} most recent uploads the median runs {{medianPhrase}}.",
+    "notFor": "Anyone after the maths of payoff order worked through in detail, or advice for serious debt problems — the channel is one family's practical experience, and there is as much frugal living and budgeting on it as there is debt.",
+    "formatTags": [
+      "tutorial"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 1,
+      "practical": 4,
+      "energy": 3,
+      "selfPromotion": 1,
+      "depth": 2
+    },
+    "signals": [
+      "practitioner"
+    ],
+    "jurisdiction": "US",
+    "jurisdictionNote": "A US household's experience: the habits of listing, cutting and ordering debts transfer anywhere, while student-loan programmes, credit-card rules and mortgage products are American.",
+    "categories": [
+      {
+        "id": "debt-payoff",
+        "strength": "primary",
+        "why": "Covers the first steps of paying off consumer debt from one family's experience, without committing to a single system — a counterweight to the category's other creator, who teaches one prescribed method.",
+        "evidence": "Debt videos on how ordinary earners get out of debt, what to cut first before a debt snowball, what to do with no spare money for debt, mistakes made while paying it off, which debts are worst, popular debt-free advice that backfires, and why she stopped following a single well-known method.",
+        "entryVideo": {
+          "title": "How Regular People REALLY Get Out of Debt",
+          "videoId": "0SbXp4H_7cE",
+          "whyThisOne": "Walks through the practical habits that got one family out of debt on an ordinary income, which is where the beginner level starts: stop adding to the balance and pick an order you will stick to.",
+          "durationMin": 9
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "This is one family's experience rather than professional advice, and she says she has worked in corporate finance, not as an adviser. One video explains velocity banking, a strategy of paying a mortgage through a home-equity line of credit that is widely considered risky; its description presents it alongside other options without saying whether she recommends it. No sponsorship appears in the descriptions of the 200 most recent uploads; a standing affiliate notice appears on 85 of them and Amazon links on 10.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 0,
+      "longPct": 0,
+      "medianMin": 11,
+      "videoCount": 384,
+      "at": "2026-09"
+    }
   }
 ]
