@@ -726,6 +726,20 @@ this file has the rules, schema, and current state.
     else still only needs disclosing, and choosing a clean alternative
     where one exists.
 
+    **THE CREATOR'S OWN PAID PRODUCT ON THE SAME SUBJECT COUNTS AS A
+    SPONSOR, WHEN IT LEADS.** Set in batch 64 from `people-management`.
+    Ramona Shaw's one-to-ones episode opens its resources with her own
+    paid course on one-to-ones — the thing the video teaches, sold in the
+    same breath, which is the Teleport problem with the creator in the
+    sponsor's seat. **A video whose description leads with the creator's
+    own paid product on the same subject is treated like a sponsored one
+    for entry-video purposes**: pick another video if one fits the brief.
+    "Leads" means it is the first resource offered or sits above the
+    summary, not that it appears somewhere. **Standing boilerplate further
+    down — the same course block pasted into every description — is still
+    only `sells-course`**, as above. Her feedback episode carries that
+    block and is the entry video.
+
 25. **AN INACTIVE CHANNEL MAY BE LISTED; IT MAY NOT CLOSE A CATEGORY, AND
     IT NEVER BEATS A COMPARABLE ACTIVE ONE.** The owner's rule, written in
     batch 64 after the pattern was noticed rather than decided: four
