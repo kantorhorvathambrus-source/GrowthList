@@ -196,7 +196,7 @@ catches it is whether the evidence would be *different videos*.
 |---|---|---|---|
 | `ai-fundamentals` | tech | aiexplained | A teacher rather than a newsreader. aiexplained is a critic tracking releases; the gap is someone building the mental model. **Also in G** |
 | `ui-ux-design` | creativity | nngroup, davidtravis | A practising designer showing the work. nngroup is an institution publishing research summaries. **Batch 64: STILL OPEN.** David Travis was added as a second voice but shares nngroup's research-first stance. Three searches found no designer showing interface work: designer end (search 44 — career coaching, visual redesigns, site-building), research end (45 — tool vendors, archives), designer-process end (46 — portfolio-building channels and Mizko, recorded as reputation drift) |
-| `mobile-development` | programming | philipplackner | A second platform, or a shipping-and-release voice. One platform is currently the whole category |
+| `mobile-development` | programming | philipplackner · twostraws | **Second platform filled (iOS, Paul Hudson, batch 64). Shipping-and-release voice still OPEN** — six iOS channels scanned, see UNVERIFIED.md; release-engineering end unsearched |
 | `coffee-brewing` | practical | jameshoffmann | Anyone not standing in Hoffmann's shadow — the risk here is a channel that is explicitly derivative of him |
 | `travel-planning` | practical | nomadicmatt | Logistics and planning method rather than destination content |
 | `podcasting` | creativity | buzzsprout | **A non-vendor.** buzzsprout is a hosting company. CLAUDE.md records that discovery on this word returns podcasts rather than teaching |

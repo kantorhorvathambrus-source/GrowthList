@@ -1357,5 +1357,63 @@
       "videoCount": 513,
       "at": "2026-09"
     }
+  },
+  {
+    "id": "twostraws",
+    "name": "Paul Hudson",
+    "handle": "@twostraws",
+    "channelUrl": "https://www.youtube.com/@twostraws",
+    "country": "GB",
+    "language": "en",
+    "sizeBucket": "100k-500k",
+    "status": "active",
+    "verified": true,
+    "dataAsOf": "2026-09",
+    "shortDescription": "The video half of Hacking with Swift: a free, project-based SwiftUI curriculum in which each project builds one small iPhone app across a numbered series of short lessons.",
+    "longDescription": "Paul Hudson runs Hacking with Swift, and this channel carries the video lessons of its free 100 Days of SwiftUI course. The catalogue is organised as projects — a bill splitter, a flag quiz, a word game, an expense tracker — each broken into numbered lessons of a few minutes to about twenty that build one app from an empty project, with the completed code linked. The lessons have been re-recorded more than once for newer iOS versions, most recently in 2023–24, and the older takes remain on the channel. Newer uploads are talks on what changed in each year’s SwiftUI release and longer build-along sessions. Across the {{scannedWords}} most recent uploads the median runs {{medianPhrase}}.",
+    "notFor": "Anyone targeting Android or a cross-platform framework, and anyone wanting release engineering — signing, beta testing and shipping through App Review are barely covered here.",
+    "formatTags": [
+      "tutorial",
+      "long-form",
+      "talk"
+    ],
+    "level": [
+      "beginner",
+      "intermediate"
+    ],
+    "profile": {
+      "evidenceBased": 2,
+      "practical": 4,
+      "energy": 2,
+      "selfPromotion": 1,
+      "depth": 3
+    },
+    "signals": [
+      "practitioner"
+    ],
+    "categories": [
+      {
+        "id": "mobile-development",
+        "strength": "primary",
+        "why": "Brings the category its second platform: iOS, taught by building small SwiftUI apps end to end, which is exactly the beginner step of learning one platform’s UI framework and lifecycle rather than fighting them.",
+        "evidence": "345 numbered “SwiftUI Tutorial N/M” project lessons recorded between 2019 and 2024 (not counting those he marks as old), covering state, forms, navigation, lists, networking with Codable, SwiftData, gestures and accessibility; 77 of the 89 long-form uploads in the latest 200 are framed as tutorials or courses.",
+        "entryVideo": {
+          "title": "Understanding the basic structure of a SwiftUI app –  WeSplit SwiftUI Tutorial 1/11",
+          "videoId": "sZSlTDlo0Ag",
+          "whyThisOne": "The first lesson of the first project: what the files in a new SwiftUI app are for and how a view is described, before any code is written — the other ten lessons are linked from it.",
+          "durationMin": 8
+        }
+      }
+    ],
+    "role": "specialist",
+    "caveats": "The entry video is the first of an eleven-part project, so it is a start rather than a complete lesson on its own. The curriculum is free; of the 50 most recent uploads, one description links a sale on his paid books and five promote Kickstart, his own App Store tool with a paid tier — including the one long video about earning more on the App Store, which is a walkthrough of that tool. Several recordings of the same lessons remain on the channel, and the oldest are marked as such; the entry video is from the 2023 series.",
+    "catalogue": {
+      "scanned": 50,
+      "shortPct": 8,
+      "longPct": 22,
+      "medianMin": 9,
+      "videoCount": 1389,
+      "at": "2026-09"
+    }
   }
 ]

@@ -307,6 +307,11 @@
       "why": "real vocal workouts and a 25-year coach, but 38 of 50 uploads under two minutes and a 1m median; Ramsey Voice Studio covers the same beginner end with far more long-form",
       "at": "batch 48"
     },
+    "@azamsharp": {
+      "status": "rejected",
+      "why": "mobile-development iOS slot: 7 of 112 long-form framed as tutorials or courses; 0 of 112 on shipping or release",
+      "at": "batch 64"
+    },
     "@barbellmedicine": {
       "status": "listed",
       "why": "Barbell Medicine",
@@ -562,6 +567,11 @@
       "why": "reputation drift — Unity Asset Store roundups and Steam-marketing interviews; teaching largely moved to paid ",
       "at": "batch 33"
     },
+    "@codewithchris": {
+      "status": "rejected",
+      "why": "mobile-development iOS slot: 28 of 133 long-form framed as tutorials or courses, against 77 of 89 for the pick",
+      "at": "batch 64"
+    },
     "@codingcodes": {
       "status": "rejected",
       "why": "testing-and-quality beginner tier (group A round 4): 7 long-form uploads among the 200 most recent, none matching test terms",
@@ -725,6 +735,11 @@
     "@derekarden": {
       "status": "rejected",
       "why": "negotiation second-school slot (funded list): 22 of 183 long-form match negotiation terms",
+      "at": "batch 64"
+    },
+    "@designcodeteam": {
+      "status": "rejected",
+      "why": "mobile-development iOS slot: 21 of 131 long-form framed as tutorials or courses, against 77 of 89 for the pick",
       "at": "batch 64"
     },
     "@designcourse": {
@@ -1281,6 +1296,11 @@
       "status": "rejected",
       "why": "a Harvard-trained sleep physician with 27 of 50 uploads over 20m — and the description says built specifically for clinicians, with private-practice-building content alongside the clinical material. Same ground Physiotutors was rejected on in batch 43; Doc Snipes was listed because her long-form is mechanism rather than profession, and this leans the other way",
       "at": "batch 55"
+    },
+    "@iosacademy": {
+      "status": "rejected",
+      "why": "mobile-development iOS slot: archive since 2024-03 while a comparable active iOS teacher exists (rule 25)",
+      "at": "batch 64"
     },
     "@jamesbriggs": {
       "status": "listed",
@@ -2780,6 +2800,11 @@
     "@twocentspbs": {
       "status": "listed",
       "why": "Two Cents (PBS)",
+      "at": "dataset"
+    },
+    "@twostraws": {
+      "status": "listed",
+      "why": "Paul Hudson",
       "at": "dataset"
     },
     "@uomacademicskills": {
