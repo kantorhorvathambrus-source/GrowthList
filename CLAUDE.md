@@ -740,6 +740,13 @@ this file has the rules, schema, and current state.
     only `sells-course`**, as above. Her feedback episode carries that
     block and is the entry video.
 
+    **Clarification (owner-approved, 2026-09-28):** "A creator's own paid
+    product counts as 'at the start' if it appears within the first three
+    lines of the description or among its first two links." Set from Eric
+    Andrews (`saas-business`), whose paid programme sat second, below a
+    summary line — a case the word "leads" did not settle. Either
+    condition is enough; the link test applies whatever the line count.
+
 25. **AN INACTIVE CHANNEL MAY BE LISTED; IT MAY NOT CLOSE A CATEGORY, AND
     IT NEVER BEATS A COMPARABLE ACTIVE ONE.** The owner's rule, written in
     batch 64 after the pattern was noticed rather than decided: four
