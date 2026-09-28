@@ -1148,7 +1148,7 @@ this section first to know exactly where to resume.)*
   agreement) with the final Phase 2 state, the ledger, the coverage
   report, remaining gaps, and an honest read on whether the dataset is
   ready to build on.
-  **Still owed at the close of Phase 2**: rotate the YouTube API key.
+  **YouTube API key: rotated 2026-09-28** — see "The YouTube API key".
 - **GROUP A DISCOVERY IS DONE — 10 of 10 rounds (batch 64).** One
   creator per round, every one gated and committed. The band split was
   the owner's: `long` for `self-hosting` and `databases-sql`, `medium`
@@ -1991,9 +1991,7 @@ Add to it in the same batch as the rejection, not later.
 3. Domain order so far: communication (01–02), then creativity,
    learning, mindset. Deliberately deferred candidates are named in
    `UNVERIFIED.md` — check it before researching, to avoid re-probing.
-4. **Rotate the API key when Phase 2 finishes** — the owner stated this
-   intent, and the key passed through the chat transcript to get here.
-5. Phase 3's remaining work (200 four-week plans) needs creators to
+4. Phase 3's remaining work (200 four-week plans) needs creators to
    point at, so it comes after the dataset, not before.
 
 **At the batch-06 check-in the owner wants two things, explicitly:**
@@ -2002,21 +2000,28 @@ critic, which will ship without one and why; and (b) the current
 contents of `data/handle-rescues.json`, shown in full so the rescue list
 is visible at a glance.
 
-### The YouTube API key — `.env` in this container
+### The YouTube API key — the `YOUTUBE_API_KEY` environment variable
 
-`YOUTUBE_API_KEY` lives in **`/home/user/growthlist/.env`**, which is
-gitignored. The original plan was a configured environment variable,
-but it never reached `process.env` across two container restarts, so
-the owner fell back to writing the file. `.env.example` carries the key
-*name* only.
+**Rotated on 2026-09-28.** The key is now supplied only through the
+`YOUTUBE_API_KEY` environment variable configured on the Claude Code
+environment, and the old keys are revoked (the owner's statement; this
+container held no copy of an old key, so revocation could not be tested
+from here). Verified the same day: one `videos.list` call with the
+environment key returned HTTP 200.
 
-**The key currently in that file has passed through a chat transcript
-and must be rotated once Phase 2 is done.** The owner has said they
-will; if Phase 2 finishes and it has not happened, remind them.
+`.env` is gone. On 2026-09-28 it was absent from this container,
+`git log --all -- .env` showed it was never committed, `.gitignore:3`
+still ignores it, and nothing in the repo writes one — the only
+reference is the read fallback in `loadKey()`. `.env.example` carries
+the key *name* only. **Do not recreate `.env`.** The history, kept
+because it explains the fallback: the env-var route first failed to
+reach `process.env` across two container restarts, the owner wrote the
+key into `.env`, and that key passed through a chat transcript.
 
 - `scripts/lib/youtube.mjs` → `loadKey()` reads
-  `process.env.YOUTUBE_API_KEY` first and falls back to the `.env`
-  file. In this container the file is the live source.
+  `process.env.YOUTUBE_API_KEY` first and still falls back to a `.env`
+  file if one exists. With no `.env`, the environment variable is the
+  only source.
 - If the key is missing, **stop and say so.** Do not proceed with
   unverified research and do not substitute web search — search cannot
   verify video attribution (see "How Phase 2 verification works").
