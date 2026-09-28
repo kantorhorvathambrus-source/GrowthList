@@ -742,7 +742,8 @@ this file has the rules, schema, and current state.
 
     **Clarification (owner-approved, 2026-09-28):** "A creator's own paid
     product counts as 'at the start' if it appears within the first three
-    lines of the description or among its first two links." Set from Eric
+    lines of the description or among its first two links. Blank lines are
+    not counted." Set from Eric
     Andrews (`saas-business`), whose paid programme sat second, below a
     summary line — a case the word "leads" did not settle. Either
     condition is enough; the link test applies whatever the line count.

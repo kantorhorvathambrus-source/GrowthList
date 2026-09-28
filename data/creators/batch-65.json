@@ -251,7 +251,7 @@
     "status": "active",
     "verified": true,
     "dataAsOf": "2026-09",
-    "shortDescription": "A Certified Financial Planner explaining personal-finance mechanics — mortgages, credit scores, interest rates, debt payoff, tax — in short sequenced lessons of eight to fifteen minutes.",
+    "shortDescription": "A self-described Certified Financial Planner explaining personal-finance mechanics — mortgages, credit scores, interest rates, debt payoff, tax — in short sequenced lessons of eight to fifteen minutes.",
     "longDescription": "Dave Lowell describes himself on the channel as a Certified Financial Planner who has worked with clients from new graduates to the very wealthy. The channel began in April 2026, and its long-form catalogue — 89 videos, all posted between April and July 2026 — is built as short sequenced lessons: one on how mortgages work leads into one on rates, closing costs and amortization, then one on paying off the mortgage against investing. Credit and borrowing sit beside tax, estate planning, investing and real estate. Since August the channel has posted short clips: {{shortCountWords}} of the {{scannedWords}} most recent uploads run two minutes or less.",
     "notFor": "Anyone outside the US — the mortgages, PMI, credit bureaus and scores described are American — and anyone repairing damaged credit, which no lesson title covers.",
     "formatTags": [
@@ -270,7 +270,6 @@
       "depth": 2
     },
     "signals": [
-      "credentialed",
       "practitioner"
     ],
     "jurisdiction": "US",
@@ -389,7 +388,8 @@
       "depth": 3
     },
     "signals": [
-      "practitioner"
+      "practitioner",
+      "sells-course"
     ],
     "categories": [
       {
