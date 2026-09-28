@@ -1135,6 +1135,9 @@ written. What changed is waiting for a yes that was already given.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
+- **LATEST HAND-OFF: 2026-09-28** — read "Session of 2026-09-28" below
+  first. Phase 2 funded rounds are PAUSED; the topic-map pilot is at
+  stage 1 and unfinished.
 - **Current phase**: Phase 2 (creator research). **Batches 01–63 are
   written, gated, validated and committed.**
 - **RESUME HERE (handed off at batch 63, mid-close).** 259 creators,
@@ -1302,6 +1305,77 @@ this section first to know exactly where to resume.)*
   by the pattern (16 for 44 ad placements; 76 "offers" that were mostly
   "Facebook"). All caught before commit. **Next: `rebuilding-trust`**, then
   down the PHASE 2 CLOSE block.
+- **Session of 2026-09-28 — HANDED OFF ON THE TELLS (three slips), mid
+  Step 4 of the owner's session brief.** Branch `claude/lucid-lamport-p8y073`.
+  **Owner's decisions, in force:**
+  1. **Phase 2 funded rounds are PAUSED** until the topic-map pilot is
+     decided. Do not search for new creators. Search allowance: nothing
+     spent this session (0 `search.list` calls); the last recorded count is
+     20, and no total is recorded anywhere — only "~60 has tripped the
+     limit once".
+  2. **The four-week plan band is hidden** on every category
+     (`SHOW_PLAN = false`, `js/views/category.js`; data field kept). No
+     replacement content for now.
+  3. **Topic-map pilot, approved in stages; stage 1 only** (sub-topic
+     lists, no video selection) for `hypertrophy-training` (shown as
+     "Muscle building"), `language-learning`, `critical-thinking`.
+  4. **Language-specific channels in `language-learning`** stay core only
+     if their entry video teaches a method that transfers to other
+     languages; otherwise they move to a separate "practice material for
+     your language" shelf. Report only — nothing moved.
+  **Done:** key rotated and checked (see the key section; `.env` absent,
+  never committed). Rule 24 "at the start" clarification added
+  (owner-approved). Plan band hidden, verified in headless Chromium on
+  488 pages with a switched-on control. Step 1 fix-ups measured; every
+  resulting change touches visitor copy and is **held for the owner**,
+  not committed. Critic audit (read-only).
+  **Measured this session, so the next one does not redo it:**
+  - Blocked by egress, so unverifiable here: ASIC register
+    (moneysmart.gov.au), CFP Board (cfp.net), the Hiwi G accelerator's
+    Typeform, the Amazon short link in one Jennifer May description.
+    `sells-course` on Hiwi G stays unset for that reason.
+  - Dave Lowell: 89 long-form (≥8m) of 253 uploads, last long-form
+    2026-07-27; every upload since August is 1 minute. `credit-and-loans`
+    is NOT held open under rule 25 as written (both creators `active`).
+  - Eric Andrews: the mapping's 15 videos reconstructed (the pattern was
+    never stored); 2 of them — churn rate, CAC payback — are Ordergroove-
+    sponsored. **The entry video fails the clarified rule 24** (his paid
+    programme is its second link); of the 13 unsponsored, only "The
+    Ultimate Guide to Calculating CAC for SaaS and B2B Companies" passes.
+    Owner decision pending: replace the entry video or drop the mapping.
+  - Jennifer May: no disclosed sponsor, CTA or own product in 220
+    descriptions, but 36 link a publisher's book page (Ogden & Fisher,
+    W.W. Norton) and 1 an Amazon short link — the shipped "none carries…
+    a paid product" sentence overstates what was checked.
+  - Critics: 21 creators, 35 mappings; published "twenty-nine of the
+    182" (colophon `otherSideFacts`, all statuses). Judged 10 mappings as
+    applying rather than dissenting → 22 of 182 per mapping; 28 of 182 if
+    only creators whose every mapping applies are untagged (AI Explained,
+    Coffeezilla, ContraPoints, Folding Ideas). `role` is per creator, not
+    per mapping, which is why the two differ. **The "30 of 181" line
+    further down this section is stale.**
+  - Home page still promises "a four-week plan" twice (`home.js:93,158`)
+    — false since 0 of 193 plans exist, now also contradicted by the
+    hidden band. Visitor copy; held for the owner.
+  - Dreaming Spanish (the only non-English creator in
+    `language-learning`): entry video is a Spanish story, i.e. practice
+    material, and its description's first three lines and first two
+    links go to its own website. Refold and Luca Lampariello are
+    English-language method channels.
+  - Stage 2 scan size: 15 creator-mappings, 5,973 uploads, ~254 units for
+    full title scans (0 search). `catalogue.longPct` is **≥20 minutes**
+    (`audit-catalogue.mjs:48`), not ≥8 — any long-form figure from it
+    must say so.
+  **Open, in order:** Step 4 — sub-topic lists (5–8, learning order, with
+  sources and departures from the level text), language-learning method
+  sub-topics, per-creator transfer verdicts, storage proposal, rule 4 /
+  rule 24 proposals for several videos per creator per category, stage 2
+  effort estimate (label it as these three problem categories only).
+  Then the final report to the owner.
+  **The tells this time:** two regex counts inflated by the pattern
+  (`/ASIC/i` matched "insurance-b**asic**s"; `/payback/` matched the
+  `paybacklie.com` URL in 28 descriptions) and a stored field labelled
+  from habit (`longPct` read as ≥8m). All caught before reporting.
 - **Standing checks to run before any release**: `validate.mjs`,
   `validate.mjs --final`, `check-secrets.mjs`, `audit-status.mjs`
   (status drift *and* handle aliases), `audit-catalogue.mjs`,
