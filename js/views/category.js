@@ -17,6 +17,13 @@ import { ornamentFor } from '../components/ornament.js';
 
 const PLAN_STORAGE = 'growthlist:plan:';
 
+// The four-week plan band is hidden on every category until plans are
+// written (owner's decision, 2026-09-28: 0 of 193 had any week filled, so
+// every page showed a "not written yet" block). The `plan` data field,
+// planMarkup() and the plan CSS are kept as they are; set this to true to
+// bring the band back.
+const SHOW_PLAN = false;
+
 function readFilters(query) {
   const level = LEVELS.includes(query.level) ? query.level : 'beginner';
   const size = SIZE_BUCKETS.includes(query.size) ? query.size : '';
@@ -342,12 +349,14 @@ export async function renderCategory(app, { params, query }) {
         </section>`
       : ''}
 
-    <section class="band band--alt plan" aria-labelledby="plan-heading">
-      <div class="rail"><span>Practice</span></div>
-      <div class="band-body">
-        ${planMarkup(category, creatorsById)}
-      </div>
-    </section>
+    ${SHOW_PLAN
+      ? `<section class="band band--alt plan" aria-labelledby="plan-heading">
+          <div class="rail"><span>Practice</span></div>
+          <div class="band-body">
+            ${planMarkup(category, creatorsById)}
+          </div>
+        </section>`
+      : ''}
   `;
   app.setAttribute('aria-busy', 'false');
 

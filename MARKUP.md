@@ -300,6 +300,10 @@ Rendered only when a critic exists; absent entirely otherwise.
 
 ### 4d. Four-week plan (alt band, rail "Practice")
 
+**Currently not rendered on any category** — `SHOW_PLAN = false` in
+`js/views/category.js` (2026-09-28, until plans are written). The markup
+below is kept as the contract for when it returns.
+
 ```html
 <ul class="plan__weeks">
   <li class="plan__week">
