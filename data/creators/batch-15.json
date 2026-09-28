@@ -86,8 +86,8 @@
     "status": "active",
     "verified": true,
     "dataAsOf": "2026-09",
-    "shortDescription": "A CFA analyst explaining how finance actually works, and taking apart the schemes aimed at people who do not know yet.",
-    "longDescription": "Richard Coffin describes himself as a CFA charterholder and CFP professional working as an analyst at an investment management firm, and his stated motivation is that people lack the resources to make good financial decisions. The catalogue splits usefully in two. One half is mechanism — how a tax works, what an asset bubble is and how you would tell from inside one, what a financial product actually does. The other half is investigation: specific scams, specific manias, and the sales pitches aimed at inexperienced investors. Thirty-one of forty-nine recent uploads run three to nineteen minutes and seventeen run longer, at an eighteen-minute median. He is careful about uncertainty and says when something is unknowable.",
+    "shortDescription": "A self-described CFA charterholder and CFP professional explaining how finance actually works, and taking apart the schemes aimed at people who do not know yet.",
+    "longDescription": "Richard Coffin is a self-described CFA charterholder and CFP professional working as an analyst at an investment management firm, and his stated motivation is that people lack the resources to make good financial decisions. The catalogue splits usefully in two. One half is mechanism — how a tax works, what an asset bubble is and how you would tell from inside one, what a financial product actually does. The other half is investigation: specific scams, specific manias, and the sales pitches aimed at inexperienced investors. Thirty-one of forty-nine recent uploads run three to nineteen minutes and seventeen run longer, at an eighteen-minute median. He is careful about uncertainty and says when something is unknowable.",
     "notFor": "Anyone wanting to be told what to buy. He explains mechanisms and dismantles pitches; he does not make recommendations.",
     "formatTags": [
       "video-essay",
@@ -118,10 +118,10 @@
         "why": "Treats speculative manias as things to be understood structurally, and is willing to say plainly when a pitch is a scam rather than an opportunity.",
         "evidence": "A CFA analyst publishing structural analyses of asset bubbles and direct investigations of specific investment scams targeting retail investors.",
         "entryVideo": {
-          "title": "Let's Talk About the AI Bubble",
-          "videoId": "fIcWfHikAOo",
-          "whyThisOne": "A live mania analysed while it is still running, which is much harder and more useful than explaining one after it has burst.",
-          "durationMin": 22
+          "title": "WTF Is an NFT? (And Should You \"Invest\" in One?)",
+          "videoId": "ItG-W3_EvOY",
+          "whyThisOne": "What an NFT is and why people were buying and selling them, then whether it stands up as the investment shift it was sold as — the intermediate level’s difference between a token’s mechanism and its marketing, in thirteen minutes. Recorded in 2021, at the height of the NFT market.",
+          "durationMin": 13
         }
       },
       {

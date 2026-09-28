@@ -16,8 +16,36 @@ Both current strings describe the person ("A CFA analyst publishing…",
 "delivered by a CFP professional"), not the channel. Drafts below describe
 videos. Counts are from a title scan of the uploads playlist on 2026-09-28.
 
-*(Text is added once the counts are measured; see the section below if
-present.)*
+Measured: the uploads playlist returned 281 videos (channel statistics say
+280); 244 run eight minutes or more.
+
+- **`crypto-literacy`** — pattern over titles:
+  `crypto|bitcoin|\bnft|blockchain|ethereum|stablecoin|\bftx\b|\bcoin\b|coinbase|binance|\btoken|\bdefi\b|web3|dogecoin|terra|luna|celsius`,
+  21 of 281 titles matched, 20 of them eight minutes or more; every match
+  was read and all are about crypto. Draft:
+  > Across all uploads, 20 of the 244 videos of eight minutes or more are titled on crypto, running 8 to 61 minutes and dated 2018 to 2025: the risks of Bitcoin, NFTs, DeFi, the 2022 crash, the FTX collapse and its refund plan, exchange prosecutions, the Bitcoin spot ETF, US crypto regulation, tokenized stocks and Bitcoin treasury companies, plus long interviews with Aswath Damodaran and Ben Felix that cover crypto.
+- **`tax-basics`** — pattern over titles:
+  `\btax|\btfsa\b|\brrsp\b|\bfhsa\b|\bresp\b|capital gains|\bira\b|401\(?k`,
+  4 of 244 long-form titles matched. Draft:
+  > Across all uploads, 4 of the 244 videos of eight minutes or more are titled on tax, running 9 to 21 minutes: Canada’s exit tax, Canada’s 2024 capital-gains change, a proposed US tax on investors outside the US, and a 2018 explainer on registered accounts and tax efficiency.
+  **Flag for the owner:** four videos, two of them Canada-specific policy
+  changes and one US news, is thin evidence for a mapping. Worth
+  re-examining under rule 4 before this string is applied, rather than
+  after.
+
+## 2026-09-28 — Eric Andrews: caveat names one sponsor of three
+
+The current caveat names the subscription-retention sponsor (five videos,
+2024). A description scan (`ordergroove|sponsor`) matched **12 of 98**,
+including other sponsors the caveat does not name: "this video is sponsored
+by Neo.Tax & ClearCo" (`9zx6xeQPKjg`) and a "3:07 sponsor: Bainbridge"
+chapter with a bit.ly link (`8xfPvprL5qE`). None of the 11 videos in the
+`saas-business` evidence matched. Draft replacement for the caveat's second
+sentence:
+> Twelve descriptions carry sponsorships — five from January to May 2024, including the churn-rate and CAC-payback lessons, by a subscription-retention software company (one says he worked there), and others by finance and modelling services; the entry video is not among them, and its description offers a related video and a free template before his paid programme.
+
+*(Before applying, read the 12 in full: the pattern counts disclosed
+sponsorship only, rule 24.)*
 
 ---
 
@@ -35,6 +63,10 @@ false while the plan band is hidden (`SHOW_PLAN = false`,
   `restorePlanState()` (`js/views/category.js:198`) finds no checkboxes and
   never writes, so nothing is stored. Draft:
   > Your browser does keep a few things locally, which never leave your device and never reach us: your light or dark preference, and what you have already seen or dismissed of the one question we ask.
+- **`js/views/home.js:155`, heading "Watching is not practising"** (eyebrow
+  "01 — The honest part"). With the approved paragraph applied, the heading
+  argues something the text below it no longer does. Options: keep it, or a
+  neutral heading such as "Start with one video". Owner's call.
 - **`README.md:4`** also promises the plan. README is served publicly (see the
   Netlify note in the session report). Draft: drop "— with a four-week plan so
   watching turns into practice" and end the sentence after "watching for it".

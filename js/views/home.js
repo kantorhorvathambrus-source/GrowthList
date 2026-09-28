@@ -89,8 +89,8 @@ export async function renderHome(app) {
           </div>
           <p class="lead">
             The YouTube creators actually worth your time for one specific skill —
-            what they're good for, who they're <em>not</em> for, one video to start
-            with, and a four-week plan so watching turns into practice.
+            what they're good for, who they're <em>not</em> for, and one video to start
+            with.
           </p>
 
           <div class="search" role="search">
@@ -154,9 +154,8 @@ export async function renderHome(app) {
             <span class="eyebrow">01 — The honest part</span>
             <h3>Watching is not practising</h3>
             <p>
-              An hour of video feels like progress and usually isn't. The four-week
-              plan on each skill exists because the exercise is the part that
-              changes anything — the video only tells you what to do.
+              Each skill page says what to work on at your level, and which video
+              to start with.
             </p>
           </div>
           <div class="explainer__item">

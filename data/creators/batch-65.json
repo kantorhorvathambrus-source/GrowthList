@@ -169,7 +169,7 @@
       }
     ],
     "role": "specialist",
-    "caveats": "The channel has not posted since February 2025, and its boundary lessons date from 2020 to 2023. The lessons teach skills from a therapy normally delivered in a structured programme; they explain it rather than deliver it. None of the 220 video descriptions carries a sponsor, affiliate link or paid product.",
+    "caveats": "The channel has not posted since February 2025, and its boundary lessons date from 2020 to 2023. The lessons teach skills from a therapy normally delivered in a structured programme; they explain it rather than deliver it. None of the descriptions of her 220 uploads discloses a sponsor or promotes a product of her own; 36 link to a publisher’s page for a book, and one carries an Amazon short link whose destination could not be checked.",
     "catalogue": {
       "scanned": 50,
       "shortPct": 0,
@@ -336,18 +336,18 @@
       {
         "id": "saas-business",
         "strength": "primary",
-        "why": "Calculates the subscription metrics that predict survival — churn, cohort retention, net revenue retention, payback — from sample data, step by step, beside the category’s founder talks on strategy and growth.",
-        "evidence": "Across all 98 uploads, 15 of the 63 videos of eight minutes or more are titled on SaaS or retention metrics, running 8 to 98 minutes: churn rate, cohort retention analysis, net revenue and net dollar retention, CAC and CAC payback for subscription businesses, the seven SaaS metrics for an investor update, a SaaS unit-economics tutorial, and SaaS financial models built from scratch.",
+        "why": "Builds the numbers that tell a subscription-software business whether it works — customer acquisition cost, cohort retention, net revenue and net dollar retention, LTV to CAC — in a spreadsheet from sample data.",
+        "evidence": "Across all 98 uploads, 11 of the 63 videos of eight minutes or more are titled on SaaS metrics or SaaS financial models and disclose no sponsor in their descriptions, running 10 to 98 minutes: customer acquisition cost for SaaS and B2B companies, cohort retention, net revenue and net dollar retention, the LTV-to-CAC ratio, the seven most important SaaS metrics, SaaS unit economics and benchmarks, and three SaaS financial models built from scratch. Two further SaaS-metric lessons, on churn rate and CAC payback, are sponsored and not counted here.",
         "entryVideo": {
-          "title": "Customer Retention & Cohort Analysis | How VCs Calculate Customer Retention",
-          "videoId": "OwCATJh4lNg",
-          "whyThisOne": "How to lay out a cohort table, calculate customer and revenue retention by cohort, net revenue retention, and lifetime value against acquisition cost — the intermediate level’s cohort retention, expansion revenue and payback in one worked example.",
-          "durationMin": 18
+          "title": "The Ultimate Guide to Calculating CAC for SaaS and B2B Companies",
+          "videoId": "hsXG8QSzaek",
+          "whyThisOne": "Which costs belong in customer acquisition cost when a sales team does the selling, which customers to count, and the common mistakes in both, on a worked example startup in ten minutes — the input every payback calculation at the intermediate level depends on.",
+          "durationMin": 10
         }
       }
     ],
     "role": "specialist",
-    "caveats": "82 of the 98 descriptions promote his own paid finance course — in 54 of them as the second link after a free template, in 15 as the first. Five videos from January to May 2024 — including the churn-rate and CAC-payback lessons — are sponsored by a subscription-retention software company, and one of them says he worked there; the entry video is not among them and carries no third-party placement in its description. The channel has posted twice since July 2024.",
+    "caveats": "82 of the 98 descriptions promote his own paid finance course — in 54 of them as the second link after a free template, in 15 as the first. Five videos from January to May 2024 — including the churn-rate and CAC-payback lessons — are sponsored by a subscription-retention software company, and one of them says he worked there; the entry video is not among them, and its description offers a related video and a free template before his paid programme. The channel has posted twice since July 2024.",
     "catalogue": {
       "scanned": 50,
       "shortPct": 26,
