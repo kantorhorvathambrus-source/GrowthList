@@ -210,17 +210,23 @@ specific application of the same practice — it becomes a sub-topic of the
 broader one. Overlap alone is not enough; two practices that share a step are
 not instances of each other.
 
-**Phase 1's recorded reasons.** The only record is `CLAUDE.md` "Phase 1 notes
-/ decisions": *"Deliberately separate, non-duplicate pairs: `note-taking` vs
-`personal-knowledge-management`; `negotiation` vs `salary-negotiation`;
-`difficult-conversations` vs `couples-communication`; `strength-training` vs
-`hypertrophy-training`; `deep-work-and-focus` vs `digital-minimalism`."* It
-names the pairs and records **no reason** for any of them.
+**Phase 1's recorded reasons.** Today's `CLAUDE.md:2527` ("Phase 1 notes /
+decisions") lists the pairs without reasons. The reasons were written in the
+Phase 1 commit itself, `8f49b65` (2026-08-22, "Phase 1: 200-category taxonomy
+across 16 domains"), in `CLAUDE.md` as added by that commit, and were later
+trimmed:
+> Deliberately kept as separate, non-duplicate pairs, each with distinct blurbs and level text: `note-taking` (capture from a live source) vs `personal-knowledge-management` (linking/synthesis system); `negotiation` (general) vs `salary-negotiation` (a specific, high-search career case); `difficult-conversations` (general/work) vs `couples-communication` (partner-specific repair); `strength-training` (getting strong) vs `hypertrophy-training` (training for size); `deep-work-and-focus` (attention capacity) vs `digital-minimalism` (relationship with technology).
+
+Three of the nine groups below have a recorded reason (1, 2 and 8); the other
+six were never discussed. (Found by fetching the full history: the clone was
+shallow, starting at batch 30.)
 
 Definitions quoted are each category's `blurb` in `data/categories.json`.
 
-1. **`negotiation` / `salary-negotiation`** — Phase 1: listed as separate, no
-   reason. Negotiation: "Reaching agreements that hold, by understanding
+1. **`negotiation` / `salary-negotiation`** — Phase 1 (`8f49b65`): "negotiation
+   (general) vs salary-negotiation (a specific, high-search career case)".
+   Phase 1 itself called it a *specific case* — an instance — and kept it
+   separate for search demand, not because the practice differs. Negotiation: "Reaching agreements that hold, by understanding
    interests and leverage rather than out-talking people." Salary: "Negotiating
    pay and terms with the leverage and market information you actually have."
    Same practice, one application: **an instance.** **Recommend: sub-topic of
@@ -229,9 +235,9 @@ Definitions quoted are each category's `blurb` in `data/categories.json`.
    (`data/jurisdiction.json:39`, "Pay data, norms and disclosure law are
    local") and `negotiation` does not, so the flag would have to move to the
    sub-topic's videos.
-2. **`strength-training` / `powerlifting` / `hypertrophy-training`** — Phase 1:
-   strength vs hypertrophy listed as separate, no reason; powerlifting not
-   mentioned. Strength: "Getting genuinely stronger with barbell and dumbbell
+2. **`strength-training` / `powerlifting` / `hypertrophy-training`** — Phase 1
+   (`8f49b65`): "strength-training (getting strong) vs hypertrophy-training
+   (training for size)"; powerlifting not mentioned. Strength: "Getting genuinely stronger with barbell and dumbbell
    work under a structured, progressive program." Powerlifting: "Maximising
    squat, bench, and deadlift for competition, with technique and peaking as
    the core skills." Hypertrophy: "…specifically to add muscle size." Powerlifting
@@ -274,8 +280,10 @@ Definitions quoted are each category's `blurb` in `data/categories.json`.
    difficult personnel decisions." Different practices that share an audience:
    **keep.** (`delegation` was already retired into `people-management`,
    `_redirects:18`.)
-8. **`note-taking` / `personal-knowledge-management`** — Phase 1: listed as
-   separate, no reason. Notes: "Capturing information from lectures, meetings,
+8. **`note-taking` / `personal-knowledge-management`** — Phase 1 (`8f49b65`):
+   "note-taking (capture from a live source) vs personal-knowledge-management
+   (linking/synthesis system)" — the same component-versus-system reading as
+   below. Notes: "Capturing information from lectures, meetings,
    and books in a form that's actually useful later." PKM: "Building a notes
    system that connects ideas and produces output…". Note-taking is a component
    (the capture step) of PKM rather than an application of it, and serves a
