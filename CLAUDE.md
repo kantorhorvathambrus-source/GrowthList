@@ -607,9 +607,8 @@ this file has the rules, schema, and current state.
     Asked which budget the five pre-release audits would draw on, I said
     `audit-stale-channel` would cost ~50 units and that none of the audits
     spend search allowance. It cost **2,761 units on 187 calls**, and ~2,600
-    of those were `search.list` at 100 units each — **the scarcest budget
-    this project has**, the one CLAUDE.md already records as outliving the
-    daily reset.
+    of those were `search.list` at 100 units each — **the most expensive
+    call this project makes**.
     The path was three lines of reading away. `audit-stale-channel` imported
     `resolveCreator` and called it with an **empty** `handles` array, so path 1
     was skipped and every record went straight to path 2, the 100-unit search.
@@ -619,10 +618,13 @@ this file has the rules, schema, and current state.
     **The proof that this was avoidable rather than unlucky: I then read the
     imports of the other four and got all four right.** Same repository, same
     minute, same question — the difference was reading rather than recalling.
-    **Two budgets, and conflating them is the specific error.** Units and
-    search allowance are not the same resource and do not refill the same
-    way. Report them separately, always: "2,761 units, ~26 search calls" says
-    something "2,761 units" does not.
+    **One budget, two numbers — the owner's ruling, 2026-09-28.** Quota
+    units are the budget: 10,000 a day, resetting at midnight Pacific Time.
+    There is no separate search allowance with its own cap. Report units
+    used and the number of `search.list` calls side by side, always:
+    "2,761 units, ~26 search calls" says where the units went, which
+    "2,761 units" alone does not. (This replaces the earlier wording, which
+    called units and search allowance two budgets that refill differently.)
     This is the **third instance in one session** of the same failure, which
     is the point rather than the severity: a number taken from a truncated
     `tail -25` and used as a measurement; `@aiexplained` probed from memory
@@ -1136,9 +1138,48 @@ written. What changed is waiting for a yes that was already given.
 *(Updated at the end of every phase/batch. A fresh session should read
 this section first to know exactly where to resume.)*
 
-- **LATEST HAND-OFF: 2026-09-28** — read "Session of 2026-09-28" below
-  first. Phase 2 funded rounds are PAUSED; the topic-map pilot is at
-  stage 1 and unfinished.
+- **LATEST: second session of 2026-09-28** — read the bullet directly
+  below, then `drafts/PENDING.md`, then "Session of 2026-09-28" further
+  down.
+- **DRAFTS AWAITING THE OWNER LIVE IN `drafts/PENDING.md` — never only in
+  chat.** Every draft that needs the owner's approval goes there in the
+  session that writes it, with the date, the item and the exact text, and
+  is committed. Remove the entry in the commit that applies it, or when the
+  owner rejects it. Set on 2026-09-28 after two drafts (a Dave Lowell
+  description, a Jennifer May caveat) existed only in a transcript and the
+  next session could not recover them.
+- **Second session of 2026-09-28 — owner's decisions, in force.**
+  - **Phase 2 funded rounds are PAUSED.** Do not search for new creators.
+  - **Topic-map pilot stage 1 is NOT done.** Sub-topic lists for
+    `hypertrophy-training` and `language-learning` are approved with the
+    owner's changes; `critical-thinking` is ON HOLD until the merge
+    candidates are decided. The storage proposal and the validator-check
+    list are approved as direction only — not to be implemented yet. The
+    rule 4 / rule 24 proposal for several videos per creator per category
+    is revised and awaiting approval. All of it is in `drafts/PENDING.md`;
+    nothing is written to the data. Stage 2 (video selection) has not
+    started. **Principle (owner):** sub-topics are defined from the
+    practice itself, never derived from videos we already have; a
+    sub-topic with no good video is a documented gap.
+  - **The critic role moves from per-creator to per-mapping in a later
+    session.** The published critic count stays unchanged until then; the
+    site is not live.
+  - **The duplicate rules 10 and 11** (each number appears twice at the
+    top of this file) are to be resolved in a later session.
+  - **QUOTA MODEL, owner-confirmed 2026-09-28 in Google Cloud Console.**
+    YouTube Data API v3 daily limit: **10,000 units** ("Queries per day");
+    usage there showed 41 units, matching the previous session's report.
+    The quota **resets at midnight Pacific Time**. `search.list` costs
+    **100 units**; `videos.list`, `channels.list` and `playlistItems.list`
+    cost **1**. **Track quota units used per session and report them in
+    every final report.** `quotaUsed()` in `scripts/lib/youtube.mjs`
+    returns `{ calls, units }` for one process; a session sums its runs.
+    **Report units used and the number of `search.list` calls side by
+    side** (rule 23, reworded the same day). There is no separate search
+    allowance with its own cap.
+  - **API key:** the owner confirmed on 2026-09-28 that the old key is
+    deleted in Google Cloud Console. See the key section.
+- **Previous hand-off: 2026-09-28** — "Session of 2026-09-28" below.
 - **Current phase**: Phase 2 (creator research). **Batches 01–63 are
   written, gated, validated and committed.**
 - **RESUME HERE (handed off at batch 63, mid-close).** 259 creators,
@@ -1396,7 +1437,11 @@ this section first to know exactly where to resume.)*
   The order is **computed, not remembered** — `scripts/lib/close-plan.mjs`,
   printed by the coverage report, shortening on its own as creators land.
   A plan in prose is a stored fact that stops being queried.
-- **`search.list` HAS ITS OWN LIMIT, AND IT OUTLIVES THE DAILY RESET.**
+- **SUPERSEDED 2026-09-28 by the owner's quota model** (units are the
+  only budget; no separate search cap — see the state section's first
+  bullets). The observation below is kept as history: the 429s it
+  describes were real, and their cause was never established.
+  **`search.list` HAS ITS OWN LIMIT, AND IT OUTLIVES THE DAILY RESET.**
   The 59-category demand sweep made ~60 search calls and tripped it.
   The next day, with the unit quota reset and `channels.list` working
   normally, **every** `search` call still returned 429 — a bare
@@ -2086,9 +2131,9 @@ is visible at a glance.
 
 **Rotated on 2026-09-28.** The key is now supplied only through the
 `YOUTUBE_API_KEY` environment variable configured on the Claude Code
-environment, and the old keys are revoked (the owner's statement; this
-container held no copy of an old key, so revocation could not be tested
-from here). Verified the same day: one `videos.list` call with the
+environment. **The owner confirmed on 2026-09-28 that the old key is
+deleted in Google Cloud Console** (this container held no copy of an old
+key, so the deletion could not be tested from here). Verified the same day: one `videos.list` call with the
 environment key returned HTTP 200.
 
 `.env` is gone. On 2026-09-28 it was absent from this container,
@@ -2329,9 +2374,11 @@ when a batch is first written.
 `level` or `role` — those are editorial judgement, written in our own
 words, and are where the scope rule (no halo effect) is enforced.
 
-**Quota.** ~3 units per creator (`channels.list` 1, `playlistItems.list`
-1, `videos.list` 1) against 10,000/day. `search.list` costs 100 and is
-avoided. All 700 creators ≈ 2,100 units. On `QUOTA EXCEEDED` the client
+**Quota.** 10,000 units a day, resetting at midnight Pacific Time
+(owner-confirmed 2026-09-28; see the quota model in the state section).
+`channels.list`, `playlistItems.list` and `videos.list` cost 1 unit;
+`search.list` costs 100 and is avoided. A creator costs ~3 units at a
+50-upload scan; a full catalogue scan costs 1 + 2 per 50 uploads. On `QUOTA EXCEEDED` the client
 throws and the correct response is to stop and resume the next day, not
 to retry.
 
